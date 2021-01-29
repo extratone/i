@@ -8,7 +8,9 @@
 
 [**Index of the iOS Documentation section of my Notion account**](https://www.notion.so/rotund/iOS-Documentation-c56ec62d3c3140998d2b779dffff6ae1) (a complete mess, at the moment.)
 
+## Apps
 
+* [**Homescreen Configuration**](http://bit.ly/dbhomescreen)
 
 ## Images
 
