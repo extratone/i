@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActions</key>
+	<array>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvolume</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFVolume</key>
+				<real>1</real>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>10478EA8-AD68-4B73-8BE3-A5081AF8205B</string>
+				<key>WFTextActionText</key>
+				<string>The Open Web Is Living and Lovely
+by [David Blue](http://twitter.com/neoyokel) 
+
+[image:F9CA47CE-0259-486F-8EBB-8F9E643355D1-1293-0000006B3151B2FB/IMG_9513.PNG]
+!Mablis Festival Dot no
+
+A not altogether-cohesive review of July reads and research. 
+In case you're similarly long overdue for a reminder that beautiful things are still being made on the internet...
+
+After nearly a year of relative sobriety from my old, once-severe addiction to Web Site hunting, it occurred to me just yesterday that some explicit wandering as I once did for days at a time - through the clever, innovative, and uniquely tasteful projects through which an astonishingly-original few give their whole thinking (and often physical) selves in obscurity despite how little financial (and often professional) incentive is maintained by those who unknowingly need it the most - might be the best feasible remedy to my current, most perplexing state of faithlessness and bafflement toward the ambitions of trades and cultures I feel I once so thoroughly understood. A great portion of you are surely undergoing your own manifestations of the same hopelessness - I cannot ever remember a time in my life when global events were so utterly discouraging so relentlessly. 
+
+Design and The Open Web
+In this present when every element of American reality is so much more incessantly ugly than we could’ve ever imagined, let’s take at least a momentary respite to look at some visually irresistible and/or super sick Sites on the truly-resolute Open Web to assure our existential selves that yes, beauty shall not cease to exist. For better or worse, my #1 goto source to find innovative, delicious web design has always been Typewolf, who announced last fall that he will not be continuing his “Site of the Month” section, though his relentless “Site of the Day” roll will continue, unhindered.
+
+[image:53670140-4730-4011-850B-213288453B19-1293-00000077B25083C4/IMG_9514.PNG]
+
+!Zeff Cherry
+!"Drink Up, Stoners" - The Verge
+
+Recent Discoveries
+
+Poolside.fm
+"Poolside.FM is a retro digital oasis for your summer" | The Verge
+
+Audio
+Those of us for whom the Podcast medium became a trusted and relatively regular one in our lives long before anyone figured out how to make a real business out of it - certainly *eons* preceeding the original startup podcast-only (apparently HBO-like publication - Gimlet Media - to be successfully launched. Now, though, your mom - perhaps even her mom - listens to podcasts, and what was once a The single Missouri alumni at The Verge, Ashley Carmen, explored the proliferation of podcasting and the process by which it became profitable.
+
+In 2009, only 11% of the U.S. population had listened to a podcast in the past month.
+How podcasts became so popular | The Verge on YouTube
+
+
+&lt;iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/659798723&amp;color=%2300006b&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"&gt;&lt;/iframe&gt;
+
+
+Whilst trying out Garageband for iOS’ new sample packs, I sampled the accompanying video to the article and produced the best “track” I’ve ever made with the app (for whatever that’s worth.)
+
+Speaking of Gimlet Media: the latest episode of my longtime favorite of their podcasts, Reply All, is a sort of condensed remake of my favorite podcast episode of all time (of any show, not just this one) in which hosts Alex Goldman and P.J. Vogtmaintained an open telephone line for 48 hours and spoke with a whole bunch of people (mostly Americans) about... whatever. The result was beautifully human, if you’ll forgive my use of the cliche. I tend to revisit it when I’m feeling particularly isolated from and/or confused about the general ambitions of the people around me. I’ll be honest: I didn’t pay much attention to my first listen through the new episode, but I can tell you that it is worth your time, at least.
+
+I was distraught when Spotify bought both the aforementioned Gimlet Media and the social audio turned podcasting app Anchor - both of which I (rather ridiculously) felt a special personal ownership over. (The latter, especially, because they reached out to me early on to feature *Extratone*’s channel on their music section.) However, it appears that both are being treated fairly well in the 18+ months since their acquisition - probably because they’ve been making Spotify money.
+
+Further Reading
+*  On And On And On: A Guide to Generative Electronic Music | Bandcamp Daily
+* 808 | Twenty Thousand Hertz
+* Listen to Her: Gender on This American Life | The Pudding
+
+Other Favorites
+* 5,000 Top-Selling Book Covers, Arranged by Visual Similarity | The Pudding
+*  A chronicle of the anti-vaccination movement | The Pudding
+*  Review: Quentin Tarantino’s Obscenely Regressive Vision of the Sixties in “Once Upon a Time . . . in Hollywood” | The New Yorker
+I can’t believe Quentin Tarantino is still alive... I would argue that his existence has been entirely unnecessary.
+*  Why Are Right-Wing Conspiracies so Obsessed With Pedophilia? | Mother Jones
+* Microsoft Teams overtakes Slack with 13 million daily users | The Verge
+* The Lingering of Loss, by Jill Lepore | The New Yorker
+* After Nearly Five Years, I’m Saying Goodbye to My Favorite Sites of the Month Blog Posts | Typewolf
+* Killed By Crossovers: The Volkswagen Golf SportWagen and Golf Alltrack | Jalopnik
+* German schools ban Microsoft Office 365 amid privacy concerns | TheNextWeb
+
+
+***
+	Nice References
+#software</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.speaktext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFSpeakTextLanguage</key>
+				<string>en-IE</string>
+				<key>WFSpeakTextPitch</key>
+				<real>2</real>
+				<key>WFSpeakTextRate</key>
+				<real>1</real>
+				<key>WFSpeakTextWait</key>
+				<true/>
+				<key>WFText</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Text</string>
+								<key>OutputUUID</key>
+								<string>10478EA8-AD68-4B73-8BE3-A5081AF8205B</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>WFWorkflowClientVersion</key>
+	<string>1092.8.3.1</string>
+	<key>WFWorkflowIcon</key>
+	<dict>
+		<key>WFWorkflowIconGlyphNumber</key>
+		<integer>61501</integer>
+		<key>WFWorkflowIconStartColor</key>
+		<integer>4274264319</integer>
+	</dict>
+	<key>WFWorkflowImportQuestions</key>
+	<array/>
+	<key>WFWorkflowInputContentItemClasses</key>
+	<array>
+		<string>WFAppStoreAppContentItem</string>
+		<string>WFArticleContentItem</string>
+		<string>WFContactContentItem</string>
+		<string>WFDateContentItem</string>
+		<string>WFEmailAddressContentItem</string>
+		<string>WFGenericFileContentItem</string>
+		<string>WFImageContentItem</string>
+		<string>WFiTunesProductContentItem</string>
+		<string>WFLocationContentItem</string>
+		<string>WFDCMapsLinkContentItem</string>
+		<string>WFAVAssetContentItem</string>
+		<string>WFPDFContentItem</string>
+		<string>WFPhoneNumberContentItem</string>
+		<string>WFRichTextContentItem</string>
+		<string>WFSafariWebPageContentItem</string>
+		<string>WFStringContentItem</string>
+		<string>WFURLContentItem</string>
+	</array>
+	<key>WFWorkflowMinimumClientVersion</key>
+	<integer>900</integer>
+	<key>WFWorkflowMinimumClientVersionString</key>
+	<string>900</string>
+	<key>WFWorkflowTypes</key>
+	<array>
+		<string>Watch</string>
+	</array>
+</dict>
+</plist>

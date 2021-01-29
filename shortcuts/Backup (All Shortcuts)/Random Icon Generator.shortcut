@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActions</key>
+	<array>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.comment</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFCommentActionText</key>
+				<string>Colour list</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>E184315A-4010-4AAB-876F-940704ECB4E5</string>
+				<key>WFTextActionText</key>
+				<string>System Blue
+System Green
+System Orange
+System Indigo
+System Yellow
+System Pink
+System Purple
+System Red
+System Teal
+System Grey 1 (Darkest)
+System Grey 2
+System Grey 3
+System Grey 4
+System Grey 5
+System Grey 6 (Lightest)
+System Dark Grey 1 (Darkest)
+System Dark Grey 2
+System Dark Grey 3
+System Dark Grey 4
+System Dark Grey 5
+System Dark Grey 6 (Lightest)
+Pink
+Pink - lightpink
+Pink - hotpink
+Pink - deeppink
+Pink - palevioletred
+Pink - mediumvioletred
+Purple - lavender
+Purple - thistle
+Purple - plum
+Purple - violet
+Purple - orchid
+Purple - fuchsia
+Purple - magenta
+Purple - mediumorchid
+Purple - mediumpurple
+Purple - blueviolet
+Purple - darkviolet
+Purple - darkorchid
+Purple - darkmagenta
+Purple
+Purple - indigo
+Red - lightsalmon
+Red - salmon
+Red - darksalmon
+Red - lightcoral
+Red - indianred
+Red - crimson
+Red - firebrick
+Red
+Red - darkred
+Orange - coral
+Orange - tomato
+Orange - orangered
+Orange - gold
+Orange
+Orange - darkorange
+Yellow - lightyellow
+Yellow - lemonchiffon
+Yellow - lightgoldenrodyellow
+Yellow - papayawhip
+Yellow - moccasin
+Yellow - peachpuff
+Yellow - palegoldenrod
+Yellow - khaki
+Yellow - darkkhaki
+Yellow
+Green - lawngreen
+Green - chartreuse
+Green - limegreen
+Green - lime
+Green - forestgreen
+Green
+Green - darkgreen
+Green - greenyellow
+Green - yellowgreen
+Green - springgreen
+Green - mediumspringgreen
+Green - lightgreen
+Green - palegreen
+Green - darkseagreen
+Green - mediumseagreen
+Green - seagreen
+Green - olive
+Green - darkolivegreen
+Green - olivedrab
+Cyan - lightcyan
+Cyan - cyan
+Cyan - aqua
+Cyan - aquamarine
+Cyan - mediumaquamarine
+Cyan - paleturquoise
+Cyan - turquoise
+Cyan - mediumturquoise
+Cyan - darkturquoise
+Cyan - lightseagreen
+Cyan - cadetblue
+Cyan - darkcyan
+Cyan - teal
+Blue - powderblue
+Blue - lightblue
+Blue - lightskyblue
+Blue - skyblue
+Blue - deepskyblue
+Blue - lightsteelblue
+Blue - dodgerblue
+Blue - cornflowerblue
+Blue - steelblue
+Blue - royalblue
+Blue
+Blue - mediumblue
+Blue - darkblue
+Blue - navy
+Blue - midnightblue
+Blue - mediumslateblue
+Blue - slateblue
+Blue - darkslateblue
+White
+White - snow
+White - honeydew
+White - mintcream
+White - azure
+White - aliceblue
+White - ghostwhite
+White - whitesmoke
+White - seashell
+White - beige
+White - oldlace
+White - floralwhite
+White - ivory
+White - antiquewhite
+White - linen
+White - lavenderblush
+White - mistyrose
+Grey - gainsboro
+Grey - lightgray
+Grey - silver
+Grey - darkgray
+Grey
+Grey - dimgray
+Grey - lightslategray
+Grey - slategray
+Grey - darkslategray
+Black
+Brown - cornsilk
+Brown - blanchedalmond
+Brown - bisque
+Brown - navajowhite
+Brown - wheat
+Brown - burlywood
+Brown - tan
+Brown - rosybrown
+Brown - sandybrown
+Brown - goldenrod
+Brown - peru
+Brown - chocolate
+Brown - saddlebrown
+Brown - sienna
+Brown
+Brown - maroon</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.split</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Show-text</key>
+				<true/>
+				<key>UUID</key>
+				<string>0E4477A5-0BC8-49F6-881D-B9C9F638E179</string>
+				<key>text</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>E184315A-4010-4AAB-876F-940704ECB4E5</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getitemfromlist</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>iconColour</string>
+				<key>UUID</key>
+				<string>4EC26FF0-97BC-4FD0-9E35-96AA3A868311</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Split Text</string>
+						<key>OutputUUID</key>
+						<string>0E4477A5-0BC8-49F6-881D-B9C9F638E179</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFItemSpecifier</key>
+				<string>Random Item</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>com.alexhay.ToolboxProForShortcuts.GetColoursIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>iconColour</string>
+				<key>UUID</key>
+				<string>77AF273E-E96A-408C-AC19-DFC29814EE1D</string>
+				<key>colour</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>iconColour</string>
+						<key>OutputUUID</key>
+						<string>4EC26FF0-97BC-4FD0-9E35-96AA3A868311</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getitemfromlist</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>bgColour</string>
+				<key>UUID</key>
+				<string>7E67722E-34CF-4AD5-9503-18DBBA9967A9</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Split Text</string>
+						<key>OutputUUID</key>
+						<string>0E4477A5-0BC8-49F6-881D-B9C9F638E179</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFItemSpecifier</key>
+				<string>Random Item</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>com.alexhay.ToolboxProForShortcuts.GetColoursIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>bgColour</string>
+				<key>UUID</key>
+				<string>B2437785-EAC9-4E95-9CCF-BB51296DB425</string>
+				<key>colour</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>bgColour</string>
+						<key>OutputUUID</key>
+						<string>7E67722E-34CF-4AD5-9503-18DBBA9967A9</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>com.alexhay.ToolboxProForShortcuts.GetSymbolNameIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>2EDEA951-1205-44AA-9A94-88BC6BD6FC48</string>
+				<key>category</key>
+				<string>All</string>
+				<key>symbolNameType</key>
+				<string>All</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getitemfromlist</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>icon</string>
+				<key>UUID</key>
+				<string>0F5C808F-6A9C-4A84-ACBC-2617656F6913</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Symbol Name</string>
+						<key>OutputUUID</key>
+						<string>2EDEA951-1205-44AA-9A94-88BC6BD6FC48</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFItemSpecifier</key>
+				<string>Random Item</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>com.alexhay.ToolboxProForShortcuts.CreateIconIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>C0980195-0251-47C0-8D49-2A223520933A</string>
+				<key>bgColourHex</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>bgColour</string>
+								<key>OutputUUID</key>
+								<string>B2437785-EAC9-4E95-9CCF-BB51296DB425</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>creationMode</key>
+				<string>advanced</string>
+				<key>iconColourHex</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>iconColour</string>
+								<key>OutputUUID</key>
+								<string>77AF273E-E96A-408C-AC19-DFC29814EE1D</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>sfSymbolName</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>icon</string>
+								<key>OutputUUID</key>
+								<string>0F5C808F-6A9C-4A84-ACBC-2617656F6913</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.previewdocument</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Icon</string>
+						<key>OutputUUID</key>
+						<string>C0980195-0251-47C0-8D49-2A223520933A</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>WFWorkflowClientVersion</key>
+	<string>1092.8.3.1</string>
+	<key>WFWorkflowIcon</key>
+	<dict>
+		<key>WFWorkflowIconGlyphNumber</key>
+		<integer>59771</integer>
+		<key>WFWorkflowIconStartColor</key>
+		<integer>946986751</integer>
+	</dict>
+	<key>WFWorkflowImportQuestions</key>
+	<array/>
+	<key>WFWorkflowInputContentItemClasses</key>
+	<array>
+		<string>WFAppStoreAppContentItem</string>
+		<string>WFArticleContentItem</string>
+		<string>WFContactContentItem</string>
+		<string>WFDateContentItem</string>
+		<string>WFEmailAddressContentItem</string>
+		<string>WFGenericFileContentItem</string>
+		<string>WFImageContentItem</string>
+		<string>WFiTunesProductContentItem</string>
+		<string>WFLocationContentItem</string>
+		<string>WFDCMapsLinkContentItem</string>
+		<string>WFAVAssetContentItem</string>
+		<string>WFPDFContentItem</string>
+		<string>WFPhoneNumberContentItem</string>
+		<string>WFRichTextContentItem</string>
+		<string>WFSafariWebPageContentItem</string>
+		<string>WFStringContentItem</string>
+		<string>WFURLContentItem</string>
+	</array>
+	<key>WFWorkflowMinimumClientVersion</key>
+	<integer>900</integer>
+	<key>WFWorkflowMinimumClientVersionString</key>
+	<string>900</string>
+	<key>WFWorkflowTypes</key>
+	<array/>
+</dict>
+</plist>
