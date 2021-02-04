@@ -8,6 +8,11 @@
 
 [**Index of the iOS Documentation section of my Notion account**](https://www.notion.so/rotund/iOS-Documentation-c56ec62d3c3140998d2b779dffff6ae1) (a complete mess, at the moment.)
 
+## Resources
+
+* [r/Shortcuts Discord, share-shortcuts channel](r/Shortcuts Discord, share-shortcuts channel)
+* [RoutineHub](https://routinehub.co/)
+
 ## Apps
 
 * [**Homescreen Configuration**](http://bit.ly/dbhomescreen)
@@ -23,4 +28,3 @@
 
 * [***End User*'s Siri Shortcuts episode**](https://anchor.fm/davidblue/episodes/Siri-Shortcuts-Are-iOS-12s-Most-Profound-Addition-e2eepe)
 * (A handy ready-to-convert library of Garageband files for ringtones and notification sounds is next on my todo list.)
-
