@@ -15,6 +15,7 @@
 
 ## Apps
 
+* **Currently Installed Apps** ([Excel Spreadsheet](https://github.com/extratone/i/blob/main/apps.xlsx))
 * [**Homescreen Configuration**](http://bit.ly/dbhomescreen)
 
 ## Images
