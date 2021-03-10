@@ -1,47 +1,8 @@
-![Big Boy; Big Phone](https://i.snap.as/KtqMF5Ky.jpg)
-
-# i
-
-## An attempt to consolidate all of my iOS/iPhone-related documentation, files, media, etc.
-
-**"[David Blue on iPhone & iOS](https://github.com/extratone/bilge/wiki/David-Blue-on-iPhone-&-iOS)"** - *The Psalms* Wiki
-
-[**Index of the iOS Documentation section of my Notion account**](https://www.notion.so/rotund/iOS-Documentation-c56ec62d3c3140998d2b779dffff6ae1) (a complete mess, at the moment.)
-
-## Resources
-
-* [r/Shortcuts Discord, share-shortcuts channel](r/Shortcuts Discord, share-shortcuts channel)
-* [RoutineHub](https://routinehub.co/)
-
-## Apps
-
-* **Currently Installed Apps** ([Excel Spreadsheet](https://github.com/extratone/i/blob/main/apps.xlsx))
-* [**Homescreen Configuration**](http://bit.ly/dbhomescreen)
-
-## Images
-
-* [**iPhone 12 Pro Max main gallery**](https://snap.as/extratone/iphone-12-pro-max)
-* [iPhone 12 Pro Max Flickr album](https://flic.kr/s/aHsmTiT46W)
-* [iPhone 8 Plus Flickr album](https://flic.kr/s/aHsm3KioDG)
-* [iPhone 4 Flickr album](https://flic.kr/s/aHsm6rcxN3)
-
-## Audio
-
-* [***End User*'s Siri Shortcuts episode**](https://anchor.fm/davidblue/episodes/Siri-Shortcuts-Are-iOS-12s-Most-Profound-Addition-e2eepe)
-* (A handy ready-to-convert library of Garageband files for ringtones and notification sounds is next on my todo list.)
-
-
-
-***
-
-# Most Intriguing iOS Apps
-
+# Most Intriguing Apps
 ## An ongoing list of links to iOS apps, App Stories, and greater media coverage.
-
 I’ve privately maintained a list like this for as long as I can remember, to be honest, but it’s never been particularly useful to others until now. Though it’ll probably never be alphabatized, standardized, or comprehensively annotated, it *will* be kept relatively up-to-date - certainly for the duration of my iPhone 12 Pro Max long review.
 
 ## Apps
-
 * [‎Mapaper on the App Store](https://apps.apple.com/us/app/mapaper/id1546487705)
 * [‎Yahoo Mail - Organized Email on the App Store](https://apps.apple.com/us/app/yahoo-mail-organized--email/id577586159)
 * [‎Socratic by Google on the App Store](https://apps.apple.com/us/app/socratic-by-google/id1014164514)
@@ -89,19 +50,17 @@ I’ve privately maintained a list like this for as long as I can remember, to b
 * [‎Fontise - Font Maker Keyboard on the App Store](https://apps.apple.com/us/app/fontise-font-maker-keyboard/id1095756216)
 
 ## App Stories
-
 * [‎Stream Bieber Live in TikTok : App Store Story](https://apps.apple.com/us/story/id1553564750)
 * [‎Capsicum : App Store Story](https://apps.apple.com/us/story/id1550829986)
 * [‎Finance for Couples : App Store Story](https://apps.apple.com/us/story/id1298301514)
 * [‎Radiant One : App Store Story](https://apps.apple.com/us/story/id1441481123)
-* [‎Mend a Broken Heart : App Store Story](https://apps.apple.com/us/story/id1341692115)
+*  [‎Mend a Broken Heart : App Store Story](https://apps.apple.com/us/story/id1341692115)
 * [‎Champion Black Developers : App Store Story](https://apps.apple.com/us/story/id1547708486)
 * [‎Drafts : App Store Story](https://apps.apple.com/us/story/id1444931250)
 * "[Bringing CARROT Weather to Apple Watch](https://developer.apple.com/app-store/grailr/)" | App Store Strory(?)
 * Video: "[Bringing CARROT Weather to Apple Watch](https://developer.apple.com/videos/play/insights/103)" | *Apple Developer*
 
 ## Apps in Tech Media
-
 * [Apple’s App Store is hosting multimillion-dollar scams, says this iOS developer](https://www.theverge.com/2021/2/8/22272849/apple-app-store-scams-ios-fraud-reviews-ratings-flicktype) | *The Verge*
 * [The Making of the CARROT Apps with Brian Mueller](https://appstories.net/episodes/6/) | *AppStories* Episode 6
 
