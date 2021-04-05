@@ -1,0 +1,23 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 14.5//EN
+N:Blue;David;;;
+FN:David Blue
+ORG:Extratone;
+TITLE:Editor-in-Chief
+EMAIL;type=INTERNET;type=HOME;type=pref:davidblue@extratone.com
+EMAIL;type=INTERNET;type=HOME:ihadtopee@gmail.com
+item1.EMAIL;type=INTERNET:bilge@writeasletters.com
+item1.X-ABLabel:newsletter
+TEL;type=CELL;type=VOICE;type=pref:+1 573-823-4380
+ADR;type=HOME;type=pref:;;1714 Oak Cliff Pl.;Columbia;MO;65203;United States
+X-SOCIALPROFILE;type=twitter:x-apple:NeoYokel
+X-SOCIALPROFILE;type=flickr:x-apple:photos
+X-SOCIALPROFILE;type=DISCORD:x-apple:DAVID%20BLUE%230001
+item2.URL;type=pref:https://bilge.world
+item2.X-ABLabel:_$!<HomePage>!$_
+item3.URL:https://davidblue.wtf
+item3.X-ABLabel:_$!<Other>!$_
+item4.URL:http://extratone.com
+item4.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
