@@ -1,0 +1,191 @@
+{
+  "WFWorkflowClientVersion": "1092.9.8",
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 946986751,
+    "WFWorkflowIconGlyphNumber": 59670
+  },
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [
+    "ActionExtension"
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFArticleContentItem",
+    "WFSafariWebPageContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+      "WFWorkflowActionParameters": {
+        "WFCommentActionText": "I figured I may as well share my personal Drafts web page capture Shortcut, which reliably returns Markdown-formatted Drafts headed by a given web page’s featured image (if present,) byline, and timestamp, followed by a correctly-hyperlinked source URL between quotation marks.\n\n***\n\n## Contact\n\n* [Email](mailto:davidblue@extratone.com) \n* [Twitter](https://twitter.com/NeoYokel)\n* [Mastodon](https://mastodon.social/@DavidBlue)\n* [Discord](https://discord.gg/0b9KQUKP858b0iZF)\n* [*Everywhere*](https://www.notion.so/rotund/9fdc8e9610b34b8f991ebc148b760055?v=c170b58650c04fbdb7adc551a73d16a7)..."
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getarticle",
+      "WFWorkflowActionParameters": {
+        "WFWebPage": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "ExtensionInput"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getmarkdownfromrichtext",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F",
+            "Type": "ActionOutput",
+            "OutputName": "Article"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "D9560221-2607-4E7D-B7EC-0FE1DB855E28"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F",
+            "Type": "ActionOutput",
+            "OutputName": "Article"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFContentItemPropertyName": "URL",
+        "UUID": "35725F04-28EC-426D-B443-68DAF729C12D"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F",
+            "Type": "ActionOutput",
+            "OutputName": "Article"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFContentItemPropertyName": "Published Date",
+        "UUID": "A8205AD8-D3D9-4891-B865-10079DDB8AD6"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F",
+            "Type": "ActionOutput",
+            "OutputName": "Article"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFContentItemPropertyName": "Author",
+        "UUID": "EA26B0E2-C494-479F-AFF3-0EC83B24376D"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F",
+            "Type": "ActionOutput",
+            "OutputName": "Article"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFContentItemPropertyName": "Main Image URL",
+        "UUID": "9650C762-87FE-4F9F-8B86-ADA223C5224A"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F",
+            "Type": "ActionOutput",
+            "OutputName": "Article"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "12A8F3A3-D9BD-4328-B9A0-2256ABA51C47"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts5.CaptureIntent",
+      "WFWorkflowActionParameters": {
+        "Show-tags": true,
+        "tags": "archive",
+        "content": {
+          "Value": {
+            "string": "# ￼\n![￼](￼)\n￼ ￼\n\n￼\n\nSource: \"[￼](￼)\"",
+            "attachmentsByRange": {
+              "{2, 1}": {
+                "OutputUUID": "12A8F3A3-D9BD-4328-B9A0-2256ABA51C47",
+                "Type": "ActionOutput",
+                "OutputName": "Title"
+              },
+              "{6, 1}": {
+                "OutputUUID": "12A8F3A3-D9BD-4328-B9A0-2256ABA51C47",
+                "Type": "ActionOutput",
+                "OutputName": "Title"
+              },
+              "{14, 1}": {
+                "OutputUUID": "A8205AD8-D3D9-4891-B865-10079DDB8AD6",
+                "Type": "ActionOutput",
+                "OutputName": "Published Date"
+              },
+              "{9, 1}": {
+                "OutputUUID": "9650C762-87FE-4F9F-8B86-ADA223C5224A",
+                "Type": "ActionOutput",
+                "OutputName": "Main Image URL"
+              },
+              "{30, 1}": {
+                "OutputUUID": "12A8F3A3-D9BD-4328-B9A0-2256ABA51C47",
+                "Type": "ActionOutput",
+                "OutputName": "Title"
+              },
+              "{17, 1}": {
+                "OutputUUID": "D9560221-2607-4E7D-B7EC-0FE1DB855E28",
+                "Type": "ActionOutput",
+                "OutputName": "Markdown from Rich Text"
+              },
+              "{12, 1}": {
+                "OutputUUID": "EA26B0E2-C494-479F-AFF3-0EC83B24376D",
+                "Type": "ActionOutput",
+                "OutputName": "Author"
+              },
+              "{33, 1}": {
+                "OutputUUID": "35725F04-28EC-426D-B443-68DAF729C12D",
+                "Type": "ActionOutput",
+                "OutputName": "URL"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "grammarType": {
+          "identifier": "Markdown",
+          "displayString": "Markdown"
+        },
+        "ShowWhenRun": false
+      }
+    }
+  ]
+}
