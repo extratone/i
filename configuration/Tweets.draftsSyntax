@@ -1,0 +1,68 @@
+{
+  "name": "Tweets",
+  "description": "A simple syntax that highlights Twitter-style #hashtags, @mentions, $cashtags, and http:// or https:// links in the text.",
+  "author": "Tim Nahumck",
+  "sampleText": "This sentence contains #hashtags,  @mentions, and $cashtags. #drafts #syntax-demo #ohmy",
+  "scopeName": "text.rainbow",
+  "listCompletionDefinitions": [
+
+  ],
+  "rangeExtensionType": {
+    "default": "lineExtended"
+  },
+  "listCompletion": "none",
+  "fileExtensions": [
+
+  ],
+  "patterns": [
+    {
+      "match": "(\\B#\\w[\\w-]+)",
+      "exclusive": true,
+      "comment": "Match #hashtags",
+      "captures": {
+        "1": {
+          "scope": "text.bold,color.orange"
+        }
+      }
+    },
+    {
+      "match": "(\\B@\\w[\\w-]+)",
+      "exclusive": true,
+      "comment": "Match @mentions",
+      "captures": {
+        "1": {
+          "scope": "text.bold,color.purple"
+        }
+      }
+    },
+    {
+      "match": "(\\B\\$\\w[\\w-]+)",
+      "exclusive": true,
+      "comment": "Match $cashtags",
+      "captures": {
+        "1": {
+          "scope": "text.bold,color.green"
+        }
+      }
+    },
+    {
+      "match": "((https?):\\/\\/([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:\\/~+#-]*[\\w@?^=%&\\/~+#-])?)",
+      "exclusive": true,
+      "comment": "Match http:// and https:// links",
+      "captures": {
+        "1": {
+          "scope": "color.blue"
+        }
+      }
+    }
+  ],
+  "navigationPatterns": [
+
+  ],
+  "indentationPatterns": [
+
+  ],
+  "taskMarkDefinitions": [
+
+  ]
+}
