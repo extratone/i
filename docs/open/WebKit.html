@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <title>Documentation Archive</title>
+    <meta charset="utf-8">
+    <script>
+        var content_page = "navigation";
+        var href = window.location.href;
+        if (window.location.href.match('#')) {
+        	var newhref = href.replace('#', '');
+        	newhref = newhref.replace('%23', '#');
+          window.location.href = newhref;
+        }
+        else {
+            console.log(content_page);
+            console.log(content_page.match("content_page"));
+            if(content_page.match("content_page")) {
+                window.location.href = './navigation';
+            }
+            else {
+                window.location.href = "./" + content_page;
+            }
+        }
+    </script>
+</head>    
+<body>
+<div id="_omniture_top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleusdeveloper,dappdeveloperlib"
+</script>
+
+<script type="text/javascript" src="https://www.apple.com/metrics/scripts/s_code_h.js"></script>
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName();
+s.channel="www.us.developer"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+</body>
+
+</html>
