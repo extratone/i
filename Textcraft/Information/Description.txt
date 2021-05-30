@@ -1,0 +1,65 @@
+Textcraft is a magical utility that allows you to transform any text in real-time into a variety of 50+ different formats.
+
+WHY YOU’LL LOVE TEXTCRAFT:
+
+It’s built with iOS design guidelines in mind to look great in light and dark mode alike, along with containing multiple tints and themes to tweak the app your way. The intuitive ‘tap to copy’, and ‘long-press to share’ gestures coupled with the keyboard shortcuts also makes using the app super simple to pick up and use.
+
+Multi-window support coupled with Drag and Drop is also extremely useful for quickly and easily dragging text from other apps directly into the app for quick transforming. Whether this is to add hashtags to words social picture sharing sites, or mimic mocking Spongebob in conversation with your friends, there’s something for everyone. There are also various ASCII text face emoticons for quick and easy copying.
+
+Text transformations include:
+- Upper Case
+- Lower Case
+- Word Case
+- Alternating Case
+- Remove All Spaces
+- Remove Multiple Spaces
+- Add Spaces
+- Reversed Characters
+- Reversed Words
+- Replace Spaces with Underscores
+- Replace Underscores with Spaces
+- Replace Spaces with Dashes
+- Replace Dashes with Spaces
+- Replace Underscores with Dashes
+- Replace Dashes with Underscores
+- Initials
+- Initials with Dot Separation
+- Initials with Dash Separation
+- Initials with Underscore Separation
+- ROT13
+- Bold
+- Italics
+- Underline
+- Strikethrough
+- Slashthrough
+- Upside Down
+- Bubble
+- Filled Bubble
+- Square
+- Filled Square
+- Cursive
+- Gothic
+- Monospace
+- Demonic
+- Satanic
+- Replace Spaces with Claps
+- Replace Words with Emoji
+- Remove Emoji
+- Remove Punctuation
+- Classified
+- Hashtags
+- Full Stops
+- Remove Links
+- Strip HTML
+- URL Encoded
+- URL Decoded”
+- Base64 Encoded
+- Base64 Decoded
+- Replace Spaces with Pluses
+- Replace Pluses with Spaces
+- SHA256 Hex
+- SHA512 Hex
+
+GET IN TOUCH:
+
+If you have any questions or feedback, please get in touch. Textcraft was created by an incredibly small team of one and I’d love to hear your thoughts. I’m available through Twitter @JPEGuin.

@@ -1,0 +1,13 @@
+Textcraft is a universal utility that allows you to transform any text in real-time into a variety of 50+ different formats and copy them out with a simple tap. Available on iPhone, iPad, and Mac.
+
+Possible use cases:
+
+- For a casual tweeter who wants to TyPe LiKe ThIs with minimal effort. 
+- For an influencer needing to add hashtags before all of their words in a massive word cloud sentence before uploading to Instagram.
+- For the coder/designer needing to strip HTML or encode/decode strings in Base64.
+- For the blogger wanting fancy text in bubbles, squares, cursive, or stylised differently on their website.
+- For the website designer who wants to add underscores between all words for use in code, or change the format between cases.
+- For the journalist who wants to redact or underline some text.
+- For the cryptographer who wants to convert strings to SHA128 and SHA256.
+
+Can also be kept open in another window on iPad, and have text drag and dropped in to it for quick editing and formatting.
