@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	word-break: break-all;
+}
+
+button {
+	background-color: #eeeeff;
+	width: 100%;
+	font-size: 1em;
+	line-height: 1.8;
+	text-align: left;
+	padding: 5px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid none solid solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+button:active {
+	color: #000;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+}
+.closed::after { content: '\2212\FE0E'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #eeffee; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none none solid solid;
+	border-radius: 0 0 8px 8px;
+}
+
+.contentloop {
+display: none;
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	line-height: 1.5em;
+	margin-right: 10px;
+}
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+</style></head><body>
+<button class="button gUnknown">0 com.alexhay.ToolboxProForShortcuts.CreateTextImageIntent</button>
+	<div class="content"><div class="row">
+	<div class="column">lineBreak: </div>
+	<div class="column"><i><b>Ask</b></i></div></div><div class="row">
+	<div class="column">font: </div>
+	<div class="column"><i><b>Ask</b></i></div></div><div class="row">
+	<div class="column">textColour: </div>
+	<div class="column"><i><b>Ask</b></i></div></div><div class="row">
+	<div class="column">backgroundColour: </div>
+	<div class="column"><i><b>Ask</b></i></div></div><div class="row">
+	<div class="column">width: </div>
+	<div class="column"><i><b>Ask</b></i></div></div><div class="row">
+	<div class="column">Show-text: </div>
+	<div class="column">true</div></div><div class="row">
+	<div class="column">alignment: </div>
+	<div class="column"><i><b>Ask</b></i></div></div><div class="row">
+	<div class="column">text: </div>
+	<div class="column"><i><b>Ask</b></i></div></div><div class="row">
+	<div class="column">height: </div>
+	<div class="column"><i><b>Ask</b></i></div></div><div class="row">
+	<div class="column">autoSize: </div>
+	<div class="column">false</div></div><div class="row">
+	<div class="column">fontSize: </div>
+	<div class="column"><i><b>Ask</b></i></div></div></div>
+<button class="gDocuments">1 Quick Look <span class="box"><b>(0)<i>Text Image</b></i></span></button>
+<script>
+for (b of document.getElementsByClassName("button")) {
+	b.addEventListener("click", function() {
+		this.classList.toggle("closed");
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+</script></body></html>
