@@ -1,0 +1,46 @@
+Terminology is a browser for the English language – part dictionary/thesaurus and part research tool. Terminology makes it easy to explore words and phrases, diving down to more and less specific terms - accessing the web and other apps for more detail and sharing.
+
+More than a dictionary, Terminology can be extended with custom actions to search the Internet and other reference apps – making it a great place to start all your searches.
+
+### Dictionary, Thesaurus & Search
+
+- Offline U.S. English dictionary and word reference with simple clear definitions.
+- Definitions, synonyms, antonyms and deeper word relations such as: more and less specific words, part, part of, members, member of, pertains to and more.
+- Favorite terms.
+- Word browsing history.
+- Add your own notes to any term.
+- Audio pronunications.
+- Wildcard (?,*) searching.
+- Spelling suggestions.
+- Fast, reliable, iCloud (CloudKit) sync and backup of history, favorites, notes and actions.
+- Term of the day.
+
+### Extensible Actions
+
+Actions provide quick links to lookup and search your terms on websites and in other apps. Ready to use actions for popular reference sites like Wikipedia, Dictionary.com, Google, IMDb, Snopes and more, or create your own with simple URL templates.
+
+### All the Latest Technologies 
+
+- Share extension lets you access Terminology from a text selection in any app.
+- Today widget for quick access.
+- 3D Touch support.
+- iPad Multitasking/Split View support.
+- Spotlight and Handoff support.
+
+### More Features
+
+- Extensive support for URL scheme integration via x-callback-url. Visit our website for details.
+- Great support for Accessibility features like VoiceOver and Dynamic Text.
+
+### About the Dictionary
+
+- Terminology's offline dictionary is based on the latest 3.1 version of the Princeton University WordNet project and contains U.S. English words.
+
+### CONTACT
+
+We love to hear your feedback, please contact us. 
+
+Email: info@agiletortoise.com
+Web: http://agiletortoise.com/terminology
+Twitter/App.net: @terminologyapp
+Facebook: https://www.facebook.com/terminologyapp
