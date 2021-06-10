@@ -1,0 +1,241 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	word-break: break-all;
+}
+
+button {
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 5px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+button:active { color: #000; }
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+
+<button class="button gDocuments">
+1 Comment</button>
+	<div class="content">
+		<div class="col2">Presents a menu for options related to the Get My Location action and the GPS coordinates associated with it, allowing you to copy them, share them with someone, or log the spot in Notes. Also includes an option to open Find My Friends and see where your devices/friends are located.</div></div>
+<button class="button gDocuments">
+2 Comment</button>
+	<div class="content">
+		<div class="col2">These shortcuts let you take advantage of your device’s GPS more actively.
+
+I built these flows while walking around San Francisco near the Workflow offices – I was amazed at how easy it was to use the GPS I’ve always had on my phone but never got to utilize.</div></div>
+<button class="button gLoop nonbottom">
+3 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">What do you want to do?</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">["Find my friends",
+"Copy GPS coordinates",
+"Share my location",
+"Log this location"]</div></div></div>
+<button class="button gLoop nonbottom nontop">
+4 Menu Item <span class="box">Find my friends</span></button>
+	<div class="content contentloop">
+<button class=" inside">
+5 Open App <span class="box">com.apple.findmy</span></button></div>
+<button class="button gLoop nonbottom nontop">
+6 Menu Item <span class="box">Copy GPS coordinates</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside">
+7 If <span class="box"><span class="var"><b>[Shortcut Input</b><b>]</b></span></span> <span class="box">does not have any value</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">0</div></div>
+<button class=" inside" id="m8">
+8 Get Current Location</button></div>
+<button class="gLoop nontop inside" id="m9">
+9 End If</button>
+<button class="button gDocuments inside" id="m10">
+10 Text</button>
+	<div class="content inside">
+		<div class="col2"><span class="magic" onclick="magictap(9)"><b>[9 If Result</b>’s Latitude<b>]</b></span>,<span class="magic" onclick="magictap(9)"><b>[9 If Result</b>’s Longitude<b>]</b></span></div></div>
+<button class=" inside">
+11 Copy <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Text</b><b>]</b></span></span> to Clipboard</button></div>
+<button class="button gLoop nonbottom nontop">
+12 Menu Item <span class="box">Share my location</span></button>
+	<div class="content contentloop">
+<button class=" inside" id="m13">
+13 Get Current Location</button>
+<button class=" inside" id="m14">
+14 Get Maps URL from <span class="box"><span class="magic" onclick="magictap(13)"><b>[13 Current Location</b><b>]</b></span></span></button>
+<button class="button  inside">
+15 Send Message <span class="box">Here's where I am <span class="magic" onclick="magictap(14)"><b>[14 Maps URL</b><b>]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SendMessageActionRecipients</div>
+			<div class="col2">[]</div></div></div></div>
+<button class="button gLoop nonbottom nontop">
+16 Menu Item <span class="box">Log this location</span></button>
+	<div class="content contentloop">
+<button class=" inside" id="m17">
+17 Get Current Location</button>
+<button class="button gDocuments inside" id="m18">
+18 Text</button>
+	<div class="content inside">
+		<div class="col2"><span class="var"><b>[CurrentDate</b>{"WFISO8601IncludeTime":true,"Date Style":"ISO 8601"}<b>]</b></span>: <span class="magic" onclick="magictap(17)"><b>[17 Current Location</b>’s Latitude<b>]</b></span>,<span class="magic" onclick="magictap(17)"><b>[17 Current Location</b>’s Longitude<b>]</b></span></div></div>
+<button class="button  inside" id="m19">
+19 Find Notes</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ContentItemLimitEnabled</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ContentItemLimitNumber</div>
+			<div class="col2">1</div></div>
+		<div class="row"><div class="col1">ContentItemFilter</div>
+			<div class="col2">Name contains <span class="var"><b>[CurrentDate</b>{"WFISO8601IncludeTime":false,"Date Style":"ISO 8601"}<b>]</b></span></div></div></div>
+<button class="button gLoop nonbottom inside">
+20 If <span class="box"><span class="magic" onclick="magictap(19)"><b>[19 Notes</b><b>]</b></span></span> <span class="box">does not have any value</span></button>
+	<div class="content contentloop inside">
+<button class="button gDocuments inside" id="m21">
+21 Text</button>
+	<div class="content inside">
+		<div class="col2">Locations for <span class="var"><b>[CurrentDate</b>{"Date Style":"Long","WFISO8601IncludeTime":false,"Time Style":"None"}<b>]</b></span>
+
+<span class="magic" onclick="magictap(18)"><b>[18 Text</b><b>]</b></span></div></div>
+<button class="button  inside">
+22 Create Note with <span class="box"><span class="magic" onclick="magictap(21)"><b>[21 Text</b><b>]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div></div>
+<button class="button gLoop nonbottom nontop inside">
+23 Otherwise</button>
+	<div class="content contentloop inside">
+<button class=" inside">
+24 Append <span class="box"><span class="magic" onclick="magictap(18)"><b>[18 Text</b><b>]</b></span></span> to Note <span class="box"><span class="magic" onclick="magictap(19)"><b>[19 Notes</b><b>]</b></span></span></button></div>
+<button class="gLoop nontop inside">
+25 End If</button></div>
+<button class="gLoop nontop">
+26 End Menu</button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
