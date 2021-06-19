@@ -1,0 +1,2 @@
+#!/bin/sh
+git --version && cd "$1" && mkdir "$2" && cd "$2" && ( var=`git 2> /dev/null rev-parse --is-inside-git-dir`; if [ "$var" = "true" ]; then echo "Unable to create repository inside existing repository"; exit 1; fi ) && ( var=`git 2> /dev/null rev-parse --is-inside-work-tree`; if [ "$var" = "true" ]; then echo "Unable to create repository inside existing repository"; exit 1; fi ) && git init --bare

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Working Copy, Git on iOS</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="author" content="Anders Borum">
+    <meta name="keywords" content="iOS,git,app,GitHub,BitBucket,iPad,iPhone,repository,programming,tools,WebDAV">
+    <meta name="description" content="Working Copy is the powerful Git client for iOS that clones, edits, commits, pushes and more.">
+    <style>
+        @media print {
+            video {
+                display: none;
+            }
+        }
+
+        video::-webkit-media-controls {
+            opacity: .3;
+        }
+
+        body, input {
+            background-color: #eee;
+            font-family: -apple-system, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 300;
+            color: #222;
+            font-size: 35px;
+        }
+
+        body {
+            margin-bottom: 0;
+            background: linear-gradient(#FFFFFF, #F0F6FA);
+        }
+
+        body > div {
+            padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+        }
+
+        #reviews {
+            margin-top: 1em;
+            width: 100%;
+            font-size: 50%;
+            color: #333;
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            background-color: #e7e7e7;
+            background-color: rgba(0,0,0, 0.1);
+        }
+
+        #reviews > div {
+            /*border: dotted 1px;*/
+            display: none;
+            width: 46%;
+            margin-left: 23%;
+        }
+
+        #reviews > div:first-child {
+            display: block;
+        }
+
+        #reviews > div > h4 {
+            display: inline;
+        }
+
+        #reviews > div > p {
+            font-style: italic;
+        }
+
+        #reviews > div > h4 > span {
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        #reviews > div > span {
+            float: right;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 125%;
+        }
+
+        a:link, a:visited, a:hover, a:active {
+            color: #222;
+            text-decoration: none;
+        }
+        a:link, a:visited, a:active {
+            border-bottom: 1px solid #222;
+        }
+        a:hover {
+            border-bottom: 2px solid #222;
+        }
+
+        a img {
+            border:none;
+        }
+
+        a.img:link, a.img:visited, a.img:hover, a.img:active {
+            border-bottom: 0px ;
+        }
+
+        span {
+            white-space:nowrap;
+        }
+
+        footer {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50%;
+        }
+
+        footer span {
+            white-space: unset;
+        }
+
+        span.contact {
+            display: block;
+            font-size: x-small;
+            padding-top: 0.5em;
+        }
+
+    </style>
+    <meta property="og:image" content="https://workingcopyapp.com/img/twitter-card.png">
+    <meta property="og:video" content="https://youtu.be/B0lohq-ezWg">
+    <meta name="apple-itunes-app" content="app-id=896694807" affiliate-data="at=1000lHq">
+    <link rel="mask-icon" href="img/mask-icon.svg" color="#399CFC">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@workingcopyapp">
+    <meta name="twitter:site" content="@workingcopyapp">
+    <meta name="twitter:image" content="https://workingcopyapp.com/img/twitter-card.png">
+    <meta name="twitter:title" content="Working Copy">
+    <meta name="twitter:description" content="Access Git repositories on the go. Clone, edit, commit and push while taking advantage of iOS advancements allowing other apps to also access repositories.">
+    <meta name="twitter:app:name:iphone" content="Working Copy">
+    <meta name="twitter:app:id:iphone" content="896694807">
+    <meta name="twitter:app:name:ipad" content="Working Copy">
+    <meta name="twitter:app:id:ipad" content="896694807">
+
+    <style>
+        body {
+            font-size: 40px;
+        }
+
+        header {
+            position: relative;
+            max-width: 1023px;
+            width: 69%;
+            margin:0 auto;
+            padding-bottom: 5px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 125%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        div.summary {
+            display:inline;
+        }
+
+        header div {
+            margin: 0;
+            margin-bottom: 0.8em;
+            position: relative;
+        }
+
+        span {
+            white-space:nowrap;
+        }
+
+        #reviews div span img {
+            height: 2ex;
+        }
+
+        .preview {
+            position:relative;
+            width:85%;
+            max-width: 1252px;
+            margin: 0 auto;
+        }
+
+        .frame {
+            display: block;
+            position: absolute;
+            top:0;
+            width: 100%;
+            height: auto;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        #light-frame {
+            display: none;
+        }
+
+        #video {
+            position: absolute;
+            left: 3.4%;
+            top: 4.5%;
+            width: 93.44%;
+            float: left;
+            z-index: 1;
+        }
+
+        .preview > #placeholder {
+            position: relative;
+            width: 100%;
+            padding-bottom: 76.62%;   /* = frame.hei / frame.wid */
+        }
+
+        .download-button {
+            display: block;
+            border: 0 !important;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 5px;
+        }
+
+        /* 100% */
+        body {
+            font-size: 31px;
+        }
+        .download-button img {
+            height: 1.5em;
+        }
+
+        @media screen and (max-width: 1252px) { /* 80% */
+            body {
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 1002px) { /* 66% */
+            body {
+                font-size: 28px;
+            }
+        }
+
+        @media screen and (max-width: 835px) { /* 50% */
+            body {
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (max-width: 626px) { /* 40% */
+            body {
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (max-width: 501px) { /* 29% */
+            body {
+                font-size: 22px;
+            }
+        }
+
+        @media screen and (max-width: 363px) { /* 25% */
+            body {
+                font-size: 18px;
+            }
+        }
+
+        .features {
+            width: 100%;
+            font-size: 70%;
+            text-align: center;
+        }
+
+        .features div {
+            float: left;
+            width: 46%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 25px;
+        }
+
+        .features .cleareven {
+            clear: both;
+            width: 100%;
+        }
+        .features .clearthird {
+            display: none;
+            clear: none;
+        }
+
+        @media screen and (max-width: 400px) {
+            .features div {
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            .features .cleareven {
+                display: none;
+                clear: none;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            .features div {
+                width: 31%;
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+            .features .cleareven {
+                display: none;
+                clear: none;
+            }
+            .features .clearthird {
+                display: block;
+                clear: both;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 800px) and (min-width: 400px) {
+            .features div.last-feature {
+                margin-left: 27%;
+                margin-right: 27%;
+            }
+        }
+
+        .features div img {
+            width: auto;
+            height: 50px;
+        }
+
+        #hosting-services img {
+            margin-top:10px;
+            height: 40px;
+        }
+
+        .features div h3 {
+            margin:0;
+            margin-bottom: 0.2em;
+        }
+
+        .features div p {
+            color: #5a5a5a;
+            margin:0;
+        }
+
+        .features div a,
+        .features div a:link,
+        .features div a:visited,
+        .features div a:hover,
+        .features div a:active {
+            color: #5a5a5a;
+            border-color: #5a5a5a;
+        }
+
+        @media screen and (max-width: 400px) {
+            footer {
+                font-size: 50%;
+                padding-bottom: 20px;
+            }
+        }
+
+        .signup {
+            width: 100% !important;
+            font-size: 75%;
+            text-align: left;
+            display:none;
+        }
+
+        .signup form input {
+            font-size: 100%;
+            margin: 5px 0px;
+            padding-top: 7px;
+        }
+
+        .signup #status {
+            clear: both;
+        }
+
+        #email-field {
+            margin-right: 10px;
+        }
+
+        #status {
+            color: #555;
+            font-size: 75%;
+            display:none;
+            width: 100%;
+        }
+
+        .beta-button {
+            position: relative;
+            display: none;
+            right: 0;
+            bottom: 0;
+            margin: 5px;
+            float: right;
+            border: 0 !important;
+            font-size: 75%;
+        }
+
+        .beta-button:link {
+            text-decoration: none;
+        }
+
+        .beta-button span {
+            background-color: #FFA42D;
+            display: inline-block;
+            padding: 2px 5px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        a.beta-button:hover span {
+            background-color: #FFE859;
+            color: #333;
+        }
+
+        #product-hunt {
+            position: fixed;
+            z-index: 100;
+            bottom: 0;
+            right:-40em;
+            opacity: 0;
+            background-color: rgba(30, 30, 30, 0.75);
+        }
+
+        #product-hunt div {
+            color: #DA552F;
+            font-weight: 700;
+            font-size: smaller;
+        }
+
+        #product-hunt a:link,
+        #product-hunt a:hover,
+        #product-hunt a:visited,
+        #product-hunt a:active {
+            color: #DA552F;
+            border-bottom: 1px solid #DA552F;
+            white-space: nowrap;
+        }
+
+        #product-hunt a:hover {
+            border-bottom: 2px solid #DA552F;
+        }
+
+        #product-hunt div {
+            padding-left: 1em;
+            padding-top: 0.5em;
+        }
+
+        #product-hunt img {
+            float: right;
+            height: 3em;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #060F19;
+                background: linear-gradient(#060F19, #000000);
+                color: #ddd;
+            }
+
+            a:link, a:visited, a:hover, a:active {
+                color: #ccc;
+                border-color: #ccc;
+            }
+            a:link, a:visited, a:active, a:hover {
+                border-color: #ccc;
+            }
+
+            .features div p,
+            .features div a,
+            .features div a:link,
+            .features div a:visited,
+            .features div a:hover,
+            .features div a:active {
+                color: #9a9a9a;
+                border-color: #9a9a9a;
+            }
+
+            #reviews {
+                color: #ddd;
+                background-color: rgba(255,255,255, 0.1);
+            }
+         }
+
+    </style>
+    <script>
+        function rev(s) { return s.length <= 1 ? s : rev(s.substr(1)) + s.substr(0,1); }
+
+        function showStatus(status) {
+            $('#status').text(status);
+            $('#status').delay(300).slideDown(400, function() {
+                $('html, body').animate({
+                    scrollTop: $("#status").offset().top
+                }, 400);
+            });
+        }
+
+        function submitEmail(email) {
+            var post = $.post("/signup.php", { "email": email} )
+                    .done(function() {
+                        $('.signup').slideUp(300, function() {
+                            showStatus("You have signed up with " + email + " for beta-testing. Thank you!");
+                            //showStatus("You have signed up with " + email + " for beta-testing. I am working on the next beta and you will receive a TestFlight email from Apple as soon as this is ready.");
+                        });
+                    })
+                    .fail(function() {
+                        showStatus("Signup problem: " + post.responseText);
+                    });
+        }
+
+        function signUp(evt) {
+            var signup = $('.signup');
+
+            if(signup.is(":visible")) {
+                signup.slideUp(200);
+            } else {
+                signup.slideDown(400, function() {
+                    var field = document.getElementById('email-field');
+                    field.focus();
+                });
+
+                $('html, body').animate({
+                    scrollTop: $("#testflight-signup").offset().top
+                });
+            }
+
+            return false;
+        }
+
+        function preSignUp(evt) {
+            $('html, body').animate({
+                scrollTop: $("#testflight-signup").offset().top
+            }, 500, function() {
+                signUp();
+            });
+
+            return false;
+        }
+
+        function doSubmit() {
+            var field = document.getElementById('email-field');
+            var email = field.value.trim();
+            if(email.length == 0) {
+                $('.signup').slideUp();
+            } else {
+                submitEmail(email);
+            }
+            return false;
+        }
+
+        var reviewTimer = null;
+        function scheduleNextReview() {
+            if(reviewTimer) clearTimeout(reviewTimer);
+
+            var current = $('#reviews > div:visible')[0];
+            var text = current.textContent ? current.textContent : current.innerText;
+            var words = text.length / 7.0; // assume avg. 7 chars per word, since we include space
+            var timeout = 2000 + words * 60000 / 150; // assume 150 words / minute
+            reviewTimer = setTimeout(showNextReview, timeout);
+        }
+
+        function pickRandomReview() {
+            // get all review blocks
+            var reviews = $('#reviews > div');
+            var index = Math.floor(Math.random() * reviews.length - 0.0001);
+            var random = reviews[index];
+
+            var current = $('#reviews > div:visible')[0];
+            if(current) {
+                $(current).hide(0);
+                $(random).show(0);
+            }
+        }
+
+        function showNextReview() {
+            if(reviewTimer) clearTimeout(reviewTimer);
+            reviews = null;
+
+            // get all review blocks
+            var reviews = $('#reviews > div');
+
+            // determine which one is visible currently
+            var current = $('#reviews > div:visible')[0];
+
+            // pick the next one to make visible
+            var index = 0;
+            for(var k = 0; k < reviews.length; ++k) {
+                if(reviews[k] == current) index = k;
+            }
+            var next = reviews[(index + 1) % reviews.length];
+
+            // animate such that previously shown is hidden and next one is shown
+            $(next).show(400, function() {
+                $(current).hide(400, function() {
+                    scheduleNextReview();
+                });
+            });
+        }
+
+        (function() {
+            function getScript(url,success){
+                var script=document.createElement('script');
+                script.src=url;
+                var head=document.getElementsByTagName('head')[0],
+                        done=false;
+                script.onload=script.onreadystatechange = function(){
+                    if ( !done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') ) {
+                        done=true;
+                        success();
+                        script.onload = script.onreadystatechange = null;
+                        head.removeChild(script);
+                    }
+                };
+                head.appendChild(script);
+            }
+
+            getScript('js/jquery-1.12.4.min.js',function(){
+                // every ten seconds or when tapped, we change review
+                pickRandomReview();
+                scheduleNextReview();
+                $('#reviews > div').click(function() {
+                    showNextReview();
+                });
+                $('#reviews > div').css('cursor', 'pointer');
+
+                $("#more").click(function (evt) {
+                    $('html, body').animate({
+                        scrollTop: $("#features").offset().top
+                    }, 1000);
+                });
+
+                var hash = window.location.hash;
+                if(hash) {
+                    // redirect to users manual when there is #help or #manual
+                    if(hash.indexOf('#help') >= 0 || hash.indexOf('#manual') >= 0) {
+                        window.location.href = '/manual.html';
+                    }
+
+                    // start beta signup if #become-tester is present
+                    if(hash.indexOf('#become-tester') >= 0) {
+                        setTimeout(signUp, 500);
+                    }
+
+                }
+
+                var email = document.getElementById("email");
+                email.href = "mailto:" + rev("moc.ppaypocgnikrow@sredna");
+
+                /* $('#product-hunt').delay(1.1).animate({"right":"0", "opacity": "1"}, 1000);
+
+                $('#product-hunt').click(function() {
+                    $(this).animate({"opacity": "0", "right":"-40em"});
+                })*/
+            });
+        })();
+
+    </script>
+</head><body><div>
+<a href="https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;uo=6&amp;at=1000lHq&amp;ct=workingcopyapp" target="itunes"
+   title="Download on the App Store" class="download-button"><img src="img/download-on-the-app-store.png" /></a>
+<div itemscope itemtype="http://schema.org/SoftwareApplication">
+    <header>
+        <h1 itemprop="name">Working Copy</h1>
+        <div>
+            <div class="summary" itemprop="description">the powerful Git client for
+                <span itemprop="operatingSystem">iOS</span>
+                that clones, edits, commits,
+                pushes &amp; <a id="more" href="index.html#">more</a>.
+            </div>
+            <a onclick="return preSignUp();" href="index.html#" class="beta-button"><span>Sign-Up</span></a>
+            <div style="clear: both;"></div>
+        </div>
+    </header>
+    <div class="preview">
+        <div id="placeholder"></div>
+        <img class="frame" src="img/video-frame-overlay@2x.png"
+             srcset="img/video-frame-overlay@2x.png 1020w, img/video-frame-overlay.png 510w"
+             alt="Working Copy on iPad Air clones a Git repository which is edited
+             with Textastic and committed." />
+        <video id="video" itemprop="video" controls="" preload="auto" autoplay="" muted="true"
+               webkit-playsinline="true" playsinline="true"
+               poster="img/working-copy-poster-18@2x.jpg" itemscope itemtype="http://schema.org/VideoObject">
+            <meta itemprop="uploadDate" content="2018-23-02T12:50:00+02:00"/>
+            <source src="video/frontpage-18.webm" type="video/webm">
+            <source src="https://workingcopy.app/video/frontpage-18.mp4" type="video/mp4">
+            <div itemprop="description" style="margin: auto; z-index: 1; width: 60%; font-size: 70%; text-align: center">
+                <a title="Watch video of Working Copy in action." href="https://workingcopy.app/video/frontpage-18.mp4">Working Copy
+                    clones a Git repository which can then be edited
+                    with Textastic, previewed and committed. Next the Files app is used to open a Playground from Git.</a></div>
+        </video>
+    </div>
+    <div class="features" id="features">
+        <div>
+            <img alt="Shortcuts app icon" src="img/shortcuts-app.png"/>
+            <h3>Git Shortcuts</h3>
+            <p>Use <a href="manual/index.html#shortcuts">Shortcuts</a> and
+                   <a href="url-schemes.html#x-callback-url">x-callback-url</a> for automation.</p>
+        </div>
+        <div>
+            <img alt="iOS 14 icon" src="img/iOS-14.png"/>
+            <h3>iOS 14 capable</h3>
+            <p>Support for <a href="manual/index.html#dragdrop">Drag and Drop</a> and
+                the <a href="manual/index.html#extending-ios">Files app</a>.</p>
+        </div>
+        <div class="cleareven"></div>
+        <div>
+            <img alt="magnifying glass" src="img/search.png"/>
+            <h3>Search repositories</h3>
+            <p>Navigate by <a href="manual/index.html#search">querying</a> filenames, symbols or text occurrences.</p>
+        </div>
+        <div class="clearthird"></div>
+        <div id="hosting-services">
+            <img alt="GitHub Octomark" src="img/octocat.png"/>
+            <img alt="GitHub Octomark" src="img/gitlab.png"/>
+            <img alt="BitBucket logo" src="img/bitbucket.png"/>
+            <h3>Hosting Services</h3>
+            <p><a href="manual/index.html#clone-catalog">Lists</a> your repositories on GitHub &amp;
+                <a href="manual/index.html#hosting-provider">many</a> other services.</p>
+        </div>
+        <div class="cleareven"></div>
+        <div>
+           <img alt="GPG icon" src="img/gnupg.png"/>
+           <h3>Signed Commits</h3>
+           <p>Take part in secure workflows by
+               <a style="white-space: nowrap" href="manual/index.html#signed-commits">GPG signing</a> commits.</p>
+       </div>
+        <div>
+            <img alt="Two nodes merged to one." src="img/merge.png"/>
+            <h3>Resolve Tool</h3>
+            <p>Fix merge &amp; rebase <a href="manual/index.html#resolve-tool">conflicts</a> with speed and safety.</p>
+        </div>
+        <div class="cleareven"></div>
+        <div class="clearthird"></div>
+        <!-- <div>
+            <img alt="GPG icon" src="img/gnupg.png"/>
+            <h3>Signed Commits</h3>
+            <p>Take part in secure workflows by
+                <a style="white-space: nowrap" href="/manual.html#signed-commits">GPG signing</a> commits.</p>
+        </div>-->
+        <div>
+            <img alt="Git Large File Storage icon" src="img/LFS.png"/>
+            <h3>Large File Storage</h3>
+            <p>Use Git LFS to efficiently handle videos and other
+               huge assets.</p>
+        </div>
+
+        <div>
+            <img alt="HTML" src="img/html.png"/>
+            <h3>Web IDE</h3>
+            <p>HTML <a href="manual/index.html#preview">Preview</a> with Javascript console.</p>
+        </div>
+        <div class="cleareven"></div>
+        <div class="last-feature">
+            <img alt="Airplane mode" src="img/airplane.png"/>
+            <h3>Work Offline</h3>
+            <p><a href="manual/index.html#cloning-repos">Clone</a> repositories making them fully
+                available even when offline.</p>
+        </div>
+        <!-- <div class="last-feature">
+            <img id="testflight-signup" alt="Working Copy icon" src="img/icon-stylized.png"/>
+            <h3>Become a tester</h3>
+            <p>Working Copy is in rapid development. <a onclick="return signUp();" href="#">Get</a> the beta.</p>
+            <div class="signup">
+                <form method="post" action="#" onsubmit="return doSubmit();">
+		       <span><input id="email-field" name="email" type="email" autocapitalize="off"
+                            autocorrect="off" placeholder="email address">
+  			   <a href="#" onclick="return doSubmit();">Submit</a></span>
+                </form>
+                <p>Your email address is used to send you a invitation through Apple TestFlight and
+                    will not be used for anything else.</p>
+            </div>
+            <div id="status"></div>
+        </div>-->
+
+        <div style="clear: both;"></div>
+    </div>
+    <span itemprop="aggregateRating" itemscope="itemscope" itemtype="http://schema.org/AggregateRating">
+     <meta content="4.7" itemprop="ratingValue">
+     <meta content="5.0" itemprop="bestRating">
+     <meta content="1.0" itemprop="worstRating">
+     <meta content="142" itemprop="ratingCount">
+    </span>
+</div>
+<div style="clear: both"> </div>
+<footer>
+    Read the <a href="manual/index.html">users’ guide</a> or the <a href="javascript:newsletterSignup()">newsletter</a> and get in touch by <a href="enable-js.html" id="email" title="email">email</a>
+    or on <a href="https://twitter.com/workingcopyapp" target="twitter">Twitter</a>.
+</footer>
+<div id="reviews">
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>
+        <h4> Lygre421: <span>Amazing mobile git client </span></h4>
+        <p>
+            I’ve used this app for years with its Pro features unlocked near the beginning.
+            Eventually some pro features are not unlocked with my original purchase,
+            but all of the important ones are which I greatly appreciate. Just want to mention
+            again how useful I find this app.</p>
+    </div>
+    <div>
+        <h4>Federico Viticci: <span><a href="https://www.macstories.net/stories/working-on-the-ipad-one-year-later-still-my-favorite-computer/" target="article">Working on the iPad</a></span></h4>
+        <p>For the past two months, we've been using GitHub and Working Copy to
+            share, edit, and commit changes to Markdown files; combined with Split View and document providers on iOS,
+            this setup fits my workflow quite nicely.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>
+        <h4>pixelthing: <span>In a class of one</span></h4>
+        <p>Probably not just the best all-round git client on iOS, but the best part of your
+            development toolchain of any type on iOS.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>furtab:
+        <span>Completely blown away</span></h4>
+        <p>I’ve been using the app for over a year. I just found the image difference view with split view cut view and color glow.
+            Oh. My. God. You mean to tell me that from one place I can edit files, see history, globally search,
+            visually compare changes (Even in images), and remotely push and PR to the Git server?
+            WHY IS THIS ONLY $16 and $8 A YEAR after that?! this beats the SNOT out of stuff
+            I’ve seen charged $50 and $100 a year on the desktop!</p>
+        <p>If you’re on the fence about whether you should pay $16 because you see every other app going 99 cents or
+            bust—think more in terms of how much time this elegantly designed app will save you. How much do you value
+            your time? Will this app save you time? Do it. JUST. DO IT. DON’T LET YOUR DREAMS BE DREAMS</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>Jason Tate: <span>Incredible</span></h4>
+        <p>Truly one of my must have apps. The first time you use it and see what you can do on iOS now is a jaw dropping moment.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>
+        <h4>Tohuw: <span>An Astoundingly Good Git Client</span></h4>
+        <p>This app is an excellent Git client, and I don't mean just excellent for iOS. </p>
+        <p>  It's interface is relatively intuitive,
+            my only minor complaint being that it took me a few moments to figure out that tapping the remote
+            name is where to go to fetch and such. I'm sure the help covers that, but I like to see if an app
+            can successfully be navigated by intuition alone – the classic Apple test. Committing and pushing works
+            flawlessly, gracefully handling conflicts and merges.</p>
+        <p> It's a joy to use. I'd buy an OS X version if one existed;
+            this is a Git UI as it should be. It's remarkable that I can fully work with files, send them to other
+            iOS apps to work on there, then send them back to Working Copy seamlessly, even if I'm working on
+            multiple versions of the same file. </p>
+        <p>In an era of barely-tested, poorly thought-out apps,
+            this is a stellar exception of a well-designed product with distinct marks of a great QA process. Well done!</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>
+        <h4>Anthony Colangelo: <span>Mission-critical software on iOS</span></h4>
+        <p>Absolutely incredibly well-built app that I can’t live without.</p>
+        <p>For everything from writing, to coding, to deploying changes via a remote repo,
+            Working Copy is a must-have app.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>
+        <h4>ThinGrip: <span>Excellent!</span></h4>
+        <p>This app is excellent, and the support from the developer is superb!</p>
+    </div>
+    <div>
+        <h4>sketchyTech: <span><a href="http://sketchytech.blogspot.dk/2015/07/github-on-your-ipad-working-copy-app.html" target="review">GitHub on your iPad: Working Copy App Review</a></span></h4>
+        <p>The app is billed as a "a powerful Git client for iOS 8 that clones, edits, commits, pushes &amp; more". There is nothing in this statement that it doesn't live up to.
+            If you're looking for something to work with GitHub on the move then I can highly recommend. Is it worth the money? Definitely.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>Plavaacek: <span>Best Git client!</span></h4>
+        <p>I use it daily to review new code in GitHub Enterprise repositories.
+            The best feature for me is that I can use it offline without a need to be connected to the VPN.
+            Viewing of files is easier than on GitHub thanks to better syntax highlighting.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>
+        <h4>onesoupdaloop: <span>Best Git client for iOS, hands down.</span></h4>
+        <p>This app is by far the best Git client for iOS. The features are extremely diverse, ranging from syntax
+            coloring and in-app code editing (HEX DUMPS TOO) to full-featured repository committing and cloning from
+            online repositories on Github, Bitbucket, and more. I paid the $10 for permanent push to remote servers,
+            and I don't regret it.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>snhubba: <span>THANK YOU</span></h4>
+        <p>Just thank you. I used to see my iOS devices as incapable of anything other than "emergency" edits (usually directly on a server).
+            Not anymore. I can make large contributions to projects, write new features, and with the right complimentary setup,
+            get near realtime feedback on my code through a test server after making a commit. So cool.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>Papiex: <span>Fantastyczna</span></h4>
+        <p>Robi robotę</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>Jonathan.Muth: <span>It's Git in your pocket.</span></h4>
+        <p>Working Copy makes keeping track of your Git repositories a breeze. </p>
+        <p>  The app is so well designed that I prefer it over the GitHub's web-interface when familiarizing myself with a new code-base.
+            And let me tell you: It works extremely well in bed as well. </p>
+        <p>   Alas: Working Copy now contains my evening lecture in addition to all the source code I would not want to go missing. </p>
+        <p>  An all around great app.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>z4ndr3i: <span>Manage Git and GitHub Repos</span></h4>
+        <p>For those of us who don't work exclusively with GitHub this is just awesome. </p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>feoh: <span>I have been dreaming of this app for years!</span></h4>
+        <p>I have been yearning for a way to commit and push to Github for years.</p>
+        <p>The app id's solid and lets me use whatever editor I want to create my content.</p>
+        <p>My mobile development and blogging dreams have come true!</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>         <h4>uxjulia: <span>Finally!</span></h4>
+        <p>This app is EXACTLY what I've been looking for. I can easily connect to my bitbucket account,
+            clone repos, commit and push changes right from my phone using third party apps that are already a part of my workflow.
+            I use this with Textastic and Ulysses to post to and tweak my Jekyll blog from my iPhone and iPad, wherever I may be.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>         <h4>Lift the Camel: <span>Great Git App!</span></h4>
+        <p>This app is perfect for accessing your Git repositories on the go! It allows me to add my iPhone and iPad into my daily workflow.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>ci0: <span>Perfect</span></h4>
+        <p>If Apple were to write a git client, it would look like this. Well done.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span>         <h4>meclizine50mg: <span>iOS Great job, and Thank you</span></h4>
+        <p>Working Copy + Bitbucket repository cloning + Textastic! This significantly improves my coding
+            lifestyle: I can relax with my iPad anywhere and even work on non-interface parts of iOS projects
+            without screwing up version management by relying on DropBox or iCloud filesaving. So far everything is working smoothly,
+            probably because the developer is an active user of this app himself.</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>Futurix: <span>Fantastic!</span></h4>
+        <p>Extremely useful for monitoring / managing my projects on the go (I'm using both iPhone 6+ and iPad).</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>Miguel_E_H: <span>Excelente aplicación</span></h4>
+        <p>Con un diseño sencillo y funcional, es una aplicación indispensable para cualquier desarrollador con dispositivos iOS.</p>
+        <p> La inclusión de funciones de iOS 8 permite que se editen los archivos de los repositorios con cualquier aplicación externa
+            (que sea compatible con el file picker).</p>
+    </div>
+    <div>
+        <span><img alt="5 stars" src="img/5-stars.png" srcset="img/5-stars@2x.png 206w, img/5-stars.png 103w" /></span> <h4>llllllooollllll: <span>Einfach GENIAL!!!</span></h4>
+        <p>Bin wirklich sehr begeistert, als Programmierer kann ich geleistetes Arbeit nur loben, weiter so.</p>
+    </div>
+</div>
+<!--[if lt IE 7 ]>
+<script src="js/dd_belatedpng.js"></script>
+<script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb</script>
+<![endif]-->
+<script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+    // clear cookie since popup is activated by click instead of timer
+    document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
+    // newsletter signup when ?newsletter is present
+    function newsletterSignup() {
+        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"650f24a8eda4be09fddf370d7","lid":"c1eccfd902"}) })
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    }
+
+    function gup( name, url ) {
+        if (!url) url = location.href;
+        name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+        var regexS = "[\\?&]"+name+"=([^&#]*)";
+        var regex = new RegExp( regexS );
+        var results = regex.exec( url );
+        return results == null ? null : results[1];
+    }
+
+    function adjustAppStoreLink() {
+        var ct = gup("ct", window.location.href);
+        if(!ct) return;
+
+        var anchor = document.getElementsByClassName('download-button')[0];
+        anchor.href = 'https://itunes.apple.com/app/apple-store/id896694807?pt=15897&ct=' + ct + '&mt=8';
+    }
+
+    if(window.location.href.indexOf('?newsletter') >= 0) newsletterSignup();
+    if(window.location.href.indexOf('ct=') >= 0) adjustAppStoreLink();
+</script>
+</div></body>
+</html>

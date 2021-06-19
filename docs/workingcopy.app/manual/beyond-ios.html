@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Working Copy - Users Guide - Beyond iOS</title>
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <meta name="author" content="Anders Borum">
+    <meta name="keywords" content="iOS,git,repository,programming,automation,workflow,x-callback-url,WebDAV">
+    <meta name="apple-itunes-app" content="app-id=896694807">
+    <link rel="mask-icon" href="../img/mask-icon.svg" color="#399CFC">
+    <link rel="stylesheet" type="text/css" href="../css/style7.css">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://workingcopyapp.com/img/users-guide-open-graph.jpg">
+    <meta property="og:description" content="Not every tool is available on iOS, and Working Copy lets you use remote computers to work on the files in your repositories. Git remotes can be configured to perform operations at Push or you can use secure-shell to upload files to remote server and invoke commands.  ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@workingcopyapp">
+    <meta name="twitter:creator" content="@workingcopyapp">
+    <meta name="twitter:image" content="https://workingcopyapp.com/img/users-guide-twitter.jpg">
+    <meta name="twitter:title" content="Working Copy - Users Guide - Beyond iOS">
+    <meta name="twitter:description" content="Not every tool is available on iOS, and Working Copy lets you use remote computers to work on the files in your repositories. Git remotes can be configured to perform operations at Push or you can use secure-shell to upload files to remote server and invoke commands.  ">
+    <script>
+        // redirect /manual/section-name to manual.html#section-name
+        var pathname = window.location.pathname;
+        if(pathname.indexOf("/manual/") == 0 && !window.location.hash && pathname.indexOf("/manual.html") < 0) {
+            var section = pathname.substr("/manual/".length).replace(/\/+$/, "");
+            window.location = window.location.protocol + "//" + window.location.host + "/manual.html#" + section;
+        }
+    </script>
+    <script>
+        function imgLoaded(img) {
+            img.parentNode.style.background = 'transparent';
+        }
+    </script>
+    <style>
+    #second-intro-image {
+       display: none;
+    }
+
+    @media print, (min-width: 640px) {
+        #table-of-contents {
+            padding-top: 1em;
+            column-count: 2;
+        }
+
+        li.header2 {
+            break-inside: avoid-column;
+            -moz-column-break-inside:avoid;
+            -moz-page-break-inside:avoid;
+            page-break-inside: avoid;
+        }
+
+        #first-intro-image {
+            display: none;
+        }
+
+        #second-intro-image {
+            display: block;
+        }
+    }
+    </style>
+</head><body>
+<header>
+    <h1 itemprop="name"><a href="../index.html">Working Copy</a>
+                        <div class="subhead">Users’ guide</div></h1>
+</header>
+<div class="full" class="intro-image" id="first-intro-image">
+    <img src="../img/action-shot-71-800.jpg" style="width: 100%"
+         srcset="../img/action-shot-71-800.jpg 800w, ../img/action-shot-71-1200.jpg 1200w, ../img/action-shot-71-2000.jpg 2000w"/>
+</div>
+<div class="outer" id="table-of-contents">
+    <div class="inner"><nav>
+        <ul class="toc">
+            <li class="header2"><a href="introduction.html">1. Introduction:</a>
+                <ul>
+                    <li class="header3"><a href="cloning-repos.html">1.1 Cloning repositories</a></li>
+                    <li class="header3"><a href="accessing-files.html">1.2 Accessing files</a></li>
+                    <li class="header3"><a href="committing-changes.html">1.3 Committing changes</a></li>
+                    <li class="header3"><a href="up-to-date.html">1.4 Staying up-to-date</a></li>
+                    <li class="header3"><a href="repository-sheet.html">1.5 Repository actions</a></li>
+                    <li class="header3"><a href="deleting-repos.html">1.6 Deleting repositories</a></li>
+                </ul>
+            </li>
+
+            <li class="header2"><a href="remotes.html">2. Remotes:</a>
+                <ul>
+                    <li class="header3"><a href="clone-catalog.html">2.1 Clone catalog</a></li>
+                    <li class="header3"><a href="ssh-keys.html">2.2 SSH keys</a></li>
+                    <li class="header3"><a href="ssh-troubleshooting.html">2.3 SSH Troubleshooting</a></li>
+                    <li class="header3"><a href="heruko-remotes.html">2.4 Heroku Remotes</a></li>
+                    <li class="header3"><a href="aws-codecommit.html">2.5 AWS CodeCommit</a></li>
+                    <li class="header3"><a href="glitch.html">2.6 Glitch</a></li>
+                    <li class="header3"><a href="hosting-provider.html">2.7 Hosting Providers</a></li>
+                    <li class="header3"><a href="access-tokens.html">2.8 Access Tokens</a></li>
+                </ul>
+            </li>
+
+            <li class="header2"><a href="viewing-editing.html">3. Viewing and editing:</a>
+                <ul>
+                    <li class="header3"><a href="edit.html">3.1 Text Editing</a></li>
+                    <li class="header3"><a href="preview.html">3.2 Preview</a></li>
+                    <li class="header3"><a href="search.html">3.3 Search and navigation</a></li>
+                    <li class="header3"><a href="file-changes.html">3.4 File changes</a></li>
+                </ul>
+            </li>
+
+            <li class="header2"><a href="commit-revert.html">4. Committing or reverting:</a>
+                <ul>
+                    <li class="header3"><a href="commit-history.html">4.1 Commit history</a></li>
+                    <li class="header3"><a href="branching.html">4.2 Branches</a></li>
+                    <li class="header3"><a href="branch-editing.html">4.3 Branch Editing</a></li>
+                    <li class="header3"><a href="pull-requests.html">4.4 Pull Requests</a></li>
+                    <li class="header3"><a href="commit-graph.html">4.5 Commit Graph</a></li>
+                    <li class="header3"><a href="resolve-tool.html">4.6 Resolving conflicts</a></li>
+                    <li class="header3"><a href="signed-commits.html">4.7 Signed Commits</a></li>
+                    <li class="header3"><a href="tagging.html">4.8 Tagging</a></li>
+                    <li class="header3"><a href="stashing.html">4.9 Stashing changes</a></li>
+                </ul>
+            </li>
+
+            <li class="header2"><a href="extending-ios.html">5. Extending iOS:</a>
+                <ul>
+                    <li class="header3"><a href="dragdrop.html">5.1 Drag and Drop</a></li>
+                    <li class="header3"><a href="saving.html">5.2 Saving to Working Copy</a></li>
+                    <li class="header3"><a href="edit-in-app.html">5.3 Edit in App</a></li>
+                    <li class="header3"><a href="files-sync.html">5.4 Files synchronisation</a></li>
+                    <li class="header3"><a href="webdav-server.html">5.5 WebDAV access</a></li>
+                    <li class="header3"><a href="shortcuts.html">5.6 Shortcuts and automation</a></li>
+                    <li class="header3"><a href="callbacks.html">5.7 Callback URLs</a></li>
+                    <li class="header3"><a href="draftcode.html">5.8 DraftCode</a></li>
+                    <!--<li class="header3"><a href="/manual/swift-playgrounds">5.8 Swift Playgrounds</a></li>-->
+                </ul>
+            </li>
+
+            <li class="header2"><a href="beyond-ios.html">6. Beyond iOS:</a>
+                <ul>
+                    <li class="header3"><a href="logfiles.html">6.1 Log files</a></li>
+                    <li class="header3"><a href="ssh-upload.html">6.2 SSH Upload</a></li>
+                    <li class="header3"><a href="ssh-command.html">6.3 SSH Command</a></li>
+                </ul>
+            </li>
+
+            <li class="header2"><a href="support.html">7. Help and Support</a>
+                <ul>
+                    <li class="header3"><a href="file-backup.html">7.1 File Backup</a></li>
+                    <li class="header3"><a href="purchase.html">7.2 How to purchase</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav></div>
+</div>
+<div class="full" class="intro-image" id="second-intro-image">
+ <img src="../img/action-shot-71-800.jpg" style="width: 100%"
+      srcset="../img/action-shot-71-800.jpg 800w, ../img/action-shot-71-1200.jpg 1200w, ../img/action-shot-71-2000.jpg 2000w"/>
+</div>
+<div class="outer">
+    <h2 id="introduction">1. Introduction</h2>
+    <div class="inner">
+        <p><a href="../index.html">Working Copy</a> is a full featured Git client for iOS and since Git is a powerful version-control system it can take some time to master.
+            The same is true for Working Copy, and even though you will not need to work with the command-line, some understanding of Git is needed.
+            If you are not confident with Git's core concepts you should read the first few chapters of 
+            <a target="reference" href="http://git-scm.com/book/en/v2">Pro Git</a> by Scott Chacon or the
+            excellent <a target="reference" href="https://www.atlassian.com/git/tutorials/">tutorials</a>
+            Atlassian has made available.</p>
+
+        <h3 id="cloning-repos">1.1 Cloning repositories</h3>
+        <div class="left">
+         <img class="animated" onload="imgLoaded(this)" src="../img/clone-77.png"
+              alt="Video showing cloning on phone: User presses + in the upper right corner and picks clone. Picks protocol, types username, hostname and path on the Other tab. Picks repository from list on GitHub tab. Presses Clone to start transfer. When cloning completes the repository contents are shown."
+         />
+        </div>
+        <p>The first step is to get hold of a local copy of the Git repositories you want to access.
+            Duplicating a repository from a remote server is
+            known as cloning, and you do this by pressing + on the list of repositories.</p>
+        <p>You provide a URL pointing to a repository on the Git remote you wish to clone from.
+            Working Copy can transfer data from the remote using http, https, git or ssh protocols. However, you should be careful
+            using http transfer since data will be sent without encryption, which means your login credentials and your source
+            code can be intercepted. If you are not on a trusted network you should avoid using http transfer.</p>
+        <p id="hosting-services">There is special support for BitBucket, GitHub and some other <a href="hosting-provider.html">hosting
+            providers</a> to list your available repositories such that cloning amounts to picking a repository and tapping clone.
+            Even when Working Copy has no specific support for a hosting provider, you can copy-paste your
+            URL into the top field and Working Copy will clone just as well. </p>
+        <p id="itunes-import">You can also import repositories from a Mac or PC by dragging directories into iTunes Document lists.
+            If the directory does not contain a .git subdirectory at top-level, Working Copy assumes you want a new repository with
+            all these files added. Zip-files can also be dragged into iTunes.</p>
+
+    </div><div class="inner">
+
+    <div class="right"><img src="../img/css-content-45-transparent.png" onload="imgLoaded(this)" /></div>
+    <h3 id="accessing-files">1.2 Accessing files</h3>
+    <p>Data in Working Copy is organized as repositories, containing directories, which themselves contain
+        either sub-directories or files.
+        Tapping a file shows the file content, the changes to the file and the status of the file.</p>
+
+    <p>File content is shown with syntax highlighting for sourcecode and a preview of html and document files.
+       To edit you will need to switch away from Preview mode with the button at the top showing your current mode.
+        Tap the action-button in the upper-right corner to send the file to other applications such as Mail
+        through a share sheet.</p>
+
+    <p>The editing inside Working Copy is bare-bones and neutral in that
+        neither programming languages, markdown nor regular text
+        files get special treatment. If you are performing heavy editing consider using a
+        specialized text-editor app for programming, markdown or other purposes.
+        You can read <a href="extending-ios.html">more</a> about using Working Copy in combination
+        with other applications.</p>
+
+    <p>To copy files tap and hold to show a context menu, pick <em>Copy</em>, then navigate to the destination directory
+        and press <em>+</em> in the upper right corner to insert <em>File from clipboard</em>.
+        Move files and directories by
+        <a target="iPad-guide" href="https://support.apple.com/guide/ipad/drag-and-drop-ipadaa83b207/ios">dragging</a>
+        them around directory listings. </p>
+
+</div><div class="inner">
+
+    <h3 id="committing-changes">1.3 Committing changes</h3>
+    <div class="left"><img src="../img/commit-sheet-32-transparent.png" onload="imgLoaded(this)" /></div>
+    <p>When you have file modifications the Changes tab lights up. You can see what has been added in green and what has
+        been deleted in red. If you are satisfied with the changes you can commit
+        them to the repository with a button on the Status tab.
+        A faster way, however, is to swipe left on the file in the directory listing.
+        Swiping left can generally be performed on lists of files,
+        directories and repositories allowing convenient access to frequent actions.</p>
+
+    <p>You can commit a single file, multiple files or the entire repository at once, and it is considered good practice to make a
+        commit represent one conceptual change to your repository. Following this practice also makes it easier to come up with concise
+        yet descriptive commit messages.
+    </p>
+
+    <p>Word suggestions are shown above the keyboard when writing your commit message. Suggestions are based on
+       the filenames and changes you are about to commit, as well as previous commit messages in the same repository.
+       This is combined with frequently used sentences in commit messages in public repositories. No information
+        from your commits or repository is collected to make this happen. </p>
+
+    <p>The list of files include everything that can be committed. You tap files to stage or unstage for commit
+       and the rightmost button shows the difference for this particular file between working directory and
+        last commit. When looking at differences you can stage/unstage individual hunks by
+        long-tapping and swiping making it possible to commit some changes in a file but leave others uncommitted.
+         </p>
+
+    <p id="push-feature">When you have made one or more commits your on-device repository is seen as being ahead of the remote repository
+        and you <em>push</em> these commits to the remote. Because <em>Commit</em> and <em>Push</em> are distinct
+        actions you can <em>Commit</em> while offline and <em>Push</em> once you get back online.</p>
+
+    <p>To <em>Push</em> after <em>Commit</em> tap and hold a repository and <em>Push</em> from the context menu.
+        You need to <a href="purchase.html">unlock</a> the ability to <em>Push</em> with an in-app purchase.</p>
+
+</div>
+    <div class="inner">
+        <h3 id="up-to-date">1.4 Staying up-to-date</h3>
+        <div class="right"><img class="right" src="../img/status-79-transparent.png" onload="imgLoaded(this)" /></div>
+
+        <p>Commits can be pushed to the remote from many sources.
+            Other people contribute their work, or you could be doing something
+            on a regular computer or another iOS device which results in commits that end up on the remote. </p>
+
+        <p>You get commits back into Working Copy through a two-step process where you <em>Fetch</em> and <em>Merge</em>.
+            <em>Fetch</em> reads commits from the
+            server and requires a network connection. The commits will not be integrated with the local data on your device until
+            you <em>Merge</em>, which will combine the new commits from the server with your local data. </p>
+
+        <p>You can pull the list of repositories down to <em>Fetch</em> for all your repositories. If any of your
+           repositories received new commits you will be able to <em>Merge</em> all these repositories with a
+           single tap.</p>
+
+        <p>Sometimes data cannot be automatically combined because your local changes conflict with the changes from the
+            commits fetched. These conflicts can be resolved by manually editing files and picking the wanted parts
+            from the conflict markers and tapping the Resolve button. A faster solution is to use the
+            <a href="resolve-tool.html">Resolve</a> tool that lets you resolve conflicts for many files at once.</p>
+
+        <p>Performing a <em>Fetch</em> followed by a <em>Merge</em> is called <em>Pull</em>. On the remote detail screen
+            you can <em>Fetch</em>, then <em>Merge</em> and finally <em>Push</em> with the <em>Sync</em> button.</p>
+
+        <p id="rebase-pull">You can configure repositories to <em>Rebase</em> instead of <em>Merge</em> commits
+            from the Configuration page inside Repository status.
+            This is a pro configuration available to users that purchased or upgraded their
+            <a href="purchase.html">pro unlock</a> on October 17, 2018 or later.</p>
+
+        <h3 id="repository-sheet">1.5 Repository actions</h3>
+        <img style="width: 100%; z-index: -1;" src="https://workingcopy.app/manual/beyond-ios/img/iPad-navbar-buttons.png" />
+        <div class="left" style="margin-top: -50px;"><img class="left" src="../img/status-sheet.png" onload="imgLoaded(this)" /></div>
+        <p>
+            To make it easier to perform important actions
+            a floating fingerprint button is available in the lower right corner on iPhone.
+            This button opens a repository status sheet with easy
+            access to <em>Commit</em>, <em>Revert</em>, <em>Fetch</em>, <em>Pull</em> &amp; <em>Push</em>
+            and lists modified files.
+        </p>
+        <p>
+            On iPads with sufficient screen space these repository actions are available at the
+            top of the screen without the need to open any sheet. It gets easier to remember what
+            each button does when you realise the icons are used on the status sheet and in context menus
+            as well.
+        </p>
+        <p>
+            On iPad the fingerprint button can be dragged into a new window to show the repository status sheet
+            and since this displays modified files and updates as files change,
+            it can be very useful while using external editors such as Textastic.
+        </p>
+        <p>
+            You can tap and hold this floating button to change the location on screen.
+        </p>
+
+        <h3 id="deleting-repos">1.6 Deleting repositories</h3>
+        <p>Once you are done with a repository you can delete it from the
+            repository context menu or status screen. This has no influence on remote repositories. </p>
+
+        <div style="clear: both;"></div>
+
+    </div>
+
+    <h2 id="remotes">2. Remotes</h2>
+
+    <div class="inner">
+        <div class="right"><img class="right" onload="imgLoaded(this)" src="../img/remote-details-81-transparent.png" /></div>
+        <p>Git remotes are server-side duplicates of your repositories with full history.
+            These can be services such as GitHub, BitBucket etc. or they can be be privately hosted servers.</p>
+
+        <p>When you clone a repository, the URL of the remote repository is your starting point. Working Copy supports ssh, https and
+            http remotes and the URL consists of protocol scheme, the hostname, username and the path to the repository on the host.
+            The following are typical examples of remote URLs:</p>
+
+<pre>https://user@git.company.se/home/user/site.git
+ssh://andrew@company.se/home/andrew/git/site.git/
+andrew@company.se/home/andrew/git/site.git/
+</pre>
+        <p>The last two URLs are equivalent since ssh is the default protocol. </p>
+
+        <p>Authentication will always try with a username included on the form <em>username@</em>
+            otherwise remembering the last username for that host.
+            The username <em>git</em> has special meaning for many hosts such that the actual user
+        account is derived from the SSH key used to authenticate.</p>
+        <p>If you enter the Repository page you can add or delete remotes. After cloning there is only a single “origin”
+            remote and, in many scenarios, there is no need for additional remotes.</p>
+
+    </div>
+    <div class="inner">
+        <h3 id="clone-catalog">2.1 Clone catalog</h3>
+        <div class="left"><img class="left" onload="imgLoaded(this)" src="../img/clone-catalog-transparent.png" /></div>
+
+        <p>When cloning repositories from BitBucket and GitHub you can enter your credentials to get a list of repositories to clone.
+            Working Copy tries to show the most relevant repositories at the top, these being the ones where you have administrative
+            or push privileges. Your GitHub Gists and BitBucket Snippets are also available from this list.
+        </p>
+        <p>If the list is long, enter keywords in the search field in order to only see repositories containing these.
+            If you do not see the repository you wish to clone, you can still copy-paste the clone URL into the top-field manually.</p>
+
+        <p id="restriced-github-orgs">Organizations on GitHub can be configured to
+            <a target="GitHub" href="https://help.github.com/articles/about-third-party-application-restrictions/">restrict</a>
+            third-party applications such that repositories are not listed and you might need to
+            <a target="GitHub" href="https://help.github.com/articles/requesting-organization-approval-for-your-authorized-applications/">ask
+                your administrator</a> to approve Working Copy.
+        </p>
+
+        <p>You configure additional <a href="hosting-provider.html">hosting providers</a> from Working Copy settings
+           or you can clone using a URL from the clipboard.</p>
+
+    </div>
+
+    <div class="inner">
+        <h3 id="ssh-keys">2.2 SSH keys</h3>
+        <div class="right"><img class="right" onload="imgLoaded(this)" src="../img/ssh-config-30-transparent.png" /></div>
+
+        <p>SSH transfers support password authentication but also public/private key authentication for
+            improved security. The public part of a SSH key corresponds to a padlock that you use to
+            lock-down resources. The private part of the SSH key corresponds to the physical key that
+            opens the padlock. Your private key must be kept secret and the public key can be
+            distributed to servers where you want to store remote repositories.</p>
+
+        <p>If you tap “Connect with BitBucket” or “Connect with GitHub” your public key will automatically
+            be registered with BitBucket or GitHub. For other Git hosting providers such as
+            <a target="server" href="https://www.openshift.com">OpenShift</a> or
+            <a target="server" href="https://aws.amazon.com/codecommit/">AWS CodeCommit</a> you need to
+            enter your public key in  the settings page for that service. The details will depend upon
+            the service in question, but your first step is to Export the public key.
+            When using a Linux server, you need to append the public key to the
+            <em>$HOME/.ssh/authorized_keys</em> file.</p>
+        <p>Working Copy generates 4096 bit RSA keys and imports RSA, ECDSA or Ed25519 private keys in
+            PEM or OpenSSH format.</p>
+    </div>
+    <div style="clear: both;"></div>
+
+    <div class="inner">
+        <h3 id="ssh-troubleshooting">2.3 SSH Troubleshooting</h3>
+        <p>If you are having problems authenticating with an SSH server check that the public key installed on the server
+            matches the private key in Working Copy. If you have some other SSH client on your device or computer, you should make sure
+            you can connect from these without problems. If this works, you must also make sure you use the same SSH key in Working Copy,
+            possibly importing the private key from the other application.</p>
+        <p>When exporting the public key you end up with something on the form:</p>
+        <pre>ssh-rsa AAAAB3NzaC1…g+y4Pfz9 WorkingCopy@iPadPro-31092017</pre>
+        <p>Everything after the second space is just a comment, that makes it easier to
+            determine where and how the key was created. It can sometimes help to remove this comment,
+            before registering the key with your Git server.</p>
+    </div>
+    <div class="inner">
+        <h3 id="heruko-remotes">2.4 Heroku Remotes</h3>
+        <p>It is possible to deploy to
+            <a href="http://heroku.com/" target="heroku">Heroku</a> using Git.
+            You need to setup a second remote for your repository that points
+            to your Heroku application. Since the
+            <a target="heroku" href="https://toolbelt.heroku.com/">Heroku Toolbelt</a>
+            is not available on iOS, you must manually configure the remote. </p>
+            <p>The easiest way to do this is to
+                <a target="heroku" href="https://devcenter.heroku.com/articles/git#creating-a-heroku-remote">setup your remote</a>
+                on a regular computer and determine the remote
+            details on the command line by entering:</p>
+            <pre>git remote -v</pre>
+            <p>You then create a new remote from this URL in Working Copy. Note that username and password
+                for remote is not your Heroku account credentials. You will find this information
+                in your home directory in the hidden file <em>.netrc</em></p>
+            <pre>cat ~/.netrc</pre>
+          <p>When you push to your Heroku remote the deployment status is <a href="logfiles.html">logged and shown</a> inside
+             Working Copy.</p>
+
+        <h3 id="aws-codecommit">2.5 AWS CodeCommit</h3>
+        <p>To use Working Copy with <a href="https://aws.amazon.com/codecommit/" target="aws">AWS CodeCommit</a>
+            you need to create an IAM user with the <em>IAMUserSSHKeys</em> Policy. You also need to add some Policy allowing
+            repository access and <em>AWSCodeCommitPowerUser</em> is a good choice, unless you only need to
+            clone and fetch code in which case <em>AWSCodeCommitReadOnly</em> is preferable.
+        </p>
+        <p>You must also export your SSH Key from Working Copy and <em>Upload SSH Public Key</em>. This is done
+         in the <em>Security Credentials</em> tab of your
+            <a href="https://console.aws.amazon.com/iam/#users" target="aws">IAM User</a>.
+            When your SSH Key has been uploaded it
+        will be listed with a <em>SSH Key Id</em> that will be needed for the next step.</p>
+        <p>
+         Your repositories are listed in the <a href="https://console.aws.amazon.com/codecommit/" target="aws">CodeCommit Dashboard</a>.
+            When looking at individual repositories
+            you can request the Clone URL in the SSH format, which can be used inside Working Copy, but you need to
+            use the <em>SSH Key Id</em> as your username. Your URL should end up looking something like:
+        </p>
+        <pre>ssh://APKAJMDDPOLPSL7OAYOA@git-codecommit.us-east-1.amazonaws.com/v1/repos/test</pre>
+
+        <h3 id="glitch">2.6 Glitch</h3>
+        <p><a href="https://glitch.com/">Glitch</a> is a online service and community for creating web apps.
+            You can edit from a web browser but they also provide access through a Git remote.
+         </p>
+         <p>If you use
+            <em>Process in Working Copy</em> from the share sheet in Safari
+            the equivalent Git repository is opened in Working Copy cloning it as needed. If you are editing
+            on glitch.com when using <em>Process in Working Copy</em> the remote url includes a username
+            token that grants you push permissions on the remote.
+         </p>
+         <p>When pushing changes back to glitch you need to push to another branch than master and
+            use their console to merge in and reload changes. You can read about this
+            <a href="https://support.glitch.com/t/possible-to-code-locally-and-push-to-glitch-with-git/2704/3">here</a>.
+        </p>
+        <p>Git remotes at <em>api.glitch.com</em> behave slightly differently than other Git remotes and you need
+           to include the username and a empty password to the remote url for pushing to work.</p>
+
+        <h3 id="hosting-provider">2.7 Hosting Providers</h3>
+        <p>To make it easier to <a href="clone-catalog.html">list</a> your repositories, to create new remote repositories
+            and to configure your <a href="ssh-keys.html">SSH keys</a> you can configure hosting providers.</p>
+
+        <div class="right" style="margin-top: 1em"><img class="right" onload="imgLoaded(this)"
+                                                        src="../img/hosting-provider-transparent.png" /></div>
+
+        <p>Working Copy supports private instances of
+            BitBucket <a target="hosting" href="https://www.atlassian.com/software/bitbucket/server">Server</a>
+            (previously known as Stash),
+            GitHub <a target="hosting" href="https://enterprise.github.com/">Enterprise</a>,
+            <a target="hosting" href="https://about.gitlab.com/features/">GitLab</a>,
+            Team Foundation Server (<a target="hosting"
+               href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-relnotes">TFS</a>)
+            and <a target="hosting" href="https://gogs.io">Gogs</a>.</p>
+        <p>
+            You enter the hostname of your server and the instance type is identified automatically trying a
+            combination of schemes and ports. If your hosting provider isn't recognised or auto-detection is
+            taking too long it can help to enter a full URL including scheme and port.
+
+        </p>
+        <p>You can configure cloud instances of the above hosting providers as well as
+            <a target="hosting" href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a> and
+            <a target="hosting" href="http://beanstalkapp.com">Beanstalk</a>.
+            Even a regular Linux server, BSD server or
+            <a href="https://www.youtube.com/watch?v=WMcAcUknHMw" target="youtube">Synology NAS</a>
+            can act as a hosting provider, using SSH <a href="javascript:showSecureShellInfo();">commands</a> for
+            listing repositories.
+        </p>
+        <p>If you have several user accounts for a hosting provider you can bake the user
+            into the server field as <em>https://username@github.com</em> to get a hosting provider
+            for each user.</p>
+        <p>When you add hosting providers it is often a good idea to disable the built-in providers you are
+            not using to avoid clutter in other parts of Working Copy. This is especially important when
+            you configure providers with a baked-in username as the default providers for the same service
+            will switch between user accounts. </p>
+
+        <h3 id="access-tokens">2.8 Access Tokens</h3>
+        <p>If you hosting provider does not allow authenticating with a regular password
+           access tokens can often be used instead.</p>
+        <p>For GitHub Enterprise you visit the website and go to <em>Settings > Developer Settings > Personal access tokens</em>
+           and tap <em>Generate new token</em>. This token should be granted <em>repo</em>, <em>read:org</em>,
+            <em>admin:public_key</em>, <em>gist</em> and <em>admin:gpg_key</em>
+            to support all Working Copy features but <em>repo</em> is the most important one.</p>
+        <p>On GitLab you go to <em>User Settings > Access Tokens</em> to create new tokens
+            where the <em>api</em> scope is required.
+        </p>
+        <p>You use the access token instead of a password and it will be remembered
+           until you sign out of the service.</p>
+    </div>
+
+    <div id="ssh-clone-catalog" class="inner" style="display: none">
+        <h3 id="ssh-host-info">SSH Providers</h3>
+        <p>
+            When Working Copy lists your repositories on a regular SSH server, it uses the built-in shell
+            on the server to execute commands. When you create a new repository a series of commands are also executed.</p>
+
+        <p>
+            For this to work <em>git</em>, <em>/bin/sh</em>, <em>find</em> and <em>mkdir</em> need to be available
+            and have sensible behaviour.
+            If these commands are not available you will get error messages and the server will not work as
+            a hosting provider. The series of commands have been tested on major Linux and BSD variants to
+            work as expected when commands are available and to fail with no side-effects when commands are
+            unavailable.
+        </p>
+
+        <p> In the rare case where the above mentioned commands are available but do something different,
+            there is the possibility that the hosting provider commands will have unintended
+            consequences and could cause data loss. When enabling a SSH Server
+            as a hosting provider, Working Copy will execute commands on your behalf, and this is done entirely
+            at your own risk. </p>
+
+        <p>The scripts are listed for you to evaluate.  </p>
+<pre>git --version &amp;&amp; echo &amp;&amp; find "$path" -type d \( -exec sh -c 'cd "{}"; var=`git 2> /dev/null rev-parse --is-bare-repository`; if [ "$var" = "true" ]; then exit 0; else exit 1; fi' - \; -print -prune \)
+</pre>
+        <p>The script listing repositories starts by making sure <em>git</em> is installed, to avoid doing any work on a server
+            that is unable to function as a remote. It then looks at all directories from the starting <em>path</em>
+            of your hosting provider and outputs the ones that are <em>bare</em> repositories. Notice that non-bare repositories
+            will not be included.</p>
+<pre>git --version &amp;&amp; cd "$path" &amp;&amp; mkdir "$repo" &amp;&amp; cd "$repo" &amp;&amp; ( var=`git 2> /dev/null rev-parse --is-inside-git-dir`; if [ "$var" = "true" ]; then echo "Unable to create repository inside existing repository"; exit 1; fi ) &amp;&amp; ( var=`git 2> /dev/null rev-parse --is-inside-work-tree`; if [ "$var" = "true" ]; then echo "Unable to create repository inside existing repository"; exit 1; fi ) &amp;&amp; git init --bare
+</pre>
+        <p>When creating repositories we also make sure <em>git</em> is installed. All the commands need to
+            complete without error for the next one to start. If you try to create a <em>repo</em> where a directory already
+            exists, <em>mkdir</em> fails and <em>git init</em> never runs.</p>
+        <p>Some servers are configured to <a target="git" href="https://git-scm.com/docs/git-shell">restrict</a>
+            secure shell to only run Git. You can enable listing repositories and creating repositories from the app
+            by creating the directory <em>~/git-shell-commands</em> and placing the scripts
+            <a href="../shell-commands/working-copy-list">working-copy-list</a> and
+            <a href="../shell-commands/working-copy-create">working-copy-create</a> inside.
+        </p>
+    </div>
+    <div style="clear: both;"></div>
+
+    <h2 id="viewing-editing">3. Viewing and editing</h2>
+    <div class="inner">
+        <div class="left"><img class="left" onload="imgLoaded(this)" src="../img/dir-structure-21-transparent.png" /></div>
+        <div class="left noshadow" style="position: relative; left: -50px; margin-right: -25px;">
+         <img src="../img/content-action-sheet-34.png" onload="imgLoaded(this)"
+              srcset="../img/content-action-sheet-34.png 200w, ../img/content-action-sheet-34-400.png 400w, ../img/content-action-sheet-34-645.png 645w"
+         />
+        </div>
+        <p>A repository is presented as a hierarchy of directories and files where you tap a directory to enter and
+            view the contents.</p>
+        <p>You can swipe right on entries or press and hold to access commonly used actions such as <em>Commit</em>,
+          <em>Revert</em> and invoke the share sheet which allows exporting single files, directories or the entire
+            repository.</p>
+
+        <p style="padding-bottom: 1em">Open recently accessed documents
+            from the bookmark button in the upper right corner above repository or
+            file listings.</p>
+
+        <p> If you tap a file and pick the Content tab you can view the file in different modes.
+            This is controlled by the button in the top bar indicating the current mode. The top choices
+            are the recommended mode for this file and depends on both filename and file content.
+            When you pick a mode for a given file, Working Copy remembers this choice for other files
+            with the same file extension.
+        </p>
+      </div>
+  <div style="clear: both;"></div>
+    <div class="inner">
+        <h3 id="edit">3.1&nbsp;Text Editing</h3>
+        <div class="right"><img class="right animated" src="../img/content-preview.png" onload="imgLoaded(this)" /></div>
+
+        <p>Text files can be viewed as plain text or with syntax highlighting for <span id="expandLanguages" style="white-space: normal;">one of the
+            <a href="beyond-ios.html" onclick="return showLanguages();">supported languages</a>.</span>
+            <span id="allLanguages" style="display: none; white-space: normal;">Apache, Bash, C#, C/C++, CSS, Clojure, CoffeeScript,
+                Dart, Diff, Erlang, F#, Go, HTML, HTTP Headers,
+                Haskell, Ini, JSON, Java, JavaScript, Lua, Makefile, Markdown, Nginx, Objective-C, PHP, Perl, Python, R, Ruby, SML,
+                SQL, SVG, Scala, Swift, VIM, XML, YAML and ΤeΧ.
+            </span>
+           Font size is adjusted in the popup switching between modes and is remembered
+           individually for different modes.</p>
+        <p id="font-customisation">You can pick between a number of included fonts or import new OpenType or TrueType fonts
+            as a pro feature.</p>
+         <p>Looking at source code you can tap anywhere to start editing. <em>Done</em> in the upper right corner
+          stops editing. You undo latest changes with the undo-button above the keyboard on iPad or by shaking
+             your iPhone. If you want to undo all your changes, switch to the Status tab where you can revert the
+             file to how it was at last commit.</p>
+        <p>
+             Any text selection can be transformed with action extensions, which will let you do things such as URL encode text
+             from within the editor.
+            <a target="app" href="https://itunes.apple.com/app/workflow-powerful-automation/id915249334?mt=8&amp;at=1000lHq">Shortcuts</a>
+            is the prime example of such a application.</p>
+        <p>
+             When your selection matches a valid <a target="wikipedia" href="https://en.wikipedia.org/wiki/Web_colors">CSS color</a>
+            you can adjust this. Placing the caret where a color is expected the popup menu also
+             lets you use the color picker to make a new color.</p>
+        <p>Use <a href="https://editorconfig.org/" target="_blank">.editorconfig</a> files to control encoding, newline style
+           and indentation in a manner supported by a wide range of editors and IDEs.</p>
+
+    <h3 id="preview">3.2&nbsp;Preview</h3>
+
+        <p>You enable <em>Preview</em> mode with the button in the upper right corner which is available
+            for HTML, Javascript, Markdown, org-mode, AsciiDoc and Jupyter notebook files.
+        </p>
+
+        <p>When previewing HTML files, relative links to images, javascript and stylesheets resolve to files inside
+            repository and will work without Internet connection. External assets require a Internet connection to load.
+            If offline preview is important to you, consider including javascript frameworks inside repository.
+        </p><p>
+        You can make edits from other apps while previewing using the iOS <a href="extending-ios.html">document picker</a>
+        or <a href="webdav-server.html">WebDAV</a> access.
+        When there are changes to the file being previewed or any local assets it depends on, the preview will automatically
+        reload. To make it easy to evaluate changes, the scroll and zoom settings are restored during reload.
+    </p><p>
+        Enable the Javascript Console to check for errors, warnings or log statements.
+        Errors that occur in javascript files inside repository can be tapped taking you to the line in
+        the source file. You can evaluate javascript
+        in the context of the HTML page and when external keyboard is attached, the ↑↓ keys let you step through
+        evaluation history.
+    </p>
+        <p id="external-preview">
+            You can preview from other devices or computers, by enabling <em>External URL</em>. Long tap the URL
+            to put it on the clipboard or use Handoff to connect. This preview will keep working as you switch back to
+            editing mode.
+        </p><p>
+        Putting your iPad in split screen mode you can have Safari side-by-side with Working Copy to preview and edit
+        simultaneously. <!-- If you connect a external display through AirPlay or a HDMI adapter you can enable
+        preview on the external display by tapping the small monitor icon at the top of the screen. -->
+        </p>
+        <p>External preview is a pro feature available to users that <a href="purchase.html">purchased</a> the unlock or upgraded their
+            pro unlock on January 8, 2018 or later.</p>
+
+    </div><div class="inner">
+
+        <h3 id="search">3.3&nbsp;Search and navigation</h3>
+        <p>You can search repository files by name, text content or symbol declarations, which is often
+           the fastest way to navigate a large repository.</p>
+        <p>
+            When you search from the top of directory listings, results are included from this location
+            in the file hierarchy including files inside sub-directories. Search from the <em>Content</em> tab of a file
+            includes results from the entire repository or the current file depending on the scope selection.
+       </p>
+    <div class="ipad"><img class="ipad animated" src="../img/manual-search.png" onload="imgLoaded(this)" /></div>
+    <p>Search queries will be matched against filenames, symbols, line numbers and text content. For filenames
+            and symbols a fuzzy matching will be performed which means that the characters in query must occur in the given
+            order but characters can be skipped. The query <em>read.md</em>
+            will fuzzy match both <em><u>read</u>me<u>.md</u></em> and <em><u>read</u>me<u>.m</u>ark<u>d</u>own</em> but the first one
+            will be ranked higher as it's closer to a non-fuzzy match.
+        </p><p>
+            When you type several search words they all have to match either a filename, symbol, line number or text.
+            The query <em>read.md 10</em> will be understood as
+            <ul>
+             <li>line 10 of the files where name fuzzy matches "read.md"</li>
+             <li>occurrences of the text "10" in files where name fuzzy matches "read.md"</li>
+             <li>files containing the text "read.md" and "10"</li>
+            </ul>
+           To make it easier to restrict queries, the words matching the filename must lead your query and search results
+           matching filenames or symbols will appear at the top of search results with lower ranking the more fuzzyness was
+           required to reach a match.
+        </p>
+        <p>
+           All files in your repository need to be read and parsed to satisfy searching for text content and symbols.
+         When you search for the first time in a large repository, indexing can take several minutes and the progress is shown
+           in the right part of the search field. Filename searches will be available almost immediately
+            while text content and symbol results will update as the repository is indexed.
+            Only files that have changed since the last search will be indexed
+            when you search a repository that has been indexed previously, requiring much less work.
+        </p>
+        <p>Editor search uses your current selection or the word at your cursor as the start of your search.
+           This is convenient to lookup a symbol declaration or the usages of
+           a function or class. Invoking search when looking at the <em>Content</em> tab of a non-text file the query will be your
+            current filename, showing usages of that particular file.
+        </p>
+        
+        <p> The prefilled query is selected such that it can be deleted with a single tap and when the query is
+            empty you are shown recent edit points for repository scope and symbol declarations for the file scope,
+            which is useful for quick back and forth navigation. 
+            <a href="https://en.wikipedia.org/wiki/Regular_expression">Regular expression</a> search is supported 
+            for the file scope by wrapping your pattern in slashes such as <em>/[0-9]+/</em> to find all integers.
+        </p>
+       <p>Typing on a external keyboard it can be efficient to not more your hands from the keyboard to the screen.
+          The arrow keys let you cycle through search history, but this makes it impossible to navigate search results
+          with these keys. The trick is to refine your query until the result you want is the top one,
+           and ⌘⏎ lets you pick the top result.
+          </p>
+
+    </div><div class="inner">
+    <h3 id="file-changes">3.4 File changes</h3>
+    <div class="wide noshadow left" style="margin-left: -5%"><img class="wide left" style="margin-left: -5%" onload="imgLoaded(this)"
+         src="../img/split-diff-36-transparent.png" /></div>
+    <div style="clear: both; margin-top: -75px" class="left noshadow"><img class="animated" play_button_bottom="30%"
+            onload="imgLoaded(this)" src="../img/image-diff-83.png"
+            srcset="../img/image-diff-83.png 200w, ../img/image-diff-83-450.png 450w, ../img/image-diff-83-645.png 645w"/></div>
+    <p>A badge on the Changes tab shows the number of lines added or deleted from a file.
+        The Changes tab itself shows the differences
+        between the last version committed and the current version. <!-- You can long-tap changed blocks to recover deleted blocks or
+        remove added blocks. --> The two-panel split-view in the screenshot requires the screen to be wide and for phones to be
+        turned to landscape mode.</p>
+
+    <p>Image changes can be viewed in a split-mode where zooming one image will make the other one follow -
+        making it easy to focus on the details.
+        If you are unsure as to where the changes are in an image, use the Color mode that
+        highlights changed areas in green where identical areas are without color. Cut mode is useful for images with
+        global changes and allows you to drag and rotate a partitioning line in such a way that everything on one side is the old image.
+        The previous image will have a red border, and the new one a green border.</p>
+
+    <p>The Status tab says whether the file is modified and allows you to commit or revert changes.
+    </p>
+    <div style="clear: both;"></div>
+</div>
+
+    <h2 id="commit-revert">4. Committing or reverting</h2>
+    <div class="inner">
+        <div class="right"><img class="right" onload="imgLoaded(this)" src="../img/commit-sheet-32-transparent.png" /></div>
+
+        <p>You can commit changes to your files for the entire repository, for all files in a sub-directory or for a specific file.
+            If you do not wish to commit some of your files you can Revert to how they where at the last commit.
+            The files taken into account are determined by where in the directory structure you initiate the commit.
+            As a short-hand you can swipe left on a repository, directory or file to commit.</p>
+        <div class="left"><img class="left" onload="imgLoaded(this)" src="../img/status-modified-19-transparent.png" /></div>
+
+        <p>During commit you are shown a list of changed files and can view differences for individual files by pressing the button
+            that shows the number of lines added or deleted. Files with a checkmark will be included in the commit and you toggle the
+            checkmark by tapping the file.
+            Working Copy will push the commit to the remote right away if you enable the <em>+Push</em> button.</p>
+
+        <p>As a general rule you should make commits with a single purpose and only include the changed files that helped achieve this purpose.
+            You should write a message in the top line describing this purpose;
+            if it is hard to write something short but concrete you might
+            need to break your commit into smaller parts.</p>
+    </div>
+
+    <div class="inner">
+        <div class="right"><img class="right" onload="imgLoaded(this)" src="../img/commit-list-28-transparent.png" /></div>
+
+        <h3 id="commit-history">4.1 Commit history</h3>
+        <p>The value of well-drafted commit messages becomes apparent when looking at a log of previous commits.
+            You may do this for either the entire repository, a directory with all its files or for single files.
+            If your commit messages are meaningful, even if you return to a project after months or years you have a much
+            better chance of making sense of the source-code.
+            Tap a commit to see specific changes this commit made to the files in question.</p>
+
+        <p>The images shown in commit-logs are determined from the email-address of the person making the commit with the
+            help of <a target="gravatar" href="http://gravatar.com/">gravatar.com</a>.
+            At the commit-list for the entire repository you can Checkout old versions of your
+            files by swiping left on a commit. Your repository will be in a “detached head” state where you cannot commit any changes,
+            but if you make modifications and wish to keep these, you should create a new branch.
+        </p>
+        <p>Checking out the topmost commit will reattach the head in such a way that your repository is back to normal.</p>
+        <p id="commit-undo">When not yet pushed to a remote, you can <em>Undo</em> your latest commit by swiping left in the commit-list.
+            All changes for that commit are kept in your working directory as modified files. If you commit again
+            the last commit message is remembered, making it very easy to commit again to fix typos in the
+        commit message or only commit some of the files, splitting a large commit into smaller ones. When the
+        last commit has been undone, you can <em>Undo</em> another, letting you squash several
+        commits into one.</p>
+    </div>
+
+    <div style="clear: both;"></div>
+    <div class="inner">
+        <h3 id="branching">4.2 Branches</h3>
+
+        <div class="left"><img class="left" onload="imgLoaded(this)" src="../img/branch-52-transparent.png" /></div>
+
+        <p>A great advantage of Git compared to other version-control software is the ease at which you can branch your
+            repository to work independently on different things.
+            Once you are confident with the work undertaken in a branch, you can merge
+            it back to one of your main branches.</p>
+
+        <p>In Working Copy you can do this from the Repository screen by tapping the current
+            branch name to access a list of branches. Tapping a branch brings up a detail view
+            where you can checkout the branch (make it current), rename or delete it. </p>
+        <p>You can swipe left on branches to <em>Checkout</em>, <em>Rename</em> or <em>Delete</em> without having to
+            go to the detail screen and when a local branch is ahead of its remote, you can <em>Push</em> as well.
+        </p>
+
+        <p> You create new branches from the current one with the upper-rightmost button.
+            To put commits on a branch you can either <em>Merge</em> or <em>Rebase</em>. Atlassian has a
+            great <a target="atlassian" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing/">tutorial</a>
+            describing the differences. In both situations you change your current branch to include commits from some
+            other branch.
+         </p>
+        <p>
+            Merge will create a merge-commit as needed, while rebase will rewrite commits from your
+            current branch on top of the commits from the other branch. Working Copy will not rebase if this
+            requires rewriting commits that have already been pushed to a server. You can override this behaviour
+            by configuring the branch for <em>History Rewriting</em>, but this in turn requires you to <em>Force Push</em>.
+            This also lets you <a href="commit-undo.html">Undo</a> commits already pushed to a remote.
+         </p>
+
+        <h3 id="branch-editing">4.3 Branch Editing</h3>
+        <p>
+            You <em>Reset</em> the head of the current branch from the commit you want to
+            become HEAD. This is a soft reset that leaves the working directory as before the reset which can be
+            fixed with <em>Revert</em> as needed. If you navigate the commit list through a non-current local branch 
+            you are able to <em>Reset</em> the head of this branch. In all cases you will be told what is about 
+            to happen as you confirm the <em>Reset</em>.
+        </p>
+        
+        <div class="iphonex right"><img class="iphonex right" style="padding-top: 2em;" onload="imgLoaded(this)" src="../img/branch-editing.png" /></div>
+
+        <p>Each commit represents changes made to files and it can be useful to apply these changes
+           differently to improve the commit history. Applying a singlecommit is called cherry picking 
+           and applying the changes from a series of commits is called rebasing.</p>
+           
+        <p>Command line Git is able to 
+        <a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">rebase interactively</a> 
+           to change the order in which commits are applied, discard commits, edit commit messages and more.
+           You can get equivalent results in Working Copy from the commit list of individual branches.
+        </p>
+        <p>Long tapping commits you can <em>Delete Commit</em> to rewrite the branch without the work
+           contributed by this single commit or <em>Edit Message</em> to change a commit
+           message while still applying the same changes from the commit.</p>
+        <p>Drag one or several consecutive commits to change the order in which changes are 
+           applied. When commits are rewritten in different order it might cause conflicts that
+           you will be asked to resolve.</p>
+           
+        <p>Rewriting history can cause problems for others working on 
+           the same branch and when commits are already pushed to the remote
+           you will be asked to enable <em>history rewriting</em>.            
+         </p>
+         
+          <p>
+           <em>Undo</em> history rewriting by shaking your iPhone, 
+           using three-finger left swipe or pressing <em>⌘+Z</em> on external keyboards.
+         </p>
+
+        <p>Branch Editing is a <a href="purchase.html">Pro feature</a>.</p>
+
+        <h3 id="pull-requests">4.4 Pull Requests</h3>
+        <div class="left iphonex"><img class="left animated iphonex" src="../img/pull-request.png" onload="imgLoaded(this)" /></div>
+        <p>
+            Where <em>Merge</em> and <em>Rebase</em> incorporates changes from other branches into your current
+            branch, a Pull Request or <em>PR</em> works in the opposite direction asking others to incorporate
+            changes from your current branch into some base branch. Working Copy supports creating these for
+            <a href="https://www.atlassian.com/git/tutorials/making-a-pull-request" target="pr">BitBucket</a>,
+            <a href="https://help.github.com/en/articles/about-pull-requests" target="pr">GitHub</a> and
+            <a href="https://docs.gitlab.com/ee/user/project/merge_requests/" target="pr">GitLab</a>.
+        </p>
+        <p>You tap <em>PR</em> from the full list of branches and pick the remote branch that should be the base of
+            the Pull Request. It is the base branch that receives new commits from your current branch.</p>
+        <p>In order to open Pull
+           Requests between different repositories you need to have a remote configured corresponding to the
+           repository with the base branch. When cloning from GitHub and GitLab the app tries to
+           configure a <em>upstream</em> remote when the cloned repository is a fork.
+            Do a single <em>Fetch</em> after enabling the upstream remote to include
+           this repository in your branch list.</p>
+
+           <div style="clear: both;"></div> 
+           <p>Creating a Pull Request is the first step in a workflow that might involve code review, discussions or
+            automated verification and ends up with the pull request being accepted or closed days or weeks later. </p>
+
+            <p>Manage the communication aspects of Pull Requests in your browser or with apps such as
+                <a href="https://apps.apple.com/app/github/id1477376905?ls=1" target="app">GitHub for Mobile</a>
+                and handle the code in Working Copy.
+            </p>
+
+            <p>
+                Continue work on existing pull requests by invoking the share sheet on a link and picking <em>Process in Working Copy</em>.
+                Working Copy makes sure the repository is cloned, relevant remotes are configured and the branch is checked out.
+            </p>
+            <p>Long tap the repository to jump back to the Pull Request page on the hosting provider website.</p>
+        
+            <div class="ipad-air-2021"><img class="ipad-air-2021 animated" src="../img/pull-request-open.png" onload="imgLoaded(this)"/></div>
+
+        <p>Pull Request creation is a <a href="purchase.html">Pro feature</a>.</p>
+
+        <div style="clear: right"></div>
+        <h3 id="commit-graph">4.5 Commit Graph</h3>
+
+        <div class="left"><img class="left" onload="imgLoaded(this)" src="../img/commit-graph.png"
+                                srcset="../img/commit-graph.png 200w, ../img/commit-graph-400.png 400w, ../img/commit-graph-645.png 645w" /></div>
+
+        <p>To explore repository changes across branches use the Commit Graph available from the Repository screen.</p>
+        <p>Commits are presented in chronological order with lines showing which commits are based on each other,
+            with tags and branch heads displayed as well as the commit message summary, date and information about the
+            author of the commit.
+        </p>
+        <p>Pinch to zoom will let you explore additional details, such as the full commit message, the full name of the author
+            rather than initials, a commit identifier and the files modified by this commit. If you connect an external
+        screen or projector to your device, you will get a full-screen Commit Graph without any interface elements
+        obscuring the view. This makes for a convenient tool when your team needs to discuss the project.</p>
+        <p>Tap and hold or double-tap elements of a commit for additional actions, where
+            the commit message itself takes you to a detail view.</p>
+        <p>You can copy the author email to the clipboard or start composing a email to the author.</p>
+        <p>It is also possible to view the commit date in your calendar to see what else happened around this time and
+            when <a href="https://flexibits.com/fantastical-iphone" target="fantastical">Fantastical</a> is installed,
+            it will be used instead of the built-in Calendar app.</p>
+
+        <div style="clear: both"></div>
+        <h3 id="resolve-tool">4.6 Resolving conflicts</h3>
+        <div class="right"><img class="right" onload="imgLoaded(this)" src="../img/resolve-tool.png" /></div>
+
+        <p>Working Copy has a built-in Resolve tool that can be used to fix conflicts for the entire repository,
+        a subdirectory or single files, depending on where in the directory hierarchy the tool is invoked.
+        Swipe left on cells for repository, directories or files to get started.</p>
+
+        <p>Text files are shown as chunks of text, where everything both files agree on start out in the center,
+           and everything from <em class="our">our</em> version is to the left and
+            <em class="their">their</em> version to the right.
+           You swipe these chunks towards the center to include them and away to exclude them. This way your final
+            file will be lined up at the center. Chunks at the border are pending your decision.
+        </p>
+        <p>If you want to use all chunks from one version of a file and discard the other version of the file entirely,
+            you can tap one of the branch names
+          at the header of the file. These are <em class="our">HEAD</em> and
+            <em class="their">other</em> in the screenshot.</p>
+
+        <p>There is no way to combine conflicted images and other binary files.
+            You need to pick one or the other by tapping the one you want.
+            The selected version is marked by a thick border.</p>
+
+        <p>When all chunks have been either accepted or rejected and no binary files are awaiting your choice,
+            tap <em>Resolve</em> to verify your choice and mark files as resolved. Next commit
+        will conclude the merge. If there are chunks or files pending your decision, the <em>Resolve</em>
+        button will scroll to indicate this.</p>
+
+        <p>You can also resolve conflicts by manually editing files. The Content tab for a conflicted file
+        has a <em>Resolve</em> button for marking the file as resolved, when you have picked the content
+        you want and removed conflict markers.</p>
+
+        <h3 id="signed-commits">4.7 Signed Commits</h3>
+        <p>Git supports
+            <a target="gitbook" href="https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work#_signing_commits">signing commits</a>
+           to make it possible for others to verify that commits have been made by you. When signing you need
+            a <a target="pgp" href="https://gnupg.org">GPG</a> private key that must be kept secret and when
+            verifying commits the corresponding public key is needed.</p>
+        <p>
+            You attach a private key to your Identity which can be imported or generated inside the app.
+            If the key is generated inside Working Copy you can attach
+            it to your GitHub account with a single tap or you can export the public or private parts of
+            the key to do manual configuration.
+        </p><p>
+            Your private key needs a passphrase. You can configure
+            Working Copy to <em>Ask</em> every time the passphrase is needed, to store the passphrase in the keychain
+            requiring you to authenticate with <em>Touch ID</em> before it is read or to just
+            <em>Remember</em> the passphrase in the keychain. </p>
+
+        <div class="ipad"><img class="ipad animated" play_button_bottom="20%" src="../img/commit-signing.png" onload="imgLoaded(this)" /></div>
+
+        <p>Signing commits makes it possible to verify that the commit is made by someone with access to
+           the private key. This information is only useful when other people can trust the private key is yours
+           and they need a PGP public key for this. GitHub makes this easy by letting you
+            <a target="github" href="https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/">associate</a>
+            a public key with your <a target="github" href="https://github.com/settings/keys">user account</a>,
+            but commit verification is possible in other environments
+            by <a target="pgp" href="https://www.gnupg.org/gph/en/manual/x56.html#AEN83">importing public keys</a> into the GPG keyring.
+        </p>
+
+        <h3 id="tagging">4.8 Tagging</h3>
+        <p>Git has the ability to create a <a target="gitbook" href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">tag</a> in a
+            repository to reference a specific point in history. This is typically used to mark a release or
+            other milestone on a project.</p>
+
+        <p>Create tags by navigating to a specific commit and tapping <em>Tag</em> along the top.
+            To create a lightweight tag you enter a name and leave the message empty. Enter a message
+            for a full annotated tag that includes author information, date and the message entered.
+            Creating annotated tags is generally considered best practice. </p>
+        
+        <p>
+            Your tags will be send to the remote on next <em>Push</em>.
+        </p>
+
+    <div class="left iphonex" style="margin-top: 10px;"><img class="left iphonex" onload="imgLoaded(this)" 
+        src="../img/stash-transparent.png" /></div>
+        <h3 id="stashing">4.9 Stashing changes</h3>
+        <p>Sometimes your repository has modified files that aren't
+           ready for commit but prevent you from doing other work.
+           Stashing makes your repository clean 
+           until you bring the changes back by unstashing.
+        </p>
+        <p>You <em>Stash</em> and <em>Unstash</em> from the context menu 
+           of repositories. </p>
+             <p>Stashing is a pro feature available to users that purchased 
+                 the unlock or upgraded their 
+                 pro unlock on December 9, 2019 or later.</p>
+
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <h2 id="extending-ios">5. Extending iOS</h2>
+    <div class="inner">
+        <div class="right"><img class="right animated" onload="imgLoaded(this)"
+                                play_button_bottom="23%" src="../img/extending-ios.png" /></div>
+
+        <p>All repositories in Working Copy can be accessed by other applications using the document picker or
+            file browser components introduced with iOS 11.
+            The other application is allowed to read and make changes to this file and these changes stay inside Working Copy.
+            You can perform editing in this application and switch to
+            Working Copy to review and commit changes.
+            </p>
+        <p>Initially you need to
+            <a target="iPad-guide" href="https://support.apple.com/en-au/HT206481#thirdparty">enable</a>
+            Working Copy as a Location in the Files app and on iPad you can
+            use <a target="iPad-guide" href="https://help.apple.com/ipad/9/#/iPad63ea0cbb">Split View</a>
+            to avoid switching between Working Copy and the editing application.</p>
+
+        <p><a target="app" href="https://itunes.apple.com/dk/app/textastic-code-editor-6/id1049254261?mt=8&amp;at=1000lHq">Textastic</a> is a
+            very good general purpose/programmers editor that works well with Working Copy. Use <em>Open…</em>
+            to open files and <em>Add External Folder…</em> to open entire directories in-place. You can read more
+            about this in the Textastic <a target="textastic"
+             href="https://www.textasticapp.com/v9/manual/integration_other_apps/git_client_working_copy.html">documentation</a>.</p>
+        <p><a target="app" href="https://ia.net/writer">iA Writer</a> is a markdown editor
+            with great design and typography that can edit Working Copy files and directories in-place.
+            Files are added at the <em>From Other Apps</em> screen. Add entire
+            directories by tapping <em>Edit</em> and then <em>Add Location…</em> from the
+            <a target="app" href="https://ia.net/writer/support/ios/the-library">Library</a> screen.</p>
+            <p><a target="app" href="https://ulysses.app">Ulysses</a> is a focused and feature rich writing 
+                app where the library of files can be <a href="../ulysses.html">kept inside</a> Working Copy for easy version control of 
+                your writing.</p>
+        <p><a target="app" href="https://itunes.apple.com/us/app/1writer/id680469088?ls=1&amp;mt=8&amp;at=1000lHq">1Writer</a>
+        is another good Markdown editor and you open files in Working Copy by tapping <img class="oneWriter" alt="+" src="../img/1writer-plus.png"/>
+        in the lower right corner. If you need to work with images
+            <a target="app" href="https://itunes.apple.com/us/app/pixelmator/id924695435?mt=8&amp;at=1000lHq">Pixelmator</a>
+            is a good choice.</p>
+
+        <div style="clear: left"></div>
+        <h3 id="dragdrop">5.1 Drag and Drop</h3>
+        <p>
+            Drag and Drop between apps is exclusive to iPad, and makes it much easier to get files into or out of your repositories.
+        </p>
+        <div class="ipad"><img class="ipad animated" play_button_bottom="10%" src="../img/drag-and-drop.png" onload="imgLoaded(this)" /></div>
+        <p>Drag files from your emails, the Files app or any other supporting app to add to your repositories.
+            When files already exist you can import as a new file or overwrite the existing one and when the existing file in your
+            repository is already committed overwriting is automatic, saving you a little time, as it is very easy to Revert to
+            get back old files.</p>
+        <p>Directories can be dragged into repositories or to the repository list to import a new repository and zip
+            archives can be decompressed as they are dragged.</p>
+       <p>When dragging files out of Working Copy the result will depend on the target app. Dragging files into
+           emails will attach them and dragging into the Files app will export to this location. Editing apps such as
+           <a target="app" href="https://itunes.apple.com/dk/app/textastic-code-editor-6/id1049254261?mt=8&amp;at=1000lHq">Textastic</a>
+           that support this can receive a reference to files or directories letting them edit in-place such that changes are made
+           inside the repository.</p>
+
+        <div style="clear: left"></div>
+        <h3 id="saving">5.2 Saving to Working Copy</h3>
+        <div class="left iphonex"><img class="left iphonex" onload="imgLoaded(this)" 
+            src="../img/edit-in-app-transparent-x.png" /></div>
+        <p>Saving files into Working Copy can be accomplished by way of a Share sheet,
+            the mechanism also used to share files with Mail or Messages.
+            Picking <em>Working Copy</em> on a Share sheet will present a list of repositories,
+            where you drill down to the
+            directory where the file should be saved.
+            To overwrite existing files you tap a file before confirming. Otherwise you will be prompted to
+            enter a new file name.</p>
+
+        <p>After saving a file you can optionally <em>Commit</em> this change immediately and <em>Push</em> to
+            the remote right away.</p>
+
+        <p>When saving zip-archives into Working Copy you can either import the archive as a new
+        repository, extract to a existing repository overwriting existing files as needed,
+        or you can save the zip-file as is.</p>
+
+        <h3 style="padding-top: 20px" id="edit-in-app">5.3 Edit in App</h3>
+
+        <p>In some situations you browse files in Working Copy and need to pick out a file you want to edit in
+        another application. The action-button in the upper-right corner used to present a share-sheet also
+        lets you send files to other applications.</p>
+
+        <p><em>Open In …</em> or <em>Copy to …</em> is the most basic choice and lets you pick any app
+            supporting that type of file. Editing will often be on a copy of the file and it must be transferred back
+            to Working Copy with <em>Save in Working Copy</em>, but if the app you pick
+            says <em>Open in</em> as opposed to <em>Copy to</em>
+            the application is able to edit the file in-place with no need to write back changes.
+            In some situations the iOS share sheet does not know whether editing will be on a copy of the
+            file or in-place until you have picked the action once. This has been known to happen with
+            <a target="app" href="https://itunes.apple.com/dk/app/textastic-code-editor-6/id1049254261?mt=8&amp;at=1000lHq">Textastic</a>
+            that might start out with the action <em>Copy to Textastic</em> even though editing happens in-place.
+        </p>
+        <p>To edit with <a target="app" href="https://itunes.apple.com/app/editorial/id673907758?mt=8&amp;at=1000lHq">Editorial</a>
+            you transfer a copy of the file into Editorial with a filename such that Working Copy can recognise the file later on.
+            This requires a workflow inside Editorial to facilitate file transfer. It
+            is installed the first time you use <em>Edit in Editorial</em> or if you delete
+            or rename the workflow. This workflow serves a dual purpose in that it receives files
+            when activated from Working Copy, and returns files to Working Copy when activated from Editorial. </p>
+    <p><p>
+        You will only see actions for apps you have already installed and you can change the order
+        by picking <em>More</em> to the far right.
+    </p>
+    </div>
+
+    <div style="clear: left"></div>
+    <div class="inner">
+        <h3 id="files-sync">5.4 Files synchronisation</h3>
+        <p>Some apps do not support opening files or directories in-place, but if they use
+            iCloud Drive or "On My Device" to store documents, you can use Files Syncronization for Git
+            integration.</p>
+
+        <div class="ipad"><img class="ipad animated" src="../img/files-sync.png" onload="imgLoaded(this)"
+                               play_button_bottom="20%" /></div>
+
+        <p>Configure Working Copy to open directories used by these other apps in-place.
+           As you work in the other apps, your changes are synced back to Working Copy to be committed.
+            When you pull down commits from a remote any changed files are written back to the directory
+            in iCloud Drive or "On my Device" for the other apps to use.
+        </p>
+
+        <p>You configure a brand new repository for syncing by tapping
+         <em>+</em> from the repository list, <em>Setup synced directory</em> and pick a directory.
+            All files from this directory will be imported into a new repository ready to be committed.
+            You can add a remote from the Repository status screen.
+        </p>
+
+        <p>For existing repositories use the <em>Setup Folder Sync</em> action from the sharesheet of the
+            repository itself or a sub-directory. Initial synchronisation will combine all files from both sides
+            but later on the modification dates are used to determine what needs to be copied and what needs
+            to be deleted. It is currently only possible to have a single directory synced with each
+            repository in Working Copy but there are plans to loosen this restriction.
+        </p>
+        <p>When picking a directory for sync, iOS doesn't allow picking <em>document packages</em>,
+           which are documents that are directories rather than files. Use <em>Setup Package Sync</em> 
+           to bypass this limiation.</p>
+
+        <p>Sync status is shown with a icon above directory listings that you tap for a list of recent sync operations.
+           You can restore files overwritten or deleted by tapping <em>Restore</em> from this list.
+            Backup files are kept for at least seven days.</p>
+
+        <p>You can deactivate syncing from the list of sync operations.</p>
+
+        <p>In some situations both sides of a file have been modified since the last sync and
+            Working Copy will pick the side most recently changed. To draw your attention to
+            this possible data-loss these sync entries have a warning icon and the sync icon shows a orange counter with
+            the number of warnings since you last viewed the history. A red counter indicates the number
+            of errors since you last displayed the sync history.</p>
+
+        <p>This can be used with apps such as
+              <a target="app" href="https://codea.io/">Codea</a>,
+              <a target="app" href="https://solesignal.com/draftcode/">DraftCode</a>,
+              <a target="app" href="https://ia.net/writer">iA Writer</a>,
+              <a target="app" href="https://scriptable.app/">Scriptable</a>,
+              <a target="app" href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>
+              and other apps that store documents in iCloud Drive or "On my Device" but depending on the
+            app in question they can be confused if the document files are changed while they are running.</p>
+
+        <p>Note that this feature isn't meant as a way to store repositories in iCloud Drive. Git uses
+           filters when you commit or checkout files to handle differences between filesystems. If you
+           keep a repository in iCloud Drive or another storage provider you bypass this filtering. Only the
+           working directory or subdirectories of the working directory are synced.</p>
+
+    </div>
+
+    <div class="inner">
+        <h3 id="webdav-server">5.5 WebDAV access</h3>
+        <div class="right"><img class="right" onload="imgLoaded(this)" src="../img/webdav-settings.png" /></div>
+
+        <p>In situations where you need to transfer entire directory hierarchies,
+            a good way to get files into and out of Working Copy is the built-in
+            <a target="wikipedia" href="https://en.wikipedia.org/wiki/WebDAV">WebDAV</a> server.
+        </p>
+        <p>
+            WebDav cababilities are built into the macOS
+            <a href="https://support.apple.com/kb/ph18514" target="_blank">Finder</a> and most versions
+            of Windows also let you access WebDAV by mapping to a network drive. You will also be able to
+            use third party WebDAV clients for <a target="app" href="https://panic.com/transmit/">macOS</a>,
+            <a href="https://cyberduck.io" target="app">Windows</a>,
+            Linux, <a href="https://play.google.com/store/apps/details?id=com.estrongs.android.pop&amp;hl=en" target="app">Android</a> &amp; <a target="app" href="https://panic.com/transmit-ios/">iOS</a>.
+        </p>
+        <p>As a security precaution you need to start the server before each use and it automatically shuts down
+            after 15 minutes of inactivity. You should be cautious of using the WebDAV server on untrusted
+            networks as the transfers are unencrypted. In these cases you should restrict yourself
+            to connections from applications on the same device, as the traffic cannot be intercepted when
+            it never leaves your device. Local connections are also possible in situations without an Internet
+            connection. You need to specify <em>localhost</em> as the hostname in these situations.</p>
+        <p>Applications on iOS are restricted as to how long they are allowed to run in the background. If you start
+           the WebDAV server and switch to some other application, you will be given a grace period before
+            Working Copy and its WebDAV server is terminated. A notification will inform you of this and you
+            can <em>Restart</em> right from the notification to extend this grace period.
+        </p>
+       <p>
+        Enable <em>Server Persistence</em> to keep track of your location while WebDAV is enabled
+        and keep Working Copy running in the background.</p>
+    </div>
+    <div class="inner">
+        <h3 id="shortcuts">5.6 Shortcuts and automation</h3>
+        <p>Working Copy supports automation through the iOS 13 Shortcuts app where files and other data can
+            flow between actions. You locate these actions inside <em>Apps > Working Copy</em>.</p>
+
+        <div class="right iphonex"><img class="right animated iphonex" src="../img/shortcuts.png" onload="imgLoaded(this)" /></div>
+
+        <p>Use <em>Get Repository Files</em> to get one or several files from a repository that
+           can be passed to other actions. The <em>Path</em> parameters can contain wildcards such as
+           <em>docs/*.md</em> and if it points to a directory all files inside are returned.
+           You can configure the action to only include files with a particular status such as <em>modified</em>
+            and combining this with <em>Path=/</em> can be useful to get all files with this status.
+        </p>
+        <p>Files returned from <em>Get Repository Files</em> can be changed in-place by the shortcut
+           but only some actions work like that and often you need <em>Write Repository File</em>
+            to put content back into repositories.
+           This writes a single file at a time but you can use the built-in
+            <em>Repeat with Each</em> action to write several files. <em>Path</em> controls the
+            destination and can be a directory to write inside this directory,
+            but the action refuses to overwrite existing files unless you enable this as one
+            of the options shown when you tap <em>Show More</em>.</p>
+        <p>Once you have changes use <em>Commit Repository</em> to commit
+          with some <em>Message</em>. No commit dialog is shown and the action looks at what
+            has been staged for commit either through the <em>Write Repository File</em> that stages
+            written files by default, through the <em>Stage for Commit</em> action or from using
+            the Commit dialog elsewhere and cancelling that dialog. You can configure the commit to
+            include all <em>modified</em> files and not just the <em>staged</em> ones.
+          </p>
+        <p><em>Pull Repository</em> fetches and merges any new commits from the remote and
+           <em>Push Repository</em> pushes back commits. It can often be useful to include
+           these actions as the first and last in a shortcut to make sure work doesn't
+            just stay on your device. Both actions can be configured to use a
+           specific <em>Remote</em> if you have several.</p>
+        <p>Switch between branches with <em>Checkout Branch</em> as long
+            as there are no modified files and implement custom Git flows with <em>Create Branch</em>,
+            <em>Merge Branch</em> &amp; <em>Delete Branch</em>.</p>
+        <p>List the most recent commits using <em>Repository History</em>
+           from any branch, current branch or a specific branch of your choice. Each commit
+            contains the message, author, date, sha1 identifier and <a target="github" href="https://github.com/golang/go/commit/bdf0fe54480034cd21e36cfed6e44f10f4cb5c92">link</a> to
+            GitHub.com and other hosting provider websites when Working Copy can determine this.</p>
+        <p>All previous actions work from the Shortcuts app without having to launch Working Copy, but it can be useful
+           to be able to launch the app to show specific information. The <em>Open in Working Copy</em> action
+           can be used to show files, directories or the repository itself and to clone repositories as needed. </p>
+
+    </div>
+    <div class="inner">
+        <h3 id="callbacks">5.7 Callback URLs</h3>
+
+        <p>Use <a href="https://help.apple.com/iphone/12/#/iph7d118960c" target="apple">Siri Shortcuts</a> and
+          <a href="../url-schemes.html#x-callback-url">x-callback-url</a>
+           to speed up common operations and to automate your Git operations on iOS 12.</p>
+
+        <p>The easiest way to automate something on iOS 12 is to do it manually first, as
+            the latest actions performed will be shown as <em>Callback examples</em> inside settings where parameters
+            can be edited by tapping parameters.
+            You can create Siri Shortcuts to trigger actions through voice commands or <em>Copy</em>
+            and drag commands to apps supporting x-callback-url.</p>
+
+        <div class="ipad"><img class="ipad animated" src="../img/callback-editing.png" onload="imgLoaded(this)" /></div>
+
+        <p>Most Siri Actions can run in the background without Working Copy being shown, but the clipboard is the only
+            way to get data into or out of Siri Shortcuts. Use x-callback-url for greater control
+            over data and control flow  with apps such as
+            <a target="app" href="https://itunes.apple.com/us/app/id915249334?mt=8">Shortcuts</a>,
+            <a target="app" href="https://itunes.apple.com/us/app/scriptable/id1405459188?ls=1&amp;mt=8">Scriptable</a> or
+            <a target="app" href="https://itunes.apple.com/dk/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;at=1000lHq">Drafts</a>.
+            Note that supplied parameter values must be url-encoded.
+        </p>
+        <p>You will find additional information in the x-callback-url <a href="../url-schemes.html#x-callback-url">documentation</a> and
+            the ability to <a href="../url-schemes.html#chain">chain</a> several commands into a single
+            callback is especially useful.
+        </p>
+        <p>
+            As a security measure x-callback-url needs to be enabled from the settings screen and is protected by a random key.
+        </p>
+
+
+        <h3 id="draftcode">5.8 DraftCode</h3>
+        <p>
+            <a href="http://solesignal.com/draftcode/" target="app">DraftCode</a> is comprehensive
+            editor and runtime for PHP, that lets you run entire websites on your iPad or iPhone.
+            Everything happens on your device and works when offline.</p>
+         <p>You can transfer a directory to DraftCode by picking <em>Copy</em>
+             from the share sheet of a repository or directory and then using the Files app navigate to
+         <em>Locations > On My Device > DraftCode > filestore</em>
+          where you tap-and-hold and pick <em>Paste</em>.</p>
+    </div>
+
+    <!--<div class="inner">
+    <h3 id="swift-playgrounds">5.8 Swift Playgrounds</h3>
+    Apple has made
+    <a target="app" href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>
+    as a tool to learn Swift. There are some tricks that are nice to know when combining
+    Working Copy with Swift Playgrounds.
+
+    https://oleb.net/blog/2017/05/whats-new-in-swift-4-playground/ </div>-->
+
+
+    <div style="clear: both;"></div>
+    <h2 id="beyond-ios">6. Beyond iOS</h2>
+
+    <div class="inner">
+    <p>Not every tool is available on iOS, and Working Copy lets you
+       use remote computers to work on the files in your repositories.
+       Git remotes can be
+        <a target="gitbook" href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks">configured</a>
+        to perform operations at <em>Push</em> or you can use secure-shell to upload files to remote server
+        and invoke commands.
+    </p>
+    </div>
+
+    <div class="inner">
+        <h3 id="logfiles">6.1 Log files</h3>
+        <p>
+            Working Copy will record log files as you clone, fetch from and push to repositories.
+            This can be helpful when troubleshooting connection problems and if you are pushing to
+            special remotes such as <a href="https://devcenter.heroku.com/articles/git">Heroku</a>
+            the log can contain information such as whether deployment was successful.</p>
+
+        <div class="ipad-pro"><img class="ipad-pro animated" src="../img/log-file.png" onload="imgLoaded(this)"/></div>
+
+        <p>When something interesting is logged during a remote transfer, a log thumbnail
+            will appear in the lower right corner. You can drag this out of the
+            screen to fully hide it or tap to open up the log.</p>
+
+        <p>Access the list of previous logs using a button at the top of the repository list.
+            To keep this list tidy, only recent log files will be kept, but you can mark
+            a log file as favourite by tapping the star to avoid automatic cleanup.</p>
+
+        <p>Log files can be linked to a repository inside Working Copy, such that filenames
+            are turned into references. Regular URL's and email addresses are detected
+            as well and tapping these will show a preview and let you act on them and
+            while preview is shown, you will be able to
+            <a target="apple" href="https://support.apple.com/en-us/HT204681">Handoff</a> the link
+            to nearby Macs or iOS devices for browsing.</p>
+
+        <p>Often the log files exist outside Working Copy in emails, on build-server
+            status pages or as raw text in actual log files.
+            To import logs into the app, use the <em>Process in Working Copy</em>
+            action extension from the share sheet. It knows how to deal with build status pages from
+            <a target="ci" href="https://appcenter.ms/">App Center</a>,
+            <a target="ci" href="https://www.bitrise.io/">BitRise</a>,
+            <a target="ci" href="https://circleci.com/">Circle CI</a> and
+            <a target="ci" href="https://jenkins.io">Jenkins</a> but it can be used on raw text as well.
+            Zip archives will be unzipped and imported as a single log-file
+            with special markers to indicate filenames.
+        </p>
+        <p>The best way to capture logs from App Center builds is to tap <em>Download Logs</em>
+           and use <em>Process in Working Copy</em> on the zip archive.
+        </p>
+
+        <p>Your log files are entirely private and unless you explicitly export them
+            they stay on your device.</p>
+
+        </p>
+    </div>
+
+    <div class="inner">
+        <h3 id="ssh-upload">6.2 SSH Upload</h3>
+        <p>
+            It can be convenient to upload the files in your repository to a test server,
+            and to keep server files in sync as you make changes on iOS. To do this you
+            enable the <em>SSH Upload</em> feature from the share sheet for a repository or directory.</p>
+
+        <p>As implied by the name, files are transferred using secure shell, where you either
+           authenticate using password or SSH keys. You pick a server, a <em>Remote</em>
+           directory and a <em>Local</em> directory where the entire repository is used if you
+           do not specify a Local directory. You access a list of previously used servers
+            with a button to the right of the <em>Server</em> field which also contains computers
+            <a target="bonjour" href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/NetServices/Introduction.html">advertising</a>
+            SSH services.
+        </p>
+        <div class="ipad-pro"><img class="ipad-pro animated" src="../img/ssh-upload.png" onload="imgLoaded(this)"/></div>
+
+        <p>Tap <em>Upload</em> to start, where the app will compare files and directories
+           in the <em>Remote</em> directory to those in the <em>Local</em> directory uploading any files
+           missing on the remote server or where the local file is different than the remote file.
+         </p>
+         <p>Once initial upload has completed, the local directory is watched for changes
+            and these are transferred automatically until <em>Upload</em> is stopped. This is especially
+             useful when working on Jekyll sites, Node.js services and other technologies that
+             can reload when files change.
+         </p>
+         <p>You can switch to other
+            apps for editing files, but Working Copy is only allowed to keep running in the
+             background for a limited time. A notification will inform you when <em>Upload</em>
+             is stopped for this reason.
+         </p>
+        <p>Once <em>SSH Upload</em> is configured for a repository, a new button is available
+           in the upper right corner of the directory listing. This makes it easy to access
+            configuration and the icon will show status, turning green when <em>Upload</em>
+            is enabled and indicating when files are actively being transferred and if there are
+            errors. If you clear all fields in the configuration, you can tap <em>Hide</em>
+            to disable <em>SSH Upload</em> entirely until you enable it
+            again with the share sheet.
+           </p>
+     </div>
+
+    <div class="inner">
+        <h3 id="ssh-command">6.3 SSH Command</h3>
+        <p>Sometimes you need to apply a tool on your server to the files in your
+            repository on iOS. You can run
+            <a target="commands" href="https://www.gnu.org/software/make/">make</a>
+            on a Makefile, have <em>pdflatex</em> create a PDF file from
+            <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>, use
+            <a target="commands" href="https://developer.apple.com/library/content/technotes/tn2339/_index.html">xcodebuild</a>
+            to build apps or almost anything else you can invoke on the command line.
+        </p>
+        <p> <em>SSH Command</em> lets you configure commands for different file types that can be
+           invoked on your server using secure shell. Output from the command is shown as a
+            <a href="logfiles.html">log</a> file,
+            where mentions of files that exist in your repository are converted into links.
+            Files on the server created or modified by running the command are
+            downloaded back into your repository.
+        </p>
+        <p>You do this from the context menu of files and directories or 
+            with <em>⌘ $</em> or <em>⌘ ⇧ S</em> as keyboard shortcuts. 
+            Configuration is similar to
+           <a href="ssh-upload.html">SSH Upload</a> but you also 
+           configure a <em>Command</em> to run on the server.
+           When you tap <em>Start</em> a initial upload is performed, but while waiting for
+            local changes the specified command is run on the remote server. When this command has
+            completed upload syncing stops and any files created or modified will be
+            downloaded into your <em>Local</em> directory.
+        </p>
+        <p>Machine generated files are often not version controlled,
+           and the easiest way to enforce this, is to add these to your <em>.gitignore</em> file.
+            Sliding left on files in the directory listing and picking <em>Ignore</em> is the fastest
+            way to achieve this. Note that files in <em>.gitignore</em> are still downloaded and uploaded.
+            It is only for version-control purposes they are ignored.</p>
+        <div class="ipad-pro"><img class="ipad-pro animated" src="../img/ssh-command.png" onload="imgLoaded(this)"/></div>
+        <p>Since Working Copy has no way of knowing which files are relevant, everything in your
+           <em>Local</em> directory is synced to the <em>Remote</em> directory. If you run
+           the same command many times using the same remote directory, there will often only
+            be a few files that have changed and need to be uploaded. When configuring
+            the command it can be helpful to create a subdirectory just for running this command,
+            which can be done by tapping <em>+</em> in the remote directory picker. </p>
+
+        <p>The app will remember previous commands and these are available from the
+            button to the right of the <em>Command</em>
+            field combining commands for the exact filename, the same file extension or
+            the most recent commands for any file. The top choice for a given file is available as a
+           action when sliding left on files in directory listings. </p>
+
+        <p>You need a Linux or BSD server accessible through secure shell to use this feature,
+           but it doesn't have to be a expensive server. A small virtual private server (vps)
+           will get you far and can be purchased for less than $5 per month. You can use your Mac
+            as a server by enabling
+            <a target="apple" href="https://support.apple.com/kb/PH25252?locale=en_GB">Remote Login</a>.
+        </p>
+        <p>Even though you can run all sorts of commands, this feature is not a
+            substitute for a standalone SSH client. When your operation has multiple steps or you
+            are not 100% sure what option a command takes, a standalone interactive SSH client
+            should be used. A good compromise for complicated commands is to use a interactive client
+            to create shell scripts that you invoke with <em>SSH Command</em>.
+            
+            <a target="app" href="https://apps.apple.com/us/app/secure-shellfish/id1336634154?ls=1">Secure ShellFish</a>
+            is full SSH client by the developer of Working Copy and the editor
+            <a target="app" href="https://itunes.apple.com/dk/app/textastic-code-editor-6/id1049254261?mt=8">Textastic</a>
+            contains an interactive SSH client.
+        </p>
+        <p>To exclude the files uploaded and downloaded put a <em>.sshignore</em> file
+            in the outermost directory of your repository. The format is similar to <em>.gitignore</em>
+            in that each line is a glob pattern of files to exclude,
+            where <em>*</em> matches a number of filename characters and
+            <em>**</em> matches a number of characters including /. Matches are done against the entire path when /
+            is part of the pattern and otherwise only the filename should match. Details of the pattern
+            format is the same as for <a href="https://editorconfig.org/#file-format-details">.editorconfig</a>.
+        </p>
+        <p>
+            Lines starting with <em>#</em> are comments and
+            you start lines with <em>^</em> to make reverse rules overriding
+            earlier but not later lines.
+        </p>
+        <pre>
+# Ignore .bin files everywhere, but only .js files inside tmp &amp; don't ignore Index.js
+*.bin
+/tmp/*.js
+^Index.js
+</pre>
+        <p>If the server claims your regular commands do not exist
+            the <em>$PATH</em> variable is probably not what you expect. Try running
+            <em>echo $PATH</em> using SSH Command as a troubleshooting step.
+            Working Copy identifies itself as a interactive login shell,
+            but in reality it isn't interactive and if the server detects this your <em>.bashrc</em> script
+            might not run. Doing path configurations in <em>.profile</em> or <em>.bash_profile</em>
+            can fix this.
+           </p>
+    </div>
+
+    <div style="clear: both;"></div>
+    <h2 id="support">7. Help and Support</h2>
+    <div class="inner">
+        <p>A lot of work has gone into making Working Copy as trouble-free to use as possible,
+            but despite that, problems will sometimes occur. Please send your
+            questions by email to <a class="email"></a> and I will do my very best to assist.</p>
+
+        <h3 style="padding-top: 15px" id="file-backup">7.1 File Backup</h3>
+        <p>Files stored in Git are often very safe, since repositories are stored in multiple
+           locations some on local computers and some on remote servers. Files that have not yet
+           been committed and pushed to a server are somewhat vulnerable to data loss.</p>
+        <p> These files
+            takes part in regular
+            iOS backup to either iCloud or a local computer through iTunes. You access the files using
+            <a target="iPad-guide" href="https://support.apple.com/en-us/HT201301">iTunes File Sharing</a>
+            and since this uses a external computer, you can recover your files in situations
+            where Working Copy itself has problems running. Your files will be in a directory
+            called <em>changes</em>.
+        </p>
+        <p>When you restore a iPad or iPhone from backup you can reclone some or all your old repositories
+            by going to "Previous repositories" in settings. When cloning completes any changed and not yet pushed
+            files are moved into the repository for you to either commit or discard.
+            Previous repositories without a remote cannot be cloned but are listed to let you export the backed up files.
+        </p>
+
+    </div>
+
+    <div class="inner">
+        <h3 style="padding-top: 15px" id="purchase">7.2 How to purchase</h3>
+        <div class="right"><img class="right" onload="imgLoaded(this)" src="../img/unlock-transparent.png" /></div>
+        <p>Working Copy is a free download but you need to pay to unlock pro features:
+      <ol>
+        <li><a href="push-feature.html">Push</a> to remote</li>
+        <li>Override system color scheme</li>
+        <li>SSH <a href="ssh-upload.html">Upload</a></li>
+        <li>SSH <a href="ssh-command.html">Command</a></li>        
+        <li>Font <a href="font-customisation.html">customization</a></li>
+        <li>External <a href="beyond-ios.html#external-preview">Preview</a></li>
+        <li>Repository Folders</li>
+        <li><a href="pull-requests.html">Pull Request</a> creation</li>
+        <li><a href="rebase-pull.html">Rebase</a> from remotes</li>
+        <li><a href="stashing.html">Stash</a> changes</li>
+        <li>Unlimited repositories</li>
+        <li>Editing <a href="branch-editing.html">Branch</a> history</li>
+      </ol>
+            This unlock is a one-time purchase remembered by
+            Apple such that you can restore the unlock on other devices using the same Apple ID.
+        </p>
+        <p>The features you unlock are permanently available and any other pro features
+            added the next 12 months after purchase are also permanently available.
+            After one year new pro features introduced will be locked until you purchase
+            a upgrade. Even if you do not purchase a new unlock after 12 months, the app will
+            still be updated with improvements and bug-fixes.
+        </p>
+        <p>Students have access to all features for free through 
+            the <a href="../education/index.html">GitHub Education Pack</a>.</p>
+    </div>
+</div>
+<div style="clear: both"> </div>
+<footer>
+    Sign up for the <a href="../index.html@newsletter.html">newsletter</a> or get in touch by <a href="../enable-js.html" class="email" title="email">email</a> or
+    on <a href="https://twitter.com/workingcopyapp" target="twitter">Twitter</a>.
+</footer>
+<!--[if lt IE 7 ]>
+<script src="/js/dd_belatedpng.js"></script>
+<script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb</script>
+<![endif]-->
+<script>
+    if(window.document.location.search.indexOf('darkmode') >= 0) {
+        document.body.className = 'dark';
+    }
+    function rev(s) { return s.length <= 1 ? s : rev(s.substr(1)) + s.substr(0,1); }
+
+    function showLanguages() {
+        $('#expandLanguages').hide();
+        $('#allLanguages').show();
+
+        return false;
+    }
+
+    function ourHost(hostname) {
+        if(hostname != "workingcopyapp.com" && hostname != "workingcopy.app") return false;
+        return true;
+    }
+
+    function scrollToIdentifier(id) {
+        var $target = $(id);
+        if(!$target) return false;
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+
+            var hostname = window.document.location.hostname;
+            if(!ourHost(hostname)) return;
+
+            if(history) {
+                var url = "/manual/" + id.substr(1);
+                history.replaceState({}, "", url);
+            } else {
+                window.location.hash = id;
+            }
+        });
+        return true;
+    }
+
+    function scrollToCurrentIdentifier() {
+        var hash = window.location.hash;
+        if(hash) scrollToIdentifier(hash);
+    }
+
+    function showSecureShellInfo() {
+        $('#ssh-clone-catalog').show();
+        scrollToIdentifier('#ssh-host-info');
+    }
+
+    (function() {
+        function getScript(url,success){
+            var script=document.createElement('script');
+            script.src=url;
+            var head=document.getElementsByTagName('head')[0],
+                    done=false;
+            script.onload=script.onreadystatechange = function(){
+                if ( !done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') ) {
+                    done=true;
+                    success();
+                    script.onload = script.onreadystatechange = null;
+                    head.removeChild(script);
+                }
+            };
+            head.appendChild(script);
+        }
+
+        function resolveEmails() {
+            var emails = document.getElementsByClassName("email");
+            for(var k = 0; k < emails.length; ++k) {
+                var email = rev("ppa.ypocgnikrow@sredna");
+                emails[k].href = "mailto:" + email;
+                if(emails[k].innerHTML == "") {
+                    emails[k].innerHTML = email;
+                }
+            }
+        }
+
+        function setupVideos(showControls) {
+            $('img.animated').each(function() {
+                var img = $(this)[0];
+                var src = img.getAttribute("src");
+                var alt = img.getAttribute("video-alt");
+                if(!alt) alt = img.getAttribute("alt");
+
+                var base = src.replace("/img/", "");
+                base = base.replace(".png", "").replace(".jpg", "");
+
+                var container = document.createElement("div");
+                container.setAttribute("class", "container");
+
+                var video = document.createElement("video");
+                video.setAttribute("poster", "/video/" + base + ".jpg");
+                video.setAttribute("muted", "muted");
+                video.setAttribute("webkit-playsinline", "true");
+                video.setAttribute("playsinline", "true");
+                video.setAttribute("preload", "none");
+                if(showControls) {
+                    video.setAttribute("class", "animated controls");
+                    video.setAttribute("controls", "true");
+                } else {
+                    video.setAttribute("class", "animated");
+                }
+                video.spinner_started = false;
+                if(alt) video.setAttribute("alt", alt);
+
+                var playButton = document.createElement("img");
+                playButton.setAttribute("class", "playButton");
+                playButton.setAttribute("src", "/video/play-grey.png");
+
+                // we can override placement of grey play button with play_button_bottom
+                // attribute on img tag
+                var playButtonBottom = img.getAttribute("play_button_bottom");
+                if(playButtonBottom) {
+                    playButton.style.bottom = playButtonBottom;
+                }
+
+                var source = document.createElement("source");
+                source.setAttribute("src", "/video/" + base + ".mp4");
+                source.setAttribute("type", "video/mp4");
+                if(!showControls) {
+                    video.oncanplay = function() {
+                        playButton.parentNode.removeChild(playButton);
+                        video.setAttribute("controls", "true");
+                        video.setAttribute("class", "animated started");
+                    };
+
+                    video.onclick = function() {
+                        if(!video.spinner_started) {
+                            video.spinner_started = true;
+                            playButton.setAttribute("class", "playButton spinning");
+                        }
+
+                        var isPlaying = !!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2);
+                        if(isPlaying) video.pause();
+                        else {
+                            video.play();
+                        }
+                    };
+                    playButton.onclick = video.onclick;
+                }
+
+                video.appendChild(source);
+                container.appendChild(video);
+
+                // put iPhone X frame on top
+                if(img.className.indexOf("iphonex") >= 0) {
+                    var overlay = document.createElement("img");
+                    overlay.setAttribute("src", "/img/iPhoneX-frame.png");
+                    overlay.setAttribute("class", "iPhoneX-frame");
+                    container.appendChild(overlay);
+                }
+
+                // put iPad Air frame on top
+                if(img.className.indexOf("ipad-air-2021") >= 0) {
+                    var overlay = document.createElement("img");
+                    overlay.setAttribute("src", "/img/ipad-air-2021-frame.png");
+                    overlay.setAttribute("class", "ipad-air-2021-frame");
+                    container.appendChild(overlay);
+                }
+
+                if(!showControls) {
+                    container.appendChild(playButton);
+                }
+
+                img.parentNode.insertBefore(container, img.nextSibling);
+            });
+        }
+
+        getScript('js/jquery.min.js',function(){
+            resolveEmails();
+
+            var hash = window.location.hash;
+            if(hash == "#ssh-host-warning" || hash == "#ssh-host-info") {
+                showSecureShellInfo();
+            } else if(hash && ourHost(window.document.location.hostname)) {
+                // if there is element with this name, we adjust style of url
+                var id = hash.substring(1);
+                if(history && document.getElementById(id)) {
+                    var url = "/manual/" + id;
+                    history.replaceState({}, "", url);
+                }
+            }
+
+            // smooth scrolling on relative links
+            $('a[href^="#"]').on('click',function (e) {
+                var ok = scrollToIdentifier(this.hash);
+                if(ok) e.preventDefault();
+            });
+
+            // make /manual/section links behave link #section
+            $('a[href^="/manual/"]').on('click',function (e) {
+                var section = this.pathname.split('/').pop();
+                var ok = scrollToIdentifier("#" + section);
+                if(ok) e.preventDefault();
+            });
+
+            var search = window.document.location.search;
+            var noVideos = search.indexOf('print') >= 0;
+            var showControls = search.indexOf('archive') >= 0 || search.indexOf('darkmode') >= 0;
+            if(!noVideos) setupVideos(showControls);
+        });
+    })();
+</script>
+</body>
+</html>

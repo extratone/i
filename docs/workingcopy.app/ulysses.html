@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ulysses and Working Copy</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="author" content="Anders Borum">
+    <meta name="keywords" content="iOS,git,repository,writing,markdown">
+    <meta name="apple-itunes-app" content="app-id=896694807">
+    <link rel="mask-icon" href="img/mask-icon.svg" color="#399CFC">
+    <link rel="stylesheet" type="text/css" href="css/style6.css">
+    <meta property="og:image" content="https://workingcopyapp.com/img/ulysses-commit.png">
+    <meta property="og:description"
+          content="Version controlled writing on iOS using Ulysses and Working Copy.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@workingcopyapp">
+    <meta name="twitter:creator" content="@workingcopyapp">
+    <meta name="twitter:image" content="https://workingcopyapp.com/img/ulysses-commit.png">
+    <meta name="twitter:title" content="Ulysses and Working Copy">
+    <meta name="twitter:description"
+          content="Version controlled writing on iOS using Ulysses and Working Copy.">
+    <script>
+        // redirect /manual/section-name to manual.html#section-name
+        var pathname = window.location.pathname;
+        if (pathname.indexOf("/manual/") == 0 && !window.location.hash && pathname.indexOf("/manual.html") < 0) {
+            var section = pathname.substr("/manual/".length).replace(/\/+$/, "");
+            window.location = window.location.protocol + "//" + window.location.host + "/manual.html#" + section;
+        }
+    </script>
+    <script>
+        function imgLoaded(img) {
+            img.parentNode.style.background = 'transparent';
+        }
+        ;
+    </script>
+    <style>
+        .signup #status {
+            clear: both;
+        }
+
+        #email-field {
+            margin-right: 10px;
+        }
+
+        #status {
+            color: #555;
+            font-size: 75%;
+            display:none;
+            width: 100%;
+        }
+
+        #date {
+            color: #555;
+            font-size: 75%;
+            position: absolute;
+            top: 0px; left: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <a href="https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;uo=6&amp;at=1000lHq&amp;ct="
+       target="itunes"
+       title="Download on the App Store" class="download-button"><img src="img/download-on-the-app-store.png"/></a>
+    <div>
+        <header>
+            <h1>Ulysses and Working Copy</h1>
+            <div id="date">June 10, 2020</div>
+        </header>
+
+        <div class="outer">
+            <div class="inner">
+
+            <p><a target="app" href="https://ulysses.app/">Ulysses</a> is a high quality writing tool 
+				and <a href="index.html" target="app">Working Copy</a> is a Git client for iPad and iPhone.
+            </p>
+			<p>Git is a popular versioning system for managing projects where many files
+               change or where edits can be made by many people. It requires small explanations to 
+               accompany changes which helps make sense of the project over time. 
+               Git is heavily used in software development but is useful when keeping track of 
+               changes over time is a challenge.	
+			     </p>
+				 
+			<p>Projects in Git are called repositories and each person working on a project has a copy
+			   on their computer, phone or tablet. All work is collected in a shared remote repository on services 
+			   such as <a href="https://github.com/">GitHub</a>. </p>	 
+
+			<p>Working Copy can manage Git repositories and make these available in the Files app
+				and Ulysses is able to edit these without needing to copy anything between the apps.
+			 </p>
+                          
+             <h2>Getting started</h2>
+			 <p>
+			 	First step is to clone your repository in Working Copy. Inside Ulysses you enter <em>Settings > Library</em>,
+				tap <em>Add from Other Location…</em> and navigate to the folder inside Working Copy. You should
+				enable the <em>Read and Write Markdown Files</em> switch as Git is best suited for text files.
+				</p>
+			
+            <div class="ipad-pro"><img class="ipad-pro animated" src="img/ulysses-import.png"
+			  onload="imgLoaded(this)"/></div>
+		 	
+			<p>As you make edits the files in Working Copy are marked as modified and changed lines
+				and words are highlighted. If you are happy with your work you <em>Commit</em>, 
+				writing a short message explaining what was changed and why you made the change. 
+		 	</p>
+			 
+			 <p>
+                 You can go through the history of a project by reviewing previous commits looking
+                 at changes and the author behind each change. </p>
+             
+                <p>
+                    You <em>Pull</em> down commits from the remote to get the work made by others. 
+                   As long as all edits are made in different different parts of the project 
+                   Git knows how to combine the changes. When several people change the same 
+                   paragraph there is no safe way for a computer to determine how the changes 
+                   should be combined. You resolve such conflicts by picking the text you 
+                   want manually.
+               </p>
+
+               <div class="ipad-pro"><img class="ipad-pro animated" src="img/ulysses-commit.png"
+ 			  onload="imgLoaded(this)"/></div>
+			 
+			<p>	
+				You make  changes available to other people on your project by <em>Push</em>ing to
+				the remote repository and this can be done as part of the <em>Commit</em>.
+			 </p>
+              
+             <div class="ipad-pro"><img class="ipad-pro animated" src="img/ulysses-resolve.png"
+ 			  onload="imgLoaded(this)"/></div>
+
+               <p>Not every writing project benefits from the explicit change tracking in Git,
+                but if you have many files, many participants or a long running project it is 
+                often worth the effort. 
+                <a target="app" href="https://ulysses.app/">Ulysses</a> and 
+                <a target="app" href="index.html">Working Copy</a> combines a great writing
+                experience with easy to use Git cababilities.
+                </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="clear: both"></div>
+    <footer>
+        Read the <a href="manual/index.html">users’ guide</a> or the <a href="javascript:newsletterSignup()">newsletter</a>
+        and get in touch by <a href="enable-js.html" class="email" title="email">email</a>
+        or on <a href="https://twitter.com/workingcopyapp" target="twitter">Twitter</a>.
+    </footer>
+    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js"
+            data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">
+        // newsletter signup when ?newsletter is present
+        function newsletterSignup() {
+            require(["mojo/signup-forms/Loader"], function (L) {
+                L.start({
+                    "baseUrl": "mc.us14.list-manage.com",
+                    "uuid": "650f24a8eda4be09fddf370d7",
+                    "lid": "c1eccfd902"
+                })
+            })
+            document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        }
+        if (window.location.href.indexOf('?newsletter') >= 0) newsletterSignup();
+    </script>
+    <script>
+        function rev(s) { return s.length <= 1 ? s : rev(s.substr(1)) + s.substr(0,1); }
+
+        (function() {
+            function getScript(url,success){
+                var script=document.createElement('script');
+                script.src=url;
+                var head=document.getElementsByTagName('head')[0],
+                        done=false;
+                script.onload=script.onreadystatechange = function(){
+                    if ( !done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') ) {
+                        done=true;
+                        success();
+                        script.onload = script.onreadystatechange = null;
+                        head.removeChild(script);
+                    }
+                };
+                head.appendChild(script);
+            }
+
+            function resolveEmails() {
+                var emails = document.getElementsByClassName("email");
+                for(var k = 0; k < emails.length; ++k) {
+                    var email = rev("moc.ppaypocgnikrow@sredna");
+                    emails[k].href = "mailto:" + email;
+                    if(emails[k].innerHTML == "") {
+                        emails[k].innerHTML = email;
+                    }
+                }
+            }
+
+            function setupVideos() {
+                $('img.animated').each(function() {
+                    var img = $(this)[0];
+                    var src = img.getAttribute("src");
+                    var alt = img.getAttribute("video-alt");
+                    if(!alt) alt = img.getAttribute("alt");
+
+                    var base = src.replace("img/", "");
+                    base = base.replace(".png", "").replace(".jpg", "");
+
+                    var container = document.createElement("div");
+                    container.setAttribute("class", "container");
+
+                    var video = document.createElement("video");
+                    video.setAttribute("poster", "video/" + base + ".jpg");
+                    video.setAttribute("muted", "true");
+                    video.setAttribute("webkit-playsinline", "true");
+                    video.setAttribute("playsinline", "true");
+                    video.setAttribute("preload", "none");
+                    video.setAttribute("class", "animated");
+                    video.spinner_started = false;
+                    if(alt) video.setAttribute("alt", alt);
+
+                    var playButton = document.createElement("img");
+                    playButton.setAttribute("class", "playButton");
+                    playButton.setAttribute("src", "video/play-grey.png");
+
+                    // we can override placement of grey play button with play_button_bottom
+                    // attribute on img tag
+                    var playButtonBottom = img.getAttribute("play_button_bottom");
+                    if(playButtonBottom) {
+                        playButton.style.bottom = playButtonBottom;
+                    }
+
+                    var source = document.createElement("source");
+                    source.setAttribute("src", "video/" + base + ".mp4");
+                    source.setAttribute("type", "video/mp4");
+                    video.oncanplay = function() {
+                        playButton.parentNode.removeChild(playButton);
+                        video.setAttribute("controls", "true");
+                        video.setAttribute("class", "animated started");
+                    };
+                    video.onclick = function() {
+                        if(!video.spinner_started) {
+                            video.spinner_started = true;
+                            playButton.setAttribute("class", "playButton spinning");
+                        }
+
+                        var isPlaying = !!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2);
+                        if(isPlaying) video.pause();
+                        else {
+                            video.play();
+                        }
+                    };
+                    playButton.onclick = video.onclick;
+
+                    video.appendChild(source);
+                    container.appendChild(video);
+                    container.appendChild(playButton);
+
+                    img.parentNode.insertBefore(container, img.nextSibling);
+                });
+            }
+
+            getScript('js/jquery.min.js',function(){
+                resolveEmails();
+                setupVideos();
+            });
+        })();
+
+        function showStatus(status) {
+            $('#status').text(status);
+            $('#status').delay(300).slideDown(400, function() {
+                $('html, body').animate({
+                    scrollTop: $("#status").offset().top
+                }, 400);
+            });
+        }
+
+        function submitEmail(email) {
+            var post = $.post("/signup.php", { "email": email, "subject": "Ulysses"} )
+                    .done(function() {
+                        showStatus("You have signed up with " + email + ". Thank you! You will receive instructions on how to install shortly.");
+                    })
+                    .fail(function() {
+                        showStatus("Signup problem: " + post.responseText);
+                    });
+        }
+
+        function signUp(evt) {
+            var signup = $('.signup');
+
+            if(signup.is(":visible")) {
+                signup.slideUp(200);
+            } else {
+                signup.slideDown(400, function() {
+                    var field = document.getElementById('email-field');
+                    field.focus();
+                });
+
+                $('html, body').animate({
+                    scrollTop: $("#testflight-signup").offset().top
+                });
+            }
+
+            return false;
+        }
+
+        function preSignUp(evt) {
+            $('html, body').animate({
+                scrollTop: $("#testflight-signup").offset().top
+            }, 500, function() {
+                signUp();
+            });
+
+            return false;
+        }
+
+        function doSubmit() {
+            var field = document.getElementById('email-field');
+            var email = field.value.trim();
+            if(email.length > 0) {
+                submitEmail(email);
+            }
+            return false;
+        }
+    </script>
+</div>
+</body>
+</html>
