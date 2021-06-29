@@ -1,0 +1,8 @@
+import Shortcuts 1090.2
+var sc = Shortcut input
+if(sc .contains " iCloud" ) {
+setClipboard(variable: sc)
+sendNotification(body: "${sc} copied to clipboard" , title: " Successfully copied to clipboard" )
+} else {
+alert(message: " Your clipboard does not contain the phrase Hello World" )
+}

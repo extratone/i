@@ -1,0 +1,19 @@
+Website - https://jellycuts.com
+
+App Store Link - https://apps.apple.com/us/app/jellycuts/id1522625245
+
+VSCode Extension - https://marketplace.visualstudio.com/items?itemName=ActuallyZach.jelly-language-support
+
+Discord - https://discord.com/invite/jVRPXza
+
+Jellycuts Twitter - https://twitter.com/Jellycuts
+
+Jellycuts Subreddit - https://www.reddit.com/r/Jellycuts/
+
+Developer Twitter - https://twitter.com/LinemanZachary
+
+Developer Website - https://actuallyzach.com
+
+Jellycuts Email - jellycuts@gmail.com
+
+Jellycuts Issue Repository - https://github.com/ActuallyZach/Jellycuts-Issues

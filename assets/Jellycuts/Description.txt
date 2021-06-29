@@ -1,0 +1,35 @@
+# Description
+Jellycuts is a programming tool that allows you too quickly and efficiently write Powerful Siri Shortcuts right on your iPad or iPhone.
+
+Switching from coding Shortcuts in the Shortcuts App to coding in Jellycuts is super easy. Features like the Icon Creator and JSON Dictionary Builder allow you to transfer your knowledge of Shortcuts into Jellycuts.
+
+# Features
+ - Write and run Jellycuts
+ - Example Jellycuts
+ - Export Jellycuts into Shortcuts
+ - Import your existing Shortcuts into Jellycuts
+ - JSON Dictionary Builder
+	- Create Shortcuts dictionaries that can be used in your Jellycuts
+ - Icon Creator
+	- Preview your shortcuts Icon
+ - Jellycuts Bridge 
+	- Allows you to connect VSCode and Jellycuts.
+	- Once connected you can transfer files directly from VSCode into Jellycuts projects.
+ - Full language documentation
+	- Type explorer, allows you too see all the possible options for a function‘s parameters
+ - Pop-out documentation for iPads
+ - Dark Mode Support
+
+## Editor Features
+ - Syntax highlighting
+ - Change your editor theme
+ 	- 50+ Themes
+ - Autocompletion for code
+ - Enable / Disable line numbers
+ - Change editor font
+ - Change editor font size
+ - Debug Terminal
+
+# Contact 
+Twitter @Jellycuts
+Email: jellycuts@gmail.com

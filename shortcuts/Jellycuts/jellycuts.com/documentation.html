@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Jellycuts</title>
+    <link rel="icon" href="assets/Icon.png" />
+    <meta name="description" content="Jellycuts is the best way to create supercharged iOS shortcuts." />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/8dc57f25ff6f580f055e5e0bb732299ecebc8fcb/style.css'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script defer src='https://d33wubrfki0l68.cloudfront.net/js/adc83b19e793491b1c6ea0fd8b46cd9f32e592fc/assets/js/main.js'></script>
+</head>
+
+<body>
+    <h1 style="color:#BE9C8B;">Jellycut's Documentation</h1>
+    <div class="linkDiv">
+        <a href='documentation/introduction.html'>Introduction</a>
+
+        <h2 style="color:#BE9C8B;">Meta Actions</h2>
+
+        <a href='documentation/variablesinjelly.html'>Variables</a>
+
+        <a href='documentation/magicvariablesinjelly.html'>Magic Variables</a>
+
+        <a href='documentation/dostuff!.html'>Functions</a>
+
+        <a href='documentation/libraries.html'>Importing Libraries</a>
+
+        <a href='documentation/string.html'>String</a>
+
+        <a href='documentation/multi_line_string.html'>Multi-line String</a>
+
+        <a href='documentation/shortcut_color.html'>Shortcut Color</a>
+
+        <a href='documentation/shortcut_icon.html'>Shortcut Icon</a>
+
+        <a href='documentation/shortcut_input.html'>Shortcut Input</a>
+
+        <a href='documentation/ask_each_time.html'>Ask Each Time</a>
+
+        <a href='documentation/clipboard.html'>Clipboard</a>
+
+        <a href='documentation/repeat.html'>Repeat</a>
+
+        <a href='documentation/repeat_each.html'>Repeat Each</a>
+
+        <a href='documentation/menu.html'>Menu</a>
+
+        <a href='documentation/get_property.html'>Get Property</a>
+
+        <a href='documentation/keys.html'>Get Key</a>
+
+        <a href='documentation/type_casting.html'>Type Casting</a>
+
+        <a href='documentation/if_statement.html'>If Statement</a>
+
+        <a href='documentation/else_statement.html'>Else Statement</a>
+
+        <h2 style="color:#BE9C8B;">Shortcuts Actions</h2>
+        <a href='documentation/addframetogif.html'>Add Frame To GIF</a>
+
+        <a href='documentation/addupnext.html'>Add Music Up Next</a>
+
+        <a href='documentation/addtoplaylist.html'>Add to Playlist</a>
+
+        <a href='documentation/addtoreadinglist.html'>Add to Reading List</a>
+
+        <a href='documentation/adjustdate.html'>Adjust Date</a>
+
+        <a href='documentation/airdrop.html'>Airdrop</a>
+
+        <a href='documentation/appendfile.html'>Append File</a>
+
+        <a href='documentation/appendnote.html'>Append Note</a>
+
+        <a href='documentation/askforinput.html'>Ask for Input</a>
+
+        <a href='documentation/batterylevel.html'>Battery Level</a>
+
+        <a href='documentation/calculate.html'>Calculate Expression</a>
+
+        <a href='documentation/statistic.html'>Calculate Statistic</a>
+
+        <a href='documentation/call.html'>Call</a>
+
+        <a href='documentation/changecase.html'>Change Text Case</a>
+
+        <a href='documentation/changewallpaper.html'>Change Wallpaper</a>
+
+        <a href='documentation/choose.html'>Choose From List</a>
+
+        <a href='documentation/clearupnext.html'>Clear Up Next</a>
+
+        <a href='documentation/combineimage.html'>Combine Image</a>
+
+        <a href='documentation/combinetext.html'>Combine Text</a>
+
+        <a href='documentation/continueinshortcuts.html'>Continue In Shortcuts</a>
+
+        <a href='documentation/convertimage.html'>Convert Image</a>
+
+        <a href='documentation/correctspelling.html'>Correct Spelling</a>
+
+        <a href='documentation/count.html'>Count</a>
+
+        <a href='documentation/createfolder.html'>Create Folder</a>
+
+        <a href='documentation/makegif.html'>Create GIF</a>
+
+        <a href='documentation/createnote.html'>Create Note</a>
+
+        <a href='documentation/createpdf.html'>Create PDF</a>
+
+        <a href='documentation/createplaylist.html'>Create Playlist</a>
+
+        <a href='documentation/createqr.html'>Create QR Code</a>
+
+        <a href='documentation/cropimage.html'>Crop Image</a>
+
+        <a href='documentation/date.html'>Date</a>
+
+        <a href='documentation/debugshortcut.html'>Debug Content Attribution</a>
+
+        <a href='documentation/decode.html'>Decode Base64</a>
+
+        <a href='documentation/decodeurl.html'>Decode URL</a>
+
+        <a href='documentation/deletefile.html'>Delete File</a>
+
+        <a href='documentation/deletephotos.html'>Delete Photos</a>
+
+        <a href='documentation/detectlanguage.html'>Detect Language</a>
+
+        <a href='documentation/dictatetext.html'>Dictate Text</a>
+
+        <a href='documentation/dictionary.html'>Dictionary</a>
+
+        <a href='documentation/emojiname.html'>Emoji Name</a>
+
+        <a href='documentation/encodeaudio.html'>Encode Audio</a>
+
+        <a href='documentation/encode.html'>Encode Base64</a>
+
+        <a href='documentation/encodemedia.html'>Encode Media</a>
+
+        <a href='documentation/encodeurl.html'>Encode URL</a>
+
+        <a href='documentation/exit.html'>Exit Shortcut</a>
+
+        <a href='documentation/expandurl.html'>Expand URL</a>
+
+        <a href='documentation/extractarchive.html'>Extract Archive</a>
+
+        <a href='documentation/facetime.html'>Facetime</a>
+
+        <a href='documentation/filterarticles.html'>Filter Articles</a>
+
+        <a href='documentation/filterattendees.html'>Filter Attendees</a>
+
+        <a href='documentation/filtercalendar.html'>Filter Calendar Events</a>
+
+        <a href='documentation/filtercontacts.html'>Filter Contacts</a>
+
+        <a href='documentation/filterfiles.html'>Filter File</a>
+
+        <a href='documentation/filterimages.html'>Filter Images</a>
+
+        <a href='documentation/filterlocations.html'>Filter Locations</a>
+
+        <a href='documentation/filtermusic.html'>Filter Music</a>
+
+        <a href='documentation/filternotes.html'>Filter Notes</a>
+
+        <a href='documentation/filterphotos.html'>Filter Photos</a>
+
+        <a href='documentation/filterreminders.html'>Filter Reminders</a>
+
+        <a href='documentation/flipimage.html'>Flip Image</a>
+
+        <a href='documentation/formatdate.html'>Format Date</a>
+
+        <a href='documentation/formatnumber.html'>Format Number</a>
+
+        <a href='documentation/formatsize.html'>Format Size</a>
+
+        <a href='documentation/getaddressfrom.html'>Get Address From Input</a>
+
+        <a href='documentation/getallalarms.html'>Get All Alarms</a>
+
+        <a href='documentation/keysfrom.html'>Get All Keys from Dictionary</a>
+
+        <a href='documentation/valuesfrom.html'>Get All Values from Dictionary</a>
+
+        <a href='documentation/appdetail.html'>Get App Detail</a>
+
+        <a href='documentation/appearancedetail.html'>Get Appearance Detail</a>
+
+        <a href='documentation/getarticle.html'>Get Article</a>
+
+        <a href='documentation/articledetail.html'>Get Article Detail</a>
+
+        <a href='documentation/attendeedetail.html'>Get Attendee Detail</a>
+
+        <a href='documentation/cellulardetails.html'>Get Cellular Details</a>
+
+        <a href='documentation/getclipboard.html'>Get Clipboard</a>
+
+        <a href='documentation/conditiondetail.html'>Get Condition Details</a>
+
+        <a href='documentation/contactdetail.html'>Get Contact Detail</a>
+
+        <a href='documentation/getcontactsfrom.html'>Get Contacts From Input</a>
+
+        <a href='documentation/downloadurl.html'>Get Contents of URL</a>
+
+        <a href='documentation/getcurrentconditions.html'>Get Current Conditions</a>
+
+        <a href='documentation/getcurrentsong.html'>Get Current Song</a>
+
+        <a href='documentation/getdatefrom.html'>Get Date From Input</a>
+
+        <a href='documentation/devicedetails.html'>Get Device Details</a>
+
+        <a href='documentation/getemailfrom.html'>Get Email From Input</a>
+
+        <a href='documentation/eventdetail.html'>Get Event Detail</a>
+
+        <a href='documentation/getfile.html'>Get File</a>
+
+        <a href='documentation/filedetail.html'>Get File Details</a>
+
+        <a href='documentation/getfilelink.html'>Get File Link</a>
+
+        <a href='documentation/getforecast.html'>Get Forecast</a>
+
+        <a href='documentation/getframes.html'>Get Frames</a>
+
+        <a href='documentation/sampledetail.html'>Get Health Sample Detail</a>
+
+        <a href='documentation/getip.html'>Get IP Address</a>
+
+        <a href='documentation/imagedetail.html'>Get Image Detail</a>
+
+        <a href='documentation/getimagesfrom.html'>Get Images From Input</a>
+
+        <a href='documentation/getitemfromlist.html'>Get Item From List</a>
+
+        <a href='documentation/getlastburst.html'>Get Last Bursts</a>
+
+        <a href='documentation/getlastlivephoto.html'>Get Last Live Photos</a>
+
+        <a href='documentation/getlastphoto.html'>Get Last Photo</a>
+
+        <a href='documentation/getlastimport.html'>Get Last Photo Import</a>
+
+        <a href='documentation/getlastscreenshot.html'>Get Last Screenshots</a>
+
+        <a href='documentation/getlastvideo.html'>Get Last Video</a>
+
+        <a href='documentation/locationdetail.html'>Get Location Detail</a>
+
+        <a href='documentation/getmatchgroup.html'>Get Match Group</a> Í
+
+        <a href='documentation/musicdetail.html'>Get Music Detail</a>
+
+        <a href='documentation/getname.html'>Get Name</a>
+
+        <a href='documentation/notedetail.html'>Get Note Details</a>
+
+        <a href='documentation/getnumbersfrom.html'>Get Numbers From Input</a>
+
+        <a href='documentation/getclass.html'>Get Object of Class</a>
+
+        <a href='documentation/pagedetail.html'>Get Page Detail</a>
+
+        <a href='documentation/getphonesfrom.html'>Get Phone Numbers From Input</a>
+
+        <a href='documentation/getplaylist.html'>Get Playlist</a>
+
+        <a href='documentation/podcastepisodedetail.html'>Get Podcast Episode Detail</a>
+
+        <a href='documentation/getpodcastepisodes.html'>Get Podcast Episodes</a>
+
+        <a href='documentation/podcastdetail.html'>Get Podcast Show Detail</a>
+
+        <a href='documentation/getpodcasts.html'>Get Podcasts</a>
+
+        <a href='documentation/productdetail.html'>Get Product Detail</a>
+
+        <a href='documentation/getpagerss.html'>Get RSS From Page</a>
+
+        <a href='documentation/getrssitems.html'>Get RSS Items From Feed</a>
+
+        <a href='documentation/reminderdetail.html'>Get Reminder Detail</a>
+
+        <a href='documentation/shazamdetail.html'>Get Shazam Detail</a>
+
+        <a href='documentation/shortcutdetail.html'>Get Shortcut Details</a>
+
+        <a href='documentation/getshortcuts.html'>Get Shortcuts</a>
+
+        <a href='documentation/stockdetail.html'>Get Stock Detail</a>
+
+        <a href='documentation/gettextfrom.html'>Get Text From Input</a>
+
+        <a href='documentation/gettimebetween.html'>Get Time Between Dates</a>
+
+        <a href='documentation/gettype.html'>Get Type</a>
+
+        <a href='documentation/urlcomponent.html'>Get URL Component</a>
+
+        <a href='documentation/getheaders.html'>Get URL Headers</a>
+
+        <a href='documentation/geturlsfrominput.html'>Get URLS From Input</a>
+
+        <a href='documentation/getupcomingreminders.html'>Get Upcoming Reminders</a>
+
+        <a href='documentation/valuefor.html'>Get Value For Key</a>
+
+        <a href='documentation/wifidetails.html'>Get Wi-Fi Details</a>
+
+        <a href='documentation/artistdetail.html'>Get iTunes Artist Detail</a>
+
+        <a href='documentation/grabjellycut.html'>Grab Jellycut</a>
+
+        <a href='documentation/handoffplayback.html'>Handoff Playback</a>
+
+        <a href='documentation/hash.html'>Hash</a>
+
+        <a href='documentation/importshortcut.html'>Import Shortcut</a>
+
+        <a href='documentation/list.html'>List</a>
+
+        <a href='documentation/logworkout.html'>Log Workout</a>
+
+        <a href='documentation/makearchive.html'>Make Archive</a>
+
+        <a href='documentation/htmlfromrichtext.html'>Make HTML From Rich Text</a>
+
+        <a href='documentation/markdownfromrich.html'>Make Markdown From Rich Text</a>
+
+        <a href='documentation/richtextfromhtml.html'>Make Rich Text From HTML</a>
+
+        <a href='documentation/richtextfrommarkdown.html'>Make Rich Text From Markdown</a>
+
+        <a href='documentation/videofromgif.html'>Make Video from GIF</a>
+
+        <a href='documentation/markup.html'>Markup</a>
+
+        <a href='documentation/maskimage.html'>Mask Image</a>
+
+        <a href='documentation/matchtext.html'>Match Text</a>
+
+        <a href='documentation/math.html'>Math</a>
+
+        <a href='documentation/nothing.html'>Nothing</a>
+
+        <a href='documentation/number.html'>Number</a>
+
+        <a href='documentation/openapp.html'>Open App</a>
+
+        <a href='documentation/openin.html'>Open In</a>
+
+        <a href='documentation/openshortcut.html'>Open Shortcut</a>
+
+        <a href='documentation/openurl.html'>Open URL</a>
+
+        <a href='documentation/xcallbackurl.html'>Open X-Callback URL</a>
+
+        <a href='documentation/overlayimage.html'>Overlay Image</a>
+
+        <a href='documentation/play.html'>Play Music</a>
+
+        <a href='documentation/playmusic.html'>Play Music</a>
+
+        <a href='documentation/playpodcast.html'>Play Podcast</a>
+
+        <a href='documentation/playsound.html'>Play Sound</a>
+
+        <a href='documentation/prependfile.html'>Prepend File</a>
+
+        <a href='documentation/print.html'>Print</a>
+
+        <a href='documentation/quicklook.html'>Quicklook</a>
+
+        <a href='documentation/randomnumber.html'>Random Number</a>
+
+        <a href='documentation/recordaudio.html'>Record Audio</a>
+
+        <a href='documentation/removeevents.html'>Remove Events</a>
+
+        <a href='documentation/removefromalbum.html'>Remove From Album</a>
+
+        <a href='documentation/removereminders.html'>Remove Reminders</a>
+
+        <a href='documentation/replacetext.html'>Replace Text</a>
+
+        <a href='documentation/resizeimage.html'>Resize Image</a>
+
+        <a href='documentation/rotateimage.html'>Rotate Image</a>
+
+        <a href='documentation/round.html'>Round Number</a>
+
+        <a href='documentation/runjavascriptonwebpage.html'>Run Javascript on Webpage</a>
+
+        <a href='documentation/runssh.html'>Run Script Over SSH</a>
+
+        <a href='documentation/runshortcut.html'>Run Shortcut</a>
+
+        <a href='documentation/savefile.html'>Save File</a>
+
+        <a href='documentation/savetocameraroll.html'>Save to Camera Roll</a>
+
+        <a href='documentation/scanqr.html'>Scan QR Code</a>
+
+        <a href='documentation/searchappstore.html'>Search App Store</a>
+
+        <a href='documentation/searchpddcasts.html'>Search Podcasts</a>
+
+        <a href='documentation/searchweb.html'>Search Web</a>
+
+        <a href='documentation/searchitunes.html'>Search iTunes</a>
+
+        <a href='documentation/seek.html'>Seek Media</a>
+
+        <a href='documentation/selectcontact.html'>Select Contact</a>
+
+        <a href='documentation/selectedemail.html'>Select Email</a>
+
+        <a href='documentation/selectphone.html'>Select Phone Number</a>
+
+        <a href='documentation/selectphoto.html'>Select Photo</a>
+
+        <a href='documentation/selectsong.html'>Select Song From Apple Music</a>
+
+        <a href='documentation/alert.html'>Send Alert</a>
+
+        <a href='documentation/sendmessage.html'>Send Message</a>
+
+        <a href='documentation/sendnotification.html'>Send Notification</a>
+
+        <a href='documentation/setairplanemode.html'>Set Airplane Mode</a>
+
+        <a href='documentation/setbluetooth.html'>Set Bluetooth</a>
+
+        <a href='documentation/setbrightness.html'>Set Brightness</a>
+
+        <a href='documentation/setcellular.html'>Set Cellular</a>
+
+        <a href='documentation/setclipboard.html'>Set Clipboard</a>
+
+        <a href='documentation/setappearance.html'>Set Device Appearance</a>
+
+        <a href='documentation/setvalue.html'>Set Dictionary Value</a>
+
+        <a href='documentation/setdnd.html'>Set Do Not Disturb</a>
+
+        <a href='documentation/setflashlight.html'>Set Flashlight</a>
+
+        <a href='documentation/lowpowermode.html'>Set Low Power Mode</a>
+
+        <a href='documentation/setmediadestination.html'>Set Media Destination</a>
+
+        <a href='documentation/setname.html'>Set Name</a>
+
+        <a href='documentation/setorientationlock.html'>Set Orientation Lock</a>
+
+        <a href='documentation/setvoicedata.html'>Set Voice Data</a>
+
+        <a href='documentation/setvolume.html'>Set Volume</a>
+
+        <a href='documentation/setwifi.html'>Set WiFi</a>
+
+        <a href='documentation/share.html'>Share</a>
+
+        <a href='documentation/shareext.html'>Share With Extensions</a>
+
+        <a href='documentation/shazamit.html'>Shazam It</a>
+
+        <a href='documentation/showdefinition.html'>Show Definition</a>
+
+        <a href='documentation/shownote.html'>Show Note</a>
+
+        <a href='documentation/showreminderlist.html'>Show Reminders List</a>
+
+        <a href='documentation/showresult.html'>Show Result</a>
+
+        <a href='documentation/showwebpage.html'>Show Webpage</a>
+
+        <a href='documentation/showincalendar.html'>Show in Calendar</a>
+
+        <a href='documentation/showinstore.html'>Show in Store</a>
+
+        <a href='documentation/siridonation.html'>Siri Donation</a>
+
+        <a href='documentation/skipback.html'>Skip Backward</a>
+
+        <a href='documentation/skipforward.html'>Skip Forward</a>
+
+        <a href='documentation/speaktext.html'>Speak Text</a>
+
+        <a href='documentation/splittext.html'>Split Text</a>
+
+        <a href='documentation/timer.html'>Start Timer</a>
+
+        <a href='documentation/startworkout.html'>Start Workout</a>
+
+        <a href='documentation/stockquote.html'>Stock Quote</a>
+
+        <a href='documentation/subscribetopodcast.html'>Subscribe to Podcast</a>
+
+        <a href='documentation/takephoto.html'>Take Photo</a>
+
+        <a href='documentation/takevideo.html'>Take Video</a>
+
+        <a href='documentation/takescreenshot.html'>Take a Screenshot</a>
+
+        <a href='documentation/text.html'>Text</a>
+
+        <a href='documentation/toggleairplanemode.html'>Toggle Airplane Mode</a>
+
+        <a href='documentation/toggleappearance.html'>Toggle Device Appearance</a>
+
+        <a href='documentation/toggleflashlight.html'>Toggle Flashlight</a>
+
+        <a href='documentation/togglelowpowermode.html'>Toggle Low Power Mode</a>
+
+        <a href='documentation/toggleorientationlock.html'>Toggle Orientation Lock</a>
+
+        <a href='documentation/translatetext.html'>Translate Text</a>
+
+        <a href='documentation/trimvideo.html'>Trim Video</a>
+
+        <a href='documentation/url.html'>URL</a>
+
+        <a href='documentation/uploadphotos.html'>Upload Photos To Shared Album</a>
+
+        <a href='documentation/useractivity.html'>User Activity</a>
+
+        <a href='documentation/vibrate.html'>Vibrate Device</a>
+
+        <a href='documentation/contentgraph.html'>View Content Graph</a>
+
+        <a href='documentation/wait.html'>Wait</a>
+
+        <a href='documentation/waittoreturn.html'>Wait to return</a>
+
+        <a href='documentation/urlcontents.html'>Webpage Contents</a>
+    </div>
+</body>
+
+</html>

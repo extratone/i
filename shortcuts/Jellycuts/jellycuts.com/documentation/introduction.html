@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=\"utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introduction</title>
+    <link rel="icon" href="https://jellycuts.com/documentation/assets/Icon.png" />
+    <meta
+      name="description"
+      content="Jellycuts is the best way to create supercharged iOS shortcuts."
+    />
+    <link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/8dc57f25ff6f580f055e5e0bb732299ecebc8fcb/style.css'/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/go.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+<h1>Jelly Programming Language</h1>
+<h2 id="what-is-the-jelly-language-">What is the Jelly Language?</h2>
+<ul>
+<li>The Jelly language is a simply written program language that allows you to write <a href="https://apps.apple.com/us/app/shortcuts/id915249334">Siri Shortcuts</a>. The Jelly language is set up in a way that makes it easy to quickly learn and adapt from the Shortcuts app to Jelly.</li>
+<li>This documentation will bring you through learning the entire language</li>
+</ul>
+<h2 id="specifics-of-the-jelly-language">Specifics of the Jelly Language</h2>
+<h3 id="variables-in-jelly">Variables in Jelly</h3>
+<ul>
+<li><p>Variables are extremely simple in the Jelly language, however they do have some quirks inherited from Shortcuts.</p>
+</li>
+<li><p>Referencing Variables</p>
+<ul>
+<li>Variables are used within the parameters of functions and when assigning variables.</li>
+<li>Magic Variables are not referenced any differently than normal variables.</li>
+<li>Examples:</li>
+</ul>
+</li>
+</ul>
+<pre><code><span class="hljs-function"><span class="hljs-title">airdrop</span><span class="hljs-params">(file: Shortcut Input)</span></span>
+<span class="hljs-comment">// Here we used a Global variable for the parameter.</span>
+<span class="hljs-function"><span class="hljs-title">airdrop</span><span class="hljs-params">(file: MyFilteredImage)</span></span>
+<span class="hljs-comment">// Here we are using a local variable for the parameter.</span>
+</code></pre><ol>
+<li>Assigning variables<ul>
+<li>Assigning a variables <code>var •var name• = •magic variable | global variable•</code></li>
+<li>Assigning a magic variable <code>function() -&gt;[name]</code></li>
+</ul>
+</li>
+<li>What is a Magic Variable?<ul>
+<li>Magic variables are almost exactly the same as regular variables. The only difference is how they are declared and they can not be reassigned. Think of them like constants.</li>
+<li>A magic variable is a variable that contains the output of a function. Functions are casted into magic variables using <code>-&gt;[•name•]</code></li>
+</ul>
+</li>
+<li>Adding variables into text<ul>
+<li>In text variables can be used in a lot of different places across the app. They are most notably used in the Text action and whenever you are mixing variables with any text.</li>
+<li>To use an in-text variable simply place <code>${Variable Name}</code> within any string that excepts in text variables.</li>
+<li>Example: <code>&quot; Hello ${world name}!&quot;</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="creating-your-first-jellycut">Creating your first Jellycut</h2>
+<blockquote>
+<p>A Jellycut is just a shortcut written in the Jelly Language</p>
+</blockquote>
+<ol>
+<li>Import the Shortcuts package into your Jellycut<ul>
+<li>This can be done by adding <code>import Shortcuts 1090.2</code> to the top of your file.</li>
+<li>You can view all of the available packages in the Libraries documentation entry.</li>
+</ul>
+</li>
+<li>Write your first simple Jellycut<ul>
+<li>Our simple Jellycut will take the device input and copy it too the clipboard<pre><code>import Shortcuts <span class="hljs-number">1090.2</span>
+<span class="hljs-selector-tag">var</span> sc = Shortcut <span class="hljs-selector-tag">input</span>
+<span class="hljs-function"><span class="hljs-title">setClipboard</span><span class="hljs-params">(variable: sc)</span></span>
+</code></pre></li>
+</ul>
+</li>
+<li>Writing your first if statement<ul>
+<li>We are going to expand upon our starting Jellycut and add in an if statement that checks if the URL contains the text Hello World<pre><code>import Shortcuts <span class="hljs-number">1090.2</span>
+<span class="hljs-selector-tag">var</span> sc = Shortcut <span class="hljs-selector-tag">input</span>
+<span class="hljs-function"><span class="hljs-title">if</span><span class="hljs-params">(sc .contains <span class="hljs-string">" Hello World"</span> )</span></span> {
+<span class="hljs-function"><span class="hljs-title">setClipboard</span><span class="hljs-params">(variable: sc)</span></span>
+}
+</code></pre></li>
+</ul>
+</li>
+<li>Expanding on your if statement<ul>
+<li>We are going to expand upon our current if statement and add an alert that tells the user their shortcut input did not contain the text Hello World<pre><code>import Shortcuts <span class="hljs-number">1090.2</span>
+<span class="hljs-selector-tag">var</span> sc = Shortcut <span class="hljs-selector-tag">input</span>
+<span class="hljs-function"><span class="hljs-title">if</span><span class="hljs-params">(sc .contains <span class="hljs-string">" iCloud"</span> )</span></span> {
+<span class="hljs-function"><span class="hljs-title">setClipboard</span><span class="hljs-params">(variable: sc)</span></span>
+} <span class="hljs-keyword">else</span> {
+<span class="hljs-function"><span class="hljs-title">alert</span><span class="hljs-params">(message: <span class="hljs-string">" Your clipboard does not contain the phrase Hello World"</span> )</span></span>
+}
+</code></pre></li>
+</ul>
+</li>
+<li>Incorporating variables into your Jellycut<ul>
+<li>We are now going to add some variables into our shortcut to tell the user what their input was in the alert, along with telling them the text was successfully copied.<pre><code>import Shortcuts <span class="hljs-number">1090.2</span>
+<span class="hljs-selector-tag">var</span> sc = Shortcut <span class="hljs-selector-tag">input</span>
+<span class="hljs-function"><span class="hljs-title">if</span><span class="hljs-params">(sc .contains <span class="hljs-string">" iCloud"</span> )</span></span> {
+<span class="hljs-function"><span class="hljs-title">setClipboard</span><span class="hljs-params">(variable: sc)</span></span>
+<span class="hljs-function"><span class="hljs-title">sendNotification</span><span class="hljs-params">(body: <span class="hljs-string">"${sc} copied to clipboard"</span> , title: <span class="hljs-string">" Successfully copied to clipboard"</span> )</span></span>
+} <span class="hljs-keyword">else</span> {
+<span class="hljs-function"><span class="hljs-title">alert</span><span class="hljs-params">(message: <span class="hljs-string">" Your clipboard does not contain the phrase Hello World"</span> )</span></span>
+}
+</code></pre></li>
+</ul>
+</li>
+</ol>
+
+  </body>
+</html>
