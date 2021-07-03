@@ -1,0 +1,16 @@
+/*
+ * Copyright (C) 2008, Apple Inc. All rights reserved.
+ *
+ * No license or rights are granted by Apple expressly or by implication,
+ * estoppel, or otherwise, to Apple copyrights, patents, trademarks, trade
+ * secrets or other rights.
+ */
+
+[
+    AppleCopyright,
+    Conditional=TOUCH_EVENTS,
+    NoInterfaceObject
+] interface TouchList {
+    readonly attribute unsigned long length;
+    getter Touch item(unsigned long index);
+};

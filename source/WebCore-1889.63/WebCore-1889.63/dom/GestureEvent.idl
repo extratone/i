@@ -1,0 +1,39 @@
+/*
+ * Copyright (C) 2008, Apple Inc. All rights reserved.
+ *
+ * No license or rights are granted by Apple expressly or by implication,
+ * estoppel, or otherwise, to Apple copyrights, patents, trademarks, trade
+ * secrets or other rights.
+ */
+
+[
+    AppleCopyright,
+    Conditional=IOS_GESTURE_EVENTS
+] interface GestureEvent : UIEvent {
+    void initGestureEvent([Default=Undefined] DOMString type,
+                          [Default=Undefined] boolean canBubble,
+                          [Default=Undefined] boolean cancelable,
+                          [Default=Undefined] DOMWindow view,
+                          [Default=Undefined] long detail,
+                          [Default=Undefined] long screenX,
+                          [Default=Undefined] long screenY,
+                          [Default=Undefined] long clientX,
+                          [Default=Undefined] long clientY,
+                          [Default=Undefined] boolean ctrlKey,
+                          [Default=Undefined] boolean altKey,
+                          [Default=Undefined] boolean shiftKey,
+                          [Default=Undefined] boolean metaKey,
+                          [Default=Undefined] EventTarget target,
+                          [Default=Undefined] float scale,
+                          [Default=Undefined] float rotation);
+
+    readonly attribute EventTarget target;
+
+    readonly attribute float scale;      // distance (since event start) between fingers as multiplier of initial value. Initially 1.0, zoom out (pinch) < 1.0, zoom in > 1.0.
+    readonly attribute float rotation;   // rotation delta (since event start) in degrees (clockwise is positive). Initially 0.0.
+
+    readonly attribute boolean ctrlKey;
+    readonly attribute boolean shiftKey;
+    readonly attribute boolean altKey;
+    readonly attribute boolean metaKey;
+};

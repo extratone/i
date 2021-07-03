@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<meta name=viewport content="width=device-width">
+<p>
+    As you scroll the below overflow area down, you should only see
+    green, never red.
+</p>
+<div style="
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: yellow;
+">
+    <div style="
+        margin-top: 200px;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    ">
+        <div style="
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        "></div>
+    </div>
+</div>

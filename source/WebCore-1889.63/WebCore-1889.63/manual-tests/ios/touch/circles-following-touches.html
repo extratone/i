@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <title>Debugging Multiple Touches and Events</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" charset="utf-8">
+
+      function init () {
+        document.body.addEventListener('touchstart', this, true);
+        window.addEventListener('touchmove', this, true);
+        window.addEventListener('touchend', this, true);
+        window.addEventListener('touchcancel', this, true);
+      }
+
+      function handleEvent (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        // log some info about events
+        updateTouchEventsCount(event);
+        //addEventToSequenceLog(event);
+        // update all touches and location
+        updateBubbles(event);
+      }
+
+      function updateTouchEventsCount (event) {
+        // filter out touchmoves, too many of them
+        if (event.type == 'touchmove') {
+          return;
+        }
+        // update count
+        var output = document.getElementById('number-of-' + event.type);
+        output.innerText = parseInt(output.innerText, 10) + event.changedTouches.length;
+      }
+
+      function addEventToSequenceLog (event) {
+        // filter out touchmoves, too many of them
+        if (event.type == 'touchmove') {
+          return;
+        }
+        var msg = document.createElement('p');
+        msg.innerText = event.type;
+        var sequence = document.getElementById('sequence');
+        if (sequence.firstElementChild) {
+          sequence.insertBefore(msg, sequence.firstElementChild);
+        }
+        else {
+          sequence.appendChild(msg);
+        }
+        // no need in logging too many events
+        if (sequence.childElementCount > 25) {
+          sequence.removeChild(sequence.lastElementChild);
+        }
+      }
+
+      function updateBubbles (event) {
+        switch (event.type) {
+          case 'touchstart' : 
+            this.touchesStarted(event);
+            break;
+          case 'touchmove' : 
+            this.touchesMoved(event);
+            break;
+          case 'touchend' : 
+            this.touchesEnded(event);
+            break;
+          case 'touchcancel' : 
+            this.touchesCancelled(event);
+            break;
+        }
+      }
+
+      function randomColor () {
+        var components = new Array(3);
+        for (var i = 0; i < components.length; i++) {
+          components[i] = Math.round(Math.random() * 255);
+        }
+        return 'rgba(' + components.join(',') + ', 0.5)';
+      }
+
+      function touchesStarted (event) {
+        // add new bubbles
+        var touch, bubble;
+        for (var i = 0; i < event.changedTouches.length; i++) {
+          touch = event.changedTouches[i];
+          bubble = document.getElementById('bubbles').appendChild(document.createElement('div'));
+          bubble.className = 'bubble';
+          bubble.id = 'bubble-' + touch.identifier;
+          bubble.appendChild(document.createElement('span')).innerText = touch.identifier;
+          bubble.appendChild(document.createElement('div')).style.backgroundColor = randomColor();
+          bubble.style.webkitTransform = 'translate3d(' + touch.clientX + 'px, ' + touch.clientY + 'px, 0)';
+        }
+      }
+
+      function touchesMoved (event) {
+        // update bubble locations
+        var touch, bubble;
+        for (var i = 0; i < event.changedTouches.length; i++) {
+          touch = event.changedTouches[i];
+          bubble = document.getElementById('bubble-' + touch.identifier);
+          if (bubble) {
+            bubble.style.webkitTransform = 'translate3d(' + touch.clientX + 'px, ' + touch.clientY + 'px, 0)';
+          }
+        }
+      }
+
+      function touchesEnded (event) {
+        // remove lifted bubbles
+        var touch, bubble;
+        for (var i = 0; i < event.changedTouches.length; i++) {
+          bubble = document.getElementById('bubble-' + event.changedTouches[i].identifier);
+          if (bubble) {
+            document.getElementById('bubbles').removeChild(bubble);
+          }
+        }
+      }
+
+      function touchesCancelled (event) {
+        console.log(event.changedTouches.length)
+        // remove lifted bubbles
+        var touch, bubble;
+        for (var i = 0; i < event.changedTouches.length; i++) {
+          bubble = document.getElementById('bubble-' + event.changedTouches[i].identifier);
+          if (bubble) {
+            document.getElementById('bubbles').removeChild(bubble);
+          }
+        }
+      }
+
+      function listBubbles () {
+      }
+
+      window.addEventListener('DOMContentLoaded', init, false);
+
+    </script>
+    <style type="text/css" media="screen">
+
+      body {
+        font-family: 'Helvetica';
+      }
+      
+      body > * {
+        -webkit-transform: translateZ(0);
+      }
+      
+      .bubble {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        -webkit-transform: translateZ(0);
+      }
+
+      .bubble > span {
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      
+      .bubble > div {
+        display: block;
+        position: absolute;
+        left: -50px;
+        top: -50px;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+      }
+      
+      #log {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.25);
+        width: 160px;
+        height: 100%;
+        z-index: 1;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+      }
+
+      #sequence > p {
+        margin: 0;
+      }
+      
+      #number-of-touchstart:before {
+        content: 'touchstart: ';
+      }
+
+      #number-of-touchend:before {
+        content: 'touchend: ';
+      }
+
+      #number-of-touchcancel:before {
+        content: 'touchcancel: ';
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <div id="bubbles"></div>
+
+    <div id="log">
+      <div>Changed Touches</div>
+      <div id="number-of-touchstart">0</div>
+      <div id="number-of-touchend">0</div>
+      <div id="number-of-touchcancel">0</div>
+      <hr>
+      <div id="sequence"></div>
+    </div>
+
+  </body>
+</html>

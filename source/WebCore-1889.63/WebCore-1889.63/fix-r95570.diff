@@ -1,0 +1,20 @@
+diff --git a/Source/WebCore/platform/ios/ScrollViewIOS.mm b/Source/WebCore/platform/ios/ScrollViewIOS.mm
+index 270e9fc..5cdb7f2 100644
+--- a/Source/WebCore/platform/ios/ScrollViewIOS.mm
++++ b/Source/WebCore/platform/ios/ScrollViewIOS.mm
+@@ -143,15 +143,6 @@ IntRect ScrollView::platformVisibleContentRect(bool includeScrollbars) const
+     return IntRect();
+ }
+ 
+-IntSize ScrollView::platformContentsSize() const
+-{
+-    BEGIN_BLOCK_OBJC_EXCEPTIONS;
+-    if (NSView* documentView = this->documentView())
+-        return enclosingIntRect([documentView bounds]).size();
+-    END_BLOCK_OBJC_EXCEPTIONS;
+-    return IntSize();
+-}
+-
+ void ScrollView::platformSetContentsSize()
+ {
+     BEGIN_BLOCK_OBJC_EXCEPTIONS;

@@ -1,0 +1,100 @@
+<!--
+Copyright (C) 2011 Apple Inc. All Rights Reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY APPLE INC. ``AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE INC. OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Listing</title>
+    <style>
+    body {
+        font-family: "Lucida Grande", sans-serif;
+        font-size: 15px;
+    }
+    .content {
+        position: absolute;
+        margin: auto;
+        top: 80px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        vertical-align: middle;
+        padding-left: 30px;
+        max-width: 350px;
+    }
+    h2 {
+        color: #6E7480;
+        font-size: 25px;
+        font-weight: normal;
+        text-shadow: #BBB 1px 1px 2px;
+    }
+    ul { -webkit-padding-start: 0px; }
+    li { margin-bottom: 10px; list-style-type: none; }
+    li a { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Page Listing</h2>
+        <ul id="listing"></ul>
+    </div>
+    <script>
+    function addListItem(node) {
+        var ul = document.getElementById("listing");
+        var li = document.createElement("li");
+        li.appendChild(node);
+        ul.appendChild(li);
+    }
+
+    function displayErrorMessage(message) {
+        addListItem(document.createTextNode(message));
+    }
+
+    function addListing(listingObject) {
+        var displayText = (listingObject.pageTitle.length ? listingObject.pageTitle + " - " : "") + listingObject.pageURL;
+        var a = document.createElement("a");
+        a.href = listingObject.debugURL;
+        a.appendChild(document.createTextNode(displayText));
+        addListItem(a);
+    }
+
+    function processListingResponse(responseText) {
+        try {
+            var listingArray = JSON.parse(responseText);
+            listingArray.sort(function(a, b) { return a.pageId - b.pageId; });
+            for (var i = 0, length = listingArray.length; i < length; ++i)
+                addListing(listingArray[i]);
+        } catch (e) {
+            // JSON Parse error.
+            displayErrorMessage("Could not parse the listings. Please try again.");
+        }
+    }
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "listing.json", true);
+    xhr.onload = function() { processListingResponse(xhr.responseText); };
+    xhr.onerror = function() { displayErrorMessage("Failed to load the listings. Please try again."); };
+    xhr.send();
+    </script>
+</body>
+</html>

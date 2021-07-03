@@ -1,0 +1,12 @@
+/*
+ * Copyright (C) 2008, Apple Inc. All rights reserved.
+ *
+ * No license or rights are granted by Apple expressly or by implication,
+ * estoppel, or otherwise, to Apple copyrights, patents, trademarks, trade
+ * secrets or other rights.
+ */
+
+#if defined(ENABLE_TOUCH_EVENTS) && ENABLE_TOUCH_EVENTS
+    [AppleCopyright, RaisesException] Touch createTouch(DOMWindow view, EventTarget target, long identifier, long pageX, long pageY, long screenX, long screenY);
+    [AppleCopyright, Custom, RaisesException] TouchList createTouchList();
+#endif

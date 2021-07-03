@@ -1,0 +1,25 @@
+/*
+ * Copyright (C) 2008, Apple Inc. All rights reserved.
+ *
+ * No license or rights are granted by Apple expressly or by implication,
+ * estoppel, or otherwise, to Apple copyrights, patents, trademarks, trade
+ * secrets or other rights.
+ */
+
+[
+    AppleCopyright,
+    Conditional=TOUCH_EVENTS,
+    ImplementationLacksVTable,
+    NoInterfaceObject
+] interface Touch {
+    readonly attribute EventTarget target;
+
+    readonly attribute unsigned long identifier;
+
+    readonly attribute long clientX;
+    readonly attribute long clientY;
+    readonly attribute long pageX;
+    readonly attribute long pageY;
+    readonly attribute long screenX;
+    readonly attribute long screenY;
+};
