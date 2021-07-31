@@ -4,22 +4,34 @@
 
 ## An attempt to consolidate all of my iOS/iPhone-related documentation, files, media, etc.
 
-**"[David Blue on iPhone & iOS](https://github.com/extratone/bilge/wiki/David-Blue-on-iPhone-&-iOS)"** - *The Psalms* Wiki
+* **"[David Blue on iPhone & iOS](https://github.com/extratone/bilge/wiki/David-Blue-on-iPhone-&-iOS)"** - *The Psalms* Wiki
+* [**Index of the iOS Documentation section of my Notion account**](https://www.notion.so/rotund/iOS-Documentation-c56ec62d3c3140998d2b779dffff6ae1) (a complete mess, at the moment.)
 
-[**Index of the iOS Documentation section of my Notion account**](https://www.notion.so/rotund/iOS-Documentation-c56ec62d3c3140998d2b779dffff6ae1) (a complete mess, at the moment.)
+If ya need help, *please feel free to contact me*. This link will take you to a handy contact card: **https://bit.ly/whoisdavidblue**.
 
-## Resources
+![Jorts System Information](https://i.snap.as/pNKRXmIp.png)
 
-* [r/Shortcuts Discord, share-shortcuts channel](r/Shortcuts Discord, share-shortcuts channel)
-* [RoutineHub](https://routinehub.co/)
+## System
+
+* [Geekbench profile](https://browser.geekbench.com/user/238089)
+
+## Siri Shortcuts
+
+* [**RoutineHub profile**](https://routinehub.co/user/blue)
+* [ShareShortcuts profile](https://shareshortcuts.com/u/blue/)
 
 ## Apps
 
 * **Currently Installed Apps** ([Excel Spreadsheet](https://github.com/extratone/i/blob/main/apps.xlsx))
 * [**Homescreen Configuration**](http://bit.ly/dbhomescreen)
 
+## Video
+
+* [iOS & iPhone YouTube Playlist](https://youtube.com/playlist?list=PLC1ONWRxWOkvPjHxX9pNkT1N_PbVLvSLh)
+
 ## Images
 
+* [**Shared iCloud Photos Wallpapers Album**](https://bit.ly/dbiosbg) 
 * [**iPhone 12 Pro Max main gallery**](https://snap.as/extratone/iphone-12-pro-max)
 * [iPhone 12 Pro Max Flickr album](https://flic.kr/s/aHsmTiT46W)
 * [iPhone 8 Plus Flickr album](https://flic.kr/s/aHsm3KioDG)
@@ -388,3 +400,4 @@ I’ve privately maintained a list like this for as long as I can remember, to b
 * [MindNode](https://apps.apple.com/us/app/mindnode-mind-map/id1218718027)
 * [Spike](https://apps.apple.com/us/story/id1521340367)
 ```
+
