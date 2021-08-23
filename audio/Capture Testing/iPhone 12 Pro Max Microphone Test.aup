@@ -1,0 +1,212 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="iPhone 12 Pro Max Microphone Test_data" version="1.3.0" audacityversion="2.4.2" sel0="72.7409616484" sel1="72.7409616484" vpos="0" h="0.0000000000" zoom="3.7249043573" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="ARTIST" value="David Blue"/>
+		<tag name="TITLE" value="iPhone 12 Pro Max Audio Capture Test"/>
+		<tag name="ALBUM" value="Big Boy; Big Phone"/>
+		<tag name="YEAR" value="2020"/>
+		<tag name="GENRE" value="Test"/>
+		<tag name="Copyright" value="Extratone 2020"/>
+	</tags>
+	<wavetrack name="iPhone 12 Pro Max Microphone Test (Voice Memos)" isSelected="1" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="3491566">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808bff.au" len="524288" min="-0.815613" max="0.870575" rms="0.072354"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e08084c8.au" len="524288" min="-0.923187" max="0.921936" rms="0.092407"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e0808762.au" len="524288" min="-0.923065" max="0.928528" rms="0.102697"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="e080852c.au" len="524288" min="-0.925201" max="0.926208" rms="0.141382"/>
+				</waveblock>
+				<waveblock start="2097152">
+					<simpleblockfile filename="e0808da3.au" len="524288" min="-0.922821" max="0.924072" rms="0.091705"/>
+				</waveblock>
+				<waveblock start="2621440">
+					<simpleblockfile filename="e0808ee3.au" len="524288" min="-0.923889" max="0.925049" rms="0.098827"/>
+				</waveblock>
+				<waveblock start="3145728">
+					<simpleblockfile filename="e0808563.au" len="345838" min="-0.92453" max="0.922424" rms="0.117869"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="iPhone 12 Pro Max Microphone Test (Camera App)" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="72.74095833" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3053440">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808841.au" len="262144" min="-0.780217" max="0.673458" rms="0.068277"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e080832c.au" len="262144" min="-0.385347" max="0.33696" rms="0.032492"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0808773.au" len="262144" min="-0.871396" max="0.69837" rms="0.062776"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e0808d33.au" len="262144" min="-0.354047" max="0.32906" rms="0.054005"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e080872b.au" len="262144" min="-0.591581" max="0.807677" rms="0.067971"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="e08086b7.au" len="262144" min="-0.685262" max="0.716657" rms="0.082007"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="e0808a61.au" len="262144" min="-0.728673" max="0.704079" rms="0.094595"/>
+				</waveblock>
+				<waveblock start="1835008">
+					<simpleblockfile filename="e0808083.au" len="262144" min="-0.925543" max="0.753426" rms="0.086212"/>
+				</waveblock>
+				<waveblock start="2097152">
+					<simpleblockfile filename="e0808a8d.au" len="262144" min="-0.79424" max="0.831557" rms="0.073303"/>
+				</waveblock>
+				<waveblock start="2359296">
+					<simpleblockfile filename="e0808f9d.au" len="262144" min="-0.845171" max="0.825673" rms="0.077475"/>
+				</waveblock>
+				<waveblock start="2621440">
+					<simpleblockfile filename="e080856a.au" len="262144" min="-0.728038" max="0.559131" rms="0.067833"/>
+				</waveblock>
+				<waveblock start="2883584">
+					<simpleblockfile filename="e080817d.au" len="169856" min="-0.800993" max="0.91465" rms="0.050482"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="iPhone 12 Pro Max Microphone Test (Camera App)" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="72.74095833" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3053440">
+				<waveblock start="0">
+					<simpleblockfile filename="e080878e.au" len="262144" min="-0.664055" max="0.486524" rms="0.046698"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e080865b.au" len="262144" min="-0.460442" max="0.282186" rms="0.030153"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0808f5d.au" len="262144" min="-0.689595" max="0.522202" rms="0.051532"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e08082e9.au" len="262144" min="-0.405517" max="0.296653" rms="0.053723"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e0808824.au" len="262144" min="-0.533679" max="0.703848" rms="0.065358"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="e0808e0f.au" len="262144" min="-0.639976" max="0.54444" rms="0.061544"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="e08083bc.au" len="262144" min="-0.570209" max="0.615292" rms="0.083003"/>
+				</waveblock>
+				<waveblock start="1835008">
+					<simpleblockfile filename="e0808b99.au" len="262144" min="-0.606502" max="0.608498" rms="0.063146"/>
+				</waveblock>
+				<waveblock start="2097152">
+					<simpleblockfile filename="e08083cd.au" len="262144" min="-0.582121" max="0.674694" rms="0.059256"/>
+				</waveblock>
+				<waveblock start="2359296">
+					<simpleblockfile filename="e0808474.au" len="262144" min="-0.530312" max="0.478048" rms="0.055435"/>
+				</waveblock>
+				<waveblock start="2621440">
+					<simpleblockfile filename="e08084e0.au" len="262144" min="-0.551857" max="0.544771" rms="0.055122"/>
+				</waveblock>
+				<waveblock start="2883584">
+					<simpleblockfile filename="e0808a03.au" len="169856" min="-0.59647" max="0.782314" rms="0.044895"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="iPhone 12 Pro Max Microphone Test (Garageband) " isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="141.97996060" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3014656">
+				<waveblock start="0">
+					<simpleblockfile filename="e08086ba.au" len="262144" min="-0.818076" max="0.872307" rms="0.089772"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0808637.au" len="262144" min="-0.734052" max="0.920816" rms="0.060502"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e08080de.au" len="262144" min="-0.793704" max="0.888955" rms="0.071452"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e0808f7d.au" len="262144" min="-0.999946" max="0.999916" rms="0.168372"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e0808218.au" len="262144" min="-0.899226" max="0.999916" rms="0.093925"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="e08087be.au" len="262144" min="-0.999946" max="0.999916" rms="0.102359"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="e08087ab.au" len="262144" min="-0.999946" max="0.999916" rms="0.083943"/>
+				</waveblock>
+				<waveblock start="1835008">
+					<simpleblockfile filename="e08087ce.au" len="262144" min="-0.999946" max="0.999916" rms="0.109305"/>
+				</waveblock>
+				<waveblock start="2097152">
+					<simpleblockfile filename="e0808e62.au" len="262144" min="-0.999946" max="0.999916" rms="0.12251"/>
+				</waveblock>
+				<waveblock start="2359296">
+					<simpleblockfile filename="e0808973.au" len="262144" min="-0.973368" max="0.859982" rms="0.098157"/>
+				</waveblock>
+				<waveblock start="2621440">
+					<simpleblockfile filename="e080888c.au" len="262144" min="-0.999946" max="0.999916" rms="0.143938"/>
+				</waveblock>
+				<waveblock start="2883584">
+					<simpleblockfile filename="e0808c54.au" len="131072" min="-0.999946" max="0.999916" rms="0.087867"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="iPhone 12 Pro Max Microphone Test (Garageband) " isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="141.97996060" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3014656">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808fe4.au" len="262144" min="-0.818076" max="0.872307" rms="0.089772"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0808a20.au" len="262144" min="-0.734052" max="0.920816" rms="0.060502"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0808fb3.au" len="262144" min="-0.793704" max="0.888955" rms="0.071452"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e08080ff.au" len="262144" min="-0.999946" max="0.999916" rms="0.168372"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e080828a.au" len="262144" min="-0.899226" max="0.999916" rms="0.093925"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="e080831f.au" len="262144" min="-0.999946" max="0.999916" rms="0.102359"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="e0808928.au" len="262144" min="-0.999946" max="0.999916" rms="0.083943"/>
+				</waveblock>
+				<waveblock start="1835008">
+					<simpleblockfile filename="e0808169.au" len="262144" min="-0.999946" max="0.999916" rms="0.109305"/>
+				</waveblock>
+				<waveblock start="2097152">
+					<simpleblockfile filename="e0808c72.au" len="262144" min="-0.999946" max="0.999916" rms="0.12251"/>
+				</waveblock>
+				<waveblock start="2359296">
+					<simpleblockfile filename="e0808f59.au" len="262144" min="-0.973368" max="0.859982" rms="0.098157"/>
+				</waveblock>
+				<waveblock start="2621440">
+					<simpleblockfile filename="e0808471.au" len="262144" min="-0.999946" max="0.999916" rms="0.143938"/>
+				</waveblock>
+				<waveblock start="2883584">
+					<simpleblockfile filename="e0808654.au" len="131072" min="-0.999946" max="0.999916" rms="0.087867"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
