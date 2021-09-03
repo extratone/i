@@ -15,6 +15,8 @@ Building on Apple’s own “Speak Body of Article” shortcut found in the defa
 
 As configured by default, it should function from the Share Sheet in Safari *and/or* by grabbing a web URL from the clipboard.
 
+![Make Audio from Article Body 1.1](https://i.snap.as/RAxa0Id6.png)
+
 A full explanation/detailed guide can be found [**on my blog**](https://bilge.world/siri-tts), and the full text of the latter portion (in first draft form) has been posted beneath the contact details immediately below.
 
 ***
@@ -32,12 +34,16 @@ A full explanation/detailed guide can be found [**on my blog**](https://bilge.wo
 
 ## Release Notes
 
-#### 1.1
+<img src="https://github.com/extratone/i/raw/main/shortcuts/Speech%20Synthesis/1.1Diff.png" alt="1.1 Diff Image" style="zoom:25%;" />
 
-* 
+### 1.1
 
+* Changed the icon
+* Added custom audio notification to let you know when the `Make Spoken Audio From Text` has completed.
+* Also added a custom banner notification for the same purpose in case we start finding success with running the shortcut in the background while doing other tasks.
+* Fixed `Published Date` variable in the metadata section of `Encode Media` to `yyyy` so that it correctly fills the year category instead of attempting to fill it with a whole ISO 8601 date.
 
-
+---
 
 ![TTS Shortcuts Compared](https://i.snap.as/P0yJJyUc.png)
 
@@ -119,3 +125,4 @@ Before I depart actual tutorializing and return to opining, I want to express *e
 If you follow this shortlink from within a browser on any iOS device, my full contact card will appear: `bit.ly/whoisdavidblue`. 
 
 Suggestions/requests regarding considerations I’ve obviously missed in this guide are not just *welcome* in this case, but actually *necessary*. As long as I am literally the only person talking about the “Make Spoken Audio from Text” action, I am ready and willing to be an all-hours resource. 
+
