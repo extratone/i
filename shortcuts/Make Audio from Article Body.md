@@ -30,6 +30,15 @@ A full explanation/detailed guide can be found [**on my blog**](https://bilge.wo
 
 ***
 
+## Release Notes
+
+#### 1.1
+
+* 
+
+
+
+
 ![TTS Shortcuts Compared](https://i.snap.as/P0yJJyUc.png)
 
 # Guide
