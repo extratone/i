@@ -3,7 +3,15 @@
 ## Creates an audio file of a given web article’s body read aloud by Siri (Text to Speech.)
 
 * [**RoutineHub Page**](https://routinehub.co/shortcut/9953/)
-* [iCloud Share Link](https://www.icloud.com/shortcuts/33d9ba6fdf9f429996056b918ba1d614)
+* [iCloud Share Link`](https://www.icloud.com/shortcuts/661e85b9b47c43069dd8af24ee60fdcc)
+
+
+```
+(Deprecated iCloud Links)
+https://www.icloud.com/shortcuts/33d9ba6fdf9f429996056b918ba1d614
+```
+
+
 ***
 ![Siri TTS](https://i.snap.as/13BtYmx0.png)
 
@@ -36,7 +44,7 @@ A full explanation/detailed guide can be found [**on my blog**](https://bilge.wo
 
 <img src="https://github.com/extratone/i/raw/main/shortcuts/Speech%20Synthesis/1.1Diff.png" alt="1.1 Diff Image" style="zoom:25%;" />
 
-### 1.1
+### <u>1.1</u>
 
 * Changed the icon
 * Added custom audio notification to let you know when the `Make Spoken Audio From Text` has completed.
@@ -125,4 +133,3 @@ Before I depart actual tutorializing and return to opining, I want to express *e
 If you follow this shortlink from within a browser on any iOS device, my full contact card will appear: `bit.ly/whoisdavidblue`. 
 
 Suggestions/requests regarding considerations I’ve obviously missed in this guide are not just *welcome* in this case, but actually *necessary*. As long as I am literally the only person talking about the “Make Spoken Audio from Text” action, I am ready and willing to be an all-hours resource. 
-
