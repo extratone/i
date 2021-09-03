@@ -1,0 +1,270 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4271458815,
+      "WFWorkflowIconGlyphNumber": 59502
+   },
+   "WFWorkflowClientVersion": "1137.4",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+      "Parameters": {}
+   },
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "![Siri TTS](https://i.snap.as/13BtYmx0.png)\n\n## About\n\n**Note: this shortcut requires iOS 15 Developer or Public Beta 6**\n\nBuilding on Apple’s own “Speak Body of Article” shortcut found in the default Siri Shortcuts Gallery, this Shortcut takes advantage of the upcoming “Make Audio From Text” action arriving in iOS 15 (which has finally been fixed as of Developer Beta 6) to generate an .m4a audio file of Siri Voice 2 (by default) reading the article’s body aloud (rather than just speaking it aloud on your handset/iPad, as the original does,) with appropriate metadata from the inputted webpage. \n\nAs configured by default, it should function from the Share Sheet in Safari *and/or* by grabbing a web URL from the clipboard.\n\nA full explanation/guide can be expected very soon [**on my blog**](siri-tts).\n\n***\n\n## Contact\n\n* [Contact Card](https://bit.ly/whoisdavidblue)\n* [Email](mailto:davidblue@extratone.com) \n* [Twitter](https://twitter.com/NeoYokel)\n* [Mastodon](https://mastodon.social/@DavidBlue)\n* [Discord](https://discord.gg/0b9KQUKP858b0iZF)\n* [*Everywhere*](https://www.notion.so/rotund/9fdc8e9610b34b8f991ebc148b760055?v=c170b58650c04fbdb7adc551a73d16a7)..."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getarticle",
+         "WFWorkflowActionParameters": {
+            "WFWebPage": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ExtensionInput"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "A6E64645-6269-4426-A6E6-464562699426"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "A6E64645-6269-4426-A6E6-464562699426",
+                  "Type": "ActionOutput",
+                  "OutputName": "Article"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "Body",
+            "UUID": "E98EA16E-DE1B-4B5C-A98E-A16EDE1B4B5C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "A6E64645-6269-4426-A6E6-464562699426",
+                  "Type": "ActionOutput",
+                  "OutputName": "Article"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "Title",
+            "UUID": "AD3F3AEB-A53F-4232-98CA-55570AEAE4F3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "A6E64645-6269-4426-A6E6-464562699426",
+                  "Type": "ActionOutput",
+                  "OutputName": "Article"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "Author",
+            "UUID": "07E21CEE-AB99-41C4-9800-00F7FF007FCB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "A6E64645-6269-4426-A6E6-464562699426",
+                  "Type": "ActionOutput",
+                  "OutputName": "Article"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "Published Date",
+            "UUID": "AAA88523-BBD2-4AC6-BE6F-2018CE656112"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "A6E64645-6269-4426-A6E6-464562699426",
+                  "Type": "ActionOutput",
+                  "OutputName": "Article"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "Main Image URL",
+            "UUID": "8CC69A0D-F5E2-4D92-9E26-F0D63CADFD45"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "￼\n\nby ￼\n\n￼\n\n￼",
+                  "attachmentsByRange": {
+                     "{9, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Published Date",
+                        "OutputUUID": "AAA88523-BBD2-4AC6-BE6F-2018CE656112",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFISO8601IncludeTime": false,
+                              "WFDateFormatStyle": "Custom"
+                           }
+                        ]
+                     },
+                     "{12, 1}": {
+                        "OutputUUID": "E98EA16E-DE1B-4B5C-A98E-A16EDE1B4B5C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Body"
+                     },
+                     "{6, 1}": {
+                        "OutputUUID": "07E21CEE-AB99-41C4-9800-00F7FF007FCB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Author"
+                     },
+                     "{0, 1}": {
+                        "OutputUUID": "AD3F3AEB-A53F-4232-98CA-55570AEAE4F3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Title"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "1A823192-773C-4BCD-8768-0D1DB7019BEB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.makespokenaudiofromtext",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "1A823192-773C-4BCD-8768-0D1DB7019BEB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFSpeakTextVoice": "com.apple.ttsbundle.gryphon-neural_simone_en-US_premium",
+            "UUID": "B39781DB-6E4C-44BB-8F3C-8911598F3897"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.encodemedia",
+         "WFWorkflowActionParameters": {
+            "WFMedia": {
+               "Value": {
+                  "OutputUUID": "B39781DB-6E4C-44BB-8F3C-8911598F3897",
+                  "Type": "ActionOutput",
+                  "OutputName": "Spoken Audio"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMediaAudioOnly": true,
+            "WFMetadataArtist": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "07E21CEE-AB99-41C4-9800-00F7FF007FCB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Author"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "Metadata": true,
+            "UUID": "FAAAEAC2-54D0-4DFE-AFFC-D8C5263E74FD",
+            "WFMetadataArtwork": {
+               "Value": {
+                  "OutputUUID": "8CC69A0D-F5E2-4D92-9E26-F0D63CADFD45",
+                  "Type": "ActionOutput",
+                  "OutputName": "Main Image URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMetadataGenre": "TTS",
+            "WFMetadataTitle": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "AD3F3AEB-A53F-4232-98CA-55570AEAE4F3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Title"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFMetadataYear": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Published Date",
+                        "OutputUUID": "AAA88523-BBD2-4AC6-BE6F-2018CE656112",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFISO8601IncludeTime": false,
+                              "WFDateFormatStyle": "Custom"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "FAAAEAC2-54D0-4DFE-AFFC-D8C5263E74FD",
+                  "Type": "ActionOutput",
+                  "OutputName": "Encoded Media"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "FE24D38D-9FC0-410E-B8C7-70E0DE4968EB"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [],
+   "WFWorkflowTypes": [
+      "Watch",
+      "ActionExtension"
+   ],
+   "WFWorkflowHasShortcutInputVariables": true
+}

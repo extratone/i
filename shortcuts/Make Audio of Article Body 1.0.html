@@ -1,0 +1,252 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Make Audio of Article Body 1.0</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-all;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 5px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams closed">Make Audio of Article Body 1.0</button>
+<div class="content" style="display:none"><div class="col2">"WFWorkflowClientVersion": "1137.4",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4271458815,
+   "WFWorkflowIconGlyphNumber": 59502
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1113,
+"WFWorkflowMinimumClientVersionString": "1113",
+"WFWorkflowNoInputBehavior": {
+   "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+   "Parameters": {}
+},
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "Watch",
+   "ActionExtension"
+]
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">![Siri TTS](https://i.snap.as/13BtYmx0.png)
+
+## About
+
+**Note: this shortcut requires iOS 15 Developer or Public Beta 6**
+
+Building on Apple’s own “Speak Body of Article” shortcut found in the default Siri Shortcuts Gallery, this Shortcut takes advantage of the upcoming “Make Audio From Text” action arriving in iOS 15 (which has finally been fixed as of Developer Beta 6) to generate an .m4a audio file of Siri Voice 2 (by default) reading the article’s body aloud (rather than just speaking it aloud on your handset/iPad, as the original does,) with appropriate metadata from the inputted webpage. 
+
+As configured by default, it should function from the Share Sheet in Safari *and/or* by grabbing a web URL from the clipboard.
+
+A full explanation/guide can be expected very soon [**on my blog**](siri-tts).
+
+***
+
+## Contact
+
+* [Contact Card](https://bit.ly/whoisdavidblue)
+* [Email](mailto:davidblue@extratone.com) 
+* [Twitter](https://twitter.com/NeoYokel)
+* [Mastodon](https://mastodon.social/@DavidBlue)
+* [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+* [*Everywhere*](https://www.notion.so/rotund/9fdc8e9610b34b8f991ebc148b760055?v=c170b58650c04fbdb7adc551a73d16a7)...</div></div>
+<button class="" id="m1">
+1 Get Article from <span class="box"><span class="var"><b>[Shortcut Input</b><b>]</b></span></span> using Safari Reader</button>
+<button class="" id="m2">
+2 Get Details <span class="box">Body</span> of Article <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 Article</b><b>]</b></span></span></button>
+<button class="" id="m3">
+3 Get Details <span class="box">Title</span> of Article <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 Article</b><b>]</b></span></span></button>
+<button class="" id="m4">
+4 Get Details <span class="box">Author</span> of Article <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 Article</b><b>]</b></span></span></button>
+<button class="" id="m5">
+5 Get Details <span class="box">Published Date</span> of Article <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 Article</b><b>]</b></span></span></button>
+<button class="" id="m6">
+6 Get Details <span class="box">Main Image URL</span> of Article <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 Article</b><b>]</b></span></span></button>
+<button class="button gDocuments" id="m7">
+7 Text</button>
+	<div class="content">
+		<div class="col2"><span class="magic" onclick="magictap(3)"><b>[3 Title</b><b>]</b></span>
+
+by <span class="magic" onclick="magictap(4)"><b>[4 Author</b><b>]</b></span>
+
+<span class="magic" onclick="magictap(5)"><b>[5 Published Date</b>{"WFISO8601IncludeTime":false,"Date Style":"Custom"}<b>]</b></span>
+
+<span class="magic" onclick="magictap(2)"><b>[2 Body</b><b>]</b></span></div></div>
+<button class="button " id="m8">
+8 Make Spoken Audio from <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 Text</b><b>]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">SpeakTextVoice</div>
+			<div class="col2">com.apple.ttsbundle.gryphon-neural_simone_en-US_premium</div></div></div>
+<button class="button " id="m9">
+9 Encode Media <span class="box"><span class="magic" onclick="magictap(8)"><b>[8 Spoken Audio</b><b>]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">MediaAudioOnly</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">MetadataArtist</div>
+			<div class="col2"><span class="magic" onclick="magictap(4)"><b>[4 Author</b><b>]</b></span></div></div>
+		<div class="row"><div class="col1">Metadata</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">MetadataArtwork</div>
+			<div class="col2"><span class="magic" onclick="magictap(6)"><b>[6 Main Image URL</b><b>]</b></span></div></div>
+		<div class="row"><div class="col1">MetadataGenre</div>
+			<div class="col2">TTS</div></div>
+		<div class="row"><div class="col1">MetadataTitle</div>
+			<div class="col2"><span class="magic" onclick="magictap(3)"><b>[3 Title</b><b>]</b></span></div></div>
+		<div class="row"><div class="col1">MetadataYear</div>
+			<div class="col2"><span class="magic" onclick="magictap(5)"><b>[5 Published Date</b>{"WFISO8601IncludeTime":false,"Date Style":"Custom"}<b>]</b></span></div></div></div>
+<button class="" id="m10">
+10 Save <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 Encoded Media</b><b>]</b></span></span> to File</button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
