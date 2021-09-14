@@ -1,0 +1,133 @@
+{
+   "WFWorkflowClientVersion": "1137.4",
+   "WFWorkflowMinimumClientVersionString": "1106",
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4292093695,
+      "WFWorkflowIconGlyphNumber": 59445
+   },
+   "WFWorkflowMinimumClientVersion": 1106,
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasShortcutInputVariables": false,
+   "WFWorkflowImportQuestions": [],
+   "WFWorkflowTypes": [],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.filter.reminders",
+         "WFWorkflowActionParameters": {
+            "WFContentItemSortOrder": "Oldest First",
+            "WFContentItemSortProperty": "Creation Date",
+            "UUID": "50E044A8-2A94-485D-B8C6-5DDE9D825B03"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.previewdocument",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "50E044A8-2A94-485D-B8C6-5DDE9D825B03",
+                  "Type": "ActionOutput",
+                  "OutputName": "Reminders"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.makezip",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "50E044A8-2A94-485D-B8C6-5DDE9D825B03",
+                  "Type": "ActionOutput",
+                  "OutputName": "Reminders"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFZIPName": {
+               "Value": {
+                  "string": "RemindersBackup￼",
+                  "attachmentsByRange": {
+                     "{15, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFISO8601IncludeTime": true,
+                              "WFDateFormatStyle": "ISO 8601"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "14EB90F1-3E42-4AEA-885F-3DC627450FBC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "fileLocation": {
+                  "relativeSubpath": "com~apple~CloudDocs/Backups",
+                  "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+                  "displayName": "Backups",
+                  "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/F22C497B-3333-47C9-802A-6AB788421D6C/3185e5e521ad2064cd0eb64290adf195759e4b12",
+                  "WFFileLocationType": "iCloud"
+               },
+               "filename": "Backups",
+               "displayName": "Backups"
+            },
+            "WFAskWhereToSave": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "14EB90F1-3E42-4AEA-885F-3DC627450FBC",
+                  "Type": "ActionOutput",
+                  "OutputName": "Archive"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "577A3260-004D-4825-9450-B76A004F92C0",
+            "WFFileDestinationPath": {
+               "Value": {
+                  "string": "RemindersBackup￼.zip",
+                  "attachmentsByRange": {
+                     "{15, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFISO8601IncludeTime": true,
+                              "WFDateFormatStyle": "ISO 8601"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      }
+   ]
+}
