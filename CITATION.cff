@@ -1,0 +1,14 @@
+abstract: "The Psalms (alternatively/interchangeably entitled Bilge) is a monobyline World Wide Web Blog written by 𝒟𝒶𝓋𝒾𝒹 ℬ𝓁𝓊ℯ (good morning!) observing and selectively amplifying the characters, organizations, and stories surrounding the most abrupt, profound, and spectacular communicative renaissance in the history of the human species. Less abstractly, its beat is wholly digital, namely in tools (software, services, and methodologies) and culture (music, film, podcasts, and media) from a distinct lens established at good distance from California. It is unlicensed and entirely written in public largely via this GitHub Repository, supplemented by experiments on a variety of other platforms, including (arguably) my Twitter account."
+authors: 
+  - family-names: Blue
+    given-names: David
+    orcid: "https://orcid.org/0000-0002-9307-2251"
+cff-version: "1.2.0"
+version: 3.11
+date-released: 2021-10-15
+keywords: 
+  - media
+license: "The Unlicense, Dave Edition"
+license-url: https://davidblue.wtf/license
+repository-code: "https://github.com/extratone/bilge"
+title: "The Psalms"
