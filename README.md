@@ -9,6 +9,13 @@
 
 If ya need help, *please feel free to contact me*. This link will take you to a handy contact card: **https://bit.ly/whoisdavidblue**.
 
+⇨⇨⇨⇨[**iOS 15 Reviewed for My Family**](https://bilge.world/ios-15-family-review)
+
+### Frames
+
+* [**Shared iCloud Photos Album**](https://www.icloud.com/sharedalbum/#B0e5ON9t3GoUjSq)- [Shortlink](https://bit.ly/dbframes)
+
+
 ![Jorts System Information](https://i.snap.as/pNKRXmIp.png)
 
 ## System
