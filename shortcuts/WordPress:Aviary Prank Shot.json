@@ -1,0 +1,235 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 463140863,
+      "WFWorkflowIconGlyphNumber": 61537
+   },
+   "WFWorkflowClientVersion": "1145.7.3",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.takephoto",
+         "WFWorkflowActionParameters": {
+            "WFCameraCaptureDevice": "Front",
+            "WFCameraCaptureShowPreview": false,
+            "UUID": "9BCCB150-305B-4A81-A0F2-DA64A93E0547"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.wordpress.post",
+         "WFWorkflowActionParameters": {
+            "Format": "Image",
+            "Advanced": true,
+            "UUID": "75FA81A6-E579-4BB1-95C9-BC944BF4D724",
+            "Blog": "Pisscore",
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "9BCCB150-305B-4A81-A0F2-DA64A93E0547",
+                  "Type": "ActionOutput",
+                  "OutputName": "Photo"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "Title": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFISO8601IncludeTime": true,
+                              "WFDateFormatStyle": "ISO 8601"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "ThumbnailImage": {
+               "Value": {
+                  "OutputUUID": "9BCCB150-305B-4A81-A0F2-DA64A93E0547",
+                  "Type": "ActionOutput",
+                  "OutputName": "Photo"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "75FA81A6-E579-4BB1-95C9-BC944BF4D724",
+                  "Type": "ActionOutput",
+                  "OutputName": "WordPress Post URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "D7EF457D-6B59-473C-9846-BC28B6A15D24"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+         "WFWorkflowActionParameters": {
+            "Show-WFInput": true,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "75FA81A6-E579-4BB1-95C9-BC944BF4D724",
+                  "Type": "ActionOutput",
+                  "OutputName": "WordPress Post URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "121C1B43-6734-4D85-B901-D756CB7EB442"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.sendmessage",
+         "WFWorkflowActionParameters": {
+            "IntentAppDefinition": {
+               "TeamIdentifier": "0000000000",
+               "BundleIdentifier": "com.apple.MobileSMS",
+               "Name": "Messages",
+               "IntentClassName": "INSendMessageIntent"
+            },
+            "WFSendMessageActionRecipients": {
+               "Value": {
+                  "WFContactFieldValues": [
+                     {
+                        "WFContactData": {
+                           "__type__": "data",
+                           "__value__": "QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpQUk9ESUQ6LS8vQXBwbGUgSW5jLi8vaVBob25lIE9TIDE1LjIvL0VODQpOOkJsdWU7RGF2aWQ7OzsNCkZOOkRhdmlkIEJsdWUNCk9SRzpFeHRyYXRvbmU7DQpUSVRMRTpFZGl0b3ItaW4tQ2hpZWYNCml0ZW0xLkVNQUlMO3R5cGU9SU5URVJORVQ7dHlwZT1wcmVmOmFzcGhhbHRhcG9zdGxlQGljbG91ZC5jb20NCml0ZW0xLlgtQUJMYWJlbDppQ2xvdWQNCkVNQUlMO3R5cGU9SU5URVJORVQ7dHlwZT1XT1JLOmRhdmlkYmx1ZUBleHRyYXRvbmUuY29tDQppdGVtMi5FTUFJTDt0eXBlPUlOVEVSTkVUOnNlYXRzX2Nhc3RvcnMuMGVAaWNsb3VkLmNvbQ0KaXRlbTIuWC1BQkxhYmVsOmlDbG91ZA0KVEVMO3R5cGU9Q0VMTDt0eXBlPVZPSUNFO3R5cGU9cHJlZjorMSAoNTczKSA4MjMtNDM4MA0KaXRlbTMuQURSO3R5cGU9SE9NRTt0eXBlPXByZWY6OzsxNzE0IE9hayBDbGlmZiBQbC47Q29sdW1iaWE7TU87NjUyMDM7VW5pdGVkIFN0YXRlcw0KaXRlbTMuWC1BQkFEUjp1cw0KWC1TT0NJQUxQUk9GSUxFO3R5cGU9dHdpdHRlcjpodHRwOi8vdHdpdHRlci5jb20vTmVvWW9rZWwNClgtU09DSUFMUFJPRklMRTt0eXBlPWZhY2Vib29rOmh0dHA6Ly93d3cuZmFjZWJvb2suY29tL2FzcGhhbHRhcG9zdGxlDQpYLVNPQ0lBTFBST0ZJTEU7dHlwZT1JbnN0YWdyYW06eC1hcHBsZTphc3BoYWx0YXBvc3RsZQ0KWC1TT0NJQUxQUk9GSUxFO3R5cGU9WW91VHViZTp4LWFwcGxlOmV4dHJhdG9uZQ0KWC1TT0NJQUxQUk9GSUxFO3R5cGU9bGlua2VkaW46aHR0cDovL3d3dy5saW5rZWRpbi5jb20vaW4vY3liZXJ5b2tlbA0KWC1TT0NJQUxQUk9GSUxFO3R5cGU9R2l0SHViOngtYXBwbGU6ZXh0cmF0b25lDQpYLVNPQ0lBTFBST0ZJTEU7dHlwZT1mbGlja3I6aHR0cDovL3d3dy5mbGlja3IuY29tL3Bob3Rvcy9EYXZpZEJsdWUNClgtU09DSUFMUFJPRklMRTt0eXBlPU1hc3RvZG9uOngtYXBwbGU6RGF2aWRCbHVlDQpYLVNPQ0lBTFBST0ZJTEU7dHlwZT1EaXNjb3JkOngtYXBwbGU6RGF2aWQlMjBCbHVlJTIzMTkxNw0KaXRlbTQuVVJMO3R5cGU9cHJlZjpodHRwczovL2JpbGdlLndvcmxkDQppdGVtNC5YLUFCTGFiZWw6XyQhPEhvbWVQYWdlPiEkXw0KVVJMO3R5cGU9V09SSzpodHRwczovL2V4dHJhdG9uZS5jb20NCml0ZW01LlVSTDpodHRwczovL2RhdmlkYmx1ZS53dGYNCml0ZW01LlgtQUJMYWJlbDpOZW9DaXRpZXMNCkJEQVk6MTk5NC0wMS0yNw0KSU1QUDtYLVNFUlZJQ0UtVFlQRT1UZWxlZ3JhbTt0eXBlPVdPUks7dHlwZT1wcmVmOngtYXBwbGU6RGF2aWRCbHVlDQpJTVBQO1gtU0VSVklDRS1UWVBFPVNuYXBjaGF0O3R5cGU9SE9NRTp4LWFwcGxlOm1vbW1pbGl0aWENCkVORDpWQ0FSRA0K"
+                        },
+                        "WFContactMultivalue": 0,
+                        "WFContactProperty": 3
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFContactFieldValue"
+            },
+            "WFSendMessageContent": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "75FA81A6-E579-4BB1-95C9-BC944BF4D724",
+                        "Type": "ActionOutput",
+                        "OutputName": "WordPress Post URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "00AD99ED-E648-48F1-9254-3601E32201B2",
+            "ShowWhenRun": false
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "H̗͇̀ͫͭ̍̚͞â̭̝͚͍͕͇̚͜͠c̡̪̊̎́ͨͥ̂̉k̶̼̳̤ͯ̆̿̀e̥͍̝̪͍̻ͧ̃ͣͬ͜d͕̤͙͎̣̱̠ͧͧͬ͆ͪͤ͞!͖̘̫͚̮̣̳͚͒̂̿͊̃̃͜\n\nI was caught coughing, shouting, or ringing like a bell at ￼! ￼",
+                  "attachmentsByRange": {
+                     "{143, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFISO8601IncludeTime": true,
+                              "WFDateFormatStyle": "ISO 8601"
+                           }
+                        ]
+                     },
+                     "{146, 1}": {
+                        "OutputUUID": "75FA81A6-E579-4BB1-95C9-BC944BF4D724",
+                        "Type": "ActionOutput",
+                        "OutputName": "WordPress Post URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "F5CA5070-4E68-4F59-A7A7-C00898FE2ED0"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.shi.AviaryApp.PostTweetIntent",
+         "WFWorkflowActionParameters": {
+            "text": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "F5CA5070-4E68-4F59-A7A7-C00898FE2ED0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "account": "ihadtopee",
+            "UUID": "3D337CDF-464F-4F5D-BF67-5063C06141C0",
+            "images": {
+               "Value": {
+                  "OutputUUID": "9BCCB150-305B-4A81-A0F2-DA64A93E0547",
+                  "Type": "ActionOutput",
+                  "OutputName": "Photo"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "ShowWhenRun": false
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "ParameterKey": "Blog",
+         "Category": "Parameter",
+         "ActionIndex": 1,
+         "Text": "Specify WordPress Blog"
+      },
+      {
+         "ParameterKey": "account",
+         "Category": "Parameter",
+         "ActionIndex": 6,
+         "Text": "Specify Twitter Account"
+      },
+      {
+         "ParameterKey": "WFSendMessageActionRecipients",
+         "Category": "Parameter",
+         "ActionIndex": 4,
+         "Text": "Specify iMessage Recipient"
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
