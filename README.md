@@ -1,8 +1,8 @@
-![Big Boy; Big Phone](https://i.snap.as/KtqMF5Ky.jpg)
+![David Blue for iOS](https://i.snap.as/e0BjQx1L.png)
 
-# i
+# David Blue's iHole
 
-## An attempt to consolidate all of my iOS/iPhone-related documentation, files, media, etc.
+## A messy-ass collection of iOS-related configurations, documentation, assets, data, and automations.
 
 * **"[David Blue on iPhone & iOS](https://github.com/extratone/bilge/wiki/David-Blue-on-iPhone-&-iOS)"** - *The Psalms* Wiki
 * [**Index of the iOS Documentation section of my Notion account**](https://www.notion.so/rotund/iOS-Documentation-c56ec62d3c3140998d2b779dffff6ae1) (a complete mess, at the moment.)
