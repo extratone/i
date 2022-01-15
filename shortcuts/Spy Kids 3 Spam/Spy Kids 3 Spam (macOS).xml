@@ -1,0 +1,1779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFQuickActionSurfaces</key>
+	<array/>
+	<key>WFWorkflowActions</key>
+	<array>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.ask</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>20EA1C85-356D-4FC7-8A0B-E730F0DF1014</string>
+				<key>WFAskActionAllowsDecimalNumbers</key>
+				<false/>
+				<key>WFAskActionAllowsNegativeNumbers</key>
+				<false/>
+				<key>WFAskActionDefaultAnswerNumber</key>
+				<string>+15738234380</string>
+				<key>WFAskActionPrompt</key>
+				<string>Target Phone Number</string>
+				<key>WFInputType</key>
+				<string>Number</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>2CFE32EA-B34D-4086-B986-1CA9F9F39EA5</string>
+				<key>WFTextActionText</key>
+				<string>Once upon a time,
+there was a young Thumb Thumb
+named Juni.
+Juni was shy and had no self-confidence,
+until one day evil Thumb Thumbs
+kidnapped his spy Thumb Thumb parents.
+It was up to Juni and his sister, Carmen,
+to save Mom and Dad.
+And save them they did.
+Juni became a hero,
+the best Thumb Thumb agent ever seen.
+But one day Juni was betrayed.
+He could not forgive the Thumb Thumbs
+for using him.
+So he left Thumb Village,
+vowing never to return.
+No one ever really
+saw much of Juni after that.
+No one lived happily ever after.
+The end.
+Wasn't that a marvelous story, children?
+Today's feature presentation
+will also be in three dimensions,
+But for now, take off your glasses,
+You won't need them for about,,,
+ooh, minutes or so,
+At that point,
+the movie becomes -D!
+Don't worry, You'll know
+when to put your glasses on,
+When one of the main characters
+puts his on, you do the same,
+Now, if your eyes get tired
+during the -D section of the movie,
+take off your glasses,
+rush out to the concession stand,
+purchase an extra large popcorn,
+an extra large soda,
+come back to your seat,
+put your glasses back on and voilà!
+You just spent $ !
+Keep those glasses off until it's time,
+And enjoy the show!
+Agua, as in water.
+Cute. But I wasn't here for cute.
+I was here 'cause I'd gotten
+a call for my regular fee.
+$ . .
+I'm an ex-secret agent.
+My name is Juni Cortez.
+And I'm a private detective.
+A P.I.
+A private eye.
+A gumshoe.
+l know why the water
+from your park is missing,
+Pray tell,
+lt's winter,
+They shut down the park
+during the winter,
+Who's ''they''?
+The people who really own this park,
+Times are tough.
+But a guy's gotta do what he's gotta do.
+From saving cats in trees...
+...to finding lost toys,
+to helping people...
+Hold on.
+Yeah?
+The OSS is looking for me?
+Look, l'm no longer an agent,
+l can't help you,
+Whatever it is, it's your problem,
+Leave me alone!
+I'd been burned by the agency.
+The OSS.
+So I left.
+No going back.
+I handle my own assignments now.
+Smaller in scale.
+I was saving up for something big.
+I was standing in line
+to buy my copy of the biggest
+virtual-reality game in history.
+It goes online at midnight.
+Pretty exciting, I suppose.
+Game Over.
+The biggest video game
+to ever be created, period.
+This is a worldwide event.
+The game was created by someone
+known only as the Toymaker,
+who was once again
+unavailable for interviews.
+But there's gotta be some things
+more important than games.
+Oh, and did we mention
+the surprises the Toymaker has in store
+for those of you that complete level five?
+Untold riches, toys, and prizes
+beyond your wildest dreams.
+Hey, no cutting in line, freak,
+l wasn't cutting,
+l was standing right here!
+End of the line!
+Needless to say,
+things have been pretty lame
+since I left the OSS.
+Aah!
+Things were about to get worse.
+Dear Juni,
+I was doing some work
+and thought you might like these.
+Miniaturized sharks.
+Remember, they're still man-eaters, so
+don't be poking your fingers in the bowl.
+Take care. If you guys
+ever need anything, I'll be there.
+Romero.
+Ralph, write a thank-you note
+back to Romero,
+Behave, you guys,
+No fighting,
+Whatcha doin'?
+Hi, Gerti,
+l'm just doing nothing,,, again,
+What's that?
+Mexican chocolate,
+Where's your mom and dad?
+On an assignment,
+lt was my idea not to be
+part of the family business,
+They're all on missions,
+Your sister, too, huh?
+l haven't seen Carmen
+since Christmas,,, last year,
+You should join back up,
+The OSS could really use you,
+Yeah, Use me,
+Not what l meant,
+Don't hold on to the past, Juni,
+Look at me,
+years old and nowhere to go but up,
+The only tribe worth belonging to
+is the one that you're born into,
+Yeah, your family,
+lt's good to take care of your family,
+But remember one thing,
+Everyone's your family,
+That makes no sense,
+Hello, Juni,
+Mr, President,
+Oh, you can call me Devlin,
+Weren't you already running the country
+when you were head of the OSS?
+l was running the country,
+But since the OSS is a secret
+organization, no one knew it,
+l wanted the world to know
+that l was in charge,
+So l became president
+of the United States,
+lt all depends upon your preference,
+Reality or perception,
+Perception works for me,
+Well, l'm into reality,
+And the reality is, nothing you can say
+will make me rejoin the OSS,
+That is why you called, isn't it?
+The OSS needs you to return,
+l'm retired,
+Well, who's living in perception now?
+The fact is there is no retirement,
+Once an agent, always an agent,
+lt's time for you to be a big boy
+and reinstate,
+With all due respect, sir, no,
+Then hold on to your seat,
+because here's the reality:
+Your sister's missing,
+Taking Agent Cortez
+to Games and Theory,
+That's ex-Agent Cortez,
+You know,
+that one's defective,
+Something's wrong with the shape,
+See if we can take that one back,
+Oh, man,
+We're on,
+We're on!
+Hello, Juni,
+Donnagon, Been a good boy lately?
+Yes,
+Very, very good,
+Mrs, Giggles must have
+straightened you out,
+l certainly did,
+Hello, Francesca,
+Yeah, she worked me over
+pretty good, actually,
+Aah,
+Darling, behave,
+What do you know about
+a video game called Game Over?
+l know that just about every kid
+in the world is gonna sign on and play it,
+Not if we can help it,
+The game is a trap,
+Once plugged into the game,
+parents won't even be able to
+get their children's attention,
+What else is new?
+This is different,
+Once you get through the game,
+your mind belongs to the Toymaker,
+The inventor of the game,
+He wants to enslave
+the world's youth with mind control,
+You control the youth,
+you control the future of the world,
+She's an ingenious hacker, your sister,
+We sent her inside to shut down the game,
+But,,, she disappeared,
+How can she disappear inside a game?
+She didn't physically,
+Actually, she's right here in the building,
+Carmen! Carmen!
+She can't hear you,
+Her mind's still in the game,
+She got as far as level four, then nothing,
+Why would she even go in there
+without any backup?
+Because her first and only choice
+wouldn't answer our calls,
+So she decided to go alone,
+Now, you go in,
+Find your sister,
+Help her shut down the game in hours,
+or it's game over for everyone,
+Are you with us?
+OK,
+Then let's go,
+So l have to shut down the game
+but not release the Toymaker?
+Exactly, lt would be catastrophic
+if he escaped,
+The Toymaker hates us for imprisoning
+him in cyberspace all these years,
+What made you do that?
+Who knows? lt was years ago,
+Now, you'll have to start
+on level one like everyone else,
+Find your sister on level four,
+Then proceed to level five,
+Which is unwinnable,
+Level five is unwinnable?
+Level five is where
+you shut down the game,
+lf the game is not shut down,
+you'll stay trapped with everyone else
+when the Toymaker takes over the world,
+Put on these glasses,
+and you'll enter the world of the game,
+You're being sent into a zero-gravity
+chamber alongside Carmen,
+That should give you a competitive edge,
+When you're in the game,
+things will feel real,
+Are they real?
+Good luck, Juni,
+Find Carmen,
+Shut down the game,
+And whatever you do,
+don't let the Toymaker out,
+Ugh!
+Computer-generated,
+Low-res!
+Carmen.
+Carmen, can you hear me?
+It's Juni, your brother.
+Ugh!
+Pogo Toads!
+Ugh! Ugh!
+Aah!
+Ugh!
+Ha!
+Ugh!
+Hey! Get your own ride, creepo!
+Sorry!
+l thought you were a toad,
+New player, huh?
+Yeah.
+New player,
+Well, here's a lesson you won't soon forget,
+Aah!
+How is he?
+His brain waves are normal,
+But how is he?
+Oh, He fell,
+Stand up.
+You fell three stories.
+Aah, l survived?
+Not exactly.
+That is your life count.
+After taking heavy damage, you lose a life.
+What happens when l hit zero?
+Game over.
+When you run out of life, you lose.
+No replays. No restarts.
+What happened to my hours?
+l only have four now,
+Time flies when you're playing games.
+This is crazy,
+Better hurry.
+Ugh!
+Aah!
+So who are you?
+l'm Juni Cortez,
+ex-secret agent of the OSS,
+l need to get to level five,
+But l only have a few hours before
+the Toymaker takes over the world,
+Level five?
+Level five is unwinnable,
+l understand that,
+But l have to save the world,
+Rez, this person thinks
+he's level-five material,
+So l hear,
+You guys must be beta testers,
+One of the first allowed to roam free
+these coveted digital hills, my friend,
+How can l offer service?
+l'm Rez,
+Hi, Rez,
+Now, about saving the world,
+lf anyone's gonna get
+to the great prize at level five,
+it's gonna be one of us,
+Whatever,
+l want cheat codes,
+Back-door entrances,
+Shortcuts, Anything,
+l can pay you with bonus packs,
+lmplementation of any form
+of hack code or cheat boost
+will trigger an immediate game over
+and permanent evac from the game,
+lt's in your tech manual,
+You have to play the game by the rules
+or not at all,
+All right,
+How do l get to level two
+as quickly as possible?
+Lives are at stake, Please,
+See that target? Hit it,
+You'll bounce straight to the moon,
+Yeah, l'd suggest a running start,
+Level two is on the dark side
+of the moon,
+The way to get there is by hitting
+that target and bouncing to it,
+Not a lot of realism
+in these games, is there?
+Won't be seeing him anymore,
+Let's go,
+Less competition, the better,
+Aah!
+Aah! Ugh!
+Wow!
+Aah!
+Oh, great,
+A message from the OSS.
+Do you accept?
+Mm-hm,
+OK, Juni, we can no longer be
+of assistance,
+What assistance?
+You do get one additional lifeline,
+which you can choose to use now
+or later,
+Now!
+Give it to me now,
+You get to bring in
+any one person from the outside
+to help you on your journey,
+Call up the family files,
+Assertive. Athletic.
+Knows karate.
+Intelligent.
+Strategic.
+Knows karate.
+Wait a minute,
+Go back to Grandpa,
+Pros. superior intellect.
+Cons. physically disabled.
+He's been paralyzed
+from the waist down for years,
+His energy force would have
+doubled back again,
+making his arms, his heart, his brain
+twice as strong as a normal person,
+What are you thinking, sir?
+l choose Grandpa,
+Selected. One moment.
+That was fast, Sort of,
+Grandpa!
+Juni!
+Where am l?
+ln a video game run by a madman
+called the Toymaker,
+The Toymaker is here?
+You know him?
+l've been hunting him down
+for years, Juni,
+You shouldn't have brought me here,
+l needed your help,
+We have to find Carmen
+and shut down the game,
+What is that?
+lt's a power-up of some kind,
+Mega Legs,
+Give it to me,
+Grandpa?
+You can walk,
+No, Juni,
+Oh, l can do more than that,
+Wow,
+Hmm,
+Grandpa?
+Hmm,
+Where are you going?
+Don't wait for me, Juni,
+l'll catch up with you,
+But we have to find,,,
+Carmen,
+Valentin, my old friend,
+You think you'll catch me
+this time, don't you?
+Well,,,
+you will,
+Oh, you will,
+Everything falls into place,
+Everything falls,
+Wow,
+A courageous new contestant,
+Welcome to the Robocon,
+l need to get to level two,
+Well, you came to the wrong place,
+This is the Arena of Misfortune,
+To get to level two, you're gonna
+have to battle a Mech,
+How do l do that?
+l'll explain it to you
+when you get up there,
+Hey, there,
+Just go out there
+in your Battle Mech and fight,
+Wait a minute,
+Who am l fighting?
+Her,
+Don't get too trashed
+and l win bonus points,
+Right foot, left foot,
+Right foot, Oh!
+Oh! How do you work this thing?
+Ooh,
+Ooh.
+OK, I want a good, clean robo fight.
+There will be no kidney punches,
+no rabbit punches,
+no eye gouging or ear biting.
+Unless, of course, you can't help yourself.
+Hi,
+l'm Juni,
+Oh, l'm sorry,
+l'm sorry, He didn't mean it,
+Really, really,
+No, No, no, no!
+Please, no!
+Oh!
+Ugh!
+Hi, l'm Demetra,
+Aah!
+Help,
+Oh! That's gotta hurt,
+l'm the winner!
+Yeah!
+Whoo! Yes!
+Well, well, well,
+For a kid that doesn't know how to fight,
+you sure know how to fight,
+Congratulations,
+And keep the suit,
+Hey! Hey!
+Hey!
+So, let's go over this again, shall we?
+So there's no mistake,
+So there's no gross error,
+So there's no lack
+of communication amongst us,
+What l want, what we want,,,
+What do we want?
+Our time on this planet is over,
+lt belongs now to our youth,
+Not if we control their minds!
+We could start the world over again
+and cure it of its diseases,
+We could begin anew,
+Forget what we could do!
+lt's what we should do!
+Am l doing the right thing?
+lt's not about the right thing,
+lt's about the smart thing,
+Ah,
+We won't escape this place otherwise,
+l speak for all of us
+when l say, ''We want out!''
+Hmm,
+The end justifies the means,
+You have the children's attention,
+The question is,
+what are you teaching them?
+Who are you people?
+We are you,
+Forgive me, Forgive me,
+l forget the extent of my
+programming powers from time to time,
+For a moment, l actually
+believed that you existed,
+Goodbye,
+Out, out, out,
+Out, out,
+This childish game will soon be over,
+And then the real game will begin,
+Hmm,
+Will you look at this?
+Hold on to your joysticks, boys,
+l think we got him,
+You're the Guy,
+l'm the who?
+The Guy,
+The guy from the poster,
+That guy,
+No, Wait a minute,
+l'm only looking for my sister,
+She's somewhere on level four,
+Then l'm heading out through level five,
+So you can win the game?
+l guess that's one way of putting it,
+You see, according to the tech manual,
+if we find the Guy,,,
+the Guy,,,
+he'll lead us through the unwinnable level,
+Just 'cause he made it
+out of Robocon in one piece
+doesn't mean he's the Guy,
+He's the first l've seen
+to make it out with the power suit,
+Man, give me a break,
+This wimp's a phony,
+There's only one way to find out,
+Mega Race,
+The fastest, most dangerous race
+in the game world,
+Come on,
+No, Wait,
+l already told you l'm not the Guy,
+Go,
+OK,
+The race will begin shortly.
+Claim your vehicle.
+You got to be kidding,
+This race will tell us if you're the Guy,
+lf you are, you can hang with us,
+But if you're a phony, Arnold will crush you,
+Aah!
+l'm not the Guy,
+How many times do l have to say it?
+There are
+no rules in this race,
+except win at any cost.
+All right!
+We'll try to help you out,,,
+as much as we can,
+The race will begin... now.
+One, two, three, go!
+Hmm?
+Easy as pie,
+Juni, push the red button,
+The one that says ''Do not push''?
+Yeah, Push it,
+lt's a turbo boost,
+Are you sure?
+Yeah,
+Aah!
+Hey, Rez, give me a hand!
+Hey, how about a foot?
+Aah! Aah!
+Whoa!
+Whoa!
+My turn, sucker.
+Aah!
+You're supposed to be
+winning the race, Juni,
+Grandpa!
+What is this?
+Whoa!
+Ugh!
+Ugh!
+Nngh!
+Oh!
+The glove!
+Grab the glove,
+The glove!
+Ugh!
+Whoa!
+Whoa!
+Whoa!
+Ugh!
+Whoa,
+Uh-oh,
+Aah!
+Grab another bike, Juni!
+Final stretch!
+Five... four...
+three... two... one.
+Winner by a hubcap, Juni Cortez!
+l thought you were him,
+l knew it,
+l guess you are,
+So, l hear you're the Guy,
+l am definitely the Guy,
+Yeah!
+Yeah!
+Yeah!
+So now what, Guy?
+l have to go talk to my grandfather,
+To who?
+l mean l must confer
+with the Wizard of Atari-Sega-Nendo,
+Yeah, OK, cool,
+Congratulations, You won the race,
+But now they think l'm some important guy
+who's going to win for them,
+For our purposes, that's very good,
+They can lead us to level four
+more quickly,
+so you can find your sister,
+so we can shut down the game
+and make things right,
+And so that l can find,,,
+the Toymaker,
+We're not supposed to
+get near the Toymaker,
+So say the rules of the OSS,
+which l'm not following,
+He might escape,
+We can't risk that,
+Oh, no, Juni,
+l don't plan on letting him go anywhere,
+Guy!
+We'll talk about this later,
+OK, Here it is,
+l'm not supposed to lead you to level five,
+You're supposed to lead me there,
+So you mean we work together?
+The wizard said if we all work together,
+we all win,
+With my strength,
+My brains,
+My cool,
+My intuition,
+OK, So you're the Guy,
+We're all counting on you,
+But if you fail us or if you're
+not who you say you are,
+this life counter will hit zero
+faster than you can say ''oops,''
+Deal,
+First l got to find my sister,
+So level four, people,
+Move!
+Come on, Grandpa,
+He's doing good, huh?
+Huh?
+Yeah, he's doing great,
+and that's the problem,
+Why?
+They've awoken the Programmerz,
+What?
+Pull him out of there now,
+Too late,
+All right, This is cool,
+We'll get there in no time,
+What is this?
+Wait a minute,
+The Programmerz,
+Who are these Programmerz?
+The brainiacs who wrote
+the book for the game,
+So, they work for the Toymaker, huh?
+Programmerz are the reason
+you found us on level one,
+They caught Francis cheating
+during the Mega Race,
+They'll bounce us back
+to level one again if they catch us,
+Level one? l don't have time for that,
+Spread out,
+Don't split up! lt never works!
+lf we just stick together,,,
+All right, Grandpa,
+l guess it's just you and me,
+Hello?
+Grandpa?
+Psst!
+Aah!
+Can you at least try and act
+like you're the Guy?
+You know my secret?
+l've seen the real Guy, and you're not him,
+Why are Programmerz chasing us?
+Someone's got a game cheat,
+What's this?
+A map to the game,
+This is illegal,
+You want to find your sister or not?
+Give me the map,
+OK,
+Wow,
+We're in Machine City,
+lf we cut across here,
+we'll be able to reach level four,
+Where Carmen is,
+Right,
+Then, if we cut through Lava Mountain,
+we'll be right at the door
+of the unwinnable level,
+Shortcuts, This is good,
+This is very good,
+Game cheats,
+That's against the rules,
+We're gonna have to bounce you
+back to level one,
+Aah!
+You can't scare us, He's the Guy,
+Grandpa!
+Listen to that, Edog,
+The Guy is calling his grandpa,
+l'm so scared,
+Come and get me, Gramps,
+What's he gonna do, drool on us?
+Why are you picking on my grandson?
+Why?
+They got Logos and Edog, the leaders,
+You are Programmerz?
+Let's see what you really look like, huh?
+Very unimpressive,
+Computer nerds,
+Now tell me, where is the Toymaker?
+Grandpa,,, uh, Wizard, put them down!
+He's good,
+The boy warrior is very, very good,
+But he's got to keep going,
+We run the risk of discouraging him
+if the next levels are too challenging,
+But only by seeking challenges
+can we hope to find the best in ourselves,
+Can we help him?
+No! lt's against the rules of the game!
+This isn't a game,
+lt's life!
+l don't mind talking to myself,
+But when you guys start to
+cut me out of the conversation,
+that's when it gets a little strange,
+That's it,
+More life is what we need,
+We'll grant the boy a gift,
+The gift of life,
+Don't worry, Guy,
+From here on out, l'll protect you,
+Are you all right, Guy?
+Hey, He found a life pack,
+A what?
+That's rare,
+l've never seen one up close before,
+What do l do?
+Crush it in your hands,
+You'll gain life,
+How much?
+All depends,
+l got extra life, Demetra,
+Congratulations,
+You'll need it the most,
+l want you to take it,
+Juni, l can't,
+Does he know what that's worth?
+Of course he does,
+l owed you from the Robot Arena,
+Also, l don't want anything
+to happen to you,
+Thank you,
+You have now entered level three.
+l wish my family
+could see this amazing place,
+What are you doing in the game, Arnold?
+Well, actually, l got in
+on a beta tester's visa,
+l'm here for the great prize
+behind level five,
+lt'll save my family from poverty,
+But what waits for us in level five?
+l mean, is it all true?
+Untold riches?
+Arnold, you should know
+that when we reach the end of the game--
+No, Don't tell me,
+l want it to be a surprise,
+l'm sure it will be,
+Attention, gamers!
+Stand on the red line.
+Choose your best player.
+The Guy,
+The Guy's the best,
+Choose your strongest player.
+That'd be Arnold,
+Survival of the fittest.
+Face your opponent.
+Wait a minute,
+l'm not fighting Arnold,
+l don't want to crush Juni,
+The winner shall proceed
+with the others to level four.
+The loser shall be given
+an immediate game over
+and will be evacuated
+permanently from the game.
+Arnold, l have to save my sister,
+l'm sorry, Juni,
+But l have my own family to think about,
+l can't beat you, Arnold,
+l know,
+Fight!
+Aah!
+Not that l'm rooting for anyone in particular,
+but that was a really cool move,
+Aah!
+Nice knowing you, Juni,
+Arnold, please!
+Unh!
+What's going on?
+You've been tagged.
+What do you mean, l've been tagged?
+Someone has switched places with you.
+Not me, Guy,
+Demetra, what are you doing?
+You have to find your sister, Juni,
+Don't! Don't do it!
+Demetra, no!
+Fight!
+No!
+Aah!
+Demetra, game over!
+l never even got her e-mail address,
+Don't fall in love with a game, Juni,
+Let's get out of here,
+Sorry, Juni,
+My family,
+You are causing so much pain,
+And only l can stop you,
+For l know why you do these things,,,
+Toymaker,
+Bring it on,
+Find me, and the world
+will truly pay the price,
+Here in my cyberprison
+l was forced to create,
+Now l will destroy,
+Release the girl,
+Put her back in the game,
+But, sir--
+Oh, you have a better solution, don't you?
+Of course you do, You all do,
+So tell me,
+What is the real answer?
+l'm so curious,
+Revenge,
+Healing,
+Destruction!
+Love,
+Hate,
+Uh-huh,
+Well, once again, you're all correct,
+And once again, you're all incorrect,
+On with the game,
+You are now entering level four.
+Level four? Wait a minute,
+Carmen's on this level,
+l'll use telepathy,
+We might be close enough that it'll work,
+Carmen, can you hear me?
+What?
+This game plays tricks.
+Tell me something
+only Carmen would say.
+My feet stink,
+You sound close,
+l am,
+l see you brought Grandpa into the game,
+l thought it was a good idea at the time,
+Juni!
+The Toymaker's the guy
+who put Grandpa in the wheelchair
+years ago,
+Exactly,
+lf Grandpa tries to take revenge,
+the Toymaker will break free,
+He's that powerful,
+Then we have to convince Grandpa
+that revenge is not the way to solve it,
+OK, Guy, We found your pal,
+Now, where are we going, exactly?
+Where's level five?
+First of all, you don't
+ask the questions around here,
+l do, Second of all--
+We're going to Lava Mountain,
+We are?
+Beyond that is the passage to level five,
+l don't think so,
+Oh, so suddenly you're the game expert,
+We're following the Guy,
+You know, Juni, we don't need
+these guys following us,
+Not where we're going,
+l promised them they could tag along,
+Look, this is how l know where to go,
+Trust me,
+Lava Mountain,
+Why is it that every video game
+has lava in it?
+Technically, that's not true,
+There's no lava in Halo,
+And in Metroid, it's molten magma,
+Can't touch the lava, or it's game over,
+But l have six lives left,
+Doesn't matter,
+You fall in, you lose,
+The game's getting tougher, guys,
+This is impossible,
+What do you think, Grandpa?
+Difficult,
+Let's go another way,
+Follow me, boys,
+This doesn't make any sense,
+l give them a map,
+l give them the girl,
+What more do they want?
+Can't l just lead them to the door?
+lmpossible, sir,
+The way the game's A,l, works is--
+l know, l know,
+Can l just talk to myself at least?
+You are talking to yourself,
+l am you,
+Well, then, you, me, shut up,
+So be it,
+Am l insane?
+Completely,
+They're going the wrong way,
+l have to drive them to level five,
+Send in the Tinker Toys,
+Finding another path,
+Now, this is good thinking,
+She's good,
+We should listen to her more often,
+Stay off my side,
+OK,
+What is this?
+Tinker Toys!
+Wait! What's worse, lava or Tinker Toys?
+Definitely Tinker Toys,
+Carmen, what do we do?
+Whoa!
+Ugh!
+Uh-oh!
+Whoo-hoo!
+Rip that wave, Juni,
+What are they doing?
+They're straying from the path,
+The Toymaker must be
+pushing them towards his lair,
+But why?
+What could he gain from,,,
+Check if there's a connection between
+the grandfather and the Toymaker,
+Hurry, people!
+lt's coming on-screen,
+Comrades turned enemies,
+Grandpa's gonna break the Toymaker
+out of the game,
+Stop them,
+Stir the lava, Bigger waves,
+Lava monsters, Anything,
+We have to create obstacles for them,
+Come on!
+We have to drown them,
+They'll get a game over
+and be evacuated from the game,
+We can't risk letting the Toymaker out,
+Do it,
+This is new,
+Juni!
+Carmen!
+Francis!
+Arnold!
+Grandpa!
+Me,
+Aah!
+Where are they?
+They fell in,
+l know, but they should have
+gotten a game over,
+They should be back here, actually,
+Hmm,
+Huh?
+The lava. It's cold.
+This way, Juni. This way.
+We found a door to the next level.
+Come on.
+l thought l was a goner,
+l saw all my points
+flashing away before my eyes,
+All l could hear was
+my father saying, ''You blew it, Arnold,''
+''No untold riches for you,''
+Uhh!
+Where's Grandpa?
+l don't know, But he was here,
+lsn't this a piece of his armor?
+Carmen, it's a passage,
+Help me open it,
+Red flag, Rez,
+We have to talk about the Guy,
+Highly sensitive,
+What about him?
+l've been rereading my tech manual,
+lt speaks of a deceiver within the game,
+who will mislead you down a path
+where no one will survive,
+l think Juni's the deceiver,
+What do you suggest?
+We'll have to get rid of him
+or risk losing the game,
+What about his sister?
+Her too,
+How much time do we have left?
+Five minutes,
+What happens in five minutes?
+This place gets flooded
+with players from around the world,
+Oh, great, Competition,
+The Toymaker will take over their minds,
+That's why we have to
+shut down the game,
+Sh, Carmen!
+What is she talking about?
+You didn't tell them yet, did you?
+l was getting around to it,
+Deceivers,
+What about the other side of level five?
+There is no other side,
+You'll be imprisoned in the game,
+Game over,
+We're not letting you shut down this game,
+You're gonna see how fast
+that counter can count backwards,
+You have to go through me first, game boy,
+Now, listen to me,
+l'm the Guy,
+Stop saying you're the Guy,
+We all know that you're not the Guy,
+He's not the Guy.
+l am,
+And you are?
+l'm the Guy,
+The real Guy,
+And l say we go in,
+beat this unwinnable level,
+and get to the other side,
+where untold riches
+and a bounty fit for kings awaits us,
+l knew it,
+Now, he's definitely the Guy,
+But it's unwinnable,
+Nothing is unwinnable
+if we join together and battle as one,
+We play on each other's strengths
+and help cover each other's weaknesses,
+We can accomplish anything,
+And we will accomplish everything,
+But first let's go whip this unwinnable level
+and show it who's boss,
+Are you with me?
+Yeah!
+Stand aside,
+Cake,
+Aah! Aah!
+Oh!
+Oh, my,
+Oops,
+Guy!
+OK, You're the Guy again,
+Get us through this, Juni,
+But l,,,
+Demetra!
+Juni, quickly!
+l found the switch to shut down the game,
+l also found the exit portal,
+We can all get out of here right now,
+How did you survive?
+There was a glitch in the game,
+l don't know,
+Juni, who is this?
+This is Demetra, my girlf,,,
+My friend,
+No, she's my--
+l'm his girlfriend,
+Who are you?
+l'm his sister,
+She gave me the map,
+The map that got us here,
+Juni, she's not real,
+What are you talking about?
+l've been helping Juni win the game,
+What have you been doing?
+Playing prisoner, That's what,
+She set you up, Juni,
+She set us all up,
+l,,, Juni, she's lying,
+She's been the Toymaker's prisoner,
+She could be brainwashed, for all we know,
+Do you want to win this game or not?
+She's the reason this level's unwinnable,
+She's the deceiver,
+Why?
+l'm sorry, Juni,
+But it's in my programming,
+Congratulations!
+You've made it to the end
+of the game! You won!
+Untold riches for all of you!
+And your prize
+is you get to stay... here.
+Welcome to the game.
+Juni, this way,
+This is the way out,
+All of you, quickly!
+Wait!
+We have to shut down the game,
+l already did,
+The switch is right there,
+Are you sure?
+Yes, yes,
+Go, Quickly, quickly,
+Run, Grandpa!
+Go, l'll hold it open,
+Go now!
+Demetra,
+l can't hold it open forever, Juni,
+We made it,
+Here's our e-mail addresses,
+Just in case,
+Terrific,
+You're awesome, Grandpa,
+The way you took on those Tinker Toys,
+You're the coolest,
+Thanks for everything, Guy,
+lt was real, Sort of,
+Thanks a lot, Guy,
+What's wrong?
+You don't want to leave, do you?
+How can l go back, Juni?
+ln here, l can walk,
+l can run,
+And you look at me
+like l'm some kind of superhero,
+You are,
+Out there in the real world, to me,
+You are,
+All right, Juni,
+l shall go back if,,,
+if you promise me that even
+though l'll be in a wheelchair,
+that you will look at me
+no differently than you are now,
+Because on the inside, Juni,
+on the inside, l feel like this,
+l promise, Grandpa,
+Time to go,
+Coming through,
+Coming through, please,
+Those video games
+are killers on the eyes, huh, kid?
+Agent Cortez, we'll take it from here,
+My grandson will handle this,
+Don't touch,
+This is Corinthian leather,
+OK,
+So tell me again
+how you shut off the game,
+l don't know if we shut it down, exactly,
+We hit a switch, and it seemed to work,
+Oh, it worked,
+The game's down,
+We just need to make sure
+we did this correctly,
+Actually, Grandpa hit the switch,
+Cortez, are these the boys
+that were in the game with you?
+We tracked them
+through their e-mail addresses,
+Yeah, that's them,
+They wouldn't know anything about,,,
+Hey, wait a second,
+What happened to Francis the Brain,
+Arnold the Strong, and Mr, Cool?
+Well, in the real world, l'm not that smart,
+l'm not strong,
+l'm not cool,
+Reality check,
+So who are you out here in the real world?
+Special Agent Cortez, we need you,
+Whoa,
+l'm just Juni Cortez,
+Let's have it, Grandpa,
+What switch did you hit exactly?
+There were two switches side by side,
+One switch shuts down the game,
+But the other releases the Toymaker,
+Who was the idiot who designed that?
+Did you free the Toymaker by accident?
+Oh, l freed the Toymaker,
+But it was no accident,
+Do you want to stop the game?
+Then you must defeat the Toymaker,
+lt's the only way,
+You crazy old man!
+Do you know what you've done?
+Grandpa, revenge doesn't solve anything,
+Will you trust me?
+You of all people?
+A message from the president,
+Oh, what does he want?
+I'm coming back to settle the score.
+For imprisoning me.
+For using me.
+Devlin set us up?
+lt's not Devlin,
+All I wanted to do was right the wrongs.
+Start over a new world.
+A new chance,
+where everyone would get
+a second chance!
+But no.
+So now I'm taking this
+to the next level!
+Seismic activity off the map!
+Aah!
+Aah!
+Earthquake!
+Tornado!
+Hurricane!
+Carmen, let's go!
+Everybody, relax!
+Quick! Put your glasses on,
+lt's the only way you can see
+what's really happening,
+The game has entered the real world,
+There's only one thing to do
+in a situation like this,
+What?
+Call in the family,
+Calling all Cortezes,
+This is it, This is it,
+This is it,
+The moment we've been waiting for,
+Yes,
+Nobody move, Nobody move!
+Nobody touch the brain,
+The fifth brain,
+This is a historic moment,
+Probably the,,,
+Probably the most important,,,
+No,
+This is the most important
+moment of my life,
+No one can disturb me now,
+l must activate the brain,
+Now,
+Mr, Cortez?
+Eh?
+Your children called,
+Some sort of emergency,
+Well, l'm their uncle,
+Dad, you need these to see,
+Glasses, quick!
+lncoming,
+This won't be easy,
+Let's kick some metal,
+What about all the other ones?
+We need more help,
+Our family isn't big enough,
+Remember one thing,
+Everyone's your family,
+Calling,,, everyone,
+We're here to save the day,
+Floop and Minion!
+Robot children!
+Take 'em down!
+Dinky Winks!
+Somebody ring the Dinkster?
+Whoa!
+You're gonna make a nice addition
+to my theme park,
+Game over for you, pal,
+Game over!
+Somebody call in a loon?
+Sorry, Romero,
+this is the only pair we had left,
+They're a little broken,
+They're perfect,
+Charge, Sporky!
+Brand him, Daddy,
+Thanks, Little Dink,
+Unh!
+Unh!
+Gary Giggles?
+Yeah?
+Carmen Cortez.
+I need your help right away.
+l'm there,
+l'm here,
+Give me a hand,
+Whoa,
+Unh!
+Thanks,
+Hey,
+Hey,
+Thank you, Gerti,
+There's still one more,
+That's impossible,
+Someone has to go up there,
+And shut it down manually,
+lt's the only way,
+But who?
+l'm ready,
+lt must be done,
+Grandpa, no!
+Let him go,
+Your grandfather has to do this,
+Thank you for freeing me,
+Valentin, but it's too late,
+Nothing can stop me, Not even you,
+That's true, Only you can do that,
+You double-crossed us,
+The agency, your fellow agents, and me,
+Your mistake cost me my legs,
+Well, a mistake like that
+could only push someone
+further into the dark,
+And it has,
+Look at you now,
+l gave you back your legs in the game,
+l did that for you,
+Let me tell you all the things
+l've missed in my life
+because of the accident you caused,
+l can't walk on the beach with my wife,
+l missed my daughter's birth,
+And wedding,
+Shall l continue?
+Grandpa,
+Don't,
+Now let me tell you
+all the good things that came of it,
+Humility,
+Spirituality,
+Understanding,
+You've been living in fear of me
+all these years,
+But l've only been searching for you
+so l could tell you that l forgive you,
+l've only dreamed l would hear
+you say something like that,
+Now the question is,
+can you forgive yourself?
+lt's never too late, Sebastian,
+Take your time,
+Take your time to decide,
+We have about seconds,
+Game,,,
+over,
+Juni, get out of there!
+Grandpa!
+So, wait a minute,
+Who won?
+lt's not whether you win or lose,
+lt's how you play the game,
+To family,
+To family,
+To family,
+To family,
+To family,
+To family,
+To family,
+To family,
+To family,
+To family,
+To family,
+To family,
+To family,
+Family,
+Familia.
+To family,
+To family,
+To family,
+And break!
+(laughs)
+The time has come
+Once and for all
+You met your match
+You will fall
+This little game we play
+is gonna break us down
+Only one of us can wear the crown
+It's not as easy as you thought it'd be
+When it's down to you versus me
+I play rough
+I don't need to try
+You like to play mean
+But the score never lies
+Game over
+Game over
+Game over
+For now
+Like Valentin,
+Like Valentin,
+Val, More like that? Valentin,
+Hey, how you doin', Valentin?
+Hey, l know,
+All right, Here we go,
+Settle, please,
+Yo, Valentin!
+What are you doin' in space?
+You,,,
+OK,
+Oh!
+Take 'em down!
+OK, Fists, Good,
+What else is new?
+This is different,
+Once you get through the game,
+your mind belongs to the Toymaker,
+Aah!
+Let's do it again right away,
+l'm coming back to settle the score,
+For imprisoning me,
+For using me,
+That might be the end
+of my career right there,
+Game over
+Game over
+Game over
+For now
+Winning the game's
+The only rule allowed
+No more good luck
+Or cheers from the crowd
+When the game began
+you never thought you'd lose
+But your time is up
+I play to bruise
+Look around, in fact,
+you've lost your team
+You tried your best,
+but you ran out of steam
+I play rough
+I don't need to try
+You like to play mean
+But the score never lies
+You're all out of wishes
+Kiss your dreams goodbye
+The end's the same
+It's not whether you win or lose
+It's how you play the game
+Game over
+Game over
+Game over
+For now
+Is that all you got ?
+Come on
+Unh-unh
+Bring it on
+Game over
+Game over
+Game over
+For now
+Game over
+I'm trying to figure out
+the rules, I don't lose
+I'm tested, I've already seen
+some bad dudes
+Do what's in your nature,
+don't let 'em break you
+Plan to win if they're
+raising the stakes up
+Now, you can take
+a few bumps and bruises
+I'm confident, I'm telling you,
+you will not lose this
+Life force is dwindling,
+you're barely alive
+Time to let go of the wheel
+and let your heart drive
+Just let your heart drive
+Just let you heart drive
+Come on, come on
+Just let your heart drive
+Just let your heart drive
+That's right, that's right
+Just let your heart drive
+Just let your heart drive
+Come on, come on
+Just let your heart drive
+Just let your heart drive
+Let your heart drive
+Dad, he's imitating me,
+Do that again,
+Dad, he's imitating me,
+He sounds just like you, honey,
+That's what l'm trying to
+tell you,
+That's better,
+Thank you, dear,
+That's better,
+Thank you, dear,
+How long have you known?
+Since forever,
+Mom made me swear not to mention it,
+So why are you mentioning it?
+'Cause she also told me
+never to swear, so now we're even,
+How's that for even?
+You're on your own,
+Hey, wait!
+l warned you!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.detect.text</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>841CCDE9-0548-4494-8F73-94F95289A536</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>2CFE32EA-B34D-4086-B986-1CA9F9F39EA5</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.text.split</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Show-text</key>
+				<true/>
+				<key>UUID</key>
+				<string>960E7028-9623-4299-9D4F-DDC2C99B15AF</string>
+				<key>text</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>841CCDE9-0548-4494-8F73-94F95289A536</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.each</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>CBD93AA4-A16F-447D-830E-5CCF1CE4DBAC</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Split Text</string>
+						<key>OutputUUID</key>
+						<string>960E7028-9623-4299-9D4F-DDC2C99B15AF</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runshellscript</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>Input</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Item</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>Script</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{17, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>Repeat Item</string>
+							</dict>
+							<key>{32, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Provided Input</string>
+								<key>OutputUUID</key>
+								<string>20EA1C85-356D-4FC7-8A0B-E730F0DF1014</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>imessage --text "￼" --contacts "￼"</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>UUID</key>
+				<string>A0A0822A-B86A-4B71-A5C7-465CF6CEE5BF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.each</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>CBD93AA4-A16F-447D-830E-5CCF1CE4DBAC</string>
+				<key>UUID</key>
+				<string>7E11F9C8-BE74-4ACA-8D7B-BE1539B9358E</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+	</array>
+	<key>WFWorkflowClientVersion</key>
+	<string>1145.7.2.0.2</string>
+	<key>WFWorkflowHasOutputFallback</key>
+	<false/>
+	<key>WFWorkflowHasShortcutInputVariables</key>
+	<false/>
+	<key>WFWorkflowIcon</key>
+	<dict>
+		<key>WFWorkflowIconGlyphNumber</key>
+		<integer>59859</integer>
+		<key>WFWorkflowIconStartColor</key>
+		<integer>-43634177</integer>
+	</dict>
+	<key>WFWorkflowImportQuestions</key>
+	<array/>
+	<key>WFWorkflowInputContentItemClasses</key>
+	<array>
+		<string>WFAppStoreAppContentItem</string>
+		<string>WFArticleContentItem</string>
+		<string>WFContactContentItem</string>
+		<string>WFDateContentItem</string>
+		<string>WFEmailAddressContentItem</string>
+		<string>WFFolderContentItem</string>
+		<string>WFGenericFileContentItem</string>
+		<string>WFImageContentItem</string>
+		<string>WFiTunesProductContentItem</string>
+		<string>WFLocationContentItem</string>
+		<string>WFDCMapsLinkContentItem</string>
+		<string>WFAVAssetContentItem</string>
+		<string>WFPDFContentItem</string>
+		<string>WFPhoneNumberContentItem</string>
+		<string>WFRichTextContentItem</string>
+		<string>WFSafariWebPageContentItem</string>
+		<string>WFStringContentItem</string>
+		<string>WFURLContentItem</string>
+	</array>
+	<key>WFWorkflowMinimumClientVersion</key>
+	<integer>900</integer>
+	<key>WFWorkflowMinimumClientVersionString</key>
+	<string>900</string>
+	<key>WFWorkflowOutputContentItemClasses</key>
+	<array/>
+	<key>WFWorkflowTypes</key>
+	<array/>
+</dict>
+</plist>
