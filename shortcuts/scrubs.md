@@ -27,7 +27,7 @@ Updated `02072022-133122`
 - [Speedy Home Screen](https://www.icloud.com/shortcuts/4576d20841194a2e8c82569e7eecc9ec)
 - [update](https://www.icloud.com/shortcuts/f9f53f99f16647f295e03e532d897965)
 - [Markdown Capture (Comprehensive)](https://www.icloud.com/shortcuts/102f5ddb913f46239db48712d3e8115e)
-- [Strip Image Metadata](a basic strip metadata from image shortcut. https://www.icloud.com/shortcuts/e6121cf89ecf42ceba831251bbb4edef)
+- [Strip Image Metadata](https://www.icloud.com/shortcuts/e6121cf89ecf42ceba831251bbb4edef)
 - [Jorts Device Report](https://www.icloud.com/shortcuts/a9fb15a922124770b8060fc19b8a9722)
 
 ## Music/Audio Delights
