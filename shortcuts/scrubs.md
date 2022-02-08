@@ -6,7 +6,7 @@ Updated `02072022-133122`
 - [WTF](https://davidblue.wtf/scrubs/)
 - [r/davidblue](https://reddit.com/r/davidblue/comments/sir6pm/david_blues_world_famous_fast_n_loose_siri/)
 - [Siri Shortcut](https://routinehub.co/shortcut/10978/)
-- [Siri Shortcut iCloud Direct Link](https://www.icloud.com/shortcuts/de9fef136bd9444d96b723576b4d0365)
+- [Siri Shortcut iCloud Direct Link](https://www.icloud.com/shortcuts/83c7c4ec1fcf4b359f520d5124899e9d)
 - [Gist](https://gist.github.com/3f3748f2ee1cd0820ba099cb05809054)
 
 ![OMNIMEMOJI](https://i.snap.as/p8U6kW1g.png)
