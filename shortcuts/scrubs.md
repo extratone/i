@@ -31,6 +31,7 @@ Updated `02072022-133122`
 - [Strip Image Metadata](https://www.icloud.com/shortcuts/e6121cf89ecf42ceba831251bbb4edef)
 - [Jorts Device Report](https://www.icloud.com/shortcuts/a9fb15a922124770b8060fc19b8a9722)
 - [Store Page URLS](https://www.icloud.com/shortcuts/9a60b0f4e03d440e8eefce7fefe51f8a) (Drafts)
+- [Comprehensive Markdown Capture](https://www.icloud.com/shortcuts/94fe8ab9b16045068f23ec6c724cdec9)
 
 ## Music/Audio Delights
 
