@@ -69,3 +69,9 @@ Updated `02072022-133122`
 - [NILLA](https://www.icloud.com/shortcuts/d0ed337c304f430993f2c8d8953d5e69)
 - [BIG WORDLE](https://www.icloud.com/shortcuts/965dd56d81684881954be591303a962d)
 - [COURDEROYED](https://www.icloud.com/shortcuts/75dc92926bed47af9a62faa83f2540d2)
+
+## Text Fuck
+- [Random Characters ⇨ Clipboard](https://www.icloud.com/shortcuts/ed9216202df4481d9ae001b0531384c2)
+- [Random Characters ⇨ Mastodon](https://www.icloud.com/shortcuts/af64b43604334d21ad5a6668471b828f)
+- [Random Characters ⇨ Tumblr](https://www.icloud.com/shortcuts/399a857145e34d8b94b994fa3f9ca300)
+- [Random Text ⇨ Twitter](https://www.icloud.com/shortcuts/0873152dee3e4d32828cd28bcbc1be06) ([Tweetbot](https://apps.apple.com/us/app/tweetbot-6-for-twitter/id1527500834))
