@@ -26,6 +26,7 @@ If ya need help, *please feel free to contact me*. This link will take you to a 
 
 * [**RoutineHub profile**](https://routinehub.co/user/blue)
 * [ShareShortcuts profile](https://shareshortcuts.com/u/blue/)
+* [**Siri Shortcuts Raindrop Collection**](https://raindrop.io/davidblue/siri-shortcuts-21598130)
 
 ## Apps
 
