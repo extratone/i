@@ -32,6 +32,7 @@ Updated `02072022-133122`
 - [Jorts Device Report](https://www.icloud.com/shortcuts/a9fb15a922124770b8060fc19b8a9722)
 - [Store Page URLS](https://www.icloud.com/shortcuts/9a60b0f4e03d440e8eefce7fefe51f8a) (Drafts)
 - [Comprehensive Markdown Capture](https://www.icloud.com/shortcuts/94fe8ab9b16045068f23ec6c724cdec9)
+- [temp](https://www.icloud.com/shortcuts/45030559a4864674b46634cecbc4bfc0) (Requires [Toolbox Pro](https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977) and [Data Jar](https://apps.apple.com/us/app/data-jar/id1453273600).)
 
 ## Music/Audio Delights
 
@@ -65,3 +66,4 @@ Updated `02072022-133122`
 ## Okay
 - [NILLA](https://www.icloud.com/shortcuts/d0ed337c304f430993f2c8d8953d5e69)
 - [BIG WORDLE](https://www.icloud.com/shortcuts/965dd56d81684881954be591303a962d)
+- [COURDEROYED](https://www.icloud.com/shortcuts/75dc92926bed47af9a62faa83f2540d2)
