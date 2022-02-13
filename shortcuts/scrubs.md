@@ -51,10 +51,12 @@ Updated `02072022-133122`
 - [Meow](https://www.icloud.com/shortcuts/a32e7771f97c43feb5e228dc2c94a868)
 - [Honk!](https://www.icloud.com/shortcuts/4dd2b2bf7110408b9fcde3f5811e5a02)
 - [IKNOW](https://www.icloud.com/shortcuts/bed4693885b3425daa96deabf1d12e53)
+- [SOS](https://www.icloud.com/shortcuts/bf3b733662144541ae4ab8fd317680a2)
 
 ## Personal/Brand
 - [The Psalms Ebook](https://www.icloud.com/shortcuts/eff33d5e122449deb190c70992022c97)
 - [DavodTime](https://www.icloud.com/shortcuts/5a4ebd4ed057415b8915c535951c1059)
+- [gurgle](https://www.icloud.com/shortcuts/21ffd45ece1d4443823a583ab722f4a9)
 
 ## Legacy/Drywall Media
 - [trent](https://www.icloud.com/shortcuts/7a319d5b68b84fabb8e0c0bea441bb24)
