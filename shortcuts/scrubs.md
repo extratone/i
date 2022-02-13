@@ -75,3 +75,4 @@ Updated `02072022-133122`
 - [Random Characters ⇨ Mastodon](https://www.icloud.com/shortcuts/af64b43604334d21ad5a6668471b828f)
 - [Random Characters ⇨ Tumblr](https://www.icloud.com/shortcuts/399a857145e34d8b94b994fa3f9ca300)
 - [Random Text ⇨ Twitter](https://www.icloud.com/shortcuts/0873152dee3e4d32828cd28bcbc1be06) ([Tweetbot](https://apps.apple.com/us/app/tweetbot-6-for-twitter/id1527500834))
+- [Random Text ⇨ Twitter V II](https://www.icloud.com/shortcuts/21ab008699ce44dabc9f9a249fc6f881)
