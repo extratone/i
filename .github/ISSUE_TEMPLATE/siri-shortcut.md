@@ -7,21 +7,24 @@ assignees: ''
 
 ---
 
-* RoutineHub Page
-* ShareShortcuts Page
-* iCloud Share Link
+- [**RoutineHub Page**](https://routinehub.co/shortcut/)
+- [iCloud Share Link](<|>)
+- GitHub Issue
 
-***
+---
 
-## About
+## Short description.
 
-I figured I may as well share my personal Drafts web page capture Shortcut, which reliably returns Markdown-formatted Drafts headed by a given web page’s featured image (if present,) byline, and timestamp, followed by a correctly-hyperlinked source URL between quotation marks.
+## Full Description
 
-***
+---
 
 ## Contact
-* [Email](mailto:davidblue@extratone.com) 
-* [Twitter](https://twitter.com/NeoYokel)
-* [Mastodon](https://mastodon.social/@DavidBlue)
-* [Discord](https://discord.gg/0b9KQUKP858b0iZF)
-* [*Everywhere*](https://www.notion.so/rotund/9fdc8e9610b34b8f991ebc148b760055?v=c170b58650c04fbdb7adc551a73d16a7)...
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [-Everywhere-](https://raindrop.io/davidblue/social-directory-21059174)...
