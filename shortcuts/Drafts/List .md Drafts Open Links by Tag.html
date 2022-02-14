@@ -1,0 +1,251 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>List .md Drafts Open Links by Tag</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-all;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 5px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams closed">List .md Drafts Open Links by Tag</button>
+<div class="content" style="display:none"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1146.9.1",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 946986751,
+   "WFWorkflowIconGlyphNumber": 59722
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "limit",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Set maximum number of Drafts to list. (Optional)",
+      "DefaultValue": "100"
+   },
+   {
+      "ParameterKey": "tags",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(7)"><b>7</b></span>,
+      "Text": "Set tags to add to result Draft. (Optional)"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFFolderContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gScripting" id="m0">
+0 Ask for Text Input</button>
+	<div class="content">
+		<div class="row"><div class="col1">AskActionPrompt</div>
+			<div class="col2">Set tag</div></div></div>
+<button class="gVariable" id="m1">
+1 Set Variable <span class="box">tag</span> to <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 Provided Input</b><b>]</b></span></span></button>
+<button class="button gUnknown" id="m2">
+2 com.agiletortoise.Drafts-OSX.QueryDraftsIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">sortFlaggedToTop</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">tagFilter</div>
+			<div class="col2"><span class="var"><b>[tag</b><b>]</b></span></div></div>
+		<div class="row"><div class="col1">limit</div>
+			<div class="col2">100</div></div></div>
+<button class="button gLoop nonbottom" id="m3">
+3 Repeat with Each in <span class="box"><span class="magic" onclick="magictap(2)"><b>[2 Drafts</b><b>]</b></span></span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m4">
+4 Text</button>
+	<div class="content inside">
+		<div class="col2">- [<span class="var"><b>[Repeat Item</b>’s title<b>]</b></span>](<span class="var"><b>[Repeat Item</b>’s link<b>]</b></span>)</div></div></div>
+<button class="gLoop nontop" id="m5">
+5 End Repeat with Each</button>
+<button class="button gDocuments" id="m6">
+6 Combine Text <span class="box"><span class="magic" onclick="magictap(5)"><b>[5 Repeat Results</b><b>]</b></span></span> with New Lines</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="button gUnknown" id="m7">
+7 com.agiletortoise.Drafts-OSX.CaptureIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-tags</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">tags</div>
+			<div class="col2"><span class="var"><b>[tag</b><b>]</b></span></div></div>
+		<div class="row"><div class="col1">content</div>
+			<div class="col2"># <span class="var"><b>[tag</b><b>]</b></span> - <span class="var"><b>[CurrentDate</b>{"Date Style":"Custom","WFDateFormat":"MMDDYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span>
+
+<span class="magic" onclick="magictap(6)"><b>[6 Combined Text</b><b>]</b></span></div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
