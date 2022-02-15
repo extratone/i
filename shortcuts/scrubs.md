@@ -52,6 +52,8 @@ Updated `02072022-133122`
 - [Honk!](https://www.icloud.com/shortcuts/4dd2b2bf7110408b9fcde3f5811e5a02)
 - [IKNOW](https://www.icloud.com/shortcuts/bed4693885b3425daa96deabf1d12e53)
 - [SOS](https://www.icloud.com/shortcuts/bf3b733662144541ae4ab8fd317680a2)
+- [AMEN](https://www.icloud.com/shortcuts/551499f76c774333956d678950971196)
+- [Generation Rx](https://www.icloud.com/shortcuts/1d9d1bc51d3844b8a86510f224d9293a)
 
 ## Personal/Brand
 - [The Psalms Ebook](https://www.icloud.com/shortcuts/eff33d5e122449deb190c70992022c97)
@@ -69,6 +71,9 @@ Updated `02072022-133122`
 - [NILLA](https://www.icloud.com/shortcuts/d0ed337c304f430993f2c8d8953d5e69)
 - [BIG WORDLE](https://www.icloud.com/shortcuts/965dd56d81684881954be591303a962d)
 - [COURDEROYED](https://www.icloud.com/shortcuts/75dc92926bed47af9a62faa83f2540d2)
+
+## Motion Pictures
+- [I Hate This](https://www.icloud.com/shortcuts/de9514d4fb9343debc73331d813acecc)
 
 ## Text Fuck
 - [Random Characters ⇨ Clipboard](https://www.icloud.com/shortcuts/ed9216202df4481d9ae001b0531384c2)
