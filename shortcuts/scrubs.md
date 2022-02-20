@@ -34,6 +34,7 @@ Updated `02072022-133122`
 - [Comprehensive Markdown Capture](https://www.icloud.com/shortcuts/94fe8ab9b16045068f23ec6c724cdec9)
 - [temp](https://www.icloud.com/shortcuts/45030559a4864674b46634cecbc4bfc0) (Requires [Toolbox Pro](https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977) and [Data Jar](https://apps.apple.com/us/app/data-jar/id1453273600).)
 - [Base64 Demo](https://www.icloud.com/shortcuts/6b9ed9e479a347438a1edbc95bee9b4c)
+- [Base64 Photo](https://www.icloud.com/shortcuts/359624798fe046da83c01ec499aba67c)
 
 ## Music/Audio Delights
 
@@ -88,3 +89,4 @@ Updated `02072022-133122`
 - [Random Text ⇨ Mastodon](https://www.icloud.com/shortcuts/0e517d1438b44d3d980c8afb9891a724)
 - [Random Text ⇨ Tumblr](https://www.icloud.com/shortcuts/3c38ca0a7ec9413f9c9a6f6328fb1b09)
 - [Random Text ⇨ WordPress](https://www.icloud.com/shortcuts/07668aacd5ce4e59b76dd54ffc255209)
+- [Fuck](https://www.icloud.com/shortcuts/edcc737ed7304a17bb3b4d8897aae29c)
