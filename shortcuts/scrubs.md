@@ -33,6 +33,7 @@ Updated `02072022-133122`
 - [Store Page URLS](https://www.icloud.com/shortcuts/9a60b0f4e03d440e8eefce7fefe51f8a) (Drafts)
 - [Comprehensive Markdown Capture](https://www.icloud.com/shortcuts/94fe8ab9b16045068f23ec6c724cdec9)
 - [temp](https://www.icloud.com/shortcuts/45030559a4864674b46634cecbc4bfc0) (Requires [Toolbox Pro](https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977) and [Data Jar](https://apps.apple.com/us/app/data-jar/id1453273600).)
+- [Base64 Demo](https://www.icloud.com/shortcuts/6b9ed9e479a347438a1edbc95bee9b4c)
 
 ## Music/Audio Delights
 
