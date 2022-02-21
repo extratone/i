@@ -1,0 +1,407 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4292093695,
+      "WFWorkflowIconGlyphNumber": 61440
+   },
+   "WFWorkflowClientVersion": "1146.10",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Generate an unordered list of titled markdown links to run each shortcut in a specified shortcuts folder.\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "odette.local",
+            "UUID": "6FB8D74E-FC6B-4525-88B7-5C242D8DD5E7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "6FB8D74E-FC6B-4525-88B7-5C242D8DD5E7",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "host"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+         "WFWorkflowActionParameters": {
+            "WFNumberActionNumber": "22",
+            "UUID": "8354959B-409F-4D83-AD55-D3A63E686A55"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8354959B-409F-4D83-AD55-D3A63E686A55",
+                  "Type": "ActionOutput",
+                  "OutputName": "Number"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "port"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "blue",
+            "UUID": "0082BEAF-F081-42EE-915F-155BB2CE3A31"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "0082BEAF-F081-42EE-915F-155BB2CE3A31",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "user"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+         "WFWorkflowActionParameters": {
+            "WFAskActionDefaultAnswer": "Shared",
+            "WFAskActionPrompt": "Shortcuts folder name (case-sensitive.)",
+            "UUID": "4C755F20-D5C5-4DF3-8D68-4E3385496F56"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.runsshscript",
+         "WFWorkflowActionParameters": {
+            "WFSSHPassword": "htop",
+            "WFSSHScript": {
+               "Value": {
+                  "string": "shortcuts list -f ￼",
+                  "attachmentsByRange": {
+                     "{18, 1}": {
+                        "OutputUUID": "4C755F20-D5C5-4DF3-8D68-4E3385496F56",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFSSHAuthenticationType": "Password",
+            "UUID": "D3878C02-43D0-45EA-A663-67F6C020FED1",
+            "WFSSHPort": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "port",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFSSHHost": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "host",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFSSHUser": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "user",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+         "WFWorkflowActionParameters": {
+            "UUID": "6CCA1B8C-AE79-42C8-8AE2-EC1591146498",
+            "text": {
+               "Value": {
+                  "OutputUUID": "D3878C02-43D0-45EA-A663-67F6C020FED1",
+                  "Type": "ActionOutput",
+                  "OutputName": "Shell Script Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "Show-text": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "6CCA1B8C-AE79-42C8-8AE2-EC1591146498",
+                  "Type": "ActionOutput",
+                  "OutputName": "Split Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "GroupingIdentifier": "C8FE3A2F-3773-4192-B9BB-D4C7A96968BA",
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
+         "WFWorkflowActionParameters": {
+            "ShowWhenRun": false,
+            "text": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "FB398749-78F6-44CE-8C76-1346B5185A04",
+            "format": "urlEncoded"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "[￼](shortcuts://x-callback-url/run-shortcut?name=￼)",
+                  "attachmentsByRange": {
+                     "{49, 1}": {
+                        "OutputUUID": "FB398749-78F6-44CE-8C76-1346B5185A04",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Text"
+                     },
+                     "{1, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "F65887C9-64A8-4B0C-B501-58E68C1BB27B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
+         "WFWorkflowActionParameters": {
+            "values": {
+               "Value": {
+                  "OutputUUID": "F65887C9-64A8-4B0C-B501-58E68C1BB27B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "valueConversionMode": "automatic",
+            "keyPath": "titledshortcutslinks",
+            "UUID": "CDA09613-9850-4C9A-858D-90D8F64A8F2F",
+            "insertionPoint": "end"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "F65887C9-64A8-4B0C-B501-58E68C1BB27B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "shortcutslinks"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "C8FE3A2F-3773-4192-B9BB-D4C7A96968BA",
+            "UUID": "47423174-6AD4-42D2-B353-F2055A7AEF32"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvariable",
+         "WFWorkflowActionParameters": {
+            "WFVariable": {
+               "Value": {
+                  "VariableName": "shortcutslinks",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+         "WFWorkflowActionParameters": {
+            "UUID": "AE360596-0098-4A2D-BABE-EA98E2AF2813",
+            "text": {
+               "Value": {
+                  "VariableName": "shortcutslinks",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "Show-text": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
+         "WFWorkflowActionParameters": {
+            "ShowWhenRun": false,
+            "text": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "AE360596-0098-4A2D-BABE-EA98E2AF2813",
+                        "Type": "ActionOutput",
+                        "OutputName": "Combined Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "53051B71-3EC8-4339-A5E4-9ABE7AF3B8B1",
+            "format": "markdownUnorderedList"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.Christopher-Hannah.Text-Case.ReplaceIntent",
+         "WFWorkflowActionParameters": {
+            "match": "*",
+            "replacement": "-",
+            "UUID": "BEB444D5-7AC9-41B1-815D-EEAF50EF3C0D",
+            "text": {
+               "Value": {
+                  "string": "￼",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "53051B71-3EC8-4339-A5E4-9ABE7AF3B8B1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "BEB444D5-7AC9-41B1-815D-EEAF50EF3C0D",
+                  "Type": "ActionOutput",
+                  "OutputName": "Formatted Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "6D2912AB-401B-432E-93DC-ABF7631251EF"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 1,
+         "Text": "Set Host address.",
+         "DefaultValue": "host.local"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFNumberActionNumber",
+         "ActionIndex": 3,
+         "Text": "Set Port number.",
+         "DefaultValue": "22"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 5,
+         "Text": "Set User.",
+         "DefaultValue": "user"
+      },
+      {
+         "ParameterKey": "WFSSHPassword",
+         "Category": "Parameter",
+         "ActionIndex": 8,
+         "Text": "Set password."
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFAskActionDefaultAnswer",
+         "ActionIndex": 7,
+         "Text": "Set default shortcuts folder answer.",
+         "DefaultValue": "Shared"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "keyPath",
+         "ActionIndex": 13,
+         "Text": "Set Data Jar List Key Path (name.)",
+         "DefaultValue": "titledshortcutslinks"
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
