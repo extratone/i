@@ -78,6 +78,7 @@ Updated `02212022-043619`
 ## Motion Pictures
 - [I Hate This](https://www.icloud.com/shortcuts/de9514d4fb9343debc73331d813acecc)
 - [come tweet](https://www.icloud.com/shortcuts/85b4f548c00644b8bc6728e2e130e1da)
+- [NewGroove](https://www.icloud.com/shortcuts/069a37c98a224561a657f59660a006a1)
 
 ## Text Fuck
 - [Random Characters ⇨ Clipboard](https://www.icloud.com/shortcuts/ed9216202df4481d9ae001b0531384c2)
@@ -91,3 +92,5 @@ Updated `02212022-043619`
 - [Random Text ⇨ Tumblr](https://www.icloud.com/shortcuts/3c38ca0a7ec9413f9c9a6f6328fb1b09)
 - [Random Text ⇨ WordPress](https://www.icloud.com/shortcuts/07668aacd5ce4e59b76dd54ffc255209)
 - [Fuck](https://www.icloud.com/shortcuts/edcc737ed7304a17bb3b4d8897aae29c)
+
+[Update Scrubs](shortcuts://run-shortcut?name=Update%20Scrubs)
