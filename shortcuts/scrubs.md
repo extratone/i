@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `02212022-043619`
+Updated `02222022-023312`
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
 - [Pastery](https://www.pastery.net/eujzmz/#eujzmz)
@@ -35,6 +35,8 @@ Updated `02212022-043619`
 - [temp](https://www.icloud.com/shortcuts/45030559a4864674b46634cecbc4bfc0) (Requires [Toolbox Pro](https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977) and [Data Jar](https://apps.apple.com/us/app/data-jar/id1453273600).)
 - [Base64 Demo](https://www.icloud.com/shortcuts/6b9ed9e479a347438a1edbc95bee9b4c)
 - [Base64 Photo](https://www.icloud.com/shortcuts/359624798fe046da83c01ec499aba67c)
+- [cut](https://www.icloud.com/shortcuts/6418f65c0153408086cf15a5378c2e04)
+- [Auto-Lock](https://www.icloud.com/shortcuts/28971c99d58145ebba88312fca59175c)
 
 ## Music/Audio Delights
 
