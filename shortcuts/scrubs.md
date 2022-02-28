@@ -37,6 +37,7 @@ Updated `02222022-023312`
 - [Base64 Photo](https://www.icloud.com/shortcuts/359624798fe046da83c01ec499aba67c)
 - [cut](https://www.icloud.com/shortcuts/6418f65c0153408086cf15a5378c2e04)
 - [Auto-Lock](https://www.icloud.com/shortcuts/28971c99d58145ebba88312fca59175c)
+- [Add to LookUp Collection](https://www.icloud.com/shortcuts/09609fefe91340e0b4f07df5b332cafc)
 
 ## Music/Audio Delights
 
