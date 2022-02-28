@@ -76,6 +76,7 @@ Updated `02222022-023312`
 - [NILLA](https://www.icloud.com/shortcuts/d0ed337c304f430993f2c8d8953d5e69)
 - [BIG WORDLE](https://www.icloud.com/shortcuts/965dd56d81684881954be591303a962d)
 - [COURDEROYED](https://www.icloud.com/shortcuts/75dc92926bed47af9a62faa83f2540d2)
+- [Pappy](https://www.icloud.com/shortcuts/d797e3104318490aaa93c94361a3bbe0)
 
 ## Motion Pictures
 - [I Hate This](https://www.icloud.com/shortcuts/de9514d4fb9343debc73331d813acecc)
