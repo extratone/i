@@ -60,6 +60,7 @@ Updated `02282022-053424`
 - [AMEN](https://www.icloud.com/shortcuts/551499f76c774333956d678950971196)
 - [Generation Rx](https://www.icloud.com/shortcuts/1d9d1bc51d3844b8a86510f224d9293a)
 - [Angel](https://www.icloud.com/shortcuts/24d7c6dc0214495cb6303509575472d1)
+- [Dinkus](https://www.icloud.com/shortcuts/5a86dd533fc34e1193a7fec67fdf0b63)
 
 ## Personal/Brand
 
@@ -102,5 +103,7 @@ Updated `02282022-053424`
 - [Random Text ⇨ WordPress](https://www.icloud.com/shortcuts/07668aacd5ce4e59b76dd54ffc255209)
 - [Fuck](https://www.icloud.com/shortcuts/edcc737ed7304a17bb3b4d8897aae29c)
 - [Tweet Symbol Images](https://www.icloud.com/shortcuts/a328611ebcab4f8ba271c0f89e3a7025)
+- [Tweet Color Images](https://www.icloud.com/shortcuts/192008f53ad74860b1de1d7adccedb69)
+- [Tweet Vocabulary Images](https://www.icloud.com/shortcuts/7417bf83a7a349099e1a50b1b091285b)
 
 [Update Scrubs](shortcuts://run-shortcut?name=Update%20Scrubs)
