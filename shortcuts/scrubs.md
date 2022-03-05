@@ -61,6 +61,7 @@ Updated `02282022-053424`
 - [Generation Rx](https://www.icloud.com/shortcuts/1d9d1bc51d3844b8a86510f224d9293a)
 - [Angel](https://www.icloud.com/shortcuts/24d7c6dc0214495cb6303509575472d1)
 - [Dinkus](https://www.icloud.com/shortcuts/5a86dd533fc34e1193a7fec67fdf0b63)
+- [OSHA](https://www.icloud.com/shortcuts/c53b8e2f3d794da58445fa2806034f4b)
 
 ## Personal/Brand
 
