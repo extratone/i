@@ -90,6 +90,7 @@ Updated `02282022-053424`
 - [come tweet](https://www.icloud.com/shortcuts/85b4f548c00644b8bc6728e2e130e1da)
 - [NewGroove](https://www.icloud.com/shortcuts/069a37c98a224561a657f59660a006a1)
 - [GeorgeStar](https://www.icloud.com/shortcuts/ce0caff9e2f747a189e89ce250ddb280)
+- [OBAMNA](https://www.icloud.com/shortcuts/531cff2cf8234c239a241a60c9392eeb)
 
 ## Text Fuck
 
