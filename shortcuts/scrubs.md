@@ -88,6 +88,7 @@ Updated `02282022-053424`
 - [I Hate This](https://www.icloud.com/shortcuts/de9514d4fb9343debc73331d813acecc)
 - [come tweet](https://www.icloud.com/shortcuts/85b4f548c00644b8bc6728e2e130e1da)
 - [NewGroove](https://www.icloud.com/shortcuts/069a37c98a224561a657f59660a006a1)
+- [GeorgeStar](https://www.icloud.com/shortcuts/ce0caff9e2f747a189e89ce250ddb280)
 
 ## Text Fuck
 
