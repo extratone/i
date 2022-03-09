@@ -38,6 +38,8 @@ Updated `02282022-053424`
 - [cut](https://www.icloud.com/shortcuts/6418f65c0153408086cf15a5378c2e04)
 - [Auto-Lock](https://www.icloud.com/shortcuts/28971c99d58145ebba88312fca59175c)
 - [Add to LookUp Collection](https://www.icloud.com/shortcuts/09609fefe91340e0b4f07df5b332cafc)
+- [DraftsImage](https://www.icloud.com/shortcuts/09d229c3b5064480a30ac784b7edd3ef)
+- [DraftsImageSmall](https://www.icloud.com/shortcuts/fa3b63050cde48e4933bac6d9b1545df)
 
 ## Music/Audio Delights
 
