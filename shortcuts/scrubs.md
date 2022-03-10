@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `02282022-053424`
+Updated `03092022-232055`
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
 - [Pastery](https://www.pastery.net/eujzmz/#eujzmz)
@@ -95,6 +95,7 @@ Updated `02282022-053424`
 - [GeorgeStar](https://www.icloud.com/shortcuts/ce0caff9e2f747a189e89ce250ddb280)
 - [OBAMNA](https://www.icloud.com/shortcuts/531cff2cf8234c239a241a60c9392eeb)
 - [TEETH](https://www.icloud.com/shortcuts/76cd68a3e30a413da0dc86e9b1c40aa7)
+- [Wii Shop Wednesday](https://www.icloud.com/shortcuts/37c4830c57c74a6a8980316dc14843dc)
 
 ## Text Fuck
 
