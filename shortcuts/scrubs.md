@@ -77,6 +77,7 @@ Updated `02282022-053424`
 - [birthday](https://www.icloud.com/shortcuts/4c2c7fd58aa84208bce08b69936aafbf)
 - [WYGD](https://www.icloud.com/shortcuts/fd519a1a72c34a3d8559779826b23353)
 - [Minecraft Flying Tutorial](https://www.icloud.com/shortcuts/a1c368c909c741a2864d0dd747115354)
+- [Minecraft Flying Tutorial Ringtone](https://www.icloud.com/shortcuts/5f6570320d2c4097b815b56ba3df53f2)
 - [homedepot](https://www.icloud.com/shortcuts/3409ec23198c4f34a82f08a8b680bd1e)
 
 ## Okay
@@ -111,5 +112,6 @@ Updated `02282022-053424`
 - [Tweet Symbol Images](https://www.icloud.com/shortcuts/a328611ebcab4f8ba271c0f89e3a7025)
 - [Tweet Color Images](https://www.icloud.com/shortcuts/192008f53ad74860b1de1d7adccedb69)
 - [Tweet Vocabulary Images](https://www.icloud.com/shortcuts/7417bf83a7a349099e1a50b1b091285b)
+- [cowsay](https://www.icloud.com/shortcuts/4226e16277a849e29c9b94779e8a6f3e)
 
 [Update Scrubs](shortcuts://run-shortcut?name=Update%20Scrubs)
