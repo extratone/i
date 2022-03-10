@@ -15,8 +15,7 @@ If ya need help, *please feel free to contact me*. This link will take you to a 
 
 * [**Shared iCloud Photos Album**](https://www.icloud.com/sharedalbum/#B0e5ON9t3GoUjSq)- [Shortlink](https://bit.ly/dbframes)
 
-
-![Jorts System Information](https://i.snap.as/pNKRXmIp.png)
+![help](https://user-images.githubusercontent.com/43663476/157653415-c038e57e-6e7e-4315-8346-1fbf56eb0b30.png)
 
 ## System
 
