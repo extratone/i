@@ -40,6 +40,7 @@ Updated `03102022-143959`
 - [Add to LookUp Collection](https://www.icloud.com/shortcuts/09609fefe91340e0b4f07df5b332cafc)
 - [DraftsImage](https://www.icloud.com/shortcuts/09d229c3b5064480a30ac784b7edd3ef)
 - [DraftsImageSmall](https://www.icloud.com/shortcuts/fa3b63050cde48e4933bac6d9b1545df)
+- [DATAFRUITS](https://www.icloud.com/shortcuts/bf26a791fe1a483fbf2ede5c47ae1d87)
 
 ## Music/Audio Delights
 
