@@ -1,0 +1,145 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 3980825855,
+      "WFWorkflowIconGlyphNumber": 61456
+   },
+   "WFWorkflowClientVersion": "1146.11",
+   "WFWorkflowOutputContentItemClasses": [
+      "WFGenericFileContentItem"
+   ],
+   "WFWorkflowHasOutputFallback": true,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorAskForInput",
+      "Parameters": {
+         "ItemClass": "WFGenericFileContentItem",
+         "SerializedParameters": {}
+      }
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "curl to Tilde.Town’s temporary file share instantaneously.\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.runshellscript",
+         "WFWorkflowActionParameters": {
+            "InputMode": "to stdin",
+            "UUID": "7653CC1D-B946-4BBF-992D-6D4F257EFD99",
+            "Script": {
+               "Value": {
+                  "string": "curl -F'file=@\uFFFC' https://ttm.sh",
+                  "attachmentsByRange": {
+                     "{14, 1}": {
+                        "Type": "ExtensionInput",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFGenericFileContentItem"
+                           },
+                           {
+                              "PropertyUserInfo": {},
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "File Path"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "Input": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
+         "WFWorkflowActionParameters": {
+            "valueConversionMode": "text",
+            "keyPath": "ttm",
+            "UUID": "E080EFD5-F150-4350-8E4D-583A95AEACA3",
+            "values": {
+               "Value": {
+                  "OutputUUID": "7653CC1D-B946-4BBF-992D-6D4F257EFD99",
+                  "Type": "ActionOutput",
+                  "OutputName": "Shell Script Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+         "WFWorkflowActionParameters": {
+            "Show-WFInput": true,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "7653CC1D-B946-4BBF-992D-6D4F257EFD99",
+                  "Type": "ActionOutput",
+                  "OutputName": "Shell Script Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "EB2027A6-8D33-401A-83A7-B98A090CE3F4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+         "WFWorkflowActionParameters": {
+            "WFNoOutputSurfaceBehavior": "Copy to Clipboard",
+            "WFOutput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "7653CC1D-B946-4BBF-992D-6D4F257EFD99",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shell Script Result"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFResponse": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "7653CC1D-B946-4BBF-992D-6D4F257EFD99",
+                        "Type": "ActionOutput",
+                        "OutputName": "Shell Script Result"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFImageContentItem",
+      "WFGenericFileContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "keyPath",
+         "ActionIndex": 1,
+         "Text": "Specify the Key Path (Jar) you'd like to store the resulting URL in, if any. (This is optional but you’ll need to delete the action if you don’t intend to use it.)",
+         "DefaultValue": "ttm"
+      }
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [
+      "MenuBar",
+      "QuickActions"
+   ],
+   "WFWorkflowHasShortcutInputVariables": true
+}
