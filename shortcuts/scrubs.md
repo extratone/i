@@ -44,6 +44,7 @@ Updated `03102022-143959`
 - [O P E N](https://www.icloud.com/shortcuts/52e6c820f965488b91ca4b76c99434af)
 - [DOWNLOAD](https://www.icloud.com/shortcuts/af5a886c9b044bf194dd52127a3939c3)
 - [Hex Encode](https://www.icloud.com/shortcuts/2b2d578f53d94c139f112b381f1642cb)
+- [NOW](https://www.icloud.com/shortcuts/c080b6245128491694875419160faec2)
 
 ## Music/Audio Delights
 
