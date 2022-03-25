@@ -1,0 +1,270 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1106",
+   "WFWorkflowMinimumClientVersion": 1106,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4292093695,
+      "WFWorkflowIconGlyphNumber": 59770
+   },
+   "WFWorkflowClientVersion": "1146.11",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Automate `shortcuts sign` to export shareable .shortcut files by folder.\n\nThis is a modification of Federico Viticci’s “Shortcut Injector:” https://www.icloud.com/shortcuts/fa780dd6de044d878c4c827009651a56\n\nRead more here: https://club.macstories.net/posts/creating-modifying-and-signing-shortcuts-on-macos\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.folder",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "fileLocation": {
+                  "relativeSubpath": "Unsigned",
+                  "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+                  "appContainerBundleIdentifier": "com.apple.shortcuts",
+                  "WFFileLocationType": "Shortcuts"
+               },
+               "filename": "Unsigned",
+               "displayName": "Unsigned"
+            },
+            "CustomOutputName": "Selected Folder",
+            "UUID": "60487525-E631-4F7B-9C79-EA12E2F59773"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+         "WFWorkflowActionParameters": {
+            "UUID": "3C5EB40A-DE48-4332-9A76-3AB813798524",
+            "Folder": {
+               "Value": {
+                  "Type": "Ask"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "3C5EB40A-DE48-4332-9A76-3AB813798524",
+                  "Type": "ActionOutput",
+                  "OutputName": "My Shortcuts"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "GroupingIdentifier": "EB5C82C9-1144-4499-B663-83F66DE6B6F3",
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent",
+         "WFWorkflowActionParameters": {
+            "ShowWhenRun": false,
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "03D7588F-60DF-4748-9D42-D9713F8B9B8A",
+            "format": "camelCase"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+         "WFWorkflowActionParameters": {
+            "WFName": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "03D7588F-60DF-4748-9D42-D9713F8B9B8A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFDontIncludeFileExtension": false,
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "0CA3C8F5-7D86-489F-B646-38EADDAC16B4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "Value": {
+                  "OutputUUID": "60487525-E631-4F7B-9C79-EA12E2F59773",
+                  "Type": "ActionOutput",
+                  "OutputName": "Selected Folder"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFAskWhereToSave": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "0CA3C8F5-7D86-489F-B646-38EADDAC16B4",
+                  "Type": "ActionOutput",
+                  "OutputName": "Renamed Item"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "CustomOutputName": "Unsigned Shortcut File",
+            "UUID": "F2589425-2082-4FAB-BEE9-C0D817579057",
+            "WFSaveFileOverwrite": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+         "WFWorkflowActionParameters": {
+            "WFMatchTextPattern": "(.+)\\/(.+\\.shortcut)",
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Unsigned Shortcut File",
+                        "OutputUUID": "F2589425-2082-4FAB-BEE9-C0D817579057",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": {},
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "File Path"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "6F80370E-2213-4AEA-8017-C671BB8AA63D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.match.getgroup",
+         "WFWorkflowActionParameters": {
+            "matches": {
+               "Value": {
+                  "OutputUUID": "6F80370E-2213-4AEA-8017-C671BB8AA63D",
+                  "Type": "ActionOutput",
+                  "OutputName": "Matches"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "80E99E75-21FB-43DA-8EEF-5BE12108EE85"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "shortcuts/signed",
+            "UUID": "ED58366A-A17C-4CB7-9F43-93D775136565"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.runshellscript",
+         "WFWorkflowActionParameters": {
+            "Script": {
+               "Value": {
+                  "string": "cd \uFFFC\nshortcuts sign -m anyone -i \"\uFFFC\" -o \"\uFFFC\uFFFC.shortcut\"",
+                  "attachmentsByRange": {
+                     "{42, 1}": {
+                        "OutputUUID": "03D7588F-60DF-4748-9D42-D9713F8B9B8A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted Text"
+                     },
+                     "{41, 1}": {
+                        "OutputUUID": "ED58366A-A17C-4CB7-9F43-93D775136565",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     },
+                     "{34, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Unsigned Shortcut File",
+                        "OutputUUID": "F2589425-2082-4FAB-BEE9-C0D817579057",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": {},
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "File Path"
+                           }
+                        ]
+                     },
+                     "{3, 1}": {
+                        "OutputUUID": "80E99E75-21FB-43DA-8EEF-5BE12108EE85",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "968FE5EB-6907-40BB-BFA8-7E37E96783FD"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "EB5C82C9-1144-4499-B663-83F66DE6B6F3",
+            "UUID": "39E4B292-0B24-4D0F-A91B-6C27B76B4F93"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "ParameterKey": "WFFolder",
+         "Category": "Parameter",
+         "ActionIndex": 1,
+         "Text": "Choose an intermediary directory for the pre-signed, exported shortcuts files."
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 9,
+         "Text": "The filepath from your home (~) directory for the final, signed shortcuts files.",
+         "DefaultValue": "shortcuts/signed"
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
