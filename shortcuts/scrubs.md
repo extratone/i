@@ -47,6 +47,7 @@ Updated `03102022-143959`
 - [Hex Encode](https://www.icloud.com/shortcuts/2b2d578f53d94c139f112b381f1642cb)
 - [NOW](https://www.icloud.com/shortcuts/c080b6245128491694875419160faec2)
 - [unique_fucks](https://www.icloud.com/shortcuts/0c654131c77240738a8a92073940f9d2)
+- [Save to PodQueue](https://www.icloud.com/shortcuts/2665e5d29eed4096a122c4e8492e8bc9)
 
 ## Music/Audio Delights
 
