@@ -1,6 +1,3846 @@
 # Logger Logs
 
-Updated `04912022-072259`
+Updated `04922022-160924`
+
+✅ **Success** | *Apr 2, 2022 at 16:09:05*
+```
+https://www.instagram.com/p/CZPF24TKPNk/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:09:03*
+```
+https://whatcms.org/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:09:01*
+```
+https://www.indiewire.com/2022/03/razzies-rescind-bruce-willis-1234713172/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:09:00*
+```
+https://tedium.co/2022/04/01/razzies-bruce-willis-trash-culture-empathy/?utm_source=Tedium&utm_campaign=Tedium_04_01_2022&utm_medium=email
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:58*
+```
+https://tedium.co/2022/04/01/razzies-bruce-willis-trash-culture-empathy/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:56*
+```
+https://tomcritchlow.com/2022/04/01/blogging-accelerator/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:54*
+```
+https://song.link/i/1611212565
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:52*
+```
+https://song.link/i/1610004585
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:50*
+```
+https://kevq.uk/what-is-a-linux-user/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:48*
+```
+https://t.co/YAGfknnAKo
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:46*
+```
+https://mobile.twitter.com/FINALLEVEL/status/1510000179759489035#
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:45*
+```
+https://kevq.uk/what-happened-when-i-replied-to-a-sponsored-content-email/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:43*
+```
+https://links.blockchain.com/lists/resubscribeUser?token=b077a02c6d894ec28e56236cee81e43a&email=davidkrusemark%40gmail.com&messageTypeId=20711&messageTypeOnlyUnsubscribe=true
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:42*
+```
+https://www.theverge.com/21420196/best-budget-smartphone-cheap
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:40*
+```
+https://bilge.world/page/3
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:38*
+```
+http://hyperurl.co/ThoughtCopsPodcast
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:37*
+```
+https://mobile.twitter.com/NeoYokel/status/1283173322822488064?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1283173322822488064%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fbilge.world%2F
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:35*
+```
+https://davidblue.wtf/images/bush.png
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:34*
+```
+https://www.iii.org/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:32*
+```
+http://nahumck.me
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:30*
+```
+https://nahumck.me/?s=drafts
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:29*
+```
+https://write.as/community/chat-with-david-blue
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:27*
+```
+https://tilde.town/~extratone/shortcuts/fucks/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:25*
+```
+https://routinehub.co/shortcut/9241/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:23*
+```
+https://routinehub.co/user/hacknorris
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:21*
+```
+https://mobile.twitter.com/hacknorris3
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:19*
+```
+http://Raindrop.io
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:18*
+```
+https://app.raindrop.io/settings/import
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:16*
+```
+https://tilde.town/~archangelic/fucksgiven.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:14*
+```
+https://davidblue.wtf/tilde/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:13*
+```
+https://tildegit.org/nihilazo
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:11*
+```
+https://podqueue.fm/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:10*
+```
+https://remark.as/p/journal.paoloamoroso.com/how-i-populate-my-mastodon-feed
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:08*
+```
+https://github.com/extratone/bilge/blob/main/curation/mastodon/mastodonfollowing.csv
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:07*
+```
+https://www.theverge.com/
+```
+
+✅ **Success** | *Apr 2, 2022 at 16:08:05*
+```
+https://www.rfc-editor.org/rfc/rfc9225.html
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 16:02:46*
+```
+https://www.rfc-editor.org/rfc/rfc9225.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:03:13*
+```
+https://www.theverge.com/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:03:11*
+```
+https://github.com/extratone/bilge/blob/main/curation/mastodon/mastodonfollowing.csv
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:03:10*
+```
+https://remark.as/p/journal.paoloamoroso.com/how-i-populate-my-mastodon-feed
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:03:08*
+```
+https://podqueue.fm/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:03:05*
+```
+https://tildegit.org/nihilazo
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:03:03*
+```
+https://davidblue.wtf/tilde/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:03:01*
+```
+https://tilde.town/~archangelic/fucksgiven.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:59*
+```
+https://app.raindrop.io/settings/import
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:57*
+```
+http://Raindrop.io
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:55*
+```
+https://mobile.twitter.com/hacknorris3
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:53*
+```
+https://routinehub.co/user/hacknorris
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:51*
+```
+https://routinehub.co/shortcut/9241/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:49*
+```
+https://tilde.town/~extratone/shortcuts/fucks/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:47*
+```
+https://write.as/community/chat-with-david-blue
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:45*
+```
+https://nahumck.me/?s=drafts
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:43*
+```
+http://nahumck.me
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:41*
+```
+https://www.iii.org/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:39*
+```
+https://davidblue.wtf/images/bush.png
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:37*
+```
+https://mobile.twitter.com/NeoYokel/status/1283173322822488064?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1283173322822488064%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fbilge.world%2F
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:35*
+```
+http://hyperurl.co/ThoughtCopsPodcast
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:34*
+```
+https://bilge.world/page/3
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:32*
+```
+https://www.theverge.com/21420196/best-budget-smartphone-cheap
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:30*
+```
+https://links.blockchain.com/lists/resubscribeUser?token=b077a02c6d894ec28e56236cee81e43a&email=davidkrusemark%40gmail.com&messageTypeId=20711&messageTypeOnlyUnsubscribe=true
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:28*
+```
+https://kevq.uk/what-happened-when-i-replied-to-a-sponsored-content-email/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:26*
+```
+https://mobile.twitter.com/FINALLEVEL/status/1510000179759489035#
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:24*
+```
+https://t.co/YAGfknnAKo
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:22*
+```
+https://kevq.uk/what-is-a-linux-user/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:19*
+```
+https://song.link/i/1610004585
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:16*
+```
+https://song.link/i/1611212565
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:12*
+```
+https://tomcritchlow.com/2022/04/01/blogging-accelerator/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:10*
+```
+https://tedium.co/2022/04/01/razzies-bruce-willis-trash-culture-empathy/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:08*
+```
+https://tedium.co/2022/04/01/razzies-bruce-willis-trash-culture-empathy/?utm_source=Tedium&utm_campaign=Tedium_04_01_2022&utm_medium=email
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:06*
+```
+https://www.indiewire.com/2022/03/razzies-rescind-bruce-willis-1234713172/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:04*
+```
+https://whatcms.org/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:02*
+```
+https://www.instagram.com/p/CZPF24TKPNk/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:02:00*
+```
+https://routinehub.co/shortcut/8765/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:59*
+```
+https://www.reddit.com/r/shortcuts/comments/nbnh6j/i_developed_a_shortcut_that_allows_you_to_get_the/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:57*
+```
+https://www.theverge.com/22965732/macbook-decapitation-slabtop-mod-mac-studio-event-rumor-keyboard-computer-diy
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:55*
+```
+https://club.macstories.net/posts/macstories-weekly-issue-314
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:53*
+```
+https://www.inputmag.com/tech/diy-samsung-phone-lightning-port-instead-usb-c
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:51*
+```
+https://linuxafterdark.net/linux-after-dark-episode-13/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:49*
+```
+https://podqueue.fm/pages/help/siri?s=09
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:47*
+```
+https://podqueue.fm/users/api_key
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:45*
+```
+https://song.link/i/1487724484
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:43*
+```
+https://tilde.town/~extratone/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:41*
+```
+https://davidblue.wtf/drafts/53D80A72-BE50-48E3-A25C-0799764CE4F2.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:39*
+```
+https://ttm.sh/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:37*
+```
+https://www.google.com/search?q=linux+duplicate+files+command+line&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:35*
+```
+https://ttm.sh/iV-.json%0A
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:33*
+```
+https://ttm.sh/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:30*
+```
+https://tilde.town/~archangelic/unique_fucks.txt
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:28*
+```
+https://nurse3d.bandcamp.com/album/fuck-toy
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:26*
+```
+https://seeming.bandcamp.com/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:23*
+```
+https://actions.getdrafts.com/a/1xP
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:19*
+```
+https://pixelfed.social/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:17*
+```
+https://davidblue.wtf/drafts/BC643564-4819-4039-BF2F-293514E5E4CF.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:15*
+```
+https://bilge.world/tildetown-iphone-blink-shell
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:13*
+```
+https://routinehub.co/user/gluebyte
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:11*
+```
+https://www.macstories.net/stories/introducing-automation-april/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:09*
+```
+https://thebaffler.com/fiction/a-year-in-the-face-dragon
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:07*
+```
+https://audacity.substack.com/p/the-ladies-room?s=r
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:05*
+```
+https://www.inputmag.com/gaming/e3-2022-cancelled-digital-event
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:03*
+```
+https://audacity.substack.com/p/the-ladies-room?s=r
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:01:01*
+```
+https://song.link/i/1614651776
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:58*
+```
+https://app.raindrop.io/settings/integrations
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:55*
+```
+http://Raindrop.io
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:53*
+```
+https://developer.raindrop.io/v1/raindrops/single
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:52*
+```
+https://help.raindrop.io/api
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:49*
+```
+http://Raindrop.io
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:47*
+```
+https://app.raindrop.io/my/23942952
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:45*
+```
+http://Raindrop.io
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:43*
+```
+https://www.reddit.com/r/shortcuts/comments/htxi5e/grab_a_list_of_urls_and_send_one_at_a_time_to/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:41*
+```
+http://Raindrop.io
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:39*
+```
+https://solar.lowtechmagazine.com/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:37*
+```
+https://ttm.sh/iVO.mp4
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:35*
+```
+https://www.google.com/search?q=digraph
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:33*
+```
+https://bilge.world/tildetown-iphone-blink-shell
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:31*
+```
+https://witch.solar/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:29*
+```
+https://www.inputmag.com/tech/samsung-building-diy-repair-program-ifixit
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:27*
+```
+https://www.matthewcassinelli.com/actions/url-encode/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:25*
+```
+https://mobile.twitter.com/search?q=%22foam%22%20%40neoyokel&src=typed_query
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:23*
+```
+https://mobile.twitter.com/search?q=%22foam%22%20%40neoyokel&src=typed_query
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:20*
+```
+https://www.macstories.net/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:18*
+```
+https://gist.github.com/severak
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:17*
+```
+https://tiny.tilde.website/@sotd/108053224094239401
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:14*
+```
+https://davidblue.wtf/audio/ios/m4a/PhotosMemoriesNotification.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:12*
+```
+http://unicode.org/reports/tr35/tr35-dates.html#Date_Format_Patterns
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:08*
+```
+https://mobile.twitter.com/MKBHD/status/1509868353464291333
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:06*
+```
+https://www.listennotes.com/podcasts/end-user-david-blue-FjSsKTm_O2W/
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:04*
+```
+https://m.cmx.im/@strawberry/108054680858284468
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:02*
+```
+mailto:matt@writing.exchange
+```
+
+✅ **Success** | *Apr 2, 2022 at 15:00:00*
+```
+https://davidblue.wtf/audio/ios/m4a/PhotosSharingPostTone.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:57*
+```
+https://github.com/extratone/shortcuts/settings
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:55*
+```
+https://hub.flexibits.com/openings/eileenlong/initial/
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:54*
+```
+https://support.apple.com/guide/preview/fill-out-and-sign-pdf-forms-prvw35725/mac
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:52*
+```
+https://kansasfest.us19.list-manage.com/subscribe/confirm
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:50*
+```
+https://itty.bitty.site/#Blimp%E2%80%99s_Burden%2C_Chapter_VI/?XQAAAALNAwAAAAAAAAAeGIPEI463xk5nWvlKK7ndMueP2EuN4xSiagSrQAXmP/BLAp9eHkbesJG16Xffyls306lZ+FcUtzxqG9yFsxYbFcFYS9qCV9ZnzfQEhvIECvyjI7m/A7vKebt7kmqB/3QMBpiVJtEVHixmc21k49FMuHuy/20QAMT0kZSlvd2xiQ+cPMhIJXzzli7r8CrXZGquGalAlQf2Ak0jwjJcvAH3rl8/e/wAMsum5QoNCGwXNNvU5EEIhD7cTsc4/fZt8ez4/3cql2chHBGCG/Zd43H+RfSStpP/H+YOOHsbXMj7DD61+84bgZAHv5GsDBhUj6CUOGKnfnhil4uGqZE6M2u9puxhRYpX511nkcXZ4tfjAGHUAHErDRP1qBYpsqzom7Uxjlp2wuE9B6aUeBeT2kDBW7IeYAXOZt0k+illQJfA4C8vQzRcMJXtKJW8NT1JmpkWg1XjQMfG7vhkHffgLdwxnRvQnaYPbMIDCZMS4AhhgsHa86RKXSkGAoJtpTepEdpZf1JPRAjW5ZGh7XPZ/yVR0rsOKccmuzoWZn2qk22cmp1q12uPxbYBTh6DB3hFeKIwow0OkkPHYh46TbPN/ErxQ4RSoc2nG7cMhaA495dQSAc9UHxC4kL1CgUcxHUdlkNvVfonN3zlRMFvhB88fqbmO09aZ96JIqS+UOQxaSB5ljaCt4UYvQzxNCVS6RbEHB5Oe/983WaXNQNAGpEwfhYTQnXnA6cbqeGtQ/01KTj5717w6IbOoHcfAoN9Z2NMl/7oqxibj2kw9ZnCX+x7aYLxz0Zg4DUt6zXWDGPfUqZOmor+dH+zblOoaoGBjq1KOD4FPcH/LoDQAA==
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:49*
+```
+https://gist.github.com/extratone/8b762de50de414f8a4be05f9b0407fd8
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:47*
+```
+https://ttm.sh/
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:46*
+```
+https://davidblue.wtf/audio/ios/access_scan_complete.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:44*
+```
+https://davidblue.wtf/audio/ios/scan_complete.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:42*
+```
+https://store.ergonis.com/products/keycue
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:40*
+```
+https://thebaffler.com/latest/he-robot-wang
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:39*
+```
+https://threadreaderapp.com/account/mythreads
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:37*
+```
+https://threadreaderapp.com/help
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:35*
+```
+https://www.inputmag.com/design/moment-magsafe-cage-iphone-movies-professional
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:34*
+```
+http://jollo.org/LNT/home/thorns/trash/mail.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:59:32*
+```
+https://www.instagram.com/smalltownwitch/
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 14:41:57*
+```
+https://github.com/extratone/i/issues/
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 14:41:09*
+```
+https://tildegit.org/nihilazo/dotsandboxes
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 14:40:22*
+```
+https://davidblue.wtf/tilde
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 14:30:00*
+```
+https://davidblue.wtf/tilde
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 14:15:44*
+```
+https://tilde.town/~archangelic/fucksgiven.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:12:02*
+```
+https://davidblue.wtf/audio/ios/m4a/Alert_Calendar_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:12:00*
+```
+https://davidblue.wtf/audio/ios/m4a/Alert_BatteryLow_10p_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:59*
+```
+https://davidblue.wtf/audio/ios/m4a/Alert_ActivityGoalBehind_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:57*
+```
+https://davidblue.wtf/audio/ios/m4a/Alert_ActivityGoalAttained_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:56*
+```
+https://davidblue.wtf/audio/ios/m4a/Alert_ActivityFriendsGoalAttained_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:55*
+```
+https://davidblue.wtf/audio/ios/m4a/Alert_3rdParty_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:53*
+```
+https://davidblue.wtf/audio/ios/m4a/Alarm_Nightstand_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:52*
+```
+https://davidblue.wtf/audio/ios/m4a/Alarm_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:51*
+```
+https://davidblue.wtf/audio/ios/m4a/3rd_party_critical.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:49*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Success_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:47*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Stop_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:46*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Start_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:44*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Retry_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:43*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Failure_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:42*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_DirectionUp_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:41*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_DirectionDown_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:11:39*
+```
+https://davidblue.wtf/drafts/930C8B20-5C2F-4ECC-A311-4DFBF609AFD8.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:08:31*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Stop_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:08:29*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Start_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:08:28*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Retry_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:08:26*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_Failure_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:08:24*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_DirectionUp_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:08:23*
+```
+https://davidblue.wtf/audio/ios/m4a/3rdParty_DirectionDown_Haptic.m4a
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:08:21*
+```
+https://davidblue.wtf/drafts/930C8B20-5C2F-4ECC-A311-4DFBF609AFD8.html
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:05:40*
+```
+https://www.icloud.com/shortcuts/44efd2a8cf53480fa2de968d360e0903
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:05:38*
+```
+https://www.icloud.com/shortcuts/c57574ab1ba641cf9f30f0293b03d990
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:05:34*
+```
+https://www.icloud.com/shortcuts/40f63e3083a2421c9ffa8f6ba4b701f8
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:05:32*
+```
+https://www.icloud.com/shortcuts/88ec4cb11af041f692dd3fe46d51a5b2
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:21*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Chord.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:19*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Chimes.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:18*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/By%20The%20Seaside.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:16*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Bulletin.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:16*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Boing.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:14*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Blues.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:13*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Bell%20Tower.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:12*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Beacon.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:11*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Bark.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:10*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Bamboo.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:09*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Aurora.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:08*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Ascending.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:07*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Apex.m4r
+```
+
+✅ **Success** | *Apr 2, 2022 at 14:02:05*
+```
+https://github.com/extratone/macOSsystemsounds/raw/main/m4r/Alarm.m4r
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 13:57:08*
+```
+https://app.raindrop.io/settings/import
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 13:53:24*
+```
+https://twitter.com/hacknorris3
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 13:44:42*
+```
+https://github.com/extratone/tot/raw/main/TotGitiOS.shortcut
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 13:36:17*
+```
+https://github.com/extratone/tot/issues/
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 13:35:01*
+```
+Push transmitted 20.6 Kbytes to origin/main.
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 13:33:57*
+```
+https://github.com/extratone/i/issues/171
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 13:27:25*
+```
+Scrubs Update 04922022-132714
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 12:26:27*
+```
+[Hot Tot Dot Swap](shortcuts://run-shortcut?name=Hot%20Tot%20Dot%20Swap)
+
+
+
+- [Batch Shortcuts Signer (macOS) Shortcut](drafts://open?uuid=5D4D9120-69EC-4449-AB7F-35C0D97BBA7D)
+- [David Blue’s Siri Shortcuts Repository
+-](drafts://open?uuid=7998F086-4951-4DAB-995F-FE698FACFF78) 
+
+**※ G o o d M o r n i n g ※
+**[David Blue](https://davidblue.wtf/)
+￼
+**I'm David Blue - an automotive journalist on sabbatical and self-described _Software Historian_.**
+
+It's good to be here!
+
+By that I mean, it's especially nice to feel welcome here even though **I am in no way a software developer**.
+
+I use the term _Software Historian_ because I have found myself especially fascinated with the origin stories of the platforms and services we use in the past 3-4 years, especially regarding Word Processors.
+
+My _ultimate_ software development aspiration would be to build my own CMS with Python from scratch, but I'm not just being humble when I tell you that I am _very_ far away from doing that.
+
+Recently, I have been toying with the idea of writing a _Literary History of Streaming Music_, directly inspired by Professor Matthew G. Kirschenbaum's _[Track Changes: A Literary History of Word Processing](https://www.hup.harvard.edu/catalog.php?isbn=9780674417076)_, continuing the work I began in one of my all-time best essays **[examining the Holiness of Bandcamp](https://davidblue.wtf/essays/bandcamp)** as a technology company who can do no wrong.
+
+I'm sure anyone reading this can relate when I lament that _I really should get around to writing an updated bio_, but I've already spent enough time on this one, I think. Let me just _quote myself_ from my blog's about page:
+
+_I’ve already born witness to innovation bridging divisions between people throughout the greatest informational renaissance my species has ever seen... Originally, I wrote about our relationship with **cars** ([2019 Volkswagen Atlas Review](https://dieselgoth.com/2019-volkswagen-atlas-sel-vr6-review)) and now **technology** ([Bandcamp: Streaming's Secret Savior](https://bilge.world/bandcamp-streaming-music)) from a perspective that feels tedious or abstract to some, but is generally entertaining, through-and-through. I’m proud of the work I’ve done so far, which has been wild, absurd, reflective, and hilarious — occasionally all in the same work as I develop my voice._
+
+I'm not just horsing around when I say **feel free to <email me> about literally anything**.
+
+† [The Psalms](https://bilge.world/) (My technology blog. Entirely nonsecular, I promise)
+† 
+
+🇪🇺 _[End User](https://anchor.fm/davidblue)_ (A solo "podcast" which I update now and then, talking to my phone - silence truncated - about things I've been exploring.)
+
+
+
+⌨ 
+⌨ [The iPhone x Bluetooth Keyboard Project](https://uikeycommand.neocities.org/) (Perhaps my very first truly worthwhile cause.)
+Ǝ _[Extratone](https://extratone.com/)_ (An online music magazine which I devoted most of my adult life to developing up until 2018.)
+
+⎆ [Social Directory](https://rotund.notion.site/9fdc8e9610b34b8f991ebc148b760055?v=c170b58650c04fbdb7adc551a73d16a7) (An ongoing list of links to my profiles on every social service I can remember signing up for.)
+⎆ dghj
+⎆ 
+
+
+[MASTODON](https://mastodon.social/@DavidBlue) **//** [TWITTER](https://twitter.com/NeoYokel) **//** [DISCORD](https://discord.gg/4hdQcVd)
+**Site Stuff**
+※ [Z҉̳͕̗͖͕͈͡](https://davidblue.wtf/zalgo/) [̶̡͏̟͙A̧̠͈̝̣̺ ̣̳͖̬̺͔̬̜L̻̪͔͚̀ ̨͇̦̕G̸̸͍͕̹̠̳̟͙̬͞ ̛̬̣̱̮͈͚̬ͅO̡̨̦̪̺̯̹͔̙͡ͅ](<https://davidblue.wtf/zalgo/>)' ' ' ※ [ＭＥＧＡ](https://davidblue.wtf/cool/) [ＣＯＯＬ](https://davidblue.wtf/cool/) [ＴＥＸＴ](https://davidblue.wtf/cool/) [UNI1PG](https://davidblue.wtf/tools/unicode.pdf)
+⎃⎃⎃⎃⎃⎃⎃⎃ d i n k u s ⎃⎃⎃⎃⎃⎃⎃⎃
+	•	Hosted on [Neocities](https://neocities.org/site/davidblue). View website source code on [GitHub](https://github.com/extratone/xyz).
+
+- [On Drafts and Obsidian](drafts://open?uuid=56EED87E-678E-4248-8E94-31650615C69A)
+- [Notes-Drafts vs. Obsidian](drafts://open?uuid=C300D6BD-07A2-44E2-9231-54ADA771F952)
+
+- [Notes-Drafts vs. Obsidian](drafts://open?uuid=C300D6BD-07A2-44E2-9231-54ADA771F952)
+
+- [NeoCities Homepage (WTF) 2.0](drafts://open?uuid=C2B1C951-518F-43FA-AEED-020CD5102A7B)
+
+- [Re  screaming](drafts://open?uuid=2DFBD718-8845-49CF-A343-8BA3B639B7B3)
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 12:04:54*
+```
+https://twitter.com/ihadtopee/status/1510302257543368708
+https://i.imgur.com/bSP884p.png
+command.circle.fill
+```
+
+ℹ️ **Info** | *Apr 2, 2022 at 12:04:51*
+```
+command.circle.fill
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 22:01:28*
+```
+04912022-220122
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 22:01:28*
+```
+{"Thermal State":"Nominal","OS":"Version 15.4.1 (Build 19E258)","Uptime":"78540","Active CPUs":"6","Brightness":"0.560889005661011"}
+
+1 item:
+
+Name:     **04912022-220122.png**
+Size:     **Zero KB**
+Type ID:  **public.png**
+<file:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Frames/04912022-220122.png>
+```
+
+✅ **Success** | *Apr 1, 2022 at 17:10:52*
+```
+https://song.link/i/1610004585
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 17:06:43*
+```
+04912022-170636
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 17:06:42*
+```
+{"Thermal State":"Nominal","OS":"Version 15.4.1 (Build 19E258)","Uptime":"60854","Active CPUs":"6","Brightness":"1"}
+
+1 item:
+
+Name:     **04912022-170636.png**
+Size:     **Zero KB**
+Type ID:  **public.png**
+<file:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Frames/04912022-170636.png>
+```
+
+✅ **Success** | *Apr 1, 2022 at 17:04:06*
+```
+https://song.link/i/1610004585
+```
+
+✅ **Success** | *Apr 1, 2022 at 16:52:25*
+```
+https://song.link/i/1611212565
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 16:17:07*
+```
+Original: https://tedium.co/2022/04/01/razzies-bruce-willis-trash-culture-empathy/?utm_source=Tedium&utm_campaign=Tedium_04_01_2022&utm_medium=email
+
+Result: https://tedium.co/2022/04/01/razzies-bruce-willis-trash-culture-empathy/
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 14:02:57*
+```
+04912022-140252
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 14:02:56*
+```
+{"Thermal State":"Nominal","OS":"Version 15.4.1 (Build 19E258)","Uptime":"49830","Active CPUs":"6","Brightness":"0.937369406223297"}
+
+1 item:
+
+Name:     **04912022-140252.png**
+Size:     **Zero KB**
+Type ID:  **public.png**
+<file:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Frames/04912022-140252.png>
+```
+
+✅ **Success** | *Apr 1, 2022 at 13:58:48*
+```
+ᴇᴠᴇɴ ᴛʜᴏᴜɢʜ ᴡᴇ ʙᴏᴛʜ ᴋɴᴇᴡ ʙᴇᴛᴛᴇʀ
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 13:46:11*
+```
+https://extratone.github.io/tot
+
+
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 13:45:53*
+```
+Push transmitted 20.1 Kbytes to origin/main.
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 13:40:07*
+```
+https://fakeestates.bandcamp.com/album/a-mechanical-joey
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 13:25:50*
+```
+x-apple-reminderkit://REMCDReminder/DA3C37DD-DA55-4D1F-8046-C1E461A1E7AE
+```
+
+✅ **Success** | *Apr 1, 2022 at 13:24:18*
+```
+https://song.link/i/1487724484
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 12:36:31*
+```
+https://github.com/extratone/i/issues
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 12:16:36*
+```
+https://nurse3d.bandcamp.com/album/fuck-toy
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 12:12:52*
+```
+https://actions.getdrafts.com/search?utf8=✓&q=David+Blue
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:50*
+```
+https://www.wnycstudios.org/podcasts/radiolab/articles/queen-dying
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:49*
+```
+https://www.platformer.news/about
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:48*
+```
+https://wrongwithfreesw.neocities.org/returning-to-muckrights.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:47*
+```
+https://techcrunch.com/2015/09/08/periscope-apple-tv/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:47*
+```
+https://www.pcmag.com/how-to/10-periscope-tips-for-live-stream-fans
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:46*
+```
+https://consequenceofsound.net/2020/12/twitter-shutdown-periscope-2021/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:45*
+```
+https://www.cmswire.com/digital-marketing/down-periscope-twitter-discontinues-the-livestreaming-app/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:44*
+```
+https://www.periscope.tv/about
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:44*
+```
+http://www.frantone.com/designwritings/design_writings.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:43*
+```
+https://pages.mtu.edu/~shene/DigiCam/User-Guide/990/index.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:42*
+```
+https://www.ikelite.com/products/underwater-housing-for-nikon-coolpix-990
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:41*
+```
+http://www.steves-digicams.com/nikon990.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:41*
+```
+https://www.dpreview.com/reviews/nikoncp990
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:40*
+```
+https://www.nikondriver.com/nikon-coolpix-990-software/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:39*
+```
+https://www.wired.com/2015/03/periscope/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:38*
+```
+https://www.theverge.com/22319527/twitter-kayvon-beykpour-interview-consumer-product-decoder
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:37*
+```
+https://www.listennotes.com/podcasts/futureland-extratone-bUin3BME7aN/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:37*
+```
+https://www.inputmag.com/reviews/galaxy-s21-ultra-review-the-iphone-12-pro-max-gets-put-to-shame
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:36*
+```
+https://www.theverge.com/22241506/samsung-galaxy-s21-ultra-review-camera-price
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:35*
+```
+https://www.theverge.com/2021/1/22/22244642/google-search-mobile-redesign
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:35*
+```
+https://blog.google/products/search/mobile-redesign-2021
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:33*
+```
+https://ra.co/podcast/762
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:32*
+```
+https://www.tenforums.com/tutorials/127857-access-wsl-linux-files-windows-10-a.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:32*
+```
+https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:30*
+```
+https://www.newswhip.com/wp-content/uploads/2020/12/Reddit-publishing-Q4-2020-report.pdf
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:29*
+```
+http://allthingsd.com/20070626/the-iphone-is-breakthrough-handheld-computer/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:28*
+```
+https://www.theverge.com/2020/12/14/22174433/apple-ios-14-3-pro-raw-iphone-12-pro-max-update-features
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:26*
+```
+https://www.nytimes.com/2020/12/17/opinion/sway-kara-swisher-brene-brown.html?showTranscript=1
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:26*
+```
+https://periscope.medium.com/farewell-periscope-164db2742b7c
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:25*
+```
+https://lawcat.berkeley.edu/record/1128876?ln=en
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:24*
+```
+https://smartphones.gadgethacks.com/how-to/16-ways-destroy-competition-call-duty-mobile-0208047/#:~:text=In%20CoD%20Mobile%2C%20tap%20the,60%20fps%20the%20entire%20game
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:23*
+```
+https://www.theverge.com/2012/4/14/2949043/the-vergecast-026-04-14-2012
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:22*
+```
+https://www.pcworld.com/article/200345/Apple_Open_Letter_Tackles_iPhone_4_Antenna_Troubles.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:22*
+```
+https://www.theverge.com/2014/9/9/6125849/iphone-history-pictures
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:21*
+```
+https://www.wikiwand.com/en/LG_Prada
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:20*
+```
+https://wwii.lib.ku.edu/items/show/1429
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:19*
+```
+https://www.theverge.com/2012/9/28/3422538/the-vergecast-048-september-27th-2012
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:19*
+```
+https://www.theverge.com/2012/9/22/3372134/the-vergecast-047-september-21st-2012
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:18*
+```
+https://whatsnewinpublishing.com/2020-was-the-year-of-the-audio-renaissance/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:17*
+```
+https://apnews.com/article/us-govt-states-sue-facebook-antitrust-312de23e330a318ff8d339ef38dfbc08
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:16*
+```
+https://www.pythonpodcast.com/klio-big-data-audio-pipelines-episode-292/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:16*
+```
+https://www.wired.com/story/confessions-marcus-hutchins-hacker-who-saved-the-internet/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:15*
+```
+https://pitchfork.com/thepitch/how-much-more-money-artists-earn-from-bandcamp-compared-to-spotify-apple-music-youtube/#:~:text=Founded%20in%202007%2C%20the%20company,more%20empathetic%20than%20streaming%20services
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:14*
+```
+https://www.newyorker.com/culture/cultural-comment/a-moment-to-rethink-how-we-support-music
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:13*
+```
+https://blog.bandcamp.com/2008/09/16/hello-cleveland/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:13*
+```
+http://htmltimes.com/band-camp.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:12*
+```
+https://mtflabs.net/podcast076/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:10*
+```
+https://www.npr.org/2020/08/19/903547253/a-tale-of-two-ecosystems-on-bandcamp-spotify-and-the-wide-open-future
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:10*
+```
+https://www.fastcompany.com/90205519/spotifys-playlist-for-global-domination
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:09*
+```
+https://www.barrons.com/articles/spotifys-losses-widen-as-subscribers-keep-growing-51596034688
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:08*
+```
+https://debugger.medium.com/wireless-charging-is-a-disaster-waiting-to-happen-48afdde70ed9
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:07*
+```
+http://www.internethistorypodcast.com/2017/10/dave-winer-on-the-open-web-blogging-podcasting-and-more/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:05*
+```
+http://www.internethistorypodcast.com/2015/07/justin-frankel-creator-of-winamp/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:04*
+```
+http://www.internethistorypodcast.com/2016/02/rob-lord-founder-of-the-internet-underground-music-archive/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:04*
+```
+http://www.internethistorypodcast.com/2016/07/compuserve-founder-jeff-wilkins/#tabpanel8
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:03*
+```
+http://www.internethistorypodcast.com/2016/10/chamath-palihapitiya-on-facebook-aim-and-winamp/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:01*
+```
+http://www.internethistorypodcast.com/2017/04/the-napster-story-with-jordan-ritter/#tabpanel8
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:20:00*
+```
+http://www.internethistorypodcast.com/2017/08/ryan-mac-on-soundcloud/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:59*
+```
+http://www.internethistorypodcast.com/2018/01/venrocks-david-pakman-on-apples-music-group-n2k-emusic-and-dollar-shave-club/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:58*
+```
+http://www.internethistorypodcast.com/2017/07/christina-warren-on-soundcloud/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:58*
+```
+http://www.internethistorypodcast.com/2018/05/the-godfather-of-streaming-music-robert-reid/#tabpanel8
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:57*
+```
+https://www.sjsu.edu/faculty/watkins/delriotex.htm
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:56*
+```
+https://www.theverge.com/culture/2011/11/1/2525857/2012-survival-condo-at-the-end-of-the-world
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:56*
+```
+https://gimletmedia.com/shows/reply-all/94h7an/86-man-of-the-people
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:54*
+```
+https://www.theatlantic.com/entertainment/archive/2012/11/sincerity-not-irony-is-our-ages-ethos/265466/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:53*
+```
+https://web.archive.org/web/20080922055817/http://blogs.villagevoice.com/statusainthood/archives/2006/12/project_pat_and.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:52*
+```
+https://web.archive.org/web/20110829031427/http://www.nytimes.com/2007/05/27/arts/music/27play.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:51*
+```
+https://knightcolumbia.org/content/the-case-for-digital-public-infrastructure
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:50*
+```
+https://www.journalismliberty.org/publications/what-is-digital-public-infrastructure
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:50*
+```
+https://www.wikiwand.com/en/The_Grapes_of_Wrath
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:49*
+```
+https://newrepublic.com/article/130617/american-tragedy
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:48*
+```
+https://movies2.nytimes.com/books/97/07/06/home/history-grapes.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:47*
+```
+https://blog.joinmastodon.org/2018/06/if-you-could-edit-tweets/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:47*
+```
+https://www.theinformation.com/articles/facebook-has-a-recipe-for-better-social-media-why-isnt-the-company-using-it
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:45*
+```
+https://www.theverge.com/2020/6/18/21296032/twitter-audio-tweets-accessibility-volunteers
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:43*
+```
+https://www.theverge.com/2020/9/29/21494603/twitter-voice-tweets-more-ios-users-accessible-transcription-features
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:43*
+```
+https://blog.joinmastodon.org/2017/10/mastodon-2.0/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:42*
+```
+https://mashable.com/2017/04/06/how-to-get-verified-mastodon/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:41*
+```
+https://journals.sagepub.com/doi/abs/10.1177/1527476418796632
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:40*
+```
+https://medium.com/@alliethehart/gameingers-are-dead-and-so-is-mastodon-705b535ed616
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:39*
+```
+https://theoutline.com/post/2689/mastodon-makes-the-internet-feel-like-home-again?zd=1&zi=2nnyusoh
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:38*
+```
+https://hoodieaidakitten.dreamwidth.org/453.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:37*
+```
+https://www.dailydot.com/debug/mastodon-fediverse-eugen-rochko/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:36*
+```
+https://www.codesections.com/blog/mastodon-elevator-pitch/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:34*
+```
+https://www.niemanlab.org/2019/01/the-platform-tide-is-turning/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:33*
+```
+https://www.cjr.org/special_report/facebook-media-buzzfeed.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:33*
+```
+https://www.cjr.org/analysis/facebook_and_media.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:32*
+```
+https://blogs.harvard.edu/doc/2012/05/23/after-facebook-fails/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:31*
+```
+https://dsearls.medium.com/the-human-solution-to-facebooks-machine-produced-problems-also-won-t-work-3364656bc257
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:30*
+```
+https://www.nytimes.com/2020/06/01/technology/facebook-employee-protest-trump.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:30*
+```
+https://www.niemanlab.org/2017/08/platforms-wield-a-worrying-amount-of-power-over-news-and-information-can-a-more-decentralized-web-help/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:29*
+```
+https://mashable.com/2017/04/06/eugen-rochko-mastodon-interview/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:28*
+```
+https://www.chronicle.com/article/fear-of-repression-spurs-scholars-and-activists-to-build-alternate-internets/?cid2=gen_login_refresh&cid=gen_sign_in
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:27*
+```
+https://dci.mit.edu/decentralizedweb
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:26*
+```
+https://www.wired.com/story/decentralized-social-networks-sound-great-too-bad-theyll-never-work/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:26*
+```
+https://www.vice.com/en/article/43zak3/the-internet-was-built-on-the-free-labor-of-open-source-developers-is-that-sustainable
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:25*
+```
+http://web.archive.org/web/20060911084122/http://blog.facebook.com/blog.php?post=2207967130
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:24*
+```
+https://www.gq.com/story/boy-genius-of-the-year-mark-zuckerberg-facebook
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:23*
+```
+https://www.inputmag.com/culture/mark-zuckerberg-resign-from-your-role-as-ceo-of-facebook
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:22*
+```
+https://thediffpodcast.com/docs/episode-1
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:21*
+```
+https://thebaffler.com/the-future-sucked/a-most-violent-platform-silverman
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:19*
+```
+https://www.businessinsider.com/how-mark-zuckerberg-hacked-into-the-harvard-crimson-2010-3
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:18*
+```
+https://www.thecrimson.com/article/2004/2/9/hundreds-register-for-new-facebook-website/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:17*
+```
+https://www.newyorker.com/news/daily-comment/donald-trump-and-a-lesson-in-how-coups-fail
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:16*
+```
+https://threadreaderapp.com/thread/1327253991936454663.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:15*
+```
+http://bsalert.com/news/2801/Parler*-%5C_The_Free_Speech_Fraud_And_Privacy_Nightmare.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:14*
+```
+https://unchainedpodcast.com/could-social-media-discontent-help-the-decentralized-web/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:13*
+```
+https://thehistoryoftheweb.com/hissyfit/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:12*
+```
+http://digitallibrary.usc.edu/cdm/ref/collection/p15799coll127/id/140615
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:12*
+```
+https://www.nytimes.com/1995/05/21/magazine/the-digerati.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:11*
+```
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0032566
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:10*
+```
+https://www.sciencedirect.com/science/article/pii/S095741741830215X?dgcid=raven_sd_recommender_email
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:09*
+```
+https://www.sciencedirect.com/science/article/pii/S0747563216302059
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:09*
+```
+https://datasociety.net/library/source-hacking-media-manipulation-in-practice/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:08*
+```
+https://www.technologyreview.com/2019/10/24/132228/political-war-memes-disinformation/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:07*
+```
+https://datasociety.net/library/weaponizing-the-digital-influence-machine/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:06*
+```
+https://www.inverse.com/entertainment/g4tv-2021-kevin-pereira-adam-sessler-reunion
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:06*
+```
+https://www.meaningcloud.com/blog/semantic-publishing-case-study-media-industry
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:01*
+```
+https://medium.com/event-registry/use-of-semantic-annotation-in-news-monitoring-explained-ead7445f2b6f
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:00*
+```
+https://journals.sagepub.com/doi/full/10.1177/1464884916688550
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:19:00*
+```
+https://www.digitalnewsreport.org/publications/2019/journalism-media-technology-trends-predictions-2019/#2-3-ai-and-the-newsroom
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:59*
+```
+https://changelog.com/podcast/204
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:58*
+```
+https://csarven.ca/dokieli-rww
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:57*
+```
+https://medium.com/coinmonks/the-case-for-a-decentralized-social-network-2683b727abf5
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:57*
+```
+https://www.popularmechanics.com/culture/web/a29643491/weird-web-design-evolution/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:56*
+```
+https://www.semanticscholar.org/paper/Bandits-Under-The-Influence-(Extended-Version)-Maniu-Ioannidis/0f698a7a7a21c7b7b9fa21234c1bd1cf50e4a323
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:54*
+```
+https://www.mdpi.com/2673-5172/1/1/1/htm
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:53*
+```
+https://www.danerickson.net/social-media-is-mostly-a-fcking-waste-of-time/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:53*
+```
+https://www.rjionline.org/stories/whats-working-service-journalism-is-having-a-moment
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:52*
+```
+https://arxiv.org/abs/1811.08460
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:51*
+```
+https://www.nytimes.com/2006/10/15/business/yourmoney/15friend.html?_r=1
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:49*
+```
+https://www.forbes.com/best/2004/0322/002_print.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:49*
+```
+https://about.fb.com/news/2020/11/community-standards-enforcement-report-nov-2020/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:48*
+```
+https://gizmodo.com/former-facebook-workers-we-routinely-suppressed-conser-1775461006
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:46*
+```
+https://www.nytimes.com/2018/12/18/technology/facebook-privacy.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:45*
+```
+http://web.archive.org/web/20181205220713/https://www.wired.com/story/uk-facebook-document-dump/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:45*
+```
+https://www.facebook.com/notes/facebook/thoughts-on-beacon/7584397130/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:44*
+```
+https://about.fb.com/news/2007/11/facebook-ads-launches-with-12-landmark-partners/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:43*
+```
+https://about.fb.com/news/2007/11/facebook-unveils-facebook-ads/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:42*
+```
+https://www.wired.com/story/facebook-15-defining-moments/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:42*
+```
+https://www.theverge.com/2019/10/25/20930664/facebook-news-tab-launch-united-states-test
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:40*
+```
+https://about.fb.com/news/2019/10/introducing-facebook-news/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:39*
+```
+https://journals.library.columbia.edu/index.php/stlr/article/view/4011
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:38*
+```
+https://www.nytimes.com/1994/11/29/science/personal-computers-the-compuserve-edge-delicate-data-balance.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:38*
+```
+https://www.theatlantic.com/technology/archive/2016/03/suck-webzine/473853/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:37*
+```
+https://www.wired.com/story/facebook-is-going-after-its-critics-in-the-name-of-privacy/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:36*
+```
+https://www.globalmediajournal.com/open-access/chronology-in-social-media-linear-media-and-nonlinear-postings.php?aid=87974
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:35*
+```
+https://www.vox.com/culture/2018/9/20/17876098/twitter-chronological-timeline-back-finally
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:35*
+```
+https://lareviewofbooks.org/article/crisis-intimacy-age-digital-connectivity/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:34*
+```
+https://www.theverge.com/2016/4/13/11387934/internet-moderator-history-youtube-facebook-reddit-censorship-free-speech
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:33*
+```
+https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/409210/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:31*
+```
+https://www.cjr.org/special_report/reporting-on-facebook.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:30*
+```
+https://neustadt.fr/essays/the-small-web/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:29*
+```
+https://neustadt.fr/essays/against-a-user-hostile-web/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:29*
+```
+https://www.cjr.org/tow_center_reports/constructive_technology_criticism.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:28*
+```
+https://www.metamute.org/editorial/articles/californian-ideology
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:27*
+```
+https://www.theguardian.com/technology/live/2020/nov/17/facebook-twitter-hearing-mark-zuckerberg-jack-dorsey-congress-latest-election-news
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:26*
+```
+https://www.poynter.org/fact-checking/2020/jack-dorsey-and-mark-zuckerberg-at-a-crossroads-on-their-companies-misinformation-policies/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:26*
+```
+https://www.youtube.com/watch?v=sW4BTQFYKxA
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:25*
+```
+https://www.fcc.gov/general/telecommunications-act-1996
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:23*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D85B1JG9
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:22*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D82F7NHC
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:20*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8FR082V
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:20*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8N01JS7
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:19*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8J67V59
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:18*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D88S526V
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:17*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8SB5HN7
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:16*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8RX9C21
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:16*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8VM4QVD
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:15*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8Q81RHH
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:14*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D81G0ZG1
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:13*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8377N0W
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:13*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8FN1JGW
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:12*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D86401Z7
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:11*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D84178B2
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:11*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D80G3XDJ
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:10*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8280M2R
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:09*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8NC771Q
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:08*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8WS95VQ
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:08*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8HQ4BFD
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:07*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8X92PRD
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:06*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8K08GVB
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:04*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8KP9JJD
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:03*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8KP9DPJ
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:03*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-nhbp-st96
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:02*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D87D4B74
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:01*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-drvj-wj06
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:01*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-a5tw-q548
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:18:00*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-5jm6-w328
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:59*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-7cqr-q308
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:58*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-g8ak-zw78
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:56*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8XG9Z7C
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:56*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8FB5135
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:55*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8G160RV
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:54*
+```
+https://academiccommons.columbia.edu/doi/10.7916/D8FB6K18
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:53*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-3yvd-ee64
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:51*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-15pq-x415
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:50*
+```
+https://ieeexplore.ieee.org/document/8786181
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:49*
+```
+https://ieeexplore.ieee.org/document/8936451
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:48*
+```
+https://ieeexplore.ieee.org/document/8010403/keywords#keywords
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:47*
+```
+https://ieeexplore.ieee.org/document/8292838
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:46*
+```
+https://ieeexplore.ieee.org/document/9095403
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:45*
+```
+https://ieeexplore.ieee.org/document/7419281/keywords#keywords
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:43*
+```
+https://ieeexplore.ieee.org/document/8855083
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:42*
+```
+https://www.themantle.com/philosophy/edward-snowden-john-perry-barlow-and-new-american-frontier
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:41*
+```
+https://cyber.harvard.edu/is99/governance/barlow.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:40*
+```
+https://www.gutenberg.org/files/101/101-h/101-h.htm
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:40*
+```
+http://web.archive.org/web/20140613232610/https://civic.mit.edu/edward-snowden-john-perry-barlow
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:39*
+```
+https://www.cjr.org/special_report/an-industry-in-flux.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:38*
+```
+https://www.bouncegeek.com/switch-back-to-classic-facebook/#Switch_to_Old_Facebook_from_Groups_and_Pages
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:38*
+```
+https://pudding.cool/process/how-to-make-dope-shit-part-1/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:37*
+```
+https://pudding.cool/process/how-to-make-dope-shit-part-2/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:36*
+```
+https://www.eff.org/cyberspace-independence
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:35*
+```
+https://arstechnica.com/tech-policy/2014/05/web-host-gives-fcc-a-28-8kbps-slow-lane-in-net-neutrality-protest/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:34*
+```
+http://web.archive.org/web/20130703035732/https://motherboard.vice.com/blog/neocities-is-recreating-the-garish-web-10-creativity-of-geocities
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:34*
+```
+https://www.wired.com/2013/07/neocities/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:33*
+```
+https://www.fastcompany.com/3037028/why-the-internet-is-time-traveling-back-to-1994
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:32*
+```
+https://qz.com/india/338361/if-you-want-your-own-tech-company-forget-an-mba-and-learn-to-code-instead/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:32*
+```
+https://www.vice.com/en/article/78xgaq/the-interplanetary-file-system-wants-to-create-a-permanent-web
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:30*
+```
+https://techcrunch.com/2015/10/04/why-the-internet-needs-ipfs-before-its-too-late/?guccounter=1&guce_referrer=aHR0cHM6Ly9pcGZzLmlvLw&guce_referrer_sig=AQAAADTNdngkS7l9q5E5p4uXP9Us19IsnpNCYkftsJRX-de0mH8yYiItMLGLyMJrub92-_2YeM9OtVRqeDQ6HHmiRLr2uHgwMa2C6TuRZPREh9hWuvAen5hLx2XyKSTzO98PY0P33O_4TEubYZXw90h8vrPI9UYAPkXcg40cJKa5JTSN
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:29*
+```
+https://www.vox.com/2015/7/17/11614788/why-we-all-need-to-make-the-internet-fun-again
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:28*
+```
+https://www.vice.com/en/article/3daznj/theres-an-entire-conference-dedicated-to-geocities-style-websites
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:28*
+```
+https://blog.neocities.org/blog/2015/02/27/we-are-the-future.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:25*
+```
+https://www.nytimes.com/interactive/2015/02/27/magazine/Netstalgia.html?mtrref=undefined&gwh=FA3985543D1EE9B3A2E9635A863E3D39&gwt=pay&assetType=PAYWALL
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:24*
+```
+https://www.hostingadvice.com/blog/neocities-empowers-site-owners-to-showcase-their-creativity-online/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:24*
+```
+https://blog.neocities.org/blog/2015/09/08/its-time-for-the-distributed-web.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:23*
+```
+https://www.softwaresessions.com/episodes/bringing-geocities-back-with-kyle-drake/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:22*
+```
+https://www.earratmag.com/2020/04/vol-1-is-here.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:21*
+```
+https://www.cjr.org/special_report/substackerati.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:21*
+```
+https://www.nytimes.com/2020/11/16/opinion/trump-religion-authoritarianism.html?utm_source=nextdraft&utm_medium=email
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:19*
+```
+https://gigaom.com/2013/03/16/why-google-killed-off-google-reader-it-was-self-defense/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:18*
+```
+https://www.pcworld.com/article/3199204/how-i-deleted-google-from-my-life.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:17*
+```
+https://www.reddit.com/r/opendirectories/comments/933pzm/all_resources_i_know_related_to_open_directories/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:16*
+```
+https://medium.com/redletters/resurrecting-the-compaq-computer-corporation-52aa51278efe
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:15*
+```
+https://www.slantmagazine.com/film/silicon-cowboys/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:14*
+```
+http://www.bbsdocumentary.com/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:13*
+```
+https://www.wired.com/2005/06/how-humble-bbs-begat-wired-world/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:13*
+```
+https://theintercept.com/2019/04/30/helm-email-server/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:12*
+```
+https://www.theverge.com/2019/7/12/20691957/mastodon-decentralized-social-network-gab-migration-fediverse-app-blocking
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:10*
+```
+https://www.vice.com/en/article/pky7km/usenet-archive-utzoo-online
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:08*
+```
+https://www.digitaltrends.com/features/the-history-of-social-networking/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:07*
+```
+https://www.vice.com/en/article/783akg/mastodon-is-like-twitter-without-nazis-so-why-are-we-not-using-it
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:07*
+```
+https://www.theverge.com/2017/4/4/15177856/mastodon-social-network-twitter-clone
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:06*
+```
+https://www.wired.com/2017/04/like-twitter-hate-trolls-try-mastodon/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:05*
+```
+https://www.npr.org/sections/thetwo-way/2018/05/01/607361849/as-facebook-shows-its-flaws-what-might-a-better-social-network-look-like
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:05*
+```
+https://www.nytimes.com/2018/03/28/technology/social-media-privacy.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:03*
+```
+https://www.cjr.org/tow_center_reports/platform-press-how-silicon-valley-reengineered-journalism.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:17:02*
+```
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2647377
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:59*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444820914869?casa_token=othcbkdACMUAAAAA%3AMjuHZ0ThfEh3vSDnl2IA-XPQOnk5P4W701tyTu4u0eQ6bq33QaGAQdGTlXvpME0z7UB3Y-NVQaoR6Vw
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:58*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444814543997?casa_token=ChU2MXwDvnMAAAAA%3A63ecNqRU06g2_uN4fyjWeSM-mfDnOSeHNA2N2EUnr1-5EOSSdEEIXTUAAgUi-7GulyqpPuxgFDnoKdg
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:57*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444814546451?casa_token=6s9aunZrTp0AAAAA%3AfFg9mjkZRmg950C_c80eeoxyIeFCPTDmNkXC0ef8nPNXqdo_4lslymTfZcBJWhBwqX1-3LnDr5hlN_Q
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:56*
+```
+https://dare.uva.nl/personal/pure/en/publications/the-affordances-of-social-media-platforms(149a9089-49a4-454c-b935-a6ea7f2d8986).html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:54*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444812458432?casa_token=kHAUX0MGgVAAAAAA%3AIUoTGoksx5OCLxkROeRVK0zaItbvbfg6Oho3U9LUB35MSgJ5pvLV6y0WPuJtmYJV8h9ct9OR5_WwjKQ
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:54*
+```
+https://opensource.org/docs/osd
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:53*
+```
+http://www.minot.com/tom/SocialMedia.pdf
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:52*
+```
+https://www.eff.org/deeplinks/2011/03/introduction-distributed-social-network
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:52*
+```
+https://softwareengineeringdaily.com/2018/04/12/mastodon-federated-social-network-with-eugen-rochko
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:51*
+```
+http://www.internethistorypodcast.com/2017/06/the-first-blog-justin-hall/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:50*
+```
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3391913
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:49*
+```
+http://dx.doi.org/10.17613/1mwy-vp43
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:48*
+```
+https://air.unimi.it/handle/2434/629384?mode=full.1790#.X7H5-dVKhLI
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:47*
+```
+https://www.sciencedirect.com/science/article/pii/S0747563216307543?casa_token=F5sfvBQ0YuoAAAAA:zxyy0m3EjEt2a5vjYclHLuxsFmj1WOQRQug3LcoOQhXGMlODlgOJgVGM-oJQ1jqs4X8ZMIgxUVyk
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:46*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444818784302
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:45*
+```
+https://journals.sagepub.com/doi/full/10.1177/0267323120922066
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:43*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444820968907
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:43*
+```
+https://hbr.org/2013/06/five-reasons-social-media-wont
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:42*
+```
+https://www.youtube.com/watch?v=AxD4mqFtySQ&ab_channel=JustinHall
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:40*
+```
+https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:39*
+```
+https://www.vulture.com/2020/11/spotify-responsible-joe-rogan.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:39*
+```
+https://www.vulture.com/2012/01/the-ballad-of-horse_ebooks.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:38*
+```
+https://themarkup.org/google-the-giant/2020/07/28/how-we-analyzed-google-search-results-web-assay-parsing-tool
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:37*
+```
+http://this.how/twitter/index.opml
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:36*
+```
+https://blog.jingbojin.com/rename-notion-so-exported-files/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:36*
+```
+http://www.internethistorypodcast.com/2017/10/dave-winer-on-the-open-web-blogging-podcasting-and-more/#tabpanel8
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:35*
+```
+https://www.sciencedirect.com/science/article/pii/S1051200420301548#aep-article-footnote-id1
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:34*
+```
+https://www.sciencedirect.com/science/article/pii/S2214782916300021
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:32*
+```
+https://www.huffingtonpost.ca/dr-madhukar-pai/predatory-open-access-journals_b_12302828.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:32*
+```
+https://www.nature.com/news/investigating-journals-the-dark-side-of-publishing-1.12666
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:31*
+```
+https://www.aje.com/arc/making-the-choice-open-access-vs-traditional-journals/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:30*
+```
+https://www.sciencedirect.com/science/article/pii/S0164121219302596?casa_token=PeB0v8wy9HIAAAAA:BT0Wga523M4SbO1LXFzycvK9mruTeokB1_NTq31IzGtV-WWXm86eV3R_oHq_E8yAvKFO9T7grQ2C
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:29*
+```
+https://www.sciencedirect.com/science/article/pii/S1751157718302724
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:28*
+```
+https://journals.sagepub.com/doi/full/10.1177/0267323120922069
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:28*
+```
+https://journals.sagepub.com/doi/full/10.1177/1077699019876634
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:26*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444820964809
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:25*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444820971629?casa_token=lesFnCKJBqYAAAAA%3AsNosjs4ara_PisJIOnC-G3p_KwNFfeRp4XduHMJ6JKcimerwL_96nPRdBQsIOda1_BhkW1xAHxwxJOA
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:23*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444819899879
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:21*
+```
+https://capd.mit.edu/jobs-and-internships/resumes-cvs-cover-letters-and-linkedin/cvs
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:20*
+```
+https://practicaltypography.com/system-fonts.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:19*
+```
+https://www.zotero.org/support/dev/source_code
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:18*
+```
+https://www.tandfonline.com/doi/full/10.1080/24701475.2019.1593667?scroll=top&needAccess=true
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:17*
+```
+https://journals.sagepub.com/doi/full/10.1177/1461444817701318
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:16*
+```
+https://misinforeview.hks.harvard.edu/article/emphasizing-publishers-does-not-reduce-misinformation/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:16*
+```
+https://academiccommons.columbia.edu/doi/10.7916/d8-sc1s-2j58
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:15*
+```
+http://web.archive.org/web/20030626031424/https://news.google.com/intl/en_us/about_google_news.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:14*
+```
+https://googleblog.blogspot.com/2006/01/and-now-news.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:14*
+```
+https://www.cjr.org/tow_center/google-news-algorithm.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:13*
+```
+http://web.archive.org/web/20150909053228/http://mediashift.org/2010/02/google-news-to-publishers-lets-make-love-not-war035/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:11*
+```
+http://web.archive.org/web/20080627154658/http://www.informationweek.com/news/internet/showArticle.jhtml;jsessionid=PBT2QGMTUGF0AQSNDLOSKH0CJUNN2JVN?articleID=201803549&_requestid=555255
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:10*
+```
+https://alrigh.com/google-will-begin-paying-news-publishers/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:08*
+```
+https://www.cnet.com/news/google-news-to-close-up-shop-in-spain-in-response-to-new-law/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:07*
+```
+https://news.googleblog.com/2009/12/same-protocol-more-options-for-news.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:07*
+```
+https://www.nytimes.com/2008/09/15/technology/15google.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:06*
+```
+https://publish.obsidian.md/ericgregorich/About+This+Site
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:04*
+```
+https://www.govloop.com/community/blog/how-do-rocket-scientists-learn-aka-knowledge-management-lessons-learned-at-goddard-nasa/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:03*
+```
+https://simbly.me/firefox-add-ons
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:02*
+```
+https://whatsnewinpublishing.com/how-much-of-googles-search-traffic-is-left-for-anyone-but-themselves/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:00*
+```
+https://scholarworks.umass.edu/cpo/vol7/iss2/5/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:16:00*
+```
+https://nymag.com/intelligencer/article/troy-young-hearst-magazines.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:59*
+```
+https://www.chronicle.com/article/how-america-taught-the-world-to-write-small?cid2=gen_login_refresh&cid=gen_sign_in
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:58*
+```
+https://www.theverge.com/2014/3/26/5549208/microsoft-early-code-contains-hidden-jokes
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:57*
+```
+https://spectrum.ieee.org/computing/software/did-bill-gates-steal-the-heart-of-dos
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:56*
+```
+https://computerhistory.org/blog/microsoft-word-for-windows-1-1a-source-code/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:55*
+```
+https://computerhistory.org/blog/microsoft-ms-dos-early-source-code/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:55*
+```
+https://docs.microsoft.com/en-us/archive/blogs/microsoft_blog/microsoft-makes-source-code-for-ms-dos-and-word-for-windows-available-to-public
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:54*
+```
+https://www.pcmag.com/archive/ms-dos-turns-30-pcmags-original-interview-with-bill-gates-278114
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:53*
+```
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134389
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:52*
+```
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0201484
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:51*
+```
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239816
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:50*
+```
+https://www.theguardian.com/books/booksblog/2014/mar/21/lorem-ipsum-translated-latin-placeholder-text
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:48*
+```
+https://thenextweb.com/apps/2014/08/19/wikiwand-makes-wikipedia-beautiful/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:47*
+```
+https://www.linuxjournal.com/content/linux-journal-back
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:47*
+```
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127502
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:46*
+```
+https://www.linuxjournal.com/content/jupyter-future-open-science
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:44*
+```
+https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:43*
+```
+https://channel9.msdn.com/Blogs/JonUdell/Word-for-scientific-publishing?term=word&lang-en=true
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:41*
+```
+http://jonudell.net/udell/2006-12-08-a-conversation-with-jon-udell-about-his-new-job-with-microsoft.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:40*
+```
+https://web.archive.org/web/19961019181801/http://www.businessweek.com/1996/29/b34841.htm
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:40*
+```
+https://web.archive.org/web/20070329064009/http://openacademy.mindef.gov.sg/openacademy/Learning%20Resources/Microsoft/words/words_4.htm
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:39*
+```
+http://web.archive.org/web/20201101061109/https://www.nytimes.com/1996/07/16/business/tomorrow-world-wide-web-microsoft-pc-king-wants-reign-over-internet.html?pagewanted=all
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:38*
+```
+https://cyber.harvard.edu/msdoj/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:38*
+```
+https://archive.vn/20050419194550/http://reactor-core.org/in-microsoft-we-trust.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:37*
+```
+https://web.archive.org/web/20180523190053/https://www.economist.com/node/298112
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:36*
+```
+https://grasshoppermouse.github.io/2019/07/12/should-scientific-publishing-move-to-github-and-friends/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:36*
+```
+https://docs.microsoft.com/en-us/typography/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:35*
+```
+https://www.theverge.com/21550815/windows-microsoft-linux-mint-laptop-how-to-switch
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:33*
+```
+https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:33*
+```
+https://atmos.earth/ethical-consumerism/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:31*
+```
+https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:30*
+```
+https://jakelacaze.com/on-writing-simply
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:29*
+```
+http://s3-us-west-2.amazonaws.com/grainnet-com/uploads/pdf/cfl393-pdf.pdf
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:28*
+```
+chrome-distiller://d61a37a4-19b3-46f5-b064-f06c125b8707*7c4baa89060c8e40b2c8fa05137c55203397e28afe583b622069070e35652bbd/?title=Badoo+billionaire+prepares+comeback+with+social+audio+app+Stereo&time=49960920&url=https%3A%2F%2Fwww.telegraph.co.uk%2Ftechnology%2F2020%2F11%2F01%2Fbadoo-billionaire-prepares-comeback-social-audio-app-stereo%2F
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:28*
+```
+https://www.scientology.org/how-we-help/applied-scholastics/#slide1
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:27*
+```
+http://web.archive.org/web/20121118051935/https://opinionator.blogs.nytimes.com/2012/11/17/how-to-live-without-irony/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:26*
+```
+http://web.archive.org/web/20121224094539/http://www.nytimes.com/1992/01/27/business/compaq-set-to-introduce-2-computers.html?src=pm
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:25*
+```
+http://web.archive.org/web/20121207133810/https://www.nytimes.com/1999/02/17/business/compaq-buys-zip2-to-enhance-altavista.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:25*
+```
+https://www.theatlantic.com/ideas/archive/2019/02/religion-workism-making-americans-miserable/583441/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:24*
+```
+https://orbit.openlibhums.org/article/id/454/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:23*
+```
+https://thehistoryoftheweb.com/online-communities/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:22*
+```
+https://www.hmhbooks.com/shop/books/The-Plot-Against-America/9780358008811
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:20*
+```
+https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:20*
+```
+https://www.hup.harvard.edu/catalog.php?isbn=9780674417076
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:19*
+```
+https://www.wepeterson.com/almostperfect/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:18*
+```
+https://www.imdb.com/title/tt0804503/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:18*
+```
+https://b-ok.cc/book/2515229/b36479
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:16*
+```
+https://www.imdb.com/title/tt0109445/?ref_=fn_al_tt_1
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:15*
+```
+http://web.archive.org/web/19990221063202/http://www.hex.net/~cbbrowne/wprant.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:14*
+```
+http://static.500px.net/ebook/BLM-ebook.pdf
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:13*
+```
+https://www.newyorker.com/magazine/2020/10/19/why-facebook-cant-fix-itself
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:12*
+```
+https://web.stanford.edu/~bkunde/fb-press/articles/wdprhist.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:11*
+```
+https://hyperword.blogspot.com/2018/09/word-processing-through-ages.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:10*
+```
+https://www.pcworld.com/article/2602862/how-to-start-blogging-with-microsoft-word.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:10*
+```
+http://www.computernostalgia.net/articles/HistoryofWordProcessors.htm
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:09*
+```
+https://theconversation.com/technology-changes-how-authors-write-but-the-big-impact-isnt-on-their-style-61955
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:08*
+```
+http://www.quickstartworkbook.com/download-a-brief-history-of-the-computer.php
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:07*
+```
+https://tedium.co/2016/10/04/word-processors-future
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:07*
+```
+https://bytecellar.com/2016/06/05/a-look-back-at-three-decades-of-word-processors/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:05*
+```
+http://ricardo.ecn.wfu.edu/~cottrell/wp.html#tth_sEc5
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:03*
+```
+https://tedium.co/2016/08/18/bare-metal-writing-word-processor-history/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:02*
+```
+http://ittimes.ucdavis.edu/v6n4jan98/snyder.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:00*
+```
+https://www.nybooks.com/daily/2014/10/21/escape-microsoft-word/
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:15:00*
+```
+http://www.slate.com/blogs/normal/2016/10/11/microsoft_word_s_haters_have_it_all_wrong.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:14:59*
+```
+https://www.theparisreview.org/fiction/4830/the-conversion-of-the-jews-philip-roth
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:14:58*
+```
+https://www.akpress.org/behindtheblip.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:14:57*
+```
+https://www.nytimes.com/2008/01/20/world/asia/20japan.html
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:14:56*
+```
+http://www.altx.com/ebr/ebr6/ebr6.htm
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:12:35*
+```
+https://thebaffler.com/fiction/a-year-in-the-face-dragon
+```
+
+🔴 **Error** | *Apr 1, 2022 at 11:10:37*
+
+🔴 **Error** | *Apr 1, 2022 at 11:10:01*
+```
+2560
+{"JFIFVersion":[1,0,1],"IsProgressive":true,"YDensity":1,"XDensity":1,"DensityUnit":0}
+RGB
+1991
+Display P3
+8
+```
+
+🔴 **Error** | *Apr 1, 2022 at 11:09:30*
+
+🔴 **Error** | *Apr 1, 2022 at 11:08:50*
+
+🔴 **Error** | *Apr 1, 2022 at 11:08:14*
+
+🔴 **Error** | *Apr 1, 2022 at 11:07:45*
+
+🔴 **Error** | *Apr 1, 2022 at 11:07:06*
+```
+https://substack.com/profile/79240675-nancy-powaga
+```
+
+🔴 **Error** | *Apr 1, 2022 at 11:05:57*
+```
+https://audacity.substack.com/p/the-ladies-room
+```
+
+🔴 **Error** | *Apr 1, 2022 at 11:05:02*
+```
+https://audacity.substack.com/p/the-ladies-room
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:02:27*
+```
+https://audacity.substack.com/p/the-ladies-room?s=r
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 11:02:26*
+```
+Original: https://audacity.substack.com/p/the-ladies-room?s=r
+
+Result: https://audacity.substack.com/p/the-ladies-room
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:01:33*
+```
+https://audacity.substack.com/p/the-ladies-room?s=r
+```
+
+✅ **Success** | *Apr 1, 2022 at 11:01:14*
+```
+https://www.inputmag.com/gaming/e3-2022-cancelled-digital-event
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:57:52*
+```
+https://www.inputmag.com/gaming/e3-2022-cancelled-digital-event
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:47*
+```
+https://song.link/i/151039842%5C
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:47*
+```
+http://song.link
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:46*
+```
+https://api.odesli.co/oembed?url=https://song.link/i/151039842&amp;format=json%5C
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:45*
+```
+https://song.link/i/151039842
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:44*
+```
+https://song.link/i/1591498695
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:44*
+```
+https://song.link/i/1554899944
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:43*
+```
+https://song.link/i/1586649177
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:42*
+```
+https://song.link/i/1566023459
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:42*
+```
+https://song.link/i/1581092689
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:41*
+```
+https://song.link/i/1584210954
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:39*
+```
+https://song.link/i/1548503334
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:39*
+```
+https://song.link/i/1552517751
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:38*
+```
+https://song.link/i/1553501217
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:36*
+```
+https://song.link/i/1564104025
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:36*
+```
+https://song.link/i/1565404578
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:35*
+```
+https://song.link/i/1560964065
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:34*
+```
+https://song.link/i/1556899000
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:34*
+```
+https://song.link/i/1565509312
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:33*
+```
+https://song.link/i/1566156050
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:32*
+```
+https://song.link/i/1566023451
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:31*
+```
+https://song.link/i/1579091593
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:31*
+```
+https://song.link/i/1579568544
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:29*
+```
+https://song.link/i/1487724484
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:29*
+```
+https://song.link/i/1554130907
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:28*
+```
+https://song.link/i/1550264586
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:27*
+```
+https://song.link/i/1547278235
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:26*
+```
+https://song.link/i/1583330906
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:25*
+```
+https://song.link/i/1560411683
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:55:24*
+```
+https://song.link/i/1553501219
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:54:50*
+```
+https://song.link/i/1365161302
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:52:52*
+```
+https://song.link/i/1365161302
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:51:24*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:42:12*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:42:03*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:42:03*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:42:02*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:42:01*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:42:00*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:58*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:58*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:57*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:56*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:55*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:54*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:54*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:53*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:52*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:50*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:49*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:49*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:48*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:47*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:47*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:46*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:45*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:44*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:44*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:42*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:41*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:40*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:39*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:41:38*
+```
+https://api.raindrop.io/rest/v1/raindrop
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 10:33:04*
+```
+https://app.raindrop.io/account/login?redirect=https%3A%2F%2Fapi.raindrop.io%2Fv1%2Foauth%2Fauthorize%3Fclient_id%3D615a7e3d634626aaa3179fbablink
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 10:28:39*
+```
+https://medium.com/@adonkidz7/bypass-xss-filter-using-html-escape-f2e06bebc8c3
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 10:27:16*
+```
+- [Notes-TildeTown on iPhone with Blink Shell](drafts://open?uuid=31122181-5565-4F1C-BEA3-C22DA140619A)
+- [End User Episode 9](drafts://open?uuid=69EA3CC6-7081-47B4-B4AB-C16E5C7E8417)
+- [Please Fuck With This License](drafts://open?uuid=FAFFA333-34A5-4412-B46C-3D216C09FD8E)
+- [The Psalms Action Group](drafts://open?uuid=7580294A-E97B-4614-AAF6-4E4A63358E6E)
+- [A Good Place: Periscope Magic](drafts://open?uuid=4B149084-B41C-4C82-8FD2-0FB7CCF67B6B)
+- [Notes-Periscope Magic](drafts://open?uuid=480EF899-1228-4751-BFA2-1F197BF1B71A)
+- [On Drafts and Obsidian](drafts://open?uuid=56EED87E-678E-4248-8E94-31650615C69A)
+- [psalms - 03732022-094831](drafts://open?uuid=80C14B4A-CA47-4DFE-8BC5-7200E9561D09)
+- [How to Fuck Text](drafts://open?uuid=A350D578-1CFA-4B5A-8655-74F6B3AD72AE)
+- [Notes-Threema](drafts://open?uuid=994F9F9A-A333-43AA-AB54-0E9485025009)
+- [David Blue's Twitter History](drafts://open?uuid=F490F4FE-5635-4513-9320-B5DB7E0FFE31)
+- [Notes-Personal Twitter History](drafts://open?uuid=37B865E1-4372-4AF7-BB77-3979836130D4)
+- [Reading](drafts://open?uuid=167BF51A-2C5D-4A40-8656-36AF81BB899E)
+- [Tilde.Town on iPhone with Blink Shell (Attempt 1)](drafts://open?uuid=E43D7483-F933-47DE-989C-BFD1D6931C1A)
+- [Colophon](drafts://open?uuid=E3CCA1D3-CD96-4A88-8A05-6598C86708A9)
+- [Vocabulary](drafts://open?uuid=C41AC4C1-6F45-47C0-ACB2-74DDEDA8B41F)
+- [David Blue Styleguide](drafts://open?uuid=2EB3DF66-8154-4201-ADC7-4F200D7A8A2F)
+- [undercovered](drafts://open?uuid=A8DDF7DC-0D9C-4162-B028-5D8E75B819E5)
+- [Principles of Text Fucking](drafts://open?uuid=194FF296-B132-4A15-A788-1BFDE5D380B9)
+- [Hold Your Clipboard Managers Close](drafts://open?uuid=81CC3D50-BC7A-471F-B247-DBE0ACC54C6B)
+- [Notes-Hold Your Clipboard Managers Close](drafts://open?uuid=65AC8211-F3F9-419D-A7B3-EBF82E4944F1)
+- [Run Siri Shortcuts with Hyperlinks](drafts://open?uuid=A5A987C6-8978-4F4B-9FE1-D7C5408E1FD2)
+- [Apple Rag Review](drafts://open?uuid=C2166752-61DC-446A-B833-96D156B75C00)
+- [App Store Review Day](drafts://open?uuid=269CF0B7-74F8-4C12-8727-EA4968255DB0)
+- [Notes-Run Siri Shortcuts with Hyperlinks](drafts://open?uuid=CF37457E-7D4D-43FE-8439-55AF4047AFB7)
+- [‽‽‽](drafts://open?uuid=B9189A80-9FAB-4B82-8413-9AA29FBC0F5A)
+- [Telegram Extras](drafts://open?uuid=F8A964A8-E7B2-44DA-B3A8-1832C485F3AD)
+- [Bandcamp: Streaming's Secret Savior](drafts://open?uuid=DDCA42F5-BE83-43CB-99CA-7D527CAF926D)
+- [Windows Eternal Drafts Theme](drafts://open?uuid=67DEB30C-4F91-4531-AFEE-10047D887203)
+- [The Fastest Route to Twitter Jail](drafts://open?uuid=00666FB0-F0CB-48CF-9E9C-837435028D80)
+- [“How to Fuck Text”’s Purpose Statement](drafts://open?uuid=19541905-994D-4BD6-9BD4-C4A511697546)
+- [Notes-Twitter Jail 2022](drafts://open?uuid=00DDA3A9-9A34-40A2-A3F6-C619668D08F3)
+- [psalms - 02442022-222718](drafts://open?uuid=D28A64BD-2090-4B3C-8E47-5A378F4C171C)
+- [Notes-Using Drafts With NeoCities](drafts://open?uuid=70C7C7DF-5083-411A-A397-A14479CA90BF)
+- [Using Drafts with NeoCities](drafts://open?uuid=7247282E-340B-4890-A2F7-0481AF31321E)
+- [Drafts vs. Obsidian Discord Message | MacStories](drafts://open?uuid=C75F02AB-3DF2-4382-A85C-618B0A78C611)
+- [Notes-Paste Shortcuts for Mac and iOS](drafts://open?uuid=59314DD1-4DC2-4835-B47C-817D125D2EEE)
+- [Paste Shortcuts for Mac and iOS](drafts://open?uuid=F8426047-D514-44CE-8989-81FAB489507A)
+- [Zalgo Text in a Keyboard Shortcut](drafts://open?uuid=775BA8C5-09A4-47C3-9B88-48D923BDB55D)
+- [Notes-Shortcuts for Paste](drafts://open?uuid=D459A766-03AD-44C7-BFD9-1B09D49C3A5B)
+- [Text Fucking Wiki Entry](drafts://open?uuid=DA06E944-7601-43D9-9D01-5AC0835804EE)
+- [Notes Template](drafts://open?uuid=DEB4C792-DA8B-4965-AACE-E319E6588422)
+- [On Configuration Culture](drafts://open?uuid=C06D5FA1-F9BD-45D6-B0E6-F61A648589B8)
+- [The Psalms’ 2021](drafts://open?uuid=CB2985C0-C484-48F0-A170-2EBEF1E94972)
+- [Assorted Unlisted David Blue Configurables](drafts://open?uuid=AC162701-9C53-449E-82AF-162581EB332C)
+- [Remark.as is Now Enabled on This Blog](drafts://open?uuid=1FEB4A37-519C-4FE4-92FE-9A280459E4D5)
+- [Remark.as Integration](drafts://open?uuid=B0C95CA5-E5DE-4478-9C09-1E30499438CE)
+- [Notes-The Psalms’ 2021](drafts://open?uuid=E7E2670F-0DB1-49A1-BA26-73F3B43ACB52)
+- [Automating Write.as Posts on macOS](drafts://open?uuid=DC7A1B0D-1F71-445F-8813-3EF9F0BC3967)
+- [Notes-Text Replacement](drafts://open?uuid=AE17D11E-A3EC-40EF-9EAC-300ACDE4FFA8)
+- [Text Replacement](drafts://open?uuid=42D45533-F9BB-4A73-8AA0-6EF2CEDFCE7D)
+- [Notes-Telegram Extras](drafts://open?uuid=176B5140-D3F5-4C11-8829-3FD733B63B8E)
+- [Underdocumented Maneuvers in iOS](drafts://open?uuid=6271A84E-D0F9-4881-A20D-B22E88AA9E3B)
+- [Declare a Personalized Vocabulary across Apple’s OSs with Text Replacement](drafts://open?uuid=5FF0FAC4-21A2-4D56-8195-312C66B6E97E)
+- [Assorted Birthday Configurables](drafts://open?uuid=5086A314-FEAB-45EA-AE55-28A2FC2D294E)
+- [Notes-Assorted Birthday Configurables](drafts://open?uuid=85A87717-8D95-4AAB-8FEE-6F4B6FD8BEB8)
+- [Against All Strategic Social](drafts://open?uuid=E33DD0DF-7BE5-4EF2-ACE8-3CAE8F39A969)
+- [Notes-Fresh Eyes on macOS](drafts://open?uuid=6C76EDBD-025D-40BA-9381-9AE95AD70F36)
+- [The Psalms Template](drafts://open?uuid=01287039-1517-4B58-8389-6D742BEC87A7)
+- [Fresh Eyes on macOS](drafts://open?uuid=944F772C-CC9D-47F2-BD98-F4E435E40227)
+- [Drafts Forum Profile](drafts://open?uuid=6406A595-E9B5-4FAD-BD29-725FC7CA43D6)
+- [Speedy Frames](drafts://open?uuid=0E9AAECF-EDBB-4FD4-B3BA-2CFC55D7BA30)
+- [I Trust Telegram (Final Web Duplicate)](drafts://open?uuid=6A402155-C4DE-4D2D-8372-F6B1810C8943)
+- [Telegram-References](drafts://open?uuid=C1F015BD-D186-4570-B40B-B3EB68471BC9)
+- [Notes-Telegram](drafts://open?uuid=DEDF0625-BCAF-40BE-8C15-DFCEE029A182)
+- [Speedy Frames Shortcut Documentation](drafts://open?uuid=B1198509-030F-4526-9721-A0FB85A799BA)
+- [2021 PERDITION Icon Set](drafts://open?uuid=AEAE1363-2E50-4FB1-B9C6-0C55620A1EC5)
+- [GitHub URLS](drafts://open?uuid=F8978B8E-2242-49EF-AE09-41512DAEFE6E)
+- [Petrify Vanity Code Renders for The Psalms Repo/Colophon](drafts://open?uuid=A181CA53-D79E-4FFE-A7FC-E98DBEB9A200)
+- [About](drafts://open?uuid=1F0A8F2F-FF24-4972-BBDE-9A95B3B2B97C)
+- [David Blue on Vine: The Platinum Collection](drafts://open?uuid=393EC29E-A49D-4126-AAB4-055DB3104D20)
+- [WordPress/Aviary Prank Shot](drafts://open?uuid=36C0D7DF-3B5B-4E0F-A96A-9250B6066CA0)
+- [Resisted Abstraction](drafts://open?uuid=49767CE5-0366-4760-9542-8CE454DD524D)
+- [Duplicate - I Trust Telegram](drafts://open?uuid=5D1347E7-B1ED-41EA-9CF9-100A8F5561B5)
+- [Audio File Example Siri Shortcut Documentation](drafts://open?uuid=053A02C7-D314-46B2-B1F7-CFD2BDB65E7D)
+- [The Psalms’ 2021](drafts://open?uuid=A6E02F34-FAFF-46FF-AE16-6710788D2FC9)
+- [Notes-Siri Shortcuts for Scrubs](drafts://open?uuid=93B5ECAF-90DD-4FE5-A623-1A50B66DA316)
+- [Your thoughts/questions/complaints/outbursts about Twitter Blue - Twitter Space](drafts://open?uuid=FF7C822D-E5BF-49C7-8AC3-1F042A80F7ED)
+- [The Psalms' 2021 (Collected)](drafts://open?uuid=CB8FD41B-385E-488C-A811-D4222905FF1B)
+- [The Psalms Template](drafts://open?uuid=524F72B0-A993-4EC6-8377-974E4856BE8D)
+- [The Psalms Template](drafts://open?uuid=56FEF823-A9DF-46F3-BDFB-A23C0273AE8F)
+- [Fantastical for iOS Keyboard Shortcuts](drafts://open?uuid=21736FC6-D738-4CF8-8AA0-6AE34A78692E)
+- [I Trust Telegram (Chaffback) Wed, 08 Dec 2021 03:59:02](drafts://open?uuid=CD26F1A7-A03F-401A-8F9D-72117AC05722)
+- [Reading](drafts://open?uuid=3D0DB72E-91B1-4299-BAF1-84171EC4DD56)
+- [The Psalms Todoist Import](drafts://open?uuid=259F4DD0-CBA0-451F-91E1-9B4B3AED692B)
+- [David Blue on Twitter Blue](drafts://open?uuid=E1DA2728-335E-43CA-94FE-B9E954B17DC9)
+- [Duplicate-Blue on Twitter Blue](drafts://open?uuid=1FC3706C-677B-4A4B-83F9-037823BD857B)
+- [Twitter Thrives on Incompetence](drafts://open?uuid=B9A0D30A-EAF4-4CF4-A5E9-B68403A9E146)
+- [For Print-Blue on Twitter Blue](drafts://open?uuid=8281A612-6D72-4103-92CE-A548C995E728)
+- [Mobile Dot Twitter Dot Com](drafts://open?uuid=280D306E-58A5-4C4A-8D05-DE77252A4AEA)
+- [Now That’s What I Call David Blue’s 2021 Playlist](drafts://open?uuid=7020E3C2-A0BA-45F8-8A10-B2B4341BAD83)
+- [Siri Speech Synthesis (MacOS)](drafts://open?uuid=1EC8FDDC-0D61-4B47-AA74-C1E07D784072)
+- [The Psalms' Title Represents a God Complex - Swaggatronix on Mastodon](drafts://open?uuid=155702CD-30E3-4633-B9ED-546D94507590)
+- [Shortcut Template Backup](drafts://open?uuid=141B7123-2ACC-464B-8E79-0A1DDA11EF7C)
+- [They/Them Siri Shortcut Documentation](drafts://open?uuid=CC4A0017-EDF9-4837-83AC-FC3785799D3E)
+- [Notes-YouTube Music](drafts://open?uuid=10B3C676-864F-4FA8-B7D2-473A3BBCCB15)
+- [Notes - Min Browser Review](drafts://open?uuid=C08A29C7-39AF-4CEC-A54B-09EA663AD450)
+- [Min Browser Review](drafts://open?uuid=D2112906-EF4C-498A-BA4E-FF4172C2A47E)
+- [I Bought a Desktop](drafts://open?uuid=6F3E65B1-D198-49E2-A764-F22F3B99172D)
+- [Blessed Web Utilities Collection](drafts://open?uuid=BF3739DD-D91B-4BF2-84F5-30B08501F69E)
+- [What’s wrong with Spotify? Siri Shortcut Documentation](drafts://open?uuid=72B8330D-64D6-4CCE-9795-86EE439B00BE)
+- [Timelines - Raindrop Collection](drafts://open?uuid=76439481-25B8-47E2-841D-96DC4822C8B3)
+- [Truth Social -261](drafts://open?uuid=25DC16BA-0387-4169-8137-CFC34E627D8C)
+- [The Extraordinary Intimacy of Microblogging](drafts://open?uuid=85C4FB1C-1C6A-4122-8A58-AC2380122EB3)
+- [Telegram Guides](drafts://open?uuid=4DFE480F-7A82-4B97-B302-56605F19B857)
+- [PocketCasts Native Podcast List](drafts://open?uuid=4D130E4A-FFE7-48B1-9A0B-D9797C3C054A)
+- [Min Discord](drafts://open?uuid=F00A6748-E914-4F2E-9495-A1408248C7FA)
+- [Notion Library](drafts://open?uuid=AD37EA0F-230F-4ADD-AEA0-A5666C7677D5)
+- [Views of The News on HTML Parsons](drafts://open?uuid=B96B0977-794E-4B86-9084-80D1B5FFE879)
+- [FUTURELAND (Newsletter Revival) Documentation](drafts://open?uuid=36320115-76E1-46C2-BDEA-CD904BE5C9E4)
+- [Siri Shortcuts for Scrubs](drafts://open?uuid=329BC931-CADD-4381-9D42-A2C03D7B1047)
+- [Easily Converting Apple News Links to Their Original URLs](drafts://open?uuid=CA641427-0757-4D54-AAF2-CF2FB8EFDFA3)
+- [I Trust Telegram](drafts://open?uuid=7C27AD95-762F-4A9B-9D3B-6FBD98FEA237)
+- [SI on Discord Regarding Objective-C and Swift](drafts://open?uuid=BBDCD568-C0AF-4561-9652-CA32F449DFE5)
+- [Windows 11 Family Message](drafts://open?uuid=EA14CC00-5C18-4C56-AC9B-24F5A30882BB)
+- [I Trust Telegram](drafts://open?uuid=8F8F0F01-8C5D-4D47-94EC-B72237EDF3B7)
+- [“”””Privacy”””” (Telegram)](drafts://open?uuid=227AA173-41D9-4ABF-BF64-FB9354C7F6A0)
+- [Highlights x Hypothes.is Feedback](drafts://open?uuid=1663735D-E824-48EB-AEE8-362B6C4E17B3)
+- [Opera for iOS App Store Review](drafts://open?uuid=24AE5863-158D-4079-A838-824C97E99F9A)
+- [/t Repo README](drafts://open?uuid=473BE92C-D29C-4231-ACA7-DAB9B62FD1F5)
+- [SYSTEM COLORS Telegram Themes](drafts://open?uuid=0C63E37F-63F3-4F19-93DA-F9EA64C84779)
+- [The Pinterest Machine - MacStories Discord](drafts://open?uuid=0C3DF863-351F-4BA2-AD52-BE8D873E57A6)
+- [* “[Using Drafts with Obsidian - Integration Guides - Drafts Community](https://forums.getdrafts.com/t/using-drafts-with-obsidian/11221)”](<drafts://open?uuid=15486ACE-3C5B-454F-84FF-BA85FED2A5A8>)
+- [Safari Extensions for iPhone](drafts://open?uuid=54024A7C-B838-49CD-A2C0-829DE435FF5F)
+- [Radical Minutia Social Post](drafts://open?uuid=3E642E2C-4E6D-4E11-8275-B2F115683792)
+- [The Agony & The Ecstasy of the iPhone 12 Pro Max](drafts://open?uuid=07B641B2-6692-4FA9-9E7C-79D7EED5F803)
+- [Notes-Circling Back to Tweetbot 6.3](drafts://open?uuid=DC113858-DC00-4130-90DD-584B6CADD535)
+- [Chill](drafts://open?uuid=2D5A8213-A4D5-4634-B10F-81ECEBF83808)
+- [![Mastodon for iOS](https://i.snap.as/sHTDx8AV.png)](<drafts://open?uuid=502AAEF8-402B-4E32-A43B-AD997F3815CB>)
+- [Circling Back to Tweetbot 6.3](drafts://open?uuid=9DFCF44B-AEC9-4BE5-82AA-1506EFBBF3E3)
+- [Circling Back to Tweetbot 6.3](drafts://open?uuid=90E530C2-52DC-4AF2-9855-065C0052BA93)
+- [Jorts Readme](drafts://open?uuid=DC0381BC-394A-4F43-8723-0C0FDC76D2BE)
+- [Safari](drafts://open?uuid=0C3B8273-BC35-44E6-8D8B-681A270C0962)
+- [iOS 15’s Last Bullets](drafts://open?uuid=8757F54B-420D-491C-BCD2-A33FFD6F99F3)
+- [Drafts 28 Bluetooth Keyboard Considerations](drafts://open?uuid=F74B3E82-8A13-445D-B0DD-0EF2ED52773E)
+- [Drafts 28.0 Release Notes](drafts://open?uuid=A7AA40AC-664F-49ED-9381-D6ABEB1C6681)
+- [Embed <audio> Element: ⇧⌃A](drafts://open?uuid=E3D8E967-1822-4D60-8CC0-BCA31A1861F4)
+- [NOTES: Underdocumented Maneuvers in iOS](drafts://open?uuid=464F92D4-5A63-4447-BBF7-CB1B0D885568)
+- [Twitter Thread:](drafts://open?uuid=101762F8-538A-454D-9049-F6E391483EC7)
+- [Shortcuts User Group Transcript](drafts://open?uuid=7FD1C728-9A20-4993-8D35-C1837A49BC62)
+- [Jeanne, 27](drafts://open?uuid=AC0B2868-8566-4463-999C-89BE131141FB)
+- [Notes: iOS 15](drafts://open?uuid=1AA6A947-6F19-40A0-BC10-C58D5A5D6292)
+- [Timestamp Share Feedback-Whyp](drafts://open?uuid=03D3779A-3438-405C-9443-05157D7CC423)
+- [Widgets](drafts://open?uuid=23BC9164-96F2-47AD-8461-BFF89B57B622)
+- [Tweetbot 6.3 Keyboard Shortcuts](drafts://open?uuid=79E69D39-C826-4F36-873A-FCDF26E279D6)
+- [An Overview of the iPhone 13 Event for The Living](drafts://open?uuid=FAC9FD1F-AE9E-46A8-B8FB-4934A53CBFF4)
+- [Weather](drafts://open?uuid=221ED845-37A6-4443-9ABA-0551C4A20D49)
+- [Overflow](drafts://open?uuid=6B55D761-4FCA-4553-9446-E2B956ADF549)
+- [iOS 15 MacStories Discord Message](drafts://open?uuid=1F1EFADA-2284-4172-B429-CEB70F2CEE09)
+- [iOS 15 Reviewed for My Family 2021-09-14-04.29.08 Backup](drafts://open?uuid=31C3D084-49AE-4677-ACCF-BD51AF09CBEE)
+- [/\* Written in November 2020 by David Blue for bilge.world.](drafts://open?uuid=71AFC3F0-F8BF-490D-914C-A1F5470A1BE9)
+- [Reminders Backup Shortcut Documentation](drafts://open?uuid=2E7B3F43-84D3-4043-8CDD-02B03E8BAB15)
+- [Audio Recording Apps](drafts://open?uuid=FA42C451-169C-4E83-96BF-321B5CD729D6)
+- [MacStories Discord General Correspondence](drafts://open?uuid=FAB72C67-5029-4423-9C3B-A7BF584237FC)
+- [Coda: A marketing exercise](drafts://open?uuid=F1269349-39EB-4956-AAEE-29A0CD3F8D38)
+- [Siri Speech Synthesis in iOS 15](drafts://open?uuid=68604C9C-726E-48AD-879C-1E0A67FBBF11)
+- [Siri Speech Synthesis Shortcut Real Time Demo [YouTube Meta]](<drafts://open?uuid=55949278-704D-40ED-9973-38E5F650F868>)
+- [[The Unlicense, Dave Edition](https://gist.github.com/extratone/140a11428b5dd1dda500b3928e0438b1)](<drafts://open?uuid=B0B07AAF-F5A7-47BC-A66D-6B8B99890F21>)
+- [Make Audio from Document Text](drafts://open?uuid=480B554F-3C8D-4F76-B7B9-41D1E939E020)
+- [Family Tech Support Intro](drafts://open?uuid=3556D063-194D-4E5B-8B4C-25A13996766D)
+- [iOS 15 Extras](drafts://open?uuid=98E9F3BA-40C4-4439-8F99-083F31BBA47C)
+- [[Take 2] iOS 15 Reviewed for My Family](<drafts://open?uuid=32400DD0-9321-4C09-AEF9-BBA8CAA1F9BB>)
+- [You can find me in HyVee, bottle full of bub](drafts://open?uuid=4284D663-82ED-4E2B-AD7D-15CB1F2CA8E9)
+- [The Platinum Clacker Award (Tweetbot)](drafts://open?uuid=226EFAAC-C7AC-4E95-BBAD-153DCA6DD60C)
+- [Make Audio from Article Body](drafts://open?uuid=81B20B69-6676-4973-AA8C-692812D89399)
+- [Notes - Siri as Text-to-Speech in iOS 15](drafts://open?uuid=CA396A88-94DC-4798-B48F-9F8D1772BC3A)
+- [Developer Forums Keys Question](drafts://open?uuid=7A41ACA1-0395-4E11-9B2F-09AAE0D0A84D)
+- [Against All Strategic Social](drafts://open?uuid=541AA9C1-630C-4508-94DC-043ACF10A916)
+- [Transcript - Gargron is Not a Growth Goblin](drafts://open?uuid=B8850B72-54D9-4306-A062-00B7ED17F72F)
+- [Transcript - The iPhone x Bluetooth Keyboard Issue is a Class Issue](drafts://open?uuid=1437B275-8F64-4229-9075-E44419ED19AD)
+- [Notes: Social Media Documentation](drafts://open?uuid=DFF30543-34A4-4FF2-BD02-2629583729EC)
+- [App Polygamy](drafts://open?uuid=7BE90BE5-F95B-4F5A-BBA6-CA2EAB663236)
+- [Notes - Mastodon for iOS (The “Official” App)](drafts://open?uuid=DE4D9E6C-08EE-4CA1-B4F0-DD5332A6D64F)
+- [Kelly Sims (@kellylsims) DM](drafts://open?uuid=FE37B9BA-DC59-4949-A463-078DF0AC379D)
+- [Jackson Tan Cold Email](drafts://open?uuid=3583FCEC-AA7A-4F3D-86E8-5272600C804E)
+- [Hi Mastodon. This is a darned Automated Post.](drafts://open?uuid=750115F5-C954-4ADE-9D2C-289CBFDB6346)
+- [General Keys Considerations](drafts://open?uuid=75BD49B3-3382-44CA-8E6A-3AACE321C42F)
+- [Store To-Review List](drafts://open?uuid=51532713-32E0-4E49-B589-55A2801BA273)
+- [Ashley Carman DM Regarding Tinder Photo Tip](drafts://open?uuid=D958D73A-1D8A-491F-80F1-4BAC9C4F0AF8)
+- [Raindrop](drafts://open?uuid=B53A6550-62AF-4C26-8AFF-6B31BE3D1979)
+- [Notes - Preface](drafts://open?uuid=EBF75B28-1102-4F47-85EC-D9CF68607FD0)
+- [The ExtraKeys Universal Clacker Award](drafts://open?uuid=863860F1-C4D8-4559-825A-21C86DCF868A)
+- [Bluetooth Keyboard Section in the Official iPhone User Guide](drafts://open?uuid=016B77F0-F48D-4D36-A5A3-4C84FD27199F)
+- [if you’re \*absolutely positive\* you want to know more, I’ve tossed most of my findings in this GitHub issue over the past few months: https://github.com/extratone/bilge/issues/79](drafts://open?uuid=0F035275-0916-455A-B9BC-E8D2A884BDBF)
+- [Echoes in Twitter Spaces](drafts://open?uuid=3332A5DA-5001-4C81-B1DB-FC1580A7C91C)
+- [WF Workflow Social](drafts://open?uuid=99864B0C-2D08-4760-979E-48A4CA4C0298)
+- [Notes: Writeas/WriteFreely iOS Publishing Workflow](drafts://open?uuid=0A53E1CC-C30F-4690-A8E7-6F7CCB107879)
+- [Duplicating My (Overwhelmingly Positive) Mastodon Experience](drafts://open?uuid=419D096A-D897-4305-9689-52554D3E90C4)
+- [App Store Review Day](drafts://open?uuid=461912F9-A3F0-4EA9-9397-A910FDF349E2)
+- [[Aviary for iOS Documentation](https://apps.apple.com/us/app/aviary/id1522043420)](<drafts://open?uuid=ECA9EB56-4FF2-4DE2-BF06-417BAE687103>)
+- [Whodunitfirst (iOS 15)](drafts://open?uuid=F12F9A7F-CEA4-40DB-871C-E7334D8A6DA1)
+- [[My iPad Setup](https://nipunbatra.github.io/blog/setup/2021/06/14/setup-ipad.html)](<drafts://open?uuid=058D531A-69F5-4218-93D2-D3395F380789>)
+- [App Notes: The State of Mastodon Clients on iOS](drafts://open?uuid=955F55BA-F62D-4738-AB5E-3BC29F6C93F9)
+- [Scan Thing Documentation](drafts://open?uuid=05E924FF-FA3B-4561-B429-3630142D3EC3)
+- [“A table view that allows navigation and selection using a hardware keyboard.” | Swift Snippet by Douglas Hill](drafts://open?uuid=DFBC917C-2B4C-4222-B05B-45B49DBA42AA)
+- [Mastodon Live Onboarding + Auth Marathon Meta](drafts://open?uuid=E7C8B4DB-1B08-4FB2-9AC1-5875C462DA5E)
+- [Per-Browser Keyboard Shortcut Behaviors ~~Inconsistencies~~](drafts://open?uuid=7FB0D143-B87B-4BA7-BFE7-01B6DC87B4D3)
+- [Golden Quran |](drafts://open?uuid=EC6968E8-88B1-412D-BF67-90A9F68E4FCB) [المصحف](drafts://open?uuid=EC6968E8-88B1-412D-BF67-90A9F68E4FCB) [الذهبي](drafts://open?uuid=EC6968E8-88B1-412D-BF67-90A9F68E4FCB) [Documentation](drafts://open?uuid=EC6968E8-88B1-412D-BF67-90A9F68E4FCB)
+- [Continuing to Explore Social Ownership](drafts://open?uuid=3AD201C1-B1AF-4AF4-81FB-3037CA3E07FA)
+- [Writeas/WriteFreely iOS Publishing Workflow](drafts://open?uuid=B06358D8-2659-4450-A7AE-27BA0705A27C)
+- [Anecdote: The Unknowables of Modern Gasoline Dispensation](drafts://open?uuid=678B20C1-1D04-49C8-B29F-D273E1899CE1)
+- [Zhiyuan Zheng's Portfolio](drafts://open?uuid=F4539A6D-ACFA-42F3-9C0C-87F2CCB4C5BB)
+- [Capture Web Page in Markdown](drafts://open?uuid=47451873-C05C-45E3-B99F-F6C873899325)
+- [![Marco! Banner](https://i.snap.as/D6SijbwF.png)](<drafts://open?uuid=A71289ED-A37F-4178-8523-747A56E1F14B>)
+- [Imagining an Operating System Entirely Devoid of Automation](drafts://open?uuid=46B55726-1C06-4626-BE58-0E68AC87F17B)
+- [Keyboard shortcuts on iPad? | Drafts Community Thread](drafts://open?uuid=3AD318B0-5DBF-4F4D-BE3C-C76C31D3B96B)
+- [The Death of John McAfee](drafts://open?uuid=6CC2340E-5AE7-46BC-BEC1-561C5ED2A773)
+- [App Notes: The State of Mastodon Clients on iOS](drafts://open?uuid=865C62F2-3C6F-40C4-A07D-EF4A65572A1A)
+- [WWDC 2021](drafts://open?uuid=4E1FA4F0-01F6-4165-8439-5412B063C11B)
+- [Notes: Podcasting’s Last Month](drafts://open?uuid=CE8DDCEC-FB0D-4FD5-B911-F234395E36E2)
+- [![Big Boy; Big Phone](https://i.snap.as/KtqMF5Ky.jpg)](<drafts://open?uuid=4BD56000-A849-452E-9938-90128BBCC938>)
+- [Map My Drive for iOS](drafts://open?uuid=E2CA272F-3642-4496-99FA-D3977576DD2B)
+- [Notes: MapMyDrive for iOS](drafts://open?uuid=53F412B2-7352-455A-9D7B-94CFC8B9B936)
+- [Transcript: “On ‘Identity’”](drafts://open?uuid=B642CF33-6AD4-40DB-8410-90FD0AF85AF6)
+- [Notes: The State of Mastodon Clients on iOS](drafts://open?uuid=A831B815-C12C-4A00-BCFF-D88B7F0E05AC)
+- [Why I Didn't Follow You Back](drafts://open?uuid=7E18A2E7-6F94-4196-BC7A-CFB380E3FCC6)
+- [https://itunes.apple.com/us/app/id1415599567](drafts://open?uuid=13CE2D87-9951-464A-AABC-12750788C1AB)
+- [A Nauseous Plea for iterative terminology](drafts://open?uuid=F3E54744-0952-4836-BF04-2C7A8520D47D)
+- [I just discovered what a "Gist" is on GitHub](drafts://open?uuid=D10047DB-E6D6-4B36-8D36-8EC34B869525)
+- [Pitching Input](drafts://open?uuid=25803989-24FF-4EF1-B5D6-51D3DAD61B65)
+- [The Psalms' About Page Version 2.0](drafts://open?uuid=21EE648B-74B6-433C-BBCE-7281BB95F41C)
+- [In Defense of Just Fucking Around](drafts://open?uuid=84D6A7BD-4A17-44F7-A31A-67BFB0F446FF)
+- [Why I Write About Technology](drafts://open?uuid=40768A19-8D81-4A19-AC41-BCE3BC97C338)
+- [Revelations in Web Starvation](drafts://open?uuid=213B9E76-EF2C-4B34-B7CA-341E694E7BD3)
+- [Virtual Reality Virginity, Lost](drafts://open?uuid=46E9CED7-334D-4E2C-92DD-7AC6956A2CC0)
+- [Google Will Soon Replace God and The Church](drafts://open?uuid=DF5E8457-53A6-4423-B125-54CC8BF88251)
+- [Mark Fuck and the Goofy Godheads](drafts://open?uuid=DC58C318-F899-4165-9D7D-6F213F60D2C8)
+- [Why I Write About Technology](drafts://open?uuid=B554E17B-5310-4DCD-8F03-CB56859E249D)
+- [help](<shareddocuments:///private/var/mobile/Containers/Shared/AppGroup/837A7069-BE1B-4844-8AFB-CE151BFBBD11/File> Provider Storage/Shell/help.txt)
+[symbolnames](shareddocuments:///private/var/mobile/Containers/Data/PluginKitPlugin/8F4DA708-2288-4F6D-8A46-894FA59CD852/tmp/03EFD5E8-A666-422F-8091-857760A245FB/symbolnames.md)
+- [help](shareddocuments:///private/var/mobile/Containers/Shared/AppGroup/837A7069-BE1B-4844-8AFB-CE151BFBBD11/File%20Provider%20Storage/Shell/help.txt)
+- [iOSColors](shareddocuments:///private/var/mobile/Containers/Data/PluginKitPlugin/8F4DA708-2288-4F6D-8A46-894FA59CD852/tmp/94810C12-FA62-4BAF-8543-C63D8FBA75F0/iOSColors.css)%0A-%20[iOS Soundboard](shareddocuments%3A///private/var/mobile/Containers/Data/PluginKitPlugin/8F4DA708-2288-4F6D-8A46-894FA59CD852/tmp/E408F64A-0E1F-4E88-B68E-654B1D8EA4F5/iOS%2520Soundboard.shortcut)
+- [WFActionsplist](shareddocuments:///private/var/mobile/Containers/Data/PluginKitPlugin/8F4DA708-2288-4F6D-8A46-894FA59CD852/tmp/A3C5A16D-3064-4A22-AAAA-5851BB4DB503/WFActionsplist)
+
+sftp <blue@odette.local>:/zsh.txt
+
+cd Library/Mobile\\ Documents
+
+imessage -t hi -c [+15738234380](tel:+15738234380)
+
+ls -1 -d "$PWD/shortcutsrepo/signed/"\*
+
+<https://davidblue.wtf/shortcuts/batchshortcutssigner-ios.html>
+5
+
+I modified Federico’s Shortcut Injector to sign multiple shortcuts at a time (by folder.) I was even able to get [an over-ssh version](https://routinehub.co/shortcut/11467) working, though actually getting the resulting files back to the device is (at the moment, at least) beyond me. <https://routinehub.co/shortcut/11467>
+- Batch Shortcuts Signer (iOS): <https://routinehub.co/shortcut/11467>
+- Batch Shortcuts Signer (macOS): <https://routinehub.co/shortcut/11401>
+
+Tilde friend reminded me about [Low Tech Magazine](https://solar.lowtechmagazine.com). it’s been years!! how did I lose this bookmark‽‽‽
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 10:25:47*
+```
+https://solar.lowtechmagazine.com/
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 10:25:00*
+```
+https://ttm.sh/iVO.mp4
+
+1 item:
+
+Name:     **iVO.mp4**
+Size:     **Zero KB**
+Type ID:  **public.mpeg-4**
+<file:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Downloads/iVO.mp4>
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 10:10:26*
+```
+https://witch.solar/
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:07:44*
+```
+04012022-100744
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:07:20*
+```
+04912022-100720
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:05:48*
+```
+Apr 1, 2022 at 10:05
+```
+
+✅ **Success** | *Apr 1, 2022 at 10:04:55*
+```
+Apr 1, 2022 at 10:04
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 10:03:27*
+```
+04912022-100321
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 10:03:26*
+```
+{"Thermal State":"Nominal","OS":"Version 15.4.1 (Build 19E258)","Uptime":"35461","Active CPUs":"6","Brightness":"0.89925754070282"}
+
+1 item:
+
+Name:     **04912022-100321.png**
+Size:     **Zero KB**
+Type ID:  **public.png**
+<file:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Frames/04912022-100321.png>
+```
+
+✅ **Success** | *Apr 1, 2022 at 09:59:10*
+```
+SKATE OR DIE
+or
+SKATE OR DIE
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 09:51:45*
+```
+https://ttm.sh/tW3
+```
+
+🔴 **Error** | *Apr 1, 2022 at 09:50:30*
+```
+ttm.sh Shorten FAILURE
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 09:24:14*
+```
+Internal Server Error
+The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Internal Server Error
+The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 09:15:22*
+```
+https://www.youtube.com/watch?v=28w4S2XWJcg
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 09:14:38*
+```
+https://github.com/extratone/shortcuts
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 09:05:49*
+```
+https://davidblue.wtf/audio/ios/caf/PhotosMemoriesNotification.caf
+
+1 item:
+
+Name:     **PhotosMemoriesNotification.caf**
+Size:     **Zero KB**
+Type ID:  **com.apple.coreaudio-format**
+<file:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Downloads/PhotosMemoriesNotification.caf>
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 09:05:32*
+```
+https://davidblue.wtf/audio/ios/caf/PhotosMemoriesNotification.caf
+
+1 item:
+
+Name:     **PhotosMemoriesNotification.caf**
+Size:     **Zero KB**
+Type ID:  **com.apple.coreaudio-format**
+<file:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Downloads/PhotosMemoriesNotification.caf>
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 09:02:32*
+```
+https://davidblue.wtf/audio/ios/m4a/PhotosMemoriesNotification.m4a
+```
+
+✅ **Success** | *Apr 1, 2022 at 08:56:15*
+```
+April Fool:
+```
+
+ℹ️ **Info** | *Apr 1, 2022 at 07:23:17*
+```
+Push transmitted 59 Kbytes to origin/main.
+```
 
 ℹ️ **Info** | *Mar 31, 2022 at 21:29:41*
 ```
