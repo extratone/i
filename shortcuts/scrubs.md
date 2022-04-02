@@ -4,6 +4,7 @@ Updated `03102022-143959`
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
 - [Pastery](https://www.pastery.net/eujzmz/#eujzmz)
 - [WTF](https://davidblue.wtf/scrubs/)
+- [WTF2](https://davidblue.wtf/drafts/68F049EC-59AF-4A49-885F-698BB9653400.html)
 - [~](https://tilde.town/~extratone/scrubs/)
 - [r/davidblue](https://reddit.com/r/davidblue/comments/sir6pm/david_blues_world_famous_fast_n_loose_siri/)
 - [Siri Shortcut](https://routinehub.co/shortcut/10978/)
@@ -45,6 +46,7 @@ Updated `03102022-143959`
 - [DOWNLOAD](https://www.icloud.com/shortcuts/af5a886c9b044bf194dd52127a3939c3)
 - [Hex Encode](https://www.icloud.com/shortcuts/2b2d578f53d94c139f112b381f1642cb)
 - [NOW](https://www.icloud.com/shortcuts/c080b6245128491694875419160faec2)
+- [unique_fucks](https://www.icloud.com/shortcuts/0c654131c77240738a8a92073940f9d2)
 
 ## Music/Audio Delights
 
