@@ -1,0 +1,147 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4251333119,
+      "WFWorkflowIconGlyphNumber": 59392
+   },
+   "WFWorkflowClientVersion": "1146.11.1",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+      "Parameters": {}
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Append a Markdown-formatted link to Tot from the Share Sheet.\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getarticle",
+         "WFWorkflowActionParameters": {
+            "WFWebPage": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ExtensionInput"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F",
+                  "Type": "ActionOutput",
+                  "OutputName": "Article"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "URL",
+            "UUID": "35725F04-28EC-426D-B443-68DAF729C12D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.articles",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "5D1F72EB-AB59-4131-B0AB-728A6E88D81F",
+                  "Type": "ActionOutput",
+                  "OutputName": "Article"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "12A8F3A3-D9BD-4328-B9A0-2256ABA51C47"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "- [\uFFFC](\uFFFC)",
+                  "attachmentsByRange": {
+                     "{6, 1}": {
+                        "OutputUUID": "35725F04-28EC-426D-B443-68DAF729C12D",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     },
+                     "{3, 1}": {
+                        "OutputUUID": "12A8F3A3-D9BD-4328-B9A0-2256ABA51C47",
+                        "Type": "ActionOutput",
+                        "OutputName": "Title"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "05A5B46A-8B50-4CE0-9322-C0C9BB211EA8"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "05A5B46A-8B50-4CE0-9322-C0C9BB211EA8",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "51494570-64E4-40F0-82AA-08069AE6AB4E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.TotMobile.AddToDotIntent",
+         "WFWorkflowActionParameters": {
+            "at": "end",
+            "dot": 7,
+            "UUID": "1752650E-9412-4C6D-AC83-12AD9AFA7B14",
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "05A5B46A-8B50-4CE0-9322-C0C9BB211EA8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFArticleContentItem",
+      "WFSafariWebPageContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "dot",
+         "ActionIndex": 5,
+         "Text": "Choose a Dot",
+         "DefaultValue": 5
+      }
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [
+      "ActionExtension"
+   ],
+   "WFWorkflowHasShortcutInputVariables": true
+}
