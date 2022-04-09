@@ -16,6 +16,12 @@ Updated `04022022-163836`
 
 **All** of the Siri Shortcuts I’ve created or modified over the years and thought worthy of sharing, prioritizing those which I have not shared on either my [RoutineHub](https://routinehub.co/user/blue) or [ShareShortcuts](https://shareshortcuts.com/u/blue/) profiles. You shouldn’t encounter share URLS from *any* Shortcuts or File Shariing services, here - I thought a commitment to generating fresh `icloud.com/shortcuts`  URLs exclusively for this project would be in its best interest - I haven’t exactly been dilligently keeping track of them throughout the history of Siri Shortcuts as they’ve been exclusively shared this way…
 
+**Download the full David Blue Siri Shortcuts Suite™**
+- [Telegram](https://t.me/extratone/10876)
+- [.zip (iCloud Drive)](https://www.icloud.com/iclouddrive/090WZyVe9rGUJA_6MYUtA1Mdg#DavidBlueFullShortcutsSuite03312022-225743)
+- [.tar (iCloud Drive)](https://www.icloud.com/iclouddrive/055HG3do68dvVwLyqNmPeCBGw#DavidBlueFullShortcutsSuite03312022-225658)
+- [.7z (iCloud Drive)](https://www.icloud.com/iclouddrive/08amblz4oVhB71NErt_qIDQHQ#DavidBlueFullShortcutsSuite03312022-225936)
+
 ## Most Utilitarian (In Theory…)
 
 - [**screen**](https://www.icloud.com/shortcuts/6fa16145d1a649ceb878f141b8e595b7) - `https://www.icloud.com/shortcuts/6fa16145d1a649ceb878f141b8e595b7` 
