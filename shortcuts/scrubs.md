@@ -11,6 +11,7 @@ Updated `04022022-163836`
 - [Siri Shortcut iCloud Direct Link](https://www.icloud.com/shortcuts/83c7c4ec1fcf4b359f520d5124899e9d)
 - [Gist](https://gist.github.com/3f3748f2ee1cd0820ba099cb05809054)
 - [Telegram](https://t.me/extratone/10927)
+- [JSON format](https://tilde.town/~extratone/scrubs/scrubs.json)
 
 ![OMNIMEMOJI](https://i.snap.as/p8U6kW1g.png)
 
@@ -31,6 +32,7 @@ Updated `04022022-163836`
 - [gps](https://www.icloud.com/shortcuts/c22c676ab4ee4b98b5a49b6112957b3c)
 - [sl](https://www.icloud.com/shortcuts/7c3946b289a846cb9e63f0bdade93fa5) (The best Odesli quick share automation in history.)
 - [Unpaywall](https://www.icloud.com/shortcuts/5ba5aa17593e4524843d69866800adb2)
+- [Unpaywall 2](https://www.icloud.com/shortcuts/facc41cd490647fbb554a8babcfc0adf)
 - [TrippleTap Reminders](https://www.icloud.com/shortcuts/d17211cfac484c7f87ebd16b164ebce3)
 - [fuckaudio](https://www.icloud.com/shortcuts/726eb2a7877446f8a8dc681947ee8f48)
 - [Speedy Home Screen](https://www.icloud.com/shortcuts/4576d20841194a2e8c82569e7eecc9ec)
@@ -113,6 +115,7 @@ Updated `04022022-163836`
 - [TEETH](https://www.icloud.com/shortcuts/76cd68a3e30a413da0dc86e9b1c40aa7)
 - [Wii Shop Wednesday](https://www.icloud.com/shortcuts/37c4830c57c74a6a8980316dc14843dc)
 - [HEAT WAVE](https://www.icloud.com/shortcuts/ba35c18707a44601b198a938a54291c6)
+- [YŒDELÜDE](https://www.icloud.com/shortcuts/10836359757f472e9de25a17416db2ab)
 
 ## Text Fuck
 
