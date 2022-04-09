@@ -1,0 +1,420 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 946986751,
+      "WFWorkflowIconGlyphNumber": 59392
+   },
+   "WFWorkflowClientVersion": "1146.11",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Sync all 7 Tot Dots with specific Drafts.\n\nSee this shortcut’s corresponding GitHub Issue for more information: https://github.com/extratone/i/issues/181\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.GetDraftByUUIDIntent",
+         "WFWorkflowActionParameters": {
+            "uuid": "57AD10ED-5A99-438A-88E7-68C5F41D1564",
+            "UUID": "210FCFBF-F3A1-49D6-AD75-D306E07360A6"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.GetDraftByUUIDIntent",
+         "WFWorkflowActionParameters": {
+            "uuid": "C4E91F15-95BC-4858-8922-86FE9F8FD303",
+            "UUID": "710043F5-6988-4788-BC75-87DA132BA966"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.GetDraftByUUIDIntent",
+         "WFWorkflowActionParameters": {
+            "uuid": "2734FEC9-9F48-431C-9EAA-0C9D79A29D03",
+            "UUID": "1AB38CB4-6AC6-40CC-BFCA-B5C66EE9D54E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.GetDraftByUUIDIntent",
+         "WFWorkflowActionParameters": {
+            "uuid": "3F5439FD-8587-4F98-A6ED-598810B393D5",
+            "UUID": "78AA7EF7-1508-4493-9E13-249FDDDF9721"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.GetDraftByUUIDIntent",
+         "WFWorkflowActionParameters": {
+            "uuid": "6FB07C7A-41B6-4E40-8942-D82707E514B2",
+            "UUID": "15243B92-9048-4604-AE18-8C2F5B98B0BE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.GetDraftByUUIDIntent",
+         "WFWorkflowActionParameters": {
+            "uuid": "80F40208-15F0-4B84-9711-707E70D7D8A5",
+            "UUID": "ACFD3874-E3AD-4E7A-B6C8-28EE8BB89A31"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.GetDraftByUUIDIntent",
+         "WFWorkflowActionParameters": {
+            "uuid": "5D709EBE-3738-4436-B24D-3EF10914EC60",
+            "UUID": "1ECDDBE1-583A-4CBF-9464-E2B386570E9B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.Tot.GetDotIntent",
+         "WFWorkflowActionParameters": {
+            "UUID": "6BF9531D-B3A2-4837-8E42-11273F444E91"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.SetDraftIntent",
+         "WFWorkflowActionParameters": {
+            "draft": {
+               "Value": {
+                  "OutputUUID": "210FCFBF-F3A1-49D6-AD75-D306E07360A6",
+                  "Type": "ActionOutput",
+                  "OutputName": "Draft"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "tags": "dots",
+            "content": {
+               "Value": {
+                  "string": "# 1\n\uFFFC\n---\n`\uFFFC`",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMDDYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{4, 1}": {
+                        "OutputUUID": "6BF9531D-B3A2-4837-8E42-11273F444E91",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "D489EFF2-4D1C-422A-BCE2-342B0923BB8F",
+            "Show-tags": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.Tot.GetDotIntent",
+         "WFWorkflowActionParameters": {
+            "dot": 2,
+            "UUID": "793DF4A9-D493-44DD-93FA-CD2001C5A7B9"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.SetDraftIntent",
+         "WFWorkflowActionParameters": {
+            "draft": {
+               "Value": {
+                  "OutputUUID": "710043F5-6988-4788-BC75-87DA132BA966",
+                  "Type": "ActionOutput",
+                  "OutputName": "Draft"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "tags": "dots",
+            "content": {
+               "Value": {
+                  "string": "# 2\n\uFFFC\n---\n`\uFFFC`",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMDDYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{4, 1}": {
+                        "OutputUUID": "793DF4A9-D493-44DD-93FA-CD2001C5A7B9",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "7C4C90E6-479F-46D6-B739-6F0B06CE4D7E",
+            "Show-tags": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.Tot.GetDotIntent",
+         "WFWorkflowActionParameters": {
+            "dot": 3,
+            "UUID": "40F36045-8CC3-4B80-98B8-631A9C060D9A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.SetDraftIntent",
+         "WFWorkflowActionParameters": {
+            "draft": {
+               "Value": {
+                  "OutputUUID": "1AB38CB4-6AC6-40CC-BFCA-B5C66EE9D54E",
+                  "Type": "ActionOutput",
+                  "OutputName": "Draft"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "tags": "dots",
+            "content": {
+               "Value": {
+                  "string": "# 3\n\uFFFC\n---\n`\uFFFC`",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMDDYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{4, 1}": {
+                        "OutputUUID": "40F36045-8CC3-4B80-98B8-631A9C060D9A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "34FA9BBD-B3F3-4C58-8770-BD1DC0EC8C40",
+            "Show-tags": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.Tot.GetDotIntent",
+         "WFWorkflowActionParameters": {
+            "dot": 4,
+            "UUID": "FFDD3826-B91F-4122-8770-9D8C5FDFD74E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.SetDraftIntent",
+         "WFWorkflowActionParameters": {
+            "draft": {
+               "Value": {
+                  "OutputUUID": "78AA7EF7-1508-4493-9E13-249FDDDF9721",
+                  "Type": "ActionOutput",
+                  "OutputName": "Draft"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "tags": "dots",
+            "content": {
+               "Value": {
+                  "string": "# 4\n\uFFFC\n---\n`\uFFFC`",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMDDYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{4, 1}": {
+                        "OutputUUID": "FFDD3826-B91F-4122-8770-9D8C5FDFD74E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "742DB28C-B9C2-4D3B-AC35-284B97C4EE75",
+            "Show-tags": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.TotMobile.GetDotIntent",
+         "WFWorkflowActionParameters": {
+            "dot": 5,
+            "UUID": "C6668C79-CD4A-4578-B950-1AF8DFE3AEC8"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.SetDraftIntent",
+         "WFWorkflowActionParameters": {
+            "draft": {
+               "Value": {
+                  "OutputUUID": "15243B92-9048-4604-AE18-8C2F5B98B0BE",
+                  "Type": "ActionOutput",
+                  "OutputName": "Draft"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "tags": "dots",
+            "content": {
+               "Value": {
+                  "string": "# 5\n\uFFFC\n---\n`\uFFFC`",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMDDYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{4, 1}": {
+                        "OutputUUID": "C6668C79-CD4A-4578-B950-1AF8DFE3AEC8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "C60360C1-5D0A-4903-A891-1E681F4BE352",
+            "Show-tags": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.TotMobile.GetDotIntent",
+         "WFWorkflowActionParameters": {
+            "dot": 6,
+            "UUID": "4BEB5AF5-CD25-45B6-BAF2-0EEDFB8DE3D1"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.SetDraftIntent",
+         "WFWorkflowActionParameters": {
+            "draft": {
+               "Value": {
+                  "OutputUUID": "ACFD3874-E3AD-4E7A-B6C8-28EE8BB89A31",
+                  "Type": "ActionOutput",
+                  "OutputName": "Draft"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "tags": "dots",
+            "content": {
+               "Value": {
+                  "string": "# 6\n\uFFFC\n---\n`\uFFFC`",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMDDYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{4, 1}": {
+                        "OutputUUID": "4BEB5AF5-CD25-45B6-BAF2-0EEDFB8DE3D1",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "DEF4D6E4-A967-49C6-A3F3-DDCBF619B215",
+            "Show-tags": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.TotMobile.GetDotIntent",
+         "WFWorkflowActionParameters": {
+            "dot": 7,
+            "UUID": "32F9A49C-8951-45CA-8A7E-7FF21A2F170F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts-OSX.SetDraftIntent",
+         "WFWorkflowActionParameters": {
+            "draft": {
+               "Value": {
+                  "OutputUUID": "1ECDDBE1-583A-4CBF-9464-E2B386570E9B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Draft"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "tags": "dots",
+            "content": {
+               "Value": {
+                  "string": "# 7\n\uFFFC\n---\n`\uFFFC`",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMDDYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{4, 1}": {
+                        "OutputUUID": "32F9A49C-8951-45CA-8A7E-7FF21A2F170F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "EE19AF24-A769-4486-A3B1-B2D7CD716749",
+            "Show-tags": true
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
