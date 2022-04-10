@@ -96,6 +96,7 @@ Updated `04022022-163836`
 - [Minecraft Flying Tutorial](https://www.icloud.com/shortcuts/a1c368c909c741a2864d0dd747115354)
 - [Minecraft Flying Tutorial Ringtone](https://www.icloud.com/shortcuts/5f6570320d2c4097b815b56ba3df53f2)
 - [homedepot](https://www.icloud.com/shortcuts/3409ec23198c4f34a82f08a8b680bd1e)
+- [RIP0NYXHEART](https://www.icloud.com/shortcuts/c7c8f3865b3f455787c6e2017dd16699)
 
 ## Okay
 
