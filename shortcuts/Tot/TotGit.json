@@ -1,0 +1,285 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 2071128575,
+      "WFWorkflowIconGlyphNumber": 59846
+   },
+   "WFWorkflowClientVersion": "1146.12",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Git-enabled Dot sync with Working Copy.\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "tot",
+            "UUID": "80A1F7C5-1300-428B-A7C9-E977AAD81836"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "80A1F7C5-1300-428B-A7C9-E977AAD81836",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "repo"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "1A48453E-1A20-4D1E-BDE2-7EF0A64FD1F3",
+            "WFRepeatCount": 7,
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.iconfactory.TotMobile.GetDotIntent",
+         "WFWorkflowActionParameters": {
+            "dot": {
+               "Value": {
+                  "VariableName": "Repeat Index",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "8B980425-C2F2-47EA-9BD3-DA1358FDD094"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8B980425-C2F2-47EA-9BD3-DA1358FDD094",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "dots",
+            "UUID": "A7903158-9B7C-4B4D-A021-B2F074E65C43"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.WriteFileIntent",
+         "WFWorkflowActionParameters": {
+            "path": {
+               "Value": {
+                  "string": "\uFFFC.md",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Index",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "content": {
+               "Value": {
+                  "OutputUUID": "8B980425-C2F2-47EA-9BD3-DA1358FDD094",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "4D7B9397-15A5-4ADC-AD27-A7E677350798",
+            "repo": {
+               "Value": {
+                  "VariableName": "repo",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "mode": "overwrite"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.WriteFileIntent",
+         "WFWorkflowActionParameters": {
+            "path": {
+               "Value": {
+                  "string": "\uFFFC.txt",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Index",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "content": {
+               "Value": {
+                  "OutputUUID": "8B980425-C2F2-47EA-9BD3-DA1358FDD094",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "FBC4BBF2-6144-473B-AB4E-15BD00044BDD",
+            "repo": {
+               "Value": {
+                  "VariableName": "repo",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "mode": "overwrite"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "1A48453E-1A20-4D1E-BDE2-7EF0A64FD1F3",
+            "UUID": "A14D80FC-5870-4CEB-8DA0-A01DAF5FD2F6"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+         "WFWorkflowActionParameters": {
+            "UUID": "C471B5DE-2427-44D1-8C09-788C4172AA5C",
+            "text": {
+               "Value": {
+                  "VariableName": "dots",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "Show-text": true
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.WriteFileIntent",
+         "WFWorkflowActionParameters": {
+            "path": "dots.md",
+            "content": {
+               "Value": {
+                  "OutputUUID": "C471B5DE-2427-44D1-8C09-788C4172AA5C",
+                  "Type": "ActionOutput",
+                  "OutputName": "Combined Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "7861A35E-FDD0-4D4E-9114-3B220BACFCAC",
+            "repo": {
+               "Value": {
+                  "VariableName": "repo",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "mode": "overwrite"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "Tot Git - \uFFFC",
+                  "attachmentsByRange": {
+                     "{10, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMDDYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "60483952-1633-4857-9729-285F62F438A4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.CommitRepositoryIntent",
+         "WFWorkflowActionParameters": {
+            "message": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "60483952-1633-4857-9729-285F62F438A4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "9FF29845-DC8C-4577-93CD-AAA2BD53A4A1",
+            "repo": {
+               "Value": {
+                  "VariableName": "repo",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "failNothing": false
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.PushRepositoryIntent",
+         "WFWorkflowActionParameters": {
+            "remote": " Default ",
+            "repo": {
+               "Value": {
+                  "VariableName": "repo",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "81F4399C-0827-427C-B3A3-E67690F9A317"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+         "WFWorkflowActionParameters": {
+            "messages": {
+               "Value": {
+                  "OutputUUID": "81F4399C-0827-427C-B3A3-E67690F9A317",
+                  "Type": "ActionOutput",
+                  "OutputName": "Status"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "title": "Tot Git",
+            "UUID": "105E9A5A-E0A5-409E-8290-1390C769AC3F",
+            "Show-messages": true,
+            "tag": "Git"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 1,
+         "Text": "Set path to target repository in Working Copy. (Just the case-sensitive name of the repo unless it’s in a folder.)",
+         "DefaultValue": "tot"
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
