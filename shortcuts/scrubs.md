@@ -57,6 +57,7 @@ Updated `04022022-163836`
 - [NOW](https://www.icloud.com/shortcuts/c080b6245128491694875419160faec2)
 - [unique_fucks](https://www.icloud.com/shortcuts/0c654131c77240738a8a92073940f9d2)
 - [Save to PodQueue](https://www.icloud.com/shortcuts/2665e5d29eed4096a122c4e8492e8bc9)
+- [QuikTweet](https://www.icloud.com/shortcuts/0d89703532644f069f703f76ceddb42e)
 
 ## Music/Audio Delights
 
@@ -81,6 +82,7 @@ Updated `04022022-163836`
 - [Angel](https://www.icloud.com/shortcuts/24d7c6dc0214495cb6303509575472d1)
 - [Dinkus](https://www.icloud.com/shortcuts/5a86dd533fc34e1193a7fec67fdf0b63)
 - [OSHA](https://www.icloud.com/shortcuts/c53b8e2f3d794da58445fa2806034f4b)
+- [DANCE IN SPACE](https://www.icloud.com/shortcuts/e47673521f5f4b8ab1b60cac82cf1019)
 
 ## Personal/Brand
 
