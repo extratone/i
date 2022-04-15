@@ -1,10 +1,10 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `04022022-163836`
+Updated `04142022-060259`
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
 - [Pastery](https://www.pastery.net/eujzmz/#eujzmz)
-- [WTF](https://davidblue.wtf/scrubs/)
-- [WTF2](https://davidblue.wtf/drafts/68F049EC-59AF-4A49-885F-698BB9653400.html)
+- [WTF](https://davidblue.wtf/drafts/68F049EC-59AF-4A49-885F-698BB9653400.html)
+- [WTF Redirect](https://davidblue.wtf/scrubs/) - `https://davidblue.wtf/scrubs`
 - [~](https://tilde.town/~extratone/scrubs/)
 - [r/davidblue](https://reddit.com/r/davidblue/comments/sir6pm/david_blues_world_famous_fast_n_loose_siri/)
 - [Siri Shortcut](https://routinehub.co/shortcut/10978/)
@@ -58,6 +58,8 @@ Updated `04022022-163836`
 - [unique_fucks](https://www.icloud.com/shortcuts/0c654131c77240738a8a92073940f9d2)
 - [Save to PodQueue](https://www.icloud.com/shortcuts/2665e5d29eed4096a122c4e8492e8bc9)
 - [QuikTweet](https://www.icloud.com/shortcuts/0d89703532644f069f703f76ceddb42e)
+- [DraftsSnapas](https://www.icloud.com/shortcuts/8bc52994196f48168a3a1d77e982b2ea)
+- [SpaceWall-DavodMod](https://www.icloud.com/shortcuts/23f9214990314dacad6badf642791afb)
 
 ## Music/Audio Delights
 
