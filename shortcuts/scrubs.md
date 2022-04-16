@@ -121,6 +121,7 @@ Updated `04142022-060259`
 - [Wii Shop Wednesday](https://www.icloud.com/shortcuts/37c4830c57c74a6a8980316dc14843dc)
 - [HEAT WAVE](https://www.icloud.com/shortcuts/ba35c18707a44601b198a938a54291c6)
 - [YŒDELÜDE](https://www.icloud.com/shortcuts/10836359757f472e9de25a17416db2ab)
+- [5](https://www.icloud.com/shortcuts/d966618ebaa846e784651afdefaa006d)
 
 ## Text Fuck
 
