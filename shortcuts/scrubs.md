@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `04142022-060259`
+Updated `04252022-153946`
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
 - [Pastery](https://www.pastery.net/eujzmz/#eujzmz)
@@ -85,6 +85,7 @@ Updated `04142022-060259`
 - [Dinkus](https://www.icloud.com/shortcuts/5a86dd533fc34e1193a7fec67fdf0b63)
 - [OSHA](https://www.icloud.com/shortcuts/c53b8e2f3d794da58445fa2806034f4b)
 - [DANCE IN SPACE](https://www.icloud.com/shortcuts/e47673521f5f4b8ab1b60cac82cf1019)
+- [DUGA](https://www.icloud.com/shortcuts/d2e917d2e6274fc8bbc4f29089853670)
 
 ## Personal/Brand
 
