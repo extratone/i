@@ -1,0 +1,508 @@
+{
+  "cursor" : {
+    "shiftLoc" : 0,
+    "controlLoc" : 0,
+    "optionLoc" : 0,
+    "keys" : [
+      "91:1"
+    ],
+    "commandLoc" : 1,
+    "action" : {
+      "type" : "none"
+    }
+  },
+  "option" : {
+    "right" : {
+      "code" : {
+        "code" : "AltRight",
+        "id" : "18:2",
+        "key" : "Alt",
+        "keyCode" : 18
+      },
+      "down" : "",
+      "up" : "",
+      "ignoreAccents" : true,
+      "mod" : ""
+    },
+    "same" : true,
+    "left" : {
+      "code" : {
+        "code" : "AltLeft",
+        "id" : "18:1",
+        "key" : "Alt",
+        "keyCode" : 18
+      },
+      "down" : "",
+      "up" : "",
+      "ignoreAccents" : true,
+      "mod" : ""
+    }
+  },
+  "shortcuts" : [
+    {
+      "input" : "c",
+      "action" : {
+        "type" : "command",
+        "value" : "clipboardCopy"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "v",
+      "action" : {
+        "type" : "command",
+        "value" : "clipboardPaste"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "n",
+      "action" : {
+        "type" : "command",
+        "value" : "windowNew"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "w",
+      "action" : {
+        "type" : "command",
+        "value" : "windowClose"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "o",
+      "action" : {
+        "type" : "command",
+        "value" : "windowFocusOther"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "t",
+      "action" : {
+        "type" : "command",
+        "value" : "tabNew"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "w",
+      "action" : {
+        "type" : "command",
+        "value" : "tabClose"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "]",
+      "action" : {
+        "type" : "command",
+        "value" : "tabNext"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "UIKeyInputRightArrow",
+      "action" : {
+        "type" : "command",
+        "value" : "tabNext"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "[",
+      "action" : {
+        "type" : "command",
+        "value" : "tabPrev"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "UIKeyInputLeftArrow",
+      "action" : {
+        "type" : "command",
+        "value" : "tabPrev"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "o",
+      "action" : {
+        "type" : "command",
+        "value" : "tabMoveToOtherWindow"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "=",
+      "action" : {
+        "type" : "command",
+        "value" : "zoomIn"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "-",
+      "action" : {
+        "type" : "command",
+        "value" : "zoomOut"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : ",",
+      "action" : {
+        "type" : "command",
+        "value" : "configShow"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "u",
+      "action" : {
+        "type" : "command",
+        "value" : "selectionShare"
+      },
+      "modifiers" : 524288
+    },
+    {
+      "input" : "g",
+      "action" : {
+        "type" : "command",
+        "value" : "selectionGoogle"
+      },
+      "modifiers" : 524288
+    },
+    {
+      "input" : "0",
+      "action" : {
+        "type" : "command",
+        "value" : "zoomReset"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "\t",
+      "action" : {
+        "type" : "command",
+        "value" : "tabNextCycling"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "\t",
+      "action" : {
+        "type" : "command",
+        "value" : "tabPrevCycling"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "s",
+      "action" : {
+        "type" : "command",
+        "value" : "selectionStackOverflow"
+      },
+      "modifiers" : 655360
+    },
+    {
+      "input" : "1",
+      "action" : {
+        "type" : "command",
+        "value" : "tab1"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "2",
+      "action" : {
+        "type" : "command",
+        "value" : "tab2"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "3",
+      "action" : {
+        "type" : "command",
+        "value" : "tab3"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "4",
+      "action" : {
+        "type" : "command",
+        "value" : "tab4"
+      },
+      "modifiers" : 1048576
+    },
+    {
+      "input" : "\t",
+      "action" : {
+        "type" : "command",
+        "value" : "tabLast"
+      },
+      "modifiers" : 1179648
+    },
+    {
+      "input" : "k",
+      "action" : {
+        "type" : "command",
+        "value" : "toggleKeyCast"
+      },
+      "modifiers" : 786432
+    },
+    {
+      "input" : "t",
+      "action" : {
+        "type" : "hex",
+        "value" : "7373682054696C64652E546F776E2026206364207075626C69635F68746D6C"
+      },
+      "modifiers" : 786432
+    },
+    {
+      "input" : "-",
+      "action" : {
+        "type" : "hex",
+        "value" : "726D20696E6465782E68746D6C"
+      },
+      "modifiers" : 524288
+    },
+    {
+      "input" : "=",
+      "action" : {
+        "type" : "hex",
+        "value" : "6E616E6F20696E6465782E68746D6C"
+      },
+      "modifiers" : 524288
+    },
+    {
+      "input" : "UIKeyInputRightArrow",
+      "action" : {
+        "type" : "hex",
+        "value" : "6364207075626C69635F68746D6C202626206C73"
+      },
+      "modifiers" : 1572864
+    },
+    {
+      "input" : "UIKeyInputLeftArrow",
+      "action" : {
+        "type" : "hex",
+        "value" : "6364202E2E"
+      },
+      "modifiers" : 1572864
+    },
+    {
+      "input" : "c",
+      "action" : {
+        "type" : "hex",
+        "value" : "7C207062636F7079"
+      },
+      "modifiers" : 786432
+    },
+    {
+      "input" : "i",
+      "action" : {
+        "type" : "hex",
+        "value" : "696E6465786D65"
+      },
+      "modifiers" : 524288
+    },
+    {
+      "input" : "\b",
+      "action" : {
+        "type" : "hex",
+        "value" : "686973746F7279202D63"
+      },
+      "modifiers" : 917504
+    },
+    {
+      "input" : "h",
+      "action" : {
+        "type" : "hex",
+        "value" : "2D2D68656C70"
+      },
+      "modifiers" : 524288
+    },
+    {
+      "input" : "s",
+      "action" : {
+        "type" : "hex",
+        "value" : "7863616C6C2073686F7274637574733A2F2F72756E2D73686F72746375743F6E616D653D"
+      },
+      "modifiers" : 1572864
+    },
+    {
+      "input" : "o",
+      "action" : {
+        "type" : "hex",
+        "value" : "6F70656E75726C2068747470733A2F2F74696C64652E746F776E2F7E6578747261746F6E652F"
+      },
+      "modifiers" : 1572864
+    },
+    {
+      "input" : "u",
+      "action" : {
+        "type" : "hex",
+        "value" : "6375726C202D462066696C653D402068747470733A2F2F74746D2E7368207C207062636F7079207C207863616C6C2073686F7274637574733A2F2F72756E2D73686F72746375743F6E616D653D74746D"
+      },
+      "modifiers" : 393216
+    },
+    {
+      "input" : "i",
+      "action" : {
+        "type" : "hex",
+        "value" : "6364204C6962726172792F4D6F62696C655C20446F63756D656E7473"
+      },
+      "modifiers" : 393216
+    },
+    {
+      "input" : "f",
+      "action" : {
+        "type" : "hex",
+        "value" : "7863616C6C202D612073686F7274637574733A2F2F72756E2D73686F72746375743F6E616D653D5370656564792532304672616D6573"
+      },
+      "modifiers" : 917504
+    },
+    {
+      "input" : "n",
+      "action" : {
+        "type" : "hex",
+        "value" : "6375726C202D4620226D6973632F2E7478743D402E74787422202268747470733A2F2F6461766964626C75653A584869475047794A506362696F32406E656F6369746965732E6F72672F6170692F75706C6F616422"
+      },
+      "modifiers" : 1703936
+    },
+    {
+      "input" : "b",
+      "action" : {
+        "type" : "hex",
+        "value" : "7863616C6C202D6120626561723A2F2F782D63616C6C6261636B2D75726C2F677261622D75726C3F75726C3D"
+      },
+      "modifiers" : 917504
+    },
+    {
+      "input" : "=",
+      "action" : {
+        "type" : "hex",
+        "value" : "5365742D457865637574696F6E506F6C696379202D457865637574696F6E506F6C69637920416C6C5369676E6564202D53636F70652043757272656E7455736572"
+      },
+      "modifiers" : 393216
+    },
+    {
+      "input" : "r",
+      "action" : {
+        "type" : "hex",
+        "value" : "72656672657368656E76"
+      },
+      "modifiers" : 1179648
+    }
+  ],
+  "fn" : {
+    "shiftLoc" : 1,
+    "controlLoc" : 2,
+    "optionLoc" : 0,
+    "keys" : [
+      "16:1"
+    ],
+    "commandLoc" : 0,
+    "action" : {
+      "type" : "none"
+    }
+  },
+  "capsLock" : {
+    "code" : {
+      "code" : "CapsLock",
+      "id" : "20:0",
+      "key" : "CapsLock",
+      "keyCode" : 20
+    },
+    "down" : "",
+    "up" : "",
+    "ignoreAccents" : true,
+    "mod" : ""
+  },
+  "shift" : {
+    "right" : {
+      "code" : {
+        "code" : "ShiftRight",
+        "id" : "16:2",
+        "key" : "Shift",
+        "keyCode" : 16
+      },
+      "down" : "",
+      "up" : "",
+      "ignoreAccents" : true,
+      "mod" : "Shift"
+    },
+    "same" : true,
+    "left" : {
+      "code" : {
+        "code" : "ShiftLeft",
+        "id" : "16:1",
+        "key" : "Shift",
+        "keyCode" : 16
+      },
+      "down" : "",
+      "up" : "",
+      "ignoreAccents" : true,
+      "mod" : "Shift"
+    }
+  },
+  "command" : {
+    "right" : {
+      "code" : {
+        "code" : "MetaRight",
+        "id" : "93:2",
+        "key" : "Meta",
+        "keyCode" : 93
+      },
+      "down" : "",
+      "up" : "",
+      "ignoreAccents" : true,
+      "mod" : ""
+    },
+    "same" : true,
+    "left" : {
+      "code" : {
+        "code" : "MetaLeft",
+        "id" : "91:1",
+        "key" : "Meta",
+        "keyCode" : 91
+      },
+      "down" : "",
+      "up" : "",
+      "ignoreAccents" : true,
+      "mod" : ""
+    }
+  },
+  "control" : {
+    "right" : {
+      "code" : {
+        "code" : "ControlRight",
+        "id" : "17:2",
+        "key" : "Control",
+        "keyCode" : 17
+      },
+      "down" : "",
+      "up" : "",
+      "ignoreAccents" : true,
+      "mod" : "Control"
+    },
+    "same" : true,
+    "left" : {
+      "code" : {
+        "code" : "ControlLeft",
+        "id" : "17:1",
+        "key" : "Control",
+        "keyCode" : 17
+      },
+      "down" : "",
+      "up" : "",
+      "ignoreAccents" : true,
+      "mod" : "Control"
+    }
+  }
+}

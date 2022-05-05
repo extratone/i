@@ -1,0 +1,1131 @@
+clear
+say beep
+mosh Tilde.Town
+ssh Tilde.Town
+ssh Odette
+echo -e "\033]9;Text to show\a"
+echo -e "\033]777;notify;Title;Body of the notification\a"
+clear
+ssh Tilde.Town
+mosh Tilde.Town
+geo current
+help list-commands
+ssh Ocean
+mosh Tilde.Town
+ssh Tilde.Town
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~juspib
+openurl https://tilde.town/~extratone/fuck
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/astrology
+geo stop
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+clear
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/draftsidian
+clear
+ssh Tilde.Town & cd public_html
+ssh Tilde.Town
+ssh Tilde.Town && cd public_html
+ls
+ls | pbcopy
+clear
+indexme
+clear
+ed .
+geo stop
+cd public_html && ls
+ssh Tilde.Town
+ed 0a
+ed
+ssh Tilde.Town
+mosh Tilde.Town
+xcall shortcuts://run-shortcut?name=kbia
+xcall shortcuts://run-shortcut?name=a
+xcall -b shortcuts://run-shortcut?name=
+xcall -b shortcuts://run-shortcut?name=a
+xcall -ap shortcuts://run-shortcut?name=a
+xcall -j shortcuts://run-shortcut?name=a
+xcall -i shortcuts://run-shortcut?name=a
+xcall shortcuts://run-shortcut?name=a
+openurl https://tilde.town/~extratone/
+ssh Tilde.Town
+help list-commands
+sed
+geo stop
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/drafts/counts
+help list-commands
+mosh Tilde.Town
+ssh davod@192.168.0.32
+ssh Sophie
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/periscop
+openurl https://tilde.town/~extratone/misc
+openurl https://tilde.town/~extratone/misc/fuckoff
+openurl https://tilde.town/~extratone/resisted
+openurl https://tilde.town/~extratone/drafts/big
+openurl https://tilde.town/~extratone/drafts/counts
+help list-commands
+ssh Tilde.Town
+code Tilde.Town:~/public_html/vocabulary/foppish.html
+openurl https://tilde.town/~extratone/vocabulary
+help list-commands
+host
+host bilge.world
+ifconfig
+ifconfig | pbcopy
+clear
+help list-commands
+xcall shortcuts://run-shortcut?name=ts
+help list-commands
+openurl https://tilde.town/~extratone/
+clear
+j
+clear
+openurl https://tilde.town/~extratone/
+mosh Tilde.Town
+ssh Tilde.Town
+help list-commands
+ssh Tilde.Town
+openurl https://evennia.com
+ssh Tilde.Town
+help list-commands
+uptime
+mosh Tilde.Town
+ssh Tilde.Town
+help list-commands
+whois uikeycommand.com
+help list-commands
+mosh Tilde.Town
+ssh HILDUR
+help list-commands
+clear
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/manual/tweetbotschemes.html
+help list-commands
+mosh Tilde.Town
+openurl https://spam.biz
+link-files
+ls
+link-files
+ls
+cd CLI
+ls
+rm tb.shortcut tb.plist
+ls
+open tb.plist
+ls
+mv ts.shortcut ts.plist
+clear
+ssh HILDUR
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/drafts/big
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/fuck
+mosh Tilde.Town
+openurl https://tilde.town/~extratone/interview
+ssh Tilde.Town
+mosh Tilde.Town
+ssh Tilde.Town
+help list-commands
+du
+ssh Tilde.Town
+uptime
+mosh Tilde.Town
+openurl https://tilde.town/~extratone/robots.txt
+help list-commands
+mosh Tilde.Town
+ssh T
+ssh Tilde.Town
+mosh Tilde.Town
+openurl https://tilde.town/~extratone/misc/iPhone360.pdf
+mosh Tilde.Town
+ssh Ocean
+ssh Tilde.Town
+mosh Tilde.Town
+ssh Odette
+help list-commands
+mosh Tilde.Town
+ssh Odette
+link-files
+ls
+cd mickey
+cd images
+ls
+curl -F'file=@wirelesscharger.png' https://ttm.sh
+curl -F'file=@wirelesscharger.png https://ttm.sh
+ssh Tilde.Town
+geo track
+openurl https://tilde.town/~extratone/icons/goose
+link-files
+ls
+cd Frames
+ls
+curl -F'file=@ukraine-iconfactory.png' https://ttm.sh
+curl -F'file=@ukraine-iconfactory.png https://ttm.sh
+link-files
+ls
+cd
+link-files
+ls
+cd .ssh
+ls
+link-files
+ls
+cd
+ls
+cd File\ Provider\ Storage
+ls
+cd .ssh
+du
+cd /.ssh
+cd /.Dev
+cd ./Dev
+ls
+pwd
+cd ..
+cd ./ssh
+cd ~/.ssh/authorized_keys
+mkdir ~/.ssh
+cd ~/.ssh
+ls
+nano authorized_keys
+cd .ssh
+ls
+cd ..
+ls
+cd File\ Provider\ Storage
+ls
+mv authorized_keys ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwmgUkpKlRCPDarb9IzUw/bvuGoVwyL/UKXTcFDOlW0JEfiHT3o1/OeBTVAa14lSetIgc4LjaWtWUnvc/aln8c8cfWyY6BYE7+P1zwZ8ZtGi8Jxdyc5RTCsUf826ntcoDtSCRiUP2HddJhKKpn+JqChe4w/H80ugASeIeGrVdSekj7WEalijompMP0G7TtTQyLEPNHUVvquxpf3wVPsk5dRuri8kmNBHW/3uMWJBMnXISH5W+8BAC2eBBaOBCFd2YI9Re5GVuH3MV39KuSbRICgOO90hud5tJwBNs7l/L9bmMUwEW7y3G+vSSNMA4hb0WtIBM5dfvAZFPcirmdSBAn`
+mv authorized_keys ~/.ssh/authorized_keys
+ssh Tilde.Town
+cd
+ls
+https://ttm.sh/iOk.txt
+curl -F'file=@test.txt` https://ttm.sh
+curl -F test.txt https://ttm.sh
+curl --manual | pbcopy
+curl -F file=@test.txt https://ttm.sh
+ls
+cd Frames
+ls
+curl -F file=@test.txt https://ttm.sh
+curl -F file=@temp.png https://ttm.sh
+curl -F file=@q.png https://ttm.sh | xargs openurl
+ssh Ocean
+ls
+curl -F file=@ascii.jpg https://ttm.sh | pbcopy
+ls
+cd mickey
+ls
+cd au
+cd audio
+ls
+curl -F file=@tap.caf https://ttm.sh | xargs openurl
+ls
+curl -F file=@tap.m4a https://ttm.sh | xargs openurl
+xcall shortcuts://run-shortcut?name=symbol
+shortcuts://run-shortcut?name=ttn
+ls
+cd File\ Provider\ Storage
+lw
+ls
+curl -F file=@zalgo.txt https://ttm.sh | pbcopy | xcall shortcuts://run-shortcut?name=ttm
+cd File\ Provider\ Storage
+ls
+cd File\ Provider\ Storage
+ls
+cd Frames
+ls
+curl -F file=@frames91.png https://ttm.sh | pbcopy | xcall shortcuts://run-shortcut?name=ttm
+echo https://ttm.sh | pbcopy | xargs openurl | xcall shortcuts://run-shortcut?name=ttm
+echo https://ttm.sh | pbcopy | xargs openurl && xcall shortcuts://run-shortcut?name=ttm
+pwd
+pwd | pbcopy
+pwd
+pwd | xargs pbcopy
+pwd
+geo stop
+pwd | pbcopy
+ls
+cd
+ls
+cd ..
+ls
+cd iCloud
+pwd
+cd
+cd Documents
+pwd
+ls
+openurl file:///private/var/mobile/Containers/Shared/AppGroup/BD66D790-A3BC-4162-AA7D-7E4FFB86F0D9/home
+open file:///private/var/mobile/Containers/Shared/AppGroup/BD66D790-A3BC-4162-AA7D-7E4FFB86F0D9/home
+link .ssh what.txt
+link --help
+cd
+link test.txt
+link-files
+cd She
+cd Shw
+cd Shell
+ls
+mkfile
+cd
+link test.txt Shell/test.txt
+readlink test.txt
+open test.txt
+mosh Tilde.Town
+openurl https://tilde.town/~extratone/drafts/autocompletes
+ifconfig
+ping bilge.world
+ping 192.168.0.1
+mosh Ti`
+mosh Tilde.Town
+openurl file:///private/var/mobile/Containers/Shared/AppGroup/837A7069-BE1B-4844-8AFB-CE151BFBBD11/File%20Provider%20Storage/Tech%201.json
+open file:///private/var/mobile/Containers/Shared/AppGroup/837A7069-BE1B-4844-8AFB-CE151BFBBD11/File%20Provider%20Storage/Tech%201.json
+cd /private/var/mobile/Containers/Shared/AppGroup/837A7069-BE1B-4844-8AFB-CE151BFBBD11/File Provider Storage/
+ls
+link-files /private/var/mobile/Containers/Shared/AppGroup/837A7069-BE1B-4844-8AFB-CE151BFBBD11/File Provider Storage/Tech.json
+ls
+blinkshell://run?key=361DC9
+blinkshell://run?key=361DC9&cmd=du
+xcall blinkshell://run?key=361DC9&cmd=du
+du
+xcall blinkshell://run?key=361DC9&cmd=du | pbcopy
+du
+ssh Tilde.Town
+ping http://192.168.0.1/
+ping 192.168.0.32
+ping 192.168.0.`
+ping 192.168.0.1
+mosh Tilde.Town
+ssh Tilde.Town
+mosh Tilde.Town
+geo track
+ssh Tilde.Town
+ssh Odette
+d
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/misc/zachary7829
+geo stop
+mosh Tilde.Town
+geo track
+mosh Tilde.Town
+curl -F'url=https://tilde.town/~extratone/images/bug.png' http://ttm.sh
+curl -F url=https://tilde.town/~extratone/images/bug.png http://ttm.sh
+link-files
+ls
+cd 1
+cd 1Tot
+ls
+curl -F file=@bug.png https://ttm.sh | pbcopy
+clear
+geo track
+ssh Tilde.Town
+ssh Odette
+ping 192.168.0.40
+ssh blue@192.168.0.40
+curl -F url=@https://davidblue.wtf/shortcuts/manpage.pdf https://ttm.sh | pbcopy
+curl -F url=@https://davidblue.wtf/neocities.gif https://ttm.sh | pbcopy
+curl -F url=https://davidblue.wtf/neocities.gif https://ttm.sh | pbcopy
+curl -F url=https://davidblue.wtf/neocities.gif https://ttm.sh
+ls
+ssh Odette
+mosh Odette
+ssh Odette
+ls
+udptunnel
+udptunnel --help
+scp Odette.local:"~/sitemap.xml" .
+scp Odette.local:"~sitemap.xml" .
+scp Odette.local:"~/zsh.txt" .
+scp Odette.local:"/Users/blue/zsh.txt" .
+scp Odette.local:"/Users/blue/." .
+scp --help
+blink-copy-command Odette.local:"/Users/blue/." .
+help list-commands
+fcp
+fcp Odette.local:"/Users/blue/." .
+fcp Odette.local:"/Users/blue/zsh.txt" .
+ssh Odette
+geo track
+ssh Tilde.Town
+code Tilde.Town:~/nano
+help list-commands
+printenv | pbcopy
+help list-commands
+scp extratone@tilde.town:.nanorc .
+scp extratone@tilde.town
+scp tilde.town:"~/sitemap.xml" .
+ssh-agent
+ssh Tilde.Town
+fcp
+fcp extratone@tilde.town
+fcp extratone@tilde.town:.nanorc .
+ssh --help
+ss
+ssh -L . Tilde.Town
+ssh -L 22 Tilde.Town
+geo stop
+help list-commands
+geo track
+mosh Tilde.Town
+geo stop
+geo track
+mosh Tilde.Town
+GEO STOP
+geo stop
+mosh Tilde.Town
+help list-commands
+ssh Tilde.Town
+uptime
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+geo stop
+geo track
+mosh Tilde.Town
+ssh Odette
+help list-commands
+fcp --help
+ssh Odette
+ls
+rm test.txt
+ls
+man sftp
+ls
+cd Documents
+ls
+cd ..
+ls
+ls -a
+cd .
+ls
+cd iCloud
+ls
+cd
+ls
+cd Documents
+ls
+cd .blink
+ls
+cd
+cd .blink
+ls
+open fileprovider.log
+mosh Odette
+ssh Odette
+mosh Odette
+ssh Odette
+telnet towel.blinkenlights.nl
+geo stop
+mosh Tilde.Town
+mosh Odette
+ssh Odette
+telnet blue@odette.local
+ssh Odette
+ls
+rm idbrek
+rm idbreak
+open .
+rm *
+ls
+link-files
+ls
+cd com~apple~CloudDocs
+ls
+ls -a | pbcopy
+du
+ls
+cd PBUILDER
+ls
+cd UNCATEGORIZED
+ls
+open at.badge.plus\ 2.png
+rm *
+cd ..
+ls
+rmdir UNCATEGORIZED
+cd UNCATEGORIZED
+ls
+ls -a
+cd
+ls
+link-files
+ls
+cd File\ Provider\ Storage
+ls
+ls -a | pbcopy
+./writeas
+chflags --help
+chmod
+link-files
+ls
+cd iOSSystemSounds
+ls -a
+ls -r
+ls -R
+ls -R | pbcopy
+help list-commands
+geo track
+mosh Tilde.Town
+ssh Odette
+ssh Tilde.Town
+open url https://tilde.town/~extratone/blimp
+openurl https://tilde.town/~extratone/blimp
+ssh Odette
+ssh Tilde.Town
+geo stop
+mosh Tilde.Town
+ssh
+ssh Tilde.Town
+ssh Odette
+geo track
+mosh Tilde.Town
+help list-commands
+ls
+ssh Odette
+ssh Tilde.Town
+xcall shortcuts://run-shortcut?name=Speedy%20Frames
+curl -F shorten=https://gist.github.com/extratone/8b762de50de414f8a4be05f9b0407fd8 https://ttm.sh
+curl -F shorten=https://itty.bitty.site/#Blimp’s_Burden%2C_Chapter_VI/?XQAAAALNAwAAAAAAAAAeGIPEI463xk5nWvlKK7ndMueP2EuN4xSiagSrQAXmP/BLAp9eHkbesJG16Xffyls306lZ+FcUtzxqG9yFsxYbFcFYS9qCV9ZnzfQEhvIECvyjI7m/A7vKebt7kmqB/3QMBpiVJtEVHixmc21k49FMuHuy/20QAMT0kZSlvd2xiQ+cPMhIJXzzli7r8CrXZGquGalAlQf2Ak0jwjJcvAH3rl8/e/wAMsum5QoNCGwXNNvU5EEIhD7cTsc4/fZt8ez4/3cql2chHBGCG/Zd43H+RfSStpP/H+YOOHsbXMj7DD61+84bgZAHv5GsDBhUj6CUOGKnfnhil4uGqZE6M2u9puxhRYpX511nkcXZ4tfjAGHUAHErDRP1qBYpsqzom7Uxjlp2wuE9B6aUeBeT2kDBW7IeYAXOZt0k+illQJfA4C8vQzRcMJXtKJW8NT1JmpkWg1XjQMfG7vhkHffgLdwxnRvQnaYPbMIDCZMS4AhhgsHa86RKXSkGAoJtpTepEdpZf1JPRAjW5ZGh7XPZ/yVR0rsOKccmuzoWZn2qk22cmp1q12uPxbYBTh6DB3hFeKIwow0OkkPHYh46TbPN/ErxQ4RSoc2nG7cMhaA495dQSAc9UHxC4kL1CgUcxHUdlkNvVfonN3zlRMFvhB88fqbmO09aZ96JIqS+UOQxaSB5ljaCt4UYvQzxNCVS6RbEHB5Oe/983WaXNQNAGpEwfhYTQnXnA6cbqeGtQ/01KTj5717w6IbOoHcfAoN9Z2NMl/7oqxibj2kw9ZnCX+x7aYLxz0Zg4DUt6zXWDGPfUqZOmor+dH+zblOoaoGBjq1KOD4FPcH/LoDQAA== https://ttm.sh
+geo stop
+ssh Odette
+ssh Tilde.Town
+sftp --help
+sftp extratone@tilde.town:public_html.zip .
+fcp --help
+fcp extratone@tilde.town:public_html.zip .
+blink-copy-command
+help list-commands
+scp extratone@tilde.town:public_html.zip .
+ssh-copy-id
+ssh-copy-id extratone@tilde.town
+ls -a
+cd .ssh
+ls
+nano known_hosts
+ed known_hosts
+help list-commands
+geo track
+mosh Tilde.Town
+curl -F shorten=https://mobile.twitter.com/search?q=%22foam%22%20%40neoyokel&src=typed_query https://ttm.sh
+xcall shortcuts://run-shortcut?name=Speedy%20Frames
+xcall shortcuts://run-shortcut?name=test
+curl "https://api.raindrop.io/v1/oauth/authorize?client_id=615a7e3d634626aaa3179fba"
+ssh Tilde.Town
+openurl https://tilde.town/~archangelic/public_html/unique_fuck
+curl -F url=https://tilde.town/~extratone/misc/fucks/unique_fucks.json https://ttm.sh | pbcopy
+link-files
+ls
+cd i
+cd shortcuts
+ls
+ed unique_fucks.shortcut
+cp unique_fucks.shortcut unique_fucks.plist
+help list-commands
+readlink unique_fucks.plist
+open unique_fucks.plist
+open unique_fucks.shortcut
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/backups/publichtml.zip
+mosh Tilde.Town
+ls
+nano test.txt
+cd Documents
+ls
+cd testdocuments
+ls
+cd
+cd iCloud
+ls
+cd test
+ls
+cd
+link-files
+ls
+cd shortcuts
+ls
+sftp scrubsmd extratone@tilde.town:scrubs.md
+curl -F file=scrubs.md https://tilde.town/~extratone
+curl -F file=scrubs.md https://ttm.sh | pbcopy
+curl -F file=@scrubs.md https://ttm.sh | pbcopy
+help list-commands
+geo track
+mosh Tilde.Town
+link-files
+ls
+cd Tilde
+ls
+curl -F file=@TildeFolder.png | pbcopy | xcall shortcuts://run-shortcut?name=ttm
+curl -F file=Tilde/Tilde.Folder.png https://ttm.sh
+curl -F file=@Tilde/Tilde.Folder.png https://ttm.sh
+cd Tilde
+curl -F file=@TildeFolder.png https://ttm.sh
+cd Tilde
+curl -F file=TildeFolder.png https://ttm.sh
+curl -F url=https://davidblue.wtf/tilde/TildeFolder.png https://ttm.sh | pbcopy
+geo stop
+geo track
+clear
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone
+openurl https://tilde.town/~extratone/highlights
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/shortcuts/fucks
+ssh Odette
+ssh Tilde.Town
+geo stop
+geo track
+mosh Tilde.Town
+curl -F shorten=https://youtube.com/playlist?list=PLiI5-v1HgmCY6A6kSffDoECPG6IXh6MoS https://ttm.sh | pbcopy
+ssh Tilde.Town
+geo stop
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/menubar
+ssh Tilde.Town
+curl -F shorten=https://blog.joinmastodon.org/2022/03/mastodon-3.5/ https://ttm.sh | pbcopy
+curl -F shorten=https://github.com/extratone/bilge/blob/main/curation/mastodonfollowing.csv https://ttm.sh | pbcopy
+openurl https://tilde.town/~extratone/curation
+ssh Tilde.Town
+link-files
+ls
+cd Library
+ls
+cd PDF
+ls
+du
+geo stop
+help list-commands
+geo track
+mosh Tilde.Town
+ssh Odette
+geo stop
+help list-commands
+geo track
+help list-commands
+mosh Tilde.Town
+curl -F shorten=https://twitter.com/computerchroni1/status/1510849721069289473 https://ttm.sh | pbcopy
+ssh Odette
+curl "https://write.as/api/auth/login" \
+curl "https://write.as/api/auth/login" -H "Content-Type: application/json" -X POST -d '{"alias": "extratone", "pass": "ytAcBvZRNIx-YQlO0j3z?dxPEfc"4hKZm"}'
+curl "https://write.as/api/markdown" -H "Content-Type: application/json" -X POST -d '{"raw_body": "This is *formatted* in __Markdown__."}'
+curl "https://write.as/api/posts" -H "Content-Type: application/json" -X POST -d '{"body": "This is a post.", "title": "My First Post"}’
+curl "https://write.as/api/posts" -H "Content-Type: application/json" -X POST -d {"body": "This is a post.", "title": "My First Post"}
+curl "https://write.as/api/posts" \
+curl "https://write.as/api/posts" -H "Content-Type: application/json" -X POST -d '{"body": "Testing", "title": "My First Post"}’
+curl "https://snap.as/api/me/photos" -H "Authorization: 08676b98-947f-4dbe-47e6-74c244e9a32b"
+curl "https://snap.as/api/me/photos" -H "Authorization: 08676b98-947f-4dbe-47e6-74c244e9a32b" | pbcopy
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/hire
+geo stop
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/shortcuts/routinehub
+geo track
+mosh Tilde.Town
+ssh Ocean
+ssh Odette
+ssh Tilde.Town
+geo stop
+geo track
+mosh Tilde.Town
+curl -F shorten=https://twitter.com/sqeaver/status/1512444558843523078 https://ttm.sh | pbcopy
+geo stop
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/misc
+curl -F url=https://www.itbusiness.ca/images/articles/2012/Feb/cold-phones-big.jpg https://ttm.sh | pbcopy
+curl -F shorten=https://www.icloud.com/iclouddrive/090WZyVe9rGUJA_6MYUtA1Mdg#DavidBlueFullShortcutsSuite03312022-225743 https://ttm.sh | pbcopy
+openurl https://tilde.town/~extratone/scrubs
+mosh Tilde.Town
+curl -F shorten=https://www.theatlantic.com/politics/archive/2022/03/antisocial-behavior-crime-violence-increase-pandemic/627076/ https://ttm.sh | pbcopy
+openurl https://tilde.town/~extratone/misc/weird.html
+geo stop
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/shotcuts/menubar
+mosh Tilde.Town
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+geo stop
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/data/writeas.json
+curl -F shorten=https://app.sparkmailapp.com/web-share/U9xRwh-YwHCKHj3DRU52UC1Xj1XgvqcC8rHKXZ6A https://ttm.sh | pbcopy
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/tot
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/misc/tildetownlog.txt
+help list-commands
+geo track
+help list-commands
+geo track
+mosh Tilde.Town
+geo stop
+geo track
+mosh Tilde.Town
+ssh Odette
+ssh HILDUR
+ssh Tilde.Town
+help list-commands
+geo track
+mosh Tilde.Town
+ssh Odette
+ping google.com
+ssh Odette
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/bilge
+help list-commands
+ssh Tilde.Town
+wget --recursive --page-requisites --adjust-extension --span-hosts --convert-links --restrict-file-names=windows --domains developers.snap.as --no-parent developers.snap.as
+openurl https://tilde.town/~extratone/docs/snapas
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/raindrop
+geo stop
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/template
+openurl https://tilde.town/~extratone/drafts/telegram
+geo stop
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/whirl
+openurl https://tilde.town/~extratone/iowa/hippieliquor
+mosh Tilde.Town
+openurl https://tilde.town/~utsuho
+geo stop
+mosh HILDUR
+ssh Odette
+ssh HILDUR
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/podcast
+curl -F shorten=https://twitter.com/computerchroni1/status/1513733735312764929 https://ttm.sh | pbcopy
+mosh Tilde.Town
+ssh Tilde.Town
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/drafts/docs
+ssh Tilde.Town
+geo stop
+mosh Tilde.Town
+openurl https://davidblue.wtf/ieeg
+ssh Odette
+link-files
+ls
+cd Library
+ls
+mv Free Shortcuts – Matthew Cassinelli.webarchive cassinelli.plist
+ls
+mv cass.webarchive cass.plist
+ssh Tilde.Town
+geo track
+mosh Tilde.Town
+curl -F shorten=https://twitter.com/computerchroni1/status/1514277358060060673 https://ttm.sh | pbcopy
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/misc/go-configure
+openurl https://tilde.town/~extratone/drafts/raindrop
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/twitterhistory
+openurl https://tilde.town/~extratone/twitter
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/drafts/keys
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/audio
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/vocabulary
+ssh Tild
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/data/archivedotorg.json
+curl -F shorten=https://video.hardlimit.com/w/gQyqzzvhqz54uaKsfpUKiv https://ttm.sh | pbcopy
+geo track
+mosh Tilde.Town
+geo stop
+ssh Odette
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/misc/tiredred
+ssh Odette
+ls
+cd Documents
+ls
+cd
+link-files
+cd dr
+help list-commands
+cd drafts
+ls
+# NeoCities API
+curl -F "misc/count.html=@count.html" "https://davidblue:XHiGPGyJPcbio2@neocities.org/api/upload"
+curl -F "misc/NeoCities.tar=@NeoCities.tar" "https://davidblue:XHiGPGyJPcbio2@neocities.org/api/upload"
+curl "https://davidblue:XHiGPGyJPcbio2@neocities.org/api/list" > apilist.json
+ls
+open apilist.json
+curl -F "misc/apilist.json=@apilist.json" "https://davidblue:XHiGPGyJPcbio2@neocities.org/api/upload"
+c := writeas.NewClient()
+p, err := c.CreatePost(&writeas.PostParams{
+    Title:   "My First Post",
+    Content: "This is a post.",
+})
+ssh Odette
+geo track
+mosh Tilde.Town
+curl -F shorten=https://twitter.com/computerchroni1/status/1514987088156192768 https://ttm.sh | pbcopy
+geo stop
+geo track
+mosh Tilde.Town
+ssh Odette
+help list-commands
+ssh Tilde.Town
+xcall shortcuts://run-shortcut?name=Speedy%20Frames
+geo track
+mosh Tilde.Town
+curl -F shorten=https://twitter.com/DOSscreens/status/1515074997059874819 https://ttm.sh | pbcopy
+geo stop
+uptime
+ssh Odette
+ssh Tilde.Town
+openurl https://tilde.town/~extratone
+help list-commands
+geo track
+mosh Tilde.Town
+curl "https://write.as/api/auth/login" -H "Content-Type: application/json" -X POST -d '{"alias": "compaq", "pass": "5Z2k6g_Zk41dzFl2fNY0plS6Dk9O_KstyJ4totLKxBPQPbgf}' | pbcopy
+curl "https://write.as/api/auth/login" -X POST -d '{"alias": "compaq", "pass": "5Z2k6g_Zk41dzFl2fNY0plS6Dk9O_KstyJ4totLKxBPQPbgf}' | pbcopy
+ssh Odette
+curl "https://write.as/api/auth/login" -H "Content-Type: application/json" -X POST -d '{"alias": "compaq", "pass": "sBmnNxKaA8H38uCQ”}' | pbcopy
+writeas help
+curl "https://write.as/api/auth/login" \
+curl "https://write.as/api/auth/login" \ -H "Content-Type: application/json" \ -X POST \ -d '{"alias": "Compaq", "pass": "sBmnNxKaA8H38uCQ"}'
+curl "https://write.as/api/auth/login" \ -H "Content-Type: application/json" \ -X POST \ -d '{"alias": "Compaq", "pass": "sBmnNxKaA8H38uCQ"}' | pbcopy
+geo stp
+geo stop
+geo track
+mosh Tilde.Town
+xcall shortcuts://run-shortcut?name=Speedy%20Frames
+ssh Tilde.Town
+ssh Odette
+openurl https://tilde.town/~extratone/drafts/manage
+geo stop
+help list-commands
+geo track
+mosh Tilde.Town
+curl -F shorten=https://twitter.com/TranslatedCats/status/1516025577135906830 https://ttm.sh | pbcopy
+xcall shortcuts://run-shortcut?name=Speedy%20Frames
+geo stop
+geo track
+mosh Tilde.Town
+geo stop
+uptime
+cd .blink
+ls
+du
+cd
+cp .blink/Themes Themes
+ls
+cp -R .blink/Themes Themes
+ls
+cd Themes
+ls
+open .
+mv 041E9F9B-AFDD-454D-B40F-5973C0AD0923 041E9F9B-AFDD-454D-B40F-5973C0AD0923.txt
+open 041E9F9B-AFDD-454D-B40F-5973C0AD0923.txt
+find /path -type f -not -name "*.*" -exec mv "{}" "{}".txt \;
+cd
+find /Themes -type f -not -name "*.*" -exec mv "{}" "{}".txt \;
+ls
+cd Themes
+find * -type f -not -name "*.*" -exec mv "{}" "{}".txt \;
+ls
+cd Themes
+ls
+find * -type f -not -name "*.*" -exec mv "{}" "{}".txt \;
+mosh Tilde.Town
+geo stop
+geo track
+mosh Tilde.Town
+geo track
+ssh Tilde.Town
+xcall shortcuts://run-shortcut?name=Speedy%20Frames
+xcall shortcuts://run-shortcut?name=test
+bear://x-callback-url/grab-url?url=%clipboard&images=yes&tags=capture
+bear://x-callback-url/grab-url?url=https://bilge.world/about
+xcall bear://x-callback-url/grab-url?url=https://bilge.world/about
+xcall bear://x-callback-url/grab-url?url=http://tilde.town/~severak/town_radio.html
+shortcuts://run-shortcut?name=Speedy%20Frames
+echo xcall shortcuts://run-shortcut?name=Speedy%20Frames
+xcall -h
+xcall -i text shortcuts://run-shortcut?name=test&input=text
+xcall -i text shortcuts://run-shortcut?name=test
+xcall -i value shortcuts://run-shortcut?name=test
+xcall -a shortcuts://run-shortcut?name=test
+xcall -a shortcuts://run-shortcut?name=Speedy%20Frames
+echo xcall bear://x-callback-url/grab-url?url= | pbcopy
+xcall -a bear://x-callback-url/grab-url?url=https://www.inputmag.com/reviews/ipad-air-2022-review-time-to-make-ipads-water-resistant
+help list-commands
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/misc/bear.txt
+ssh HILDUR
+ls
+ssh HILDUR
+clear
+ssh HILDUR
+geo stop
+ssh HILDUR
+mosh Tilde.Town
+geo track
+ssh Tilde.Town
+xcall -a shortcuts://run-shortcut?name=Speedy%20Frames
+mosh Tilde.Town
+geo stop
+ssh Tilde.Town
+ssh sophie
+link-files
+cd Code/cyanzhong\ xTeko\ master\ extension-demos-ssh-example/resources
+ed
+ls
+ssh-agent
+la
+ls
+rm id_rsa
+rm id_rsa.pub
+mv id.txt id.rsa
+mv id_rsa.txt id_rsa.pub
+mv id.rsa id_rsa
+ls
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone
+ssh HILDUR
+ssh H
+ssh HILDUR
+curl -F shorten=https://twitter.com/computerchroni1/status/1518429675416170497 https://ttm.sh | pbcopy
+uptime
+geo stop
+help list-commands
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+xcall -a shortcuts://run-shortcut?name=Speedy%20Frames
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/misc/go-configure
+openurl https://tilde.town/~extratone/drafts/library
+ssh HILDUR
+curl -F shorten=https://twitter.com/computerchroni1/status/1518550491826991104 https://ttm.sh | pbcopy
+help list-commands
+ifconfig
+clear
+help list-commands
+curl https://write.as/api/posts
+curl https://write.as/api/posts | pbcopy
+geo stop
+geo track
+mosh Tilde.Town
+ping https://mastodon.social
+Drafts Directory
+curl https://write.as/api/collections/chaff
+curl https://write.as/api/collections/extratone
+curl https://write.as/api/collections
+curl https://write.as/api/collections/chaff
+curl https://write.as/api/collections/test
+curl https://write.as/api/collections/1
+q
+curl https://write.as/api/collections/new-blog
+ssh HILDUR
+geo stop
+ssh HILDUR
+mosh Tilde.Town
+xcall -a shortcuts://run-shortcut?name=Speedy%20Frames
+ssh HILDUR
+mosh Tilde.Town
+ssh HILDUR
+geo track
+mosh Tilde.Town
+ssh HILDUR
+code
+code --help
+code --quiet
+geo stop
+code
+ssh HILDUR
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+openurl https://tilde.town/~extratone/images
+ssh HILDUR
+geo stop
+geo track
+mosh Tilde.Town
+ping tip-tour.com
+ssh Tilde.Town
+geo stop
+ssh HILDUR
+ping bilge.world
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+ls
+help list-commands
+uptime
+help list-commands
+curl https://write.as/api/collections/chaff/posts
+curl https://write.as/api/collections/chaff/posts | pbcopy
+geo stop
+help list-commands
+geo track
+mosh Tilde.Town
+ssh Tilde.Town
+xcall -a shortcuts://run-shortcut?name=Speedy%20Frames
+ssh HILDUR
+code
+geo stop
+curl -X GET https://www.pastery.net/api/paste/?api_key=4EkBfZgnTZeqcJgyBSFUNZABpBfLc6Co
+curl -X GET https://www.pastery.net/api/paste/?api_key=4EkBfZgnTZeqcJgyBSFUNZABpBfLc6Co | pbcopy
+geo track
+mosh Tilde.Town
+ssh HILDUR
+ls
+ls -a
+geo stop
+geo track
+mosh Tilde.Town
+ssh HILDUR
+curl -F shorten=https://twitter.com/computerchroni1/status/1521630807332425728 https://ttm.sh | pbcopy
+ssh HILDUR
+ssh Tilde.Town
+geo stop
+help list-commands
+geo track
+mosh Tilde.Town
+ssh HILDUR
+ssh Tilde.Town
+xcall -a shortcuts://run-shortcut?name=Speedy%20Frames
+ssh HILDUR
+ssh davod@192.168.0.101
+ssh HILDUR
+curl -F shorten=https://twitter.com/computerchroni1/status/1521766718573531136 https://ttm.sh | pbcopy
+ssh HILDUR
+geo stop
+ssh HILDUR
+ssh sophie
+ssh davod@192.168.0.32
+ssh HILDUR
+ls
+curl https://write.as/api/collections/extratone/posts
+curl https://write.as/api/collections/extratone/posts > extratone.txt
+open extratone.txt
+ls
+open extratone.txt
+mv extratone.txt extratone.json
+open extratone.json
+curl https://write.as/api/collections/bilge/posts > bilge.json
+open bilge.json
+curl -F url=https://i.snap.as/oguBf6f.jpg https://ttm.sh
+geo trac
+help list-commands
+mosh Tilde.Town
+ssh HILDUR
+help list-commands
+man tmux
+tmux ls
+ssh HILDUR
+ssh Tilde.Town
+ssh HILDUR
+ssh Tilde.Town
+help list-commands
+setenv --help
+setenv
+ls -a
+cd .bin
+ls
+imgcat
+./imgcat
+chflags
+python3
+env
+/bin
+ls /bin
+echo /bin
+date
+date --help
+date help
+date -f fmt date MMddYYYY-hhmmss
+date +format MMddYYYY-hhmmss
+date +format %m%d%Y-%H%M%S
+date %m%d%Y-%H%M%S
+date -d %m%d%Y-%H%M%S
+date %m%d%Y-%H%M%S
+date -f fmt date %m%d%Y-%H%M%S
+date
+help list-commands
+curl --help
+setenv --help
+setenv help
+help
+config --help
+config
+help list-commands
+rlogin
+imgcat
+IMGCAT=/.bin/imgcat
+setenv IMGCAT=/.bin/imgcat
+setenv
+setenv export IMGCAT
+setenv
+help list-commands
+bench
+browse
+help list-commands
+skstore
+skstore --help
+clear
+help list-commands
+host
+host https://bilge.world
+env --help
+help list-commands
+chksum .bin
+chksum .bin/imgcat
+link .bin/imgcat .
+ls
+imgcat
+chflags
+nc
+cat .bin/imgcat
+cd .blink
+ls -a
+cat blinkCode.log
+cat FontsList
+cat defaults
+clear
+cat fileprovider.log
+cat Themeslist
+ls
+cat kb.json
+open kb.json
+ls
+link-files
+ls
+cp .blink/kb.json i/configuration/blinkkeys.json
+cd .blink
+ls
+cat keys
+clear
+cat history.txt
+cd
