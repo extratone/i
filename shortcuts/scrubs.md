@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `05032022-170718`
+Updated `05092022-124005`
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
 - [Pastery](https://www.pastery.net/eujzmz/#eujzmz)
@@ -63,6 +63,8 @@ Updated `05032022-170718`
 - [Query Mastodon Instance](https://www.icloud.com/shortcuts/58315373f6114c9b99f56e1cc2950836)
 - [Run Blink Command](https://www.icloud.com/shortcuts/38580a96db2b47998ac8f972d6ba5319)
 - [Set Volume-Slider](https://www.icloud.com/shortcuts/d5f9bf7368dd46b98aa2eb6f35835c5c)
+- [Selection to File](https://www.icloud.com/shortcuts/f3d226cfccb247559a9c4927bb84e417)
+- [Optimize Image](https://www.icloud.com/shortcuts/2ef701f70bf74e5093b8608f0d29aca4)
 
 ## Music/Audio Delights
 
