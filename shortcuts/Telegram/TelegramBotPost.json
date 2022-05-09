@@ -1,0 +1,319 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4274264319,
+      "WFWorkflowIconGlyphNumber": 59853
+   },
+   "WFWorkflowClientVersion": "1146.14",
+   "WFWorkflowOutputContentItemClasses": [
+      "WFURLContentItem"
+   ],
+   "WFWorkflowHasOutputFallback": true,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+      "Parameters": {}
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Send a text post from a bot to a specified channel/group via the Telegram Bot API.\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "000000000000000000000000000000000000000000000",
+            "UUID": "E53CD854-6956-4F48-A504-0EEBB090BA0F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "E53CD854-6956-4F48-A504-0EEBB090BA0F",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "bottoken"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "-1001147225018",
+            "UUID": "9F88D14A-03A6-40CB-972C-350BDF1C1E67"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "9F88D14A-03A6-40CB-972C-350BDF1C1E67",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "chatid"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "Show-WFURLActionURL": true,
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://api.telegram.org/bot\uFFFC/sendMessage",
+                  "attachmentsByRange": {
+                     "{28, 1}": {
+                        "VariableName": "bottoken",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "F4BF45FA-C84D-4FB0-8E06-DD71A8910517"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFJSONValues": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "chat_id"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "VariableName": "chatid",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "text"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ExtensionInput"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "WFHTTPHeaders": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Content-Type"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "application/json"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "UUID": "1C139E8F-4693-48D2-B357-614D37FC8798",
+            "ShowHeaders": true,
+            "WFHTTPMethod": "POST",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "F4BF45FA-C84D-4FB0-8E06-DD71A8910517",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFHTTPBodyType": "JSON",
+            "WFFormValues": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": []
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "1C139E8F-4693-48D2-B357-614D37FC8798",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "result.chat.username",
+            "UUID": "BFD50DD7-865A-4B96-B51F-E46A24C7F73C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "BFD50DD7-865A-4B96-B51F-E46A24C7F73C",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "username"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "1C139E8F-4693-48D2-B357-614D37FC8798",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "result.message_id",
+            "UUID": "FB6A523C-B702-4E39-A7B1-256F68906D04"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "FB6A523C-B702-4E39-A7B1-256F68906D04",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "messageid"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "Show-WFURLActionURL": true,
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://t.me/\uFFFC/\uFFFC/",
+                  "attachmentsByRange": {
+                     "{13, 1}": {
+                        "VariableName": "username",
+                        "Type": "Variable"
+                     },
+                     "{15, 1}": {
+                        "VariableName": "messageid",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "8D6A4B27-EE37-4B13-A57D-A83D122DB664"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+         "WFWorkflowActionParameters": {
+            "WFNoOutputSurfaceBehavior": "Copy to Clipboard",
+            "WFOutput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "8D6A4B27-EE37-4B13-A57D-A83D122DB664",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFResponse": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "8D6A4B27-EE37-4B13-A57D-A83D122DB664",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFStringContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 1,
+         "Text": "Set your Telegram bot’s API token. This can be obtained using @botfather. (Required)",
+         "DefaultValue": "000000000000000000000000000000000000000000000"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 3,
+         "Text": "Set the numeric id of the target chat. I would recommend using @MissRose_bot to obtain this. (Required)",
+         "DefaultValue": "-1001147225018"
+      }
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [],
+   "WFWorkflowHasShortcutInputVariables": true
+}
