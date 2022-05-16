@@ -1,0 +1,1810 @@
+==============================================================
+Guild: r/Scriptable
+Channel: sharing / 🗒-script-and-widget-sharing
+Topic: This channel is for sharing of widgets and scripts you create.
+Slowmode is enabled to keep the chatter to a minimum. so don't chat in this channel
+==============================================================
+
+[0930YYYY-221339] deanlyoung#1235
+https://github.com/deanlyoung/scriptable
+
+{Embed}
+https://github.com/deanlyoung/scriptable
+deanlyoung/scriptable
+Contribute to deanlyoung/scriptable development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/RrW63vbSulGYZ9WtPLGp8OxHxdNnwP6MN1AJiVS0zrg/%3Fs%3D400%26v%3D4/https/avatars3.githubusercontent.com/u/2523456
+
+
+[0930YYYY-234048] deanlyoung#1235
+yes vs. outdoor
+I use it everyday on the west coast in case the fire smoke comes into town 😬😷
+
+
+[1001YYYY-004918] spencer#3767
+https://imgur.com/a/D1QVI8E I made a better music widget 😃 
+
+My widget lets you choose what is displayed and supports albums, songs, and Apple Music playlists
+
+{Embed}
+https://imgur.com/a/D1QVI8E
+https://images-ext-1.discordapp.net/external/1kknJeu3fMXK-yh-UonFGcXdjRb8rnuGmKXJcusRIlA/https/i.imgur.com/AvBQqwJh.jpg
+
+
+[1001YYYY-122543] spencer#3767
+Here’s the script: https://pastebin.com/raw/JbSEEaHh
+
+And the shortcut to go with it: https://www.icloud.com/shortcuts/84193e6d2ca74d638ca33058c52b2881
+
+It’s not quite done, I still need to clean up the code and write how to use it in the shortcut, but you run the shortcut, paste the Apple Music Link, and then save the files to the iCloud > Scriptable folder. Then you paste the text the shortcut has copied into the widget parameter
+
+
+[1001YYYY-162502] spencer#3767
+Here's the "full release" of my Apple Music widget 😀 https://github.com/heyitzspencer/scriptable-apple-music-widget
+
+Let me know if y'all have some suggestions. I'll probably keep working on it once the next Scriptable update comes out
+
+{Embed}
+https://github.com/heyitzspencer/scriptable-apple-music-widget
+heyitzspencer/scriptable-apple-music-widget
+Apple Music Widget built in Scriptable for iOS. Contribute to heyitzspencer/scriptable-apple-music-widget development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/DN5Ufh5za5ciJgx5Mp-UDm7Tp3SwR0tZ7IjXAvFEy8M/%3Fs%3D400%26v%3D4/https/avatars3.githubusercontent.com/u/46253322
+
+{Reactions}
+👍 (2) 
+
+[1005YYYY-194737] sozzinha#7151
+https://gist.github.com/flasozzi/3e7f05ff3f1de342f16b2b31a8923651
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/762838443272962058/widget.png
+
+{Embed}
+https://gist.github.com/flasozzi/3e7f05ff3f1de342f16b2b31a8923651
+Greetings, weather, date, countdown, battery (Frankenstein) widget ...
+Greetings, weather, date, countdown, battery (Frankenstein) widget for iOS using Scriptable. - greetingsweatherdatecountdownbattery.js
+https://images-ext-1.discordapp.net/external/v2ToTBFZ7zHPk2sQlBt80EaH2hhwBfD3Zdf1J_uxMxs/https/github.githubassets.com/images/modules/gists/gist-og-image.png
+
+
+[1011YYYY-174353] CoreyRDean#0824
+A script to add scripts https://drive.google.com/file/d/18eUQOsuVVnIaYjSsJPZmAw66VfswIPJw/view?usp=drivesdk
+
+{Embed}
+https://drive.google.com/file/d/18eUQOsuVVnIaYjSsJPZmAw66VfswIPJw/view?usp=drivesdk
+Add Script.js
+https://images-ext-2.discordapp.net/external/8ucDdb1qf84er6jjWtEBfnFkD9_DX1Bo-T23_SRUlp8/https/lh5.googleusercontent.com/XWgdxcds1a1XFaIyWn0oJWeWdxv2JHAB_d044z52LWdzPqetDlXDcOwHl2O4K-Y%3Dw1200-h630-p
+
+
+[1015YYYY-134707] chae#7089
+A simple battery circle widget: https://github.com/chaeimg/battCircle
+
+{Embed}
+https://github.com/chaeimg/battCircle
+chaeimg/battCircle
+An iOS 14 Scriptable Widget using DrawContext() to create a simple battery circle. - chaeimg/battCircle
+https://images-ext-1.discordapp.net/external/DQ-d7UZ8bOWTfa45fELBIJsRbq7oqG2f_I4u2JHJMHA/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/9076902
+
+
+[1016YYYY-091307] shinework#5737
+An experimental dithering effect 😆  https://gist.github.com/shinework/886dfc7dee1321ca39931602e7ad2730
+
+{Embed}
+https://gist.github.com/shinework/886dfc7dee1321ca39931602e7ad2730
+Apply a retro dithering effect on an image! hacky hacky!
+Apply a retro dithering effect on an image! hacky hacky! - dithering.js
+https://images-ext-1.discordapp.net/external/v2ToTBFZ7zHPk2sQlBt80EaH2hhwBfD3Zdf1J_uxMxs/https/github.githubassets.com/images/modules/gists/gist-og-image.png
+
+{Reactions}
+😮 (3) 
+
+[1016YYYY-091808] shinework#5737
+but itering on all image pixels to compute the black/white value is slow, the render: https://i.imgur.com/hqHMH0q.jpg
+
+{Embed}
+https://imgur.com/hqHMH0q
+https://images-ext-2.discordapp.net/external/danzgdQIxNQWntohFvrs8gMCbj9USrNBHoX08rb3Tg0/https/i.imgur.com/hqHMH0q.jpg
+
+
+[1020YYYY-090816] Gradient#7276
+Finding your favorite playlist is hard, but not when it’s just one tap away on your homescreen.  Download Instant Play at the link below!
+
+https://InstantPlay.fit/
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/768113359505195058/Group_270.png
+
+{Embed}
+https://instantplay.fit/
+Instant Play
+One click playlist launcher widget for spodify
+https://images-ext-2.discordapp.net/external/vDXgEM3lhfeO7uRb2hglyz35E_vbW-uvzlxY6tpuYkQ/https/www.notion.so/images/meta/default.png
+
+{Reactions}
+👍 (4) 👀 (4) 😋 (2) 🤩 (3) 
+
+[1020YYYY-204847] Reemuson#2946
+@Gradient That web preview threw me off, for a second I thought notion had an API. Then I realised it didn't and now I'm sad
+
+
+[1020YYYY-212513] Gradient#7276
+@Reemuson haha yea I wish
+
+
+[1022YYYY-015149] supermamon#7273
+my transparent background module - https://github.com/supermamon/scriptable-scripts/tree/master/no-background
+instructions here - https://talk.automators.fm/t/widget-examples/7994/431
+
+{Embed}
+https://github.com/supermamon/scriptable-scripts/tree/master/no-background
+supermamon/scriptable-scripts
+My scripts for the Scriptable app. https://scriptable.app/ - supermamon/scriptable-scripts
+https://images-ext-2.discordapp.net/external/VlBAkr82K84JA59l4JSf0VuKvSuI4Gr-VL9J0MXLPqg/%3Fs%3D400%26v%3D4/https/avatars0.githubusercontent.com/u/6381508
+
+{Embed}
+https://talk.automators.fm/t/widget-examples/7994/431
+Widget Examples
+First off, thanks for @mzeryck for sharing the “invisible” widget code to emulate transparent backgrounds.  Inspired by that code, I created a module to make it easier to pull the necessary wallpaper “slices”.  The module handles both light and dark mode. As long as you make s...
+https://images-ext-2.discordapp.net/external/P7Ah75B3dcAM2rDUOYBDSieSHGrMCg9vYgmzxtL6s6Y/https/talk.automators.fm/uploads/default/original/2X/c/ca63235b7013bede0a7b1855bc80232d76bc8697.jpeg
+
+{Reactions}
+👍 (7) 😮 (3) scriptable (4) 
+
+[1022YYYY-015803] supermamon#7273
+and my take on a script downloader - https://raw.githubusercontent.com/supermamon/scriptable-scripts/master/Import%20Script.js
+
+
+[1024YYYY-074638] Timbo Slice#5632
+@Gradient does that widget only work with Spotify?
+
+
+[1024YYYY-120837] Gradient#7276
+@Timbo Slice, For now it’s just Spotify. @spencer made one for Apple Music. 
+
+https://discord.com/channels/760937324711641108/760940188758179921/761102422214311947
+
+{Reactions}
+👍 (2) 
+
+[1024YYYY-122024] Ghostbust3r#9720
+Here is my birthday reminder widget 😁 screenshot in github at the bottom https://github.com/lwitzani/daysUntilBirthday
+
+{Embed}
+https://github.com/lwitzani/daysUntilBirthday
+lwitzani/daysUntilBirthday
+Script for the iOS App Scriptable, which lists up to 20 people of your contacts by their birthday - lwitzani/daysUntilBirthday
+https://images-ext-1.discordapp.net/external/3XvQw0t6-b8ZEKqJgsVObDVkOjd_JgL_-rfKyQC_oOY/%3Fs%3D400%26v%3D4/https/avatars0.githubusercontent.com/u/26573718
+
+
+[1024YYYY-234437] Timbo Slice#5632
+Thanks @Gradient
+
+
+[1025YYYY-093116] AShortcuts#1136
+https://www.reddit.com/r/Scriptable/comments/jhu78w/routinehub_downloads_widget/
+
+{Embed}
+https://www.reddit.com/r/Scriptable/comments/jhu78w/routinehub_downloads_widget/
+r/Scriptable - RoutineHub Downloads Widget
+0 votes and 0 comments so far on Reddit
+https://images-ext-1.discordapp.net/external/ySe-_ZHjtdDIq5xoLh1WtlxJPVvA9OtVLr8EnadLUro/%3Fauto%3Dwebp%26s%3Dff359121c50331578385126fadcac92096939118/https/external-preview.redd.it/8jymFO4RqXu_73apo2-EbpEvxcNsmY9ovM8beHAQl4k.jpg
+
+
+[1028YYYY-082333] supermamon#7273
+Import-Script.js
+------------------
+Changes: 
+- add support for hastebin.com
+
+https://github.com/supermamon/scriptable-scripts/blob/master/Import-Script.js
+
+{Embed}
+https://github.com/supermamon/scriptable-scripts/blob/master/Import-Script.js
+supermamon/scriptable-scripts
+My scripts for the Scriptable app. https://scriptable.app/ - supermamon/scriptable-scripts
+https://images-ext-2.discordapp.net/external/VlBAkr82K84JA59l4JSf0VuKvSuI4Gr-VL9J0MXLPqg/%3Fs%3D400%26v%3D4/https/avatars0.githubusercontent.com/u/6381508
+
+
+[1028YYYY-133143] l4chsalter#0900
+Here is a Widget to get the Bitcoin Fear and Greed Index https://alternative.me/crypto/fear-and-greed-index/#widget
+
+{Embed}
+https://alternative.me/crypto/fear-and-greed-index/
+Crypto Fear & Greed Index - Bitcoin Sentiment
+The crypto fear & greed index of alternative.me provides an easy overview of the current sentiment of the Bitcoin / crypto market at a glance.
+https://images-ext-2.discordapp.net/external/Ff7NG7Zf4zxLCf5h2qe4i0B6EJ2zwqWUTzRDRSI_Hbg/https/alternative.me/crypto/fear-and-greed-index.png
+
+{Reactions}
+✌🏽 (3) 
+
+[1029YYYY-010816] supermamon#7273
+a widget to show the latest from a non-private user/users
+https://raw.githubusercontent.com/supermamon/scriptable-scripts/master/instagram-widgets/ig-latest-post.js
+
+{Reactions}
+👍 (2) 
+
+[1029YYYY-082742] bioxept#0951
+A widget to show the current data usage. Only working with German T-Mobile right now.
+
+Here is the script:
+https://github.com/marcjulianschwarz/telekom-data-usage-widget
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/771364645042651156/image0.png
+https://cdn.discordapp.com/attachments/760940188758179921/771364645386059796/image1.png
+https://cdn.discordapp.com/attachments/760940188758179921/771364645658296340/image2.jpg
+
+{Embed}
+https://github.com/marcjulianschwarz/telekom-data-usage-widget
+marcjulianschwarz/telekom-data-usage-widget
+Telekom Datennutzung Widget für iOS 14 . Contribute to marcjulianschwarz/telekom-data-usage-widget development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/MXYFGeCOFbquz0AKqLdXrfpOW90NmcL3mNZNQv78Ge0/%3Fs%3D400%26v%3D4/https/avatars0.githubusercontent.com/u/67844154
+
+{Reactions}
+👍 (6) 
+
+[1101YYYY-210830] supermamon#7273
+check out my `openweathermap` module for your weather needs. includes a widget sample too
+https://github.com/supermamon/scriptable-scripts/tree/master/openweathermap
+
+{Embed}
+https://github.com/supermamon/scriptable-scripts/tree/master/openweathermap
+supermamon/scriptable-scripts
+My scripts for the Scriptable app. https://scriptable.app/ - supermamon/scriptable-scripts
+https://images-ext-2.discordapp.net/external/VlBAkr82K84JA59l4JSf0VuKvSuI4Gr-VL9J0MXLPqg/%3Fs%3D400%26v%3D4/https/avatars0.githubusercontent.com/u/6381508
+
+
+[1101YYYY-223330] yaylinda#0001
+Thanks for answering my various question, I made my first Widget! My take on a Terminal-style info widget. https://www.reddit.com/r/Scriptable/comments/jmh2jh/my_take_on_a_terminalstyle_widget/
+
+Big thanks to Evan's post on his TermiWidget.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/772679758633893898/TerminalWidget.png
+
+{Reactions}
+👍 (11) 
+
+[1103YYYY-053249] Reow#3930
+In case anyone needs crescent/gibbous drawing code (for moon widgets and the like)...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/773147670512140318/Test_Trig_Ellipse.scriptable
+
+
+[1103YYYY-085348] Rhinozz#1489
+@Reow did you ever release the actual moon widget? it looks really good, I would use i;t
+
+
+[1103YYYY-085546] Reow#3930
+I haven’t released it yet. I’m happy to upload what I have so far - you’re welcome to use it. There’s still some more tweaks I want to do.
+
+
+[1103YYYY-090715] Reow#3930
+This is the current code. It’s not fully tested yet, so let me know if you have issues. You’ll also need a pic of the full moon which i’ll upload in a minute
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/773201634280079420/Umbra.scriptable
+
+
+[1103YYYY-091315] Reow#3930
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/773203145169174558/image0.png
+
+{Reactions}
+🌙 (3) 💯 (3) 
+
+[1103YYYY-154702] l4chsalter#0900 (pinned)
+Hello, this is not a script but i started a site/collection of widgets. So we can grow a repository of all scripts and sharing becomes easier. There are still some descriptions and functionality missing but the basics work and it will evolve with time 🙂 Have a look here: https://widgethunt.com/
+
+{Embed}
+https://widgethunt.com/
+Widgethunt - Find the best Widgets - Widgethunt
+Explore and download new widgets with ease. Share your own widgets with the community.
+
+{Reactions}
+😮 (4) 👍 (3) 
+
+[1103YYYY-155350] mvan231#3698
+Pinned a message.
+
+
+[1105YYYY-090739] Sodom#9049
+Check out my `News Widget`. You can use a RSS Feed or a website that's using WordPress: https://gist.github.com/Saudumm/374497679e126cc454af896234f3f5a2
+
+{Embed}
+https://gist.github.com/Saudumm/374497679e126cc454af896234f3f5a2
+Scriptable News Widget
+Scriptable News Widget. GitHub Gist: instantly share code, notes, and snippets.
+https://images-ext-1.discordapp.net/external/v2ToTBFZ7zHPk2sQlBt80EaH2hhwBfD3Zdf1J_uxMxs/https/github.githubassets.com/images/modules/gists/gist-og-image.png
+
+
+[1107YYYY-231411] FifiTheBulldog#6153
+I made a little script to upload shortcuts to https://showcuts.app:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/774864323646062592/Submit_to_Showcuts.scriptable
+
+
+[1108YYYY-120226] yaylinda#0001
+I created a DailyLogWidget to keep track of things I do and don't do each day! (The gif is just showing sample data)
+
+https://www.reddit.com/r/Scriptable/comments/jqfy4p/dailylogwidget_keep_track_of_your_daily_todos/
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/775057661124280390/DailyLogWidgetPreviewSmall.gif
+
+{Reactions}
+🔥 (4) 
+
+[1109YYYY-040155] mvan231#3698
+https://github.com/mvan231/Scriptable/blob/main/RH-Downloads.js
+
+My RH Downloads widget shows your current download count on RoutineHub and also the delta from yesterday (if it's more than 0)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/775299124320534538/image0.png
+
+{Embed}
+https://github.com/mvan231/Scriptable/blob/main/RH-Downloads.js
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+
+[1109YYYY-122437] Kanasaao#2813
+I made a widget to show the strength of Ultraviolet Radiation based on phone location. It is my very first JavaScript-Project ever, so Feedback is very much appreciated. Things like error handling and caching are still missing.
+
+https://github.com/Nepomacs/Scriptable-UV-Index
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/775425631315689482/uv-index-widget.png
+
+{Embed}
+https://github.com/Nepomacs/Scriptable-UV-Index
+Nepomacs/Scriptable-UV-Index
+Contribute to Nepomacs/Scriptable-UV-Index development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/gGexKfk-AIA_dOcKfGDYNVWwvKNaoPIw3wTlTEtN9x8/%3Fs%3D400%26v%3D4/https/avatars2.githubusercontent.com/u/270634
+
+
+[1110YYYY-070419] mvan231#3698
+Someone in the sub asked about a backup script to backup all scripts. 
+
+I threw one together that you can find here https://github.com/mvan231/Scriptable
+
+This script will backup all of your current scripts into the iCloud Drive Scriptable directory underneath the folder "ScriptBackup" and then under "yyyy_MM_dd" folder that is created when it runs.
+
+{Embed}
+https://github.com/mvan231/Scriptable
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+{Reactions}
+👍 (2) 
+
+[1115YYYY-214212] T4RTUFO#0031
+Hi, I made my very first widget. It shows random flags from all around the world. So I’d appreciate if someone has feedback for improving it and correcting errors Thanks! https://github.com/t4rtufo/widgets/blob/main/randomFlag.js
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/777740280493375539/image0.png
+
+{Embed}
+https://github.com/t4rtufo/widgets/blob/main/randomFlag.js
+t4rtufo/widgets
+Contribute to t4rtufo/widgets development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/8kKF0aybuLC3rh-8evL_pg1dXdjw44dAlJiHzrUNxio/%3Fs%3D400%26v%3D4/https/avatars0.githubusercontent.com/u/74520498
+
+{Reactions}
+😎 (3) 😮 (3) 
+
+[1117YYYY-085948] italoboy#5539
+https://github.com/italoboy/HomeWeatherNow
+
+{Embed}
+https://github.com/italoboy/HomeWeatherNow
+italoboy/HomeWeatherNow
+Here. Contribute to italoboy/HomeWeatherNow development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/Dd1FKVr0Fbv5bH_Z4wD4HOdNbnDdZ00jdMiPCH8Gkw0/%3Fs%3D400%26v%3D4/https/avatars2.githubusercontent.com/u/61342502
+
+{Reactions}
+😃 (3) scriptable (3) pog (3) 👍 (2) 
+
+[1117YYYY-134702] italoboy#5539
+A bunch of scripts added to my github:
+
+https://github.com/italoboy/Home-Intro-Widget-V1
+
+https://github.com/italoboy/Home-Intro-Widget-V2
+
+https://github.com/italoboy/IP-Info
+
+{Embed}
+https://github.com/italoboy/Home-Intro-Widget-V1
+italoboy/Home-Intro-Widget-V1
+Contribute to italoboy/Home-Intro-Widget-V1 development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/Dd1FKVr0Fbv5bH_Z4wD4HOdNbnDdZ00jdMiPCH8Gkw0/%3Fs%3D400%26v%3D4/https/avatars2.githubusercontent.com/u/61342502
+
+{Embed}
+https://github.com/italoboy/Home-Intro-Widget-V2
+italoboy/Home-Intro-Widget-V2
+Contribute to italoboy/Home-Intro-Widget-V2 development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/zbm37loSyYw0Uojkp2W9PgaNjqjzeCfj__rUuJjRFEY/https/repository-images.githubusercontent.com/313699180/beb19980-291e-11eb-9444-54ccbf9c3d1d
+
+{Embed}
+https://github.com/italoboy/IP-Info
+italoboy/IP-Info
+A professional script for professionals. Contribute to italoboy/IP-Info development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/Dd1FKVr0Fbv5bH_Z4wD4HOdNbnDdZ00jdMiPCH8Gkw0/%3Fs%3D400%26v%3D4/https/avatars2.githubusercontent.com/u/61342502
+
+{Reactions}
+👍 
+
+[1120YYYY-132429] italoboy#5539
+Out now:
+
+https://github.com/italoboy/Full-Weatherline-Widget
+
+{Embed}
+https://github.com/italoboy/Full-Weatherline-Widget
+italoboy/Full-Weatherline-Widget
+Contribute to italoboy/Full-Weatherline-Widget development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/SttngEG_Y-O88llH_AB7rXyLOn6brSebLWPmXOm_0s8/https/repository-images.githubusercontent.com/314634217/8067e480-2b81-11eb-8c40-ee54753c172a
+
+{Reactions}
+👍 (18) 
+
+[1122YYYY-104924] T4RTUFO#0031
+I’ve been modifying the script to add customs urls for every country/us-states but I’m having some troubles cause not all the urls match with their names so I'd have to write them manually. But At least most of the urls are generated  correctly according to their flags  and also in different languages. The image show how the input is supposed to be writen    https://github.com/t4rtufo/widgets/blob/main/randomFlag.js
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/780112714307338260/image0.png
+
+{Embed}
+https://github.com/t4rtufo/widgets/blob/main/randomFlag.js
+t4rtufo/widgets
+Contribute to t4rtufo/widgets development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/8kKF0aybuLC3rh-8evL_pg1dXdjw44dAlJiHzrUNxio/%3Fs%3D400%26v%3D4/https/avatars0.githubusercontent.com/u/74520498
+
+{Reactions}
+scriptable (2) 
+
+[1124YYYY-083610] supermamon#7273
+Weekly weather forecast widget
+https://github.com/supermamon/scriptable-week-forecast
+
+{Embed}
+https://github.com/supermamon/scriptable-week-forecast
+supermamon/scriptable-week-forecast
+A Scriptable.app widget script to display the week's weather forecast - supermamon/scriptable-week-forecast
+https://images-ext-2.discordapp.net/external/nr_cjRZ2zBCRdgQs6GzMlMRYicBFhqy4-vwvlKDPhfE/https/repository-images.githubusercontent.com/315593264/35f9a700-2ea4-11eb-8d48-4bd39f3ff118
+
+{Reactions}
+👏 (5) yes 
+
+[1128YYYY-100503] mzeryck#5086
+Many of you know Weather Cal, aka Weather Cal Widget Builder. It now supports custom background code, custom items, and even embedding other widgets! The GitHub also has a bunch more information on setup and customization. I'm super new to Discord but please feel free to ask me anything or show me what you're making!
+https://github.com/mzeryck/Weather-Cal
+
+{Embed}
+https://github.com/mzeryck/Weather-Cal
+mzeryck/Weather-Cal
+This is a Scriptable widget that lets you display, position, and format multiple elements, including dates and events, weather information, battery level, and more. You can even create your own ele...
+https://images-ext-2.discordapp.net/external/IfdyI-IM73WZw_h1BRM2kURFwfsvnS-n0PGxxBDL8oE/%3Fs%3D400%26v%3D4/https/avatars3.githubusercontent.com/u/71023727
+
+{Reactions}
+scriptable (7) 
+
+[1128YYYY-134837] Blitz Bolt#6994
+I wanted to present a widget I made for Notion: https://kevinjalbert.com/custom-notion-ios-widget/ it uses Scriptable, iOS Shortcuts, and a notion-py server. Actual script is in the GitHub repository linked in the post.
+
+{Embed}
+https://kevinjalbert.com/custom-notion-ios-widget/
+Custom Notion iOS Widget
+Notion has recently released iOS widgets, however, they are limited in functionality. In this article, I present my custom Notion iOS widget that has a unique set of features. This widget is built using iOS Shortcuts, the Scriptable application, and a notion-py server.
+https://images-ext-1.discordapp.net/external/ncBTii7UXDq_3pB-5DDErdlJUlUvFUyYYvCetA8tYrU/https/kevinjalbert.com/images/2020-11-28-custom-notion-ios-widget/phone-widget.jpg
+
+{Reactions}
+scriptable (4) pog (2) 👍 
+
+[1130YYYY-122053] mvan231#3698
+For those interested, I have made a MEE6 leaderboard widget to check various servers
+
+You can check it out in my GitHub page https://github.com/mvan231/Scriptable/
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/783034836750565416/image0.png
+
+{Embed}
+https://github.com/mvan231/Scriptable/
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+{Reactions}
+👍 (5) yes (3) 
+
+[1130YYYY-161350] mvan231#3698
+New update pushed for it now 
+
+https://github.com/mvan231/Scriptable/blob/main/MEE6%20LeaderBoard%20Info.js
+
+{Embed}
+https://github.com/mvan231/Scriptable/blob/main/MEE6%20LeaderBoard%20Info.js
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+{Reactions}
+200IQ Noice YeetusDeletusDance ☃️ 
+
+[1202YYYY-171443] mvan231#3698
+New update of v1.5 is out now to include the avatar image and progress bar. Same link as above
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/783833556681359420/image0.png
+
+{Reactions}
+scriptable (5) 👍 (3) 😇 (3) 
+
+[1208YYYY-195830] Fuzz#1894
+My friend and I built a widget that displays nearby Wikipedia articles. It has some built-in debugging tools that can be easily copy-pasted to another widget. I hope you all like it!
+
+https://github.com/bring-larry-to-life/scriptable-widget-interest-map
+
+{Embed}
+https://github.com/bring-larry-to-life/scriptable-widget-interest-map
+bring-larry-to-life/scriptable-widget-interest-map
+Contribute to bring-larry-to-life/scriptable-widget-interest-map development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/-rlp-vagg7QxtyAQjzC_jSGDfZQOkQBvRoR9qlZzBB0/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/16408453
+
+{Reactions}
+☃️ (2) 
+
+[1208YYYY-201957] Fuzz#1894
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/786054500052893706/image0.jpg
+
+{Reactions}
+scriptable (6) 👌🏻 (3) 
+
+[1210YYYY-230321] mvan231#3698
+Based on the requests on the sub. I have created a small and medium calendar event widget. 
+
+You can also see the release of my Twitter widget on my GitHub page as well. 
+https://github.com/mvan231/Scriptable
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/786820399517532170/image0.jpg
+https://cdn.discordapp.com/attachments/760940188758179921/786820399782559784/image1.jpg
+
+{Embed}
+https://github.com/mvan231/Scriptable
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+{Reactions}
+scriptable (3) 
+
+[1213YYYY-071858] yaylinda#0001
+I made a calendar widget that shows all day events and a moving window of upcoming events! 
+
+Code can be found here: https://github.com/yaylinda/scriptable
+
+Reddit link: https://www.reddit.com/r/Scriptable/comments/kcad38/i_made_a_calendar_widget_with_allday_and_upcoming
+
+Let me know your thoughts! Or suggestions! ✌️
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/787669898784276500/image0.jpg
+
+{Embed}
+https://github.com/yaylinda/scriptable
+yaylinda/scriptable
+Scripts and widgets for the iOS Scriptable App . Contribute to yaylinda/scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/SCH2XKazLHF0sZGi2IRmki3nFRkM0KuX3Ymq2PxtRDo/%3Fs%3D400%26v%3D4/https/avatars2.githubusercontent.com/u/10225317
+
+{Reactions}
+👍🏻 (5) 
+
+[1215YYYY-191340] Stone#3378
+https://github.com/Stohne/scriptable/blob/main/Dad-Jokes
+
+{Embed}
+https://github.com/Stohne/scriptable/blob/main/Dad-Jokes
+Stohne/scriptable
+scriptable files. Contribute to Stohne/scriptable development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/KvtQ9H7KO_vYgDbd_q9KxEH7AF6RE8hrrcQW4k1pppo/%3Fs%3D400%26v%3D4/https/avatars0.githubusercontent.com/u/75951272
+
+
+[1217YYYY-083854] mvan231#3698
+My Twitter widget has been updated to fix the API issue. Other new changes have been implemented for better display on multiple devices. A separate Twitter Widget Settings.js file also now exists so you can retain your preferred settings through updates 
+
+https://github.com/mvan231/Scriptable
+
+{Embed}
+https://github.com/mvan231/Scriptable
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+{Reactions}
+👍 (3) 
+
+[1217YYYY-103645] Robnor120#5622
+Thanks great stuff
+
+
+[1221YYYY-060813] mvan231#3698
+I forget who was asking for it and cannot find the post anymore (I think it was deleted) but I have finally reached a point with this widget that I feel it can be shared. 
+
+You can get it here https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator as well as find more info about it. 
+
+There are three ways to view the information.
+1. Small widget as 'left'
+2. Small widget as 'right'
+3. Medium widget to see both
+
+Calendars can also be excluded from the listings if you wish (see below)
+
+ * **Credit goes to Raigo Jerva https://gist.github.com/rudotriton/b51d227c3d1d9cb497829ae45583224f#instructions for the original code that I modified to create the base of the view for the right side of the widget.**
+        Inspiration was drawn from a comment on one of the r/Scriptable subreddit posts, but I cannot find it any longer. 
+* This widget is similar to my Upcoming Calendar widget, but this now has a display for the full month view with indicators of up to five calendar colors for each day. 
+    https://i.imgur.com/0QVdD7s.jpg
+* Each calendar color only appears one time per date. 
+* If you'd like certain calendars to not be included, you can add the calendar name(s) to the calIgnore array at the beginning of the script. 
+    * **Note:** each calendar to be ignored must be added inside of single or double quotes and separated by a comma (if more than one). I.e. ['Personal','Work']
+* If you'd like just the left or the right side of the widget to be shown in a medium or small widget, you can use the widget parameter of 'left' or 'right' respectively. 
+        https://i.imgur.com/ri9Wzwr.jpg
+
+https://www.reddit.com/r/Scriptable/comments/khg5i4/upcoming_calendar_indicator_widget/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+{Embed}
+https://imgur.com/0QVdD7s
+https://images-ext-1.discordapp.net/external/olDaTKXiGpzuGgFk5Lu0srX9oLpFdG0eRmuOVX2_J7E/https/i.imgur.com/0QVdD7s.jpg
+
+{Embed}
+https://imgur.com/ri9Wzwr
+https://images-ext-1.discordapp.net/external/jHe_mfi3323yqht5c_koOk1-TXAdwiCd4MSZVvFneeY/https/i.imgur.com/ri9Wzwr.jpg
+
+{Embed}
+https://www.reddit.com/r/Scriptable/comments/khg5i4/upcoming_calendar_indicator_widget/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
+r/Scriptable - Upcoming Calendar Indicator Widget
+0 votes and 0 comments so far on Reddit
+https://images-ext-2.discordapp.net/external/k9NCfr8eohitCmzmafDituv4iVu0m0EqhgfwB-vdSCY/%3Fauto%3Dwebp%26s%3Ddf4461129e0f2615bb611eb412dce979e0449645/https/external-preview.redd.it/oMIihR_ameIx_5qWFafoPUQ2BqIgx5aFa50ajy0i1uE.jpg
+
+{Embed}
+https://gist.github.com/rudotriton/b51d227c3d1d9cb497829ae45583224f
+Customizable iOS Calendar widget in Scriptable
+Customizable iOS Calendar widget in Scriptable. GitHub Gist: instantly share code, notes, and snippets.
+https://images-ext-1.discordapp.net/external/v2ToTBFZ7zHPk2sQlBt80EaH2hhwBfD3Zdf1J_uxMxs/https/github.githubassets.com/images/modules/gists/gist-og-image.png
+
+{Reactions}
+👍 (6) 😍 
+
+[1221YYYY-180519] bcronk12#1571
+You got it working huh?!
+
+
+[1222YYYY-115748] mvan231#3698
+Upcoming Calendar Indicator is updated to 1.2 now guys. Thanks for all the great feedback and ideas. 
+
+https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+
+Changes: 
+- add date URLs to the month view to allow you to tap on a date and go to it in the calendar app
+- add spacing in cases where less than 5 events are found for the calendar event list (user choice to use this or not in the configuration section)
+- add user choice for background color selection
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+
+[1222YYYY-144803] mythomagic#5570
+Here is a Time Tracker with just a push of the button 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/791044406043476018/timetracker.js
+
+{Reactions}
+👍 
+
+[1227YYYY-124530] mzeryck#5086
+Weather Cal now *finally* supports dark mode! You can specify custom dark mode colors for all text items, choose dark mode colors for solid-color and gradient backgrounds, and even specify the icon tint settings based on which mode you’re in.
+
+https://github.com/mzeryck/Weather-Cal
+
+{Embed}
+https://github.com/mzeryck/Weather-Cal
+mzeryck/Weather-Cal
+This is a Scriptable widget that lets you display, position, and format multiple elements, including dates and events, weather information, battery level, and more. You can even create your own ele...
+https://images-ext-2.discordapp.net/external/IfdyI-IM73WZw_h1BRM2kURFwfsvnS-n0PGxxBDL8oE/%3Fs%3D400%26v%3D4/https/avatars3.githubusercontent.com/u/71023727
+
+{Reactions}
+🙏 (5) 
+
+[1231YYYY-100905] mvan231#3698
+My Upcoming Calendar Indicator widget has a new update to v1.3 now and includes more customization options during setup. The latest version of no-background.js is required for the transparency effect to work properly
+
+https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+{Reactions}
+👍 (7) 
+
+[1231YYYY-103540] alombi#4305
+Great work, loving that! @mvan231
+
+{Reactions}
+😃 
+
+[0105YYYY-214132] FifiTheBulldog#6153
+@big_fan2019 Please don't talk here, as per the channel description. One channel is enough for your question.
+
+
+[0114YYYY-003453] mvan231#3698
+I've made some improvements and new implementations to my Upcoming Calendar Indicator widget based on some various feedback I have received both here in the sub and also on GitHub and Discord. 
+
+New changes are:
+- add in reminder support
+- add in setup question for reminder support
+- add option during setup for displaying the calendar color in the event list
+- reminder emoji added to reminder title
+- reminder list color added to display text color
+- adjust current date indicator font size to better align with the other dates
+- add in AM/PM indicator to the date shown in event list
+- add ability to change the base text color between for each mode (light/dark)
+- add setting for 24hr time vs 12hr for event list
+
+
+An example of what v1.5 could look like with the new base color changes is like this image https://i.imgur.com/CORi5YL.jpg. This is utilizing base text color changed to red and the 24 hour time format. 
+
+As before, you can see information and get the script from here on my GitHub https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+
+{Embed}
+https://imgur.com/CORi5YL
+https://images-ext-2.discordapp.net/external/IsCaiJMu1N2he1ojM13hvtiz6A1QEIz0kPGXJs1KTz4/https/i.imgur.com/CORi5YL.jpg
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/v1JlchpXmz123mjygNW-t9wXO-uH1qCynXuNxIVrAj8/%3Fs%3D400%26v%3D4/https/avatars1.githubusercontent.com/u/50910610
+
+{Reactions}
+👀 (2) 
+
+[0114YYYY-041713] ghastly#1793
+Finally finished my first YNAB widget!
+
+In case you don’t know YNAB is a budgeting app. Sadly, it does not have a widget but it does has an API you can use. As such, this shortcut will require you to first grab an API key from https://app.youneedabudget.com/settings/developer. Just put it into settings.token on the top of the file. 
+
+To specify the behaviour of the script you need pass it some parameters (long/hard press on widget > Edit Widget > Parameter). The parameters syntax is quite simple: {mode},{comma separated list of category groups to include OR exclamation prefixed categories to ignore}. Notice how you choose which category GROUPS to include and which INDIVIDUAL categories to ignore.
+
+The mode can be ‘double’, ‘wide’, or something else but it must be something. It controls the way the categories are displayed. There shouldn’t be any spaces in between each element. Capitalization matters. Categories to ignore can be prefixed with an exclamation point. 
+
+Lets say you have a category group called “Fixed”, which has quite a lot of categories within in so you want to use the double layout mode but you don’t want your “Water Bill” category to be displayed. You would use the following parameter: `double,Fixed,!Water Bill`
+
+Script: https://pastebin.com/raw/4THEW7A9
+
+In the screenshow you can see how each categorys name is displayed, followed by the group it is in. The number in red represent how much you spent in that category (rounded up) and number in green represents how much you have available (rounded down). The blue bar represents how much you have budgeted in that category and the green bar represents how much you spent in that category. The little red line is a pacer which is dependent on the goal type for that category, its deadline, and whether it even has a goal.
+
+(Notice how the top left widget is a bit bugged. This is caused by trying to fit too many categories into a small widget. If that happens use "double" instead!)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/799220574613536788/image0.jpg
+
+
+[0121YYYY-083322] bioxept#0951
+Just released a major update for my Telekom data usage widget. 
+
+Get it here:
+https://github.com/marcjulianschwarz/telekom-data-usage-widget
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/801821749439496202/image0.png
+
+{Embed}
+https://github.com/marcjulianschwarz/telekom-data-usage-widget
+marcjulianschwarz/telekom-data-usage-widget
+Telekom Datennutzung Widget für iOS 14 . Contribute to marcjulianschwarz/telekom-data-usage-widget development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/MaJq--IEn-1ifZkqWhwecbEu8lIF0YKseSBI2vDn2bM/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/67844154
+
+{Reactions}
+this yes pog (2) scriptable 
+
+[0131YYYY-072654] mvan231#3698
+https://github.com/mvan231/Scriptable/tree/main/COVID%20Trend%20Widget
+
+Just finished up the COVID Trend Widget! Instructions and setup info are at the link if interested.
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/COVID%20Trend%20Widget
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/GvKoEZDFd_CIZ3fCFKLxJjWJbpWXNmEqlVYXywUICA0/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/50910610
+
+{Reactions}
+👍 (4) scriptable (3) 
+
+[0131YYYY-072738] mvan231#3698
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/805429080866029568/image0.png
+https://cdn.discordapp.com/attachments/760940188758179921/805429081201049640/image1.png
+
+
+[0206YYYY-082644] Kynako#5982
+I just tried to setup easily for my small hobby..
+It can check and load scripts from github with a array that expressed as directory tree.
+https://github.com/Kynako/Ginit
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/807618287223570442/image0.jpg
+
+{Embed}
+https://github.com/Kynako/Ginit
+Kynako/Ginit
+Import scripts from guthub easily. Contribute to Kynako/Ginit development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/tL9jLzuiWmTrZ730WRVMQ_9beqOV8Xz6eucvUzGDnTk/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/66032272
+
+{Reactions}
+pog (2) 
+
+[0208YYYY-005747] yaylinda#0001
+Created this Multi-Day Calendar Widget, inspired  by another Scriptable user from earlier this week. Check it out and let me know your thoughts! 😄 
+
+https://www.reddit.com/r/Scriptable/comments/lf5vik/multiday_calendar_widget_code_in_comments/
+
+https://github.com/yaylinda/scriptable#multidaycalendarwidget
+
+{Embed}
+https://www.reddit.com/r/Scriptable/comments/lf5vik/multiday_calendar_widget_code_in_comments/
+r/Scriptable - Multi-Day Calendar Widget [code in comments]
+0 votes and 1 comment so far on Reddit
+https://images-ext-2.discordapp.net/external/UYFJbj7Hrg-dY0P1ODhaXWey4ZCw7i1oiFrrQS4WjpM/%3Fauto%3Dwebp%26s%3Db8e204c542f89e8e35944143a96c958f1138a276/https/preview.redd.it/nmaz43vw67g61.jpg
+
+{Embed}
+https://github.com/yaylinda/scriptable
+yaylinda/scriptable
+Scripts and widgets for the iOS Scriptable App . Contribute to yaylinda/scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/nucA9t9HlcgI7k7Hf8zQ1SlGu2yNulkMtDVY1gzmRjM/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/10225317
+
+{Reactions}
+thanks (2) pog scriptable 🎉 (3) 😮 👍 
+
+[0209YYYY-043231] Kynako#5982
+I wrote a script **DirExplorer** to generate structured object data about directories and files.
+Also you can see *Directory Tree* with it.
+https://github.com/Kynako/DirExplorer
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/808646507203919882/image0.jpg
+
+{Embed}
+https://github.com/Kynako/DirExplorer
+Kynako/DirExplorer
+Generate objects that expresses Directory, or "Directory Tree" - Kynako/DirExplorer
+https://images-ext-1.discordapp.net/external/tL9jLzuiWmTrZ730WRVMQ_9beqOV8Xz6eucvUzGDnTk/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/66032272
+
+{Reactions}
+thanks pog (2) scriptable 
+
+[0301YYYY-092656] Kynako#5982
+Hi! I wrote a twitter library for Scriptable.
+Now this library supports:
+- `.requestJson()`
+- `.uploadImage()`
+See more → https://github.com/Kynako/Twista-js
+note: I mistook to post to #💭-scripts-repository so reposted.
+
+{Embed}
+https://github.com/Kynako/Twista-js
+Kynako/Twista-js
+A Twitter library for Scriptable. Contribute to Kynako/Twista-js development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/tL9jLzuiWmTrZ730WRVMQ_9beqOV8Xz6eucvUzGDnTk/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/66032272
+
+
+[0311YYYY-074428] mvan231#3698
+It's been a long time since I have updated this one because most focus has been on Upcoming Calendar Indicator, but due to the request to add reminder support, I have now updated this widget to follow the similar technique. 
+
+You can now choose to have reminders display in your events list and it will show whether it has been completed or not. 
+
+Here https://i.imgur.com/jIB32gB.jpg 
+
+To get the latest code for this widget, please see my GitHub page https://github.com/mvan231/Scriptable/blob/main/README.md#upcoming-calendar-events-widget
+
+{Embed}
+https://imgur.com/jIB32gB
+https://images-ext-2.discordapp.net/external/ouXYySb3okgYI_x4-82CWPZEhiyTBHFZN8_dF7wtHd0/https/i.imgur.com/jIB32gB.jpg
+
+{Embed}
+https://github.com/mvan231/Scriptable/blob/main/README.md
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/GvKoEZDFd_CIZ3fCFKLxJjWJbpWXNmEqlVYXywUICA0/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/50910610
+
+{Reactions}
+🤙🏻 (3) 
+
+[0313YYYY-125329] Aim.#1234
+https://github.com/nils-kt/Scriptable-Proxmox-Status
+
+{Embed}
+https://github.com/nils-kt/Scriptable-Proxmox-Status
+nils-kt/Scriptable-Proxmox-Status
+Server Monitoring with Proxmox. Contribute to nils-kt/Scriptable-Proxmox-Status development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/sLgCizOT_U1RQF27Xdo663vcXY0KEiYlEq08ljQM3cg/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/34674720
+
+
+[0319YYYY-143430] mvan231#3698
+Twitter Widget has been fixed! 😃 
+
+https://reddit.com/r/Scriptable/comments/m8otz4/update_twitter_widget_has_been_fixed/
+
+{Embed}
+https://reddit.com/r/Scriptable/comments/m8otz4/update_twitter_widget_has_been_fixed/
+r/Scriptable - [Update] Twitter Widget has been fixed
+0 votes and 2 comments so far on Reddit
+https://images-ext-2.discordapp.net/external/2B1fRwWZdXB992EFkU69DJ1OEpdFM6zyrFKWJ2doQ-Y/%3Fauto%3Dwebp%26s%3D602e84907e57cdae1929ff88f9ebe7a628510c71/https/preview.redd.it/reyl9iedc1o61.jpg
+
+
+[0321YYYY-001403] elmiembr0#0001
+They’re unfortunately made to work with xr. https://raw.githubusercontent.com/EmpujateEste/scripts/main/Funimation.js
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/823061876463763466/image0.png
+
+
+[0403YYYY-015353] _Lumination#4480
+An easy, but useful code for unicolor backgrounds
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/827798041271730196/image0.png
+
+
+[0403YYYY-052303] _Lumination#4480
+```js
+
+// Variables used by Scriptable.
+// These must be at the very top of the file. Do not edit.
+// icon-color: blue; icon-glyph: magic;
+const widget = new ListWidget()
+
+
+
+if (args.widgetParameter) {
+    color = new Color(args.widgetParameter)
+    
+    widget.backgroundColor = color
+    Script.setWidget(widget)
+    QuickLook.present(widget)
+} else {
+    console.error("No parameters")
+    if (!config.runsInWidget) {
+        let err = new Alert()
+        err.title = "Error"
+        err.message = "No widget parameters"
+        err.presentAlert()
+    } else {
+        color = Color.black()
+        txt = Color.red()
+        
+        widget.backgroundColor = color
+        widget.addText("Error\nNo widget parameters")                
+        widget.textColor = txt
+        widget.font = Font.mediumRoundedSystemFont(20)    
+        Script.setWidget(widget)
+        Script.complete()
+    }
+}
+
+```
+
+
+[0404YYYY-155408] Shadowsniper784#3535
+Made a basic bazaar tracker for Hypixel Skyblock 
+```js
+var widget = new ListWidget()
+var path = '/private/var/mobile/Containers/Shared/AppGroup/99C8DAFD-3257-4C36-BD9A-340911D4881C/File Provider Storage/itemNames.json'
+  function string(text) {
+  var stringed = JSON.stringify(text)
+  return stringed
+}
+ function number(text) {    
+  var number=Math.round(JSON.stringify(text))
+  return number
+}
+
+
+let url = 'https://api.slothpixel.me/api/skyblock/bazaar'
+  let r = new Request(url)
+  r.method='GET'
+  let res = await r.loadJSON()
+  if (JSON.stringify(res).indexOf('Rate limit exceeded')>-1){
+  log(res)
+    throw new Error("\nUnfortunately the API limit has been exceeded.\nPlease check back later!")
+  }
+function buyfunc(item) {
+  var buy = 'BUY - $' + number(res[item]['quick_status']['buyPrice'])
+return buy
+}
+function sellfunc(item) {
+var sell = 'SELL - $' + number(res[item]['quick_status']['sellPrice'])
+return sell
+}
+//enter new items here
+addsection('ENCHANTED_OAK_LOG')
+addsection('ENCHANTED_COBBLESTONE')
+addsection('ENCHANTED_GOLD_BLOCK')
+addsection('ENCHANTED_CLAY_BALL')
+function add(item) {
+  var file = FileManager.local()
+var jso = file.readString(`${path}`)
+var display = JSON.parse(jso)
+var itemd = display[item]
+console.log(itemd)
+return itemd
+}
+function addsection(item) {
+  var display = add(item)
+  widget.addText(display)
+  widget.addText(buyfunc(item))
+  widget.addText(sellfunc(item))
+  widget.addSpacer(10)
+  return item
+}
+if (config.runsInApp) widget.presentLarge()
+else
+Script.setWidget(widget)```
+
+
+[0411YYYY-175502] Rhinozz#1489
+Simple lexer, if i ever complete this interpreter this’ll be in it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/830939027599261726/Lexer.js
+
+{Reactions}
+😮 
+
+[0413YYYY-060421] alombi#4305
+A widget that shows the latest and most important earthquake in Italy.
+
+https://github.com/alombi/ios-scripting#earthquake
+
+{Embed}
+https://github.com/alombi/ios-scripting
+alombi/ios-scripting
+A collection of scripts and widgets for iOS 14. Contribute to alombi/ios-scripting development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/cFVClJUcCxMLsN5TeIM73_1A7L6JJYsQtzoWgFkHUuk/%3Fs%3D400%26v%3D4/https/avatars.githubusercontent.com/u/62696529
+
+{Reactions}
+pog (2) 
+
+[0422YYYY-120321] sac396#9096
+I doubt anybody plays Halo 5 here, but I made this one to track how much XP I'm getting. It takes my character and emblem and everything and formats it all in a way that looks like the in game menus.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/834836783446622269/unknown.png
+
+{Reactions}
+👍 (3) 
+
+[0422YYYY-141435] sac396#9096
+https://github.com/sac396/H5-XP-iOS-Widget
+
+{Embed}
+https://github.com/sac396/H5-XP-iOS-Widget
+sac396/H5-XP-iOS-Widget
+Scriptable widget to show Halo 5 XP Progress. Contribute to sac396/H5-XP-iOS-Widget development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/72SH0raELB7yK4x-IaKhq8SRN2xPSt1lrkAEOiyJ190/https/opengraph.githubassets.com/350fea1debcbfbe5da19b68eade1515d5a52066180edd994888da501c1e022dc/sac396/H5-XP-iOS-Widget
+
+
+[0429YYYY-101507] supermamon#7273
+Took me a week to finish this. I hope you find this useful - https://github.com/supermamon/scriptable-selig
+
+{Embed}
+https://github.com/supermamon/scriptable-selig
+supermamon/scriptable-selig
+Selig - Reddit API Wrapper for Scriptable. Contribute to supermamon/scriptable-selig development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/rQ71co3LqZTrqR8oF_CBM-9B7T9T_nDpMFEbYRBppMg/https/opengraph.githubassets.com/2c9834c8c4217f0352972fcc551e9fd096bd04a6bb0dc31ee2309ca711b05a5b/supermamon/scriptable-selig
+
+{Reactions}
+🔥 (6) 
+
+[0508YYYY-134908] _Lumination#4480
+Free and useful template for development, can be useful and also very easy to reproduce some of the functions soooooo
+https://github.com/lumi-nation/template/blob/main/Template.js
+
+{Embed}
+https://github.com/lumi-nation/template/blob/main/Template.js
+lumi-nation/template
+Scriptable Template. Contribute to lumi-nation/template development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/9PQ3vz73IiSlBEqGbpD9XzxjDsa8d_eBQhf3OivRbfw/https/opengraph.githubassets.com/0a0679624a12f521b81180366ef53968911d52e64c6d6fb6f7088da955878797/lumi-nation/template
+
+
+[0513YYYY-014825] Rhinozz#1489
+https://github.com/Rhinozz/scriptablehexdump/blob/main/hexdump.js Hex dump for mainly images, but all files should work. Slow on larger files, an HTML solution is maybe possible
+
+{Embed}
+https://github.com/Rhinozz/scriptablehexdump/blob/main/hexdump.js
+Rhinozz/scriptablehexdump
+Hex dump in Scriptable. Contribute to Rhinozz/scriptablehexdump development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/M0WAdwWgnqzuwloziaLKY3NvuRgR9MvUMAy9VwM5dq8/https/opengraph.githubassets.com/86c59bb30ca84b18604e16600c36fc11684d5754f02f6b0678b74528bf321598/Rhinozz/scriptablehexdump
+
+{Reactions}
+scriptable 
+
+[0523YYYY-095406] Shadowsniper784#3535
+```js
+function ConvertStringToHex(str) {
+    var arr = [];
+    for (var i = 0; i < str.length; i++) {
+        arr[i] = str
+            .charCodeAt(i)
+            .toString(16)
+            .slice(-4);
+        }
+        return '%' + arr.join('%');
+    }
+function ConvertStringToUni(str) {
+    var arr = [];
+    for (var i = 0; i < str.length; i++) {
+        arr[i] = '00' + str
+            .charCodeAt(i)
+            .toString(16)
+            .slice(-4);
+        }
+        return '\\u' + arr.join('\\u');
+    }
+let alert = new Alert();
+
+alert.title = "String to Hex converter";
+alert.message = "Enter string to turn to hex below";
+alert.addTextField("String:", "");
+alert.addAction("Convert To Unicode");
+alert.addAction("Convert to url encoding")
+const index = await alert.present()
+const value = await alert.textFieldValue(0)
+if(index === 0) console.log(ConvertStringToUni(value))
+if(index === 1) console.log(ConvertStringToHex(value))```
+**Unicode or URLEncode converter!**
+
+
+[0523YYYY-095517] elmiembr0#0001
+\u004e\u0069\u0063\u0065
+
+How about a Decoder?
+
+
+[0523YYYY-154014] Rhinozz#1489
+https://github.com/Rhinozz/os-scriptable
+
+{Embed}
+https://github.com/Rhinozz/os-scriptable
+Rhinozz/os-scriptable
+The 'os' module from Node.js, ported to Scriptable. - Rhinozz/os-scriptable
+https://images-ext-1.discordapp.net/external/6A1kc1Xw8gcHQteo19esMF0z9-EXSqbhE6g2IC5_LgQ/https/opengraph.githubassets.com/7e57a942b17c4090c9255d5ee33ed45089ce6517dc77dab567b9a4834ae25d87/Rhinozz/os-scriptable
+
+{Reactions}
+🔥 
+
+[0523YYYY-211837] Rhinozz#1489
+might as well post this - above link has been moved to https://github.com/Rhinozz/npm-scriptable so all the modules can be in one place
+
+{Embed}
+https://github.com/Rhinozz/npm-scriptable
+Rhinozz/npm-scriptable
+A project to convert npm packages to Scriptable modules. - Rhinozz/npm-scriptable
+https://images-ext-1.discordapp.net/external/PVMZaCuQ9yAEzXK8CZcLCHPMgTiAIA7iQaTjNJEWhTQ/https/opengraph.githubassets.com/6a57c016f966394ee4fd71310b6748e6c38a5f5fe1338ce00913d5e515df53ff/Rhinozz/npm-scriptable
+
+{Reactions}
+👍 thanks scriptable 
+
+[0524YYYY-162520] Rhinozz#1489
+https://github.com/Rhinozz/npm-scriptable/releases/tag/v1.0.1 hopefully fixes the issue marcus was referring to
+
+{Embed}
+https://github.com/Rhinozz/npm-scriptable/releases/tag/v1.0.1
+Release v1.0.1 · Rhinozz/npm-scriptable
+Modules:
+
+os
+
+Updates:
+
+cpus(), networkInterfaces(), and userInfo() output object literals instead of strings
+loadavg() outputs an array instead of a string
+The non-minified comment now includes re...
+https://images-ext-2.discordapp.net/external/WwtBNYncaIYxIhc3NGF7742iFPMFS0NXYFn-KQPEXqE/https/opengraph.githubassets.com/2944579d6de99920640255914494f9caed397d6499101510f660561e04f8953d/Rhinozz/npm-scriptable
+
+
+[0526YYYY-202524] FifiTheBulldog#6153
+A (relatively) simple script for RoutineHub users like me who are so lazy that even filling in login credentials from a password manager is too much work. This automatically logs you in and presents RoutineHub in a WebView.
+
+I've attached the .scriptable file for easy importing, but here's the code:
+```js
+const login = {
+  username: "USERNAME_HERE",
+  password: "PASSWORD_HERE"
+}
+
+const wv = new WebView()
+await wv.loadURL("https://routinehub.co/login")
+await wv.evaluateJavaScript(`  
+  const details = ${JSON.stringify(login)}  
+  for (const item of Object.keys(details)) {
+    document.getElementById("id_" + item).value = details[item]  
+  }  
+  Array.from(document.getElementsByClassName("button")).filter(element => element.children.length === 0)[0].click()
+`)
+await wv.waitForLoad()
+wv.present()```
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/847284323123462244/RoutineHub_Login.scriptable
+
+{Reactions}
+💯 
+
+[0530YYYY-173344] Rhinozz#1489
+https://github.com/Rhinozz/brainable A brainf*** interpreter, in Scriptable. Have fun \:)
+
+{Embed}
+https://github.com/Rhinozz/brainable
+Rhinozz/brainable
+A brainf*** interpreter in Scriptable. Contribute to Rhinozz/brainable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/eSkk8zUSapuy45qPdzpp2JcJv5yRrNGsvw7MAW4Kzq4/https/opengraph.githubassets.com/ee78d121f9309fdfe41f060eb99ebc1aa944933d6b7cb546bf82d57cd9836214/Rhinozz/brainable
+
+{Reactions}
+🧠 
+
+[0530YYYY-174518] Rhinozz#1489
+as fifi did above, here's the .scriptable file for easy importing
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/848693584705355806/Brainable.scriptable
+
+
+[0602YYYY-101031] mvan231#3698
+I have been working on a few different updates and requests that users have had for my Upcoming Calendar Indicator widget.
+
+Finally, the day has come where I can release v1.9.
+
+The changes in 1.9 are quite significant in terms of beneath the surface code improvements. Overall the widget loads much faster and some new features were implemented as well for further customization.
+
+the code for the widget is located here on my GitHub repo https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+
+For an example of the latest version and what it could look like, you can see this screenshot, which shows usage of the saturdaySundayHighlight and the dayColor item to change the day initial colors.
+
+https://preview.redd.it/xqw1thu77v271.jpg?width=1170&format=pjpg&auto=webp&s=9ea863521d5cc41e9d8518c06f34e628bfb2f851
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/Upcoming%20Calendar%20Indicator
+mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/BIrgl1OVce0p7QdSrz56Su1EI2Q0qZnNI8YsFFJyMqM/https/opengraph.githubassets.com/d7d06bb89be8562828a25b8a6cd63540bc1268d57450d78dc9b9ea81953aead4/mvan231/Scriptable
+
+{Embed}
+https://preview.redd.it/xqw1thu77v271.jpg?width=1170&format=pjpg&auto=webp&s=9ea863521d5cc41e9d8518c06f34e628bfb2f851
+https://images-ext-1.discordapp.net/external/NdZu4XLYSo-h-jGGdYzzEJZ2RiHnFlay1AzHMhZB-Ak/%3Fwidth%3D1170%26format%3Dpjpg%26auto%3Dwebp%26s%3D9ea863521d5cc41e9d8518c06f34e628bfb2f851/https/preview.redd.it/xqw1thu77v271.jpg
+
+{Reactions}
+🔥 (3) 
+
+[0603YYYY-212048] Rhinozz#1489
+Here's something from a months-old project. It's a pretty simple rock-paper-scissors game that was a part of a demo that ended up failing. The problem is pretty evident, though - it's minified like crazy. Yep, it's stupid and unreadable. I'm not posting this on github lol
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/850197366278848532/rbsmin.scriptable
+
+
+[0613YYYY-103127] supermamon#7273
+https://github.com/supermamon/scriptable-uipickertable
+
+{Embed}
+https://github.com/supermamon/scriptable-uipickertable
+supermamon/scriptable-uipickertable
+Extends UITable  making each row a selectable item. - supermamon/scriptable-uipickertable
+https://images-ext-1.discordapp.net/external/ROs1fV1Uh0fwmoLz-SGjZIitwyqyhZDYiRjQijsCGXA/https/opengraph.githubassets.com/97084de5d95cc4374466c1a7bafa9f120055e447569a052ec56d5407f6701b42/supermamon/scriptable-uipickertable
+
+{Reactions}
+🔥 (2) 
+
+[0728YYYY-090432] Kynako#5982
+I made an Alert-based Simple Keychain manager.
+https://github.com/Kynako/Scriptable-Scripts/blob/main/Simple-Keychain-Manager/Simple-Keychain-Manager.js
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/869943414219747358/image0.jpg
+https://cdn.discordapp.com/attachments/760940188758179921/869943414500778054/image1.jpg
+
+{Embed}
+https://github.com/Kynako/Scriptable-Scripts/blob/main/Simple-Keychain-Manager/Simple-Keychain-Manager.js
+Scriptable-Scripts/Simple-Keychain-Manager.js at main · Kynako/Scri...
+For an iOS app named Scriptable. Contribute to Kynako/Scriptable-Scripts development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/c5bCjqDzQjb6zYqzG8ANkEBn8Rcyu3oA5eP_v7EGY6U/https/opengraph.githubassets.com/895b3c1504a1fdb228509efc84e3708c642abb3d3206d1147af6ee3305f794e8/Kynako/Scriptable-Scripts
+
+{Reactions}
+pog 🔥 
+
+[0730YYYY-142257] simoasis#3633
+Just got started to add some of my shortcuts / scriptable on my blog:   https://kleverapps.com/ios-kurzbefehle-shortcuts-scriptable/  will extend this one soon, check my blog   and use comments in there for your thoughts/ feedback or additions. Thanks 😎
+
+{Embed}
+https://kleverapps.com/ios-kurzbefehle-shortcuts-scriptable/
+iOS Kurzbefehle / Shortcuts & Scriptable
+
+{Reactions}
+👌🏽 
+
+[0809YYYY-220705] rafaelgandi#6284
+Hi all. Its my first time using discord 🙂 
+Here's a library I made for making widgets using html like markup. Its pretty much on a very early stage of development. Hope you guys can check it out. Thanks!
+https://github.com/rafaelgandi/WidgetMarkup-Scriptable
+
+{Embed}
+https://github.com/rafaelgandi/WidgetMarkup-Scriptable
+GitHub - rafaelgandi/WidgetMarkup-Scriptable: Simple implementation...
+Simple implementation of markup for Scriptable widgets. - GitHub - rafaelgandi/WidgetMarkup-Scriptable: Simple implementation of markup for Scriptable widgets.
+https://images-ext-1.discordapp.net/external/ZWRMbGz5CgGV158UbJGOLGdbtMGRi_j28zPHOTDAKPs/https/opengraph.githubassets.com/9def562b005386953fcc71a00b53325b7e55f81382ef51b56a3e2b7d364a6a4a/rafaelgandi/WidgetMarkup-Scriptable
+
+{Reactions}
+pog (2) 😃 (2) 🔥 (2) 
+
+[0827YYYY-042749] mvan231#3698
+I just released my Weather Overview widget. 
+
+It has many configurable items for the display and can be shown in medium or small sizes. 
+
+You can see more about it and get the code for it here:
+https://github.com/mvan231/Scriptable/tree/main/Weather%20Overview
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/880745410304544788/image0.jpg
+https://cdn.discordapp.com/attachments/760940188758179921/880745410623332453/image1.jpg
+https://cdn.discordapp.com/attachments/760940188758179921/880745410866589706/image2.png
+https://cdn.discordapp.com/attachments/760940188758179921/880745411160186910/image3.png
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/Weather%20Overview
+Scriptable/Weather Overview at main · mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/0U9SBfBIy5bijVYv4-7B7z4xTvboBduVRcI4o-iIMbU/https/opengraph.githubassets.com/24b3ae11288d166053972f404fb09a2ef2af231679001c25ee0e234e1e5e28c5/mvan231/Scriptable
+
+{Reactions}
+👍 (2) 🔥 👀 
+
+[0902YYYY-052100] supermamon#7273
+hope you like this
+https://github.com/supermamon/scriptable-file-browser
+
+{Embed}
+https://github.com/supermamon/scriptable-file-browser
+GitHub - supermamon/scriptable-file-browser: A mini file browser fo...
+A mini file browser for Scriptable. Contribute to supermamon/scriptable-file-browser development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/ZLyUE7hYNELesDj2DiuDUhf2kScuRuooe-6yYsklWN4/https/opengraph.githubassets.com/50ca81535fc5d353f77fd3eb094476a510b9b59f167931d8f6a0495526831c67/supermamon/scriptable-file-browser
+
+{Reactions}
+pog (4) 🔥 (2) 
+
+[0916YYYY-074032] mvan231#3698
+I just released my VSCO Recents Widget 
+
+It can display a random recent photo from a specified profile, or always the latest photo from the specified profile.
+
+You can check it out on my GitHub
+https://github.com/mvan231/Scriptable/tree/main/VSCO%20Recents
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/888041669256155166/image0.png
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/VSCO%20Recents
+Scriptable/VSCO Recents at main · mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/EqWvphE7xCIVPMmIU_IkwSyY0PVlX3cyxnw0518FI48/https/opengraph.githubassets.com/f4cd4399a4bb5d413d89c7672785233399c81e9e84e6347b67c7a01e9c32dafe/mvan231/Scriptable
+
+{Reactions}
+this 
+
+[0922YYYY-224642] Kynako#5982
+Generate classes that can use method-chaining from built-in classes of Scriptable.
+
+https://gist.github.com/Kynako/3b7a8b2ddc49a91f2fa30790a22bd322
+> https://discord.com/channels/760937324711641108/760942601946923058/890402115028144140
+
+{Embed}
+https://gist.github.com/Kynako/3b7a8b2ddc49a91f2fa30790a22bd322
+Generate classes that can use method chaining from built-in classes.
+Generate classes that can use method chaining from built-in classes. - chainable.js
+https://images-ext-1.discordapp.net/external/v2ToTBFZ7zHPk2sQlBt80EaH2hhwBfD3Zdf1J_uxMxs/https/github.githubassets.com/images/modules/gists/gist-og-image.png
+
+
+[1002YYYY-054210] mvan231#3698
+My Automators.fm Feed Widget is now available for anyone interested. 
+
+https://github.com/mvan231/Scriptable/tree/main/Automators.fm%20Feed
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/893810085804015696/image0.png
+
+{Embed}
+https://github.com/mvan231/Scriptable/tree/main/Automators.fm%20Feed
+Scriptable/Automators.fm Feed at main · mvan231/Scriptable
+Contribute to mvan231/Scriptable development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/fH9aXQv8m0Gvw2nFl69y8doC9xSNfauaBBIJbZIeNVA/https/opengraph.githubassets.com/0ede5b9cfea97ce4ecdf53e64a1a99134225b0c580a04ca0bb8c4e492f0d35c6/mvan231/Scriptable
+
+{Reactions}
+👍 (4) 
+
+[1028YYYY-094615] Kynako#5982
+https://github.com/Kynako/file-cache
+`file-cache.js` to manage cache files.
+
+{Embed}
+https://github.com/Kynako/file-cache
+GitHub - Kynako/file-cache
+Contribute to Kynako/file-cache development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/PflPp_e2oq8ejjvLY7I2AipVgdDxGV4_az53bgLJceg/https/opengraph.githubassets.com/daa7448d74f0777b866ab8ea671298e1462ede9fb52f83b77982ee9f22b71a42/Kynako/file-cache
+
+{Reactions}
+pog 
+
+[1030YYYY-132736] iamrbn#7194
+https://github.com/whothefuckishrb/slack-status
+
+{Embed}
+https://github.com/whothefuckishrb/slack-status
+GitHub - whothefuckishrb/slack-status: Script which displays the cu...
+Script which displays the current Slack Status via API as Scriptable Widget. This is the missing script for all power Slack user. - GitHub - whothefuckishrb/slack-status: Script which displays the ...
+https://images-ext-1.discordapp.net/external/5hxnRFGXHXhhe7nfq3JqMUTnW5gxoyjHxGIw2_9cpuY/https/opengraph.githubassets.com/26fa730bcb9e10cb3ef2982a66a00dfd7933767603cf591896c74b6f646e8a2a/whothefuckishrb/slack-status
+
+
+[1109YYYY-170019] FifiTheBulldog#6153
+Nearly forgot to put this here—TestFlight Watcher, a widget to watch for openings in TestFlight betas and notify you when a spot is available: https://github.com/FifiTheBulldog/scriptable-testflight-watcher
+
+{Embed}
+https://github.com/FifiTheBulldog/scriptable-testflight-watcher
+GitHub - FifiTheBulldog/scriptable-testflight-watcher: A Scriptable...
+A Scriptable widget to watch for openings in TestFlight betas and notify you when a spot is available. - GitHub - FifiTheBulldog/scriptable-testflight-watcher: A Scriptable widget to watch for open...
+https://images-ext-2.discordapp.net/external/1lj5aovptaxnYdi4KHn_dO2UUZSwWJ70Y3DPI6uDSLU/https/opengraph.githubassets.com/3bb1f18c55fde89f08a316335c69b58d9f22d5db6642219e66b3f6bf15d56975/FifiTheBulldog/scriptable-testflight-watcher
+
+{Reactions}
+👍 (3) 
+
+[1115YYYY-131302] Omar Zoro11#6389
+Hey guys I see you all posting those gethub links for scripts but I’m really a beginner in this app ,so can you guide me to how add scripts from gethub links
+
+
+[1119YYYY-113013] FifiTheBulldog#6153
+I wrote a little function last night to combine images, just like you can do in Shortcuts with the Combine Images action (minus the grid layout option, I haven’t implemented that yet). It uses a DrawContext to draw all the images in the desired positions one after another.
+
+```js
+/**
+ * Combine images horizontally or vertically.
+ * @param {Image[]} imgs The images to combine.
+ * @param {boolean} vertical Whether to combine the images vertically. When this is false, the images will be combined horizontally.
+ * @param {number} spacing The spacing between images.
+ * @returns {Image} The combined image.
+ */
+function combine(imgs, vertical, spacing = 0) {
+  const dc = new DrawContext();
+  let long_side = spacing * (imgs.length - 1);
+  let short_side = 0;
+  for (const img of imgs) {
+    if (vertical) {
+      long_side += img.size.height;
+      if (img.size.width > short_side) short_side = img.size.width;
+    } else {
+      long_side += img.size.width;
+      if (img.size.height > short_side) short_side = img.size.height;
+    }
+  }
+  if (vertical) {
+    dc.size = new Size(short_side, long_side)
+  } else {
+    dc.size = new Size(long_side, short_side);
+  }
+  let long_position = 0;
+  for (const img of imgs) {
+    let r;
+    if (vertical) {
+      r = new Rect(0, long_position, img.size.width, img.size.height);
+    } else {
+      r = new Rect(long_position, 0, img.size.width, img.size.height);
+    }
+    dc.drawImageInRect(img, r);
+    long_position += (vertical) ? img.size.height : img.size.width;
+    long_position += spacing;
+  }
+  return dc.getImage();
+}
+```
+
+{Reactions}
+💪 (3) 
+
+[1216YYYY-164533] komischertimon#3874
+https://github.com/komischertimon/iOS-Widget-Welcome
+
+I just published my first Widget take a look if you want
+
+{Embed}
+https://github.com/komischertimon/iOS-Widget-Welcome
+GitHub - komischertimon/iOS-Widget-Welcome: In this repo you will f...
+In this repo you will find the script of a template which is full of greeting phrases. If you are interested, you are free to copied the code and use your widget. - GitHub - komischertimon/iOS-Widg...
+https://images-ext-2.discordapp.net/external/l78Ps5O0r-9TtSchvrgNx4EvOruzEYqKt6eaktgdaAM/https/opengraph.githubassets.com/0010598ea9cf723a92e6cc70659eede2841416d23e860c021286db2a88de4f4b/komischertimon/iOS-Widget-Welcome
+
+{Reactions}
+thanks (2) scriptable 
+
+[0103YYYY-201317] supermamon#7273
+late reply. easiest way is using Import-Script - https://github.com/supermamon/scriptable-scripts/tree/master/Import-Script
+
+{Embed}
+https://github.com/supermamon/scriptable-scripts/tree/master/Import-Script
+scriptable-scripts/Import-Script at master · supermamon/scriptable-...
+My scripts for the Scriptable app. https://scriptable.app/ - scriptable-scripts/Import-Script at master · supermamon/scriptable-scripts
+https://images-ext-2.discordapp.net/external/EOGkRGmHWKhRa6PGBb7rJMTbftPq1KW61il24Vyo5G4/https/opengraph.githubassets.com/850f207fa09d2609363bb784f30ade022265b0bf9eef22312b63685f6f4585e6/supermamon/scriptable-scripts
+
+{Reactions}
+☝️ (2) 
+
+[0104YYYY-142340] 313ctr0nz#8145
+if you are into crypto - 
+https://github.com/313ctr0nz/widgets/blob/main/debank_proto.js
+
+{Embed}
+https://github.com/313ctr0nz/widgets/blob/main/debank_proto.js
+widgets/debank_proto.js at main · 313ctr0nz/widgets
+IOS widgets. Contribute to 313ctr0nz/widgets development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/foj_n6RBltgwLSY0eIbfpB5WQaoUyPZ5hwHryO2Syqc/https/opengraph.githubassets.com/e44b6532aa96e90381a090dc3238e06219bfb1e66434d99d31c9c334c3606b75/313ctr0nz/widgets
+
+
+[0106YYYY-185920] jonasm#2338
+Hi everyone just wanted to introduce myself with my first widget -Where is Webb:
+
+https://github.com/jonasmanuel/WhereIsWebbWidget
+
+{Embed}
+https://github.com/jonasmanuel/WhereIsWebbWidget
+GitHub - jonasmanuel/WhereIsWebbWidget
+Contribute to jonasmanuel/WhereIsWebbWidget development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/bFX_3yNpjgqH6PbhQIfyFensorECxq3BLjLpakj_7mQ/https/opengraph.githubassets.com/db96490bb5b1db163f71f6edd1d303ba7441859f547c5bfafdd34e2a3c8fd060/jonasmanuel/WhereIsWebbWidget
+
+
+[0106YYYY-191031] jonasm#2338
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/928817847860346930/IMG_0173.png
+
+{Reactions}
+😉 (2) pog (2) 👍 (3) 
+
+[0117YYYY-222900] Fuzz#1894
+I created a dynamic word cloud class that can be used in widgets! This one took a long time to make, I hope people enjoy it!
+
+https://github.com/stanleyrya/scriptable-word-cloud
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/932854063215837294/1-title-dark.JPG
+https://cdn.discordapp.com/attachments/760940188758179921/932854063572324433/17-celestial-background.PNG
+https://cdn.discordapp.com/attachments/760940188758179921/932854063832387645/18-festive-background.PNG
+
+{Embed}
+https://github.com/stanleyrya/scriptable-word-cloud
+GitHub - stanleyrya/scriptable-word-cloud
+Contribute to stanleyrya/scriptable-word-cloud development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/oRgWDsLTwcFOhgYvNrViKVZFmyhf9DIzS86MaHi5njI/https/opengraph.githubassets.com/1ed559c006961e898dafc66e7af83cb68889423345641b1bdd480a3de7fb2141/stanleyrya/scriptable-word-cloud
+
+{Reactions}
+😉 (3) pog (3) 👍 (5) 
+
+[0204YYYY-053302] 맹준호#4856
+I would found fixed version of  futcal   by anyone since ios15.3 you know what My opinion is that I wanna sharing guys https://github.com/thejosejorge/futcal-for-scriptable
+
+{Embed}
+https://github.com/thejosejorge/futcal-for-scriptable
+GitHub - thejosejorge/futcal-for-scriptable: Futcal is a football w...
+Futcal is a football widget for Scriptable. Contribute to thejosejorge/futcal-for-scriptable development by creating an account on GitHub.
+https://images-ext-2.discordapp.net/external/-IAg8Qb8iebZMyZ8C14Y4Ga1IwAQ3DwDKg7VsjpZ3Xw/https/repository-images.githubusercontent.com/325784035/eae94880-4b61-11eb-803f-87b21aea1dc0
+
+{Reactions}
+🔥 (2) 
+
+[0212YYYY-054550] Kynako#5982
+I wrote a library to log for Scriptable.
+https://github.com/Kynako/scriptable-logger
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/942023693159239720/logger.scriptable
+
+{Embed}
+https://github.com/Kynako/scriptable-logger
+GitHub - Kynako/scriptable-logger: A library to log for Scriptable.
+A library to log for Scriptable. Contribute to Kynako/scriptable-logger development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/9d4B86Ql4WaZcFZ5eH3e1Es7YsbksbDHkCJhUUhdEzE/https/opengraph.githubassets.com/cc57b3ba4d7485775de726a022181027aa8738e21b9a165bdd462d67a9f6c973/Kynako/scriptable-logger
+
+{Reactions}
+pog (2) 👍 (4) 
+
+[0215YYYY-044435] Kynako#5982
+`_scriptable_log()`, `_scriptable_logWarning()` and `_scriptable_logError` are supported as aliases; `+$log()`, `$warn()` and `$error()` in develop branch
+
+
+[0218YYYY-121039] FifiTheBulldog#6153
+For as long as I’ve been [an admin] here and learning about Scriptable, I actually just built my first truly practical script this morning. Figured I’d share it here.
+
+It’s a very simple widget that gives me quick access to the menus of two different dining halls on campus, with the current URLs changing slightly as the date changes—essentially a pair of self-updating bookmarks that open in in-app Safari views. Without this, I would have to navigate a bit on the culinary services website to get to today’s menu. (I was previously using Shortcuts for this, but given the relative inefficiency and unreliability of Shortcuts, I decided to migrate my two dining hall menu shortcuts to a single Scriptable script. I think I made the right decision.)
+
+Here’s my code, with the university’s domain and dining hall names replaced by generic placeholders. It’s meant to be added to the home screen as a medium-size widget.
+```js
+if (args.queryParameters.hall) {
+  const { hall } = args.queryParameters
+  
+  const df = new DateFormatter()
+  df.dateFormat = "yyyy-MM-dd"
+
+  Safari.openInApp(`https://dininghalls.universityname.edu/menu/${encodeURIComponent(hall)}/all/${df.string(new Date())}`, false)
+  return
+}
+
+const halls = [
+  {
+    name: "Foo",
+    slug: "Barbaz Commons at Foo"
+  },
+  {
+    name: "Lorem",
+    slug: "Lorem Square"
+  }
+]
+
+const wdgt = new ListWidget()
+
+wdgt.addSpacer()
+
+const title = wdgt.addText(Script.name())
+title.font = Font.title2()
+title.centerAlignText()
+
+wdgt.addSpacer()
+
+const stack = wdgt.addStack()
+stack.layoutHorizontally()
+
+stack.addSpacer()
+
+for (let i = 0; i !== halls.length; ++i) {
+  const hall = halls[i]
+  
+  const url = `${URLScheme.forRunningScript()}?hall=${encodeURIComponent(hall.slug)}`
+
+  const wdgtButton = stack.addText(hall.name)
+  wdgtButton.url = url
+  
+  if (i !== halls.length - 1) {
+    stack.addSpacer()
+  }
+}
+
+stack.addSpacer()
+
+wdgt.addSpacer()
+
+if (config.runsInApp) {
+  wdgt.presentMedium()
+}
+Script.setWidget(wdgt)
+```
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/944294860104548352/IMG_9365.png
+https://cdn.discordapp.com/attachments/760940188758179921/944294860440100934/IMG_9366.png
+
+{Reactions}
+👍 (4) pog (2) scriptable (2) 
+
+[0307YYYY-111118] BLØB <3#7300
+Widget with weather date and calendar events 
+
+https://drive.google.com/drive/folders/14YKJhdu8z7zDsKiUjp4z2mwZpFeo00uy
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/950440521409626232/IMG_3185.png
+
+{Reactions}
+pog thanks scriptable (2) 
+
+[0309YYYY-035512] alombi#4305
+After a long time i finally started taking a look at my old widgets, and updated two of them. Both the updates feature overall improvements and fixes.
+
+**Space Control**: https://github.com/alombi/space-control-widget
+
+**Earthquakes in Italy**: https://github.com/alombi/earthquake-widget
+
+{Embed}
+https://github.com/alombi/space-control-widget
+GitHub - alombi/space-control-widget: Space Control is a widget tha...
+Space Control is a widget that shows the next upcoming space launch, its status and its location - GitHub - alombi/space-control-widget: Space Control is a widget that shows the next upcoming space...
+https://images-ext-1.discordapp.net/external/GGWKIxdpPqbkI7qvMnjXoOUXvVxhEbfGMppSCakpHAI/https/opengraph.githubassets.com/365105c71543e2fd53d0b6f4f43abbd3ef3c9d4de791ad6b4cae61ebca63167c/alombi/space-control-widget
+
+{Embed}
+https://github.com/alombi/earthquake-widget
+GitHub - alombi/earthquake-widget: An iOS widget made with Scriptab...
+An iOS widget made with Scriptable that relies on my earthquakes API - GitHub - alombi/earthquake-widget: An iOS widget made with Scriptable that relies on my earthquakes API
+https://images-ext-1.discordapp.net/external/eAorJFexQvgIkK4Imc2rvUtnP2Q9pnqhl1OOw_xQV7I/https/opengraph.githubassets.com/694df96215d628c290087b10635cc38724e3d338500b8bb01636bd21861d33e9/alombi/earthquake-widget
+
+{Reactions}
+👍 (3) 
+
+[0320YYYY-203425] mzeryck#5086
+I wrote a widget that allows you to display other Scriptable widgets on a timed schedule. I've tested it a bit, but I'd really appreciate feedback. https://github.com/mzeryck/Widget-Schedule
+
+{Embed}
+https://github.com/mzeryck/Widget-Schedule
+GitHub - mzeryck/Widget-Schedule: This is a Scriptable widget that ...
+This is a Scriptable widget that allows you to display other Scriptable widgets on a timed schedule. - GitHub - mzeryck/Widget-Schedule: This is a Scriptable widget that allows you to display other...
+https://images-ext-1.discordapp.net/external/0GjVfzuP95_s6LBnaUDXRbKoAY51Nqhb41_4Z8n2b1w/https/opengraph.githubassets.com/7311f6ab0f2f262397f8f69a9cb42edd156a8cdb5f6c95a56afa7a995dcc4049/mzeryck/Widget-Schedule
+
+
+[0327YYYY-114629] Yorri#1071
+Widget shows russia's current losses in the war against Ukraine.
+Two languages - ukrainian (UA) and english (UK).
+
+More details see https://github.com/extendedzero/Scriptable-IOS-Widget/tree/main/Losses_of_russia
+
+{Embed}
+https://github.com/extendedzero/Scriptable-IOS-Widget/tree/main/Losses_of_russia
+Scriptable-IOS-Widget/Losses_of_russia at main · extendedzero/Scrip...
+Script collection for use with Scriptable App as IOS Widget  - Scriptable-IOS-Widget/Losses_of_russia at main · extendedzero/Scriptable-IOS-Widget
+https://images-ext-2.discordapp.net/external/bed81soT6RT8IZd7GsaoEuRDUtSA68eS63xTRYLg0js/https/opengraph.githubassets.com/61b5b4b59133f91ff4daaeb1bc138040d16cfcc94405a45be96b5b5a61f095c8/extendedzero/Scriptable-IOS-Widget
+
+{Reactions}
+👍 (2) 
+
+[0327YYYY-115655] Yorri#1071
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/957684654561964032/IMG_7439.png
+https://cdn.discordapp.com/attachments/760940188758179921/957684654884921404/IMG_7438.png
+
+{Reactions}
+👍 (3) 
+
+[0430YYYY-183211] iamrbn#7194
+Reddit User Widget - I made a widget that shows your Karma, Coin Balance,  Profile Image, Cakeday etc. Get it here: https://github.com/iamrbn/Reddit-Widget
+
+{Attachments}
+https://cdn.discordapp.com/attachments/760940188758179921/970105318623297616/Post-Banner.png
+
+{Embed}
+https://github.com/iamrbn/Reddit-Widget
+GitHub - iamrbn/Reddit-Widget: Script which shows your Reddit-Karma...
+Script which shows your Reddit-Karma, Coins, Profile Image etc. - GitHub - iamrbn/Reddit-Widget: Script which shows your Reddit-Karma, Coins, Profile Image etc.
+https://images-ext-2.discordapp.net/external/pP7V-XjEHp55B3zKLByy2r844Mx4paHc-ls2IpkNVXk/https/opengraph.githubassets.com/344ad309318bf65c245fab691fb8134def57b429d868c0d3109ec99803a9e03e/iamrbn/Reddit-Widget
+
+{Reactions}
+pog (4) 
+
+==============================================================
+Exported 128 message(s)
+==============================================================
