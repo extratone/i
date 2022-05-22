@@ -1,0 +1,250 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 463140863,
+      "WFWorkflowIconGlyphNumber": 61566
+   },
+   "WFWorkflowClientVersion": "1146.14",
+   "WFWorkflowOutputContentItemClasses": [
+      "WFNumberContentItem",
+      "WFBooleanContentItem",
+      "WFDateContentItem",
+      "WFStringContentItem",
+      "WFDictionaryContentItem"
+   ],
+   "WFWorkflowHasOutputFallback": true,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+      "Parameters": {}
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Post text via the Mastodon API.\n\nAPI Documentation: https://docs.joinmastodon.org/client/intro/\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "mastodon.social",
+            "UUID": "0139254D-EF39-42C5-A94A-D2655FBF092D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "0139254D-EF39-42C5-A94A-D2655FBF092D",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "instance"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "0000000000000000000000000000000000000000000000000000000000000000",
+            "UUID": "F6AAE279-8B9D-4D56-8AC2-CC5660AE137C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "F6AAE279-8B9D-4D56-8AC2-CC5660AE137C",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "token"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "Show-WFURLActionURL": true,
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://\uFFFC/api/v1/statuses",
+                  "attachmentsByRange": {
+                     "{8, 1}": {
+                        "VariableName": "instance",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "8E59F387-4672-456E-98ED-E67711959C1A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFHTTPHeaders": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Authorization"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "Bearer \uFFFC",
+                              "attachmentsByRange": {
+                                 "{7, 1}": {
+                                    "VariableName": "token",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "ShowHeaders": true,
+            "UUID": "7863D4B4-954B-429C-A02A-EDBE0F4E954A",
+            "WFJSONValues": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "status"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ExtensionInput"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "visibility"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "public"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "8E59F387-4672-456E-98ED-E67711959C1A",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFHTTPMethod": "POST"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "7863D4B4-954B-429C-A02A-EDBE0F4E954A",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "uri",
+            "UUID": "DD6EA843-1EF5-43A7-9C79-1CFA06890C0B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+         "WFWorkflowActionParameters": {
+            "WFNoOutputSurfaceBehavior": "Copy to Clipboard",
+            "WFOutput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "DD6EA843-1EF5-43A7-9C79-1CFA06890C0B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFResponse": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "DD6EA843-1EF5-43A7-9C79-1CFA06890C0B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFStringContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 1,
+         "Text": "Specify your host instance. (Required)",
+         "DefaultValue": "mastodon.social"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 3,
+         "Text": "Set your Mastodon API Client Access Token. (Required) See: `https://your.instance/settings/applications`",
+         "DefaultValue": "00000000-0000-0000-0000-000000000000"
+      }
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [],
+   "WFWorkflowHasShortcutInputVariables": true
+}
