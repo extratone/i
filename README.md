@@ -11,6 +11,8 @@ If ya need help, *please feel free to contact me*. This link will take you to a 
 
 ⇨⇨⇨⇨[**iOS 15 Reviewed for My Family**](https://bilge.world/ios-15-family-review)
 
+Take a second to check out and appreciate FifiTheBulldog's [**extraodinarily well-maintained documentation of iOS system intralinks**](https://github.com/FifiTheBulldog/ios-settings-urls).
+
 ### Frames
 
 * [**Shared iCloud Photos Album**](https://www.icloud.com/sharedalbum/#B0e5ON9t3GoUjSq)- [Shortlink](https://bit.ly/dbframes)
