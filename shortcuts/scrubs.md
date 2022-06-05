@@ -17,6 +17,8 @@ Updated `05092022-124005`
 
 **All** of the Siri Shortcuts I’ve created or modified over the years and thought worthy of sharing, prioritizing those which I have not shared on either my [RoutineHub](https://routinehub.co/user/blue) or [ShareShortcuts](https://shareshortcuts.com/u/blue/) profiles. You shouldn’t encounter share URLS from *any* Shortcuts or File Shariing services, here - I thought a commitment to generating fresh `icloud.com/shortcuts`  URLs exclusively for this project would be in its best interest - I haven’t exactly been dilligently keeping track of them throughout the history of Siri Shortcuts as they’ve been exclusively shared this way…
 
+<iframe width="300" height="60" src="https://vocaroo.com/embed/1j3RAn0FYe5i?autoplay=0" frameborder="0" allow="autoplay"></iframe>
+
 **Download the full David Blue Siri Shortcuts Suite™**
 - [Telegram](https://t.me/extratone/10876)
 - [.zip (iCloud Drive)](https://www.icloud.com/iclouddrive/090WZyVe9rGUJA_6MYUtA1Mdg#DavidBlueFullShortcutsSuite03312022-225743)
@@ -91,6 +93,7 @@ Updated `05092022-124005`
 - [OSHA](https://www.icloud.com/shortcuts/c53b8e2f3d794da58445fa2806034f4b)
 - [DANCE IN SPACE](https://www.icloud.com/shortcuts/e47673521f5f4b8ab1b60cac82cf1019)
 - [DUGA](https://www.icloud.com/shortcuts/d2e917d2e6274fc8bbc4f29089853670)
+- [What's on KBIA?](https://www.icloud.com/shortcuts/04ec61d2f057497bba899eb434b3da07)
 
 ## Personal/Brand
 
