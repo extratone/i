@@ -1,0 +1,283 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>What’s on NPR?</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-all;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 5px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams closed">What’s on NPR?</button>
+<div class="content" style="display:none"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1146.15",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4292093695,
+   "WFWorkflowIconGlyphNumber": 61480
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFTextActionText",
+      "ActionIndex": <span class="magic" onclick="magictap(1)"><b>1</b></span>,
+      "Text": "Set your NPR station’s UCSID. (See https://bilge.world/npr-siri-shortcuts for information on how to retrieve this id.)",
+      "DefaultValue": "5387648fe1c8335046a1d4b4"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "stationName",
+      "ActionIndex": <span class="magic" onclick="magictap(22)"><b>22</b></span>,
+      "Text": "Set your station’s name in Broadcasts (optional.)",
+      "DefaultValue": "KBIA"
+   }
+],
+"WFWorkflowInputContentItemClasses": [],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "NCWidget"
+]
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Retrieve live NPR program information with Siri Shortcuts
+
+For more information, visit: https://bilge.world/npr-siri-shortcuts
+
+My contact information:
+
+Email: davidblue@extratone.com
+Contact card: bit.ly/whoisdavidblue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone/i
+Telegram: t.me/extratone
+Twitter: twitter.com/NeoYokel
+Reddit: reddit.com/u/asphaltapostle
+Mastodon: mastodon.social/@DavidBlue
+EVERYWHERE: bit.ly/dbrolodex</div></div>
+<button class="button gDocuments" id="m1">
+1 Text</button>
+	<div class="content">
+		<div class="col2">5387648fe1c8335046a1d4b4</div></div>
+<button class="gVariable" id="m2">
+2 Set Variable <span class="box">ucs</span> to <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 Text</b><b>]</b></span></span></button>
+<button class="button " id="m3">
+3 URL <span class="box">https://api.composer.nprstations.org/v1/widget/<span class="var"><b>[ucs</b><b>]</b></span>/now?format=json&amp;style=v2&amp;show_song=true</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-WFURLActionURL</div>
+			<div class="col2">true</div></div></div>
+<button class="" id="m4">
+4 Get Contents of URL <span class="box"><span class="magic" onclick="magictap(3)"><b>[3 URL</b><b>]</b></span></span></button>
+<button class="gScripting" id="m5">
+5 Get Dictionary from <span class="box"><span class="magic" onclick="magictap(4)"><b>[4 Contents of URL</b><b>]</b></span></span></button>
+<button class="gScripting" id="m6">
+6 Get Dictionary Value for <span class="box">onNow.program</span> in <span class="box"><span class="magic" onclick="magictap(5)"><b>[5 Dictionary</b><b>]</b></span></span></button>
+<button class="gScripting" id="m7">
+7 Get Dictionary from <span class="box"><span class="magic" onclick="magictap(6)"><b>[6 Dictionary Value</b><b>]</b></span></span></button>
+<button class="gVariable" id="m8">
+8 Set Variable <span class="box">Program</span> to <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 Dictionary</b><b>]</b></span></span></button>
+<button class="gScripting" id="m9">
+9 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Program</b><b>]</b></span></span></button>
+<button class="gVariable" id="m10">
+10 Set Variable <span class="box">ProgramName</span> to <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 Dictionary Value</b><b>]</b></span></span></button>
+<button class="gScripting" id="m11">
+11 Get Dictionary Value for <span class="box">program_desc</span> in <span class="box"><span class="var"><b>[Program</b><b>]</b></span></span></button>
+<button class="gVariable" id="m12">
+12 Set Variable <span class="box">ProgramDescription</span> to <span class="box"><span class="magic" onclick="magictap(11)"><b>[11 Dictionary Value</b><b>]</b></span></span></button>
+<button class="gScripting" id="m13">
+13 Get Dictionary Value for <span class="box">program_link</span> in <span class="box"><span class="var"><b>[Program</b><b>]</b></span></span></button>
+<button class="gVariable" id="m14">
+14 Set Variable <span class="box">ProgramLink</span> to <span class="box"><span class="magic" onclick="magictap(13)"><b>[13 Dictionary Value</b><b>]</b></span></span></button>
+<button class="button gDocuments" id="m15">
+15 Text</button>
+	<div class="content">
+		<div class="col2">**On KBIA**
+
+*<span class="var"><b>[ProgramName</b><b>]</b></span>*
+
+> <span class="var"><b>[ProgramDescription</b><b>]</b></span>
+
+[On The Web](<span class="var"><b>[ProgramLink</b><b>]</b></span>)</div></div>
+<button class="" id="m16">
+16 Make Rich Text from Markdown <span class="box"><span class="magic" onclick="magictap(15)"><b>[15 Text</b><b>]</b></span></span></button>
+<button class="" id="m17">
+17 Show Web Page at <span class="box"><span class="magic" onclick="magictap(16)"><b>[16 Rich Text from Markdown</b><b>]</b></span></span></button>
+<button class="button gLoop nonbottom" id="m18">
+18 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Would you like to...?</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">["Open <span class="var"><b>[ProgramName</b><b>]</b></span>'s webpage?",
+"Stream station in Broadcasts."]</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m19">
+19 Menu Item <span class="box">Open ProgramName's webpage?</span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuItemAttributedTitle</div>
+			<div class="col2">Open <span class="var"><b>[ProgramName</b><b>]</b></span>'s webpage?</div></div>
+<button class="button  inside" id="m20">
+20 Open URL <span class="box"><span class="var"><b>[ProgramLink</b><b>]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-WFInput</div>
+			<div class="col2">true</div></div></div></div>
+<button class="button gLoop nonbottom nontop" id="m21">
+21 Menu Item <span class="box">Stream station in Broadcasts.</span></button>
+	<div class="content contentloop">
+<button class="button gUnknown inside" id="m22">
+22 com.highcaffeinecontent.radio.MRDPlayStationIntent</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">stationName</div>
+			<div class="col2">KBIA</div></div></div></div>
+<button class="gLoop nontop" id="m23">
+23 End Menu</button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

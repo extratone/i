@@ -1,0 +1,380 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4292093695,
+      "WFWorkflowIconGlyphNumber": 61480
+   },
+   "WFWorkflowClientVersion": "1146.15",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Retrieve live NPR program information with Siri Shortcuts\n\nFor more information, visit: https://bilge.world/npr-siri-shortcuts\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "5387648fe1c8335046a1d4b4",
+            "UUID": "CF3BE290-6C5C-4AC5-BBDF-BF8BC7B38206"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "CF3BE290-6C5C-4AC5-BBDF-BF8BC7B38206",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "ucs"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "Show-WFURLActionURL": true,
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://api.composer.nprstations.org/v1/widget/\uFFFC/now?format=json&style=v2&show_song=true",
+                  "attachmentsByRange": {
+                     "{47, 1}": {
+                        "VariableName": "ucs",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "FA4DBC77-E03F-4743-A487-DA2FA638FC22"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "FA4DBC77-E03F-4743-A487-DA2FA638FC22",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "84A0DBC0-6BC4-4B2B-B004-C423C1A08FD5"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "84A0DBC0-6BC4-4B2B-B004-C423C1A08FD5",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "16DD24E7-127A-4065-BDDC-4BD85FFB2CA4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "16DD24E7-127A-4065-BDDC-4BD85FFB2CA4",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "onNow.program",
+            "UUID": "B70F711F-9A87-49C7-818B-D13BED842C7E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B70F711F-9A87-49C7-818B-D13BED842C7E",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "625DAC9B-54DB-4CE0-AAAA-C0C4E3241DBE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "625DAC9B-54DB-4CE0-AAAA-C0C4E3241DBE",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Program"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Program",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "name",
+            "UUID": "07F9B1C0-17D9-442E-9D1C-5A705C7ECCBD"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "07F9B1C0-17D9-442E-9D1C-5A705C7ECCBD",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "ProgramName"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Program",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "program_desc",
+            "UUID": "8707C70F-512D-45CF-BA51-503F8C4745BA"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8707C70F-512D-45CF-BA51-503F8C4745BA",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "ProgramDescription"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Program",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "program_link",
+            "UUID": "127D65E0-3B41-4E8F-804E-94F3A87CCBB7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "127D65E0-3B41-4E8F-804E-94F3A87CCBB7",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "ProgramLink"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "**On KBIA**\n\n*\uFFFC*\n\n> \uFFFC\n\n[On The Web](\uFFFC)",
+                  "attachmentsByRange": {
+                     "{14, 1}": {
+                        "VariableName": "ProgramName",
+                        "Type": "Variable"
+                     },
+                     "{20, 1}": {
+                        "VariableName": "ProgramDescription",
+                        "Type": "Variable"
+                     },
+                     "{36, 1}": {
+                        "VariableName": "ProgramLink",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "01A99957-0F12-4DF2-80DE-7E4F0D5A141A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfrommarkdown",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "01A99957-0F12-4DF2-80DE-7E4F0D5A141A",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "CB619E0E-B46D-4A21-8BE2-189293D41AA4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.showwebpage",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "CB619E0E-B46D-4A21-8BE2-189293D41AA4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rich Text from Markdown"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "C3538A33-BC5D-4724-9B6B-014F6413CDB3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuPrompt": "Would you like to...?",
+            "WFControlFlowMode": 0,
+            "WFMenuItems": [
+               {
+                  "WFItemType": 0,
+                  "WFValue": {
+                     "Value": {
+                        "string": "Open \uFFFC's webpage?",
+                        "attachmentsByRange": {
+                           "{5, 1}": {
+                              "VariableName": "ProgramName",
+                              "Type": "Variable"
+                           }
+                        }
+                     },
+                     "WFSerializationType": "WFTextTokenString"
+                  }
+               },
+               "Stream station in Broadcasts."
+            ],
+            "GroupingIdentifier": "F9DEFFC2-39BB-4082-8FA4-CDC6251C4525"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 1,
+            "WFMenuItemAttributedTitle": {
+               "string": "Open \uFFFC's webpage?",
+               "attachmentsByRange": {
+                  "{5, 1}": {
+                     "VariableName": "ProgramName",
+                     "Type": "Variable"
+                  }
+               }
+            },
+            "GroupingIdentifier": "F9DEFFC2-39BB-4082-8FA4-CDC6251C4525",
+            "WFMenuItemTitle": "Open ProgramName's webpage?"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+         "WFWorkflowActionParameters": {
+            "Show-WFInput": true,
+            "WFInput": {
+               "Value": {
+                  "VariableName": "ProgramLink",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "D96CBC24-7DAA-4422-93C9-BC0001C53BAE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Stream station in Broadcasts.",
+            "GroupingIdentifier": "F9DEFFC2-39BB-4082-8FA4-CDC6251C4525",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.highcaffeinecontent.radio.MRDPlayStationIntent",
+         "WFWorkflowActionParameters": {
+            "stationName": "KBIA",
+            "UUID": "3ED92DFA-F915-4885-8F7E-BAFDD6AE5ED2"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "F9DEFFC2-39BB-4082-8FA4-CDC6251C4525",
+            "UUID": "4FF17D02-6FE7-4F56-A839-3EB139FC3C2E"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 1,
+         "Text": "Set your NPR station’s UCSID. (See https://bilge.world/npr-siri-shortcuts for information on how to retrieve this id.)",
+         "DefaultValue": "5387648fe1c8335046a1d4b4"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "stationName",
+         "ActionIndex": 22,
+         "Text": "Set your station’s name in Broadcasts (optional.)",
+         "DefaultValue": "KBIA"
+      }
+   ],
+   "WFWorkflowTypes": [
+      "NCWidget"
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
