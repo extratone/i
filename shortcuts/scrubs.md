@@ -134,6 +134,7 @@ Updated `06222022-000302`
 - [HEAT WAVE](https://www.icloud.com/shortcuts/ba35c18707a44601b198a938a54291c6)
 - [YŒDELÜDE](https://www.icloud.com/shortcuts/10836359757f472e9de25a17416db2ab)
 - [5](https://www.icloud.com/shortcuts/d966618ebaa846e784651afdefaa006d)
+- [Keanunft](https://www.icloud.com/shortcuts/419f1ed3e0084ed9a4947709fa2c366f)
 
 ## Text Fuck
 
