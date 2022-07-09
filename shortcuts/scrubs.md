@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `07082022-202807`
+Updated `07092022-043424`
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
 - [Pastery](https://www.pastery.net/eujzmz/#eujzmz)
@@ -69,6 +69,7 @@ Updated `07082022-202807`
 - [Optimize Image](https://www.icloud.com/shortcuts/2ef701f70bf74e5093b8608f0d29aca4)
 - [PersonalHotspot](https://www.icloud.com/shortcuts/cfd4f530bfbd4fdfb90698c2f0a78d4b)
 - [Toggle AssistiveTouch](https://www.icloud.com/shortcuts/c14da6204e434d0086f7ac5cf12cf6b7) (+ Open General settings menu for RAM clearing.)
+- [AmandaFrame](https://www.icloud.com/shortcuts/0147edbe4be044bb8ed34b4dd0a96216)
 
 ## Music/Audio Delights
 
