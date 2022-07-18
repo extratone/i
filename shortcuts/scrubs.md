@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `07152022-140119`
+Updated `07182022-095431`
 
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
@@ -144,6 +144,7 @@ Updated `07152022-140119`
 - [YŒDELÜDE](https://www.icloud.com/shortcuts/10836359757f472e9de25a17416db2ab)
 - [5](https://www.icloud.com/shortcuts/d966618ebaa846e784651afdefaa006d)
 - [Keanunft](https://www.icloud.com/shortcuts/419f1ed3e0084ed9a4947709fa2c366f)
+- [You're Still My Dad](https://www.icloud.com/shortcuts/2f95c48e4fb9400b9558ce89bcac0ee6)
 
 ## Text Fuck
 
