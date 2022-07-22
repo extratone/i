@@ -1,0 +1,769 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<style>
+html {
+  -webkit-text-size-adjust: 100%
+}
+body {
+  margin: 0;
+}
+img {
+  margin: -7px 14px;
+  border-radius: 5px;
+}
+.username {
+  font-size: 1.6em;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+.rg-container {
+  font-family: system-ui;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  color: #000;
+}
+.rg-header {
+  margin-bottom: 1em;
+  text-align: left;
+  padding: 20px;
+}
+.rg-header > * {
+  display: block;
+}
+.rg-hed {
+  font-weight: 800;
+  font-size: 1.6em;
+  line-height: 1;
+}
+.rg-dek {
+  font-size: 16px;
+}
+.rg-source {
+  margin: 0;
+  font-size: 0.75em;
+  text-align: right;
+}
+.rg-source .pre-colon {
+  text-transform: uppercase;
+}
+.rg-source .post-colon {
+  font-weight: bold;
+}
+table.rg-table {
+  width: 100%;
+  font-size: 1em;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table.rg-table tr {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 80px 0 0 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  color: #000;
+}
+table.rg-table tr {
+  color: #000;
+}
+table.rg-table tr.highlight {
+  background-color: #dcf1f0 !important;
+}
+table.rg-table.zebra tr:nth-child(even) {
+  background-color: #dbdbdb;
+}
+table.rg-table th {
+  font-weight: bold;
+  padding: 0.35em;
+  font-size: 0.9em;
+}
+.first {
+  padding-left: 20px !important;
+}
+table.rg-table td {
+  padding: 0.35em;
+  font-size: 0.9em;
+  font-size: 1.1em;
+}
+table.rg-table .highlight td {
+  font-weight: bold;
+}
+table.rg-table th.number,
+td.number {
+  text-align: right;
+}
+@media screen and (max-width: 600px) {
+  img {
+  margin: -7px 9px;
+  }
+  .rg-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .rg-header {
+    margin-bottom: -1em;
+  }
+  table.rg-table {
+    width: 100%;
+  }
+  table.rg-table tr.hide-mobile,
+  table.rg-table th.hide-mobile,
+  table.rg-table td.hide-mobile {
+    display: none;
+  }
+  table.rg-table thead {
+    display: none;
+  }
+  table.rg-table tbody {
+    width: 100%;
+  }
+  table.rg-table tr,
+  table.rg-table th,
+  table.rg-table td {
+    display: block;
+    padding: 0;
+  }
+  table.rg-table tr {
+    border-bottom: none;
+  }
+  table.rg-table tr.highlight {
+    background-color: inherit !important;
+  }
+  table.rg-table.zebra tr:nth-child(even) {
+    background-color: transparent;
+  }
+  table.rg-table.zebra td:nth-child(even) {
+    background-color: #dbdbdb;
+    padding: .5em 20px;
+  }
+  table.rg-table tr:nth-child(even) {
+    background-color: transparent;
+  }
+  table.rg-table td {
+    padding: .75em 20px;
+    text-align: right;
+  }
+  table.rg-table td[data-title]:before {
+    content: attr(data-title);
+    font-weight: bold;
+    content: attr(data-title);
+    float: left;
+    margin-right: 0.5em;
+    font-size: 0.95em;
+  }
+  table.rg-table td:last-child {
+    padding-right: 20px;
+  }
+  table.rg-table td:empty {
+    display: none;
+  }
+  table.rg-table .highlight td {
+    background-color: inherit;
+    font-weight: normal;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+  }
+  .rg-container {
+    color: #fff;
+  }
+  table.rg-table tr {
+  border-bottom: 1px solid #7b7b7b;
+  color: #fff;
+  }
+  table.rg-table.zebra tr:nth-child(even) {
+    background-color: transparent;
+  }
+  @media screen and (max-width: 600px) {
+  table.rg-table.zebra td:nth-child(even) {
+    background-color: #1a1a1a;
+  } 
+  table.rg-table tr {
+  border-bottom: 1px solid #000;
+  }
+  }
+}
+
+</style>
+</head>
+<body>
+<div class='rg-container'>
+	<table class='rg-table zebra' summary='Hed'>
+		<caption class='rg-header'>
+			<span class='rg-hed'>RoutineHub Report</span><span class='username'>blue</span>
+			<span class='rg-dek'>Shortcuts: 110<br>Generated on: 7/14/22, 17:37<br>Generated in: 57 Seconds<br>Total Downloads: 6317 🟢➕1016<br>Total Hearts: 39</span>
+		</caption>
+		<thead>
+			<tr>
+				<th class='text first'>Shortcut</th>
+				<th class='text '>Downloads</th>
+				<th class='text '>Hearts</th>
+                              <th class='text '>RHID</th>
+                               <th class='text '>Version</th>
+
+</tr>
+		</thead>
+		<tbody>
+							<tr class=''>
+					<td class='text' data-title='Shortcut'> Audio file ⇨ Base64 Text</td>
+					<td class='text ' data-title='Downloads'>257🟢➕ 81  </td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>8914/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Current Song ⇨ Song.Link ⇨ Clipboard ⇨ Safari</td>
+					<td class='text ' data-title='Downloads'>251🟢➕ 15  </td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>8940/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Wake Up Weather Spoken Aloud</td>
+					<td class='text ' data-title='Downloads'>235🟢➕ 10  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>8387/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Make Audio from Article Body (Siri Speech Synthesis)</td>
+					<td class='text ' data-title='Downloads'>175🟢➕ 15  </td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>9953/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Marco!</td>
+					<td class='text ' data-title='Downloads'>162🟢➕ 10  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>8987/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Apple News ⇨ Safari</td>
+					<td class='text ' data-title='Downloads'>140🟢➕ 13  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>8690/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Siri Shortcuts for Scrubs (Library Links)</td>
+					<td class='text ' data-title='Downloads'>136🟢➕ 23  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10978/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Capture Web Page to Drafts</td>
+					<td class='text ' data-title='Downloads'>116🟢➕ 11  </td>
+					<td class='text ' data-title='Hearts'>5</td><td class='text ' data-title='RHID'>8994/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Speedy Frames</td>
+					<td class='text ' data-title='Downloads'>111🟢➕ 14  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10775/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Collect References</td>
+					<td class='text ' data-title='Downloads'>107🟢➕ 9  </td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>8913/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> They/Them</td>
+					<td class='text ' data-title='Downloads'>105🟢➕ 9  </td>
+					<td class='text ' data-title='Hearts'>0</td><td class='text ' data-title='RHID'>10511/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Capture Web Page in Markdown</td>
+					<td class='text ' data-title='Downloads'>102🟢➕ 8  </td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>9549/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> cowsay</td>
+					<td class='text ' data-title='Downloads'>100🟢➕ 15  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11087/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Overcast Show Notes ⇨ Bear</td>
+					<td class='text ' data-title='Downloads'>100🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>8942/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Scrub URL</td>
+					<td class='text ' data-title='Downloads'>100🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>2❤️➕1</td><td class='text ' data-title='RHID'>8783/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Overcast Show Notes ⇨ Drafts</td>
+					<td class='text ' data-title='Downloads'>98🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>8944/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> MusicHarbor Artist List</td>
+					<td class='text ' data-title='Downloads'>97🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>8935/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Overcast Show Notes ⇨ Markdown</td>
+					<td class='text ' data-title='Downloads'>95🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>8943/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Twitter Jail</td>
+					<td class='text ' data-title='Downloads'>94🟢➕ 14  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11086/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Safari Tabs Jar</td>
+					<td class='text ' data-title='Downloads'>86🟢➕ 18  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10868/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Custom Text Image</td>
+					<td class='text ' data-title='Downloads'>82🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>9284/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> App Store Marketing Tools</td>
+					<td class='text ' data-title='Downloads'>79🟢➕ 2  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>9821/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Noir Configuration Utility</td>
+					<td class='text ' data-title='Downloads'>78🟢➕ 11  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10917/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> David Blue</td>
+					<td class='text ' data-title='Downloads'>78🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>9282/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> BIG WORDLE 𝘗𝘙𝘖</td>
+					<td class='text ' data-title='Downloads'>76🟢➕ 10  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10918/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> &lt;audio&gt; Element Embed</td>
+					<td class='text ' data-title='Downloads'>76🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>9948/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Mastodon Share</td>
+					<td class='text ' data-title='Downloads'>72🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>9776/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Tab Group ⇨ Apple Note</td>
+					<td class='text ' data-title='Downloads'>71</td>
+					<td class='text ' data-title='Hearts'>4</td><td class='text ' data-title='RHID'>12525/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Reminders Backup</td>
+					<td class='text ' data-title='Downloads'>71🟢➕ 8  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10118/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Make Audio from Document Text</td>
+					<td class='text ' data-title='Downloads'>70🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>4</td><td class='text ' data-title='RHID'>10028/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Mastgur</td>
+					<td class='text ' data-title='Downloads'>67🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>9781/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Title Case</td>
+					<td class='text ' data-title='Downloads'>65🟢➕ 8  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10866/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Sleep Now (macOS)</td>
+					<td class='text ' data-title='Downloads'>65🟢➕ 13  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10867/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> What’s wrong with Spotify?</td>
+					<td class='text ' data-title='Downloads'>61🟢➕ 8  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10402/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Spy Kids 3 Spam (macOS)</td>
+					<td class='text ' data-title='Downloads'>59🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10873/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Safari Tabs Archive</td>
+					<td class='text ' data-title='Downloads'>55🟢➕ 12  </td>
+					<td class='text ' data-title='Hearts'>7❤️➕1</td><td class='text ' data-title='RHID'>10774/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Siri Speech Synthesis (MacOS)</td>
+					<td class='text ' data-title='Downloads'>54🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10583/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Seek Telegram Message by ID</td>
+					<td class='text ' data-title='Downloads'>52🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10930/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> URL List ⇨ Telegram</td>
+					<td class='text ' data-title='Downloads'>51🟢➕ 9  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10926/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Data Jar List</td>
+					<td class='text ' data-title='Downloads'>50🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>4</td><td class='text ' data-title='RHID'>10730/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> BIG WORDLE</td>
+					<td class='text ' data-title='Downloads'>46🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10871/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Restore Safari Tabs</td>
+					<td class='text ' data-title='Downloads'>46🟢➕ 9  </td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>10869/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Safari Tabs List to Drafts</td>
+					<td class='text ' data-title='Downloads'>45🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11024/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> TrippleTap Reminders</td>
+					<td class='text ' data-title='Downloads'>44🟢➕ 8  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11038/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Clean URLs</td>
+					<td class='text ' data-title='Downloads'>44🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11081/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Clipboard ⇨ Telegram Message</td>
+					<td class='text ' data-title='Downloads'>44🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10929/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> @blue&#x27;s RoutineHub Shortcuts (Library)</td>
+					<td class='text ' data-title='Downloads'>43🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10984/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> File/App Icon Extractor (macOS)</td>
+					<td class='text ' data-title='Downloads'>43🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10982/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Accessibility Defaults (All Off)</td>
+					<td class='text ' data-title='Downloads'>43🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11130/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Paste to Clipboard</td>
+					<td class='text ' data-title='Downloads'>42🟢➕ 8  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11077/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Dot ⇨ New Draft</td>
+					<td class='text ' data-title='Downloads'>42🟢➕ 21  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11541/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Holy Bible Spam</td>
+					<td class='text ' data-title='Downloads'>41🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10925/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Action Directory</td>
+					<td class='text ' data-title='Downloads'>41🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>10921/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> List .md Drafts Open Links by Tag</td>
+					<td class='text ' data-title='Downloads'>41🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11085/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Mastodon Post (API)</td>
+					<td class='text ' data-title='Downloads'>41🟢➕ 11  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11865/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Last Trip Average Speed (mph)</td>
+					<td class='text ' data-title='Downloads'>40🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10953/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Spy Kids 3 Spam</td>
+					<td class='text ' data-title='Downloads'>40🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10919/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> JSONize Image Colors</td>
+					<td class='text ' data-title='Downloads'>39🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11132/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Links List to Bear Notes</td>
+					<td class='text ' data-title='Downloads'>39🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11091/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Generate Shortcuts Run Links List</td>
+					<td class='text ' data-title='Downloads'>39🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11143/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> ttm.sh (macOS)</td>
+					<td class='text ' data-title='Downloads'>38🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11377/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Paul</td>
+					<td class='text ' data-title='Downloads'>38🟢➕ 2  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10941/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Search iCloud Keychain</td>
+					<td class='text ' data-title='Downloads'>38🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11801/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Speak Word Count</td>
+					<td class='text ' data-title='Downloads'>38🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11094/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Tot Jar</td>
+					<td class='text ' data-title='Downloads'>37🟢➕ 10  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11456/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> DavodTime</td>
+					<td class='text ' data-title='Downloads'>37🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10872/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> LookUp Collection ⇨ Clipboard</td>
+					<td class='text ' data-title='Downloads'>37🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11076/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Holy Bible Spam (macOS)</td>
+					<td class='text ' data-title='Downloads'>37🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>0</td><td class='text ' data-title='RHID'>10924/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Index Drafts Workspace</td>
+					<td class='text ' data-title='Downloads'>37🟢➕ 10  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11397/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Post to Write.as Blog (macOS)</td>
+					<td class='text ' data-title='Downloads'>37🟢➕ 3  </td>
+					<td class='text ' data-title='Hearts'>2❤️➕1</td><td class='text ' data-title='RHID'>10981/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Paste to Jar</td>
+					<td class='text ' data-title='Downloads'>36🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11049/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Batch Shortcuts Signer (macOS)</td>
+					<td class='text ' data-title='Downloads'>36🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11401/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Batch Shortcuts Signer (iOS)</td>
+					<td class='text ' data-title='Downloads'>36🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11467/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Extratone Ebook</td>
+					<td class='text ' data-title='Downloads'>35🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11146/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Instant Alpha Selfie</td>
+					<td class='text ' data-title='Downloads'>35</td>
+					<td class='text ' data-title='Hearts'>0</td><td class='text ' data-title='RHID'>12554/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Capture Webpage to Drafts (macOS)</td>
+					<td class='text ' data-title='Downloads'>34🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11078/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Query Snap.as Library</td>
+					<td class='text ' data-title='Downloads'>34🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11543/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Paste to Apple Note</td>
+					<td class='text ' data-title='Downloads'>34🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11079/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Tot ⇨ Apple Notes</td>
+					<td class='text ' data-title='Downloads'>34🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11500/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Snap.as Upload</td>
+					<td class='text ' data-title='Downloads'>33🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11616/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> AMEN</td>
+					<td class='text ' data-title='Downloads'>33🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11097/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Markdown Link ⇨ Tot Dot</td>
+					<td class='text ' data-title='Downloads'>33🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11504/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Clipboard ⇨ Mastodon</td>
+					<td class='text ' data-title='Downloads'>33🟢➕ 3  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>10980/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Tiny</td>
+					<td class='text ' data-title='Downloads'>33🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11697/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Drafts Workspace ⇨ Apple Notes</td>
+					<td class='text ' data-title='Downloads'>32🟢➕ 7  </td>
+					<td class='text ' data-title='Hearts'>2</td><td class='text ' data-title='RHID'>11622/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Make Bear Notes from RSS Feed</td>
+					<td class='text ' data-title='Downloads'>32🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11089/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Raw Discourse Thread ⇨ Clipboard</td>
+					<td class='text ' data-title='Downloads'>32🟢➕ 3  </td>
+					<td class='text ' data-title='Hearts'>0</td><td class='text ' data-title='RHID'>11187/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Authenticate with Write.as API</td>
+					<td class='text ' data-title='Downloads'>30🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>11589/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Telegram Bot Post</td>
+					<td class='text ' data-title='Downloads'>30🟢➕ 8  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11860/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Write.as Post</td>
+					<td class='text ' data-title='Downloads'>30🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>11698/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Twitter Jail (macOS)</td>
+					<td class='text ' data-title='Downloads'>30🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11135/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Dot Info</td>
+					<td class='text ' data-title='Downloads'>29🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>0</td><td class='text ' data-title='RHID'>11459/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Reminders List ⇨ Tot</td>
+					<td class='text ' data-title='Downloads'>28🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11539/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Tot Markdown Backup</td>
+					<td class='text ' data-title='Downloads'>28🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11458/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Hot Tot Dot Swap</td>
+					<td class='text ' data-title='Downloads'>28🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11457/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Tot Git</td>
+					<td class='text ' data-title='Downloads'>27🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11565/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Make Spoken Audio of Selected Text</td>
+					<td class='text ' data-title='Downloads'>26</td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>12439/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Dots Summary</td>
+					<td class='text ' data-title='Downloads'>25🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11542/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> App Store ⇨ Market Tools</td>
+					<td class='text ' data-title='Downloads'>25</td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>12346/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> What’s on NPR?</td>
+					<td class='text ' data-title='Downloads'>23🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>12143/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Clear Dot</td>
+					<td class='text ' data-title='Downloads'>23🟢➕ 4  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11540/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Markdown Capture ⇨Day One</td>
+					<td class='text ' data-title='Downloads'>22🟢➕ 6  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11904/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> LinkGopher (macOS)</td>
+					<td class='text ' data-title='Downloads'>22🟢➕ 5  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11852/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Key Command Formatting (ksc)</td>
+					<td class='text ' data-title='Downloads'>19</td>
+					<td class='text ' data-title='Hearts'>3</td><td class='text ' data-title='RHID'>12442/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> LookUp Liked Words ⇨ Drafts</td>
+					<td class='text ' data-title='Downloads'>19🟢➕ 17  </td>
+					<td class='text ' data-title='Hearts'>2❤️➕1</td><td class='text ' data-title='RHID'>12336/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Mastodon Bookmark</td>
+					<td class='text ' data-title='Downloads'>17🟢➕ 3  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>11967/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Original Wikimedia Commons File</td>
+					<td class='text ' data-title='Downloads'>16</td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>12436/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Bible API</td>
+					<td class='text ' data-title='Downloads'>15🟢➕ 13  </td>
+					<td class='text ' data-title='Hearts'>1</td><td class='text ' data-title='RHID'>12335/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Get Write.as Post Text</td>
+					<td class='text ' data-title='Downloads'>13🟢➕ 13  </td>
+					<td class='text ' data-title='Hearts'>2❤️➕2</td><td class='text ' data-title='RHID'>12340/</td>
+				</tr>
+				<tr class=''>
+					<td class='text' data-title='Shortcut'> Bulk Background Removal</td>
+					<td class='text ' data-title='Downloads'>1</td>
+					<td class='text ' data-title='Hearts'>0</td><td class='text ' data-title='RHID'>12553/</td>
+				</tr>
+		</tbody>
+	</table>
+</div>
+</body>
