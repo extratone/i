@@ -1,0 +1,1300 @@
+{
+  "result" : true,
+  "items" : [
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 289497,
+        "created" : "2022-07-23T15:23:09.033Z"
+      },
+      "title" : "RoutineHub - DJ Screw Discography",
+      "link" : "https://routinehub.co/shortcut/12618/",
+      "tags" : [
+        "Siri Shortcuts",
+        "RoutineHub",
+        "Automation",
+        "DJ Screw",
+        "H",
+        "Music Streaming"
+      ],
+      "sort" : 421329033,
+      "_id" : 421329033,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/db6d17683e21435990fb87e51e92933c.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220723%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220723T151642Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=fcbc37fb2852e803851d5f0becbb1c4fe813634130788699b1433818b094821c"
+        },
+        {
+          "type" : "image",
+          "link" : "https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.co/download/34239/"
+        },
+        {
+          "type" : "image",
+          "link" : "https://i.snap.as/1ygtiLRt.png"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/db6d17683e21435990fb87e51e92933c.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220723%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220723T151642Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=fcbc37fb2852e803851d5f0becbb1c4fe813634130788699b1433818b094821c",
+      "lastUpdate" : "2022-07-23T15:17:11.812Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : true,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Download all 343 tapes from the DJ Screw Discography on Archive.org.",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-23T15:16:49.954Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 1050353,
+        "created" : "2022-07-22T19:45:46.000Z"
+      },
+      "title" : "Twitter Has No Right to Remain Silent",
+      "link" : "https://www.wsj.com/articles/twitter-has-no-right-to-remain-silent-11658503345",
+      "tags" : [
+
+      ],
+      "sort" : 420523589,
+      "_id" : 420523589,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://images.wsj.net/im-588090/social"
+        },
+        {
+          "type" : "image",
+          "link" : "https://images.wsj.net/im-588090/?width=860&size=1.5&pixel_ratio=1.5"
+        }
+      ],
+      "cover" : "https://images.wsj.net/im-588090/social",
+      "lastUpdate" : "2022-07-22T18:40:30.821Z",
+      "type" : "article",
+      "domain" : "wsj.com",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : false,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "The social-media company’s shareholders seem overly fixated on Elon Musk as the company’s fundamentals worsen.",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-22T18:40:30.821Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 364715,
+        "created" : "2022-07-22T17:04:40.109Z"
+      },
+      "title" : "RoutineHub • Download Random Screw Tape",
+      "link" : "https://routinehub.co/shortcut/12610/",
+      "tags" : [
+        "DJ Screw",
+        "Siri Shortcuts",
+        "RoutineHub",
+        "Archive",
+        "Automation",
+        "Music Streaming"
+      ],
+      "sort" : 420237783,
+      "_id" : 420237783,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.co/download/34223/"
+        },
+        {
+          "type" : "image",
+          "link" : "https://i.snap.as/K6iHUgs0.png"
+        }
+      ],
+      "cover" : "https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.co/download/34223/",
+      "lastUpdate" : "2022-07-22T17:04:13.590Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : true,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-22T17:03:48.685Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 5459,
+        "created" : "2022-07-21T22:02:22.282Z"
+      },
+      "title" : "RoutineHub • DavodTime Conversion",
+      "link" : "https://routinehub.co/shortcut/12603/",
+      "tags" : [
+        "Siri Shortcuts",
+        "RoutineHub",
+        "DavodTime",
+        "Automation",
+        "David Blue"
+      ],
+      "sort" : 419922787,
+      "_id" : 419922787,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.co/download/34214/"
+        }
+      ],
+      "cover" : "https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.co/download/34214/",
+      "lastUpdate" : "2022-07-21T21:57:06.458Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : false,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-21T21:56:51.033Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 641413,
+        "created" : "2022-07-21T21:25:03.469Z"
+      },
+      "title" : "TIP: Calling Shortcuts from Drafts - Tips & Tricks - Drafts Community",
+      "link" : "https://forums.getdrafts.com/t/tip-calling-shortcuts-from-drafts/3603",
+      "tags" : [
+        "Siri Shortcuts",
+        "Drafts",
+        "Configuration",
+        "Automation",
+        "Documentation"
+      ],
+      "sort" : 419919789,
+      "_id" : 419919789,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://forums.getdrafts.com/uploads/default/original/2X/6/6c07239db944a576f5c82040b7d673feb2d24010.png"
+        },
+        {
+          "type" : "image",
+          "link" : "https://forums.getdrafts.com/uploads/default/original/2X/5/5bbdf1b904129a2487e83bd8bcbbd8bf0f6add50.jpeg"
+        }
+      ],
+      "cover" : "https://forums.getdrafts.com/uploads/default/original/2X/6/6c07239db944a576f5c82040b7d673feb2d24010.png",
+      "lastUpdate" : "2022-07-21T21:21:01.379Z",
+      "type" : "article",
+      "domain" : "forums.getdrafts.com",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : true,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Apple’s Shortcuts app unlocks a lot of powerful automation capabilities on iOS. It mostly has the same integration options with Drafts that it’s predecessor Workflow had, but is missing one handy feature - the “Add to Drafts” option to create a Drafts action to call a shortcut. We’ve re-enabled that, with a few new options, using a sample shortcut available below.  Drafts actions can call shortcuts in the Shortcuts app using the Run Shortcut action step. This step can be added to any action, a...",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-21T21:20:47.745Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 35490,
+        "created" : "2022-07-21T20:23:12.403Z"
+      },
+      "title" : "RoutineHub - ColtonLikesTech",
+      "link" : "https://routinehub.co/user/ColtonLikesTech",
+      "tags" : [
+        "Siri Shortcuts",
+        "RoutineHub"
+      ],
+      "sort" : 419900111,
+      "_id" : 419900111,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/static/main/images/logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220721%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220721T201707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=0c2902e63a0df518d0e82cb1a101a3fa68e3c163dc7f5d230af90bb005f30664"
+        },
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/user/10512/ec1878441f9a5de560f1ac728a407994.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220721%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220721T201707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ac53fdf2c0a6d074795e30c404a761bdda3e3bcdf97208663c15190e820be536"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/static/main/images/logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220721%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220721T201707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=0c2902e63a0df518d0e82cb1a101a3fa68e3c163dc7f5d230af90bb005f30664",
+      "lastUpdate" : "2022-07-21T20:17:14.706Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : false,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "RoutineHub is a community to find, share and version-control your Siri Shortcuts.",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-21T20:17:10.193Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 263676,
+        "created" : "2022-07-21T20:23:12.403Z"
+      },
+      "title" : "RoutineHub - MyUtilities",
+      "link" : "https://routinehub.co/shortcut/3715/",
+      "tags" : [
+        "RoutineHub"
+      ],
+      "sort" : 419900081,
+      "_id" : 419900081,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/0e72f025d71b417e8ed76f277039b233.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220721%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220721T201646Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f8e6f0a62ad1560b87429b8de1e71362828437dfa643b9faff154b2e4b60afec"
+        },
+        {
+          "type" : "image",
+          "link" : "https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.co/download/30692/"
+        },
+        {
+          "type" : "image",
+          "link" : "https://i.imgur.com/MQauyj6.jpg"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/0e72f025d71b417e8ed76f277039b233.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220721%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220721T201646Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f8e6f0a62ad1560b87429b8de1e71362828437dfa643b9faff154b2e4b60afec",
+      "lastUpdate" : "2022-07-21T20:16:54.522Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : false,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "All your Utilities, all in one place",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-21T20:16:49.399Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 145639,
+        "created" : "2022-07-21T08:19:37.010Z"
+      },
+      "title" : "8 ways to get help from Apple Support using Shortcuts",
+      "link" : "https://www.imore.com/8-ways-get-help-apple-support-using-shortcuts",
+      "tags" : [
+        "Cassinelli",
+        "Siri Shortcuts",
+        "iOS 16",
+        "Curation",
+        "Automation"
+      ],
+      "sort" : 419719572,
+      "_id" : 419719572,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://cdn.mos.cms.futurecdn.net/Ka5KbwebzLeGzq4ujiFvwn-1200-80.jpeg"
+        },
+        {
+          "type" : "image",
+          "link" : "https://mos.fie.futurecdn.net/hsadpoqrluq5as4b-16534669265779-250-80.jpg"
+        },
+        {
+          "type" : "image",
+          "link" : "https://cdn.mos.cms.futurecdn.net/Ka5KbwebzLeGzq4ujiFvwn-1920-80.jpeg.webp"
+        }
+      ],
+      "cover" : "https://cdn.mos.cms.futurecdn.net/Ka5KbwebzLeGzq4ujiFvwn-1200-80.jpeg",
+      "lastUpdate" : "2022-07-21T08:10:49.230Z",
+      "type" : "article",
+      "domain" : "imore.com",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : true,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Apple Support is full of knowledge-based articles, people ready to help, and more resources to learn from — here's how to use Shortcuts to access everything easily.",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-21T08:10:24.067Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-20T16:23:56.057Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 964366,
+        "created" : "2022-07-20T16:43:38.520Z"
+      },
+      "link" : "https://www.matthewcassinelli.com/shortcuts/where-did-i-park",
+      "title" : "Where did I park? – Matthew Cassinelli",
+      "tags" : [
+        "Auto ⁖",
+        "iOS 16",
+        "Automation",
+        "Siri Shortcuts"
+      ],
+      "sort" : 419441367,
+      "_id" : 419441367,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://www.matthewcassinelli.com/wp-content/uploads/shortcut-where-did-i-park-icon.png"
+        }
+      ],
+      "cover" : "https://www.matthewcassinelli.com/wp-content/uploads/shortcut-where-did-i-park-icon.png",
+      "lastUpdate" : "2022-07-21T07:31:21.928Z",
+      "type" : "article",
+      "domain" : "matthewcassinelli.com",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Asks Siri to check the location of your Parked Car.",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "highlights" : [
+
+      ],
+      "cache" : {
+        "status" : "ready",
+        "size" : 1096814,
+        "created" : "2022-07-20T16:43:38.520Z"
+      },
+      "title" : "iOS 16 beta Archives – Matthew Cassinelli",
+      "link" : "https://www.matthewcassinelli.com/folders/ios-16/",
+      "tags" : [
+        "Index",
+        "Siri Shortcuts",
+        "iOS 16"
+      ],
+      "sort" : 419440726,
+      "_id" : 419440726,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://rdl.ink/render/https%3A%2F%2Fwww.matthewcassinelli.com%2Ffolders%2Fios-16%2F",
+          "screenshot" : true
+        }
+      ],
+      "cover" : "https://rdl.ink/render/https%3A%2F%2Fwww.matthewcassinelli.com%2Ffolders%2Fios-16%2F",
+      "lastUpdate" : "2022-07-20T16:22:01.415Z",
+      "type" : "link",
+      "domain" : "matthewcassinelli.com",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "important" : false,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "created" : "2022-07-20T16:21:36.421Z",
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.819Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 6134,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/4362",
+      "title" : "RoutineHub - QuickUpdate: Integrated Edition",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640853,
+      "_id" : 418640673,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/9ad2d50f28994ac7a2081cf5b265e1b2.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=dc91855e0bfb00dbb10d775d224e5d88d4a2b40e9eb56f48d107a90acdcdd134"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/9ad2d50f28994ac7a2081cf5b265e1b2.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=dc91855e0bfb00dbb10d775d224e5d88d4a2b40e9eb56f48d107a90acdcdd134",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Integrate QuickUpdate right in your shortcut!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.814Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 7708,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/7179",
+      "title" : "RoutineHub - QuickMerge",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640852,
+      "_id" : 418640672,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/1efa5f64c1e74f7f8d458f9e7641f3d7.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140709Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6499a7c06dca1bd74e7d7d5246665df0abf511b0061fa40d51320c7757bdb754"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/1efa5f64c1e74f7f8d458f9e7641f3d7.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140709Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6499a7c06dca1bd74e7d7d5246665df0abf511b0061fa40d51320c7757bdb754",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Combine two shortcut’s actions!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.808Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 5051,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/5358",
+      "title" : "RoutineHub - zachary7829’s AdKit Demo",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640851,
+      "_id" : 418640671,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/73f91e3c833447299c3ba44398b50bec.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=454cfadc70c68f81a7f8a67dd50e2ee0dd1e95ae778e78623d37ea3d5fd3e35c"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/73f91e3c833447299c3ba44398b50bec.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=454cfadc70c68f81a7f8a67dd50e2ee0dd1e95ae778e78623d37ea3d5fd3e35c",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Just a simple demo of eaic’s AdKit",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.800Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 9443,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/3188",
+      "title" : "RoutineHub - Download System Files",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640850,
+      "_id" : 418640670,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/d899911b58b64044b97c27da010432b5.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=cb9b79703e1bc0fa0ead6de2005e29585b1feec204128c4b4d4b5f8e37dcf364"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/d899911b58b64044b97c27da010432b5.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=cb9b79703e1bc0fa0ead6de2005e29585b1feec204128c4b4d4b5f8e37dcf364",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Downloads your CoreServices.",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.795Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 443016,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/3100",
+      "title" : "RoutineHub - Test Updater Speed",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640849,
+      "_id" : 418640669,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/d07a396e5b444d629ccde864f9b04ba7.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9e7a3c40d546ee0420dd791536e1584fb3b236d5878b86e69904c12e983a208a"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/d07a396e5b444d629ccde864f9b04ba7.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9e7a3c40d546ee0420dd791536e1584fb3b236d5878b86e69904c12e983a208a",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Test the speed of your Updater!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.790Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 8137,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/4136",
+      "title" : "RoutineHub - RouteUpdate",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640848,
+      "_id" : 418640668,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/bf89f2525e3c4f429e7414dc28494206.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d94f39e8a9c278d815728624629fe0bb852f18ba7bb63621148685f6586c5ede"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/bf89f2525e3c4f429e7414dc28494206.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d94f39e8a9c278d815728624629fe0bb852f18ba7bb63621148685f6586c5ede",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Replace an updater with QuickUpdate!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.785Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 8225,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/3126",
+      "title" : "RoutineHub - QuickUpdateEX",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640847,
+      "_id" : 418640667,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/33cbc492cab24938b625e94ec6947f48.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=91eea99308031c4e6afc99de8847b4098ad81dab90d51d7e8a556721bdacd9ca"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/33cbc492cab24938b625e94ec6947f48.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=91eea99308031c4e6afc99de8847b4098ad81dab90d51d7e8a556721bdacd9ca",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "QuickUpdate: Extreme Edition",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.779Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 414661,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/2648",
+      "title" : "RoutineHub - The Oregon Trail",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640846,
+      "_id" : 418640666,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/bf6f7546b1f04fb9a137c2b87aba52fe.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3d319868d0d71628eeac973c2fc6a4bab3445a714cd334213698e452c1689e67"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/bf6f7546b1f04fb9a137c2b87aba52fe.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3d319868d0d71628eeac973c2fc6a4bab3445a714cd334213698e452c1689e67",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Remake of the Oregon Trail in Shortcuts!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.760Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 6080,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/5214",
+      "title" : "RoutineHub - QuickLog",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640845,
+      "_id" : 418640665,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/7e74acb2166b4bed97c7c91686903121.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=4bfd26cfa81ec94424f1ca709671c854c74ef71b9d1e11fd8ad7ccaecee65f9e"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/7e74acb2166b4bed97c7c91686903121.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=4bfd26cfa81ec94424f1ca709671c854c74ef71b9d1e11fd8ad7ccaecee65f9e",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Manage your shortcuts with a Username and Email!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.726Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 8411,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/4141",
+      "title" : "RoutineHub - iOS Skins",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640844,
+      "_id" : 418640664,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/cb36e835446d40ad8f0d280d50b4476c.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=af54243def3570e9e8e7872a1561b2b8c1ee32a92276ec376c353e5e2991dbed"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/cb36e835446d40ad8f0d280d50b4476c.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=af54243def3570e9e8e7872a1561b2b8c1ee32a92276ec376c353e5e2991dbed",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Make custom icons for apps!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.718Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 9293,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/3559",
+      "title" : "RoutineHub - UltraUpdate",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640843,
+      "_id" : 418640663,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/c80511f570bd4ca9806862a200aa7aab.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=43f847eb66ae5059a55cbf3348ab50a7e6a2d4fc95b6a74d2ecb8b68f158de71"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/c80511f570bd4ca9806862a200aa7aab.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=43f847eb66ae5059a55cbf3348ab50a7e6a2d4fc95b6a74d2ecb8b68f158de71",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "A Premium Updater with Speed.",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.709Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 10237,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/3463",
+      "title" : "RoutineHub - UpdateConverter",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640842,
+      "_id" : 418640662,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/39b84d3f264647e083a5fd59f81cdb21.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=95c3aec438eccc605cdc086f87c047e474f68b22b9875ec7f0bf239abe0c1cd9"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/39b84d3f264647e083a5fd59f81cdb21.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=95c3aec438eccc605cdc086f87c047e474f68b22b9875ec7f0bf239abe0c1cd9",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Add Support For Multiple Updaters!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.704Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 414959,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/2930",
+      "title" : "RoutineHub - Tree Installer",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640841,
+      "_id" : 418640661,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/c3d6582ab000407f8cb200b3282f5eb5.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=62babdf294e48f6dead56af6c99270b2afafdaa708f4f075c18bf9922050221c"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/c3d6582ab000407f8cb200b3282f5eb5.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140707Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=62babdf294e48f6dead56af6c99270b2afafdaa708f4f075c18bf9922050221c",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "A (currently broken) unc0ver installer.",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.699Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 6747,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/2935",
+      "title" : "RoutineHub - Omega Power Mode ™",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640840,
+      "_id" : 418640660,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/ee24629d7de5418a96c834d1eec2d77d.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1a63b3ba768fd17bb65ac0970aff38763378fa1a009c9dcf4b902b3eadd72731"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/ee24629d7de5418a96c834d1eec2d77d.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1a63b3ba768fd17bb65ac0970aff38763378fa1a009c9dcf4b902b3eadd72731",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "The Best Power Saver For Your Battery!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    },
+    {
+      "created" : "2022-07-18T14:06:35.694Z",
+      "cache" : {
+        "status" : "ready",
+        "size" : 74111,
+        "created" : "2022-07-18T14:08:20.350Z"
+      },
+      "link" : "https://routinehub.co/shortcut/3625",
+      "title" : "RoutineHub - bitin (Device Tweaker)",
+      "tags" : [
+        "RoutineHub",
+        "Siri Shortcuts"
+      ],
+      "sort" : 418640839,
+      "_id" : 418640659,
+      "media" : [
+        {
+          "type" : "image",
+          "link" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/1f431fe388864a1eaf6091c998e9eabc.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f78a3ae41f13b34eb33182e5ee363526c956348728d68fb29df29515629afdea"
+        }
+      ],
+      "cover" : "https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/1f431fe388864a1eaf6091c998e9eabc.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=002cdd049d57e390000000007%2F20220718%2Fus-west-002%2Fs3%2Faws4_request&X-Amz-Date=20220718T140705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f78a3ae41f13b34eb33182e5ee363526c956348728d68fb29df29515629afdea",
+      "lastUpdate" : "2022-07-20T15:46:38.696Z",
+      "type" : "link",
+      "domain" : "routinehub.co",
+      "user" : {
+        "$id" : 517010,
+        "$db" : "",
+        "$ref" : "users"
+      },
+      "collectionId" : 21598130,
+      "removed" : false,
+      "note" : "",
+      "excerpt" : "Tweak Your Device - No Jailbreak Required!",
+      "creatorRef" : {
+        "email" : "",
+        "_id" : 517010,
+        "name" : "davidblue",
+        "avatar" : "https://up.raindrop.io/user/avatars/517/010/sobertoast.jpg"
+      },
+      "highlights" : [
+
+      ],
+      "collection" : {
+        "$id" : 21598130,
+        "$db" : "",
+        "$ref" : "collections"
+      }
+    }
+  ],
+  "count" : 1304,
+  "collectionId" : 21598130
+}
