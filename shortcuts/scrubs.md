@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `07232022-084451`
+Updated `07232022-224254`
 
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
@@ -74,6 +74,14 @@ Updated `07232022-084451`
 - [AmandaFrame](https://www.icloud.com/shortcuts/0147edbe4be044bb8ed34b4dd0a96216)
 - [rh-API Users 1.0](https://www.icloud.com/shortcuts/bf61ba93ed2b40c394399506d512f90f)
 - [T A R](https://www.icloud.com/shortcuts/1eb5a318fcca4282b37d5b6bd7bae136)
+- [What's on KBIA?](https://www.icloud.com/shortcuts/04ec61d2f057497bba899eb434b3da07)
+- [Extract Audio from Video](https://www.icloud.com/shortcuts/1215b111251f4b5ba140eb78568e02a7)
+- [Power Disconnected](https://www.icloud.com/shortcuts/80744c77c62a4f8da9984eb69fba55df)
+- [Recursively Eliminate Directories](https://www.icloud.com/shortcuts/ca83ba7ad06841d2845e0c5d4f84fc6f)
+- [Titled Markdown Links](https://www.icloud.com/shortcuts/521a72771e5642dba7b938b0b5f72065)
+- [Reminders .tar](https://www.icloud.com/shortcuts/dee4f2bf00b242fc9f4ee52c3038386c)
+- [Clipboard ⇨ File ⇨ Share](https://www.icloud.com/shortcuts/7b5763b69c634e8a80fae11a751c1fb7)
+- [HighlightsUpdate](https://www.icloud.com/shortcuts/56325888d9f54a308371eaac81cbef84)
 
 ## Music/Audio Delights
 
@@ -100,9 +108,6 @@ Updated `07232022-084451`
 - [OSHA](https://www.icloud.com/shortcuts/c53b8e2f3d794da58445fa2806034f4b)
 - [DANCE IN SPACE](https://www.icloud.com/shortcuts/e47673521f5f4b8ab1b60cac82cf1019)
 - [DUGA](https://www.icloud.com/shortcuts/d2e917d2e6274fc8bbc4f29089853670)
-- [What's on KBIA?](https://www.icloud.com/shortcuts/04ec61d2f057497bba899eb434b3da07)
-- [Extract Audio from Video](https://www.icloud.com/shortcuts/1215b111251f4b5ba140eb78568e02a7)
-- [Power Disconnected](https://www.icloud.com/shortcuts/80744c77c62a4f8da9984eb69fba55df)
 
 ## Personal/Brand
 
