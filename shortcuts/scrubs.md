@@ -1,5 +1,7 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `08082022-190412`
+Updated `08082022-192642`
+
+[Update Scrubs](shortcuts://run-shortcut?name=Update%20Scrubs)
 
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
@@ -180,4 +182,127 @@ Updated `08082022-190412`
 - [Tweet Vocabulary Images](https://www.icloud.com/shortcuts/7417bf83a7a349099e1a50b1b091285b)
 - [cowsay](https://www.icloud.com/shortcuts/4226e16277a849e29c9b94779e8a6f3e)
 
-[Update Scrubs](shortcuts://run-shortcut?name=Update%20Scrubs)
+---
+
+## iCloud Drive Share Links
+
+- [Raindrop Collection](https://raindrop.io/davidblue/i-cloud-drive-shortcuts-26609105)
+- [RSS](https://raindrop.io/davidblue/i-cloud-drive-shortcuts-26609105/feed)
+- [WTF Documentation](https://davidblue.wtf/drafts/0B8AF539-66DD-48D0-BC27-F5F8AF14A499.html)
+
+<iframe style="border: 0; width: 100%; height: 650px;" allowfullscreen frameborder="0" src="https://raindrop.io/davidblue/i-cloud-drive-shortcuts-26609105/embed/sort=-created&hide=header%2C+excerpt%2C+info%2C+add"></iframe>
+
+https://www.icloud.com/shortcuts/0156db493ecb455a834060c7f905f95f
+https://www.icloud.com/shortcuts/0196edc014534e61bcb3f8b372c314d7
+https://www.icloud.com/shortcuts/04ec61d2f057497bba899eb434b3da07
+https://www.icloud.com/shortcuts/0639309c34fa472690eeceb4ca919011
+https://www.icloud.com/shortcuts/06b41c1e86b8485bbfa7f8aafa82b127
+https://www.icloud.com/shortcuts/0cacceb038854844bfaf7ac731ed51fa
+https://www.icloud.com/shortcuts/0d89703532644f069f703f76ceddb42e
+https://www.icloud.com/shortcuts/0e635cc1b4404cd5b5db70b5a5880142
+https://www.icloud.com/shortcuts/0f447ce37b744d8283d76e5f76d6294d
+https://www.icloud.com/shortcuts/10836359757f472e9de25a17416db2ab
+https://www.icloud.com/shortcuts/10ac9bc9a31b4e6db6197a80fb3563ab
+https://www.icloud.com/shortcuts/113f8e45729c4466860c3c7c668e939d
+https://www.icloud.com/shortcuts/1215b111251f4b5ba140eb78568e02a7
+https://www.icloud.com/shortcuts/127d0c8a85734722ab5bf387712e50ca
+https://www.icloud.com/shortcuts/12990b0bebd741709e0185a46c98e600
+https://www.icloud.com/shortcuts/1598e63dbc034f2d8c0ace4135b8ddec
+https://www.icloud.com/shortcuts/1d15b2d67a754b73b1e6b8c4c2b5e9a5
+https://www.icloud.com/shortcuts/1e7c98e6d40b498a8397b34752c76377
+https://www.icloud.com/shortcuts/1eb5a318fcca4282b37d5b6bd7bae136
+https://www.icloud.com/shortcuts/1febe76530ad41b38f729001d3f2bf31
+https://www.icloud.com/shortcuts/22f48c46fff44a0f9357b6ab48444626
+https://www.icloud.com/shortcuts/23f9214990314dacad6badf642791afb
+https://www.icloud.com/shortcuts/2597158919384c3eb706230b025abe16
+https://www.icloud.com/shortcuts/2665e5d29eed4096a122c4e8492e8bc9
+https://www.icloud.com/shortcuts/27804384b0dd483e9b83d6bfe75f1c5a
+https://www.icloud.com/shortcuts/288f9d15a3d14d368626fe2bdc6ffcfb
+https://www.icloud.com/shortcuts/2bdc2b75ecd74f6898c5de1a1167ed47
+https://www.icloud.com/shortcuts/2da1c2aa12b24df1873a756b977e9ef5
+https://www.icloud.com/shortcuts/2ef701f70bf74e5093b8608f0d29aca4
+https://www.icloud.com/shortcuts/2f95c48e4fb9400b9558ce89bcac0ee6
+https://www.icloud.com/shortcuts/2fe937c456b449b488454c19952dea4c
+https://www.icloud.com/shortcuts/35ac298ab649420c9befb4de53e23eda
+https://www.icloud.com/shortcuts/38580a96db2b47998ac8f972d6ba5319
+https://www.icloud.com/shortcuts/39d635d6c69247e0b5d0164dbb099e6e
+https://www.icloud.com/shortcuts/3ca3addeb5424e44908ce784af52e20e
+https://www.icloud.com/shortcuts/3d5f89f13cef43b19cfe228406c86c0e
+https://www.icloud.com/shortcuts/3ec23fefee6d4b08a23761761536e277
+https://www.icloud.com/shortcuts/3ec975a7ec6e464ea4fa2e131b753133
+https://www.icloud.com/shortcuts/419f1ed3e0084ed9a4947709fa2c366f
+https://www.icloud.com/shortcuts/44a0a0e1353747f8866b3d0584507ac9
+https://www.icloud.com/shortcuts/4631589e04a94aa2a1599ebec9445ffa
+https://www.icloud.com/shortcuts/46ae4f4ca2d94ac58b99f238425f1f79
+https://www.icloud.com/shortcuts/4b70977ffcba45299fe2ed6bce0cc160
+https://www.icloud.com/shortcuts/4c187a01a10f4bf59176b23f49f7e5bf
+https://www.icloud.com/shortcuts/4d0937b4f2a84ecd8d5fe77396b9c38e
+https://www.icloud.com/shortcuts/521a72771e5642dba7b938b0b5f72065
+https://www.icloud.com/shortcuts/56325888d9f54a308371eaac81cbef84
+https://www.icloud.com/shortcuts/58315373f6114c9b99f56e1cc2950836
+https://www.icloud.com/shortcuts/5a552300384e4d9983dddf9e55f5a983
+https://www.icloud.com/shortcuts/5c7b5db35be04c8c9a9f7618369667b4
+https://www.icloud.com/shortcuts/5e20b70d15464bab873e0b96b2eaffdf
+https://www.icloud.com/shortcuts/5f6d667f3f8c4c738cfd1afd6ac15ad8
+https://www.icloud.com/shortcuts/60030616f7784d52965c57020ebe18dd
+https://www.icloud.com/shortcuts/6225fb507fa043409a4eb0ef144b1f0c
+https://www.icloud.com/shortcuts/639beaea26c44df4abb74b2d57a3976f
+https://www.icloud.com/shortcuts/6856b511239f42298d34e4532ecd1308
+https://www.icloud.com/shortcuts/68dd211b44794d2899fb6332be77cafd
+https://www.icloud.com/shortcuts/690bd3ba2d1b4330bab29fe43bc6fcde
+https://www.icloud.com/shortcuts/69aa72b435b94d5f82106e4309303072
+https://www.icloud.com/shortcuts/69f63d747b6642a3ac562bc6db03b8ef
+https://www.icloud.com/shortcuts/70ce2580d4a848fdac6fbf2f8a8f346b
+https://www.icloud.com/shortcuts/72fd7e82531c4accb09177999aa790b9
+https://www.icloud.com/shortcuts/76672f5aad9e446c86c1e6de33ba219d
+https://www.icloud.com/shortcuts/79b3634b4bc542a18f64f9ef87722920
+https://www.icloud.com/shortcuts/7d9fba0b6c744ad9b5c7c9227699700e
+https://www.icloud.com/shortcuts/80744c77c62a4f8da9984eb69fba55df
+https://www.icloud.com/shortcuts/831200a483c948dfa9c430ce6bc53cd0
+https://www.icloud.com/shortcuts/83866087d2234dc7bf81fd9f6885742e
+https://www.icloud.com/shortcuts/84eaec2a7e794d52a41eb139c172451c
+https://www.icloud.com/shortcuts/88ba8a9e701b43538858aa9080473309
+https://www.icloud.com/shortcuts/89ceca25209f42489c59b3c06d493852
+https://www.icloud.com/shortcuts/8bc52994196f48168a3a1d77e982b2ea
+https://www.icloud.com/shortcuts/8e0b05e9dc5a4bf090ba2a7611f30797
+https://www.icloud.com/shortcuts/8ed242ebd26842789a365c80dd76dc8f
+https://www.icloud.com/shortcuts/91e85ec998df4883a08511ba74c689ec
+https://www.icloud.com/shortcuts/944167d133ff4240be7230d7da676d47
+https://www.icloud.com/shortcuts/98aba8835ac34f40a7bc78876f6e2309
+https://www.icloud.com/shortcuts/9b9d0bad6b80452db9124147575c5dff
+https://www.icloud.com/shortcuts/9bd675f83ab04fa5a20abcc4e3c100cc
+https://www.icloud.com/shortcuts/a2a63095005b43d480906fa74688e7e0
+https://www.icloud.com/shortcuts/a8146d223685425cb9439e30f72b751a
+https://www.icloud.com/shortcuts/ab518f7ad5f143949f5438b189cfb332
+https://www.icloud.com/shortcuts/ae9e13a294064c69b1f6ba26270eb18c
+https://www.icloud.com/shortcuts/af1253d618b14a1bac3397fa9c3bba37
+https://www.icloud.com/shortcuts/b4d937c64d064e15a256c81baff5f2d4
+https://www.icloud.com/shortcuts/b5edb8f89a414b0f8b0b8dca891ea321
+https://www.icloud.com/shortcuts/b98cdfcb57f84d2a848ebac1d2b998a3
+https://www.icloud.com/shortcuts/bf61ba93ed2b40c394399506d512f90f
+https://www.icloud.com/shortcuts/c0e2fa6b72a745bd88a083c8d5f37533
+https://www.icloud.com/shortcuts/c14da6204e434d0086f7ac5cf12cf6b7
+https://www.icloud.com/shortcuts/c51a1cfa8c794b15b20added35cdd4a7
+https://www.icloud.com/shortcuts/c7c8f3865b3f455787c6e2017dd16699
+https://www.icloud.com/shortcuts/c8acc5fa0c614c6a9d56fa0e0dd4b34d
+https://www.icloud.com/shortcuts/c8d38e0080564bfd8c2680d6cb91b20a
+https://www.icloud.com/shortcuts/ca83ba7ad06841d2845e0c5d4f84fc6f
+https://www.icloud.com/shortcuts/cbd91b2486af4f70a8c068bf3b79b19d
+https://www.icloud.com/shortcuts/cfd4f530bfbd4fdfb90698c2f0a78d4b
+https://www.icloud.com/shortcuts/d2e917d2e6274fc8bbc4f29089853670
+https://www.icloud.com/shortcuts/d5f9bf7368dd46b98aa2eb6f35835c5c
+https://www.icloud.com/shortcuts/d9093a9be0804bb5818b10a5ac93f7a5
+https://www.icloud.com/shortcuts/d966618ebaa846e784651afdefaa006d
+https://www.icloud.com/shortcuts/db6d17683e21435990fb87e51e92933c
+https://www.icloud.com/shortcuts/dee4f2bf00b242fc9f4ee52c3038386c
+https://www.icloud.com/shortcuts/e28e2c01892b4fbdafb3a967061924d1
+https://www.icloud.com/shortcuts/e34b9db21aef4f01adab609d5e8ca584
+https://www.icloud.com/shortcuts/e47673521f5f4b8ab1b60cac82cf1019
+https://www.icloud.com/shortcuts/e9a60ee0499941269d5b071965574bdc
+https://www.icloud.com/shortcuts/eb591391eb194ef3821465f1a7f64cf9
+https://www.icloud.com/shortcuts/ee92c9d4f2014285b8b561276b59d000
+https://www.icloud.com/shortcuts/f3d226cfccb247559a9c4927bb84e417
+https://www.icloud.com/shortcuts/f4e3460dfd684bf2a70bf4a55717d389
+https://www.icloud.com/shortcuts/f81288ce1cb74908ab6a3329dc4f071d
+https://www.icloud.com/shortcuts/facc41cd490647fbb554a8babcfc0adf
+https://www.icloud.com/shortcuts/fb6b45e1ddcb40c2b0cd0b6fde27287c
