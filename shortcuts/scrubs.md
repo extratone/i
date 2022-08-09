@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `08072022-031934`
+Updated `08082022-190412`
 
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
@@ -86,6 +86,12 @@ Updated `08072022-031934`
 - [AppWish](https://www.icloud.com/shortcuts/35ac298ab649420c9befb4de53e23eda)
 - [rh-Shortcut](https://www.icloud.com/shortcuts/d9093a9be0804bb5818b10a5ac93f7a5)
 - [LookUp Liked Words Update](https://www.icloud.com/shortcuts/24d29851d5ce4f7c835e67e09efbf71e)
+- [Index WTF](https://www.icloud.com/shortcuts/89ceca25209f42489c59b3c06d493852)
+- [Distributed Index](https://www.icloud.com/shortcuts/10ac9bc9a31b4e6db6197a80fb3563ab)
+
+### iOS/iPadOS/macOS 16
+
+- [BookmarksTar](https://www.icloud.com/shortcuts/b1ad2e5e6c924a83bc6a3eca4ca0de0d)
 
 ## Music/Audio Delights
 
