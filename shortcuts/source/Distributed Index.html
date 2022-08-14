@@ -1,0 +1,515 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Distributed Index</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams closed">Distributed Index</button>
+<div class="content" style="display:none"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1184.0.1.1",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 255,
+   "WFWorkflowIconGlyphNumber": 59445
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFFolderContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1106,
+"WFWorkflowMinimumClientVersionString": "1106",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Through a quite silly amount of finagling, I have managed to achieve a somewhat sustainable/updatable index file of working iCloud Drive shared hyperlinks via this shortcut. 
+
+Please be advised: I have shared this particular shortcut purely for demonstrative purposes. Please see my blog post for a universalized version: https://bilge.world/index-icloud-drive
+
+My contact information:
+
+Email: davidblue@extratone.com
+Contact card: bit.ly/whoisdavidblue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone/i
+Telegram: t.me/extratone
+Twitter: twitter.com/NeoYokel
+Reddit: reddit.com/u/asphaltapostle
+Mastodon: mastodon.social/@DavidBlue
+EVERYWHERE: bit.ly/dbrolodex</div></div>
+<button class="button " id="m1">
+1 Folder</button>
+	<div class="content">
+		<div class="row"><div class="col1">Folder</div>
+			<div class="col2">{  "fileLocation": {
+      "relativeSubpath": "com~apple~CloudDocs/Distributed",
+      "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/74785783-EEEE-4041-BF3C-8EBE31F8B51B/379af4e7ceb72b3309e29c59f69b905d791aaf13",
+      "WFFileLocationType": "iCloud"
+   },
+   "filename": "Distributed",
+   "displayName": "Distributed"
+}</div></div></div>
+<button class="button " id="m2">
+2 Get Contents of Folder <span class="box"><span class="var"><b>[1 Folder]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Recursive</div>
+			<div class="col2">false</div></div></div>
+<button class="button " id="m3">
+3 Filter Files <span class="box"><span class="var"><b>[2 Contents of Folder]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">ContentItemSortProperty</div>
+			<div class="col2">Name</div></div>
+		<div class="row"><div class="col1">ContentItemSortOrder</div>
+			<div class="col2">A to Z</div></div>
+		<div class="row"><div class="col1">ContentItemFilter</div>
+			<div class="col2">File Extension is not plist</div></div></div>
+<button class="button gLoop nonbottom" id="m4">
+4 Repeat with Each in <span class="box"><span class="var"><b>[3 Files]</b></span></span></button>
+	<div class="content contentloop">
+<button class=" inside" id="m5">
+5 Get Details <span class="box">Name</span> of Files <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button>
+<button class="button gUnknown inside" id="m6">
+6 com.Christopher-Hannah.Text-Case.TextCaseIntent</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">text</div>
+			<div class="col2"><span class="var"><b>[5 Name]</b></span></div></div>
+		<div class="row"><div class="col1">format</div>
+			<div class="col2">snakeCase</div></div></div>
+<button class=" inside" id="m7">
+7 Get Link to File <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button>
+<button class="button gDocuments inside" id="m8">
+8 Text</button>
+	<div class="content inside">
+		<div class="col2">- [<span class="magic" onclick="magictap(6)"><b>[6 Formatted Text]</b></span>](<span class="var"><b>[7 Link to File]</b></span>)</div></div>
+<button class="gVariable inside" id="m9">
+9 Add <span class="box"><span class="var"><b>[8 Text]</b></span></span> to Variable <span class="box">indices</span></button>
+<button class="button gUnknown inside" id="m10">
+10 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">distributed.<span class="magic" onclick="magictap(6)"><b>[6 Formatted Text]</b></span></div></div>
+		<div class="row"><div class="col1">valueConversionMode</div>
+			<div class="col2">text</div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="magic" onclick="magictap(7)"><b>[7 Link to File</b> as Text<b>]</b></span></div></div></div></div>
+<button class="gLoop nontop" id="m11">
+11 End Repeat with Each</button>
+<button class="gVariable" id="m12">
+12 Get Variable <span class="box"><span class="var"><b>[indices]</b></span></span></button>
+<button class="button gDocuments" id="m13">
+13 Combine Text <span class="box"><span class="var"><b>[indices]</b></span></span> with New Lines</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="button gDocuments" id="m14">
+14 Text</button>
+	<div class="content">
+		<div class="col2"># Distributed Index
+Last updated `<span class="var"><b>[CurrentDate</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span>`
+
+[Distributed Index](shortcuts://run-shortcut?name=Distributed%20Index)
+
+---
+
+- [GitHub Issue](https://github.com/extratone/bilge/issues/330) 
+- [WTF](https://davidblue.wtf/drafts/3B7930BE-07BC-4DB9-A591-4254BEE42A82.html)
+- [WTF Shortlink](https://davidblue.wtf/distributed) `https://davidblue.wtf/distributed`
+- [Distributed Folder](https://www.icloud.com/iclouddrive/0b7XOcnuZWTZlrPVZBegl1DWA#Distributed)
+- [Things](things:///show?id=HvkLFcKxxC9x7X7LBCY3DQ)
+- [Simplenote Local](simplenote://note/e879806edef84144a4caf5686be3e3c3)
+- [Simplenote Publish](http://simp.ly/publish/D5T2P7)
+- [Craft Publish](https://www.craft.do/s/Rjbfm6F98SkAnz)
+- [Craft Local](craftdocs://open?blockId=4B2C2917-3777-4898-A392-C06FAD4F7AFF&amp;spaceId=d64c60d3-b1ba-bda2-5e7a-5c1baae7751f)
+- [Tilde](https://tilde.town/~extratone/distributed)
+
+---
+
+![Distributed Index Frame](https://i.snap.as/Kl9Dwq0g.png)
+
+<span class="var"><b>[13 Combined Text]</b></span></div></div>
+<button class="gVariable" id="m15">
+15 Set Variable <span class="box">index</span> to <span class="box"><span class="var"><b>[14 Text]</b></span></span></button>
+<button class="button gUnknown" id="m16">
+16 com.alexhay.ToolboxPro2.SetGlobalVariable</button>
+	<div class="content">
+		<div class="row"><div class="col1">overwrite</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">AppIntentDescriptor</div>
+			<div class="col2">{  "TeamIdentifier": "NWHDL7X5B3",
+   "BundleIdentifier": "com.alexhay.ToolboxPro2",
+   "Name": "Toolbox Pro",
+   "AppIntentIdentifier": "SetGlobalVariable"
+}</div></div>
+		<div class="row"><div class="col1">items</div>
+			<div class="col2"><span class="var"><b>[index]</b></span></div></div>
+		<div class="row"><div class="col1">name</div>
+			<div class="col2">distributed</div></div></div>
+<button class="button gUnknown" id="m17">
+17 ke.bou.GizmoPack.UniversalVariablesIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">operation</div>
+			<div class="col2">set</div></div>
+		<div class="row"><div class="col1">setName</div>
+			<div class="col2">distributed</div></div>
+		<div class="row"><div class="col1">setValue</div>
+			<div class="col2"><span class="var"><b>[index]</b></span></div></div>
+		<div class="row"><div class="col1">database</div>
+			<div class="col2">public</div></div>
+		<div class="row"><div class="col1">setReturnPrevious</div>
+			<div class="col2">false</div></div></div>
+<button class="button " id="m18">
+18 Save <span class="box"><span class="var"><b>[index]</b></span></span> to File</button>
+	<div class="content">
+		<div class="row"><div class="col1">Folder</div>
+			<div class="col2">{  "fileLocation": {
+      "relativeSubpath": "com~apple~CloudDocs/Distributed",
+      "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/74785783-EEEE-4041-BF3C-8EBE31F8B51B/379af4e7ceb72b3309e29c59f69b905d791aaf13",
+      "WFFileLocationType": "iCloud"
+   },
+   "filename": "Distributed",
+   "displayName": "Distributed"
+}</div></div>
+		<div class="row"><div class="col1">AskWhereToSave</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">SaveFileOverwrite</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">FileDestinationPath</div>
+			<div class="col2">index.md</div></div></div>
+<button class="button gUnknown" id="m19">
+19 com.appliedphasor.working-copy.WriteFileIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">createMissing</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">path</div>
+			<div class="col2">misc/distributedindex.md</div></div>
+		<div class="row"><div class="col1">content</div>
+			<div class="col2"><span class="magic" onclick="magictap(14)"><b>[14 Text]</b></span></div></div>
+		<div class="row"><div class="col1">repo</div>
+			<div class="col2">bilge</div></div>
+		<div class="row"><div class="col1">mode</div>
+			<div class="col2">overwrite</div></div></div>
+<button class="button gUnknown" id="m20">
+20 com.agiletortoise.Drafts5.GetDraftByUUIDIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">uuid</div>
+			<div class="col2">3B7930BE-07BC-4DB9-A591-4254BEE42A82</div></div>
+		<div class="row"><div class="col1">AppIntentDescriptor</div>
+			<div class="col2">{  "TeamIdentifier": "GTFQ98J4YG",
+   "BundleIdentifier": "com.agiletortoise.Drafts5",
+   "Name": "Drafts",
+   "AppIntentIdentifier": "GetDraftByUUIDIntent"
+}</div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class="button gUnknown" id="m21">
+21 com.appliedphasor.working-copy.CommitRepositoryIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">message</div>
+			<div class="col2">#330</div></div>
+		<div class="row"><div class="col1">repo</div>
+			<div class="col2">bilge</div></div></div>
+<button class="button gUnknown" id="m22">
+22 com.appliedphasor.working-copy.PushRepositoryIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">remote</div>
+			<div class="col2"> Default </div></div>
+		<div class="row"><div class="col1">repo</div>
+			<div class="col2">bilge</div></div></div>
+<button class="button gUnknown" id="m23">
+23 com.agiletortoise.Drafts5.SetDraftIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">content</div>
+			<div class="col2"><span class="var"><b>[index]</b></span></div></div>
+		<div class="row"><div class="col1">draft</div>
+			<div class="col2"><span class="magic" onclick="magictap(20)"><b>[20 Draft]</b></span></div></div>
+		<div class="row"><div class="col1">AppIntentDescriptor</div>
+			<div class="col2">{  "TeamIdentifier": "GTFQ98J4YG",
+   "BundleIdentifier": "com.agiletortoise.Drafts5",
+   "Name": "Drafts",
+   "AppIntentIdentifier": "SetDraftIntent"
+}</div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">tags</div>
+			<div class="col2">[index,
+files,
+curation,
+i]</div></div>
+		<div class="row"><div class="col1">Show-tags</div>
+			<div class="col2">true</div></div></div>
+<button class="button gUnknown" id="m24">
+24 com.agiletortoise.Drafts5.MarkdownToHTMLIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">markdownParser</div>
+			<div class="col2">multimarkdown</div></div>
+		<div class="row"><div class="col1">AppIntentDescriptor</div>
+			<div class="col2">{  "TeamIdentifier": "GTFQ98J4YG",
+   "BundleIdentifier": "com.agiletortoise.Drafts5",
+   "Name": "Drafts",
+   "AppIntentIdentifier": "MarkdownToHTMLIntent"
+}</div></div>
+		<div class="row"><div class="col1">content</div>
+			<div class="col2"><span class="var"><b>[23 Draft]</b></span></div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class="button " id="m25">
+25 Save <span class="box"><span class="var"><b>[24 HTML]</b></span></span> to File</button>
+	<div class="content">
+		<div class="row"><div class="col1">Folder</div>
+			<div class="col2">{  "fileLocation": {
+      "relativeSubpath": "com~apple~CloudDocs/Distributed",
+      "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+      "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/74785783-EEEE-4041-BF3C-8EBE31F8B51B/379af4e7ceb72b3309e29c59f69b905d791aaf13",
+      "WFFileLocationType": "iCloud"
+   },
+   "filename": "Distributed",
+   "displayName": "Distributed"
+}</div></div>
+		<div class="row"><div class="col1">AskWhereToSave</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">SaveFileOverwrite</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">FileDestinationPath</div>
+			<div class="col2">index.html</div></div></div>
+<button class="button gDocuments" id="m26">
+26 Text</button>
+	<div class="content">
+		<div class="col2">things:///update-project?auth-token=jWc7C1OBSlq0QbJrXa4ngw&amp;id=P7j9UnoHtXyGzdYFU3usSh&amp;title=Distributed%20Index&amp;notes=<span class="var"><b>[index]</b></span>&amp;creation-date=<span class="var"><b>[CurrentDate</b>{"WFISO8601IncludeTime":false,"Date Style":"ISO 8601"}<b>]</b></span></div></div>
+<button class="button gUnknown closed" id="m27">
+27 com.ameba.esse.RunFunctionIntent</button>
+	<div class="content" style="display:none">
+		<div class="row"><div class="col1">inputText</div>
+			<div class="col2"><span class="var"><b>[26 Text]</b></span></div></div>
+		<div class="row"><div class="col1">function</div>
+			<div class="col2">{  "displayString": "URL Encoded",
+   "subtitleString": "",
+   "identifier": "co.ameba.Esse.ConvertFunctions.urlEncoded",
+   "displayImage": {
+      "imageData": "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",
+      "renderingMode": 2,
+      "imageSize": {
+         "width": 33.333333333333336,
+         "height": 33.333333333333336
+      },
+      "type": "Data"
+   }
+}</div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class="button gUnknown" id="m28">
+28 dk.simonbs.DataJar.InsertValueInArrayIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">valueConversionMode</div>
+			<div class="col2">text</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">things</div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[27 Result]</b></span></div></div></div>
+<button class="button gUnknown" id="m29">
+29 com.culturedcode.ThingsiPad.TINRunThingsURLIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">url</div>
+			<div class="col2"><span class="magic" onclick="magictap(27)"><b>[27 Result]</b></span></div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class="button gUnknown" id="m30">
+30 com.alexhay.Console.LogItemsIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">category</div>
+			<div class="col2">info</div></div>
+		<div class="row"><div class="col1">title</div>
+			<div class="col2">Distributed Index</div></div>
+		<div class="row"><div class="col1">message</div>
+			<div class="col2"><span class="magic" onclick="magictap(22)"><b>[22 Status]</b></span></div></div>
+		<div class="row"><div class="col1">logError</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">tag</div>
+			<div class="col2">URL</div></div>
+		<div class="row"><div class="col1">items</div>
+			<div class="col2"><span class="magic" onclick="magictap(18)"><b>[18 Saved File]</b></span></div></div></div>
+<button class="button gUnknown" id="m31">
+31 com.appliedphasor.working-copy.GetFilesIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">path</div>
+			<div class="col2">/caf/WorkoutPaceBelow.caf</div></div>
+		<div class="row"><div class="col1">repo</div>
+			<div class="col2">iOSSystemSounds</div></div></div>
+<button class="" id="m32">
+32 Play Sound <span class="box"><span class="var"><b>[31 Files]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
