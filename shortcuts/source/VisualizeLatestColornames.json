@@ -1,0 +1,310 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1106",
+   "WFWorkflowMinimumClientVersion": 1106,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": -2873601,
+      "WFWorkflowIconGlyphNumber": 61572
+   },
+   "WFWorkflowClientVersion": "1184.4.4",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Generate a grid of solid color, marked-up images of Colornames'org's latest 100 submissions.\n\nData source: https://colornames.org/fresh/json\n\nMore documentation: https://colornames.org/download\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly/whoisdavidblue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone/i\nTelegram: t.me/extratone\nTwitter: twitter.com/NeoYokel\nReddit: reddit.com/u/asphaltapostle\nMastodon: mastodon.social/@DavidBlue\nEVERYWHERE: bit.ly/dbrolodex"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": "https://colornames.org/fresh/json/",
+            "UUID": "74C1283F-2D0C-4CA4-BFB8-56D3E44AEE14"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "74C1283F-2D0C-4CA4-BFB8-56D3E44AEE14",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "CBD1ADD8-55B9-44D9-BA97-7EE2111308BC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "CBD1ADD8-55B9-44D9-BA97-7EE2111308BC",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "GroupingIdentifier": "D04DA3FC-6FDB-454D-9851-C38E87060E30",
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "hexCode",
+            "UUID": "981686AA-EB4F-4654-B6AD-4518C3ABA9B3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "name",
+            "UUID": "CB64A0D3-EC7A-46E1-8CE7-DD59BF42A516"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.CreateColorImageIntent",
+         "WFWorkflowActionParameters": {
+            "opacity": 1,
+            "UUID": "A5D84F3B-9E19-4AF3-9CE5-3F6E4D23ABEA",
+            "height": "300",
+            "width": "400",
+            "color": {
+               "Value": {
+                  "string": "#\uFFFC",
+                  "attachmentsByRange": {
+                     "{1, 1}": {
+                        "OutputUUID": "981686AA-EB4F-4654-B6AD-4518C3ABA9B3",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.overlaytext",
+         "WFWorkflowActionParameters": {
+            "WFTextPosition": "Bottom Center",
+            "WFTextRotation": "0",
+            "WFFont": {
+               "WFFontDescriptorName": "SFMono-LightItalic"
+            },
+            "WFText": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "CB64A0D3-EC7A-46E1-8CE7-DD59BF42A516",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFTextColor": {
+               "redComponent": 0.27843135595321655,
+               "WFColorRepresentationType": "WFColorRepresentationTypeCGColor",
+               "blueComponent": 0.27843135595321655,
+               "greenComponent": 0.27843135595321655,
+               "alphaComponent": 1
+            },
+            "WFPercentageTextOffset": 0.0776713415980339,
+            "UUID": "5FAAFF70-212B-4068-859A-4842B090F047",
+            "WFPercentageTextStrokeWidth": 0,
+            "WFPercentageFontSize": 0.06502242386341095,
+            "WFImage": {
+               "Value": {
+                  "Type": "ActionOutput",
+                  "OutputName": "Solid Color Image",
+                  "OutputUUID": "A5D84F3B-9E19-4AF3-9CE5-3F6E4D23ABEA",
+                  "Aggrandizements": [
+                     {
+                        "Type": "WFCoercionVariableAggrandizement",
+                        "CoercionItemClass": "WFImageContentItem"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFTextOutlineEnabled": false,
+            "WFTextAlignment": "Center",
+            "WFTextStrokeColor": {
+               "redComponent": 0.95686274766922,
+               "WFColorRepresentationType": "WFColorRepresentationTypeCGColor",
+               "blueComponent": 0.19607841968536377,
+               "greenComponent": 0.24705880880355835,
+               "alphaComponent": 1
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "5FAAFF70-212B-4068-859A-4842B090F047",
+                  "Type": "ActionOutput",
+                  "OutputName": "Image with Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "images"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "D04DA3FC-6FDB-454D-9851-C38E87060E30",
+            "UUID": "550F5E82-1EB0-4E2C-AB9E-6B8ACF3677CE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.image.combine",
+         "WFWorkflowActionParameters": {
+            "WFImageCombineMode": "In a Grid",
+            "WFInput": {
+               "Value": {
+                  "VariableName": "images",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "B854FA56-FF33-4678-91C5-43BBC4E67B7B",
+            "WFImageCombineSpacing": "0"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+         "WFWorkflowActionParameters": {
+            "WFName": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFDontIncludeFileExtension": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B854FA56-FF33-4678-91C5-43BBC4E67B7B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Combined Image"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "2EED3491-1C09-4AE8-9C45-77C9554C5E75"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "fileLocation": {
+                  "relativeSubpath": "Repositories/JFA/hex/grids",
+                  "fileProviderDomainID": "com.appliedphasor.working-copy.provider",
+                  "crossDeviceItemID": "deviceSpecific:1356720B-C5B3-43B3-9218-A8AD9669E990:fp:/OmF1HsB7r66SibGJ8bJ5Uo3bSt2d5m2aCQdlMmrv8vc=/com.appliedphasor.working-copy.provider//JFA/hex/grids",
+                  "WFFileLocationType": "FileProvider"
+               },
+               "filename": "grids",
+               "displayName": "grids"
+            },
+            "WFAskWhereToSave": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "2EED3491-1C09-4AE8-9C45-77C9554C5E75",
+                  "Type": "ActionOutput",
+                  "OutputName": "Renamed Item"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "2CB8E8C0-BC00-49A3-A9C3-B1F7EC693B1F"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "ParameterKey": "WFFont",
+         "Category": "Parameter",
+         "ActionIndex": 7,
+         "Text": "Choose a locally-available font in which to render the submitted names. (Required)"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFFolder",
+         "ActionIndex": 12,
+         "Text": "Choose a directory in which to save the final outputted grid image. (Optional)",
+         "DefaultValue": {
+            "fileLocation": {
+               "relativeSubpath": "Repositories/JFA/hex/grids",
+               "fileProviderDomainID": "com.appliedphasor.working-copy.provider",
+               "crossDeviceItemID": "deviceSpecific:1356720B-C5B3-43B3-9218-A8AD9669E990:fp:/OmF1HsB7r66SibGJ8bJ5Uo3bSt2d5m2aCQdlMmrv8vc=/com.appliedphasor.working-copy.provider//JFA/hex/grids",
+               "WFFileLocationType": "FileProvider"
+            },
+            "filename": "grids",
+            "displayName": "grids"
+         }
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
