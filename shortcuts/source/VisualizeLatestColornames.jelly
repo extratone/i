@@ -1,0 +1,34 @@
+import Shortcuts
+#Color: teal, #Icon: paintbrush
+
+/*
+Generate a grid of solid color, marked-up images of Colornames'org's latest 100 submissions.
+
+Data source: https://colornames.org/fresh/json
+
+More documentation: https://colornames.org/download
+
+My contact information:
+
+Email: davidblue@extratone.com
+Contact card: bit.ly/whoisdavidblue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone/i
+Telegram: t.me/extratone
+Twitter: twitter.com/NeoYokel
+Reddit: reddit.com/u/asphaltapostle
+Mastodon: mastodon.social/@DavidBlue
+EVERYWHERE: bit.ly/dbrolodex
+*/
+url(url: "https://colornames.org/fresh/json/") >> url
+downloadURL(url: "${URL}") >> downloadURL
+repeatEach(Contents of URL) {
+	valueFor(key: "hexCode", dictionary: Repeat Item) >> valueFor
+	valueFor(key: "name", dictionary: Repeat Item) >> valueFor 1
+//Unable to get shortcuts action com.sindresorhus.Actions.CreateColorImageIntent
+	overlayText(image: Solid Color Image, text: "${Dictionary Value}", position: Bottom Center) >> overlayText
+//Unable to get shortcuts action is.workflow.actions.appendvariable
+} >> RepeatResult
+combineImage(images: images, mode: In a Grid, spacing: 0) >> combineImage
+setName(input: Combined Image, name: "${CurrentDate}", dontIncludeExtension: false) >> setName
+saveFile(input: Renamed Item, ask: false) >> saveFile
