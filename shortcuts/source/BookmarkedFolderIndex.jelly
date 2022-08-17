@@ -1,0 +1,45 @@
+import Shortcuts
+import Toolbox
+import Data Jar
+#Color: green, #Icon: list
+
+/*
+Generate JSON and CSV detail indices of a bookmarked folder's contents with Toolbox Pro.
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+Mastodon: https://mastodon.social/@DavidBlue
+EVERYWHERE: https://davidblue.wtf/socialdrop2
+*/
+var davodtime = CurrentDate
+listContentsOfBookmarkedFolder(bookmarkedFolder: "File Provider Storage", All, thumbs: Previews)
+repeatEach(File Details) {
+var ext = Variable
+var size = Variable
+var tags = Variable
+var added = Variable
+var modified = Variable
+var created = Variable
+//Unable to get shortcuts action is.workflow.actions.appendvariable
+var url = Variable
+//Unable to get shortcuts action com.Christopher-Hannah.Text-Case.TextCaseIntent
+var name = Formatted Text
+	dictionary({"name":"${name}","extension":"${ext}","size":"${size}","tags":"${tags}","url":"${url}","modified":"${modified}","created":"${created}","added":"${added}"})
+insertValueInArray(values: {dictionary}, keyPath: "files/", insertionPoint: index,x valueConversionMode: text)
+//Unable to get shortcuts action is.workflow.actions.appendvariable
+} >> RepeatResult
+//Unable to get shortcuts action com.sindresorhus.Actions.GenerateCSVIntent
+setName(input: CSV, name: "index${davodtime}", dontIncludeExtension: false) >> setName
+saveFilesToBookmarkedFolders(bookmarkedFolder: ["File Provider Storage"], files: Renamed File, overwriteExisting: true, tags: ["index}"])
+combineImage(images: thumb, mode: In a Grid, spacing: 0) >> combineImage
+setName(input: Combined Image, name: "index${davodtime}", dontIncludeExtension: false) >> setName 1
+saveFilesToBookmarkedFolders(bookmarkedFolder: ["File Provider Storage"], files: Renamed File 1, overwriteExisting: true, tags: ["index}"])
