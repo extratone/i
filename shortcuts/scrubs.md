@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `08102022-213407`
+Updated `08172022-143113`
 
 [Update Scrubs](shortcuts://run-shortcut?name=Update%20Scrubs)
 
@@ -95,6 +95,7 @@ Updated `08102022-213407`
 ### iOS/iPadOS/macOS 16
 
 - [BookmarksTar](https://www.icloud.com/shortcuts/b1ad2e5e6c924a83bc6a3eca4ca0de0d)
+- [VenturaDark(er)](https://www.icloud.com/shortcuts/4121558705c846ef9b7124c556678913)
 
 ## Music/Audio Delights
 
@@ -121,6 +122,7 @@ Updated `08102022-213407`
 - [OSHA](https://www.icloud.com/shortcuts/c53b8e2f3d794da58445fa2806034f4b)
 - [DANCE IN SPACE](https://www.icloud.com/shortcuts/e47673521f5f4b8ab1b60cac82cf1019)
 - [DUGA](https://www.icloud.com/shortcuts/d2e917d2e6274fc8bbc4f29089853670)
+- [HULA](https://www.icloud.com/shortcuts/7f901b618fb04a94bfa0097d4f4c1c93)
 
 ## Personal/Brand
 
@@ -164,6 +166,7 @@ Updated `08102022-213407`
 - [5](https://www.icloud.com/shortcuts/d966618ebaa846e784651afdefaa006d)
 - [Keanunft](https://www.icloud.com/shortcuts/419f1ed3e0084ed9a4947709fa2c366f)
 - [You're Still My Dad](https://www.icloud.com/shortcuts/2f95c48e4fb9400b9558ce89bcac0ee6)
+- [hello](https://www.icloud.com/shortcuts/39cc6f9854a6498f937c3a91be14d6f8)
 
 ## Text Fuck
 
