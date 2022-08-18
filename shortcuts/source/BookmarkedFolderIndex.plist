@@ -31,6 +31,55 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>com.alexhay.ToolboxProForShortcuts.EditFolderBookmarksIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>DBC061A7-9147-4A5E-8EEE-B1D74F50D98B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.choosefromlist</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>C7453470-EEC2-457A-813F-D7BE637A0490</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFGenericFileContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+							<dict>
+								<key>PropertyName</key>
+								<string>Name</string>
+								<key>PropertyUserInfo</key>
+								<string>WFItemName</string>
+								<key>Type</key>
+								<string>WFPropertyVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Results</string>
+						<key>OutputUUID</key>
+						<string>DBC061A7-9147-4A5E-8EEE-B1D74F50D98B</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.setvariable</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -69,9 +118,38 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 				<key>UUID</key>
 				<string>0E37F698-F33B-4F93-85CD-84A6C2A9439B</string>
 				<key>bookmarkedFolder</key>
-				<string>File Provider Storage</string>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFGenericFileContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Chosen Item</string>
+						<key>OutputUUID</key>
+						<string>C7453470-EEC2-457A-813F-D7BE637A0490</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
 				<key>filter</key>
-				<string>All</string>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Ask</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
 				<key>thumbs</key>
 				<string>Previews</string>
 			</dict>
@@ -373,15 +451,11 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>com.Christopher-Hannah.Text-Case.TextCaseIntent</string>
+			<string>com.sindresorhus.Actions.TransformTextIntent</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>ShowWhenRun</key>
-				<false/>
 				<key>UUID</key>
-				<string>8B92023B-C1CB-42B3-BF49-6F8E0EAB55D1</string>
-				<key>format</key>
-				<string>snakeCase</string>
+				<string>80ED0A60-CD0F-4B14-8E15-7723C5FE789B</string>
 				<key>text</key>
 				<dict>
 					<key>Value</key>
@@ -411,6 +485,8 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
 				</dict>
+				<key>transformation</key>
+				<string>snakeCase</string>
 			</dict>
 		</dict>
 		<dict>
@@ -423,9 +499,9 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Formatted Text</string>
+						<string>Transformed Text</string>
 						<key>OutputUUID</key>
-						<string>8B92023B-C1CB-42B3-BF49-6F8E0EAB55D1</string>
+						<string>80ED0A60-CD0F-4B14-8E15-7723C5FE789B</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -992,7 +1068,28 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 		<integer>-2873601</integer>
 	</dict>
 	<key>WFWorkflowImportQuestions</key>
-	<array/>
+	<array>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>22</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>bookmarkedFolder</string>
+			<key>Text</key>
+			<string>Choose a bookmarked folder in which to save index CSV files. (Required)</string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>25</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>bookmarkedFolder</string>
+			<key>Text</key>
+			<string>Choose a bookmarked folder in which to save index thumbnail image grid files. (Required)</string>
+		</dict>
+	</array>
 	<key>WFWorkflowInputContentItemClasses</key>
 	<array>
 		<string>WFAppStoreAppContentItem</string>
