@@ -1,13 +1,14 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `08172022-143113`
+Updated `08182022-070420`
 
-[Update Scrubs](shortcuts://run-shortcut?name=Update%20Scrubs)
+[**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
 - [David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki](https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
 - [Shortlink](https://bit.ly/gitscrubs) - `https://bit.ly/gitscrubs`
 - [Pastery](https://www.pastery.net/eujzmz/#eujzmz)
 - [WTF](https://davidblue.wtf/drafts/68F049EC-59AF-4A49-885F-698BB9653400.html)
 - [WTF Redirect](https://davidblue.wtf/scrubs/) - `https://davidblue.wtf/scrubs`
+- [Scrubs Raindrop Collection](drafts://open?uuid=4F33B1AB-DACC-4020-8736-028F54BC58FE)
 - [~](https://tilde.town/~extratone/scrubs/)
 - [r/davidblue](https://reddit.com/r/davidblue/comments/sir6pm/david_blues_world_famous_fast_n_loose_siri/)
 - [Siri Shortcut](https://routinehub.co/shortcut/10978/)
@@ -22,11 +23,23 @@ Updated `08172022-143113`
 
 <iframe width="300" height="60" src="https://vocaroo.com/embed/1j3RAn0FYe5i?autoplay=0" frameborder="0" allow="autoplay"></iframe>
 
+If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a98fc40efb93542461f06d9f7) to immediately access my up-to-date contact information!
+
 **Download the full David Blue Siri Shortcuts Suite™**
 - [Telegram](https://t.me/extratone/10876)
 - [.zip (iCloud Drive)](https://www.icloud.com/iclouddrive/090WZyVe9rGUJA_6MYUtA1Mdg#DavidBlueFullShortcutsSuite03312022-225743)
 - [.tar (iCloud Drive)](https://www.icloud.com/iclouddrive/055HG3do68dvVwLyqNmPeCBGw#DavidBlueFullShortcutsSuite03312022-225658)
 - [.7z (iCloud Drive)](https://www.icloud.com/iclouddrive/08amblz4oVhB71NErt_qIDQHQ#DavidBlueFullShortcutsSuite03312022-225936)
+
+---
+
+## Raindrop Collection
+
+<iframe style="border: 0; width: 100%; height: 300px;" allowfullscreen frameborder="0" src="https://raindrop.io/davidblue/scrubs-21568457/embed/sort=-created&hide=header%2C+excerpt%2C+info%2C+add"></iframe>
+
+- [Page URL](https://raindrop.io/davidblue/scrubs-21568457)
+- [RSS](https://raindrop.io/collection/21568457/feed)
+- [WTF Documentation Page](https://davidblue.wtf/drafts/4F33B1AB-DACC-4020-8736-028F54BC58FE.html)
 
 ## Most Utilitarian (In Theory…)
 
