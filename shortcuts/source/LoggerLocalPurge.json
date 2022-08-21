@@ -1,0 +1,294 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1106",
+   "WFWorkflowMinimumClientVersion": 1106,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4282601983,
+      "WFWorkflowIconGlyphNumber": 59722
+   },
+   "WFWorkflowClientVersion": "1184.4.4",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Back up, purge, and resume Logger logs in a single shortcut.\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nMastodon: https://mastodon.social/@DavidBlue\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.Console.StartLoggingIntent",
+         "WFWorkflowActionParameters": {
+            "mode": "stop",
+            "UUID": "931C4CC5-8EAE-4F6A-9674-3DD146C57E0B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.Console.OutputMessagesIntent",
+         "WFWorkflowActionParameters": {
+            "UUID": "4EE5F8FE-2FBF-4C6A-818B-3A5461389500"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "fileLocation": {
+                  "relativeSubpath": "Logging",
+                  "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+                  "crossDeviceItemID": "deviceSpecific:4C59255C-A8E6-454C-8585-DD1E43279D7A:fp:/sSrrZo4lEQAJHlQP3DqY6Kn_gHH8qt46oTvPLeWi244=/com.apple.FileProvider.LocalStorage//fid=4170466",
+                  "WFFileLocationType": "LocalStorage"
+               },
+               "filename": "Logging",
+               "displayName": "Logging"
+            },
+            "WFAskWhereToSave": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "4EE5F8FE-2FBF-4C6A-818B-3A5461389500",
+                  "Type": "ActionOutput",
+                  "OutputName": "Console Output"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "C2A7D0D6-6BA9-4DB9-8DBC-8DD4DA9797FB",
+            "WFFileDestinationPath": {
+               "Value": {
+                  "string": "\uFFFC.md",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.Console.OutputMessagesIntent",
+         "WFWorkflowActionParameters": {
+            "outputMode": "plaintext",
+            "UUID": "36774DD3-1D1D-4A29-979C-2F384F3CAA07"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "fileLocation": {
+                  "relativeSubpath": "Logging",
+                  "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+                  "crossDeviceItemID": "deviceSpecific:4C59255C-A8E6-454C-8585-DD1E43279D7A:fp:/sSrrZo4lEQAJHlQP3DqY6Kn_gHH8qt46oTvPLeWi244=/com.apple.FileProvider.LocalStorage//fid=4170466",
+                  "WFFileLocationType": "LocalStorage"
+               },
+               "filename": "Logging",
+               "displayName": "Logging"
+            },
+            "WFAskWhereToSave": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "36774DD3-1D1D-4A29-979C-2F384F3CAA07",
+                  "Type": "ActionOutput",
+                  "OutputName": "Console Output"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "04B9584A-7347-45A0-B133-C4C6080D37B0",
+            "WFFileDestinationPath": {
+               "Value": {
+                  "string": "\uFFFC.txt",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+         "WFWorkflowActionParameters": {
+            "Input": {
+               "Value": {
+                  "OutputUUID": "36774DD3-1D1D-4A29-979C-2F384F3CAA07",
+                  "Type": "ActionOutput",
+                  "OutputName": "Console Output"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFCountType": "Lines",
+            "UUID": "400C9599-8F59-48A2-A4D1-FA9519AB6491"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+         "WFWorkflowActionParameters": {
+            "WFAlertActionMessage": {
+               "Value": {
+                  "string": "You're about to purge all \uFFFC lines in Logger. Are you sure you wish to proceed?",
+                  "attachmentsByRange": {
+                     "{26, 1}": {
+                        "OutputUUID": "400C9599-8F59-48A2-A4D1-FA9519AB6491",
+                        "Type": "ActionOutput",
+                        "OutputName": "Count"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFAlertActionTitle": "Logger Purge"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.Console.ClearMessagesIntent",
+         "WFWorkflowActionParameters": {
+            "UUID": "CEDE966E-35A7-4186-82E8-FF47AF522C14"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.Console.StartLoggingIntent",
+         "WFWorkflowActionParameters": {
+            "UUID": "96BCA60D-B62A-4D0E-B828-C168F7409839"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.Console.LogItemsIntent",
+         "WFWorkflowActionParameters": {
+            "message": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "title": "Logger Local Purge",
+            "items": {
+               "Value": {
+                  "OutputUUID": "C2A7D0D6-6BA9-4DB9-8DBC-8DD4DA9797FB",
+                  "Type": "ActionOutput",
+                  "OutputName": "Saved File"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "7FBED76E-FEF4-47CB-AAF3-86B575207D4E",
+            "category": "info",
+            "tag": "Test"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.Console.LogItemsIntent",
+         "WFWorkflowActionParameters": {
+            "message": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "title": "Logger Local Purge",
+            "items": {
+               "Value": {
+                  "OutputUUID": "04B9584A-7347-45A0-B133-C4C6080D37B0",
+                  "Type": "ActionOutput",
+                  "OutputName": "Saved File"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "E37FCC0F-22F5-49EC-9D66-FBA69F623308",
+            "category": "info",
+            "tag": "Test"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "ParameterKey": "WFFolder",
+         "Category": "Parameter",
+         "ActionIndex": 3,
+         "Text": "Choose a directory into which you'd like markdown-formatted logs to be saved."
+      },
+      {
+         "ParameterKey": "WFFolder",
+         "Category": "Parameter",
+         "ActionIndex": 5,
+         "Text": "Choose a directory into which you'd like plain text-formatted logs to be saved."
+      },
+      {
+         "ParameterKey": "tag",
+         "Category": "Parameter",
+         "ActionIndex": 10,
+         "Text": "Choose a native logger tag to attach to the entries logging markdown-formatted backups."
+      },
+      {
+         "ParameterKey": "tag",
+         "Category": "Parameter",
+         "ActionIndex": 11,
+         "Text": "Choose a native logger tag to attach to the entries logging plain text-formatted backups."
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
