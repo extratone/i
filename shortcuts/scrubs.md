@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `08192022-002954`
+Updated `08232022-083538`
 
 [**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
@@ -103,12 +103,17 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [LookUp Liked Words Update](https://www.icloud.com/shortcuts/24d29851d5ce4f7c835e67e09efbf71e)
 - [Index WTF](https://www.icloud.com/shortcuts/89ceca25209f42489c59b3c06d493852)
 - [Distributed Index](https://www.icloud.com/shortcuts/10ac9bc9a31b4e6db6197a80fb3563ab)
-- [drek](https://www.icloud.com/shortcuts/ccb446ba03f242d5aa21edaba63ed945)
+- [JellyCutsHelper](https://www.icloud.com/shortcuts/ea97b91ea3464f0eb414447527563021) (My modification.)
 
 ### iOS/iPadOS/macOS 16
 
 - [BookmarksTar](https://www.icloud.com/shortcuts/b1ad2e5e6c924a83bc6a3eca4ca0de0d)
 - [VenturaDark(er)](https://www.icloud.com/shortcuts/4121558705c846ef9b7124c556678913)
+
+### Comprehensive Capture
+
+- [Comprehensive Capture 2.0](https://www.icloud.com/shortcuts/e1601c05fb984e26918c279ab31064be)
+- [Comprehensive Capture DEV](https://www.icloud.com/shortcuts/c012beecf3c043c0a3895c1acbc13394)
 
 ## Music/Audio Delights
 
@@ -164,6 +169,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [BIG COAT](https://www.icloud.com/shortcuts/0df2ab02738a4f46af70e0d16db79e56)
 - [TimCook](https://www.icloud.com/shortcuts/690bd3ba2d1b4330bab29fe43bc6fcde)'
 - [MACPAINTBALLOON](https://www.icloud.com/shortcuts/1735fffe6d884ec2b779dd7cbf5363b7)
+- [drek](https://www.icloud.com/shortcuts/ccb446ba03f242d5aa21edaba63ed945)
 
 ## Motion Pictures
 
