@@ -1,0 +1,319 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>JSON Speedtest</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams closed">JSON Speedtest</button>
+<div class="content" style="display:none"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1200",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 255,
+   "WFWorkflowIconGlyphNumber": 61453
+},
+"WFWorkflowImportQuestions": [
+   {
+      "ParameterKey": "keyPath",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(10)"><b>10</b></span>,
+      "Text": "Specify a Data Jar jar in which you'd like to store speedtest data."
+   },
+   {
+      "ParameterKey": "WFCameraRollSelectedGroup",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(13)"><b>13</b></span>,
+      "Text": "Specify an iCloud Photos album in which to save preview images. (Optional)"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFFolderContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Comprehensively document/store detailed speedtest-cli data from a-Shell.
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+Mastodon: https://mastodon.social/@DavidBlue
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="gVariable" id="m1">
+1 Set Variable <span class="box">davodtime</span> to <span class="box"><span class="var"><b>[CurrentDate</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span></span></button>
+<button class="gDocuments" id="m2">
+2 Text</button>
+<button class="" id="m3">
+3 Copy <span class="box"><span class="var"><b>[2 Text]</b></span></span> to Clipboard</button>
+<button class="button gDocuments" id="m4">
+4 Text</button>
+	<div class="content">
+		<div class="col2">speedtest --json --share | pbcopy</div></div>
+<button class="button gUnknown" id="m5">
+5 AsheKube.app.a-Shell.ExecuteCommandIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">command</div>
+			<div class="col2">[<span class="var"><b>[4 Text]</b></span>,
+open shortcuts://]</div></div>
+		<div class="row"><div class="col1">Show-command</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">openWindow</div>
+			<div class="col2">default</div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">true</div></div></div>
+<button class="" id="m6">
+6 Wait to Return</button>
+<button class="" id="m7">
+7 Get Clipboard</button>
+<button class="gDocuments" id="m8">
+8 Quick Look <span class="box"><span class="var"><b>[7 Clipboard]</b></span></span></button>
+<button class="gScripting" id="m9">
+9 Get Dictionary from <span class="box"><span class="magic" onclick="magictap(7)"><b>[7 Clipboard]</b></span></span></button>
+<button class="button gUnknown" id="m10">
+10 dk.simonbs.DataJar.InsertValueInArrayIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">valueConversionMode</div>
+			<div class="col2">text</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">speedtest</div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[9 Dictionary]</b></span></div></div></div>
+<button class="gScripting" id="m11">
+11 Get Dictionary Value for <span class="box">share</span> in <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 Dictionary]</b></span></span></button>
+<button class="" id="m12">
+12 Get Contents of URL <span class="box"><span class="var"><b>[11 Dictionary Value]</b></span></span></button>
+<button class="" id="m13">
+13 Save Photos <span class="box"><span class="var"><b>[12 Contents of URL]</b></span></span> to Recents</button>
+<button class="gScripting" id="m14">
+14 Get Dictionary Value for <span class="box">download</span> in <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 Dictionary]</b></span></span></button>
+<button class="" id="m15">
+15 Measurement <span class="box">Information Storage</span> <span class="box"><span class="var"><b>[14 Dictionary Value]</b></span> B</span></button>
+<button class="" id="m16">
+16 Convert Measurement <span class="box"><span class="var"><b>[15 Measurement]</b></span></span> into <span class="box">Information Storage</span></button>
+<button class="gVariable" id="m17">
+17 Set Variable <span class="box">down</span> to <span class="box"><span class="var"><b>[16 Converted Measurement]</b></span></span></button>
+<button class="gScripting" id="m18">
+18 Get Dictionary Value for <span class="box">upload</span> in <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 Dictionary]</b></span></span></button>
+<button class="" id="m19">
+19 Measurement <span class="box">Information Storage</span> <span class="box"><span class="var"><b>[18 Dictionary Value]</b></span> B</span></button>
+<button class="" id="m20">
+20 Convert Measurement <span class="box"><span class="var"><b>[19 Measurement]</b></span></span> into <span class="box">Information Storage</span></button>
+<button class="gVariable" id="m21">
+21 Set Variable <span class="box">up</span> to <span class="box"><span class="var"><b>[20 Converted Measurement]</b></span></span></button>
+<button class="gScripting" id="m22">
+22 Get Dictionary Value for <span class="box">ping</span> in <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 Dictionary]</b></span></span></button>
+<button class="gVariable" id="m23">
+23 Set Variable <span class="box">ping</span> to <span class="box"><span class="var"><b>[22 Dictionary Value]</b></span></span></button>
+<button class="button gUnknown" id="m24">
+24 com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">body</div>
+			<div class="col2">Download: <span class="var"><b>[down]</b></span>/s
+Upload: <span class="var"><b>[up]</b></span> /s
+Ping: <span class="var"><b>[ping]</b></span> ms</div></div>
+		<div class="row"><div class="col1">actionSet</div>
+			<div class="col2">ok</div></div>
+		<div class="row"><div class="col1">copyFieldsToClipboard</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">soundFile</div>
+			<div class="col2">chime (long)</div></div>
+		<div class="row"><div class="col1">threadID</div>
+			<div class="col2">jsonspeedtest</div></div>
+		<div class="row"><div class="col1">setBadge</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">field3</div>
+			<div class="col2">Ping: <span class="var"><b>[ping]</b></span> ms</div></div>
+		<div class="row"><div class="col1">title</div>
+			<div class="col2"><span class="var"><b>[davodtime]</b></span> Speedtest</div></div>
+		<div class="row"><div class="col1">field2</div>
+			<div class="col2">Upload: <span class="var"><b>[up]</b></span> /s</div></div>
+		<div class="row"><div class="col1">soundType</div>
+			<div class="col2">custom</div></div>
+		<div class="row"><div class="col1">attachment</div>
+			<div class="col2"><span class="magic" onclick="magictap(12)"><b>[12 Contents of URL]</b></span></div></div>
+		<div class="row"><div class="col1">field1</div>
+			<div class="col2">Download: <span class="var"><b>[down]</b></span>/s</div></div>
+		<div class="row"><div class="col1">notificationID</div>
+			<div class="col2">jsonspeedtest<span class="var"><b>[davodtime]</b></span></div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
