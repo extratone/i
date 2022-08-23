@@ -1,0 +1,539 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 2846468607,
+      "WFWorkflowIconGlyphNumber": 59445
+   },
+   "WFWorkflowClientVersion": "1200",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+      "Parameters": {}
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Retrieve JSON, CSV, Markdown, Rich Text, and HTML-formatted exports from a Notion database share URL.\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nMastodon: https://mastodon.social/@DavidBlue\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+         "WFWorkflowActionParameters": {
+            "WFTextCustomSeparator": "/",
+            "UUID": "3B9B3D8C-DF18-4A95-BF49-434F66196B55",
+            "WFTextSeparator": "Custom",
+            "text": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "3B9B3D8C-DF18-4A95-BF49-434F66196B55",
+                  "Type": "ActionOutput",
+                  "OutputName": "Split Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFItemSpecifier": "Last Item",
+            "UUID": "3A554E4C-9C2F-49D1-AE56-8059FB993E15"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+         "WFWorkflowActionParameters": {
+            "WFTextCustomSeparator": "?",
+            "UUID": "9D0BF1C4-92E9-4C7E-9F3B-2E900A0B8C54",
+            "WFTextSeparator": "Custom",
+            "text": {
+               "Value": {
+                  "OutputUUID": "3A554E4C-9C2F-49D1-AE56-8059FB993E15",
+                  "Type": "ActionOutput",
+                  "OutputName": "Item from List"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "9D0BF1C4-92E9-4C7E-9F3B-2E900A0B8C54",
+                  "Type": "ActionOutput",
+                  "OutputName": "Split Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "0DC4C20E-14BA-47CE-9B4B-EA60DBD00D7B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "0DC4C20E-14BA-47CE-9B4B-EA60DBD00D7B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Item from List"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "id"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.previewdocument",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "id",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.nautomate.ChooseIntegrationIntent",
+         "WFWorkflowActionParameters": {
+            "integration": {
+               "id": "0A87B999-C385-4B04-94A5-BBAA45004688",
+               "displayString": "Nautomate",
+               "identifier": "0A87B999-C385-4B04-94A5-BBAA45004688",
+               "name": "Nautomate",
+               "token": "secret_tfMkWGMSiYqXWQTlWmGZgY3IITmyAuVaeZ3ptHM5QdU"
+            },
+            "UUID": "C827DA1B-08CD-4FAA-88A0-E0958F75B8A9"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.nautomate.ConvertDatabaseIntent",
+         "WFWorkflowActionParameters": {
+            "parentType": "id",
+            "sortBy": "dateCreated",
+            "databaseID": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "7E61DCF0-7B8F-4EE9-8FA3-2436BA2C548E",
+            "sortOrder": "ascending"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "7E61DCF0-7B8F-4EE9-8FA3-2436BA2C548E",
+                  "Type": "ActionOutput",
+                  "OutputName": "Exported Database"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFName": {
+               "Value": {
+                  "string": "\uFFFC.csv",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "27D10B35-D632-4D93-BA62-D6F70746EDB3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "fileLocation": {
+                  "relativeSubpath": "Downloads",
+                  "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+                  "crossDeviceItemID": "deviceSpecific:4C59255C-A8E6-454C-8585-DD1E43279D7A:fp:/NeuK+FTeGKuAhW0+x+R0d7mDOq1hRZaJG3ZwAQgfi7c=/com.apple.FileProvider.LocalStorage//fid=203912",
+                  "WFFileLocationType": "LocalStorage"
+               },
+               "filename": "Downloads",
+               "displayName": "Downloads"
+            },
+            "WFAskWhereToSave": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "27D10B35-D632-4D93-BA62-D6F70746EDB3",
+                  "Type": "ActionOutput",
+                  "OutputName": "Renamed Item"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "B33C6165-32C9-4530-9490-011972182432",
+            "WFSaveFileOverwrite": true,
+            "WFFileDestinationPath": ""
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.nautomate.ConvertDatabaseIntent",
+         "WFWorkflowActionParameters": {
+            "parentType": "id",
+            "sortBy": "dateCreated",
+            "databaseID": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "E266596B-1810-4477-BA5E-0ABB6BD73C38",
+            "sortOrder": "ascending",
+            "exportType": "json"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
+         "WFWorkflowActionParameters": {
+            "valueConversionMode": "text",
+            "keyPath": {
+               "Value": {
+                  "string": "notion.\uFFFC",
+                  "attachmentsByRange": {
+                     "{7, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "76D1201C-31F3-4492-8478-679F3746CEF5",
+            "values": {
+               "Value": {
+                  "Type": "ActionOutput",
+                  "OutputName": "Exported Database",
+                  "OutputUUID": "E266596B-1810-4477-BA5E-0ABB6BD73C38",
+                  "Aggrandizements": [
+                     {
+                        "Type": "WFCoercionVariableAggrandizement",
+                        "CoercionItemClass": "WFDictionaryContentItem"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.nautomate.ConvertDatabaseIntent",
+         "WFWorkflowActionParameters": {
+            "parentType": "id",
+            "databaseID": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "26B3AB80-E253-440A-AAB7-58C23E90E661",
+            "exportType": "markdownTable"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "26B3AB80-E253-440A-AAB7-58C23E90E661",
+                  "Type": "ActionOutput",
+                  "OutputName": "Exported Database"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFName": {
+               "Value": {
+                  "string": "\uFFFC.md",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "F5B97023-A038-4CCE-82BE-376340CE22E0"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "26B3AB80-E253-440A-AAB7-58C23E90E661",
+                  "Type": "ActionOutput",
+                  "OutputName": "Exported Database"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "md"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "fileLocation": {
+                  "relativeSubpath": "Downloads",
+                  "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+                  "crossDeviceItemID": "deviceSpecific:4C59255C-A8E6-454C-8585-DD1E43279D7A:fp:/NeuK+FTeGKuAhW0+x+R0d7mDOq1hRZaJG3ZwAQgfi7c=/com.apple.FileProvider.LocalStorage//fid=203912",
+                  "WFFileLocationType": "LocalStorage"
+               },
+               "filename": "Downloads",
+               "displayName": "Downloads"
+            },
+            "WFAskWhereToSave": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "F5B97023-A038-4CCE-82BE-376340CE22E0",
+                  "Type": "ActionOutput",
+                  "OutputName": "Renamed Item"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "CF263820-66EA-4BD2-8688-3DB60692B6D9",
+            "WFSaveFileOverwrite": true,
+            "WFFileDestinationPath": ""
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getrichtextfrommarkdown",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "md",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "96009244-E37D-4206-A3B1-2AE8491A35C4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.apple.mobilenotes.SharingExtension",
+         "WFWorkflowActionParameters": {
+            "WFCreateNoteInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "96009244-E37D-4206-A3B1-2AE8491A35C4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Rich Text from Markdown"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "0000000000",
+               "BundleIdentifier": "com.apple.mobilenotes",
+               "Name": "Notes",
+               "AppIntentIdentifier": "CreateNoteLinkAction"
+            },
+            "UUID": "CD6213C2-22F4-47BD-AB9A-5E154C5C2645",
+            "folder": {
+               "title": {
+                  "key": "Documentation"
+               },
+               "identifier": "notes:folder/2D0B2B0C-DA55-4E38-9939-7AC4C375870E",
+               "displayString": "Documentation"
+            },
+            "OpenWhenRun": false,
+            "WFNoteGroup": {
+               "Identifier": "notes:folder/2D0B2B0C-DA55-4E38-9939-7AC4C375870E",
+               "DisplayString": "Documentation"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gethtmlfromrichtext",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "96009244-E37D-4206-A3B1-2AE8491A35C4",
+                  "Type": "ActionOutput",
+                  "OutputName": "Rich Text from Markdown"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMakeFullDocument": true,
+            "UUID": "27EF47AB-ECD5-4FF0-A1FF-4A6AAB2A8B8B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setitemname",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "27EF47AB-ECD5-4FF0-A1FF-4A6AAB2A8B8B",
+                  "Type": "ActionOutput",
+                  "OutputName": "HTML from Rich Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFName": {
+               "Value": {
+                  "string": "\uFFFC.html",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "B26D98D8-447B-4541-B1DA-576B131F5EF7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFFolder": {
+               "fileLocation": {
+                  "relativeSubpath": "Downloads",
+                  "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+                  "crossDeviceItemID": "deviceSpecific:4C59255C-A8E6-454C-8585-DD1E43279D7A:fp:/NeuK+FTeGKuAhW0+x+R0d7mDOq1hRZaJG3ZwAQgfi7c=/com.apple.FileProvider.LocalStorage//fid=203912",
+                  "WFFileLocationType": "LocalStorage"
+               },
+               "filename": "Downloads",
+               "displayName": "Downloads"
+            },
+            "WFAskWhereToSave": false,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B26D98D8-447B-4541-B1DA-576B131F5EF7",
+                  "Type": "ActionOutput",
+                  "OutputName": "Renamed Item"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "F158460B-3690-4720-8598-25C3684BC209",
+            "WFSaveFileOverwrite": true,
+            "WFFileDestinationPath": ""
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": "https://github.com/extratone/iOSSystemSounds/raw/main/m4a/middle_9_short_double_low.m4a",
+            "UUID": "F4716AAC-A554-4CAE-9C1C-7E279CA76DAF"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "F4716AAC-A554-4CAE-9C1C-7E279CA76DAF",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "9FB2EAF9-D01F-4DC0-BC88-E7F6E84A018C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "9FB2EAF9-D01F-4DC0-BC88-E7F6E84A018C",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "ParameterKey": "integration",
+         "Category": "Parameter",
+         "ActionIndex": 7,
+         "Text": "Choose a default Notion integration. (Required)"
+      },
+      {
+         "ParameterKey": "WFFolder",
+         "Category": "Parameter",
+         "ActionIndex": 10,
+         "Text": "Choose a folder in which you'd like CSV-formatted export files to be saved."
+      },
+      {
+         "ParameterKey": "keyPath",
+         "Category": "Parameter",
+         "ActionIndex": 12,
+         "Text": "Choose a Data Jar jar into which you'd like JSON information to be saved. (Optional)"
+      },
+      {
+         "ParameterKey": "WFFolder",
+         "Category": "Parameter",
+         "ActionIndex": 16,
+         "Text": "Choose a folder in which you'd like markdown-formatted export files to be saved."
+      },
+      {
+         "ParameterKey": "folder",
+         "Category": "Parameter",
+         "ActionIndex": 18,
+         "Text": "Choose a folder in Apple Notes into which you'd like Rich Text-formatted notes to be saved. (Optional)"
+      },
+      {
+         "ParameterKey": "WFFolder",
+         "Category": "Parameter",
+         "ActionIndex": 21,
+         "Text": "Choose a folder in which you'd like HTML-formatted export files to be saved."
+      }
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [],
+   "WFWorkflowHasShortcutInputVariables": true
+}
