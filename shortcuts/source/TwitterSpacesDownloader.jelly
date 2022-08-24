@@ -1,0 +1,34 @@
+import Shortcuts
+import aShell
+#Color: grape, #Icon: microphone
+
+/*
+Download recorded Twitter Spaces and convert them to .mp3 locally and swiftly.
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+Mastodon: https://mastodon.social/@DavidBlue
+EVERYWHERE: https://davidblue.wtf/socialdrop
+*/
+var url = ShortcutInput
+urlComponent(url: "${url.as(URL)}", component: Path) >> urlComponent
+splitText(text: Component of URL, separator: Custom, customSeparator: "spaces/") >> splitText
+getItemFromList(list: Split Text, type: Last Item) >> getItemFromList
+var id = Item from List
+text(text: "twspace_dl -i ${id} -o ~/Documents/audio/${id}.mp3 ") >> text
+text(text: "ffmpeg -i ~/Documents/audio/${id}.m4a -c:v copy -c:a libmp3lame -q:a 4 ~/Documents/audio/${id}.mp3") >> text 1
+text(text: "cp ~/Documents/audio/${id}.mp3 ~group/${id}.mp3") >> text 2
+text(text: "open shortcuts://") >> text 3
+executeCommand(command: {text}, {text 1}, {text 2}. {text 3}, openWindow: default, keepGoing: true)
+waitToReturn()
+getFile(fileName: "${id}.mp3") >> file
+share(file: {file}) >> share
