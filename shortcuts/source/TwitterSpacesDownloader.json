@@ -1,0 +1,285 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 2071128575,
+      "WFWorkflowIconGlyphNumber": 59780
+   },
+   "WFWorkflowClientVersion": "1200",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+      "Parameters": {}
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Download recorded Twitter Spaces and convert them to .mp3 locally and swiftly.\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nMastodon: https://mastodon.social/@DavidBlue\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "url"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.geturlcomponent",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "url",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFCoercionVariableAggrandizement",
+                              "CoercionItemClass": "WFURLContentItem"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFURLComponent": "Path",
+            "UUID": "A3FB93B3-246B-4D0B-A675-42D8A494141B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+         "WFWorkflowActionParameters": {
+            "WFTextCustomSeparator": "spaces/",
+            "UUID": "370E002D-F2D7-4A04-B95C-1604007BE181",
+            "WFTextSeparator": "Custom",
+            "text": {
+               "Value": {
+                  "OutputUUID": "A3FB93B3-246B-4D0B-A675-42D8A494141B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Component of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "370E002D-F2D7-4A04-B95C-1604007BE181",
+                  "Type": "ActionOutput",
+                  "OutputName": "Split Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFItemSpecifier": "Last Item",
+            "UUID": "04B917FA-E480-46F1-9497-8768743AE759"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "04B917FA-E480-46F1-9497-8768743AE759",
+                  "Type": "ActionOutput",
+                  "OutputName": "Item from List"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "id"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "twspace_dl -i \uFFFC -o ~/Documents/audio/\uFFFC ",
+                  "attachmentsByRange": {
+                     "{14, 1}": {
+                        "VariableName": "url",
+                        "Type": "Variable"
+                     },
+                     "{37, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "2809B128-961D-457A-B59D-9DD013A7C6DD"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "ffmpeg -i ~/Documents/audio/\uFFFC.m4a -c:v copy -c:a libmp3lame -q:a 4 ~/Documents/audio/\uFFFC.mp3",
+                  "attachmentsByRange": {
+                     "{28, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     },
+                     "{85, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "EB35982A-F0B0-423C-B62C-92651A8B72FA"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "cp ~/Documents/audio/\uFFFC.mp3 ~group/\uFFFC.mp3",
+                  "attachmentsByRange": {
+                     "{21, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     },
+                     "{34, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "8CDE52AB-DE29-4414-B61C-F0E34DED9BF5"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "open shortcuts://",
+            "UUID": "73400990-7CFB-4E6E-A7C0-9FF950BA1226"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "AsheKube.app.a-Shell.ExecuteCommandIntent",
+         "WFWorkflowActionParameters": {
+            "command": [
+               {
+                  "Value": {
+                     "string": "\uFFFC",
+                     "attachmentsByRange": {
+                        "{0, 1}": {
+                           "OutputUUID": "2809B128-961D-457A-B59D-9DD013A7C6DD",
+                           "Type": "ActionOutput",
+                           "OutputName": "Text"
+                        }
+                     }
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+               },
+               {
+                  "Value": {
+                     "string": "\uFFFC",
+                     "attachmentsByRange": {
+                        "{0, 1}": {
+                           "OutputUUID": "EB35982A-F0B0-423C-B62C-92651A8B72FA",
+                           "Type": "ActionOutput",
+                           "OutputName": "Text"
+                        }
+                     }
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+               },
+               {
+                  "Value": {
+                     "string": "\uFFFC",
+                     "attachmentsByRange": {
+                        "{0, 1}": {
+                           "OutputUUID": "8CDE52AB-DE29-4414-B61C-F0E34DED9BF5",
+                           "Type": "ActionOutput",
+                           "OutputName": "Text"
+                        }
+                     }
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+               },
+               {
+                  "Value": {
+                     "string": "\uFFFC",
+                     "attachmentsByRange": {
+                        "{0, 1}": {
+                           "OutputUUID": "73400990-7CFB-4E6E-A7C0-9FF950BA1226",
+                           "Type": "ActionOutput",
+                           "OutputName": "Text"
+                        }
+                     }
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+               }
+            ],
+            "UUID": "A251C494-B7C0-4804-BDCD-62175A7A8E3A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.waittoreturn",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "AsheKube.app.a-Shell.GetFileIntent",
+         "WFWorkflowActionParameters": {
+            "UUID": "67753A89-1C29-49DC-B956-6DE4BDF91DB4",
+            "fileName": {
+               "Value": {
+                  "string": "\uFFFC.mp3",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "ShowWhenRun": false
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.share",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "67753A89-1C29-49DC-B956-6DE4BDF91DB4",
+                  "Type": "ActionOutput",
+                  "OutputName": "File"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "F42D4B58-0FD0-49B5-A525-A0554B882288"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [
+      "ActionExtension"
+   ],
+   "WFWorkflowHasShortcutInputVariables": true
+}
