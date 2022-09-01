@@ -104,6 +104,8 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [Index WTF](https://www.icloud.com/shortcuts/89ceca25209f42489c59b3c06d493852)
 - [Distributed Index](https://www.icloud.com/shortcuts/10ac9bc9a31b4e6db6197a80fb3563ab)
 - [JellyCutsHelper](https://www.icloud.com/shortcuts/ea97b91ea3464f0eb414447527563021) (My modification.)
+- [WTF Redirection Update](https://www.icloud.com/shortcuts/5ad24059cbd542d6824f9be09db90a52)
+- [MacHD Space](https://www.icloud.com/shortcuts/c7121d112cc64bf38d40b0fac827d97e)
 
 ### iOS/iPadOS/macOS 16
 
