@@ -1,0 +1,56 @@
+import Shortcuts
+#Color: navy, #Icon: textBubble
+
+/*
+Publish multiple drafts from a selected Workspace as individual GitHub Gists.
+
+Example output: https://gist.github.com/extratone/c7d6901a9c27b4b97029316369f9157a
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+Mastodon: https://mastodon.social/@DavidBlue
+EVERYWHERE: https://davidblue.wtf/socialdrop
+*/
+text(text: "hub") >> Username
+var ghuser = Username
+text(text: "000_0000000000000000") >> Token
+var ghtoken = Token
+text(text: "${ghuser}:${Variable}") >> text
+decode(input: Text) >> decode
+text(text: "Basic ${Base64 Encoded}") >> Auth
+var auth = Auth
+//Unable to get shortcuts action com.agiletortoise.Drafts5.QueryWorkspaceIntent
+repeatEach(Drafts from Workspace) {
+//Unable to get shortcuts action com.sindresorhus.Actions.TransformTextIntent
+	text(text: "${Transformed Text}.md") >> text 1
+var filename = Text
+var raw = Variable
+var desc = Variable
+	url(url: "https://api.github.com/gists") >> url
+	downloadURL(url: "${URL}", method: POST, headers: , requestType: JSON, requestJSON: ) >> downloadURL
+	getDictionaryFrom(input: URL) >> getDictionaryFrom
+//Unable to get shortcuts action dk.simonbs.DataJar.InsertValueInArrayIntent
+	valueFor(key: "html_url", dictionary: Dictionary) >> valueFor
+	text(text: "- [${Dictionary Value}](${ActionOutput})") >> text 2
+//Unable to get shortcuts action is.workflow.actions.appendvariable
+} >> RepeatResult
+combineText(text: index) >> combineText
+var 7A84F4A3-E78A-4D85-8381-1EB964233186 = """#  Index
+
+---
+
+"""
+text("${7A84F4A3-E78A-4D85-8381-1EB964233186}")
+//Unable to get shortcuts action com.agiletortoise.Drafts5.CaptureIntent
+url(url: "https://github.com/extratone/iOSSystemSounds/raw/main/m4a/RingerChanged.m4a") >> url 1
+downloadURL(url: "${URL}") >> downloadURL 1
+playSound(file: Contents of URL)
