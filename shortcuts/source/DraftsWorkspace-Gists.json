@@ -1,0 +1,739 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 946986751,
+      "WFWorkflowIconGlyphNumber": 59779
+   },
+   "WFWorkflowClientVersion": "1200",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Publish multiple drafts from a selected Workspace as individual GitHub Gists.\n\nExample output: https://gist.github.com/extratone/c7d6901a9c27b4b97029316369f9157a\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nMastodon: https://mastodon.social/@DavidBlue\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "hub",
+            "CustomOutputName": "Username",
+            "UUID": "4E319BB0-70A5-416D-B362-A89787BA2A11"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "4E319BB0-70A5-416D-B362-A89787BA2A11",
+                  "Type": "ActionOutput",
+                  "OutputName": "Username"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "ghuser"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "000_0000000000000000",
+            "CustomOutputName": "Token",
+            "UUID": "DC7D0EEE-44A5-4DD3-B4CC-D316695DE6DB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "DC7D0EEE-44A5-4DD3-B4CC-D316695DE6DB",
+                  "Type": "ActionOutput",
+                  "OutputName": "Token"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "ghtoken"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "\uFFFC:\uFFFC",
+                  "attachmentsByRange": {
+                     "{2, 1}": {
+                        "VariableName": "ghtoken",
+                        "Type": "Variable"
+                     },
+                     "{0, 1}": {
+                        "VariableName": "ghuser",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "AA3D9928-A2DD-4287-8DAB-B26D4E8BFB61"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.base64encode",
+         "WFWorkflowActionParameters": {
+            "WFBase64LineBreakMode": "None",
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "AA3D9928-A2DD-4287-8DAB-B26D4E8BFB61",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "6BF88AD3-6637-4FB8-B44C-D5CF471EF457"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "Basic \uFFFC",
+                  "attachmentsByRange": {
+                     "{6, 1}": {
+                        "OutputUUID": "6BF88AD3-6637-4FB8-B44C-D5CF471EF457",
+                        "Type": "ActionOutput",
+                        "OutputName": "Base64 Encoded"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "CustomOutputName": "Auth",
+            "UUID": "32C9AD25-9AC8-4470-9A97-5BDAB9E3F459"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "32C9AD25-9AC8-4470-9A97-5BDAB9E3F459",
+                  "Type": "ActionOutput",
+                  "OutputName": "Auth"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "auth"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts5.QueryWorkspaceIntent",
+         "WFWorkflowActionParameters": {
+            "UUID": "4C6FCFC3-CFA9-4716-AB10-0C68408F1EE1",
+            "workspace": {
+               "Value": {
+                  "Type": "Ask"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "GTFQ98J4YG",
+               "BundleIdentifier": "com.agiletortoise.Drafts5",
+               "Name": "Drafts",
+               "AppIntentIdentifier": "QueryWorkspaceIntent"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "4C6FCFC3-CFA9-4716-AB10-0C68408F1EE1",
+                  "Type": "ActionOutput",
+                  "OutputName": "Drafts from Workspace"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "GroupingIdentifier": "ED6CEE01-731D-4569-9C9B-601301632021",
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.TransformTextIntent",
+         "WFWorkflowActionParameters": {
+            "transformation": "pascalCase",
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "title",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "title"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "C5F0A986-1F8B-4CED-91C4-D7B1E243133C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "\uFFFC.md",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "C5F0A986-1F8B-4CED-91C4-D7B1E243133C",
+                        "Type": "ActionOutput",
+                        "OutputName": "Transformed Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "8542308B-2CD2-4F34-8752-E9ADACD7C01C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8542308B-2CD2-4F34-8752-E9ADACD7C01C",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "filename"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item",
+                  "Type": "Variable",
+                  "Aggrandizements": [
+                     {
+                        "PropertyUserInfo": "content",
+                        "Type": "WFPropertyVariableAggrandizement",
+                        "PropertyName": "content"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "raw"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item",
+                  "Type": "Variable",
+                  "Aggrandizements": [
+                     {
+                        "PropertyUserInfo": "tags",
+                        "Type": "WFPropertyVariableAggrandizement",
+                        "PropertyName": "tags"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "desc"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "Show-WFURLActionURL": true,
+            "WFURLActionURL": "https://api.github.com/gists",
+            "UUID": "6DAF901C-9561-47ED-8704-3FD03600FB49"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFJSONValues": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 4,
+                        "WFKey": {
+                           "Value": {
+                              "string": "public"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": false,
+                           "WFSerializationType": "WFNumberSubstitutableState"
+                        }
+                     },
+                     {
+                        "WFItemType": 1,
+                        "WFKey": {
+                           "Value": {
+                              "string": "files"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "Value": {
+                                 "WFDictionaryFieldValueItems": [
+                                    {
+                                       "WFItemType": 1,
+                                       "WFKey": {
+                                          "Value": {
+                                             "string": "\uFFFC",
+                                             "attachmentsByRange": {
+                                                "{0, 1}": {
+                                                   "VariableName": "filename",
+                                                   "Type": "Variable"
+                                                }
+                                             }
+                                          },
+                                          "WFSerializationType": "WFTextTokenString"
+                                       },
+                                       "WFValue": {
+                                          "Value": {
+                                             "Value": {
+                                                "WFDictionaryFieldValueItems": [
+                                                   {
+                                                      "WFItemType": 0,
+                                                      "WFKey": {
+                                                         "Value": {
+                                                            "string": "content"
+                                                         },
+                                                         "WFSerializationType": "WFTextTokenString"
+                                                      },
+                                                      "WFValue": {
+                                                         "Value": {
+                                                            "string": "\uFFFC",
+                                                            "attachmentsByRange": {
+                                                               "{0, 1}": {
+                                                                  "VariableName": "raw",
+                                                                  "Type": "Variable"
+                                                               }
+                                                            }
+                                                         },
+                                                         "WFSerializationType": "WFTextTokenString"
+                                                      }
+                                                   }
+                                                ]
+                                             },
+                                             "WFSerializationType": "WFDictionaryFieldValue"
+                                          },
+                                          "WFSerializationType": "WFDictionaryFieldValue"
+                                       }
+                                    }
+                                 ]
+                              },
+                              "WFSerializationType": "WFDictionaryFieldValue"
+                           },
+                           "WFSerializationType": "WFDictionaryFieldValue"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "description"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "VariableName": "desc",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "WFHTTPHeaders": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Authorization"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "VariableName": "auth",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "Advanced": true,
+            "UUID": "9BDC9A9F-8527-4576-9EFA-62E9C089D2E6",
+            "ShowHeaders": true,
+            "WFHTTPMethod": "POST",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "6DAF901C-9561-47ED-8704-3FD03600FB49",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFHTTPBodyType": "JSON",
+            "WFFormValues": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 5,
+                        "WFKey": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "OutputUUID": "5EAD5E3F-82FD-4B2B-B5EB-B140B74D8124",
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Filename"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "Value": {
+                                 "OutputUUID": "D2964D4F-09C9-4ECF-8E63-32A9210E0115",
+                                 "Type": "ActionOutput",
+                                 "OutputName": "File Contents"
+                              },
+                              "WFSerializationType": "WFTextTokenAttachment"
+                           },
+                           "WFSerializationType": "WFTokenAttachmentParameterState"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "description"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "Ask"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "public"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "VariableName": "public",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "6DAF901C-9561-47ED-8704-3FD03600FB49",
+                  "Type": "ActionOutput",
+                  "OutputName": "URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "87F8D0D1-AE97-4465-8A6C-19B09D746CDB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.InsertValueInArrayIntent",
+         "WFWorkflowActionParameters": {
+            "valueConversionMode": "text",
+            "keyPath": "gists",
+            "UUID": "49A9904E-03C5-464F-A567-81A361889D78",
+            "values": {
+               "Value": {
+                  "OutputUUID": "9BDC9A9F-8527-4576-9EFA-62E9C089D2E6",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "87F8D0D1-AE97-4465-8A6C-19B09D746CDB",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "html_url",
+            "UUID": "BC8CB699-C9D4-4256-8C24-656E6C13374F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "- [\uFFFC](\uFFFC)",
+                  "attachmentsByRange": {
+                     "{6, 1}": {
+                        "OutputUUID": "BC8CB699-C9D4-4256-8C24-656E6C13374F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                     },
+                     "{3, 1}": {
+                        "VariableName": "filename",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "CE4230E5-47C1-416A-8A35-08E858F793F9"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "CE4230E5-47C1-416A-8A35-08E858F793F9",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "index"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "ED6CEE01-731D-4569-9C9B-601301632021",
+            "UUID": "2F954ED3-D9D5-423B-8263-112041EC4773"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+         "WFWorkflowActionParameters": {
+            "text": {
+               "Value": {
+                  "VariableName": "index",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "65B61C98-532B-4FCF-BAB3-48B7D00CA1F6"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "# \uFFFC Index\n\n---\n\n\uFFFC",
+                  "attachmentsByRange": {
+                     "{16, 1}": {
+                        "OutputUUID": "65B61C98-532B-4FCF-BAB3-48B7D00CA1F6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Combined Text"
+                     },
+                     "{2, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "DB7D13D9-C60E-42A3-9D3C-87C6E8307F20"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts5.CaptureIntent",
+         "WFWorkflowActionParameters": {
+            "folder": "inbox",
+            "content": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "DB7D13D9-C60E-42A3-9D3C-87C6E8307F20",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "isFlagged": "flagged",
+            "UUID": "7EDD0B8A-E695-46E5-9424-1DE21AB10DAB",
+            "grammarType": {
+               "title": {
+                  "key": "MultiMarkdown"
+               },
+               "identifier": "MultiMarkdown",
+               "displayString": "MultiMarkdown"
+            },
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "GTFQ98J4YG",
+               "BundleIdentifier": "com.agiletortoise.Drafts5",
+               "Name": "Drafts",
+               "AppIntentIdentifier": "CaptureIntent"
+            },
+            "tags": "index"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": "https://github.com/extratone/iOSSystemSounds/raw/main/m4a/RingerChanged.m4a",
+            "UUID": "29107AC7-A20C-46FB-8B5F-9338E20BD2BE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "29107AC7-A20C-46FB-8B5F-9338E20BD2BE",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "87BA583A-8BCC-4DC7-9B4E-BDA851AE6532"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "87BA583A-8BCC-4DC7-9B4E-BDA851AE6532",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 1,
+         "Text": "Set your GitHub username.",
+         "DefaultValue": "hub"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 3,
+         "Text": "Set your GitHub Personal Access Token.",
+         "DefaultValue": "000_0000000000000000"
+      },
+      {
+         "ParameterKey": "folder",
+         "Category": "Parameter",
+         "ActionIndex": 9,
+         "Text": "Specify a folder from the specified workspace from which to source drafts. (Optional)"
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
