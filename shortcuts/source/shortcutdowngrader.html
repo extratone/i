@@ -1,0 +1,380 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>ShortcutDowngrader</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">ShortcutDowngrader</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1200",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4292093695,
+   "WFWorkflowIconGlyphNumber": 61440
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "ActionExtension",
+   "NCWidget"
+]
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Download iOS 15+ shortcuts on iOS 14
+2022-08-13 	v1.1 	u/gluebyte
+https://routinehub.co/shortcut/9899</div></div>
+<button class="button gLoop nonbottom" id="m1">
+1 If <span class="box"><span class="var"><b>[DeviceDetails]</b></span></span> <span class="box">has any value</span></button>
+	<div class="content contentloop">
+<button class="button gScripting inside" id="m2">
+2 Show Alert</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AlertActionCancelButtonShown</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">AlertActionMessage</div>
+			<div class="col2">
+🛑  This shortcut runs on iOS 14.
+</div></div></div>
+<button class="gScripting inside" id="m3">
+3 Stop This Shortcut</button></div>
+<button class="gLoop nontop" id="m4">
+4 End If</button>
+<button class="" id="m5">
+5 Random Number between <span class="box">1</span> and <span class="box">2</span>&#12288;&#187;</button>
+<button class="button gLoop nonbottom" id="m6">
+6 If <span class="box"><span class="var"><b>[5 Random Number]</b></span></span> <span class="box">is</span> <span class="box">1</span></button>
+	<div class="content contentloop">
+<button class=" inside" id="m7">
+7 Get Contents of URL <span class="box">https://updatecheck.gluebyte.workers.dev/?id=C9D7E551</span>&#12288;&#187; <i>8</i> <span class="magic" onclick="magictap(9)">9</span></button>
+<button class="button gLoop nonbottom inside" id="m8">
+8 If <span class="box"><span class="var"><b>[7 Contents of URL</b> as Text<b>]</b></span></span> <span class="box">does not contain</span> <span class="box">2022-08-13</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gLoop nonbottom inside" id="m9">
+9 Choose from Menu</button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">✴️ New Version Available ✴️<span class="magic" onclick="magictap(7)"><b>[7 Contents of URL]</b></span>
+</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[🌏  Go to RoutineHub,
+👾  Download Update,
+⮐  Not Now]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m10">
+10 Menu Item <span class="box">🌏  Go to RoutineHub</span></button>
+	<div class="content contentloop inside">
+<button class="button  inside" id="m11">
+11 Open URL <span class="box">https://routinehub.co/shortcut/9899/</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-WFInput</div>
+			<div class="col2">true</div></div></div>
+<button class="gScripting inside" id="m12">
+12 Stop This Shortcut</button></div>
+<button class="button gLoop nonbottom nontop inside" id="m13">
+13 Menu Item <span class="box">👾  Download Update</span></button>
+	<div class="content contentloop inside">
+<button class=" inside" id="m14">
+14 Get Contents of URL <span class="box">https://routinehub.co/api/v1/shortcuts/9899/versions/latest</span>&#12288;&#187;</button>
+<button class=" inside" id="m15">
+15 Expand URL <span class="box">https://routinehub.co/download/<span class="var"><b>[14 Contents of URL</b> as Dictionary.id<b>]</b></span>/</span>&#12288;&#187;</button>
+<button class="button gDocuments inside" id="m16">
+16 Replace Text <span class="box">^.+icloud.com/</span> with <span class="box">shortcuts://</span> in <span class="box"><span class="var"><b>[15 Expanded URL]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div></div>
+<button class="button  inside" id="m17">
+17 Open URL <span class="box"><span class="var"><b>[16 Updated Text]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-WFInput</div>
+			<div class="col2">true</div></div></div>
+<button class="gScripting inside" id="m18">
+18 Stop This Shortcut</button></div>
+<button class="gLoop nonbottom nontop inside" id="m19">
+19 Menu Item <span class="box">⮐  Not Now</span></button>
+	
+<button class="gLoop nontop inside" id="m20">
+20 End Menu</button></div>
+<button class="gLoop nontop inside" id="m21">
+21 End If&#12288;▵<span class="magic" onclick="magictap(8)">8</span></button></div>
+<button class="gLoop nontop" id="m22">
+22 End If&#12288;▵<span class="magic" onclick="magictap(6)">6</span></button>
+<button class="button gLoop nonbottom" id="m23">
+23 If <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> <span class="box">has any value</span></button>
+	<div class="content contentloop">
+<button class="gVariable inside" id="m24">
+24 Get Variable <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span></button></div>
+<button class="button gLoop nonbottom nontop" id="m25">
+25 Otherwise</button>
+	<div class="content contentloop">
+<button class=" inside" id="m26">
+26 Get Clipboard</button></div>
+<button class="gLoop nontop" id="m27">
+27 End If&#12288;&#187;</button>
+<button class="gLoop nonbottom" id="m28">
+28 If <span class="box"><span class="var"><b>[27 If Result</b> as Text<b>]</b></span></span> <span class="box">begins with</span> <span class="box">https://www.icloud.com/shortcuts/</span></button>
+	
+<button class="button gLoop nonbottom nontop" id="m29">
+29 Otherwise</button>
+	<div class="content contentloop">
+<button class="button gScripting inside" id="m30">
+30 Show Alert</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AlertActionCancelButtonShown</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">AlertActionMessage</div>
+			<div class="col2">
+🛑  Please share or copy a shortcut link.
+</div></div></div>
+<button class="gScripting inside" id="m31">
+31 Stop This Shortcut</button></div>
+<button class="gLoop nontop" id="m32">
+32 End If&#12288;&#187;</button>
+<button class="gDocuments" id="m33">
+33 Replace Text <span class="box">/shortcuts/</span> with <span class="box">/shortcuts/api/records/</span> in <span class="box"><span class="var"><b>[32 If Result]</b></span></span>&#12288;&#187;</button>
+<button class="" id="m34">
+34 Get Contents of URL <span class="box"><span class="var"><b>[33 Updated Text]</b></span></span>&#12288;&#187; <i>35</i> <span class="magic" onclick="magictap(36)">36</span></button>
+<button class="" id="m35">
+35 Get Contents of URL <span class="box"><span class="var"><b>[34 Contents of URL</b> as Dictionary.fields.shortcut.value.downloadURL<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gScripting" id="m36">
+36 Set Name of <span class="box"><span class="var"><b>[35 Contents of URL]</b></span></span> to <span class="box"><span class="magic" onclick="magictap(34)"><b>[34 Contents of URL</b> as Dictionary.fields.name.value<b>]</b></span>.plist</span>&#12288;&#187; <i>37</i> <span class="magic" onclick="magictap(42)">42</span> <span class="magic" onclick="magictap(47)">47</span> <span class="magic" onclick="magictap(49)">49</span></button>
+<button class="" id="m37">
+37 Get File of Type <span class="box">public.json</span> from <span class="box"><span class="var"><b>[36 Renamed Item]</b></span></span>&#12288;&#187; <span class="magic" onclick="magictap(39)">39</span></button>
+<button class="button gDocuments" id="m38">
+38 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">let changed = false;
+for (a of d.WFWorkflowActions) {
+	switch (a.WFWorkflowActionIdentifier) {
+	case 'is.workflow.actions.file.select':
+		a.WFWorkflowActionIdentifier = 'is.workflow.actions.documentpicker.open';
+		a.WFWorkflowActionParameters.WFShowFilePicker = true;
+		changed = true;
+		break;
+	case 'is.workflow.actions.documentpicker.open':
+		if (a.WFWorkflowActionParameters.WFShowFilePicker == undefined) {
+			a.WFWorkflowActionParameters.WFShowFilePicker = false;
+			changed = true;
+		}
+		break;
+	case 'is.workflow.actions.output':
+		if ((o=a.WFWorkflowActionParameters.WFOutput) &amp;&amp; (v=o.Value) &amp;&amp; (r=v.attachmentsByRange) &amp;&amp; (t=r['{0, 1}'])) {
+			a.WFWorkflowActionIdentifier = 'is.workflow.actions.exit';
+			a.WFWorkflowActionParameters.WFResult = {'Value': t, 'WFSerializationType': 'WFTextTokenAttachment'};
+			changed = true;
+		}
+	}
+}
+if (d.WFWorkflowMinimumClientVersion > 1105) {
+	d.WFWorkflowMinimumClientVersionString = '900';
+	changed = true;
+}
+document.write(changed ? encodeURIComponent(JSON.stringify(d)) : 'x');</div></div>
+<button class="" id="m39">
+39 URL <span class="box">data:text/html;charset=utf-8,&lt;script>const d=<span class="magic" onclick="magictap(37)"><b>[37 File of Type]</b></span>;<span class="var"><b>[38 Text]</b></span>&lt;/script></span>&#12288;&#187;</button>
+<button class="" id="m40">
+40 Get File of Type <span class="box">com.apple.webarchive</span> from <span class="box"><span class="var"><b>[39 URL]</b></span></span>&#12288;&#187; <i>41</i> <span class="magic" onclick="magictap(46)">46</span></button>
+<button class="button gLoop nonbottom" id="m41">
+41 If <span class="box"><span class="var"><b>[40 File of Type</b> as Text<b>]</b></span></span> <span class="box">is</span> <span class="box">x</span></button>
+	<div class="content contentloop">
+<button class="button gScripting inside" id="m42">
+42 Show Alert</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AlertActionCancelButtonShown</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">AlertActionMessage</div>
+			<div class="col2">
+🛑  Unable to fix ’<span class="magic" onclick="magictap(36)"><b>[36 Renamed Item</b>’s Name<b>]</b></span>‘
+</div></div></div>
+<button class="gScripting inside" id="m43">
+43 Stop This Shortcut</button></div>
+<button class="gLoop nontop" id="m44">
+44 End If</button>
+<button class="" id="m45">
+45 Continue in Shortcuts app</button>
+<button class="gScripting" id="m46">
+46 URL <span class="box">Decode</span> <span class="box"><span class="magic" onclick="magictap(40)"><b>[40 File of Type]</b></span></span>&#12288;&#187;</button>
+<button class="gScripting" id="m47">
+47 Set Name of <span class="box"><span class="var"><b>[46 URL Encoded Text]</b></span></span> to <span class="box"><span class="magic" onclick="magictap(36)"><b>[36 Renamed Item</b>’s Name<b>]</b></span>.json</span>&#12288;&#187;</button>
+<button class="" id="m48">
+48 Get File of Type <span class="box">com.apple.plist</span> from <span class="box"><span class="var"><b>[47 Renamed Item]</b></span></span>&#12288;&#187;</button>
+<button class="gScripting" id="m49">
+49 Set Name of <span class="box"><span class="var"><b>[48 File of Type]</b></span></span> to <span class="box"><span class="magic" onclick="magictap(36)"><b>[36 Renamed Item</b>’s Name<b>]</b></span>.shortcut</span>&#12288;&#187;</button>
+<button class="" id="m50">
+50 Get Link to File <span class="box"><span class="var"><b>[49 Renamed Item]</b></span></span>&#12288;&#187; <span class="magic" onclick="magictap(52)">52</span></button>
+<button class="button gScripting" id="m51">
+51 Show Alert</button>
+	<div class="content">
+		<div class="row"><div class="col1">AlertActionCancelButtonShown</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">AlertActionMessage</div>
+			<div class="col2">
+✅  Please remove “.shortcut” from the name in the next screen.
+</div></div></div>
+<button class="button gDocuments" id="m52">
+52 Replace Text <span class="box">^.+icloud.com/</span> with <span class="box">shortcuts://</span> in <span class="box"><span class="magic" onclick="magictap(50)"><b>[50 Link to File]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div></div>
+<button class="button " id="m53">
+53 Open URL <span class="box"><span class="var"><b>[52 Updated Text]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-WFInput</div>
+			<div class="col2">true</div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

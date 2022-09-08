@@ -1,0 +1,1196 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>ScDiff</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">ScDiff</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1200",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 3679049983,
+   "WFWorkflowIconGlyphNumber": 59781
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1106,
+"WFWorkflowMinimumClientVersionString": "1106",
+"WFWorkflowOutputContentItemClasses": [
+   "WFURLContentItem"
+],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gDocuments closed" id="m0">
+0 Text&#12288;&#187;</button>
+	<div class="content" style="display:none">
+		<div class="col2">{"openapp":"Open App","choosefrommenu":"Choose from Menu","handoff":"Continue in Shortcuts App","exit":"Exit Shortcut","conditional":"If","repeat.count":"Repeat","repeat.each":"Repeat with Each","delay":"Wait","waittoreturn":"Wait to Return","dictionary":"Dictionary","detect.dictionary":"Get Dictionary from Input","getvalueforkey":"Get Value in Dictionary","setvalueforkey":"Set Value in Dictionary","base64encode":"Base64 Encode","hash":"Generate Hash","count":"Count","getitemname":"Get Name","getitemtype":"Get Type","setitemname":"Set Name","viewresult":"View Content Graph","choosefromlist":"Choose from List","getitemfromlist":"Get Item from List","list":"List","math":"Calculate","calculateexpression":"Calculate Expression","statistics":"Calculate Statistics","number.round":"Round Number","measurement.convert":"Convert Measurement","measurement.create":"Measurement","comment":"Comment","nothing":"Nothing","ask":"Ask for Input","format.filesize":"Format File Size","format.number":"Format Number","detect.number":"Get Numbers from Input","number":"Number","detect.numbers":"Get Numbers from Input","number.random":"Random Number","runsshscript":"Run Script Over SSH","getmyworkflows":"Get My Shortcuts","openworkflow":"Open Shortcut","runworkflow":"Run Shortcut","appendvariable":"Add to Variable","getvariable":"Get Variable","setvariable":"Set Variable","openxcallbackurl":"Open X-Callback URL","urlencode":"URL Encode","Editorial.runworkflow":"Run Editorial Workflow","Pythonista.runscript":"Run Script (Pythonista)","Pythonista.editscript":"Edit Script (Pythonista)","Tally2.get":"Get Tally (Tally)","Tally2.updatetally":"Update Tally (Tally)","addframetogif":"Add Frame to GIF","getframesfromimage":"Get Frames from Image","makegif":"Make GIF","makevideofromgif":"Make Video from GIF","image.combine":"Combine Images","image.crop":"Crop Image","image.flip":"Flip Image","image.mask":"Mask Image","image.overlay":"Overlay Image","image.resize":"Resize Image","image.rotate":"Rotate Image","image.convert":"Convert Image","filter.images":"Filter Images","properties.images":"Get Details of Images","detect.images":"Get Images from Input","encodemedia":"Encode Media","trimvideo":"Trim Media","imgur.upload":"Upload to Imgur","lightroom.import":"Import to Lightroom","showinblindsquare":"Show in BlindSquare","openin":"Open In [App]","previewdocument":"Quick Look","showresult":"Show Result","makepdf":"Make PDF","print":"Print","generatebarcode":"Generate QR Code","scanbarcode":"Scan QR/Bar Code","gethtmlfromrichtext":"Make HTML from Rich Text","getmarkdownfromrichtext":"Make Markdown from Rich Text","getrichtextfromhtml":"Make Rich Text from HTML","getrichtextfrommarkdown":"Make Rich Text from Markdown","dictatetext":"Dictate Text","getnameofemoji":"Get Name of Emoji","detect.text":"Get Text from Input","showdefinition":"Show Definition","speaktext":"Speak Text","gettext":"Text","text.changecase":"Change Case","text.combine":"Combine Text","correctspelling":"Correct Spelling","text.match.getgroup":"Get Group from Match Text","text.match":"Match Text","text.replace":"Replace Text","text.split":"Split Text","detectlanguage":"Detect Language with Microsoft","text.translate":"Translate Text with Microsoft","evernote.append":"Append to Evernote","evernote.new":"Create New Note (Evernote)","evernote.delete":"Delete Notes (Evernote)","evernote.getlink":"Get Note Link (Evernote)","evernote.get":"Get Notes (Evernote)","goodreader.open":"Open in GoodReader","share":"Share","runextension":"Share With Extension","cloudapp.upload":"Upload to CloudApp","postonfacebook":"Post on Facebook","burbn.instagram.openin":"Post on Instagram","tumblr.post":"Post on Tumblr","tapbots.Tweetbot6.PTHTweetbotOpenTwitterURLIntent":"Open Twitter (Tweetbot)","tapbots.Tweetbot6.PTHTweetbotOpenIntent":"Open Tweetbot","tapbots.Tweetbot6.PTHTweetbotPostTweetIntent":"Post Tweet (Tweetbot)","whatsapp.WhatsApp.send":"Send Message via WhatsApp","whatsapp.WhatsApp.openin":"Send Photo via WhatsApp","wordpress.post":"Post to WordPress","giphy":"Search Giphy","rss":"Get Items from RSS Feed","rss.extract":"Get RSS Feed from Page","url.expand":"Expand URL","geturlcomponent":"Get Component of URL","detect.link":"Get URLs from Input","url":"URL","downloadurl":"Get Contents of URL","getwebpagecontents":"Get Contents of Web Page","url.getheaders":"Get Headers of URL","AmazonLinker.convert":"Convert URL with Associate","AmazonLinker.search":"Search in Associate","instapaper.add":"Add to Instapaper","instapaper.get":"Get Instapaper Bookmarks","Opener.show-options":"Open URL in Opener","overcast.add":"Add to Overcast","pinboard.add":"Add to Pinboard","pinboard.get":"Get Pinboard Bookmarks","pocket.add":"Add to Pocket","pocket.get":"Get Items from Pocket","venmo.request":"Request Payment (Venmo)","venmo.pay":"Send Payment (Venmo)","kortina.labs.Venmo":"Send/Request Payment (Venmo)","github.stormbreaker.prod.DispatchWorkflowIntent":"Dispatch Workflow (GitHub)","dk.simonbs.DataJar.InsertValueInArrayIntent":"Add to Data Jar","dk.simonbs.DataJar.CheckIfValueExistsIntent":"Check if Value Exists (Data Jar)","dk.simonbs.DataJar.GetChildCountIntent":"Count Values (Data Jar)","dk.simonbs.DataJar.DeleteValueIntent":"Delete Value (Data Jar)","dk.simonbs.DataJar.GetKeysIntent":"Get Keys (Data Jar)","dk.simonbs.DataJar.GetTypeOfValueIntent":"Get Type of Value (Data Jar)","dk.simonbs.DataJar.GetValueIntent":"Get Value (Data Jar)","dk.simonbs.DataJar.SetValueIntent":"Set Value (Data Jar)","dk.simonbs.DataJar.ViewValueIntent":"View Value (Data Jar)","dk.simonbs.Jayson.GetFileIntent":"Get File (Jayson)","dk.simonbs.Jayson.PrettifyJSONIntent":"Prettify JSON (Jayson)","dk.simonbs.Jayson.ViewJSONIntent":"View JSON (Jayson)","dk.simonbs.Scriptable.CreateFileBookmarkIntent":"Create File Bookmark (Scriptable)","dk.simonbs.Scriptable.RefreshAllWidgetsIntent":"Refresh All Widgets (Scriptable)","dk.simonbs.Scriptable.RunScriptInlineIntent":"Run Inline Script (Scriptable)","dk.simonbs.Scriptable.ParameterizedRunScriptIntent":"Run Script (Scriptable)","alexhay.ToolboxProForShortcuts.AddTracksToPlaylistIntent":"Add Tracks To Playlist (Toolbox Pro)","alexhay.ToolboxProForShortcuts.AddContactGroupIntent":"Add Contact (Toolbox Pro)","alexhay.ToolboxProForShortcuts.AuthenticateIntent":"Authenticate (Toolbox Pro)","alexhay.ToolboxProForShortcuts.BlurImagesIntent":"Blur Image (Toolbox Pro)","alexhay.ToolboxProForShortcuts.BookmarkFileIntent":"Bookmark File (Toolbox Pro)","alexhay.ToolboxProForShortcuts.BuildURLIntent":"Build URL (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CalculateWithSoulverIntent":"Calculate With Soulver (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CheckIfInstalledIntent":"Check If App Is Installed (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CheckGVIntent":"Check If Global Variable Exists (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CheckForUpdatesIntent":"Check RoutineHub For Updates (Toolbox Pro)","alexhay.ToolboxProForShortcuts.ConvertCurrencyIntent":"Convert Currency (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CreateCalendarIntent":"Create Calendar (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CreateEventIntent":"Create Calendar Event (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CreateFoldersIntent":"Create Folders (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CreateIconIntent":"Create Icon (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CreateTextImageIntent":"Create Image From Text (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CreateInterestHeatMapsIntent":"Create Interest Heatmaps (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CreateMenuIntent":"Create Menu (Toolbox Pro)","alexhay.ToolboxProForShortcuts.CreatePlaylistIntent":"Create Playlist (Toolbox Pro)","appliedphasor.working-copy.CheckoutBranchIntent":"Checkout Branch (Working Copy)","appliedphasor.working-copy.CloneRepositoryIntent":"Clone Repository (Working Copy)","appliedphasor.working-copy.CommitRepositoryIntent":"Commit Repository (Working Copy)","appliedphasor.working-copy.CreateBranchIntent":"Create Branch (Working Copy)","appliedphasor.working-copy.OpenPullRequestIntent":"Create Pull Request (Working Copy)","appliedphasor.working-copy.DeleteBranchIntent":"Delete Branch (Working Copy)","appliedphasor.working-copy.FileDetailsIntent":"Details of Repository Files (Working Copy)","appliedphasor.working-copy.FetchRepositoryIntent":"Fetch Repository (Working Copy)","appliedphasor.working-copy.GetFilesIntent":"Get Repository Files (Working Copy)","appliedphasor.working-copy.ListRepositoriesIntent":"List Repositories (Working Copy)","appliedphasor.working-copy.MergeBranchIntent":"Merge Branch (Working Copy)","appliedphasor.working-copy.OpenIntent":"Open in Working Copy (Working Copy)","appliedphasor.working-copy.PullRepositoryIntent":"Pull Repository (Working Copy)","appliedphasor.working-copy.PushRepositoryIntent":"Push Repository (Working Copy)","appliedphasor.working-copy.CommitLogIntent":"Repository History (Working Copy)","appliedphasor.working-copy.ListReferencesIntent":"Repository References (Working Copy)","appliedphasor.working-copy.StageFilesIntent":"Stage for Commit (Working Copy)","appliedphasor.working-copy.WebDAVIntent":"Toggle WebDAV Server (Working Copy)","appliedphasor.working-copy.WriteFileIntent":"Write Repository File (Working Copy)","zlineman.Jellyfish.GrabJellycutIntent":"Grab Jellycut (Jellycuts)","zlineman.Jellyfish.ImportObjectsIntent":"Import Objects (Jellycuts)","zlineman.Jellyfish.ImportShortcutIntent":"Import Shortcut (Jellycuts)","aisense.otter.CommentIntent":"Comment (Otter)","aisense.otter.HighlightIntent":"Highlight (Otter)","aisense.otter.RecordStartParameterizedIntent":"Start Recording (Otter)","aisense.otter.RecordStopIntent":"Stop Recording (Otter)","ch.protonmail.WipeMainKeyIntent":"Wipe Local Data (ProtonMail)","ke.bou.GizmoPack.AddWalletPassIntent":"Add Wallet Pass (GizmoPack)","ke.bou.GizmoPack.CombineListsIntent":"Combine Lists (GizmoPack)","ke.bou.GizmoPack.CreateWalletPassIntent":"Create Wallet Pass (GizmoPack)","ke.bou.GizmoPack.FileInfoIntent":"File Info (GizmoPack)","ke.bou.GizmoPack.FilterDictionariesIntent":"Filter Dictionaries (GizmoPack)","ke.bou.GizmoPack.FuzzyFinderIntent":"Fuzzy Finder (GizmoPack)","ke.bou.GizmoPack.GenerateCSVIntent":"Generate CSV (GizmoPack)","ke.bou.GizmoPack.HashDataIntent":"Generate Hash (Extended) (GizmoPack)","ke.bou.GizmoPack.EncodeHexIntent":"Encode Hex (GizmoPack)","ke.bou.GizmoPack.EncodePlistIntent":"Encode Property List (GizmoPack)","ke.bou.GizmoPack.OverwriteFileIntent":"Overwrite File (GizmoPack)","ke.bou.GizmoPack.ParseCSVIntent":"Parse CSV (GizmoPack)","ke.bou.GizmoPack.ParseDateIntent":"Parse Date (GizmoPack)","ke.bou.GizmoPack.QueryJSONIntent":"Query JSON with JSONPath/jq (GizmoPack)","ke.bou.GizmoPack.QueryRecordsIntent":"Query CSV/Dictionaries with SQL (GizmoPack)","ke.bou.GizmoPack.RandomDataIntent":"Random Data (GizmoPack)","ke.bou.GizmoPack.QueryDocumentIntent":"Scrape HTML/XML with CSS/XPath (GizmoPack)","ke.bou.GizmoPack.ShortcutMetadataIntent":"Shortcut Metadata (GizmoPack)","ke.bou.GizmoPack.SignJWTIntent":"Sign JSON Web Token (GizmoPack)","ke.bou.GizmoPack.SnapshotMapIntent":"Snapshot Map (GizmoPack)","ke.bou.GizmoPack.TrimFileIntent":"Trim File (GizmoPack)","ch.ada.ShortWeb.GetResultIntent":"Get Automation Output (ShortWeb)","ke.bou.GizmoPack.UniversalVariablesIntent":"Universal Variables (GizmoPack)","ch.ada.ShortWeb.RunAutomationIntent":"Run Automation (ShortWeb)","flexibits.fantastical2.addreminder":"Add Reminder (Fantastical)","flexibits.fantastical2.showinfantastical":"Show in Fantastical","flexibits.fantastical2.addevent":"Add Event (Fantastical)","flexibits.fantastical2.iphone.FKRChangeCalendarSetIntent":"Change Calendar Set (Fatastical)","flexibits.fantastical2.iphone.FKRChangeCalendarViewInten":"Change View (Fantastical)","flexibits.fantastical2.iphone.FKRCreateFromInputIntent":"Create From Input (Fantastical)","flexibits.fantastical2.iphone.FKRGetAttendeesFromEventIntent":"Get Invitees From Event (Fantastical)","flexibits.fantastical2.iphone.FKROpenOnDateIntent":"Open On Date (Fantastical)","flexibits.fantastical2.iphone.FKROverdueRemindersIntent":"Overdue Reminders (Fantastical)","flexibits.fantastical2.iphone.FKRShowCalendarIntent":"Show Calendar (Fantastical)","flexibits.fantastical2.iphone.FKRShowListIntent":"Show List (Fantastical)","flexibits.fantastical2.iphone.FKRShowScheduleIntent":"Show Schedule (Fantastical)","flexibits.fantastical2.iphone.FKRUpcomingCalendarItemIntent":"Upcoming Item (Fantastical)","bloombuilt.dayone-ios.AnswerDailyPromptIntent":"Answer Daily Prompt (Day One)","bloombuilt.dayone-ios.AppendToEntryIntent":"Append to Entry (Day One)","dayonelog.dayoneiphone.post":"Create Day One Entry (Day One)","bloombuilt.dayone-ios.CreateEntryIntent":"Create Entry (Day One)","bloombuilt.dayone-ios.CreateTemplateEntryIntent":"Create Template Entry (Day One)","bloombuilt.dayone-ios.EditEntryIntent":"Edit Entry (Day One)","bloombuilt.dayone-ios.FindEntriesIntent":"Find Entries (Day One)","bloombuilt.dayone-ios.GetDailyPromptIntent":"Get Daily Prompt (Day One)","bloombuilt.dayone-ios.RecordIntent":"Record (Day One)","bloombuilt.dayone-ios.ShowTodayIntent":"Show Day Summary (Day One)","bloombuilt.dayone-ios.ShowEntriesIntent":"Show Entries (Day One)","bloombuilt.dayone-ios.ShowDayIntent":"Show On This Day (Day One)","agiletortoise.Tally2.get":"Get Tally (Tally)","agiletortoise.Tally2.updatetally":"Update Tally (Tally)","ubercab.UberClient.requestuber":"Request Uber","runscene":"Run Home Scene","deskconnect.send":"Send via DeskConnect","actions.ifttt":"Trigger IFTTT Applet","slack.send":"Post to Slack","trello.get":"Get Trello Items","properties.ulysses.sheet":"Get Details of Ulysses Sheet","properties.trello":"Get Details of Trello Item","trello.add.list":"Create Trello List","trello.add.board":"Create Trello Board","trello.add.card":"Add Trello Card","todoist.add":"Add Todoist Item","facebook.messenger.send":"Send via Messenger","brogrammers.charty.AccumulateValuesIntent":"Accumulate Values (Charty)","brogrammers.charty..AddAverageIntent":"Add Average (Charty)","brogrammers.charty.AddCustomThemeIntent":"Add Custom Theme (Charty)","brogrammers.charty.AddMovingAverageIntent":"Add Moving Average (Charty)","brogrammers.charty.AddSeriesFromCSVIntent":"Add Series from CSV (Charty)","brogrammers.charty.AddSeriesToChartIntent":"Add Series To Chart (Charty)","brogrammers.charty.ApplyQuickStyleIntent":"Apply Quick Style (Charty)","brogrammers.charty.CopyChartToClipboardIntent":"Copy Chart To Clipboard (Charty)","brogrammers.charty.DeleteChartIntent":"Delete Chart (Charty)","brogrammers.charty.DeleteSeriesIntent":"Delete Series (Charty)","brogrammers.charty.ExportChartAsImageIntent":"Export Chart As Image (Charty)","brogrammers.charty.FilterDataIntent":"Filter Data (Charty)","brogrammers.charty.GetInfoAllChartsIntent":"Get Information From All Charts (Charty)","brogrammers.charty.GroupDataIntent":"Group Data (Charty)","brogrammers.charty.NewChartIntent":"New Chart (Charty)","com.brogrammers.charty.NewChartWithSeriesIntent":"New Chart With Series (Charty)","brogrammers.charty.StyleAxisIntent":"Style Axis (Charty)","brogrammers.charty.StyleBarSeriesIntent":"Style Bar Series (Charty)","brogrammers.charty.StyleChartIntent":"Style Chart (Charty)","brogrammers.charty.StyleDonutPieSeriesIntent":"Style Donut/Pie Series (Charty)","brogrammers.charty.StyleLineSeriesIntent":"Style Line Series (Charty)","brogrammers.charty.StyleRingSeriesIntent":"Style Ring Series (Charty)","brogrammers.charty.StyleScatterSeriesIntent":"Style Scatter Series (Charty)","brogrammers.charty.UpdateWidgetsIntent":"Update Widgets (Charty)","co.neeva.app.ios.browser.OpenURLIntent":"Open URL (Neeva)","co.neeva.app.ios.browser.SearchNeevaIntent":"Search Neeva (Neeva)","AsheKube.app.a-Shell.ExecuteCommandIntent":"Execute Command (a-Shell)","AsheKube.app.a-Shell.GetFileIntent":"Get File (a-Shell)","AsheKube.app.a-Shell.PutFileIntent":"Put File (a-Shell)","guidedways.2Do.add":"Add 2Do Task (2Do)","airmailapp.iphone.AMSearchMailIntent":"Search Mail (Airmail)","airmailapp.iphone.AMSendEmailIntent":"Send Email (Airmail)","aita.app.SearchFlightsForBookingIntent":"Search flights for booking (App in the Air)","shinyfrog.bear-iOS.SFAddFilesToNoteIntent":"Add files to note (Bear)","shinyfrog.bear-iOS.SFAddTagsToNoteIntent":"Add tags to note (Bear)","shinyfrog.bear-iOS.SFAddToNoteIntent":"Add text to a note (Bear)","shinyfrog.bear-IOS.add":"Add to Bear Note (Bear)","shinyfrog.bear-iOS.SFArchiveNoteIntent":"Archive note (Bear)","shinyfrog.bear-IOS.create":"Create Bear Note (Bear)","shinyfrog.bear-IOS.grab":"Create Bear Note from URL (Bear)","shinyfrog.bear-iOS.SFCreateNoteIntent":"Create Note (Bear)","shinyfrog.bear-iOS.SFCreateNoteFromURLIntent":"Create note from URL (Bear)","shinyfrog.bear-IOS.contents":"Get Contents of Bear Note (Bear)","shinyfrog.bear-iOS.SFGetNoteIntent":"Get note (Bear)","shinyfrog.bear-iOS.SFGetNoteFilesIntent":"Get note files (Bear)","shinyfrog.bear-iOS.SFGetTagIntent":"Get tag (Bear)","shinyfrog.bear-IOS.open":"Open Bear Note (Bear)","shinyfrog.bear-iOS.SFOpenNoteIntent":"Open note (Bear)","shinyfrog.bear-iOS.SFOpenLocationIntent":"Open section (Bear)","shinyfrog.bear-iOS.SFOpenTagIntent":"Open Tag (Bear)","shinyfrog.bear-iOS.SFPinNoteIntent":"Pin note (Bear)","shinyfrog.bear-IOS.search":"Search in Bear (Bear)","shinyfrog.bear-iOS.SFSearchNotesIntent":"Search notes (Bear)","shinyfrog.bear-iOS.SFSearchTagsIntent":"Search tags (Bear)","shinyfrog.bear-iOS.SFTrashNoteIntent":"Trash note (Bear)","ch.marcela.ada.LibTerm.RunCommandIntent":"Run Command (LibTerm)","buffer.buffer.EditChannelScheduleIntent":"Add Channel Posting Times (Buffer)","buffer.buffer.CreatePostIntent":"Create Post (Buffer)","buffer.buffer.SelectProfileIntent":"Get Channel (Buffer)","buffer.buffer.PauseAllChannelsIntent":"Pause All Channels (Buffer)","buffer.buffer.PauseChannelIntent":"Pause Channel (Buffer)","buffer.buffer.QueueCountIntent":"Queue Count (Buffer)","coulomb.ChargePoint.CPTJoinWaitlistIntent":"Join Waitlist (ChargePoint)","co.supertop.Castro-2.AdjustPlaybackSpeedIntent":"Adjust Playback Position (Castro)","co.supertop.Castro-2.AdjustQueuePositionIntent":"Adjust Queue Position (Castro)","co.supertop.Castro-2.ChapterControlIntent":"Chapter Skipping (Castro)","co.supertop.Castro-2.ClearEpisodeIntent":"Clear Episode (Castro)","co.supertop.Castro-2.GetQueuedEpisodesIntent":"Get Queued Episodes (Castro)","co.supertop.Castro-2.GetNowPlayingEpisodeDetailsIntent":"Get Now Playing Episode (Castro)","co.supertop.Castro-2.SearchTentaclesIntent":"Search Podcasts (Castro)","co.supertop.Castro-2.SetPlaybackSpeedIntent":"Set Playback Speed (Castro)","co.supertop.Castro-2.SubscribeIntent":"Subscribe To Show (Castro)","co.supertop.Castro-2.ToggleContinuousPlayIntent":"Toggle Continuous Play (Castro)","co.supertop.Castro-2.ToggleEnhanceVoicesIntent":"Toggle Enhance Videos (Castro)","co.supertop.Castro-2.ToggleTrimSilenceIntent":"Toggle Trim Silence (Castro)","anthonymayo.DailyDictionary.ShowDailyWordIntent":"Word of the Day (Daily Dictionary)","junecloud.Deliveries.JUNAddDeliveryIntent":"Add a delivery (Deliveries)","junecloud.Deliveries.JUNShowDeliveriesIntent":"Check my deliveries (Deliveries)","junecloud.Deliveries.JUNNextDeliveryIntent":"Check my next delivery (Deliveries)","junecloud.Deliveries.JUNCheckDeliveryIntent":"Check on a delivery (Deliveries)","grailr.CARROTweather.CurrentForecastIntent":"Get Weather Report (CARROT)","pushcut.Pushcut.CancelNotificationIntent":"Cancel Notification (Pushcut)","pushcut.Pushcut.CancelServerActionIntent":"Cancel Server Action (Pushcut)","pushcut.Pushcut.ExecuteServerActionIntent":"Execute Server Action (Pushcut)","pushcut.Pushcut.RunShortcutIntent":"Schedule Shortcut (Pushcut)","pushcut.Pushcut.SendNotificationIntent":"Send Notification (Pushcut)","pushcut.Pushcut.ShowNotificationIntent":"Show Notification (Pushcut)","pushcut.Pushcut.ChangeWidgetContentIntent":"Update Widget (Pushcut)","pushcut.Pushcut.UploadImageIntent":"Upload Image (Pushcut)","shortcutify.Shortcutify.AirtableListRecordsIntent":"Airtable: Insert Record (Shortcutify)","shortcutify.Shortcutify.AirtableRetrieveRecordIntent":"Airtable: List Records (Shortcutify)","shortcutify.Shortcutify.CoinbaseListAccountsIntent":"Coinbase: List Accounts (Shortcutify)","shortcutify.Shortcutify.GoogledriveDownloadFileIntent":"Google Drive: Download File (Shortcutify)","shortcutify.Shortcutify.GoogledriveGetFileIntent":"Google Drive: Get File (Shortcutify)","shortcutify.Shortcutify.GoogledriveGetFilesListIntent":"Google Drive: Get Files List (Shortcutify)","shortcutify.Shortcutify.GoogledriveUploadFileIntent":"Google Drive: Upload File (Shortcutify)","shortcutify.Shortcutify.GoogleMapsGetDirectionsIntent":"Google Maps: Get Directions (Shortcutify)","shortcutify.Shortcutify.LifxActivateSceneIntent":"Lifx: Activate Scene (Shortcutify)","shortcutify.Shortcutify.LifxSetLightStateIntent":"Lifx: Set Light State (Shortcutify)","shortcutify.Shortcutify.LifxSetPowerStateIntent":"Lifx: Set Power State (Shortcutify)","shortcutify.Shortcutify.LifxTogglePowerIntent":"Lifx: Toggle Power (Shortcutify)","shortcutify.Shortcutify.MacCaptureScreenVideoIntent":"macOS: Capture Screen Video (Shortcutify)","shortcutify.Shortcutify.MacCaptureScreenshotIntent":"macOS: Capture Screenshot (Shortcutify)","shortcutify.Shortcutify.MacLockScreenIntent":"macOS: Lock Screen (Shortcutify)","shortcutify.Shortcutify.MacSleepIntent":"macOS: Sleep (Shortcutify)","shortcutify.Shortcutify.MacTriggerKeyboardShortcutIntent":"macOS: Trigger Keyboard Shortcut (Shortcutify)","shortcutify.Shortcutify.MacUploadFileIntent":"macOS: Upload File (Shortcutify)","shortcutify.Shortcutify.MacWakeIntent":"macOS: Wake (Shortcutify)","shortcutify.Shortcutify.MacWakeAndLogInIntent":"macOS: Wake and Log in (Shortcutify)","shortcutify.Shortcutify.ShortcutifyConvertToOptionItemIntent":"Shortcutify: Convert to Option Item (Shortcutify)","shortcutify.Shortcutify.SightengineGetImageFilePropertiesIntent":"Sightengine: Get image file properties (Shortcutify)","shortcutify.Shortcutify.SightengineGetImageUrlPropertiesIntent":"Sightengine: Get image url properties (Shortcutify)","shortcutify.Shortcutify.SpotifyAddTrackToPlaylistIntent":"Spotify: Add Track to Playlist (Shortcutify)","shortcutify.Shortcutify.SpotifyGetCurrentlyPlayingTrackIntent":"Spotify: Get Currently Playing Track (Shortcutify)","shortcutify.Shortcutify.SpotifyGetMyPlaylistsIntent":"Spotify: Get My Playlists (Shortcutify)","shortcutify.Shortcutify.SpotifyPlayPauseIntent":"Spotify: Play - Pause (Shortcutify)","shortcutify.Shortcutify.SpotifyPlaySpotifyURLIntent":"Spotify: Play Spotify URL (Shortcutify)","shortcutify.Shortcutify.SpotifySearchAndPlayOnSpotifyIntent":"Spotify: Search and Play on Spotify (Shortcutify)","shortcutify.Shortcutify.SpotifySetRepeatModeIntent":"Spotify: Set Repeat Mode (Shortcutify)","shortcutify.Shortcutify.SpotifyToggleShuffleIntent":"Spotify: Toggle Shuffle (Shortcutify)","shortcutify.Shortcutify.SpotifyTransferPlaybackIntent":"Spotify: Transfer Playback (Shortcutify)","shortcutify.Shortcutify.SpotifyUploadPlaylistCoverImageIntent":"Spotify: Upload Playlist Cover Image (Shortcutify)","shortcutify.Shortcutify.TodoistAddProjectIntent":"Todoist: Add Project (Shortcutify)","shortcutify.Shortcutify.TodoistAddTaskToProjectIntent":"Todoist: Add Task to Project (Shortcutify)","shortcutify.Shortcutify.TodoistGetProjectTasksIntent":"Todoist: Get Project Tasks (Shortcutify)","shortcutify.Shortcutify.TodoistGetProjectsIntent":"Todoist: Get Projects (Shortcutify)","shortcutify.Shortcutify.TodoistQuickAddTaskIntent":"Todoist: Quick Add Task (Shortcutify)","tweet":"Tweet (Twitter)","tapbots.Tweetbot.searchtext":"Search Text (Tweetbot)","tapbots.Tweetbot.opentweetbot":"Open Tweetbot (Tweetbot)","tapbots.Tweetbot.tweet":"Tweet (Tweetbot)","tapbots.Tweetbot.viewprofile":"View Profile (Tweetbot)","vitalek.IconFor.Contact.WidgetRowLauncherIntent":"Widget Launcher (Ai Launcher)","vitalek.IconFor.Contact.WidgetLauncherIntent":"Widget Launcher (Ai Launcher)","useractivity.open":"Siri Shortcuts action (Action name cannot be retrieved*)","amazon.Amazon":"Amazon action (Action name cannot be retrieved*)","abbyy.finescanner.AFSGetPDFForDocumentIntent":"Get PDF (FineReader)","abbyy.finescanner.AFSGetRecognizedDocumentIntent":"Get Recognized Document (FineReader)","laser-focused.focus-ios.ControlSessionIntent":"Control Session (Focus)","laser-focused.focus-ios.StartSessionIntent":"Start Timer (Focus)","icandiapps.nightsky.RecognizeObjectIntent":"Recognized Object (Night Sky X)","icandiapps.nightsky.ShowObjectIntent":"Show Object (Night Sky X)","icandiapps.nightsky.StartMindfulnessIntent":"Start Night Sky Mindfulness (Night Sky X)","ns.reisplannerxtra.FavoriteWidgetConfigurationIntent":"Favorites widget configuration (NS)","omnigroup.OmniFocus3.iOS.AddTaskIntent":"Add Item (OmniFocus 3)","omnigroup.OmniFocus3.iOS.AddTaskPaperIntent":"Add TaskPaper (OmniFocus 3)","omnigroup.OmniFocus3.iOS.FindTasksIntent":"Find Items (OmniFocus 3)","omnigroup.OmniFocus3.iOS.FindProjectsIntent":"Find Projects (OmniFocus 3)","omnigroup.OmniFocus3.iOS.FindTagsIntent":"Find Tags (OmniFocus 3)","omnigroup.OmniFocus3.iOS.GetDatabaseObjectFromInputIntent":"Get Database Object Result from Input (OmniFocus 3)","omnigroup.OmniFocus3.iOS.RunPlugInIntent":"Omni Automation Plug-In (OmniFocus 3)","omnigroup.OmniFocus3.iOS.RunOmniJSIntent":"Omni Automation Script (OmniFocus 3)","omnigroup.OmniFocus3.iOS.ShowFromChoiceIntent":"Show in OmniFocus (OmniFocus 3)","omnigroup.OmniFocus3.iOS.TodaysForecastIntent":"Today's Forecast (OmniFocus 3)","de.cooperrs.Authenticator.ACCopyCodeIntent":"Copy Code (OTP Auth)","joecieplinski.RECaf.LogCaffeineWithParametersIntent":"Log Caffeine (RECaf)","servicem8.CallIntent":"Call Client (ServiceM8)","servicem8.CheckoutIntent":"Check out of current job (ServiceM8)","servicem8.ClockIntent":"Clock on (ServiceM8)","servicem8.LunchIntent":"Lunch (ServiceM8)","servicem8.SendMessageIntent":"Send text message (ServiceM8)","servicem8.AfterHoursRoleIntent":"Set on call staff member (ServiceM8)","servicem8.StartNextJobIntent":"Start next job (ServiceM8)","servicem8.TakePhotoIntent":"Take job photo (ServiceM8)","servicem8.ClientNameIntent":"View Client's name (ServiceM8)","smartgymapp.smartgym.ViewRoutineIntent":"View Student's Routine (SmartGym)","smartgymapp.smartgym.WeekSummaryIntent":"Week's Summary (SmartGym)","cpdigitaldarkroom.SongShift.OWDeezerIntent":"Open in Deezer (SongShift)","cpdigitaldarkroom.SongShift.OWSpotifyIntent":"Open in Spotify (SongShift)","cpdigitaldarkroom.SongShift.OWAppleMusicIntent":"Open in the Music app (SongShift)","cpdigitaldarkroom.SongShift.OWTidalIntent":"Open in Tidal (SongShift)","google.OPA.OPAAskGoogleIntent":"Ask Google (Assistant)","google.chrome.ios.OpenInChromeIntent":"Open URLs in Chrome (Chrome)","google.chrome.ios.OpenInChromeIncognitoIntent":"Open URLs in Chrome in Incognito (Chrome)","google.chrome.ios.SearchInChromeIntent":"Search in Chrome (Chrome)","fallcall.fallcall-lite.SendHelpIntent":"Assistance Needed (FallCall Lite)","fandango.fandango.UpcomingOrderIntent":"See My Ticket (Fandango)","cyan.jsbox.RunJavaScriptIntent":"Run JavaScript (JSBox)","cyan.jsbox.RunJSBoxIntent":"Run JSBox script (JSBox)","cyan.jsbox.RunJSBoxUIIntent":"Run JSBox UI (JSBox)","lifx.lifx.LFXLightThemeIntent":"Apply a Theme (LIFX)","lifx.lifx.LFXCleanCycleIntent":"Clean Cycle (LIFX)","lifx.lifx.LFXGetScenesIntent":"Get Scenes (LIFX)","lifx.lifx.LFXGetLightsIntent":"List Lights (LIFX)","lifx.lifx.LFXGetThemesIntent":"List Themes (LIFX)","lifx.lifx.LFXLightSceneIntent":"Set a Scene (LIFX)","lifx.lifx.LFXLightBrightnessIntent":"Set light brightness (LIFX)","lifx.lifx.LFXLightColorIntent":"Set light color (LIFX)","lifx.lifx.LFXLightPowerIntent":"Set light power (LIFX)","lifx.lifx.LFXLightStateIntent":"Set light state (LIFX)","zoho.zinvoice.CreateExpenseIntent":"Create Expense (Zoho Invoice)","zoho.zinvoice.CreateInvoiceIntent":"Create Invoice (Zoho Invoice)","zoho.zinvoice.CreateInvoiceFromTimesheetsIntent":"Create Invoice from timesheets (Zoho Invoice)","zoho.zinvoice.CreateItemIntent":"Create Item (Zoho Invoice)","zoho.zinvoice.FindInvoicesIntent":"Find Invoices (Zoho Invoice)","zoho.zinvoice.FindTimesheetsIntent":"Find Timesheets (Zoho Invoice)","zoho.zinvoice.GenerateInvoiceLinkIntent":"Generate public link for invoice (Zoho Invoice)","zoho.zinvoice.GetCustomerDetailsIntent":"Get Customer Details (Zoho Invoice)","zoho.zinvoice.RecordPaymentIntent":"Record Payment (Zoho Invoice)","zoho.zinvoice.SearchCustomerIntent":"Search customers (Zoho Invoice)","zoho.zinvoice.SearchItemIntent":"Search item (Zoho Invoice)","zoho.zinvoice.SendInvoiceReminderIntent":"Search reminder for an invoice (Zoho Invoice)","apple.mobiletimer-framework.MobileTimerIntents.MTCreateAlarmIntent":"Create Alarm (Clock)","apple.mobiletimer-framework.MobileTimerIntents.MTGetAlarmsIntent":"Get All Alarms (Clock)","apple.mobiletimer-framework.MobileTimerIntents.MTToggleAlarmIntent":"Start Timer (Clock)","timer.start":"Start Timer (Clock)","apple.Pages.TSADocumentCreateIntent":"Create Document (Pages)","apple.Pages.TSADocumentOpenIntent":"Open Document (Pages)","apple.Pages.TPDocumentBeginPresenterModeIntent":"Open Document in Presenter Mode (Pages)","apple.mobilenotes.SharingExtension":"Create Note (Notes)","apple.mobilenotes.ICNotesFolderIntent":"Show Folder (Notes)","selectemail":"Select Email Address (Mail)","email":"Email Addresses (Mail)","detect.emailaddress":"Get Email Address from Input (Mail)","apple.Numbers.TNiOSAddValuesToFormIntent":"Add Records to Form (Numbers)","apple.Numbers.TNiOSAddValuesToSpreadsheetIntent":"Add Row to Top or Bottom of Table (Numbers)","apple.Numbers.TSADocumentCreateIntent":"Create Spreadsheet (Numbers)","apple.Numbers.TSADocumentOpenIntent":"Open Spreadsheet (Numbers)","apple.Keynote.TSADocumentCreateIntent":"Create Presentation (Keynote)","apple.Keynote.KNiOSCreateNewOutlineIntent":"Create Presentation in Outline View (Keynote)","apple.Keynote.TSADocumentOpenIntent":"Open Presentation (Keynote)","apple.Keynote.KNDocumentRehearseIntent":"Open Presentation in Rehearsal Mode (Keynote)","apple.Keynote.KNDocumentPlayIntent":"Play Presentation in Show Mode (Keynote)","TelephonyUtilities.PhoneIntentHandler":"FaceTime","TVRemoteUIService.LaunchScreenSaverIntent":"Launch Screensaver on Apple TV (Apple TV)","TVRemoteUIService.TVWatchList":"Open App on Apple TV (Apple TV)","TVRemoteUIService.LaunchApplicationIntent":"Open App on Apple TV (Apple TV)","TVRemoteUIService.ToggleCaptionsIntent":"Set Captions (Apple TV)","TVRemoteUIService.PauseContentIntent":"Play/Pause Apple TV (Apple TV)","TVRemoteUIService.ToggleSystemAppearanceIntent":"Set Light/Dark Mode (Apple TV)","TVRemoteUIService.ReduceLoudSoundsIntent":"Set Reduce Loud Sounds (Apple TV)","TVRemoteUIService.LaunchRemoteIntent":"Show Remote Control (Apple TV)","TVRemoteUIService.SkipContentIntent":"Skip Content on Apple TV (Apple TV)","TVRemoteUIService.SleepAppleTVIntent":"Sleep Apple TV (Apple TV)","TVRemoteUIService.SwitchUserAccountIntent":"Switch User Account (Apple TV)","TVRemoteUIService.WakeAppleTVIntent":"Wake Apple TV (Apple TV)","addnewevent":"Add New Event (Calendar)","setters.calendarevents":"Edit Calendar Event (Calendar)","filter.eventattendees":"Filter Event Attendees (Calendar)","filter.calendarevents":"Filter Calendar Events (Calendar)","properties.calendarevents":" Get Details of Calendar Events (Calendar)","properties.eventattendees":"Get Details of Event Attendees (Calendar)","getupcomingevents":"Get Upcoming Events (Calendar)","removeevents":"Remove Events (Calendar)","showincalendar":"Show in Calendar (Calendar)","addnewcontact":"Add New Contact","contacts":"Contacts","settlers.contacts":"Edit Contact","filter.contacts":"Find Contacts","detect.contacts":"Get Contacts from Input","properties.contacts":"Get Details of Contacts","detect.phonenumber":"Get Phone Numbers from Input","phonenumber":"Phone Number","selectcontacts":"Select Contact","selectphone":"Select Phone Number","apple.facetime.facetime":"Facetime","filter.health.quantity":"Filter Health Samples (Health)","properties.health.quantity":"Get Details of Health Samples (Health)","health.quantity.log":"Log Health Sample (Health)","health.workout.log":"Log Workout (Health)","addnewreminder":"Add New Reminder (Reminders)","setters.reminders":"Edit Reminder (Reminders)","filter.reminders":"Find Reminders (Reminders)","properties.reminders":"Get Details of Reminders (Reminders)","getupcomingreminders":"Get Upcoming Reminders (Reminders)","removereminders":"Remove Reminders (Reminders)","reminders.showlist":"Show Reminders List (Reminders)","PassKit.PassKitIntentsExtension":"Send/Request (Apple Pay)","readinglist":"Add to Reading List (Safari)","properties.safariwebpage":"Get Details of Safari Web Page (Safari)","openurl":"Open URL (Safari)","runjavascriptonwebpage":"Run JavaScript on Web Page (Safari)","searchweb":"Search Web (Safari)","showwebpage":"Show Web Page (Safari)","filter.articles":"Filter Articles","getarticle":"Get Article Using Safari Reader","properties.article":"Get Details of Article","setclipboard":"Copy to Clipboard","getclipboard":"Get Clipboard","sendemail":"Send Email (Mail)","sendmessage":"Send Message (Messages)","airdropdocument":"Airdrop","appendnote":"Append to Note (Notes)","mobilenotes.SharingExtension":"Create Note (Notes)","filter.notes":"Find Notes (Notes)","shownote":"Show Note (Notes)","mobilenotes.ICNotesFolderIntent":"Show Notes Folder (Notes)","unzip":"Extract Archive (Files)","makezip":"Make Archive (Files)","apple.iBooks.openin":"Add PDF in Books (Apple Books)","avairyeditphoto":"Markup","file.append":"Append to File (Files)","file.createfolder":"Create Folder (Files)","file.delete":"Delete File (Files)","documentpicker.open":"Get File (Files)","file.getlink":"Get Link to File (Files)","documentpicker.save":"Save File (Filses)","filter.files":"Filter Files (Files)","properties.files":"Get Details of Files (Files)","filter.locations":"Filter Locations","getcurrentlocation":"Get Current Location","properties.location":"Get Details of Locations","location":"Location","detect.address":"Get Address from Input (Maps)","address":"Street Address (Maps)","getmapslink":"Get Maps URL (Maps)","getdirections":"Show Directions (Maps)","searchmaps":"Show in Maps (Maps)","ride.requestride":"Request Ride (Maps)","getdistance":"Get Distance (Maps)","gethalfwaypoint":"Get Halfway Point (Maps)","gettraveltime":"Get Travel Time (Maps)","searchlocalbusinesses":"Search Local Businesses (Maps)","weather.currentconditions":"Get Current Weather (Weather)","properties.weather.conditions":"Get Details of Weather Conditions (Weather)","weather.forecast":"Get Weather Forecast (Weather)","properties.itunesartist":"Get Details of iTunes Artist (iTunes Store)","properties.itunesstore":"Get Details of iTunes Product (iTunes Store)","searchitunes":"Search iTunes Store (iTunes Store)","showinstore":"Show in iTunes Store (iTunes Store)","filter.music":"Find Music (Apple Music)","getcurrentsong":"Get Current Song (Apple Music)","properties.music":"Get Details of Music (Apple Music)","playmusic":"Play Music (Apple Music)","exportsong":"Select Music (Apple Music)","addtoplaylist":"Add to Playlist (Apple Music)","createplaylist":"Create Playlist (Apple Music)","get.playlist":"Get Playlist (Apple Music)","addmusictoupnext":"Add to Up Next (Apple Music)","clearupnext":"Clear Up Next (Apple Music)","delete.photos":"Delete Photos (Photos)","filter.photos":"Find Photos (Photos)","mobileslideshow.StreamShareService":"Post to Shared Album (Photos)","getlatestphotoimport":"Get Last Import (Photos)","getlatestbursts":"Get Latest Bursts (Photos)","getlatestlivephotos":"Get Latest Live Photos (Photos)","getlastphotos":"Get Latest Photos (Photos)","getlastscreenshot":"Get Latest Screenshots (Photos)","getlastvideo":"Get Latest Videos (Photos)","removefromalbum":"Remove from Photo Album (Photos)","savetocameraroll":"Save to Photo Album (Photos)","selectphoto":"Select Photos (Photos)","handoffplayback":"Hand Off Playback (Playback)","pausemusic":"Play/Pause (Playback)","seek":"Seek (Playback)","listeningmode.set":"Set Noise Control Mode (Playback)","skipback":"Skip Back (Playback)","skipforward":"Skip Forward (Playback)","properties.podcastshow":"Get Details of Podcast (Podcasts)","properties.podcast":"Get Details of Podcast Episode (Podcasts)","getepisodesforpodcast":"Get Episodes of Podcast (Podcasts)","getpodcastsfromlibrary":"Get Podcasts from Library (Podcasts)","playpodcast":"Play Podcast (Podcasts)","searchpodcasts":"Search Podcasts (Podcasts)","podcasts.subscribe":"Subscribe to Podcast (Podcasts)","sirikit.donation.handle":"Siri Shortcuts Action (Action name cannot be retrieved)","getbatterylevel":"Get Battery Level","getdevicedetails":"Get Device Details","appearance":"Set Appearance","bluetooth.set":"Set Bluetooth","setbrightness":"Set Brightness","dnd.set":"Set Do Not Disturb","flashlight":"Set Flashlight","lowpowermode.set":"Set Low Power Mode","orientationset":"Set Orientation Lock","setplaybackdestination":"Set Playback Destination","setvolume":"Set Volume","wallpaper.set":"Set Wallpaper","getipaddress":"Get IP Address","getwifi":"Get Network Details","airplanemode.set":"Set Airplane Mode","cellulardata.set":"Set Cellular Data","cellular.rat.set":"Set Voice &amp; Data","wifi.set":"Set Wi-Fi","playsound":"Play Sound","alert":"Show Alert","notification":"Show Notification","vibrate":"Vibrate Device","properties.appstore":"Get Details of App Store App","searchappstore":"Search App Store","recordaudio":"Record Audio","shazamit":"Shazam It","takephoto":"Take Photo","takevideo":"Take Video","takescreenshot":"Take Screenshot","apple.AccessibilityUtilities.AXSettingsShortcuts.AXStartMagnifierIntent":"Open Magnifier","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleAssistiveTouchIntent":"Set AssistiveTouch","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleAudioDescriptionsIntent":"Set Audio Descriptions","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleClassicInvertIntent":"Set Classic Invert","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleCaptionsIntent":"Set Closed Captions+SDH","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleContrastIntent":"Set Increase Contrast","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleLEDFlashIntent":"Set LED Flash","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleMonoAudioIntent":"Set Mono Audio","apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetSoundDetectorIntent":"Set sound recognizer","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleReduceMotionIntent":"Set Reduce Motion","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleTransparencyIntent":"Set Reduce Transparency","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleSmartInvertIntent":"Set Smart Invert","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleSoundDetectionIntent":"Set Sound Recognition","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleSwitchControlIntent":"Set Switch Control","apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetLargeTextIntent":"Set text size","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleVoiceControlIntent":"Set Voice Control","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleVoiceOverIntent":"Set VoiceOver","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleWhitePointIntent":"Set White Point","apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleZoomIntent":"Set Zoom","apple.AccessibilityUtilities.AXSettingsShortcuts.AXStartGuidedAccessIntent":"Start Guided Access","apple.AccessibilityUtilities.AXSettingsShortcuts.AXStartSpeakScreenIntent":"Start Speak Screen"}</div></div>
+<button class="gVariable" id="m1">
+1 Set Variable <span class="box">dictionary</span> to <span class="box"><span class="var"><b>[0 Text</b> as Dictionary<b>]</b></span></span></button>
+<button class="button " id="m2">
+2 Get File <span class="box">sc diff/</span> from Folder&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">FileErrorIfNotFound</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ShowFilePicker</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">GetFolderContents</div>
+			<div class="col2">true</div></div></div>
+<button class="gLoop nonbottom" id="m3">
+3 If <span class="box"><span class="var"><b>[2 File]</b></span></span> <span class="box">has any value</span></button>
+	
+<button class="button gLoop nonbottom nontop" id="m4">
+4 Otherwise</button>
+	<div class="content contentloop">
+<button class="button  inside" id="m5">
+5 Create Folder</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">FilePath</div>
+			<div class="col2">sc diff</div></div></div>
+<button class="button gDocuments inside closed" id="m6">
+6 Text <b>&#12288;➔ Onboarding</b>&#12288;&#187;</button>
+	<div class="content inside" style="display:none">
+		<div class="col2">&lt;html>
+ &lt;head>
+  &lt;title>Onboarding&lt;/title>
+  &lt;meta charset="UTF-8" />
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  &lt;style>
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400&amp;family=Lato:wght@100;200;300;400;500;600&amp;family=Poppins:wght@300;400;500;600&amp;display=swap');
+
+body {
+	height: auto;
+	max-width: 350px;
+      width: 100%;
+	background: #1D205C;
+      margin-left: 20px;
+}
+   
+	#heading-ctr {
+		display: block;
+		position: relative;
+		width: 100%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: left;
+	}
+
+#sub {
+	background: rgb(238,216,24);
+background: linear-gradient(135deg, rgba(238,216,24,1) 10%, rgba(246,146,59,1) 47%, rgba(251,82,113,1) 73%, rgba(255,4,239,1) 97%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    margin: 0 0 0 0;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: left;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+  margin-left: 2.5px;
+}
+
+  h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+    h3 {
+		font-family: "Open Sans", sans-serif; 
+		font-size: 16px;
+		font-weight: 400;
+		background-image: linear-gradient(to right, #eecda3 0%, #ef629f 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+	}
+
+  #body-ctr {
+    display: block;
+    position: relative;
+    width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   }
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11.5px;
+    color: #F8F8FF;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-left: auto;
+    padding-right: 5%;
+}
+
+  #closing-ctr {
+    margin-bottom: 10px;
+    margin-top: -10px;
+   }
+
+  #triangle {
+    font-size: 19px;
+    font-weight: 700;
+   }
+
+	#support-ctr { 
+		display: flex;
+            display: -webkit-flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            margin-top: 20px;
+            margin-left: -20px;
+	}
+
+	.btn {
+		margin-left: auto;
+            margin-right: auto;
+	}
+
+ #welcome {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+a { 
+  color: #a4f4f9;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: inherit;
+  text-decoration-skip: ink;
+}
+
+footer {
+    position: relative;
+    margin: 30px auto 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+   }
+
+#ftr-txt {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10.5px;
+    font-weight: 300;
+    color: #f8f8ff;
+    text-align: center;
+   }
+
+#logo-ctr {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin: 30px auto -40px -15px;
+  z-index: -1;
+ }
+  &lt;/style>
+ &lt;/head>
+ &lt;body>
+  &lt;div id="heading-ctr">
+&lt;div id="logo-ctr">&lt;img src="https://i.imgur.com/H6dXsri.png" style="height: 125px;width: 250px">&lt;/div>
+   &lt;h1>&lt;span id="sub">by&amp;nbsp;Mr.T-Wrecks&lt;/span>&lt;/h1>
+  &lt;div id="body-ctr">
+   &lt;p>&lt;span id="welcome">Welcome to sc diff!&lt;/span>&lt;/p>
+&lt;p>sc diff is the first and only shortcut that allows users to compare different versions of shortcuts. Modeled after the 'git diff' command found in Git version control systems such as GitHub, sc diff shows the changes between two versions of a shortcut. This functionality is extremely helpful during the debugging process and can find any breaking changes.&lt;/p>
+&lt;p>To get started, just select the previous version of a shortcut, then the new version of the shortcut. sc diff will take care of the rest!&lt;/p>
+&lt;p>Tap &lt;span id="triangle">&amp;#9666;&lt;/span>Shortcuts in the top-left-hand corner of your screen to continue.&lt;/p>&lt;/div>
+&lt;div id="closing-ctr">
+&lt;p>For support, tap any of the buttons below. You can access this page at any time at&lt;/p> &lt;p style="text-align: center;line-height: 1.2;text-indent: -15px">&lt;strong>Files&lt;/strong> > &lt;strong>iCloud Drive&lt;/strong> > &lt;strong>Shortcuts&lt;/strong> > &lt;strong>sc diff&lt;/strong>&lt;/p>&lt;/div>
+  &lt;div id="support-ctr">
+    &lt;div class="btn">
+      &lt;a href="https://twitter.com/mrtwrecks">&lt;img src="https://i.imgur.com/wEBsLxX.png" style="width:60px;height:60px">&lt;/a>&lt;/div>
+  &lt;div class="btn">
+    &lt;a href="https://routinehub.co/user/Mr.T-Wrecks">&lt;img src="https://i.imgur.com/in1VpzN.png" style="width:60px;height:60px">&lt;/a>&lt;/div>
+  &lt;div class="btn">
+    &lt;a href="https://github.com/mrtwrecks0208/">&lt;img src="https://i.imgur.com/nEEf9Io.png" style="width:60px;height:60px">&lt;/a>&lt;/div>
+  &lt;div class="btn">
+&lt;a href="mailto:mtwsupport@protonmail.com">&lt;img src="https://i.imgur.com/8F8ENrR.png" style="width:60px;height:60px">&lt;/a>&lt;/div>
+&lt;/div>
+&lt;footer>
+	&lt;p id="ftr-txt">Page created with &lt;a href="https://routinehub.co/shortcut/6124/">PromoKit&lt;/a>&lt;br>&amp;#169;2022 &lt;a href="https://routinehub.co/user/Mr.T-Wrecks">Mr.T-Wrecks🦖&lt;/a>&lt;/p>
+&lt;/footer>
+ &lt;/body>
+&lt;/html></div></div>
+<button class="button gScripting inside" id="m7">
+7 Base64 Encode <span class="box"><span class="var"><b>[6 Onboarding]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Base64LineBreakMode</div>
+			<div class="col2">None</div></div></div>
+<button class=" inside" id="m8">
+8 URL <span class="box">data:text/html;base64,<span class="var"><b>[7 Base64 Encoded]</b></span></span> <b>&#12288;➔ Onboarding</b>&#12288;&#187; <i>9</i> <span class="magic" onclick="magictap(11)">11</span></button>
+<button class="button  inside" id="m9">
+9 Open URL <span class="box"><span class="var"><b>[8 Onboarding]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-WFInput</div>
+			<div class="col2">true</div></div></div>
+<button class=" inside" id="m10">
+10 Wait to Return</button>
+<button class="gScripting inside" id="m11">
+11 Set Name of <span class="box"><span class="magic" onclick="magictap(8)"><b>[8 Onboarding]</b></span></span> to <span class="box">Onboarding</span> <b>&#12288;➔ Onboarding</b>&#12288;&#187;</button>
+<button class="button  inside" id="m12">
+12 Save File <span class="box"><span class="var"><b>[11 Onboarding]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AskWhereToSave</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">SaveFileOverwrite</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">FileDestinationPath</div>
+			<div class="col2">sc diff/</div></div></div></div>
+<button class="gLoop nontop" id="m13">
+13 End If</button>
+<button class="button gDocuments closed" id="m14">
+14 Text&#12288;&#187;</button>
+	<div class="content" style="display:none">
+		<div class="col2">BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=utf-8:Check for updates;;;;
+ORG;CHARSET=utf-8:;
+PHOTO;ENCODING=b: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
+END:VCARD
+
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=utf-8:Skip;;;;
+ORG;CHARSET=utf-8:;
+PHOTO;ENCODING=b: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
+END:VCARD
+</div></div>
+<button class="gScripting" id="m15">
+15 Set Name of <span class="box"><span class="var"><b>[14 Text]</b></span></span> to <span class="box">updateCheck.vcf</span> <b>&#12288;➔ updateCheck</b>&#12288;&#187;</button>
+<button class="gScripting" id="m16">
+16 Choose from List <span class="box"><span class="var"><b>[15 updateCheck</b> as Contact<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gLoop nonbottom" id="m17">
+17 If <span class="box"><span class="var"><b>[16 Chosen Item</b> as Text<b>]</b></span></span> <span class="box">is</span> <span class="box">Skip</span></button>
+	
+<button class="button gLoop nonbottom nontop" id="m18">
+18 Otherwise</button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m19">
+19 Repeat 1 Times</button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m20">
+20 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">sc diff uses [Embed-A-Update] to check for updates on RoutineHub.
+Credits for all update checking components to @pfg.</div></div>
+<button class="button gScripting inside" id="m21">
+21 Dictionary&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">{  "ID": "10685",
+   "Version": "1.3.1"
+}</div></div>
+<button class="gVariable inside" id="m22">
+22 Set Variable <span class="box">LocalData</span> to <span class="box"><span class="var"><b>[21 Dictionary]</b></span></span></button>
+<button class=" inside" id="m23">
+23 Get Current IP Address&#12288;&#187;</button>
+<button class=" inside" id="m24">
+24 Count Items in <span class="box"><span class="var"><b>[23 Current IP Address]</b></span></span>&#12288;&#187;</button>
+<button class="button gLoop nonbottom inside" id="m25">
+25 If <span class="box"><span class="var"><b>[24 Count]</b></span></span> <span class="box">is</span> <span class="box">0</span></button>
+	<div class="content contentloop inside">
+<button class="button gDocuments inside" id="m26">
+26 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">[Eᴍʙᴇᴅ-ᴀ-Uᴘᴅᴀᴛᴇ] Could not check for updates, there is no internet connection.</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m27">
+27 Otherwise</button>
+	<div class="content contentloop inside">
+<button class=" inside" id="m28">
+28 URL <span class="box">https://routinehub.co/api/v1/shortcuts/<span class="var"><b>[LocalData</b>.ID<b>]</b></span>/versions/latest</span>&#12288;&#187;</button>
+<button class=" inside" id="m29">
+29 Get Contents of URL <span class="box"><span class="var"><b>[28 URL]</b></span></span> <b>&#12288;➔ result</b>&#12288;&#187; <i>30</i> <span class="magic" onclick="magictap(31)">31</span> <span class="magic" onclick="magictap(39)">39</span> <span class="magic" onclick="magictap(41)">41</span> <span class="magic" onclick="magictap(43)">43</span> <span class="magic" onclick="magictap(44)">44</span> <span class="magic" onclick="magictap(45)">45</span></button>
+<button class="button gLoop nonbottom inside" id="m30">
+30 If <span class="box"><span class="var"><b>[29 result</b> as Text<b>]</b></span></span> <span class="box">contains</span> <span class="box">success</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gScripting inside" id="m31">
+31 Dictionary <b>&#12288;➔ CompareVersionsData</b>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">{  "current": "<span class="var"><b>[LocalData</b>.Version<b>]</b></span>",
+   "new": "<span class="magic" onclick="magictap(29)"><b>[29 Remote</b> as Dictionary.Version<b>]</b></span>"
+}</div></div>
+<button class="button gDocuments inside" id="m32">
+32 Text <b>&#12288;➔ CompareVersionsHTML</b>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">&lt;html>&lt;head>&lt;/head>&lt;body>&lt;script>
+// Embed-a-Engine 1.0
+function cmp (a, b) {
+let pa = a.split('.');
+let pb = b.split('.');
+for (let i = 0; i &lt; Math.max(pa.length, pb.length); i++) {
+let na = Number(pa[i]);
+let nb = Number(pb[i]);
+if (isNaN(na)) na = 0;
+if (isNaN(nb)) nb = 0;
+if (na > nb) return "RollbackAvailable";
+if (nb > na) return "UpdateAvailable";
+}
+return "NoChanges";
+};
+let data = <span class="var"><b>[31 CompareVersionsData]</b></span>;
+document.write(cmp(data.current, data.new));
+&lt;/script>&lt;/body>&lt;/html></div></div>
+<button class=" inside" id="m33">
+33 URL <span class="box">data:text/html,<span class="var"><b>[32 CompareVersionsHTML]</b></span></span>&#12288;&#187;</button>
+<button class=" inside" id="m34">
+34 Get Contents of Web Page at <span class="box"><span class="var"><b>[33 URL]</b></span></span>&#12288;&#187; <i>35</i> <span class="magic" onclick="magictap(38)">38</span></button>
+<button class="button gLoop nonbottom inside" id="m35">
+35 If <span class="box"><span class="var"><b>[34 Contents of Web Page]</b></span></span> <span class="box">is</span> <span class="box">NoChanges</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="button gDocuments inside" id="m36">
+36 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">[Eᴍʙᴇᴅ-ᴀ-Uᴘᴅᴀᴛᴇ] No updates are available at this time.</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m37">
+37 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gLoop nonbottom inside" id="m38">
+38 If <span class="box"><span class="magic" onclick="magictap(34)"><b>[34 Contents of Web Page]</b></span></span> <span class="box">is</span> <span class="box">RollbackAvailable</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="button gDocuments inside" id="m39">
+39 Text</button>
+	<div class="content inside">
+		<div class="col2">A rollback is available: <span class="var"><b>[LocalData</b> as Dictionary.Version<b>]</b></span> ↘ <span class="magic" onclick="magictap(29)"><b>[29 Remote</b> as Dictionary.Version<b>]</b></span></div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m40">
+40 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m41">
+41 Text</button>
+	<div class="content inside">
+		<div class="col2">An update is available: <span class="var"><b>[LocalData</b> as Dictionary.Version<b>]</b></span> → <span class="magic" onclick="magictap(29)"><b>[29 Remote</b> as Dictionary.Version<b>]</b></span></div></div></div>
+<button class="gLoop nontop inside" id="m42">
+42 End If&#12288;&#187;</button>
+<button class="button gLoop nonbottom inside" id="m43">
+43 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2"><span class="var"><b>[42 IfResult]</b></span>
+
+<span class="magic" onclick="magictap(29)"><b>[29 Remote</b> as Dictionary.Notes<b>]</b></span>
+
+Update checking with [Eᴍʙᴇᴅ-ᴀ-Uᴘᴅᴀᴛᴇ]</div></div>
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">["Install <span class="magic" onclick="magictap(29)"><b>[29 result</b> as Dictionary.Version<b>]</b></span>",
+Later]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m44">
+44 Menu Item <span class="box">Install result (Version)</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">MenuItemAttributedTitle</div>
+			<div class="col2">Install <span class="magic" onclick="magictap(29)"><b>[29 result</b> as Dictionary.Version<b>]</b></span></div></div>
+<button class=" inside" id="m45">
+45 URL <span class="box">https://routinehub.co/download/<span class="magic" onclick="magictap(29)"><b>[29 Remote</b> as Dictionary.id<b>]</b></span></span>&#12288;&#187; <i>46</i> <span class="magic" onclick="magictap(47)">47</span></button>
+<button class="button  inside" id="m46">
+46 Open URL <span class="box"><span class="var"><b>[45 URL]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-WFInput</div>
+			<div class="col2">true</div></div></div>
+<button class="gScripting inside" id="m47">
+47 Stop and Output <span class="box"><span class="magic" onclick="magictap(45)"><b>[45 URL]</b></span></span></button></div>
+<button class="button gLoop nonbottom nontop inside" id="m48">
+48 Menu Item <span class="box">Not now</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m49">
+49 End Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div></div></div>
+<button class="gLoop nontop inside" id="m50">
+50 End If&#12288;▵<span class="magic" onclick="magictap(37)">37</span></button></div>
+<button class="button gLoop nonbottom nontop inside" id="m51">
+51 Otherwise&#12288;▵<span class="magic" onclick="magictap(30)">30</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gScripting inside" id="m52">
+52 Show Alert</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AlertActionCancelButtonShown</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">AlertActionMessage</div>
+			<div class="col2">Could not check for updates because of a RoutineHub error.</div></div>
+		<div class="row"><div class="col1">AlertActionTitle</div>
+			<div class="col2"></div></div></div></div>
+<button class="gLoop nontop inside" id="m53">
+53 End If</button></div>
+<button class="gLoop nontop inside" id="m54">
+54 End If&#12288;▵<span class="magic" onclick="magictap(27)">27</span></button></div>
+<button class="gLoop nontop inside" id="m55">
+55 End Repeat Times&#12288;▵<span class="magic" onclick="magictap(19)">19</span></button></div>
+<button class="gLoop nontop" id="m56">
+56 End If&#12288;▵<span class="magic" onclick="magictap(18)">18</span></button>
+<button class="button gScripting" id="m57">
+57 Ask for Text Input&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">AskActionPrompt</div>
+			<div class="col2">Enter first few letters of shortcut name or entire name</div></div></div>
+<button class="gVariable" id="m58">
+58 Set Variable <span class="box">sc_filter</span> to <span class="box"><span class="var"><b>[57 Provided Input]</b></span></span></button>
+<button class="" id="m59">
+59 Get My Shortcuts&#12288;&#187;</button>
+<button class="button gLoop nonbottom" id="m60">
+60 Repeat with Each in <span class="box"><span class="var"><b>[59 My Shortcuts]</b></span></span></button>
+	<div class="content contentloop">
+<button class="gScripting inside" id="m61">
+61 Get Name of <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187;</button>
+<button class="button gLoop nonbottom inside" id="m62">
+62 If <span class="box"><span class="var"><b>[61 Name]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[sc_filter]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="gVariable inside" id="m63">
+63 Add <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Variable <span class="box">results</span></button></div>
+<button class="gLoop nonbottom nontop inside" id="m64">
+64 Otherwise</button>
+	
+<button class="gLoop nontop inside" id="m65">
+65 End If</button></div>
+<button class="gLoop nontop" id="m66">
+66 End Repeat with Each</button>
+<button class="button gScripting" id="m67">
+67 Choose from List <span class="box"><span class="var"><b>[results]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Select previous version of shortcut</div></div></div>
+<button class="gVariable" id="m68">
+68 Set Variable <span class="box">scPrevious</span> to <span class="box"><span class="var"><b>[67 Chosen Item]</b></span></span></button>
+<button class="button gLoop nonbottom" id="m69">
+69 Repeat with Each in <span class="box"><span class="var"><b>[results]</b></span></span></button>
+	<div class="content contentloop">
+<button class="gLoop nonbottom inside" id="m70">
+70 If <span class="box"><span class="var"><b>[Repeat Item</b> as Shortcut’s Name<b>]</b></span></span> <span class="box">is</span> <span class="box"><span class="var"><b>[scPrevious]</b></span></span></button>
+	
+<button class="button gLoop nonbottom nontop inside" id="m71">
+71 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="gVariable inside" id="m72">
+72 Add <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Variable <span class="box">results_</span></button></div>
+<button class="gLoop nontop inside" id="m73">
+73 End If</button></div>
+<button class="gLoop nontop" id="m74">
+74 End Repeat with Each</button>
+<button class="button gScripting" id="m75">
+75 Choose from List <span class="box"><span class="var"><b>[results_]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Select new version of shortcut</div></div></div>
+<button class="gVariable" id="m76">
+76 Set Variable <span class="box">scCurrent</span> to <span class="box"><span class="var"><b>[75 Chosen Item]</b></span></span></button>
+<button class="button gScripting" id="m77">
+77 Set Name of <span class="box"><span class="var"><b>[scPrevious]</b></span></span> to <span class="box"><span class="var"><b>[scPrevious</b> as Shortcut’s Name<b>]</b></span>.plist</span> <b>&#12288;➔ scPrevious</b>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">DontIncludeFileExtension</div>
+			<div class="col2">true</div></div></div>
+<button class="gDocuments" id="m78">
+78 Get Text from <span class="box"><span class="var"><b>[77 scPrevious]</b></span></span>&#12288;&#187;</button>
+<button class="gVariable" id="m79">
+79 Set Variable <span class="box">scPrevious_xml</span> to <span class="box"><span class="var"><b>[78 Text]</b></span></span></button>
+<button class="button gDocuments" id="m80">
+80 Match Text <span class="box">(?&lt;=\&lt;key\>WFWorkflowActionIdentifier\&lt;\/key\>\n\t\t\t\&lt;string\>)(.*)(?=\&lt;\/string\>)</span> in <span class="box"><span class="var"><b>[scPrevious_xml]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">MatchTextCaseSensitive</div>
+			<div class="col2">true</div></div></div>
+<button class="button gLoop nonbottom" id="m81">
+81 Repeat with Each in <span class="box"><span class="var"><b>[80 Matches]</b></span></span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m82">
+82 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2"><span class="var"><b>[Repeat Item]</b></span></div></div>
+<button class="button gDocuments inside" id="m83">
+83 Replace Text <span class="box">(?:com\.)|(?:is\.workflow\.actions\.)|(?:net\.)|(?:io\.)|(?:app\.)</span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[82 Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ReplaceTextCaseSensitive</div>
+			<div class="col2">false</div></div></div>
+<button class="gVariable inside" id="m84">
+84 Add <span class="box"><span class="var"><b>[83 Updated Text]</b></span></span> to Variable <span class="box">scPrevious_matches</span></button></div>
+<button class="gLoop nontop" id="m85">
+85 End Repeat with Each</button>
+<button class="button gLoop nonbottom" id="m86">
+86 Repeat with Each in <span class="box"><span class="var"><b>[scPrevious_matches]</b></span></span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m87">
+87 Text&#12288;&#187; <span class="magic" onclick="magictap(89)">89</span> <span class="magic" onclick="magictap(90)">90</span> <span class="magic" onclick="magictap(93)">93</span></button>
+	<div class="content inside">
+		<div class="col2"><span class="var"><b>[Repeat Item]</b></span></div></div>
+<button class="gScripting inside" id="m88">
+88 Get Dictionary <span class="box">All Keys</span> in <span class="box"><span class="var"><b>[dictionary</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="button gLoop nonbottom inside" id="m89">
+89 If <span class="box"><span class="var"><b>[88 Dictionary Value</b> as Text<b>]</b></span></span> <span class="box">contains</span> <span class="box"><span class="magic" onclick="magictap(87)"><b>[87 Text]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m90">
+90 Get Dictionary Value for <span class="box"><span class="magic" onclick="magictap(87)"><b>[87 Text]</b></span></span> in <span class="box"><span class="var"><b>[dictionary</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gVariable inside" id="m91">
+91 Add <span class="box"><span class="var"><b>[90 Dictionary Value</b> as Text<b>]</b></span></span> to Variable <span class="box">scPrevious_values</span></button></div>
+<button class="button gLoop nonbottom nontop inside" id="m92">
+92 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="gVariable inside" id="m93">
+93 Add <span class="box"><span class="magic" onclick="magictap(87)"><b>[87 Text]</b></span></span> to Variable <span class="box">scPrevious_values</span></button></div>
+<button class="gLoop nontop inside" id="m94">
+94 End If</button></div>
+<button class="gLoop nontop" id="m95">
+95 End Repeat with Each</button>
+<button class="button gLoop nonbottom" id="m96">
+96 Repeat with Each in <span class="box"><span class="var"><b>[scPrevious_values]</b></span></span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m97">
+97 Replace Text <span class="box">(\n)</span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ReplaceTextCaseSensitive</div>
+			<div class="col2">false</div></div></div>
+<button class="button gDocuments inside" id="m98">
+98 Replace Text <span class="box">(\&lt;\/string\>)</span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[97 Updated Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ReplaceTextCaseSensitive</div>
+			<div class="col2">false</div></div></div>
+<button class="button gDocuments inside" id="m99">
+99 Replace Text <span class="box">(\n)</span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[98 Updated Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ReplaceTextCaseSensitive</div>
+			<div class="col2">false</div></div></div>
+<button class="button gDocuments inside" id="m100">
+100 Replace Text <span class="box">.</span> with <span class="box"> </span> in <span class="box"><span class="var"><b>[99 Updated Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ReplaceTextCaseSensitive</div>
+			<div class="col2">false</div></div></div>
+<button class="button gDocuments inside" id="m101">
+101 Combine Text <span class="box"><span class="var"><b>[100 Updated Text]</b></span></span> with <span class="box">Spaces</span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="gVariable inside" id="m102">
+102 Add <span class="box"><span class="var"><b>[101 Combined Text]</b></span></span> to Variable <span class="box">scPrevious_actions</span></button></div>
+<button class="gLoop nontop" id="m103">
+103 End Repeat with Each</button>
+<button class="button gScripting" id="m104">
+104 Set Name of <span class="box"><span class="var"><b>[scCurrent]</b></span></span> to <span class="box"><span class="var"><b>[scCurrent</b>’s Name<b>]</b></span>.plist</span> <b>&#12288;➔ scCurrent</b>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">DontIncludeFileExtension</div>
+			<div class="col2">true</div></div></div>
+<button class="gDocuments" id="m105">
+105 Get Text from <span class="box"><span class="var"><b>[104 scCurrent]</b></span></span>&#12288;&#187;</button>
+<button class="gVariable" id="m106">
+106 Set Variable <span class="box">scCurrent_xml</span> to <span class="box"><span class="var"><b>[105 Text]</b></span></span></button>
+<button class="button gDocuments" id="m107">
+107 Match Text <span class="box">(?&lt;=\&lt;key\>WFWorkflowActionIdentifier\&lt;\/key\>\n\t\t\t\&lt;string\>)(.*)(?=\&lt;\/string\>)</span> in <span class="box"><span class="var"><b>[scCurrent_xml]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">MatchTextCaseSensitive</div>
+			<div class="col2">true</div></div></div>
+<button class="button gLoop nonbottom" id="m108">
+108 Repeat with Each in <span class="box"><span class="var"><b>[107 Matches]</b></span></span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m109">
+109 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2"><span class="var"><b>[Repeat Item]</b></span></div></div>
+<button class="button gDocuments inside" id="m110">
+110 Replace Text <span class="box">(?:com\.)|(?:is\.workflow\.actions\.)|(?:net\.)|(?:io\.)|(?:app\.)</span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[109 Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ReplaceTextCaseSensitive</div>
+			<div class="col2">true</div></div></div>
+<button class="gVariable inside" id="m111">
+111 Add <span class="box"><span class="var"><b>[110 Updated Text]</b></span></span> to Variable <span class="box">scCurrent_matches</span></button></div>
+<button class="gLoop nontop" id="m112">
+112 End Repeat with Each</button>
+<button class="button gLoop nonbottom" id="m113">
+113 Repeat with Each in <span class="box"><span class="var"><b>[scCurrent_matches]</b></span></span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m114">
+114 Text&#12288;&#187; <span class="magic" onclick="magictap(116)">116</span> <span class="magic" onclick="magictap(117)">117</span> <span class="magic" onclick="magictap(120)">120</span></button>
+	<div class="content inside">
+		<div class="col2"><span class="var"><b>[Repeat Item]</b></span></div></div>
+<button class="gScripting inside" id="m115">
+115 Get Dictionary <span class="box">All Keys</span> in <span class="box"><span class="var"><b>[dictionary</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="button gLoop nonbottom inside" id="m116">
+116 If <span class="box"><span class="var"><b>[115 Dictionary Value</b> as Text<b>]</b></span></span> <span class="box">contains</span> <span class="box"><span class="magic" onclick="magictap(114)"><b>[114 Text]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m117">
+117 Get Dictionary Value for <span class="box"><span class="magic" onclick="magictap(114)"><b>[114 Text]</b></span></span> in <span class="box"><span class="var"><b>[dictionary</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gVariable inside" id="m118">
+118 Add <span class="box"><span class="var"><b>[117 Dictionary Value</b> as Text<b>]</b></span></span> to Variable <span class="box">scCurrent_values</span></button></div>
+<button class="button gLoop nonbottom nontop inside" id="m119">
+119 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="gVariable inside" id="m120">
+120 Add <span class="box"><span class="magic" onclick="magictap(114)"><b>[114 Text]</b></span></span> to Variable <span class="box">scCurrent_values</span></button></div>
+<button class="gLoop nontop inside" id="m121">
+121 End If</button></div>
+<button class="gLoop nontop" id="m122">
+122 End Repeat with Each</button>
+<button class="button gLoop nonbottom" id="m123">
+123 Repeat with Each in <span class="box"><span class="var"><b>[scCurrent_values]</b></span></span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m124">
+124 Replace Text <span class="box">[\n]</span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ReplaceTextCaseSensitive</div>
+			<div class="col2">false</div></div></div>
+<button class="button gDocuments inside" id="m125">
+125 Replace Text <span class="box">[\.]</span> with <span class="box"> </span> in <span class="box"><span class="var"><b>[124 Updated Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ReplaceTextRegularExpression</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ReplaceTextCaseSensitive</div>
+			<div class="col2">false</div></div></div>
+<button class="button gDocuments inside" id="m126">
+126 Combine Text <span class="box"><span class="var"><b>[125 Updated Text]</b></span></span> with New Lines&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="gVariable inside" id="m127">
+127 Add <span class="box"><span class="var"><b>[126 Combined Text]</b></span></span> to Variable <span class="box">scCurrent_actions</span></button></div>
+<button class="gLoop nontop" id="m128">
+128 End Repeat with Each</button>
+<button class="" id="m129">
+129 Count Items in <span class="box"><span class="var"><b>[scPrevious_actions]</b></span></span>&#12288;&#187;</button>
+<button class="gVariable" id="m130">
+130 Set Variable <span class="box">scPrevious_actionsCount</span> to <span class="box"><span class="var"><b>[129 Count]</b></span></span></button>
+<button class="" id="m131">
+131 Count Items in <span class="box"><span class="var"><b>[scCurrent_actions]</b></span></span>&#12288;&#187;</button>
+<button class="gVariable" id="m132">
+132 Set Variable <span class="box">scCurrent_actionsCount</span> to <span class="box"><span class="var"><b>[131 Count]</b></span></span></button>
+<button class="button gLoop nonbottom" id="m133">
+133 If <span class="box"><span class="var"><b>[scPrevious_actionsCount]</b></span></span> <span class="box">&gt;</span> <span class="box"><span class="var"><b>[scCurrent_actionsCount]</b></span></span></button>
+	<div class="content contentloop">
+<button class="gVariable inside" id="m134">
+134 Set Variable <span class="box">moreActions</span> to <span class="box"><span class="var"><b>[scPrevious_actions]</b></span></span></button>
+<button class="gVariable inside" id="m135">
+135 Set Variable <span class="box">fewerActions</span> to <span class="box"><span class="var"><b>[scCurrent_actions</b> as Text<b>]</b></span></span></button>
+<button class="gVariable inside" id="m136">
+136 Set Variable <span class="box">endPoint</span> to <span class="box"><span class="var"><b>[scPrevious_actionsCount</b> as Number<b>]</b></span></span></button>
+<button class=" inside" id="m137">
+137 Calculate <span class="box"><span class="var"><b>[scCurrent_actionsCount]</b></span></span> + <span class="box">1</span>&#12288;&#187;</button>
+<button class="gVariable inside" id="m138">
+138 Set Variable <span class="box">additionalItemsStart</span> to <span class="box"><span class="var"><b>[137 Calculation Result]</b></span></span></button>
+<button class="gVariable inside" id="m139">
+139 Set Variable <span class="box">name</span> to <span class="box"><span class="var"><b>[scPrevious</b> as Shortcut’s Name<b>]</b></span></span></button></div>
+<button class="button gLoop nonbottom nontop" id="m140">
+140 Otherwise</button>
+	<div class="content contentloop">
+<button class="gVariable inside" id="m141">
+141 Set Variable <span class="box">moreActions</span> to <span class="box"><span class="var"><b>[scCurrent_actions</b> as Text<b>]</b></span></span></button>
+<button class="gVariable inside" id="m142">
+142 Set Variable <span class="box">fewerActions</span> to <span class="box"><span class="var"><b>[scPrevious_actions]</b></span></span></button>
+<button class="gVariable inside" id="m143">
+143 Set Variable <span class="box">endPoint</span> to <span class="box"><span class="var"><b>[scCurrent_actionsCount]</b></span></span></button>
+<button class=" inside" id="m144">
+144 Calculate <span class="box"><span class="var"><b>[scPrevious_actionsCount]</b></span></span> + <span class="box">1</span>&#12288;&#187;</button>
+<button class="gVariable inside" id="m145">
+145 Set Variable <span class="box">additionalItemsStart</span> to <span class="box"><span class="var"><b>[144 Calculation Result]</b></span></span></button>
+<button class="gVariable inside" id="m146">
+146 Set Variable <span class="box">name</span> to <span class="box"><span class="var"><b>[scCurrent</b>’s Name<b>]</b></span></span></button></div>
+<button class="gLoop nontop" id="m147">
+147 End If</button>
+<button class="button gLoop nonbottom" id="m148">
+148 Repeat with Each in <span class="box"><span class="var"><b>[fewerActions</b> as Text<b>]</b></span></span></button>
+	<div class="content contentloop">
+<button class="gScripting inside" id="m149">
+149 Get List <span class="box">Item At Index</span> <span class="box"><span class="var"><b>[Repeat Index]</b></span></span> from <span class="box"><span class="var"><b>[moreActions</b> as Text<b>]</b></span></span>&#12288;&#187; <i>150</i> <span class="magic" onclick="magictap(153)">153</span></button>
+<button class="button gLoop nonbottom inside" id="m150">
+150 If <span class="box"><span class="var"><b>[149 Item from List</b> as Text<b>]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2"><span class="var"><b>[Repeat Item</b> as Text<b>]</b></span></div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2"><span class="var"><b>[Repeat Item</b> as Text<b>]</b></span></div></div>
+<button class="gVariable inside" id="m151">
+151 Add <span class="box"><span class="var"><b>[Repeat Item</b> as Text<b>]</b></span></span> to Variable <span class="box">noChange</span></button></div>
+<button class="button gLoop nonbottom nontop inside" id="m152">
+152 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m153">
+153 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">&lt;div class="item">
+&lt;h2>Action <span class="var"><b>[Repeat Index]</b></span>&lt;/h2>
+&lt;h3 class="versions">Previous:&amp;nbsp;&lt;span class="value"><span class="var"><b>[Repeat Item]</b></span>&lt;/span>&lt;/h3>
+
+&lt;h3 class="versions">Current:&amp;nbsp;&lt;span class="value"><span class="magic" onclick="magictap(149)"><b>[149 Item from List]</b></span>&lt;/span>&lt;/h3>
+&lt;/div></div></div>
+<button class="gVariable inside" id="m154">
+154 Add <span class="box"><span class="var"><b>[153 Text]</b></span></span> to Variable <span class="box">changes</span></button></div>
+<button class="gLoop nontop inside" id="m155">
+155 End If</button></div>
+<button class="gLoop nontop" id="m156">
+156 End Repeat with Each</button>
+<button class="gLoop nonbottom" id="m157">
+157 If <span class="box"><span class="var"><b>[scPrevious_actionsCount]</b></span></span> <span class="box">is</span> <span class="box"><span class="var"><b>[scCurrent_actionsCount]</b></span></span></button>
+	
+<button class="button gLoop nonbottom nontop" id="m158">
+158 Otherwise</button>
+	<div class="content contentloop">
+<button class="gScripting inside" id="m159">
+159 Get List <span class="box">Items in Range</span> <span class="box"><span class="var"><b>[additionalItemsStart]</b></span></span> to <span class="box"><span class="var"><b>[endPoint]</b></span></span> from <span class="box"><span class="var"><b>[moreActions]</b></span></span>&#12288;&#187;</button>
+<button class="button gLoop nonbottom inside" id="m160">
+160 Repeat with Each in <span class="box"><span class="var"><b>[159 Item from List]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gLoop nonbottom inside" id="m161">
+161 If <span class="box"><span class="var"><b>[Repeat Index 0]</b></span></span> <span class="box">is</span> <span class="box">1</span></button>
+	<div class="content contentloop inside">
+<button class="gVariable inside" id="m162">
+162 Set Variable <span class="box">actionNumber</span> to <span class="box"><span class="var"><b>[additionalItemsStart]</b></span></span></button></div>
+<button class="button gLoop nonbottom nontop inside" id="m163">
+163 Otherwise</button>
+	<div class="content contentloop inside">
+<button class=" inside" id="m164">
+164 Calculate <span class="box"><span class="var"><b>[actionNumber]</b></span></span> + <span class="box">1</span>&#12288;&#187;</button>
+<button class="gVariable inside" id="m165">
+165 Set Variable <span class="box">actionNumber</span> to <span class="box"><span class="var"><b>[164 Calculation Result]</b></span></span></button></div>
+<button class="gLoop nontop inside" id="m166">
+166 End If</button>
+<button class="button gDocuments inside" id="m167">
+167 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">&lt;li><span class="var"><b>[actionNumber]</b></span>.&amp;nbsp;&amp;nbsp;<span class="var"><b>[Repeat Item 0]</b></span>&lt;/li></div></div>
+<button class="gVariable inside" id="m168">
+168 Add <span class="box"><span class="var"><b>[167 Text]</b></span></span> to Variable <span class="box">additionalItems</span></button></div>
+<button class="gLoop nontop inside" id="m169">
+169 End Repeat with Each</button>
+<button class="button gDocuments inside" id="m170">
+170 Combine Text <span class="box"><span class="var"><b>[additionalItems]</b></span></span> with New Lines&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="gVariable inside" id="m171">
+171 Set Variable <span class="box">additionalItems</span> to <span class="box"><span class="var"><b>[170 Combined Text]</b></span></span></button>
+<button class="button gDocuments inside" id="m172">
+172 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">&lt;div id="add-ctr">
+&lt;h2>&lt;span style="color:#fb8122;font-size:17px;font-weight:500;font-family:"Lato", sans-serif;">Additional Actions in <span class="var"><b>[name]</b></span>&lt;/h2>
+&lt;h4>Starting at Action <span class="var"><b>[additionalItemsStart]</b></span>&lt;/h4>
+&lt;ul style="margin-left: -20px;list-style-type: none;list-style-position: outside">
+<span class="var"><b>[additionalItems]</b></span>
+&lt;/ul>
+&lt;/div></div></div>
+<button class="gVariable inside" id="m173">
+173 Set Variable <span class="box">additionalItems</span> to <span class="box"><span class="var"><b>[172 Text]</b></span></span></button></div>
+<button class="gLoop nontop" id="m174">
+174 End If&#12288;▵<span class="magic" onclick="magictap(158)">158</span></button>
+<button class="button gDocuments" id="m175">
+175 Combine Text <span class="box"><span class="var"><b>[changes]</b></span></span> with New Lines&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="button gDocuments" id="m176">
+176 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">&lt;div id="body-ctr"><span class="var"><b>[175 Combined Text]</b></span>&lt;/div></div></div>
+<button class="button gDocuments closed" id="m177">
+177 Text&#12288;&#187;</button>
+	<div class="content" style="display:none">
+		<div class="col2">&lt;html>
+ &lt;head>
+  &lt;title>sc diff&lt;/title>
+  &lt;meta charset="UTF-8" />
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  &lt;style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&amp;family=Open+Sans:wght@300;400;500;600&amp;family=Poppins:wght@100;300;400;500;600&amp;family=Permanent+Marker:wght@400&amp;display=swap');
+
+body {
+    max-width: 350px;
+    max-height: 1000px;
+    height: 825px;
+    background: #001730;
+    overflow-x: hidden !important;
+}
+   
+img {
+  transform: scale(0.8);
+}
+	#heading-ctr {
+		display: block;
+		position: relative;
+		width: 100%;
+		margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+	}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 33px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  text-transform: none;
+  color: #fb8122;
+ }
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: left;
+  letter-spacing: -0.5px;
+  color: #fff;
+  margin: 0 0 0 0;
+}
+
+#subtitle {
+  background: linear-gradient(135deg, rgba(245,220,6,1) 20%, rgba(156,0,255,1) 85%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: 13.5px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+  #tagline {
+background: -webkit-linear-gradient(90deg, hsla(55, 96%, 69%, 1) 0%, hsla(41, 97%, 64%, 1) 50%, hsla(343, 88%, 63%, 1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+h4 {
+  font-family: “Poppins”, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: -0.5px;
+  text-transform: capitalize;
+  text-decoration: none;
+  line-height: normal;
+  color: #FEC200;
+  margin: 0 0 0 0;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    color: #fff;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: normal;
+}
+
+  #body-ctr {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: left;
+   }
+
+a {
+  color: #f8f8ff;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  bottom: 0;
+  margin-top: 5px;
+}
+
+li {
+ color: #fff;
+font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: normal;
+}
+
+.action {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #fec200;
+ line-height: 1;
+ margin-top: 0;
+}
+
+.versions {
+  font-family:"Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fec200;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 5px;
+ }
+  
+.value { 
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.item {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#add-ctr {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+    display: block;
+    position: relative;
+    margin: 99% auto 0 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+   }
+
+#ftr-txt {
+    font-family: "Open Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 300;
+    color: #f8f8ff;
+    text-align: center;
+   }
+
+  &lt;/style>
+ &lt;/head>
+ &lt;body>
+   &lt;div id="heading-ctr">
+  &lt;img src="https://i.imgur.com/yio3zDy.jpg" style="height: 70px;width: 80%;text-align: center;">&lt;/div>
+<span class="var"><b>[176 Text]</b></span>
+<span class="var"><b>[additionalItems]</b></span>
+&lt;/div>
+&lt;footer>
+	&lt;p id="ftr-txt">Page created with &lt;a href="https://routinehub.co/shortcut/6124/">PromoKit&lt;/a>&lt;br>&amp;#169;2021 &lt;a href="https://routinehub.co/user/Mr.T-Wrecks">Mr.T-Wrecks🦖&lt;/a>&lt;/p>
+&lt;/footer>
+ &lt;/body>
+&lt;/html></div></div>
+<button class="button gScripting" id="m178">
+178 Base64 Encode <span class="box"><span class="var"><b>[177 Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">Base64LineBreakMode</div>
+			<div class="col2">None</div></div></div>
+<button class="" id="m179">
+179 URL <span class="box">data:text/html;base64,<span class="var"><b>[178 Base64 Encoded]</b></span></span>&#12288;&#187;</button>
+<button class="button " id="m180">
+180 Open URL <span class="box"><span class="var"><b>[179 URL]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-WFInput</div>
+			<div class="col2">true</div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

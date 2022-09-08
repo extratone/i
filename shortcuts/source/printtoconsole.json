@@ -1,0 +1,78 @@
+{
+	"WFWorkflowMinimumClientVersionString": "900",
+	"WFWorkflowMinimumClientVersion": 900,
+	"WFWorkflowIcon": {
+		"WFWorkflowIconStartColor": 2071128575,
+		"WFWorkflowIconGlyphNumber": 61440
+	},
+	"WFWorkflowClientVersion": "1200",
+	"WFWorkflowOutputContentItemClasses": [],
+	"WFWorkflowHasOutputFallback": false,
+	"WFWorkflowActions": [
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.getdevicedetails",
+			"WFWorkflowActionParameters": {
+				"WFDeviceDetail": "Device Model",
+				"UUID": "1F5E566C-B825-43A5-9AEA-DF88193AD7F3"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Type": "Variable",
+					"Variable": {
+						"Value": {
+							"OutputUUID": "1F5E566C-B825-43A5-9AEA-DF88193AD7F3",
+							"Type": "ActionOutput",
+							"OutputName": "Device Model"
+						},
+						"WFSerializationType": "WFTextTokenAttachment"
+					}
+				},
+				"WFControlFlowMode": 0,
+				"WFConditionalActionString": "iPad",
+				"GroupingIdentifier": "D6317B75-A2C7-4A0A-9440-FBB5257D3289",
+				"WFCondition": 4
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"GroupingIdentifier": "D6317B75-A2C7-4A0A-9440-FBB5257D3289",
+				"WFControlFlowMode": 1
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"GroupingIdentifier": "D6317B75-A2C7-4A0A-9440-FBB5257D3289",
+				"WFControlFlowMode": 2
+			}
+		}
+	],
+	"WFWorkflowInputContentItemClasses": [
+		"WFAppStoreAppContentItem",
+		"WFArticleContentItem",
+		"WFContactContentItem",
+		"WFDateContentItem",
+		"WFEmailAddressContentItem",
+		"WFFolderContentItem",
+		"WFGenericFileContentItem",
+		"WFImageContentItem",
+		"WFiTunesProductContentItem",
+		"WFLocationContentItem",
+		"WFDCMapsLinkContentItem",
+		"WFAVAssetContentItem",
+		"WFPDFContentItem",
+		"WFPhoneNumberContentItem",
+		"WFRichTextContentItem",
+		"WFSafariWebPageContentItem",
+		"WFStringContentItem",
+		"WFURLContentItem"
+	],
+	"WFWorkflowImportQuestions": [],
+	"WFWorkflowTypes": [],
+	"WFQuickActionSurfaces": [],
+	"WFWorkflowHasShortcutInputVariables": false
+}
