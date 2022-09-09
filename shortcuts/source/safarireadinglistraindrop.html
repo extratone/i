@@ -1,0 +1,270 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>SafariReadingListRaindrop</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">SafariReadingListRaindrop</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1200",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 431817727,
+   "WFWorkflowIconGlyphNumber": 59714
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFTextActionText",
+      "ActionIndex": <span class="magic" onclick="magictap(1)"><b>1</b></span>,
+      "Text": "Set Raindrop developer authorization token. (Required)",
+      "DefaultValue": "00000000-0000-0000-0000-000000000000"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFTextActionText",
+      "ActionIndex": <span class="magic" onclick="magictap(3)"><b>3</b></span>,
+      "Text": "Set target Raindrop collection ID. (Not currently working, sorry.)",
+      "DefaultValue": "00000000"
+   }
+],
+"WFWorkflowInputContentItemClasses": [],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowNoInputBehavior": {
+   "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+   "Parameters": {}
+},
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "NCWidget"
+]
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Transfer URLs from your native Reading List to Raindrop.
+
+*Please note: this Shortcut requires iOS/iPadOS 16 Beta.*
+
+*This shortcut is currently in beta, also, because the collection-specific portion of its functionality is not working properly. I'm working on troubleshooting it, sorry.*
+
+My contact information:
+
+Email: davidblue@extratone.com
+Contact card: bit.ly/whoisdavidblue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone/i
+Telegram: t.me/extratone
+Twitter: twitter.com/NeoYokel
+Reddit: reddit.com/u/asphaltapostle
+Mastodon: mastodon.social/@DavidBlue
+EVERYWHERE: bit.ly/dbrolodex</div></div>
+<button class="button gDocuments" id="m1">
+1 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">00000000-0000-0000-0000-000000000000</div></div>
+<button class="gVariable" id="m2">
+2 Set Variable <span class="box">Auth Token</span> to <span class="box"><span class="var"><b>[1 Text]</b></span></span></button>
+<button class="button gDocuments" id="m3">
+3 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">00000000</div></div>
+<button class="gVariable" id="m4">
+4 Set Variable <span class="box">Collections</span> to <span class="box"><span class="var"><b>[3 Text]</b></span></span></button>
+<button class="button " id="m5">
+5 URL <span class="box">https://davidblue.wtf/audio/ios/caf/acknowledgment_received.caf</span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-WFURLActionURL</div>
+			<div class="col2">true</div></div></div>
+<button class="button " id="m6">
+6 Get Contents of URL <span class="box"><span class="var"><b>[5 URL]</b></span></span>&#12288;&#187; <span class="magic" onclick="magictap(12)">12</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">ShowHeaders</div>
+			<div class="col2">true</div></div></div>
+<button class="gUnknown" id="m7">
+7 com.apple.mobilesafari.ReadingListItemEntity&#12288;&#187;</button>
+<button class="button gLoop nonbottom" id="m8">
+8 Repeat with Each in <span class="box"><span class="var"><b>[7 Reading List Items]</b></span></span></button>
+	<div class="content contentloop">
+<button class="gVariable inside" id="m9">
+9 Set Variable <span class="box">cleanurl</span> to <span class="box"><span class="var"><b>[Repeat Item</b>’s url<b>]</b></span></span></button>
+<button class="button  inside" id="m10">
+10 URL <span class="box">https://api.raindrop.io/rest/v1/raindrop</span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-WFURLActionURL</div>
+			<div class="col2">true</div></div></div>
+<button class="button  inside" id="m11">
+11 Get Contents of URL <span class="box"><span class="var"><b>[10 URL]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">HTTPHeaders</div>
+			<div class="col2">{  "Authorization": "Bearer <span class="var"><b>[Auth Token]</b></span>",
+   "Content-Type": "application/json; charset=utf-8"
+}</div></div>
+		<div class="row"><div class="col1">ShowHeaders</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">JSONValues</div>
+			<div class="col2">{  "collections": [
+      "<span class="var"><b>[Collections</b> as Number<b>]</b></span>"
+   ],
+   "link": "<span class="var"><b>[cleanurl</b> as URL<b>]</b></span>",
+   "title": "<span class="var"><b>[Repeat Item</b>’s title<b>]</b></span>"
+}</div></div>
+		<div class="row"><div class="col1">HTTPMethod</div>
+			<div class="col2">POST</div></div></div>
+<button class=" inside" id="m12">
+12 Play Sound <span class="box"><span class="magic" onclick="magictap(6)"><b>[6 Contents of URL]</b></span></span></button></div>
+<button class="gLoop nontop" id="m13">
+13 End Repeat with Each</button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

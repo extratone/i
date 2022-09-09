@@ -1,0 +1,93 @@
+{
+	"WFWorkflowMinimumClientVersionString": "900",
+	"WFWorkflowMinimumClientVersion": 900,
+	"WFWorkflowIcon": {
+		"WFWorkflowIconStartColor": 2071128575,
+		"WFWorkflowIconGlyphNumber": 61440
+	},
+	"WFWorkflowClientVersion": "1200",
+	"WFWorkflowOutputContentItemClasses": [],
+	"WFWorkflowHasOutputFallback": false,
+	"WFWorkflowActions": [
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.number",
+			"WFWorkflowActionParameters": {
+				"WFNumberActionNumber": "50",
+				"UUID": "FE412A6C-2DBE-4ECA-B459-D7873811E968"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+			"WFWorkflowActionParameters": {
+				"UUID": "511A5BCF-33A5-451E-ABC0-395945665046"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": {
+					"Value": {
+						"string": "\uFFFC",
+						"attachmentsByRange": {
+							"{0, 1}": {
+								"OutputUUID": "511A5BCF-33A5-451E-ABC0-395945665046",
+								"Type": "ActionOutput",
+								"OutputName": "My Shortcuts"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				},
+				"UUID": "935C4D18-BA59-4A9F-8F50-43D15ABC2BA4"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+			"WFWorkflowActionParameters": {
+				"WFContentItemInputParameter": {
+					"Value": {
+						"OutputUUID": "935C4D18-BA59-4A9F-8F50-43D15ABC2BA4",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFContentItemLimitEnabled": true,
+				"WFContentItemSortProperty": "File Size",
+				"WFContentItemLimitNumber": {
+					"Value": {
+						"OutputUUID": "FE412A6C-2DBE-4ECA-B459-D7873811E968",
+						"Type": "ActionOutput",
+						"OutputName": "Number"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFContentItemSortOrder": "Biggest First"
+			}
+		}
+	],
+	"WFWorkflowInputContentItemClasses": [
+		"WFAppStoreAppContentItem",
+		"WFArticleContentItem",
+		"WFContactContentItem",
+		"WFDateContentItem",
+		"WFEmailAddressContentItem",
+		"WFFolderContentItem",
+		"WFGenericFileContentItem",
+		"WFImageContentItem",
+		"WFiTunesProductContentItem",
+		"WFLocationContentItem",
+		"WFDCMapsLinkContentItem",
+		"WFAVAssetContentItem",
+		"WFPDFContentItem",
+		"WFPhoneNumberContentItem",
+		"WFRichTextContentItem",
+		"WFSafariWebPageContentItem",
+		"WFStringContentItem",
+		"WFURLContentItem"
+	],
+	"WFWorkflowImportQuestions": [],
+	"WFWorkflowTypes": [],
+	"WFQuickActionSurfaces": [],
+	"WFWorkflowHasShortcutInputVariables": false
+}

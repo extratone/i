@@ -1,0 +1,420 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>SiriSpeechSynthesis16</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">SiriSpeechSynthesis16</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1200",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 463140863,
+   "WFWorkflowIconGlyphNumber": 61440
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [],
+"WFWorkflowMinimumClientVersion": 1106,
+"WFWorkflowMinimumClientVersionString": "1106",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gScripting" id="m0">
+0 Ask for Text Input&#12288;&#187; <span class="magic" onclick="magictap(4)">4</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">AskActionDefaultAnswer</div>
+			<div class="col2">Lewis Hamilton: The F1 Superstar on Controversies, Racism, and His Future</div></div>
+		<div class="row"><div class="col1">AskActionPrompt</div>
+			<div class="col2">Set (spoken) Title</div></div></div>
+<button class="button gScripting" id="m1">
+1 Ask for Text Input&#12288;&#187; <span class="magic" onclick="magictap(4)">4</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">AskActionDefaultAnswer</div>
+			<div class="col2">Chris Heath</div></div>
+		<div class="row"><div class="col1">AskActionPrompt</div>
+			<div class="col2">Set (spoken) Byline</div></div></div>
+<button class="button gScripting" id="m2">
+2 Ask for <span class="box">Date</span> Input&#12288;&#187; <span class="magic" onclick="magictap(4)">4</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">AskActionDefaultAnswer</div>
+			<div class="col2">Chris Heath</div></div>
+		<div class="row"><div class="col1">AskActionPrompt</div>
+			<div class="col2">Set (spoken) Date of Publication</div></div>
+		<div class="row"><div class="col1">AskActionDefaultAnswerDate</div>
+			<div class="col2"><span class="var"><b>[CurrentDate</b>{"Date Style":"Medium","WFISO8601IncludeTime":false,"Time Style":"None"}<b>]</b></span></div></div></div>
+<button class="" id="m3">
+3 Get Clipboard</button>
+<button class="button gDocuments closed" id="m4">
+4 Text&#12288;&#187;</button>
+	<div class="content" style="display:none">
+		<div class="col2"><span class="magic" onclick="magictap(0)"><b>[0 Provided Input]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Provided Input]</b></span>
+<span class="magic" onclick="magictap(2)"><b>[2 Provided Input</b>{"Date Style":"Medium","WFISO8601IncludeTime":false,"Time Style":"None"}<b>]</b></span>
+...
+**When** **Lewis Hamilton** became a Formula 1 driver, success came quickly, but an easy sense of belonging did not.
+
+“I didn’t feel like I was welcome,” he tells me. “I didn’t feel like I was accepted. God knows how many of these drivers say: ‘This is not what a Formula 1 driver is. That’s not how you behave. This is not how you do it. Tattoos? No! A Formula 1 driver doesn’t have tattoos! A Formula 1 driver doesn’t have a personality—and piercings!’ ”
+
+Hamilton carried on regardless, doing things his own way, and it can’t be said to have worked out too badly. He is now one of most famous athletes on earth, even more so since Netflix’s documentary series [*Formula 1:* *Drive to Survive*](https://www.vanityfair.com/style/2022/03/netflix-drive-to-survive-and-the-new-cult-of-f1-fandom) brought his sport to a new audience, particularly in the U.S. He has won a record-equaling seven world championships, and when it comes to driving cars like these around 200 miles an hour, some would argue he’s the best there’s ever been.
+
+![092022-LewisHamilton-tout](https://user-images.githubusercontent.com/43663476/185517170-6e2554fa-0cbb-4efa-b678-868634e9e606.jpg)
+
+*Clothing by **Valentino;** earrings by **Greg Yüna;** necklaces by **Mikimoto** (bottom) and **XIV Karats.** - Photograph by Adrienne Raquel; styled by Eric McNeal.*3
+
+That’s not to say that, even now, everything is always smooth or straightforward. There is a tattoo arcing across the top of Hamilton’s chest that reads Powerful Beyond Measure. The words are taken from a longer quote by the writer Marianne Williamson: “Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness, that most frightens us.” “I read it, and I thought it was one of the greatest sayings ever,” Hamilton says. “We limit ourselves the majority of the time. And where it really hit me hard is: We should never have to dim our light in order to make others feel….” He pauses, gathers himself. “If anything, we should shine as bright as we can to liberate others to do the same. I live my life by that quote. For so long in my life, I felt like I was dimming my light because I felt uncomfortable.”
+
+Given all that he has achieved, it might be reasonable to imagine that any lingering tensions between his need for individual self-expression and his sport’s diktats and conventions would have been ironed out or dissipated long ago. Reasonable, but quite wrong. This season, for instance, a conflict has blown up with Hamilton over his jewelry. There has been a rule on the books, it turns out, since 2005—a couple of years before Hamilton’s first race in Formula 1—forbidding drivers from wearing jewelry in the cars, for safety reasons. But until now, there appears to have been no attempt to enforce it. Hamilton, who habitually races with two earrings and a nose piercing, was recently told that he must remove them going forward. “People love to have power,” he says. “And to enforce power.”
+
+I ask him whether this feels as though it is particularly directed toward him.
+
+“I mean, yeah,” he replies. “Because I’m the only one that has jewelry on, really.”
+
+Aware that the issue was coming to a head, Hamilton attended a press conference before the Miami Grand Prix in May wearing—in an act of playful mockery and protest—rings on every finger, multiple chains, and three watches. “I just put on as much as I could,” he says. He announced that, if need be, he would refuse to race rather than remove his race-day jewelry, and also upped the ante—and sent the internet bubbling—with this comment: “As I said, I can’t remove at least two of them. One, I can’t really explain where it is.”
+
+&lt;iframe width="auto" height="auto" src="https://www.youtube.com/embed/c0OCN2Spu9w?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+
+This, Hamilton now insists, was flippant provocation. “I was just fucking with it,” he says, laughing. “I don’t have any other piercings anywhere. But I love that there’s this thinking: Shit, has he got his balls pierced?”
+
+In subsequent races, he removed his earrings, but his nose stud was fused in place and could not be removed, then reinserted, at will. When I first speak to him, he has been granted a temporary exemption. If that expires, a decision will have to be made, and he would clearly prefer to stand firm.
+
+“Since I was a kid—*rules,*” he says, shaking his head. “I’ve never loved being told what to do.”
+
+**The first time** we meet, it is for lunch at a Moroccan restaurant, Cafe Mogador, in Manhattan’s East Village, across town from an apartment he owns here. Hamilton orders the hummus and falafel. “I used to look at hummus and I was like, ‘No way would I ever eat hummus!’ ” he says. “And I love it now. It’s my go-to thing every day.” Just one totem, it will become clear, of his relentless search for a better way.
+
+Hamilton, who’s 37, tells me that veganism wasn’t even on his radar when he was growing up just north of London. He’s now been plant-based for about five years, a change triggered by a vegan friend he met in New York who opened his eyes to the realities of food production. The physical demands of elite racing are extreme, and doctors advised him that he would struggle to get enough protein. Instead he found his energy levels smoothing out and his skin clearing up. “I mean, I’ve won five world titles since then,” he points out. “I’ve been more consistent than I ever was in the past. So it just takes proving people wrong. And that’s what I did.”
+
+Proving people wrong has been a persistent theme in Hamilton’s life. “Look, when I was at school, I was dyslexic and struggling like hell,” he says, “and one of the only few Black kids in my school, being put in the lowest classes and never given a chance to progress or even helped to progress. Teachers were telling me, ‘You’re never going to be nothing.’ I remember being behind the shed, in tears, like, ‘I’m not going to be anything.’ And believing it for a split second.” Even today, he can still list the specific teachers who reinforced this message. It was, he says, “the most demotivating thing to hear—especially when you witness them doing the complete opposite with your white counterparts.” Still, he talks about it now as though their cruelty and indifference became a kind of gift: “I don’t actually hold any grudge against those people, because they fueled me up.”
+
+Hamilton’s improbable ascendancy began even as he floundered at school. From six, he proved himself a wunderkind at guiding remote-controlled cars—beating adults and appearing on British TV. At eight, he demonstrated a similar aptitude for karting before graduating to progressively more powerful cars. By 12, his parents, who had split when he was two (his mother is white, his father Black), agreed that he should live with his father, who could best nurture his evident talent. His father worked three or four jobs, and all of the family’s money went into supporting the prodigy.
+
+Hamilton says that from the first time he drove a go-kart, he couldn’t wait to do it again. “Firstly, it’s like having a superpower,” he says. “I couldn’t be Superman, but that was like your cloak. When I got in the car, I put a helmet on, and I wasn’t seen any different. You can’t see my skin color. You just see me as a driver. And I was able to do things that others weren’t able to do. And it didn’t matter how big the other kids were, I could still beat them.”
+
+There had never been a Black Formula 1 driver, and the sport’s participants generally came from far more privileged backgrounds than his. But when he was 13, he was offered a contract, a place in the driver development program for a Formula 1 team, McLaren, which offered a potential path to his goal. Then, just after his 16th birthday, something happened that seemed likely to derail it all.
+
+One day, an ugly incident took place at lunchtime in a school bathroom. A classmate of Hamilton’s was severely beaten by six boys. Hamilton was one of many drawn by the commotion but took no part. In the days that followed, as those responsible were identified and punished, Hamilton was called into the headmaster’s office. As Hamilton remembers it, the headmaster told him: “I don’t have the evidence just yet to get rid of you.” “What do you mean?” Hamilton says he retorted. “I didn’t do anything.” A couple of weeks later Hamilton was called back in. “Finally,” the headmaster declared, “I have enough to get rid of you.” Hamilton was said to have kicked the injured boy. He was expelled, with immediate effect.
+
+Walking home, Hamilton felt as though everything might be over: the racing contract, his future, all of it. “The one thing I had to do was just finish school, and I couldn’t even do that,” he says. He momentarily considered whether it was even worth facing his father. How, he wondered, did one flee the country? “I remember shaking like a leaf, telling my dad,” Hamilton says. “And him asking me: Did I do it? I remember telling him, ‘I didn’t do it, Dad. I wouldn’t do that. It’s just not part of who I am.’ And he said, ‘Okay.’ ”
+
+His father contacted other families, whose kids verified Hamilton’s account, then doggedly fought for his son’s exoneration. Months later, the decision would be overturned, the record corrected. Hamilton’s racing contract was unaffected. But he never went back to the school.
+
+In 2020, on the final lap of the race that would confirm Hamilton’s pivotal seventh title, he says that much of this history flashed before his eyes: “Just all these past experiences, all the doubts that I had to overcome. It was one of the most emotional experiences of my life. That’s why I said, ‘This is to all those kids out there…’ ” Over the headset, as he slowed down after the finish line, viewers could hear his voice breaking up with emotion. His exact words: *That’s for all the kids out there who dream the impossible.*
+
+“I would just always have, in the back of my mind, people telling me that ‘you’re never going to be able to achieve that.... There’s no way you’re going to do this,’ ” he says.
+
+**In the autobiography** *Lewis Hamilton: My Story,* published in 2007 after his first year in Formula 1, Hamilton declared, “For me, race is not an issue at all.” This, he now says, was the stance he was encouraged to take.
+
+“Those early years, we were just always trying to fit in,” he says. “My dad’s just: Don’t talk about that, just blend in.”
+
+His perspective evolved over time, but the greatest change came in response to the racial upheavals in the spring and summer of 2020. Partly, it was that Hamilton felt compelled, on principle, to speak out and take a stand. “I’ve always wondered: Why me? Why am I the only? Out of all the kids in the school, or all the other young Black kids in Black communities, how is it us that stumbled across it and got into it? And not only got in there, but why am I as good as I am? Why am I wired the way I am? And I feel like there’s a much bigger picture.”
+
+But what was happening out in the world had also unexpectedly reawakened some memories.
+
+“There’s a lot of feelings that I suppressed at the time that I didn’t even realize that I suppressed—emotions and feelings that I had when I was younger—and it all came up,” he says. The casual racist abuse he would face, for instance, in his go-karting days, particularly when he’d travel to Italy and France. “There was a lot of the N-word going around,” he says. Other times, it was more than words. One day when he was 11 or 12, Hamilton was walking to the shops in Newcastle where his mother and stepfather then lived. He was daydreaming, singing under his breath, thinking about the Mr. Kipling chocolate cakes he wanted to buy. He didn’t even really notice the two of them—a father and son—until they attacked. In a blink, they had him on the ground and were kicking him, shouting “Go back to your country.”
+
+“Even today,” he says, “I remember how terrifying it was. I really, really couldn’t understand it. It was like, ‘Are they talking to me? I’m from here. What do they mean?’ I could never understand it. When you’re being attacked, there’s this fear—there’s fear, and there’s anger as well because you want to get them back for the pain that they’re causing you.”
+
+Moments like this he kept to himself. “I never spoke about it to my parents,” he says. “I didn’t speak about it to my mum—I didn’t think she’d understand. And my dad, I was probably too scared to tell my dad, because I didn’t want him to think I was a wuss. You know, I didn’t want him to think I couldn’t defend myself. I just remember a lot of times just being alone, just in tears in my room.”
+
+In 2020, Hamilton led his sport’s reaction to these troubled times—for instance, successfully encouraging most of his fellow drivers to take a knee, persuading his team to rebrand its cars in a new black paint job, and accepting his winner’s trophy at a grand prix in Italy in September 2020 wearing a T-shirt emblazoned with the words: ARREST THE COPS WHO KILLED BREONNA TAYLOR. As he noted later, maybe a little tartly, “In the 70 years of our sport, no one’s ever stood up there for anything but themselves.” Perhaps predictably, a ruling was subsequently issued that drivers on the podium must only display team attire.
+
+Hamilton has continued to take more concrete steps. A research group he set up, the Hamilton Commission, issued a report examining in detail the structural reasons for Black underrepresentation in all parts of U.K. motorsport and identifying potential remedies. In its wake, he launched a foundation, Mission 44, the mission in question being “to support, champion, and empower young people from underserved groups to succeed through narrowing opportunity gaps in education, employment, and wider society.” In conversation, these are themes he refers to constantly.
+
+**No need to** look too far for other clues to Hamilton’s eventual post-racing life, given how many other things he has managed to do alongside driving—which is another way he has defied the orthodoxy of his sport. When he agreed to join his current team, Mercedes, in 2013, Hamilton says that he told them how it would be: “This is who I am. These are things I like to do. Don’t ever try to control me in that respect. I’m going to give everything to this, and I’m going to help you win championships. And I’m going to show you that being different is not a bad thing for your brand.”
+
+Conventional wisdom was that drivers should be early to bed during racing season and shy from all other distractions. Hamilton’s chosen way was different. Eyebrows were raised, for instance, when he was part of a Tommy Hilfiger fashion show in New York, followed by a big party—“The best party of Fashion Week,” he notes—then flew to Singapore for his next race. He knew it would be seen as a test: “If I’m going to be doing these other things, I’ve also got to show up and do it, and be the shit. And I did the best lap I’d ever put together. And people were like ‘How the fuck does he do it?’ ”
+
+Hamilton’s interest in fashion is an enduring one, both in creating clothes for others and as personal style, the latter closely followed by his fans. The reason I can tell you precisely what he wore when we met in New York—Nahmias Miracle Academy trucker hat, Louis Vuitton printed flower drop shoulders T-shirt, Storia sunglasses, Ami Paris Alex straight-leg jeans, Off White Vulcanized high-top sneakers—is neither because I recognize them nor because Hamilton itemizes them for me. It is because any time there is a public photographic record—he had posted an Instagram Story of himself that morning reflected in his building’s elevator mirrors—acolytes immediately deconstruct and analyze the day’s outfit. Beginning in 2018, Hamilton designed a handful of collections in partnership with Hilfiger.
+
+“I saw it as a bit of an internship,” he says. Recently, as well as looking to help “young Black creatives coming up that are overlooked, particularly in the fashion space,” he’s been considering his own brand and talks about how important it is to him that it be fully sustainable. “There’s not many big Black-owned brands out there,” he says. “And why not?”
+
+Hamilton’s business interests extend in multiple directions; conversation with him is punctuated with statements like “I’m growing into a space of becoming an entrepreneur, really looking into planet-friendly start-ups.” A vegan restaurant in London, Neat Burger, is now expanding into the U.S. with Leonardo DiCaprio recently coming on board as a partner. And there is also Hollywood. Hamilton is one of the producers of a Formula 1 movie to be directed by *Top Gun: Maverick* director Joseph Kosinski and produced by (and featuring) Brad Pitt. Hamilton has met with Pitt and arranged for him to tour the factories in Britain where 2,000 people are united in the sole task of creating this year’s Formula 1 car for Mercedes. Hamilton has also been vetting the storytelling for authenticity: “To hear the B.S. that’s in the script because the Americans that are writing it are just getting newly accustomed to Formula 1.”
+
+Hamilton doesn’t expect to act alongside Pitt in this film—he feels it might be too clichéd for him to appear in a racing movie—but he has dipped his toes previously, doing a cameo in *Zoolander 2* and lending his voice in *Cars 2* and *Cars 3.* And, it turns out, he nearly took on something much more substantial a while back. “Basically I’m a friend of Tom,” Hamilton says. “Cruise,” he adds. (In person, Hamilton is low-key and unshowy, and I meet a group of friends around him who seem very down-to-earth, but it’s also evident how comfortably he runs with the famous.) “One of the nicest people you’ll ever meet,” Hamilton says of Cruise. “He invited me to his set years ago when he was doing *Edge of Tomorrow,* and then we just built a friendship over time.” As a child, Hamilton saw the original *Top Gun* and fixated on becoming a fighter pilot. “So when I heard the second one was coming out, I was like, ‘Oh, my God, I have to ask him,’ ” he says. “I said, ‘I don’t care what role it is. I’ll even sweep something, be a cleaner in the back.’ ” Cruise said yes. And Hamilton was not to be a cleaner; he was to be one of the fighter pilots. Then reality set in. Filming would have taken place during the climax of the Formula 1 season, and Hamilton knew he couldn’t countenance turning up on set without having done every last piece of preparation. “I’m a perfectionist,” he says. There just wasn’t time. Reluctantly, he contacted Cruise and Kosinski—“The most upsetting call that I think I’ve ever had”—to let them know.
+
+Finally, there is music. “I love music so much,” he says. “I would say music saves me every single day.” For years, Hamilton has been writing and recording his own, and has periodically intimated that he might soon share it publicly. Aside from the occasional Instagram snippet and one other almost accidental exception, he has yet to do so. The almost accidental exception was his guest appearance on Christina Aguilera’s 2018 album *Liberation.* Hamilton rented a studio in New York and wrote and recorded his contribution to the libidinal song “Pipe” in three hours. No one was supposed to know it was him; he wanted people to hear it without prejudgment: “People say: ‘Lewis Hamilton’s doing music? Oh, I’m sure that’s going to suck.’ It’s only when they hear stuff that I do, then they’re like, ‘Oh, you’re actually pretty good.’ ” But although he was credited as XNDA, his real name was inadvertently included in the songwriting credits. He wouldn’t confirm that it was him for some time, but the secret was pretty much out.
+
+**To get a** true sense of who Lewis Hamilton is in 2022, you need to understand something that happened to him in Abu Dhabi on December 12, 2021.
+
+Before this final race of the Formula 1 season, Hamilton and the much younger Dutch firebrand Max Verstappen were tied on points. Whoever finished ahead of the other in Abu Dhabi would become champion—and if it was Hamilton, he would be the first man in history to win eight world championships. With five laps to go, Hamilton was leading Verstappen by 11 seconds. Barring a random puncture or a sudden engine failure, it was hard to imagine what could go wrong. And hard to believe as it did.
+
+“You see things start to unfold,” he says, remembering, “and my worst fears came alive. I was like, there’s no way they’re going to cheat me out of this. There’s no way. That won’t happen. Surely not.”
+
+To explain in detail the subsequent series of events, initially triggered by another car’s accident, would be baffling to anyone not steeped in the world of safety cars, pit stops, differential tire wear, and unlapping procedures. But the crucial part is this: To anyone who understood F1 rules and protocols, Hamilton now seemed destined to win in a rather anticlimactic ceremonial procession. But that didn’t happen. Instead, the race director appeared to improvise a ruling under the intense pressure of the moment, one without precedent, which allowed for one final lap of superficially competitive racing. It was a lap Hamilton would have no realistic prospect of winning because Verstappen, now right behind him with fresh tires, could easily overtake him. That’s exactly what happened. After an inquiry weeks later, the race director transferred from his post—the official report stated that what had happened was human error made in good faith, but the rules were clarified and updated to ensure this wouldn’t happen again. The result stood.
+
+I ask Hamilton how he felt as he got out of the car.
+
+“I don’t know if I can really put into words the feeling that I had,” he replies. “I do remember just sitting there just in disbelief. And realizing I’ve got to undo my belts, I’ve got to get out of there, I’ve got to climb out of this thing, I’ve got to find the strength. I had no strength. And it was one of the toughest moments, I would say, that I’ve had in a long, long time.”
+
+I suggest to him that he must have felt cheated.
+
+“I knew what had happened. I knew what decisions had been made and why. Yes, I knew that something wasn’t right.”
+
+When he did get out of the car, his father was standing there. Such is the bubble of preparation and focus before races that Hamilton didn’t even know whether his father was in Abu Dhabi. Over the years, their relationship has had its difficult moments: Hamilton never fails to credit everything his father did to make his career possible, but there was an awkward schism after his first burst of Formula 1 success when Hamilton decided that he needed to go it alone professionally, and told his father that he just wanted him to be his father. It had taken time, but that day in Abu Dhabi, that’s who his father was.
+
+“He embraced me, and I think he was like, ‘I want you to know how proud I am of you.’ Having your father embrace you in that way is one of the most profound things I’ve ever…” Hamilton trails off. “Especially as you’ve grown up not many times having that.”
+
+**Hamilton’s close friend** Mellody Hobson was also in Abu Dhabi that day. Hobson is a hugely successful business leader, the current chairwoman of Starbucks and soon-to-be part owner of the Denver Broncos. She first met Hamilton when her motor-racing enthusiast husband-to-be, George Lucas, took her to the Monaco Grand Prix in 2007, telling her how “a rookie Black driver had just broken into the top ranks for the first time in the sport’s 70-year history.” Hamilton considers Hobson a big sister, a mentor, and, generally, “one of the most inspiring women I’ve ever met in my life.” Part of what they share is the experience of what he describes as being “the first and only one” to achieve what they’ve achieved.
+
+“We’ve bonded over that,” Hobson agrees. “I remember he gave this interview with Gayle King on the CBS morning show a couple of years ago, and he said, ‘Being the first and only Black anything is a proud and lonely walk.’ And I literally stopped. I had chills and sort of welled up. I knew exactly: proud and lonely…. It’s how it feels.”
+
+Hobson had not told Hamilton that she and her husband were coming to Abu Dhabi, and they were carefully kept out of his sight the whole weekend. “George kept saying to me,” Hobson explains, “ ‘There’s nothing worse than when you’re in the last days of your movie and you’re totally behind and your family shows up—it’s the worst.’ ” But after what Hobson characterizes as “the horrible act,” she and Lucas saw him. “He’s really stunned,” she remembers. “Stunned. Like shock. He’s asking the same question over and over again: ‘What happened?’ I grabbed him by both shoulders. I was like, ‘You did everything right.’ I kept saying that to him. I said, ‘It wasn’t you. You did everything right.’ And he just literally said, like four or five times: ‘What happened?’ ”
+
+Hamilton apologized for her coming all that way just to see him lose. “That’s why we came,” she told him. “In case you lost. We didn’t come in case you won.”
+
+It would have been understandable—expected, almost—if, when Hamilton got out of his car in Abu Dhabi he had been raging, shouting, declaiming the unfairness of it all. “Like, no one would have been surprised if he had taken off his helmet and thrown it,” says Hobson. “Or thrown the steering wheel.”
+
+But that is not what Hamilton did. As his friend Tom Brady, who was standing in front of his TV, watching what he calls “just the craziest of all crazy endings,” observes, “He handled it as gracefully as anyone possibly could imagine.” There would be no public venting of any kind. Instead, Hamilton walked over to the declared victor, Verstappen, shook his hand, and congratulated him. Watching this, Lucas—a man who has a fairly notable history when it comes to the subject he was about to speak of—leaned over to Hobson and said: “Heroes are bigger than champions. Lewis just earned hero status.”
+
+Hamilton learned about this comment soon after, but for a long while he couldn’t really hear it. “Look, I was going through whatever emotions I was going through, so no one could say anything to me,” he remembers. “It doesn’t matter who. It doesn’t really matter what is said. When you’re feeling a certain way, sometimes it’s hard to break through.” But, in time, he took it in. “It’s one of the greatest compliments you could receive,” he says. Also: “It is very, very surreal to grow up watching *Star Wars* and have Yoda’s dad say positive things about you.”
+
+![092022-LewisHamilton-embed-06](https://user-images.githubusercontent.com/43663476/185517097-cd5aac00-9c95-4ceb-90b6-74c7cde0595a.jpg)
+
+*Custom tuxedo by **Giorgio Armani Made to Measure;** shirt and tie by **Giorgio Armani;** earrings by **Greg Yüna.** - Photograph by Adrienne Raquel; styled by Eric McNeal.*
+
+Hamilton was publicly silent for several weeks after Abu Dhabi, and there was widespread speculation that he was done with racing—that he would walk away. “I, for sure, considered whether I wanted to continue,” he confirms. “He was in a dark place,” says Hobson, explaining how she had asked him to join her and Lucas for Christmas in the Caribbean. When Hamilton demurred, she told him that if he didn’t come, she would go to him; in the end, he came. Everyone there was instructed not to bring up what had happened, but many mornings he and Hobson found the other awake at dawn. “And that’s when we spent a lot of time sort of going in and debriefing,” she says. “And I just kept telling him things like: We make no decisions in times of great anguish or pain. You have to just sit with this, and it’s going to be hard and uncomfortable. But there’s nothing to be done at this moment. So do nothing.”
+
+Hobson told him that she would support him if he didn’t go back but also shared her belief that “this is what you do, and you’re not done.” The Olympic fencer Miles Chamley-Watson, one of Hamilton’s closest friends since they first hung out a few years ago at the Met Gala—“He was sat between Madonna and Rihanna,” Hamilton says, “and I remember looking at him: ‘Who *is* that?’ ”—was another of those who gathered around him after Abu Dhabi. “I knew that he needed me just as his mate to just get him out of the mindset,” Chamley-Watson says, adding that he never doubted what Hamilton would do. “If you know him, you know that man is not going to stop until he wants to finish. Not because somebody else made him stop.”
+
+**A week after** our New York lunch, Hamilton and I are supposed to meet at what I’ve been told is one of his favorite restaurants, in the French village of Èze, not too far from his Monaco home. But arrangements somehow go awry. “I’ve never been here before,” he says as we are led to a table at a terrace where the expansive views over the Mediterranean are breathtaking, but where he is also surrounded by unknown others in fairly close proximity. When you are as famous as Hamilton is in most of the world, you learn to avoid these situations. “This is more exposed than I normally am,” he notes. “We’ll see how it goes.” As we talk, his voice is often so quiet that my recorder can barely pick it up, as though he feels constrained by the surroundings. When he orders a latte with oat milk, the waiter, seemingly baffled by his presence, asks him the awkward and fairly unanswerable question: “Is that the real you?”
+
+We talk a little about Hamilton’s life. In the first half of his Formula 1 career, he was in a relationship with ex–Pussycat Dolls singer Nicole Scherzinger for several years, their every perceived up and down relentlessly tracked by the British tabloid media. Whatever private life he has had since then, he has mostly kept to himself. “I learned the hard way,” he says. “I learned the hard way.” But then he also tells me—“I haven’t talked about it much”—that there haven’t been any long relationships in recent years. “I’m really just super focused on work,” he says. “I’ve realized that I can’t do two things or three things at once, I’ve got to focus on one.” Furthermore, he adds, “I really wanted to go through a growth process of getting myself to a point where I’m happy on my own, comfortable in my space. So that if I ever do meet someone, it’s an addition, rather than ‘I need you in my life.’ ”
+
+As with most lives lived under such close scrutiny, in Hamilton’s there have been occasional wrinkles. He has long had a sturdy social media communion—his present Instagram followership is more than 29 million—but not everything has always landed as he’d hoped it might. We discuss one particularly difficult moment. On Christmas Day 2017, he posted to the world what was presumably intended as a cute and amusing 12-second video in which he sits with his nephew, who’s wearing a purple-and-pink dress and brandishing a wand with a fluffy pink heart at its end. “Why are you wearing a princess dress?” Hamilton asks the boy, who is laughing. “Is this what you got for Christmas? Why did you ask for a princess dress for Christmas? Boys don’t wear princess dresses!”
+
+The world’s response was swift. Hamilton was condemned for gender shaming and other insensitivities. A typical forceful riposte: “Go stick your toxic masculinity up your arse.”
+
+“That was so stupid,” he tells me of what he did. “I realized that a lot of my upbringing was coming out. I went with just an ignorant moment. And I straightaway realized that that’s not actually how I feel deep inside.” By the next day, he had deleted the post; by the end of the week he had deleted his entire Instagram history. “I’m just not the kind of person that wants to ever hurt anybody,” he says. “And the idea that I could have hurt somebody through a stupid post or just from something I said, again through ignorance, just reminded me of how I had felt from the experiences that I had had. And I was like, how am I projecting that? I realized that was wrong. And so then finding ways of not necessarily undoing it, but showing that community that I support them. It’s difficult in today’s world. It’s difficult to undo things.”
+
+Hamilton is fond of adages like “It’s not how you fall, it’s how you get back up,” and he seems to use them less as glib catchphrases to brandish when convenient and more as serious guides to better living. In this instance, he apologized, fully and clearly, for the mistake he had made and the hurt he had caused. Privately, he took it upon himself to educate himself. He posed in a kilt on the cover of British *GQ* and, inside, gave a self-lacerating interview. He also went to Disneyland Paris with some of his extended family. Beforehand, Hamilton’s nephew had asked to go to the store to buy another princess dress. “I was like, let’s go,” says Hamilton. And that was how the two of them came to walk hand in hand—Hamilton and his nephew in his brand-new dress—through Disneyland.
+
+“What’s crazy is,” he reflects now, “you have to learn something from a six-year-old.”
+
+Our conversation aside, the meal here doesn’t go too well. Surveying the menu, Hamilton realizes that there is more or less nothing he can eat. He orders the asparagus. Some time later it arrives, garnished with some kind of egg and crouton topping. He patiently explains that his diet doesn’t allow for this. The waiter nods, promising to return with “virgin asparagus.”
+
+Some further time passes before a plate of asparagus arrives.
+
+“This,” the waiter declares with a flourish, “is without eggs.”
+
+Hamilton surveys the delicately drizzled greenery placed in front of him.
+
+“But,” he points out, with restrained politeness, “it’s got mayonnaise.”
+
+And with that, he gives up. He drinks another latte and suggests that we go for a drive.
+
+**Lewis Hamilton is** behind the wheel and I am his passenger. This experience is not entirely as you might expect. First, there’s the car we are in. He knows that people expect him to have some kind of cool sports car, and he did have cars like that when he was younger. But these days his vehicle of choice for trips like this is a tiny electric Smart car, made by his team’s parent company, Mercedes. Second, on open roads, Hamilton is an achingly sensible and careful driver, never speeding and frequently pulling over to let impatient drivers pass. Third, as he explains, he actually doesn’t like driving. Not this kind, the kind the rest of us do, with traffic in two directions, and pedestrians, and junctions, and nothing clear-cut to prove. In fact, he rarely does it. “I just think that I find it stressful,” he says. “I try not to do things that don’t add to my life.” And then he adds—a statement said with sincerity—“Look, we’re on these roads, anything can happen.”
+
+After a while, we find ourselves in the outskirts of Nice, down toward the harbor. “This is now stressful for me,” he says. “This road is crazy. So much going on here. I’m going to turn around in a second.”
+
+On the racing track, he tells me, he doesn’t feel fear, and he also searches out experiences like skydiving, rock climbing, and surfing. And yet, even in the most controlled minds, fear and logic may sometimes lead each other in the most unpredictable of dances. We all have our vulnerabilities. That’s why, when Hamilton travels to Australia, he prefers to get a hotel room on one of the higher floors, and when he gets into the room, he will often check around the toilet. “I do,” he tells me. “It’s pathetic, but I do.” The reason? “Oh God, spiders,” he says. Some Australian spiders are notoriously deadly, but even if he sees a picture of a spider on a screen, Hamilton can’t look at it. He credits his fear to the time as a kid when his sister made him watch the movie *Arachnophobia.* He knows, given everything else that he does so dauntlessly, that it might seem odd. “People say: ‘Dude! You drive around at 200 miles an hour!’ And I’m like, in terms of fear factor, that’s easy for me. I guess we’re just all wired differently.”
+
+Back in the mountains, well away from the city, Hamilton selects increasingly narrow and winding roads until he turns down one that seems little more than a track. I quietly wonder whether this is a terrible idea—I can see us hitting a tight dead end and having to back out, or getting stuck entirely—but his instincts are good. We twist back and forth down the edge of a slope through a secret world of incredible houses perched above the sea. It reminds him of how, a while back, he went for a ride round here one night on his motorbike. He just wanted to “get away from everything” and ended up on a road like this. He stopped, turned off his lights—and was astonished to discover that he was surrounded by fireflies. He’d only ever seen them in animated movies.
+
+![092022-LewisHamilton-embed-07](https://user-images.githubusercontent.com/43663476/185517361-e15add37-59a0-41d7-8dea-baec51fa7b07.jpg)
+
+*Throughout: hair products by **Ampro Pro Styl;** grooming products by **Evolve Organic Beauty.** - Photograph by Adrienne Raquel; styled by Eric McNeal.*
+
+**In the movie** version of the Lewis Hamilton story, he would have returned this season after the painful fiasco at the end of the last and—the bloodied boxer rising from the canvas—dominated every race. But it hasn’t worked out like that. Every few years, Formula 1 teams are obliged to design almost completely new cars to a revised set of specifications. Mercedes was expected to excel at this challenge, but for 2022 it got something wrong. At high speeds, the new car repeatedly moved up and down. The cute name given to this, “porpoising,” belies the unpleasantness of the experience—“The worst characteristic I’ve ever experienced in a car,” Hamilton says—and its catastrophic effect on competitiveness.
+
+After he finished 13th in a race in April, chatter grew once again that he would walk away. People seemed to assume that his pride wouldn’t be able to take this. In response, he was silent for a few days. Then he posted an imposing backlit image of himself in the team’s tire garage, with this message: *Working on my masterpiece, I’ll be the one to decide when it’s finished.*
+
+“A lot of people out there are shit talkers,” he tells me. “If I let those words—those projections people are putting out, those little digs—if I let that bring me down, then they win.”
+
+Toward the end of May, when I join nearly 122,000 other spectators watching the Spanish Grand Prix in Barcelona, there is, at last, some restrained optimism around Hamilton’s team that the car’s worst problems have been overcome. As usual on race weekends, Hamilton spends his time not on the track sequestered from all the crazy surrounding hullabaloo in his bubble. If this was ever just a “rev it up and give it your best shot” kind of sport, it is no longer: At one point I’m taken up to glimpse the private engineering room where rows of serious-looking people, Hamilton among them, are studying data on the screens in front of them, trying to work out how to maximize every incremental advantage.
+
+Alas, the best-laid plans.... On the first lap, another driver cuts too close to Hamilton and they collide. Hamilton has a puncture. He is able to change his tire, but when he rejoins the race he is 19th. Over the team radio, he sounds momentarily disconsolate, suggesting it might be best to save the engine for another race. His team encourages him to keep pushing: Their data analysis suggests that in this improved car he could still finish eighth and at least earn some world championship points.
+
+And from then, he flies. At times, he is the fastest driver on the track, doing once more what he has done over and over for all these years. “I think he’s an artist,” Brady will tell me later. “I think when he sees the racetrack, he sees it different than everyone else does. Like any great athlete, you have your unique way of doing things—everyone else looks at something one way and you look at it a different way. And you create strategies and you execute under pressure in ways that other people can’t. I just think he probably sees lines on the track no one else can see.”
+
+Today, Hamilton finishes fifth, but afterward he is bubbling. To do that from where he was felt like a win. “I was \[thinking\], these guys are crazy—they’re smoking something,” he says of the advice after the collision. “There’s no way I can come from 30 seconds behind dead last.” Things are turning around. “We’re definitely going to get a win this year. That’s something I couldn’t have told you before the race. So it feels great.”
+
+Hamilton has another year on his contract, which people have assumed may offer a natural end point for a driver his age who’s achieved all that he has. Assume all you like.
+
+“I’ll be lying if I said that I hadn’t thought about extending,” he tells me later. Yes, he’s giving extensive thought to his after-sport life and how he can fulfill a credo to, as he puts it, “live to the max, and live to the best of your ability, help as many people as you can in the time that you have.” But just because he’s making plans for when it’s over doesn’t mean that it is. “I’m still on the mission, I’m still loving driving, I’m still being challenged by it. So I don’t really feel like I have to give it up anytime soon.” Perhaps one further sign of this renewed determination is that when he vies for victory at the British Grand Prix in early July before finishing third, he offers no public explanation for the fact that he is no longer wearing his nose stud.
+
+“Anyone can have a great season,” says Brady. “Anyone can have five great seasons, but it’s really hard to have 10 great seasons or 15 great seasons. That takes different traits, different qualities. A lot of those come from things that have happened in your life that allow you to be motivated over a long period of time.”
+
+“I would say,” echoes Hamilton’s friend Chamley-Watson, “he has nothing to prove but a lot more to accomplish. And I think he’s just going to keep going until the wheels fall off, literally.”
+
+In truth, Hamilton is insulted that, even now, so many people might possibly mistake him for someone who would walk away from a fight.
+
+“But again,” he says, “that’s what they would do.”
+
+Not him.
+
+“I’m built different,” he says. “I mean, I was built for this. It reminds me that people still don’t know me. Even after all these years. People still don’t know. So, all right, I’ll prove you wrong again.”</div></div>
+<button class="button " id="m5">
+5 Make Spoken Audio from <span class="box"><span class="var"><b>[4 Text]</b></span></span>&#12288;&#187; <i>6</i> <span class="magic" onclick="magictap(7)">7</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">SpeakTextVoice</div>
+			<div class="col2">com.apple.ttsbundle.gryphon-neural_damon_en-US_premium</div></div></div>
+<button class="button " id="m6">
+6 Save File <span class="box"><span class="var"><b>[5 Spoken Audio]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Folder</div>
+			<div class="col2">{  "fileLocation": {
+      "relativeSubpath": "Audio",
+      "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+      "crossDeviceItemID": "deviceSpecific:4C59255C-A8E6-454C-8585-DD1E43279D7A:fp:/QYdV2YBnh+FvzsCtA_T_kPpI03yjtf1INlzzgTxN8Rs=/com.apple.FileProvider.LocalStorage//fid=200792",
+      "WFFileLocationType": "LocalStorage"
+   },
+   "filename": "Audio",
+   "displayName": "Audio"
+}</div></div>
+		<div class="row"><div class="col1">AskWhereToSave</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">SaveFileOverwrite</div>
+			<div class="col2">true</div></div></div>
+<button class="" id="m7">
+7 Play Sound <span class="box"><span class="magic" onclick="magictap(5)"><b>[5 Spoken Audio]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
