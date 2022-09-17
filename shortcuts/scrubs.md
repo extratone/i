@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `09012022-061342`
+Updated `09172022-052744`
 
 [**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
@@ -155,6 +155,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 ## Legacy/Drywall Media
 
 - [trent](https://www.icloud.com/shortcuts/7a319d5b68b84fabb8e0c0bea441bb24)
+- [**Joke**](https://www.icloud.com/shortcuts/fc74bb390238409a893e152d094f1d89)
 - [birthday](https://www.icloud.com/shortcuts/4c2c7fd58aa84208bce08b69936aafbf)
 - [WYGD](https://www.icloud.com/shortcuts/fd519a1a72c34a3d8559779826b23353)
 - [Minecraft Flying Tutorial](https://www.icloud.com/shortcuts/a1c368c909c741a2864d0dd747115354)
