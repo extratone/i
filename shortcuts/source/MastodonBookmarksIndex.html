@@ -1,0 +1,356 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Mastodon Bookmarks Index</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gGray { background-color: #404040; }
+	.gGreen { background-color: #305030; }
+	.gYellow { background-color: #505020; }
+	.gOrange { background-color: #504030; }
+	.gRed { background-color: #503030; }
+	.gBlue { background-color: #304050; }
+	.gUnknown { background-color: #305050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">Mastodon Bookmarks Index</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1204.2",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 2071128575,
+   "WFWorkflowIconGlyphNumber": 61458
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFTextActionText",
+      "ActionIndex": <span class="magic" onclick="magictap(7)"><b>7</b></span>,
+      "Text": "Set your Mastodon API Client Access Token. (Required) See: `https://your.instance/settings/applications`",
+      "DefaultValue": "00000000-0000-0000-0000-000000000000"
+   }
+],
+"WFWorkflowInputContentItemClasses": [],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Maintain local indices of your bookmarked Mastodon posts in various formats.
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+Mastodon: https://mastodon.social/@DavidBlue
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="button gYellow" id="m1">
+1 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">mastodon.social</div></div>
+<button class="gOrange" id="m2">
+2 Set Variable <span class="box">instance</span> to <span class="box"><span class="var"><b>[1 Text]</b></span></span></button>
+<button class="" id="m3">
+3 Number <span class="box">999</span>&#12288;&#187;</button>
+<button class="gOrange" id="m4">
+4 Set Variable <span class="box">limit</span> to <span class="box"><span class="var"><b>[3 Number]</b></span></span></button>
+<button class="button gYellow" id="m5">
+5 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">000000000000</div></div>
+<button class="gOrange" id="m6">
+6 Set Variable <span class="box">token</span> to <span class="box"><span class="var"><b>[5 Text]</b></span></span></button>
+<button class="button gBlue" id="m7">
+7 URL <span class="box">https://<span class="var"><b>[instance]</b></span>/api/v1/bookmarks?limit=<span class="var"><b>[limit]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-WFURLActionURL</div>
+			<div class="col2">true</div></div></div>
+<button class="button gGreen" id="m8">
+8 Get Contents of URL <span class="box"><span class="var"><b>[7 URL]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">JSONValues</div>
+			<div class="col2">{}</div></div>
+		<div class="row"><div class="col1">HTTPHeaders</div>
+			<div class="col2">{  "Authorization": "Bearer <span class="var"><b>[token]</b></span>" }</div></div>
+		<div class="row"><div class="col1">ShowHeaders</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">HTTPMethod</div>
+			<div class="col2">GET</div></div>
+		<div class="row"><div class="col1">HTTPBodyType</div>
+			<div class="col2">JSON</div></div></div>
+<button class="button gGray nonbottom" id="m9">
+9 Repeat with Each in <span class="box"><span class="var"><b>[8 Contents of URL]</b></span></span></button>
+	<div class="content contentloop">
+<button class="gOrange inside" id="m10">
+10 Get Dictionary Value for <span class="box">uri</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m11">
+11 Set Variable <span class="box">posturl</span> to <span class="box"><span class="var"><b>[10 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m12">
+12 Get Dictionary Value for <span class="box">created_at</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class=" inside" id="m13">
+13 Get Dates from <span class="box"><span class="var"><b>[12 Dictionary Value]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m14">
+14 Set Variable <span class="box">created</span> to <span class="box"><span class="var"><b>[13 Dates</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span></span></button>
+<button class="gOrange inside" id="m15">
+15 Get Dictionary Value for <span class="box">content</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m16">
+16 Set Variable <span class="box">htmlcontent</span> to <span class="box"><span class="var"><b>[15 Dictionary Value]</b></span></span></button>
+<button class="gBlue inside" id="m17">
+17 Make Rich Text from HTML <span class="box"><span class="var"><b>[htmlcontent]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m18">
+18 Set Variable <span class="box">richcontent</span> to <span class="box"><span class="var"><b>[17 Rich Text from HTML]</b></span></span></button>
+<button class="gBlue inside" id="m19">
+19 Make Markdown from Rich Text <span class="box"><span class="var"><b>[richcontent]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m20">
+20 Set Variable <span class="box">contentmd</span> to <span class="box"><span class="var"><b>[19 Markdown from Rich Text]</b></span></span></button>
+<button class="gOrange inside" id="m21">
+21 Get Dictionary Value for <span class="box">favorites_count</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m22">
+22 Set Variable <span class="box">favorites</span> to <span class="box"><span class="var"><b>[21 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m23">
+23 Get Dictionary Value for <span class="box">reblogs_count</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m24">
+24 Set Variable <span class="box">reblogs</span> to <span class="box"><span class="var"><b>[23 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m25">
+25 Get Dictionary Value for <span class="box">account.url</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m26">
+26 Set Variable <span class="box">userurl</span> to <span class="box"><span class="var"><b>[25 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m27">
+27 Get Dictionary Value for <span class="box">account.acct</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m28">
+28 Set Variable <span class="box">at</span> to <span class="box"><span class="var"><b>[27 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m29">
+29 Get Dictionary Value for <span class="box">id</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m30">
+30 Set Variable <span class="box">id</span> to <span class="box"><span class="var"><b>[29 Dictionary Value]</b></span></span></button>
+<button class="button gUnknown inside" id="m31">
+31 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">mbookmarks.<span class="var"><b>[id]</b></span></div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></div></div></div>
+<button class="gYellow inside" id="m32">
+32 Text&#12288;&#187;</button>
+<button class="gOrange inside" id="m33">
+33 Set Variable <span class="box">attachmentsIndex</span> to <span class="box"><span class="var"><b>[32 Text]</b></span></span></button>
+<button class="gOrange inside" id="m34">
+34 Get Dictionary Value for <span class="box">media_attachments</span> in <span class="box"><span class="var"><b>[Repeat Item</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="button gGray nonbottom inside" id="m35">
+35 Repeat with Each in <span class="box"><span class="var"><b>[34 Dictionary Value]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m36">
+36 Get Dictionary Value for <span class="box">url</span> in <span class="box"><span class="var"><b>[Repeat Item 2]</b></span></span>&#12288;&#187;</button>
+<button class="button gYellow inside" id="m37">
+37 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[![<span class="var"><b>[Repeat Index]</b></span>](<span class="var"><b>[36 Dictionary Value]</b></span>)](<span class="var"><b>[posturl]</b></span>)</div></div>
+<button class="gOrange inside" id="m38">
+38 Add <span class="box"><span class="var"><b>[37 Text]</b></span></span> to Variable <span class="box">attachmentsIndex</span></button></div>
+<button class="gGray nontop inside" id="m39">
+39 End Repeat with Each</button>
+<button class="gYellow inside" id="m40">
+40 Combine Text <span class="box"><span class="var"><b>[attachmentsIndex]</b></span></span> with New Lines&#12288;&#187;</button>
+<button class="gOrange inside" id="m41">
+41 Set Variable <span class="box">attachmentsIndex</span> to <span class="box"><span class="var"><b>[40 Combined Text]</b></span></span></button>
+<button class="button gOrange inside" id="m42">
+42 Dictionary&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">{  "url": "<span class="var"><b>[posturl]</b></span>",
+   "date": "<span class="var"><b>[created]</b></span>",
+   "md": "<span class="var"><b>[contentmd]</b></span>",
+   "html": "<span class="var"><b>[htmlcontent]</b></span>",
+   "@": "<span class="var"><b>[at]</b></span>",
+   "user": "<span class="var"><b>[userurl]</b></span>",
+   "attachments": "<span class="var"><b>[attachmentsIndex]</b></span>",
+   "favorites": "<span class="var"><b>[favorites]</b></span><i> as Number</i>",
+   "reblogs": "<span class="var"><b>[reblogs]</b></span><i> as Number</i>"
+}</div></div>
+<button class="gOrange inside" id="m43">
+43 Set Variable <span class="box">json</span> to <span class="box"><span class="var"><b>[42 Dictionary]</b></span></span></button>
+<button class="button gUnknown inside" id="m44">
+44 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">mbookmarkscustom.<span class="var"><b>[id]</b></span></div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[json]</b></span></div></div></div>
+<button class="button gYellow inside" id="m45">
+45 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">===
+
+<span class="var"><b>[contentmd]</b></span>
+
+- [**<span class="var"><b>[id]</b></span>**](<span class="var"><b>[posturl]</b></span>)
+- [@<span class="var"><b>[at]</b></span>](<span class="var"><b>[userurl]</b></span>), '<span class="var"><b>[created]</b></span>'
+<span class="var"><b>[attachmentsIndex]</b></span></div></div>
+<button class="gOrange inside" id="m46">
+46 Add <span class="box"><span class="var"><b>[45 Text]</b></span></span> to Variable <span class="box">mdindex</span></button></div>
+<button class="gGray nontop" id="m47">
+47 End Repeat with Each&#12288;▵<span class="magic" onclick="magictap(9)">9</span></button>
+<button class="gYellow" id="m48">
+48 Combine Text <span class="box"><span class="var"><b>[mdindex]</b></span></span> with New Lines&#12288;&#187;</button>
+<button class="gBlue" id="m49">
+49 Copy <span class="box"><span class="var"><b>[48 Combined Text]</b></span></span> to Clipboard</button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
