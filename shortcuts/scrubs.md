@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `09252022-035930`
+Updated `10012022-051814`
 
 [**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
@@ -110,6 +110,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [no](https://www.icloud.com/shortcuts/e67c69a6e19343a8b4e47a32f4085c15) (Disable All Alarms)
 - [T E X T](https://www.icloud.com/shortcuts/6cf309b60b4c445482574abe46254ed7)
 - [pip Update](https://www.icloud.com/shortcuts/80797f32272341fc8baa02402444cf3d)
+- [WeechatLogsGistUpdate](https://www.icloud.com/shortcuts/6ce6927c67324491b61d519a7ab9a951)
 
 ### iOS/iPadOS/macOS 16
 
