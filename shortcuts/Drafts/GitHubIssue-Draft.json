@@ -116,7 +116,7 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
          "WFWorkflowActionParameters": {
-            "WFTextActionText": "ghp_000000000000000000000000000000000",
+            "WFTextActionText": "ghp_000000000000000000000000000000000000",
             "UUID": "9095B9BB-8A22-4F00-BF2B-CB0A9DB0910A"
          }
       },
@@ -243,6 +243,35 @@
                "WFSerializationType": "WFTextTokenAttachment"
             },
             "WFVariableName": "link"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8B468FC0-13E6-4813-9BB1-E9F5E2AE75FD",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "user.login",
+            "UUID": "8615F7E2-B6F4-4590-A673-AF5F88EA84BE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8615F7E2-B6F4-4590-A673-AF5F88EA84BE",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "username"
          }
       },
       {
@@ -476,26 +505,61 @@
          "WFWorkflowActionParameters": {
             "WFTextActionText": {
                "Value": {
-                  "string": "# \uFFFC\nUpdated `\uFFFC`\n\n- [**GitHub Issue**](\uFFFC)\n- Created: `\uFFFC`\n\n---\n\n\uFFFC",
+                  "string": "# \"\uFFFC\" - \uFFFC/\uFFFC\nUpdated `\uFFFC`\nCreated `\uFFFC`\n\n- [**Issue**](\uFFFC)\n- @[\uFFFC](https://github.com/\uFFFC)\n- [Repository](https://github.com/\uFFFC/\uFFFC)\n- [Maintainer/Org](https://github.com/\uFFFC)\n\n---\n\n\uFFFC",
                   "attachmentsByRange": {
-                     "{13, 1}": {
-                        "VariableName": "updated",
+                     "{58, 1}": {
+                        "VariableName": "username",
                         "Type": "Variable"
                      },
-                     "{2, 1}": {
+                     "{160, 1}": {
+                        "VariableName": "owner",
+                        "Type": "Variable"
+                     },
+                     "{10, 1}": {
+                        "VariableName": "repo",
+                        "Type": "Variable"
+                     },
+                     "{51, 1}": {
+                        "VariableName": "link",
+                        "Type": "Variable"
+                     },
+                     "{119, 1}": {
+                        "VariableName": "repo",
+                        "Type": "Variable"
+                     },
+                     "{80, 1}": {
+                        "VariableName": "username",
+                        "Type": "Variable"
+                     },
+                     "{3, 1}": {
                         "VariableName": "title",
                         "Type": "Variable"
                      },
-                     "{53, 1}": {
+                     "{21, 1}": {
+                        "VariableName": "updated",
+                        "Type": "Variable"
+                     },
+                     "{117, 1}": {
+                        "VariableName": "owner",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "WFFileExtensionProperty",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "File Extension"
+                           }
+                        ]
+                     },
+                     "{33, 1}": {
                         "VariableName": "created",
                         "Type": "Variable"
                      },
-                     "{62, 1}": {
-                        "VariableName": "body",
+                     "{8, 1}": {
+                        "VariableName": "owner",
                         "Type": "Variable"
                      },
-                     "{38, 1}": {
-                        "VariableName": "link",
+                     "{169, 1}": {
+                        "VariableName": "body",
                         "Type": "Variable"
                      }
                   }
@@ -506,7 +570,7 @@
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
          "WFWorkflowActionParameters": {
             "WFInput": {
                "Value": {
@@ -682,6 +746,21 @@
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
+            "CustomOutputName": "authorURL",
+            "UUID": "0C2CB54E-28BA-456D-8E3D-E489D0CAFF73",
+            "WFDictionaryKey": "user.html_url"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
             "WFDictionaryKey": "updated_at",
             "UUID": "3171F792-0215-44FE-99B3-E326A4360BFA"
          }
@@ -735,30 +814,22 @@
          "WFWorkflowActionParameters": {
             "WFTextActionText": {
                "Value": {
-                  "string": "\n- [\uFFFC](\uFFFC)\n\n\uFFFC",
+                  "string": "[※](\uFFFC)‑[\uFFFC](\uFFFC)",
                   "attachmentsByRange": {
                      "{11, 1}": {
-                        "OutputUUID": "A117C5AF-E697-4924-BF7E-DACCA4586887",
+                        "OutputUUID": "0C2CB54E-28BA-456D-8E3D-E489D0CAFF73",
                         "Type": "ActionOutput",
-                        "OutputName": "commentContent"
+                        "OutputName": "authorURL"
                      },
                      "{4, 1}": {
-                        "Type": "ActionOutput",
-                        "OutputName": "Dates",
-                        "OutputUUID": "2144CD5F-0C6E-4716-A6B2-5AA9408DF6CC",
-                        "Aggrandizements": [
-                           {
-                              "WFDateFormatStyle": "Custom",
-                              "Type": "WFDateFormatVariableAggrandizement",
-                              "WFDateFormat": "MMddYYYY-HHmmss",
-                              "WFISO8601IncludeTime": false
-                           }
-                        ]
-                     },
-                     "{7, 1}": {
                         "OutputUUID": "46564591-2844-4305-A661-67CE8B9A9A1F",
                         "Type": "ActionOutput",
                         "OutputName": "commentURL"
+                     },
+                     "{8, 1}": {
+                        "OutputUUID": "0F85BE72-F66C-4DC6-A13B-0CF8E81EBBAB",
+                        "Type": "ActionOutput",
+                        "OutputName": "association"
                      }
                   }
                },
@@ -768,60 +839,17 @@
          }
       },
       {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-         "WFWorkflowActionParameters": {
-            "WFInput": {
-               "Type": "Variable",
-               "Variable": {
-                  "Value": {
-                     "Type": "ActionOutput",
-                     "OutputName": "association",
-                     "OutputUUID": "0F85BE72-F66C-4DC6-A13B-0CF8E81EBBAB",
-                     "Aggrandizements": [
-                        {
-                           "Type": "WFCoercionVariableAggrandizement",
-                           "CoercionItemClass": "WFStringContentItem"
-                        },
-                        {
-                           "PropertyUserInfo": "WFItemName",
-                           "Type": "WFPropertyVariableAggrandizement",
-                           "PropertyName": "Name"
-                        }
-                     ]
-                  },
-                  "WFSerializationType": "WFTextTokenAttachment"
-               }
-            },
-            "WFControlFlowMode": 0,
-            "WFConditionalActionString": {
-               "Value": {
-                  "string": "\uFFFC",
-                  "attachmentsByRange": {
-                     "{0, 1}": {
-                        "VariableName": "owner",
-                        "Type": "Variable"
-                     }
-                  }
-               },
-               "WFSerializationType": "WFTextTokenString"
-            },
-            "GroupingIdentifier": "C76FD5C9-E495-4156-9C6A-A683A959EBA0",
-            "WFCondition": 5
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
          "WFWorkflowActionParameters": {
             "WFInput": {
                "Value": {
-                  "VariableName": "Repeat Item",
-                  "Type": "Variable"
+                  "OutputUUID": "1F9A0862-0FCB-4315-A58B-4EB5FEC60CFE",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
                },
                "WFSerializationType": "WFTextTokenAttachment"
             },
-            "CustomOutputName": "authorURL",
-            "UUID": "0C2CB54E-28BA-456D-8E3D-E489D0CAFF73",
-            "WFDictionaryKey": "user.html_url"
+            "WFVariableName": "ref"
          }
       },
       {
@@ -829,23 +857,22 @@
          "WFWorkflowActionParameters": {
             "WFTextActionText": {
                "Value": {
-                  "string": "@[\uFFFC](\uFFFC)",
+                  "string": "\uFFFC\n *\uFFFC*\n\n---",
                   "attachmentsByRange": {
-                     "{2, 1}": {
-                        "OutputUUID": "0F85BE72-F66C-4DC6-A13B-0CF8E81EBBAB",
-                        "Type": "ActionOutput",
-                        "OutputName": "association"
+                     "{4, 1}": {
+                        "VariableName": "ref",
+                        "Type": "Variable"
                      },
-                     "{5, 1}": {
-                        "OutputUUID": "0C2CB54E-28BA-456D-8E3D-E489D0CAFF73",
+                     "{0, 1}": {
+                        "OutputUUID": "A117C5AF-E697-4924-BF7E-DACCA4586887",
                         "Type": "ActionOutput",
-                        "OutputName": "authorURL"
+                        "OutputName": "commentContent"
                      }
                   }
                },
                "WFSerializationType": "WFTextTokenString"
             },
-            "UUID": "16A25F12-8A7A-4170-B70E-F5B84FD5E9BA"
+            "UUID": "42B76A1C-446D-4C0D-B254-CA25F9F5A816"
          }
       },
       {
@@ -853,29 +880,7 @@
          "WFWorkflowActionParameters": {
             "WFInput": {
                "Value": {
-                  "OutputUUID": "16A25F12-8A7A-4170-B70E-F5B84FD5E9BA",
-                  "Type": "ActionOutput",
-                  "OutputName": "Text"
-               },
-               "WFSerializationType": "WFTextTokenAttachment"
-            },
-            "WFVariableName": "comments"
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
-         "WFWorkflowActionParameters": {
-            "WFControlFlowMode": 2,
-            "GroupingIdentifier": "C76FD5C9-E495-4156-9C6A-A683A959EBA0",
-            "UUID": "E34BB83F-6C6A-440B-A330-8A6AC9938CBE"
-         }
-      },
-      {
-         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
-         "WFWorkflowActionParameters": {
-            "WFInput": {
-               "Value": {
-                  "OutputUUID": "1F9A0862-0FCB-4315-A58B-4EB5FEC60CFE",
+                  "OutputUUID": "42B76A1C-446D-4C0D-B254-CA25F9F5A816",
                   "Type": "ActionOutput",
                   "OutputName": "Text"
                },
@@ -895,14 +900,16 @@
       {
          "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
          "WFWorkflowActionParameters": {
+            "WFTextCustomSeparator": "\n---",
+            "UUID": "A45A0C95-78A7-4271-BFDC-411247C0338B",
+            "WFTextSeparator": "New Lines",
             "text": {
                "Value": {
                   "VariableName": "comments",
                   "Type": "Variable"
                },
                "WFSerializationType": "WFTextTokenAttachment"
-            },
-            "UUID": "A45A0C95-78A7-4271-BFDC-411247C0338B"
+            }
          }
       },
       {
@@ -1088,18 +1095,18 @@
       {
          "Category": "Parameter",
          "ParameterKey": "WFTextActionText",
-         "ActionIndex": 6,
-         "Text": "Provide a GitHub Personal Access Token. (Required.)",
-         "DefaultValue": "ghp_000000000000000000000000000000000"
+         "ActionIndex": 7,
+         "Text": "Provide a GitHub Personal Access Token. (Required)",
+         "DefaultValue": ""
       },
       {
          "Category": "Parameter",
          "ParameterKey": "WFItems",
-         "ActionIndex": 52,
-         "Text": "Specify any additional tags (apart from the Issue's labels) you'd like attached to the result draft. (Optional) ",
+         "ActionIndex": 53,
+         "Text": "Set any additional Drafts tags you'd like included beyond the issue's current labels. (Optional.)",
          "DefaultValue": [
             "github",
-            "documentation"
+            "automation"
          ]
       }
    ],

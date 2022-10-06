@@ -152,18 +152,18 @@ span.magic {
    {
       "Category": "Parameter",
       "ParameterKey": "WFTextActionText",
-      "ActionIndex": <span class="magic" onclick="magictap(6)"><b>6</b></span>,
-      "Text": "Provide a GitHub Personal Access Token. (Required.)",
-      "DefaultValue": "ghp_000000000000000000000000000000000"
+      "ActionIndex": <span class="magic" onclick="magictap(7)"><b>7</b></span>,
+      "Text": "Provide a GitHub Personal Access Token. (Required)",
+      "DefaultValue": ""
    },
    {
       "Category": "Parameter",
       "ParameterKey": "WFItems",
-      "ActionIndex": <span class="magic" onclick="magictap(52)"><b>52</b></span>,
-      "Text": "Specify any additional tags (apart from the Issue's labels) you'd like attached to the result draft. (Optional) ",
+      "ActionIndex": <span class="magic" onclick="magictap(53)"><b>53</b></span>,
+      "Text": "Set any additional Drafts tags you'd like included beyond the issue's current labels. (Optional.)",
       "DefaultValue": [
          "github",
-         "documentation"
+         "automation"
       ]
    }
 ],
@@ -220,13 +220,13 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
 <button class="button gYellow" id="m7">
 7 Text&#12288;&#187;</button>
 	<div class="content">
-		<div class="col2">ghp_000000000000000000000000000000000</div></div>
+		<div class="col2">ghp_000000000000000000000000000000000000</div></div>
 <button class="gOrange" id="m8">
 8 Set Variable <span class="box">auth</span> to <span class="box"><span class="var"><b>[7 Text]</b></span></span></button>
 <button class="gBlue" id="m9">
-9 URL <span class="box">https://api.github.com/repos<span class="magic" onclick="magictap(1)"><b>[1 Component of URL]</b></span></span>&#12288;&#187; <i>10</i> <span class="magic" onclick="magictap(32)">32</span></button>
+9 URL <span class="box">https://api.github.com/repos<span class="magic" onclick="magictap(1)"><b>[1 Component of URL]</b></span></span>&#12288;&#187; <i>10</i> <span class="magic" onclick="magictap(34)">34</span></button>
 <button class="button gGreen" id="m10">
-10 Get Contents of URL <span class="box"><span class="var"><b>[9 URL]</b></span></span>&#12288;&#187; <i>11</i> <span class="magic" onclick="magictap(13)">13</span> <span class="magic" onclick="magictap(16)">16</span> <span class="magic" onclick="magictap(19)">19</span> <span class="magic" onclick="magictap(21)">21</span> <span class="magic" onclick="magictap(26)">26</span> <span class="magic" onclick="magictap(30)">30</span></button>
+10 Get Contents of URL <span class="box"><span class="var"><b>[9 URL]</b></span></span>&#12288;&#187; <i>11</i> <span class="magic" onclick="magictap(13)">13</span> <span class="magic" onclick="magictap(15)">15</span> <span class="magic" onclick="magictap(18)">18</span> <span class="magic" onclick="magictap(21)">21</span> <span class="magic" onclick="magictap(23)">23</span> <span class="magic" onclick="magictap(28)">28</span> <span class="magic" onclick="magictap(32)">32</span></button>
 	<div class="content">
 		<div class="row"><div class="col1">HTTPHeaders</div>
 			<div class="col2">{  "Accept": "application/vnd.github+json",
@@ -239,59 +239,66 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
 <button class="gOrange" id="m12">
 12 Set Variable <span class="box">link</span> to <span class="box"><span class="var"><b>[11 Dictionary Value]</b></span></span></button>
 <button class="gOrange" id="m13">
-13 Get Dictionary Value for <span class="box">created_at</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
-<button class="" id="m14">
-14 Get Dates from <span class="box"><span class="var"><b>[13 Dictionary Value]</b></span></span>&#12288;&#187;</button>
+13 Get Dictionary Value for <span class="box">user.login</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m14">
+14 Set Variable <span class="box">username</span> to <span class="box"><span class="var"><b>[13 Dictionary Value]</b></span></span></button>
 <button class="gOrange" id="m15">
-15 Set Variable <span class="box">created</span> to <span class="box"><span class="var"><b>[14 Dates</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span></span></button>
-<button class="gOrange" id="m16">
-16 Get Dictionary Value for <span class="box">updated_at</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
-<button class="" id="m17">
-17 Get Dates from <span class="box"><span class="var"><b>[16 Dictionary Value]</b></span></span>&#12288;&#187;</button>
+15 Get Dictionary Value for <span class="box">created_at</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="" id="m16">
+16 Get Dates from <span class="box"><span class="var"><b>[15 Dictionary Value]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m17">
+17 Set Variable <span class="box">created</span> to <span class="box"><span class="var"><b>[16 Dates</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span></span></button>
 <button class="gOrange" id="m18">
-18 Set Variable <span class="box">updated</span> to <span class="box"><span class="var"><b>[17 Dates</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span></span></button>
-<button class="gOrange" id="m19">
-19 Get Dictionary Value for <span class="box">title</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+18 Get Dictionary Value for <span class="box">updated_at</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="" id="m19">
+19 Get Dates from <span class="box"><span class="var"><b>[18 Dictionary Value]</b></span></span>&#12288;&#187;</button>
 <button class="gOrange" id="m20">
-20 Set Variable <span class="box">title</span> to <span class="box"><span class="var"><b>[19 Dictionary Value]</b></span></span></button>
+20 Set Variable <span class="box">updated</span> to <span class="box"><span class="var"><b>[19 Dates</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span></span></button>
 <button class="gOrange" id="m21">
-21 Get Dictionary Value for <span class="box">labels</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
-<button class="button gGray nonbottom" id="m22">
-22 Repeat with Each in <span class="box"><span class="var"><b>[21 Dictionary Value]</b></span></span></button>
+21 Get Dictionary Value for <span class="box">title</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m22">
+22 Set Variable <span class="box">title</span> to <span class="box"><span class="var"><b>[21 Dictionary Value]</b></span></span></button>
+<button class="gOrange" id="m23">
+23 Get Dictionary Value for <span class="box">labels</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="button gGray nonbottom" id="m24">
+24 Repeat with Each in <span class="box"><span class="var"><b>[23 Dictionary Value]</b></span></span></button>
 	<div class="content contentloop">
-<button class="gOrange inside" id="m23">
-23 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button></div>
-<button class="gGray nontop" id="m24">
-24 End Repeat with Each&#12288;&#187;</button>
-<button class="gOrange" id="m25">
-25 Set Variable <span class="box">tags</span> to <span class="box"><span class="var"><b>[24 Repeat Results]</b></span></span></button>
-<button class="gOrange" id="m26">
-26 Get Dictionary Value for <span class="box">body</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m25">
+25 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button></div>
+<button class="gGray nontop" id="m26">
+26 End Repeat with Each&#12288;&#187;</button>
 <button class="gOrange" id="m27">
-27 Set Variable <span class="box">body</span> to <span class="box"><span class="var"><b>[26 Dictionary Value]</b></span></span></button>
-<button class="button gYellow" id="m28">
-28 Text&#12288;&#187;</button>
+27 Set Variable <span class="box">tags</span> to <span class="box"><span class="var"><b>[26 Repeat Results]</b></span></span></button>
+<button class="gOrange" id="m28">
+28 Get Dictionary Value for <span class="box">body</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m29">
+29 Set Variable <span class="box">body</span> to <span class="box"><span class="var"><b>[28 Dictionary Value]</b></span></span></button>
+<button class="button gYellow" id="m30">
+30 Text&#12288;&#187;</button>
 	<div class="content">
-		<div class="col2"># <span class="var"><b>[title]</b></span>
+		<div class="col2"># "<span class="var"><b>[title]</b></span>" - <span class="var"><b>[owner]</b></span>/<span class="var"><b>[repo]</b></span>
 Updated `<span class="var"><b>[updated]</b></span>`
+Created `<span class="var"><b>[created]</b></span>`
 
-- [**GitHub Issue**](<span class="var"><b>[link]</b></span>)
-- Created: `<span class="var"><b>[created]</b></span>`
+- [**Issue**](<span class="var"><b>[link]</b></span>)
+- @[<span class="var"><b>[username]</b></span>](https://github.com/<span class="var"><b>[username]</b></span>)
+- [Repository](https://github.com/<span class="var"><b>[owner</b>’s File Extension<b>]</b></span>/<span class="var"><b>[repo]</b></span>)
+- [Maintainer/Org](https://github.com/<span class="var"><b>[owner]</b></span>)
 
 ---
 
 <span class="var"><b>[body]</b></span></div></div>
-<button class="gOrange" id="m29">
-29 Add <span class="box"><span class="var"><b>[28 Text]</b></span></span> to Variable <span class="box">md</span></button>
-<button class="gOrange" id="m30">
-30 Get Dictionary Value for <span class="box">comments</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
-<button class="button gGray nonbottom" id="m31">
-31 If <span class="box"><span class="var"><b>[30 Dictionary Value</b> as Number<b>]</b></span></span> <span class="box">&gt;</span> <span class="box">0</span></button>
+<button class="gOrange" id="m31">
+31 Set Variable <span class="box">md</span> to <span class="box"><span class="var"><b>[30 Text]</b></span></span></button>
+<button class="gOrange" id="m32">
+32 Get Dictionary Value for <span class="box">comments</span> in <span class="box"><span class="magic" onclick="magictap(10)"><b>[10 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="button gGray nonbottom" id="m33">
+33 If <span class="box"><span class="var"><b>[32 Dictionary Value</b> as Number<b>]</b></span></span> <span class="box">&gt;</span> <span class="box">0</span></button>
 	<div class="content contentloop">
-<button class="gBlue inside" id="m32">
-32 URL <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 URL]</b></span>/comments</span>&#12288;&#187;</button>
-<button class="button gGreen inside" id="m33">
-33 Get Contents of URL <span class="box"><span class="var"><b>[32 URL]</b></span></span>&#12288;&#187;</button>
+<button class="gBlue inside" id="m34">
+34 URL <span class="box"><span class="magic" onclick="magictap(9)"><b>[9 URL]</b></span>/comments</span>&#12288;&#187;</button>
+<button class="button gGreen inside" id="m35">
+35 Get Contents of URL <span class="box"><span class="var"><b>[34 URL]</b></span></span>&#12288;&#187;</button>
 	<div class="content inside">
 		<div class="row"><div class="col1">HTTPHeaders</div>
 			<div class="col2">{  "Accept": "application/vnd.github+json",
@@ -299,45 +306,44 @@ Updated `<span class="var"><b>[updated]</b></span>`
 }</div></div>
 		<div class="row"><div class="col1">ShowHeaders</div>
 			<div class="col2">true</div></div></div>
-<button class="button gGray nonbottom inside" id="m34">
-34 Repeat with Each in <span class="box"><span class="var"><b>[33 Contents of URL]</b></span></span></button>
+<button class="button gGray nonbottom inside" id="m36">
+36 Repeat with Each in <span class="box"><span class="var"><b>[35 Contents of URL]</b></span></span></button>
 	<div class="content contentloop dashed inside">
-<button class="gOrange inside" id="m35">
-35 Get Dictionary Value for <span class="box">user.login</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <b>&#12288;➔ association</b>&#12288;&#187; <span class="magic" onclick="magictap(41)">41</span> <span class="magic" onclick="magictap(43)">43</span></button>
-<button class="gOrange inside" id="m36">
-36 Get Dictionary Value for <span class="box">updated_at</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187;</button>
-<button class=" inside" id="m37">
-37 Get Dates from <span class="box"><span class="var"><b>[36 Dictionary Value]</b></span></span>&#12288;&#187; <span class="magic" onclick="magictap(40)">40</span></button>
+<button class="gOrange inside" id="m37">
+37 Get Dictionary Value for <span class="box">user.login</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <b>&#12288;➔ association</b>&#12288;&#187; <span class="magic" onclick="magictap(43)">43</span></button>
 <button class="gOrange inside" id="m38">
-38 Get Dictionary Value for <span class="box">body</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <b>&#12288;➔ commentContent</b>&#12288;&#187; <span class="magic" onclick="magictap(40)">40</span></button>
+38 Get Dictionary Value for <span class="box">user.html_url</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <b>&#12288;➔ authorURL</b>&#12288;&#187; <span class="magic" onclick="magictap(43)">43</span></button>
 <button class="gOrange inside" id="m39">
-39 Get Dictionary Value for <span class="box">html_url</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <b>&#12288;➔ commentURL</b>&#12288;&#187;</button>
-<button class="button gYellow inside" id="m40">
-40 Text&#12288;&#187; <span class="magic" onclick="magictap(46)">46</span></button>
-	<div class="content inside">
-		<div class="col2">
-- [<span class="magic" onclick="magictap(37)"><b>[37 Dates</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span>](<span class="var"><b>[39 commentURL]</b></span>)
-
-<span class="magic" onclick="magictap(38)"><b>[38 commentContent]</b></span></div></div>
-<button class="button gGray nonbottom inside" id="m41">
-41 If <span class="box"><span class="magic" onclick="magictap(35)"><b>[35 association</b> as Text’s Name<b>]</b></span></span> <span class="box">is not</span> <span class="box"><span class="var"><b>[owner]</b></span></span></button>
-	<div class="content contentloop inside">
+39 Get Dictionary Value for <span class="box">updated_at</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187;</button>
+<button class=" inside" id="m40">
+40 Get Dates from <span class="box"><span class="var"><b>[39 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m41">
+41 Get Dictionary Value for <span class="box">body</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <b>&#12288;➔ commentContent</b>&#12288;&#187; <span class="magic" onclick="magictap(45)">45</span></button>
 <button class="gOrange inside" id="m42">
-42 Get Dictionary Value for <span class="box">user.html_url</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <b>&#12288;➔ authorURL</b>&#12288;&#187;</button>
+42 Get Dictionary Value for <span class="box">html_url</span> in <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> <b>&#12288;➔ commentURL</b>&#12288;&#187;</button>
 <button class="button gYellow inside" id="m43">
 43 Text&#12288;&#187;</button>
 	<div class="content inside">
-		<div class="col2">@[<span class="magic" onclick="magictap(35)"><b>[35 association]</b></span>](<span class="var"><b>[42 authorURL]</b></span>)</div></div>
+		<div class="col2">[※](<span class="var"><b>[42 commentURL]</b></span>)‑[<span class="magic" onclick="magictap(37)"><b>[37 association]</b></span>](<span class="magic" onclick="magictap(38)"><b>[38 authorURL]</b></span>)</div></div>
 <button class="gOrange inside" id="m44">
-44 Add <span class="box"><span class="var"><b>[43 Text]</b></span></span> to Variable <span class="box">comments</span></button></div>
-<button class="gGray nontop inside" id="m45">
-45 End If</button>
+44 Set Variable <span class="box">ref</span> to <span class="box"><span class="var"><b>[43 Text]</b></span></span></button>
+<button class="button gYellow inside" id="m45">
+45 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2"><span class="magic" onclick="magictap(41)"><b>[41 commentContent]</b></span>
+ *<span class="var"><b>[ref]</b></span>*
+
+---</div></div>
 <button class="gOrange inside" id="m46">
-46 Add <span class="box"><span class="magic" onclick="magictap(40)"><b>[40 Text]</b></span></span> to Variable <span class="box">comments</span></button></div>
+46 Add <span class="box"><span class="var"><b>[45 Text]</b></span></span> to Variable <span class="box">comments</span></button></div>
 <button class="gGray nontop inside" id="m47">
-47 End Repeat with Each&#12288;▵<span class="magic" onclick="magictap(34)">34</span></button>
-<button class="gYellow inside" id="m48">
-48 Combine Text <span class="box"><span class="var"><b>[comments]</b></span></span> with New Lines&#12288;&#187;</button>
+47 End Repeat with Each&#12288;▵<span class="magic" onclick="magictap(36)">36</span></button>
+<button class="button gYellow inside" id="m48">
+48 Combine Text <span class="box"><span class="var"><b>[comments]</b></span></span> with <span class="box">New Lines</span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">TextCustomSeparator</div>
+			<div class="col2">
+---</div></div></div>
 <button class="button gYellow inside" id="m49">
 49 Replace Text <span class="box"># </span> with <span class="box">## </span> in <span class="box"><span class="var"><b>[48 Combined Text]</b></span></span>&#12288;&#187;</button>
 	<div class="content inside">
@@ -346,7 +352,7 @@ Updated `<span class="var"><b>[updated]</b></span>`
 <button class="gOrange inside" id="m50">
 50 Add <span class="box"><span class="var"><b>[49 Updated Text]</b></span></span> to Variable <span class="box">md</span></button></div>
 <button class="gGray nontop" id="m51">
-51 End If&#12288;▵<span class="magic" onclick="magictap(31)">31</span></button>
+51 End If&#12288;▵<span class="magic" onclick="magictap(33)">33</span></button>
 <button class="gYellow" id="m52">
 52 Combine Text <span class="box"><span class="var"><b>[md]</b></span></span> with New Lines</button>
 <button class="button gOrange" id="m53">
