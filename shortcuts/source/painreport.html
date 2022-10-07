@@ -1,0 +1,586 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>PainReport</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">PainReport</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1206.4",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 3980825855,
+   "WFWorkflowIconGlyphNumber": 59847
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 411,
+"WFWorkflowMinimumClientVersionString": "411",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "NCWidget"
+]
+</div></div>
+
+<button class="button gLoop nonbottom" id="m0">
+0 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Where in your body do you feel pain?</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Head,
+Chest ,
+Stomach,
+Arm,
+Leg,
+Back,
+I will point to the pain]</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m1">
+1 Menu Item <span class="box">Head</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m2">
+2 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Head</div></div>
+<button class="gVariable inside" id="m3">
+3 Set Variable <span class="box">Pain location 1</span> to <span class="box"><span class="var"><b>[2 Text]</b></span></span></button>
+<button class="button gScripting inside" id="m4">
+4 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[Headache,
+Eye ,
+Tooth/Mouth,
+Throat,
+Nose,
+Ear ,
+I will point to the pain]</div></div>
+<button class="button gScripting inside" id="m5">
+5 Choose from List <span class="box"><span class="var"><b>[4 List]</b></span></span>&#12288;&#187; <i>6</i> <span class="magic" onclick="magictap(7)">7</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Where exactly is the pain?</div></div>
+		<div class="row"><div class="col1">ChooseFromListActionSelectMultiple</div>
+			<div class="col2">false</div></div></div>
+<button class="button gLoop nonbottom inside" id="m6">
+6 If <span class="box"><span class="var"><b>[5 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[5 Chosen Item]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m7">
+7 Set Variable <span class="box">Answer</span> to <span class="box"><span class="magic" onclick="magictap(5)"><b>[5 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop inside" id="m8">
+8 Otherwise</button>
+	
+<button class="gLoop nontop inside" id="m9">
+9 End If</button></div>
+<button class="button gLoop nonbottom nontop" id="m10">
+10 Menu Item <span class="box">Chest </span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m11">
+11 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Chest</div></div>
+<button class="gVariable inside" id="m12">
+12 Set Variable <span class="box">Pain location 4</span> to <span class="box"><span class="var"><b>[11 Text]</b></span></span></button>
+<button class="button gScripting inside" id="m13">
+13 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[Heart ,
+Acid Reflux,
+Lungs,
+Ribs,
+I will point to the pain]</div></div>
+<button class="button gScripting inside" id="m14">
+14 Choose from List <span class="box"><span class="var"><b>[13 List]</b></span></span>&#12288;&#187; <i>15</i> <span class="magic" onclick="magictap(16)">16</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Where exactly is the pain?</div></div>
+		<div class="row"><div class="col1">ChooseFromListActionSelectMultiple</div>
+			<div class="col2">false</div></div></div>
+<button class="button gLoop nonbottom inside" id="m15">
+15 If <span class="box"><span class="var"><b>[14 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[14 Chosen Item]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m16">
+16 Set Variable <span class="box">Answer</span> to <span class="box"><span class="magic" onclick="magictap(14)"><b>[14 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop inside" id="m17">
+17 Otherwise</button>
+	
+<button class="gLoop nontop inside" id="m18">
+18 End If</button></div>
+<button class="button gLoop nonbottom nontop" id="m19">
+19 Menu Item <span class="box">Stomach</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m20">
+20 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Stomach</div></div>
+<button class="gVariable inside" id="m21">
+21 Set Variable <span class="box">Pain location 2</span> to <span class="box"><span class="var"><b>[20 Text]</b></span></span></button>
+<button class="button gScripting inside" id="m22">
+22 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[Tummy ,
+Bloating ,
+Diarrhea,
+Constipation,
+Side/ Flank,
+I will point to the pain]</div></div>
+<button class="button gScripting inside" id="m23">
+23 Choose from List <span class="box"><span class="var"><b>[22 List]</b></span></span>&#12288;&#187; <i>24</i> <span class="magic" onclick="magictap(25)">25</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">What type of pain?</div></div>
+		<div class="row"><div class="col1">ChooseFromListActionSelectMultiple</div>
+			<div class="col2">false</div></div></div>
+<button class="button gLoop nonbottom inside" id="m24">
+24 If <span class="box"><span class="var"><b>[23 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[23 Chosen Item]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m25">
+25 Set Variable <span class="box">Answer</span> to <span class="box"><span class="magic" onclick="magictap(23)"><b>[23 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop inside" id="m26">
+26 Otherwise</button>
+	
+<button class="gLoop nontop inside" id="m27">
+27 End If</button></div>
+<button class="button gLoop nonbottom nontop" id="m28">
+28 Menu Item <span class="box">Arm</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m29">
+29 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Arm</div></div>
+<button class="gVariable inside" id="m30">
+30 Set Variable <span class="box">Pain location 3</span> to <span class="box"><span class="var"><b>[29 Text]</b></span></span></button>
+<button class="button gScripting inside" id="m31">
+31 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[Shoulder,
+Upper Arm,
+Elbow,
+Forearm,
+Wrist,
+Fingers,
+Palm,
+I will point to the pain]</div></div>
+<button class="button gScripting inside" id="m32">
+32 Choose from List <span class="box"><span class="var"><b>[31 List]</b></span></span>&#12288;&#187; <i>33</i> <span class="magic" onclick="magictap(34)">34</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Where exactly is the pain?</div></div>
+		<div class="row"><div class="col1">ChooseFromListActionSelectMultiple</div>
+			<div class="col2">false</div></div></div>
+<button class="button gLoop nonbottom inside" id="m33">
+33 If <span class="box"><span class="var"><b>[32 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[32 Chosen Item]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m34">
+34 Set Variable <span class="box">Answer</span> to <span class="box"><span class="magic" onclick="magictap(32)"><b>[32 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop inside" id="m35">
+35 Otherwise</button>
+	
+<button class="gLoop nontop inside" id="m36">
+36 End If</button>
+<button class="button gScripting inside" id="m37">
+37 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[Left,
+Right]</div></div>
+<button class="button gScripting inside" id="m38">
+38 Choose from List <span class="box"><span class="var"><b>[37 List]</b></span></span>&#12288;&#187; <i>39</i> <span class="magic" onclick="magictap(40)">40</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Which side?</div></div></div>
+<button class="button gLoop nonbottom inside" id="m39">
+39 If <span class="box"><span class="var"><b>[38 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[38 Chosen Item]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m40">
+40 Set Variable <span class="box">Side</span> to <span class="box"><span class="magic" onclick="magictap(38)"><b>[38 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop inside" id="m41">
+41 Otherwise</button>
+	
+<button class="gLoop nontop inside" id="m42">
+42 End If</button></div>
+<button class="button gLoop nonbottom nontop" id="m43">
+43 Menu Item <span class="box">Leg</span>&#12288;▵<span class="magic" onclick="magictap(28)">28</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m44">
+44 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Leg</div></div>
+<button class="gVariable inside" id="m45">
+45 Set Variable <span class="box">Pain location 5</span> to <span class="box"><span class="var"><b>[44 Text]</b></span></span></button>
+<button class="button gScripting inside" id="m46">
+46 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[Thigh,
+Knee,
+Calf,
+Heel of foot,
+Ball of foot,
+Foot,
+Toe,
+I will point to the pain]</div></div>
+<button class="button gScripting inside" id="m47">
+47 Choose from List <span class="box"><span class="var"><b>[46 List]</b></span></span>&#12288;&#187; <i>48</i> <span class="magic" onclick="magictap(49)">49</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Where exactly is the pain?</div></div>
+		<div class="row"><div class="col1">ChooseFromListActionSelectMultiple</div>
+			<div class="col2">false</div></div></div>
+<button class="button gLoop nonbottom inside" id="m48">
+48 If <span class="box"><span class="var"><b>[47 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[47 Chosen Item]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m49">
+49 Set Variable <span class="box">Answer</span> to <span class="box"><span class="magic" onclick="magictap(47)"><b>[47 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop inside" id="m50">
+50 Otherwise</button>
+	
+<button class="gLoop nontop inside" id="m51">
+51 End If</button>
+<button class="button gScripting inside" id="m52">
+52 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[Left,
+Right]</div></div>
+<button class="button gScripting inside" id="m53">
+53 Choose from List <span class="box"><span class="var"><b>[52 List]</b></span></span>&#12288;&#187; <i>54</i> <span class="magic" onclick="magictap(55)">55</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Which side?</div></div></div>
+<button class="button gLoop nonbottom inside" id="m54">
+54 If <span class="box"><span class="var"><b>[53 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[53 Chosen Item]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m55">
+55 Set Variable <span class="box">Side</span> to <span class="box"><span class="magic" onclick="magictap(53)"><b>[53 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop inside" id="m56">
+56 Otherwise</button>
+	
+<button class="gLoop nontop inside" id="m57">
+57 End If</button></div>
+<button class="button gLoop nonbottom nontop" id="m58">
+58 Menu Item <span class="box">Back</span>&#12288;▵<span class="magic" onclick="magictap(43)">43</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m59">
+59 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Back</div></div>
+<button class="gVariable inside" id="m60">
+60 Set Variable <span class="box">Pain Location 6</span> to <span class="box"><span class="var"><b>[59 Text]</b></span></span></button>
+<button class="button gScripting inside" id="m61">
+61 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[Upper,
+Middle,
+Lower]</div></div>
+<button class="button gScripting inside" id="m62">
+62 Choose from List <span class="box"><span class="var"><b>[61 List]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Where exactly is the pain?</div></div></div>
+<button class="gVariable inside" id="m63">
+63 Set Variable <span class="box">Answer</span> to <span class="box"><span class="var"><b>[62 Chosen Item]</b></span></span></button></div>
+<button class="button gLoop nonbottom nontop" id="m64">
+64 Menu Item <span class="box">I will point to the pain</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m65">
+65 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">(I've pointed to the pain)</div></div>
+<button class="gVariable inside" id="m66">
+66 Set Variable <span class="box">Pain Location 7</span> to <span class="box"><span class="var"><b>[65 Text]</b></span></span></button></div>
+<button class="gLoop nontop" id="m67">
+67 End Menu</button>
+<button class="button gScripting" id="m68">
+68 List&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">[Aching,
+Tender,
+Sharp,
+Shooting,
+Hot,
+Cold,
+Swollen,
+Burning,
+Nagging,
+Intense,
+Stabbing,
+Tingling,
+Dull,
+Throbbing,
+Numb]</div></div>
+<button class="button gScripting" id="m69">
+69 Choose from List <span class="box"><span class="var"><b>[68 List]</b></span></span>&#12288;&#187; <i>70</i> <span class="magic" onclick="magictap(71)">71</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">What is the pain like?</div></div></div>
+<button class="button gLoop nonbottom" id="m70">
+70 If <span class="box"><span class="var"><b>[69 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[69 Chosen Item]</b></span></span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m71">
+71 Set Variable <span class="box">Intensity</span> to <span class="box"><span class="magic" onclick="magictap(69)"><b>[69 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop" id="m72">
+72 Otherwise</button>
+	
+<button class="gLoop nontop" id="m73">
+73 End If</button>
+<button class="button gScripting" id="m74">
+74 List&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">[1  😊,
+2 ,
+3 ,
+4 ,
+5 ,
+6 ,
+7 ,
+8 ,
+9 ,
+10 😫]</div></div>
+<button class="button gScripting" id="m75">
+75 Choose from List <span class="box"><span class="var"><b>[74 List]</b></span></span>&#12288;&#187; <i>76</i> <span class="magic" onclick="magictap(77)">77</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">On a scale of 1-10, how bad is the pain?</div></div></div>
+<button class="button gLoop nonbottom" id="m76">
+76 If <span class="box"><span class="var"><b>[75 Chosen Item]</b></span></span> <span class="box">contains</span> <span class="box"><span class="var"><b>[75 Chosen Item]</b></span></span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gVariable inside" id="m77">
+77 Set Variable <span class="box">Pain Rating</span> to <span class="box"><span class="magic" onclick="magictap(75)"><b>[75 Chosen Item]</b></span></span></button></div>
+<button class="gLoop nonbottom nontop" id="m78">
+78 Otherwise</button>
+	
+<button class="gLoop nontop" id="m79">
+79 End If</button>
+<button class="" id="m80">
+80 Date Current Date&#12288;&#187;</button>
+<button class="button " id="m81">
+81 Format Date <span class="box"><span class="var"><b>[80 Date]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">DateFormatStyle</div>
+			<div class="col2">Short</div></div>
+		<div class="row"><div class="col1">TimeFormatStyle</div>
+			<div class="col2">Short</div></div>
+		<div class="row"><div class="col1">DateFormat</div>
+			<div class="col2">EEE, dd MMM yyyy HH:mm:ss</div></div></div>
+<button class="gVariable" id="m82">
+82 Set Variable <span class="box">Current Date</span> to <span class="box"><span class="var"><b>[81 Formatted Date]</b></span></span></button>
+<button class="button gDocuments" id="m83">
+83 Text <b>&#12288;➔ Text file format</b>&#12288;&#187; <span class="magic" onclick="magictap(86)">86</span></button>
+	<div class="content">
+		<div class="col2"><span class="var"><b>[Current Date]</b></span>.
+My <span class="var"><b>[Pain location 1]</b></span><span class="var"><b>[Pain location 2]</b></span><span class="var"><b>[Pain location 3]</b></span><span class="var"><b>[Pain location 4]</b></span><span class="var"><b>[Pain location 5]</b></span> <span class="var"><b>[Pain Location 6]</b></span> <span class="var"><b>[Pain Location 7]</b></span> hurts.
+Specifically, <span class="var"><b>[Side]</b></span><span class="var"><b>[Answer]</b></span>.
+It's a <span class="var"><b>[Intensity]</b></span> pain.
+Out of 10, it's a <span class="var"><b>[Pain Rating]</b></span>.</div></div>
+<button class="button gLoop nonbottom" id="m84">
+84 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Do you want this spoken out loud?</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Yes,
+No]</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m85">
+85 Menu Item <span class="box">Yes</span></button>
+	<div class="content contentloop">
+<button class="button  inside" id="m86">
+86 Speak Text</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SpeakTextRate</div>
+			<div class="col2">0.46508100628852844</div></div>
+		<div class="row"><div class="col1">Text</div>
+			<div class="col2"><span class="magic" onclick="magictap(83)"><b>[83 Text file format]</b></span></div></div></div></div>
+<button class="gLoop nonbottom nontop" id="m87">
+87 Menu Item <span class="box">No</span></button>
+	
+<button class="gLoop nontop" id="m88">
+88 End Menu</button>
+<button class="button " id="m89">
+89 Create Note with <span class="box"></span>&nbsp;</button>
+	<div class="content">
+		<div class="row"><div class="col1">OpenWhenRun</div>
+			<div class="col2">false</div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

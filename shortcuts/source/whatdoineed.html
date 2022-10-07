@@ -1,0 +1,338 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>WhatDoINeed</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">WhatDoINeed</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1206.4",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4292093695,
+   "WFWorkflowIconGlyphNumber": 59751
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 0,
+"WFWorkflowMinimumClientVersionString": "0",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "NCWidget"
+]
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Opens a set of emoji and will speak the associated need. For non-verbal individuals to ask for what they need.</div></div>
+<button class="button gLoop nonbottom" id="m1">
+1 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">What do I need?</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[🔇 It’s too noisy,
+🍎 I am hungry,
+🥤I am thirsty,
+🥶 I am cold,
+🥵 I am hot,
+👨‍👩‍👧👩‍👩‍👧‍👦👨‍👩‍👦‍👦👨‍👨‍👧‍👦 Too many people here,
+🤫 No more talking]</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m2">
+2 Menu Item <span class="box">🔇 It’s too noisy</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m3">
+3 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">It is too noisy here, I need to go somewhere quieter.</div></div>
+<button class="button  inside" id="m4">
+4 Speak Text</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SpeakTextWait</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">Text</div>
+			<div class="col2"><span class="var"><b>[3 Text]</b></span></div></div></div>
+<button class="button gDocuments inside" id="m5">
+5 Show Result</button>
+	<div class="content inside">
+		<div class="col2">It is too noisy here, I need to go somewhere quieter.</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m6">
+6 Menu Item <span class="box">🍎 I am hungry</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m7">
+7 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">I am hungry.</div></div>
+<button class="button  inside" id="m8">
+8 Speak Text</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SpeakTextWait</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">Text</div>
+			<div class="col2"><span class="var"><b>[7 Text]</b></span></div></div></div>
+<button class="button gDocuments inside" id="m9">
+9 Show Result</button>
+	<div class="content inside">
+		<div class="col2">I am hungry.</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m10">
+10 Menu Item <span class="box">🥤I am thirsty</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m11">
+11 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">I am thirsty.</div></div>
+<button class="button  inside" id="m12">
+12 Speak Text</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SpeakTextWait</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">Text</div>
+			<div class="col2"><span class="var"><b>[11 Text]</b></span></div></div></div>
+<button class="button gDocuments inside" id="m13">
+13 Show Result</button>
+	<div class="content inside">
+		<div class="col2">I am thirsty.</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m14">
+14 Menu Item <span class="box">🥶 I am cold</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m15">
+15 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">I am cold.</div></div>
+<button class="button  inside" id="m16">
+16 Speak Text</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SpeakTextWait</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">Text</div>
+			<div class="col2"><span class="var"><b>[15 Text]</b></span></div></div></div>
+<button class="button gDocuments inside" id="m17">
+17 Show Result</button>
+	<div class="content inside">
+		<div class="col2">I am cold.</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m18">
+18 Menu Item <span class="box">🥵 I am hot</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m19">
+19 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">I feel hot.</div></div>
+<button class="button  inside" id="m20">
+20 Speak Text</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SpeakTextWait</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">Text</div>
+			<div class="col2"><span class="var"><b>[19 Text]</b></span></div></div></div>
+<button class="button gDocuments inside" id="m21">
+21 Show Result</button>
+	<div class="content inside">
+		<div class="col2">I feel hot.</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m22">
+22 Menu Item <span class="box">👨‍👩‍👧👩‍👩‍👧‍👦👨‍👩‍👦‍👦👨‍👨‍👧‍👦 Too many people here</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m23">
+23 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">There are too many people here. I am feeling overwhelmed.</div></div>
+<button class="button  inside" id="m24">
+24 Speak Text</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SpeakTextWait</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">Text</div>
+			<div class="col2"><span class="var"><b>[23 Text]</b></span></div></div></div>
+<button class="button gDocuments inside" id="m25">
+25 Show Result</button>
+	<div class="content inside">
+		<div class="col2">There are too many people here. I am feeling overwhelmed.</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m26">
+26 Menu Item <span class="box">🤫 No more talking</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m27">
+27 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">No more talking.</div></div>
+<button class="button  inside" id="m28">
+28 Speak Text</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">SpeakTextWait</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">Text</div>
+			<div class="col2"><span class="var"><b>[27 Text]</b></span></div></div></div>
+<button class="button gDocuments inside" id="m29">
+29 Show Result</button>
+	<div class="content inside">
+		<div class="col2">No more talking.</div></div></div>
+<button class="gLoop nontop" id="m30">
+30 End Menu</button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

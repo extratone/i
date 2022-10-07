@@ -1,0 +1,2347 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>MacAccessibilityAssistant</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">MacAccessibilityAssistant</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1206.4",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 946986751,
+   "WFWorkflowIconGlyphNumber": 59437
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFFileStorageService",
+      "ActionIndex": <span class="magic" onclick="magictap(1)"><b>1</b></span>,
+      "Text": "Please tap on done to choose the default of iCloud Drive. This shortcut needs to use iCloud Drive to store a temporary file containing the list of accessibility features. The shortcut will clean up by deleting this file after use.",
+      "DefaultValue": "iCloud Drive"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [
+   "WFImageContentItem",
+   "WFRichTextContentItem",
+   "WFGenericFileContentItem",
+   "WFNoteContentItem",
+   "WFLocationContentItem",
+   "WFURLContentItem",
+   "WFStringContentItem",
+   "WFPhoneNumberContentItem",
+   "WFAppStoreAppContentItem",
+   "WFContentItem",
+   "WFEmailAddressContentItem",
+   "WFAVAssetContentItem",
+   "WFArticleContentItem",
+   "WFDateContentItem",
+   "WFiTunesProductContentItem",
+   "WFContactContentItem",
+   "WFFolderContentItem",
+   "WFPhotoMediaContentItem",
+   "WFSafariWebPageContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFMKMapItemContentItem",
+   "WFPDFContentItem"
+],
+"WFWorkflowTypes": [
+   "NCWidget"
+]
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Select the needs of the user, choose as many as needed. Creates a note, populated with Apple Support page links and resources, on suggested built-in accessibility features for Mac.
+
+Resources are based on macOS 12.3</div></div>
+<button class="gVariable" id="m1">
+1 Add <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> to Variable <span class="box">Accessibility Features</span></button>
+<button class="button gLoop nonbottom" id="m2">
+2 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a category of conditions. You can add more later, if necessary.</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Vision,
+Hearing,
+Mobility,
+Cognitive]</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m3">
+3 Menu Item <span class="box">Vision</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m4">
+4 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a condition:</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Wears reading glasses,
+Sensitivity to light,
+Cannot distinguish certain colors,
+Depth perception issues,
+Blurry vision / dizziness / visual distortion,
+Blind,
+Blind + braille,
+Deafblind,
+All of these,
+None of these]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m5">
+5 Menu Item <span class="box">Wears reading glasses</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m6">
+6 Text</button>
+	<div class="content inside">
+		<div class="col2">Dark Mode Display Preferences Zoom Menu bar size Pointer Preferences Safari Reader Live Text Siri Keychain Hover Text Speak Items Under Pointer Increase Text Size Icons Bigger Dock Zoom Show Window title icons Toolbar button shapes Invert Colors Reduce Motion Increase contrast Reduce transparency Display Brightness Speak Announcements Auto Correction Text Replacement Shake Mouse Pointer to Locate Mac Keyboard Shortcuts Facial Recognition in Photos Announce Time Touch ID Unlock Mac with Watch Universal Control Sidecar Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m7">
+7 Menu Item <span class="box">Sensitivity to light</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m8">
+8 Text</button>
+	<div class="content inside">
+		<div class="col2">Dark Mode Display Preferences Reduce Motion Reduce Transparency Night Shift Mode Display Brightness Invert Colors Color Filters Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m9">
+9 Menu Item <span class="box">Cannot distinguish certain colors</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m10">
+10 Text</button>
+	<div class="content inside">
+		<div class="col2">Color Filters Differentiate Without Color Invert Colors Dark Mode Pointer Preferences Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m11">
+11 Menu Item <span class="box">Depth perception issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m12">
+12 Text</button>
+	<div class="content inside">
+		<div class="col2">Speak Screen Speak Selection Pointer Preferences Speak Items Under Pointer Hover Text Highlight Content Typing Feedback Zoom Dock Zoom Dark Mode Dictation AirPods Reduce Motion Increase contrast Reduce transparency Display Brightness Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m13">
+13 Menu Item <span class="box">Blurry vision / dizziness / visual distortion</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m14">
+14 Text</button>
+	<div class="content inside">
+		<div class="col2">Hover Text Speak Items Under Pointer Reduce Motion Increase Contrast Reduce Transparency Menu bar size Pointer Preferences Display Preferences Live Text Safari Reader Siri Keychain Increase Text Size Icons Bigger Dark Mode Invert Colors Display Zoom Dock Zoom Speak Announcements Speak Screen Speak Selected Text Dictation Word Completion Speak Items Under Pointer Announce Time Typing Feedback Auto Correction Text Replacement Shake Mouse Pointer to Locate Mac Keyboard Shortcuts Spatial Audio Touch ID Unlock Mac with Watch Universal Control Facial Recognition in Photos Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m15">
+15 Menu Item <span class="box">Blind</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m16">
+16 Text</button>
+	<div class="content inside">
+		<div class="col2">VoiceOver Mac Keyboard Shortcuts Audio Descriptions Live Text Siri Keychain Find My Dictation AirPods Touch ID Unlock Mac with Watch Universal Control Announce Time Facial Recognition in Photos VoiceOver Accessible Signature and Images Shortcuts Privacy Speak Announcements</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m17">
+17 Menu Item <span class="box">Blind + braille</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m18">
+18 Text</button>
+	<div class="content inside">
+		<div class="col2">VoiceOver VoiceOver + Braille Mac Keyboard Shortcuts Audio Descriptions Live Text Siri Keychain Find My Dictation AirPods Touch ID Unlock Mac with Watch Announce Time Universal Control Facial Recognition in Photos VoiceOver Accessible Signature and Images Shortcuts Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m19">
+19 Menu Item <span class="box">Deafblind</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m20">
+20 Text</button>
+	<div class="content inside">
+		<div class="col2">VoiceOver VoiceOver + Braille Mac Keyboard Shortcuts Audio Descriptions Live Text Type to Siri Messages Keychain Find My Subtitles/CC/SDH RTT Touch ID Unlock Mac with Watch Universal Control Facial Recognition in Photos VoiceOver Accessible Signature and Images Shortcuts - Help Message Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m21">
+21 Menu Item <span class="box">All of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m22">
+22 Text</button>
+	<div class="content inside">
+		<div class="col2">Dark Mode
+Display Preferences
+Zoom
+Menu bar size
+Pointer Preferences
+Safari Reader
+Live Text
+Siri
+Keychain
+Hover Text
+Speak Items Under Pointer
+Increase Text Size
+Icons Bigger
+Dock Zoom
+Show Window title icons
+Toolbar button shapes
+Invert Colors
+Reduce Motion
+Increase contrast
+Reduce transparency
+Display Brightness
+Speak Announcements
+Auto Correction
+Text Replacement
+Shake Mouse Pointer to Locate
+Mac Keyboard Shortcuts
+Facial Recognition in Photos
+Announce Time
+Touch ID
+Unlock Mac with Watch
+Universal Control
+Sidecar
+Privacy
+Night Shift Mode
+Color Filters
+Differentiate Without Color
+Speak Screen
+Speak Selection
+Highlight Content
+Typing Feedback
+Dictation
+AirPods
+Privacy 
+Display
+Speak Selected Text
+Word Completion
+Spatial Audio
+VoiceOver
+Audio Descriptions
+Find My
+VoiceOver Accessible Signature and Images
+Shortcuts
+VoiceOver + Braille
+Type to Siri
+Messages
+Subtitles/CC/SDH
+RTT
+Shortcuts - Help Message</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m23">
+23 Menu Item <span class="box">None of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m24">
+24 Nothing</button></div>
+<button class="gLoop nontop inside" id="m25">
+25 End Menu</button></div>
+<button class="button gLoop nonbottom nontop" id="m26">
+26 Menu Item <span class="box">Hearing</span>&#12288;▵<span class="magic" onclick="magictap(3)">3</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m27">
+27 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a condition:</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Issues hearing in loud places, mishears conversations,
+Issues hearing phone call dialog,
+Missing alarms/alerts,
+Missing TV dialog, trouble hearing specific frequencies,
+Ringing in ears,
+Hard of hearing, one ear only,
+Hard of hearing / deaf,
+Deaf + Sign Language,
+All of these,
+None of these]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m28">
+28 Menu Item <span class="box">Issues hearing in loud places, mishears conversations</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m29">
+29 Text</button>
+	<div class="content inside">
+		<div class="col2">Screen Flash Dictation Notes Messages Share Screen Notifications Music Lyrics Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m30">
+30 Menu Item <span class="box">Issues hearing phone call dialog</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m31">
+31 Text</button>
+	<div class="content inside">
+		<div class="col2">RTT Messages Mono Audio AirPods Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m32">
+32 Menu Item <span class="box">Missing alarms/alerts</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m33">
+33 Text</button>
+	<div class="content inside">
+		<div class="col2">Screen Flash Notifications Shortcuts Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m34">
+34 Menu Item <span class="box">Missing TV dialog, trouble hearing specific frequencies</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m35">
+35 Text</button>
+	<div class="content inside">
+		<div class="col2">Subtitles/CC/SDH AirPods Music Lyrics Screen Flash Spatial Audio SharePlay Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m36">
+36 Menu Item <span class="box">Ringing in ears</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m37">
+37 Text</button>
+	<div class="content inside">
+		<div class="col2">Subtitles/CC/SDH AirPods Music Lyrics Screen Flash Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m38">
+38 Menu Item <span class="box">Hard of hearing, one ear only</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m39">
+39 Text</button>
+	<div class="content inside">
+		<div class="col2">Mono Audio Spatial Audio Screen Flash Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m40">
+40 Menu Item <span class="box">Hard of hearing / deaf</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m41">
+41 Text</button>
+	<div class="content inside">
+		<div class="col2">Subtitles/CC/SDH Music Lyrics Screen Flash RTT FaceTime SharePlay Messages Share Screen Type to Siri Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m42">
+42 Menu Item <span class="box">Deaf + Sign Language</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m43">
+43 Text</button>
+	<div class="content inside">
+		<div class="col2">FaceTime SharePlay Subtitles/CC/SDH Music Lyrics Screen Flash RTT Type to Siri Messages Share Screen Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m44">
+44 Menu Item <span class="box">All of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m45">
+45 Text</button>
+	<div class="content inside">
+		<div class="col2">Screen Flash
+Dictation
+Notes
+Messages
+Share Screen
+Notifications
+Music Lyrics
+Privacy
+RTT
+Mono Audio
+AirPods
+Shortcuts
+Subtitles/CC/SDH
+Spatial Audio
+SharePlay
+FaceTime
+Type to Siri</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m46">
+46 Menu Item <span class="box">None of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m47">
+47 Nothing</button></div>
+<button class="gLoop nontop inside" id="m48">
+48 End Menu</button></div>
+<button class="button gLoop nonbottom nontop" id="m49">
+49 Menu Item <span class="box">Mobility</span>&#12288;▵<span class="magic" onclick="magictap(26)">26</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m50">
+50 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a condition:</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Difficulty typing,
+Lack of fine motor skills,
+Reduced limb function / low range of motion / single touch point,
+Involuntary movements / tremors,
+Low mobility + speech issues,
+Manual wheelchair user,
+Motorized wheelchair users,
+Head movement only,
+All of these,
+None of these]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m51">
+51 Menu Item <span class="box">Difficulty typing</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m52">
+52 Text</button>
+	<div class="content inside">
+		<div class="col2">Touch ID Word Completion Siri Dictation AirPods Voice Control Siri Predictive Text
+Accessibility Keyboard Text Replacement Keychain Sticky Keys Continuity Across Devices Universal Control Handoff Unlock Mac with Watch Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m53">
+53 Menu Item <span class="box">Lack of fine motor skills</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m54">
+54 Text</button>
+	<div class="content inside">
+		<div class="col2">Touch ID Dictation Sticky Keys Voice Control Head Pointer Dwell Mouse Keys Siri Word Completion
+Accessibility Keyboard Predictive Text Text Replacement Keychain AirPods Continuity Across Devices Handoff Universal Control Unlock Mac with Watch Shortcuts Shake Mouse Pointer to Locate Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m55">
+55 Menu Item <span class="box">Reduced limb function / low range of motion / single touch point</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m56">
+56 Text</button>
+	<div class="content inside">
+		<div class="col2">Touch ID Head Pointer Dwell Siri Dictation AirPods Sticky Keys Voice Control Predictive Text Text Replacement Word Completion
+Accessibility Keyboard Mouse Keys Keychain Continuity Across Devices Universal Control Spatial Audio Handoff Unlock Mac with Watch Share Screen Messages SharePlay FaceTime Shortcuts Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m57">
+57 Menu Item <span class="box">Involuntary movements / tremors</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m58">
+58 Text</button>
+	<div class="content inside">
+		<div class="col2">Touch ID Slow Keys Sticky Keys Head Pointer
+Accessibility Keyboard Dwell Spatial Audio Voice Control Mouse Keys Keychain AirPods Continuity Across Devices Handoff Universal Control Unlock Mac with Watch Shortcuts Privac</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m59">
+59 Menu Item <span class="box">Low mobility + speech issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m60">
+60 Text</button>
+	<div class="content inside">
+		<div class="col2">Touch ID Spatial Audio Type to Siri Sticky Keys Slow Keys Head Pointer Dwell Predictive Text Text Replacement Word Completion
+Accessibility Keyboard Mouse Keys Messages Share Screen Keychain Continuity Across Devices Universal Control Spatial Audio Handoff Unlock Mac with Watch Share Screen Speak Screen Speak Selected Text Speak Typing Feedback Shortcuts - Pain Report Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m61">
+61 Menu Item <span class="box">Manual wheelchair user</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m62">
+62 Text</button>
+	<div class="content inside">
+		<div class="col2">Dictation Voice Control Siri Keychain AirPods Continuity Across Devices Handoff Touch ID Universal Control Unlock Mac with Watch Shortcuts Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m63">
+63 Menu Item <span class="box">Motorized wheelchair users</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m64">
+64 Text</button>
+	<div class="content inside">
+		<div class="col2">Siri Dictation Voice Control Head Pointer Dwell Switch Control
+Accessibility Keyboard Keychain AirPods Spatial Audio Continuity Across Devices Handoff Universal Control Touch ID Unlock Mac with Watch Shortcuts Share Screen Messages SharePlay FaceTime Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m65">
+65 Menu Item <span class="box">Head movement only</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m66">
+66 Text</button>
+	<div class="content inside">
+		<div class="col2">Switch Control Accessibility Keyboard Dictation Voice Control Head Pointer Dwell Siri Keychain AirPods Spatial Audio Continuity Across Devices Handoff Universal Control Unlock Mac with Watch Shortcuts - Help Message Share Screen Messages SharePlay FaceTime Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m67">
+67 Menu Item <span class="box">All of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m68">
+68 Text</button>
+	<div class="content inside">
+		<div class="col2">Touch ID
+Word Completion
+Accessibility Keyboard
+Siri
+Dictation
+AirPods
+Voice Control
+Predictive Text
+Text Replacement
+Keychain
+Sticky Keys
+Continuity Across Devices
+Universal Control
+Handoff
+Unlock Mac with Watch
+Privacy
+Head Pointer
+Dwell
+Mouse Keys
+Shortcuts
+Shake Mouse Pointer to Locate
+Spatial Audio
+Share Screen
+Messages
+SharePlay
+FaceTime
+Slow Keys
+Type to Siri
+Speak Screen
+Speak Selected Text
+Speak Typing Feedback
+Shortcuts - Pain Report
+Switch Control
+Shortcuts - Help Message</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m69">
+69 Menu Item <span class="box">None of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m70">
+70 Nothing</button></div>
+<button class="gLoop nontop inside" id="m71">
+71 End Menu</button></div>
+<button class="button gLoop nonbottom nontop" id="m72">
+72 Menu Item <span class="box">Cognitive</span>&#12288;▵<span class="magic" onclick="magictap(49)">49</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m73">
+73 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a condition:</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Tired when reading,
+Concentration issues,
+Forgetfulness / disorientation,
+Misplaces devices,
+Reading difficulties,
+Spelling issues,
+Words running together,
+Motion sickness,
+List writing,
+Difficulty following instructions,
+Mood changes,
+Safety issues,
+Language issues,
+Non-verbal / difficultly speaking,
+All of these,
+None of these]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m74">
+74 Menu Item <span class="box">Tired when reading</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m75">
+75 Text</button>
+	<div class="content inside">
+		<div class="col2">Speak Screen Speak Selection Highlight Content Safari Reader Live Text Hover Text Increase Text Size Speak Items Under Pointer Split Screen Display Dark Mode Night Shift Mode Color Filters Speak Announcements Announce Time Display Preferences Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m76">
+76 Menu Item <span class="box">Concentration issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m77">
+77 Text</button>
+	<div class="content inside">
+		<div class="col2">Focus and Do Not Disturb Reminders Speak Screen Speak Selection Highlight Content Safari Reader Split Screen Apps in Full Screen Sidecar Dark Mode Notifications Spatial Audio Handoff Announce Time Shortcuts Show Window title icons Pointer Preferences Speak Announcements Color Filters Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m78">
+78 Menu Item <span class="box">Forgetfulness / disorientation</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m79">
+79 Text</button>
+	<div class="content inside">
+		<div class="col2">Focus and Do Not Disturb Reminders Screen Time Keychain Find My Touch ID Spatial Audio Announce Time Split Screen Privacy Facial Recognition in Photos Shortcuts - Help Message Maps Siri Widgets Unlock Mac with Watch Speak Announcements Share Screen Messages SharePlay FaceTime</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m80">
+80 Menu Item <span class="box">Misplaces devices</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m81">
+81 Text</button>
+	<div class="content inside">
+		<div class="col2">Find My Siri Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m82">
+82 Menu Item <span class="box">Reading difficulties</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m83">
+83 Text</button>
+	<div class="content inside">
+		<div class="col2">Speak Screen Speak Selection Highlight Content Safari Reader Live Text Hover Text Speak Items Under Pointer Dark Mode Show Window title icons Announce Time Speak Announcements Increase Text Size Siri Split Screen Display Preferences Reduce Motion Display Brightness Invert Colors Color Filters Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m84">
+84 Menu Item <span class="box">Spelling issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m85">
+85 Text</button>
+	<div class="content inside">
+		<div class="col2">Auto Correction Word Completion Predictive Text Text Replacement Speak Typing Feedback Dictation Siri Touch ID Unlock Mac with Watch Keychain Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m86">
+86 Menu Item <span class="box">Words running together</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m87">
+87 Text</button>
+	<div class="content inside">
+		<div class="col2">Speak Screen Speak Selection Highlight Content Safari Reader Hover Text Speak Items Under Pointer Dark Mode Zoom Increase Text Size Display Preferences Color Filters Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m88">
+88 Menu Item <span class="box">Motion sickness</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m89">
+89 Text</button>
+	<div class="content inside">
+		<div class="col2">Reduce Motion Spatial Audio Split Screen Speak Screen Speak Selection Dark Mode Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m90">
+90 Menu Item <span class="box">List writing</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m91">
+91 Text</button>
+	<div class="content inside">
+		<div class="col2">Reminders Notes Dictation Siri Shortcuts Announce the Time Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m92">
+92 Menu Item <span class="box">Difficulty following instructions</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m93">
+93 Text</button>
+	<div class="content inside">
+		<div class="col2">Focus and Do Not Disturb Screen Time Reminders Notes Messages Announce Time Notifications Shortcuts Messages Share Screen FaceTime SharePlay Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m94">
+94 Menu Item <span class="box">Mood changes</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m95">
+95 Text</button>
+	<div class="content inside">
+		<div class="col2">Focus and Do Not Disturb Screen Time Notes Night Shift Mode Shortcuts - Mood Journal and Check In Message Music Photos Messages Share Screen FaceTime SharePlay Siri Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m96">
+96 Menu Item <span class="box">Safety issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m97">
+97 Text</button>
+	<div class="content inside">
+		<div class="col2">Shortcuts - Help Message Messages Find My Siri Maps Privacy Widgets FaceTime Messages</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m98">
+98 Menu Item <span class="box">Language issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m99">
+99 Text</button>
+	<div class="content inside">
+		<div class="col2">Translate Live Text Speak Screen Speak Selection Highlight Text Speak Items Under Pointer Larger Text Dictation Safari Reader Language Keyboards Auto Correction Touch ID Unlock Mac with Watch Messages Share Screen FaceTime SharePlay Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m100">
+100 Menu Item <span class="box">Non-verbal / difficultly speaking</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m101">
+101 Text</button>
+	<div class="content inside">
+		<div class="col2">Type to Siri Messages Share Screen SharePlay Speak Screen Speak Selected Text Speak Typing Feedback Speak Items Under Pointer Shortcuts - Pain Report Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m102">
+102 Menu Item <span class="box">All of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m103">
+103 Text</button>
+	<div class="content inside">
+		<div class="col2">Speak Screen
+Speak Selection
+Highlight Content
+Safari Reader
+Live Text
+Hover Text
+Increase Text Size
+Speak Items Under Pointer
+Split Screen
+Display
+Dark Mode
+Night Shift Mode
+Color Filters
+Speak Announcements
+Announce Time
+Display Preferences
+Privacy
+Focus and Do Not Disturb
+Reminders
+Apps in Full Screen
+Sidecar
+Notifications
+Spatial Audio
+Handoff
+Shortcuts
+Show Window title icons
+Pointer Preferences
+Screen Time
+Keychain
+Find My
+Touch ID
+Facial Recognition in Photos
+Shortcuts - Help Message
+Maps
+Siri
+Widgets
+Unlock Mac with Watch
+Share Screen
+Messages
+SharePlay
+FaceTime
+Reduce Motion
+Display Brightness
+Invert Colors
+Auto Correction
+Word Completion
+Predictive Text
+Text Replacement
+Speak Typing Feedback
+Dictation
+Zoom
+Privacy 
+Notes
+Announce the Time
+Shortcuts - Mood Journal and Check In Message
+Music
+Photos
+Translate
+Highlight Text
+Larger Text
+Language Keyboards
+Type to Siri
+Speak Selected Text
+Shortcuts - Pain Report</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m104">
+104 Menu Item <span class="box">None of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m105">
+105 Nothing</button></div>
+<button class="gLoop nontop inside" id="m106">
+106 End Menu</button></div>
+<button class="gLoop nontop" id="m107">
+107 End Menu&#12288;▵<span class="magic" onclick="magictap(72)">72</span>&#12288;&#187; <span class="magic" onclick="magictap(110)">110</span> <span class="magic" onclick="magictap(114)">114</span></button>
+<button class="button gLoop nonbottom" id="m108">
+108 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Would you like to specify more conditions?</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Add more,
+Finished  ✅]</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m109">
+109 Menu Item <span class="box">Add more</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m110">
+110 Split Text <span class="box"><span class="magic" onclick="magictap(107)"><b>[107 Menu Result]</b></span></span> by New Lines&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="gVariable inside" id="m111">
+111 Add <span class="box"><span class="var"><b>[110 Split Text]</b></span></span> to Variable <span class="box">Accessibility Features</span></button>
+<button class="button  inside" id="m112">
+112 Run Shortcut <span class="box">Accessibility Matrix Test - ALT BUILD</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Input</div>
+			<div class="col2"><span class="var"><b>[Accessibility Features]</b></span></div></div>
+		<div class="row"><div class="col1">Workflow</div>
+			<div class="col2">{  "workflowIdentifier": "264A4D8E-D8DD-4173-90AB-81AED809E2C9",
+   "workflowName": "Accessibility Matrix Test - ALT BUILD",
+   "isSelf": true
+}</div></div></div></div>
+<button class="button gLoop nonbottom nontop" id="m113">
+113 Menu Item <span class="box">Finished  ✅</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m114">
+114 Split Text <span class="box"><span class="magic" onclick="magictap(107)"><b>[107 Menu Result]</b></span></span> by New Lines&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="gVariable inside" id="m115">
+115 Add <span class="box"><span class="var"><b>[114 Split Text]</b></span></span> to Variable <span class="box">Accessibility Features</span></button>
+<button class="button gDocuments inside" id="m116">
+116 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2"></div></div>
+<button class="gVariable inside" id="m117">
+117 Set Variable <span class="box">De-duped List</span> to <span class="box"><span class="var"><b>[116 Text]</b></span></span></button>
+<button class="button gLoop nonbottom inside" id="m118">
+118 Repeat with Each in <span class="box"><span class="var"><b>[Accessibility Features</b> as Text<b>]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gLoop nonbottom inside" id="m119">
+119 If <span class="box"><span class="var"><b>[De-duped List]</b></span></span> <span class="box">does not contain</span> <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button>
+	<div class="content contentloop inside">
+<button class="gVariable inside" id="m120">
+120 Add <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Variable <span class="box">De-duped List</span></button></div>
+<button class="gLoop nontop inside" id="m121">
+121 End If</button></div>
+<button class="gLoop nontop inside" id="m122">
+122 End Repeat with Each</button>
+<button class="button gDocuments inside" id="m123">
+123 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Accessibility Features on Mac
+
+- Created on <span class="var"><b>[CurrentDate]</b></span> -
+
+
+Based on your specified selections, below is a list of accessibility features that might be helpful, along with links to support documentation and video tutorials, to find out how to turn them on and get started.
+
+Accessibility Shortcut
+After you set up accessibility features, you can quickly turn them on or off with keyboard press Option-Command-F5 or triple-press Touch ID (power button) on supported models. You can also ask Siri to help with some accessibility features.
+
+Accessibility at Login
+You can turn on certain accessibility options in the login window to make it easier to log into your Mac: 
+- VoiceOver
+- Zoom
+- Accessibility Keyboard
+- Sticky Keys
+- Slow Keys
+- Mouse Keys
+- Switch Control
+
+Mac accessibility shortcuts:
+https://support.apple.com/HT204434
+
+Use the Accessibility Options panel on Mac:
+https://support.apple.com/HT202562
+
+Get started with accessibility features on Mac
+https://support.apple.com/guide/mac-help/mh35884/12.0/mac/
+
+Turn on accessibility options in the login window on Mac:
+https://support.apple.com/guide/mac-help/mchlaa57f797/12.0/mac/
+
+
+—————————————————————————————————
+
+</div></div>
+<button class="gVariable inside" id="m124">
+124 Set Variable <span class="box">Header</span> to <span class="box"><span class="var"><b>[123 Text]</b></span></span></button>
+<button class="button gDocuments inside" id="m125">
+125 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">
+
+—————————————————————————————————
+
+
+
+💻 Apple Support
+Apple Support Pages homepage
+https://support.apple.com/
+
+Apple Support App
+Need help? Apple Support app is your personalized guide to the best options from Apple. Find answers with articles tailored to your products and questions. Call, chat or email with an expert right away, or schedule a callback when it’s convenient. Get a repair at an Apple Store or a nearby Apple Authorised Service Provider. Apple Support is here to help. **Supports hard of hearing or non verbal assistance for individuals through chat functionality.
+https://itunes.apple.com/app/apple-support/id1130498044
+
+AppleCare
+Chat with experts online or have us call you right away. You can also schedule a time for us to call you when you’re ready. Answer a few questions and we’ll give you the best options.
+https://support.apple.com/contact
+
+List of AppleCare Support numbers (worldwide) - https://support.apple.com/HT201232
+How to contact Apple for accessibility support - https://support.apple.com/HT209585
+Accessibility Support Helpdesk:
+United States: 1-877-204-3930
+United Kingdom.: 0800 107 6285
+China mainland: 400-619-8141 (Mandarin only)
+Australia: (61) 1-300-365-083
+
+Apple Retail Support
+Join us for free workshops that cover everything from learning the basics of your new product to editing photos and more. Take the kids to free youth programs like Apple Camp. Or inspire the whole class with a Field Trip to the Apple Store. Forgot your Apple ID or have a question about an app or service? Want to make a Genius Bar reservation? We have several convenient Apple Support options for you to choose from.
+https://www.apple.com/retail/
+
+Apple Support Communities
+Find answers, ask questions, and connect with our community of Apple users from around the world.
+https://discussions.apple.com/welcome
+
+Social 
+YouTube https://www.youtube.com/applesupport/
+Accessibility playlist: https://www.youtube.com/watch?v=LyzkIhNIhgE&amp;list=PLIl2EzNYri0cLtSlZowttih25VnSvWITu
+Twitter @AppleSupport
+
+📖 Manuals and Guides
+macOS Monterey https://www.apple.com/macos/monterey/
+macOS User Guide for macOS Monterey 
+https://support.apple.com/guide/mac-help/welcome/mac
+
+macOS general accessibility features
+https://support.apple.com/guide/mac-help/mchl429b64a1/12.0/mac/ 
+macOS accessibility features for vision
+https://support.apple.com/guide/mac-help/mchl67c83f41/12.0/mac/
+macOS accessibility features for hearing
+https://support.apple.com/guide/mac-help/mchlb4f015b1/12.0/mac/
+macOS accessibility features for mobility
+https://support.apple.com/guide/mac-help/mchl654a7cc7/12.0/mac/
+
+
+</div></div>
+<button class="gVariable inside" id="m126">
+126 Set Variable <span class="box">Footer</span> to <span class="box"><span class="var"><b>[125 Text]</b></span></span></button>
+<button class="button gDocuments inside closed" id="m127">
+127 Text&#12288;&#187;</button>
+	<div class="content inside" style="display:none">
+		<div class="col2">-----
+AirPods
+
+When your AirPods are nearby and ready to use with your Mac, you can use them to listen to music, use Siri or handle phone calls. Great for use with VoiceOver in shared environments and Voice Control / Dictation users when in noisy spaces.
+
+Switch between noise cancellation and transparency modes while listening to audio from your Mac on AirPods Pro or AirPods Max.
+
+Use AirPods with your Mac:
+https://support.apple.com/guide/mac-help/mchld2f124d1/12.0/mac/
+
+Video
+
+How to customize the settings on your AirPods or AirPods Pro:
+https://youtu.be/AYdyBdQvAJE
+
+
+
+-----
+Announce Time
+
+For Clock, you can set options to customize how the time and the date appear in the menu bar. To hear the time announced, select the “Announce the time” tick box, then choose when you want it announced and the voice used for the announcements.
+
+Change Dock &amp; Menu Bar preferences on Mac:
+https://support.apple.com/guide/mac-help/mchlp1119/12.0/mac/
+
+
+
+-----
+Apps in Full Screen
+
+Many apps on your Mac support full-screen mode — an app fills the entire screen — so you can take advantage of every inch of the screen and work without desktop distractions.
+
+Use apps in full screen on Mac:
+https://support.apple.com/guide/mac-help/mchl9c21d2be/mac
+
+
+
+-----
+Audio Descriptions
+
+Watch movies with detailed audio descriptions of every scene. Movies with audio descriptions are displayed with the AD icon in the iTunes Store. 
+
+VoiceOver users can access closed caption and subtitle tracks audibly or through their Braille displays.
+
+Turn on audio descriptions on your Mac:
+https://support.apple.com/HT205800
+
+Use audio descriptions to hear narration describing a video clip, show, or movie:
+https://support.apple.com/HT204657 
+
+Check if films and TV shows have accessibility features in the Apple TV app:
+https://support.apple.com/HT205742
+
+
+
+-----
+Auto-Correction
+
+In many macOS apps, spelling is checked while you type, and mistakes are automatically corrected. You can turn off these features, and use other options while typing emails, messages or documents.
+
+Check spelling and grammar on Mac:
+https://support.apple.com/guide/mac-help/mh35735/mac
+
+Set up Auto-Correction and add words to your dictionary in Pages, Numbers and Keynote:
+https://support.apple.com/HT207767
+
+
+
+-----
+Color Filters
+
+If you have color blindness or other vision challenges, you can use Color Filters to help you differentiate between colors. 
+You can apply a color filter to adjust the display colors for colour vision deficiencies or to tint the entire screen to make it easier to read text.
+
+When you turn on Color Filters, you can choose from four preset filters:
+- Grayscale
+- Red/Green for Protanopia
+- Green/Red for Deuteranopia
+- Blue/Yellow for Tritanopia
+
+Or you can customize a Color Tint to change the hue of the entire display on your Mac. Use the sliders to adjust your display's hue and the intensity of the effect.
+
+Color Filters can change the look of things, like pictures and movies, so you might want to use it only when needed.
+
+Use color filters on Mac:
+https://support.apple.com/guide/mac-help/mchl11ddd4b3/mac
+
+Change Color Filters preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/mchlba06b669/mac
+
+
+
+-----
+Continuity Across Devices
+
+With Continuity, you can use your Mac together with your other Apple devices to work smarter and move seamlessly between your devices.
+
+Use Continuity to work across Apple devices:
+https://support.apple.com/guide/mac-help/mchl1d734309/12.0/mac/
+
+Use Continuity to connect your Mac, iPhone, iPad, iPod touch and Apple Watch:
+https://support.apple.com/HT204681
+
+
+
+-----
+Dark Mode
+
+Dark Mode makes it easier to stay focused on your work, because your content stands out while darkened controls and windows recede into the background.
+
+Dark Mode is easy on your eyes and helps you focus on your work. Dark Mode uses a dark colour scheme that works system-wide, including with the apps that come with your Mac. And third-party apps can adopt it, too.
+
+Dark Mode is available in Control Center Display for quick access to this feature. 
+
+How to use Dark Mode on your Mac:
+https://support.apple.com/HT208976
+
+Use Control Centre on Mac:
+https://support.apple.com/guide/mac-help/mchl50f94f8f/mac
+
+Video
+How to switch to Dark Mode on your Mac
+https://youtu.be/gGAAqejbfIg
+(Runtime 1:32)
+
+
+
+-----
+Dictation
+
+Dictation lets you talk wherever you would type. It’s easy to type an email, notes, or a web address — without typing at all. Dictation works in over 30 languages. Just go to any text field and enable. 
+
+Turn it on in the Dictation pane of Keyboard preferences. A feedback window gauges your speaking volume and provides basic dictation controls.
+
+Dictate messages and documents on Mac:
+https://support.apple.com/guide/mac-help/mh40584/mac
+
+Commands for dictating text on Mac:
+https://support.apple.com/guide/mac-help/mh40695/12.0/mac/
+
+
+
+-----
+Differentiate Without Color
+
+Use shapes, in addition to or instead of colour, to convey status or information. For example: Status icons with a green circle and a red circle would appear as a green circle 🟢  and red square 🟥 with ‘Differentiate without Color’ enabled.
+
+Change Display preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac089/mac
+
+
+
+-----
+Display Preferences
+
+Change your display to work the way you do. Customize the display to your unique vision requirements. 
+
+Make it easier to see what’s on the screen of your Mac:
+https://support.apple.com/guide/mac-help/mchld786f2cd/mac
+
+Use a light or dark appearance on your Mac:
+https://support.apple.com/guide/mac-help/mchl52e1c2d2/12.0/mac/
+
+
+
+-----
+Display Brightness
+
+If the screen seems too light or too dark, you can adjust your display’s brightness. 
+
+Change your Mac display’s brightness
+https://support.apple.com/guide/mac-help/mchlp2704/mac
+
+
+
+-----
+Dock Zoom
+
+Make your Dock (and icons) bigger. Use Dock &amp; Menu Bar System Preferences to change the appearance of the Dock. 
+
+Magnify icons when you move the pointer over them. Drag the slider to choose the magnification size.
+
+Change Dock &amp; Menu Bar preferences on Mac:
+https://support.apple.com/guide/mac-help/mchlp1119/12.0/mac/
+
+
+
+-----
+Dwell
+
+If you enable the Accessibility Keyboard, you can use Dwell, which lets you perform mouse actions using eye- or head-tracking technology. You can easily access dwell actions, such as Left Click, in the Accessibility Keyboard and custom panels or in the menu bar.
+
+Control the pointer using Dwell on Mac:
+https://support.apple.com/guide/mac-help/mchl437b47b0/12.0/mac/
+
+
+
+-----
+FaceTime
+
+If you use sign language, FaceTime is an ideal way to communicate. The high-quality video and fast frame rate help you catch every gesture or expression.
+
+When you’re signed in and FaceTime is turned on, you can create a link for a FaceTime call, then share that link with anyone using any device (Apple, Android or Windows). As the link originator, you need to start the call, then allow each user to join.
+
+FaceTime User Guide:
+https://support.apple.com/guide/facetime/welcome/mac
+
+Use FaceTime on Mac:
+https://support.apple.com/HT208176
+
+Make calls in FaceTime on Mac:
+https://support.apple.com/guide/facetime/fctm35828/mac 
+
+Make calls in FaceTime on Mac:
+https://support.apple.com/guide/facetime/fctm35828/5.0/mac/12.0#fctm642782df
+
+Create a link to start a FaceTime call on Mac:
+https://support.apple.com/guide/facetime/fctm90c6f805/5.0/mac/
+
+
+
+-----
+Facial Recognition in Photos
+
+The Photos app scans your photos to help you quickly recognize the people, scenes, and objects within the photos. You can name the people in your photos, mark your favorites, and more. Depending on the number of photos that you have, you can watch a Memory movie of them. And when you have iCloud Photos turned on, the people you favorite or name stay up to date across your Apple devices.
+
+Find and identify photos of people using Photos on Mac:
+https://support.apple.com/guide/photos/phtad9d981ab/mac
+
+
+
+-----
+Find My
+
+Set up Find My on your iPhone, iPad, iPod touch, or Mac. You can use it to find your AirPods or Apple Watch, too. With Find My and Location Services turned on, you can locate a lost or missing device. Easily locate friends and family members. Share your location with others, and let them share back.
+
+Find My - One app to find it all:
+https://www.apple.com/icloud/find-my/ 
+
+Keep track of what's important:
+https://support.apple.com/find-my
+
+If your Mac has been lost or stolen:
+https://support.apple.com/HT204756
+
+Use the Find My app to locate a missing device or item:
+https://support.apple.com/HT204756
+
+Video
+How to use Find My: 
+https://youtu.be/qj9ORN8IXXk
+(Runtime 3:16)
+
+
+
+-----
+Focus and Do Not Disturb
+
+Do Not Disturb helps you concentrate by silencing calls, alerts, and notifications while your device is locked. You can also schedule Do Not Disturb and allow notifications from only certain individuals while it is enabled.
+It automatically turns on when your Mac is connected to a TV or projector.
+
+You can use Control Centre to quickly turn on a Focus—such as Do Not Disturb or Personal—when you need time to concentrate, then turn it off when you’re ready.
+
+Turn a Focus on or off on Mac:
+https://support.apple.com/guide/mac-help/mchl999b7c1a/mac
+
+Use Notifications on your Mac:
+https://support.apple.com/HT204079
+
+
+
+-----
+Full Keyboard Access
+
+With Full Keyboard Access enabled, you can use the Tab key and other keys to navigate every UI element on the screen and navigate your Mac, instead of using a mouse or trackpad. Full Keyboard Access highlights the item on the screen that has focus. You can customise the colour, contrast and size of the highlight.
+
+You can use your keyboard to perform many of the same actions you perform using the mouse, such as navigating to or selecting menus, icons, text boxes, lists and items in windows and dialogues. With keyboard navigation, you can use the Tab key to move focus forwards, or press the Shift and Tab keys at the same time to move focus back.
+
+Navigate your Mac using Full Keyboard Access:
+https://support.apple.com/guide/mac-help/mchlc06d1059/12.0/mac/
+
+Use your keyboard like a mouse with Mac:
+https://support.apple.com/guide/mac-help/mchlp1399/mac
+
+
+
+-----
+Handoff
+
+With Handoff, you can start work on one device, then switch to another nearby device and pick up where you left off.
+
+Use Handoff to continue tasks on your other devices:
+https://support.apple.com/HT209455
+
+
+
+-----
+Head Pointer
+
+If you have difficulty using a mouse or trackpad, you can use head pointer on your Mac. Head pointer lets you move the pointer on the screen using the movement of your face or head, as detected by the camera that’s built into or connected to your Mac. For example, if you move your head to the left, the pointer follows in that direction on the screen.
+
+Move the pointer using head pointer on Mac:
+https://support.apple.com/guide/mac-help/mchlb2d4782b/mac 
+
+Change Alternate Control Methods preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/mchl7b437b35/12.0/mac/
+
+
+
+-----
+Hover Text
+
+Hover Text makes it easier to view text on your Mac display. If a paragraph, caption, or headline is too small to read, just hover over it with your pointer and press the activation key for a bigger, high‑resolution version of your selection. You can even choose the fonts and colors that work best for you.
+
+Use Hover Text on Mac:
+https://support.apple.com/guide/mac-help/mchlb203bc78/mac
+
+Video
+How to use Hover Text to display larger text on your Mac
+https://youtu.be/GOmod0Fk3_U
+(Runtime 0:32)
+
+
+
+-----
+Icons Bigger
+
+Customize your Mac to make icons and other items bigger. Change view options and explore System preferences to meet visual needs. 
+
+Increase the size of icons and text on the desktop, in the Finder and the size of items in sidebars. 
+
+Make it easier to see what’s on the screen of your Mac:
+https://support.apple.com/guide/mac-help/mchld786f2cd/mac
+
+
+
+-----
+Increase Contrast
+
+Improves color contrast between app foreground and background colors.
+
+Change Display preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac089/mac
+
+
+
+-----
+Increase Text Size
+
+Make text bigger on your Mac. Increase the text size in Mail, Messages and other apps.
+
+Make it easier to see what’s on the screen of your Mac:
+https://support.apple.com/guide/mac-help/mchld786f2cd/mac
+
+Change your Mac display’s resolution:
+https://support.apple.com/guide/mac-help/mchl86d72b76/mac
+
+
+
+-----
+Invert Colors
+
+If you benefit from viewing items against a dark background, you can use Invert Colors to change how content is displayed on your screen.
+
+Smart Invert reverses the colors on the display, except for images, media, and some apps that use dark color styles.
+
+Classic Invert reverses all colors on the display.
+
+Change Display preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac089/mac
+
+
+
+-----
+Keychain
+
+With iCloud Keychain, you can keep your passwords and other secure information updated across your devices.
+
+iCloud Keychain remembers things, so that you don't have to. It auto-fills your information — like your Safari user names and passwords, credit cards details and Wi-Fi passwords on any device that you approve. So you don’t have to remember the password or even type it in.
+
+Set up iCloud Keychain:
+https://support.apple.com/HT204085
+
+What is Keychain Access on Mac?
+https://support.apple.com/guide/keychain-access/kyca1083/mac
+
+
+
+-----
+Language Keyboards
+
+Write in another language on your Mac with additional keyboard layouts, known as input sources. To use additional keyboard layouts, add the language you want to use to the input menu. Then switch to that language when you want to use it. You can also quickly switch languages using your keyboard or remain in your primary language and use the accent menu to enter characters with accent marks when writing.
+
+Write in another language on your Mac:
+https://support.apple.com/guide/mac-help/mchlp1406/mac
+
+
+
+-----
+Live Text
+
+In Photos, you can use Live Text to copy and use the text that appears in a photo. For example, you can copy the text of a roadside sign and paste it into a text message or email. You can look up the meaning of words, do a web search, and even translate text into another language. If a photo shows a phone number, website or email address, you can use it to make a call, open a website or address an email.
+
+Interact with text in a photo using Live Text in Photos on Mac:
+https://support.apple.com/guide/photos/pht6bc6bd5f5/mac
+
+
+
+-----
+Mac Keyboard Shortcuts
+
+By pressing certain key combinations, you can do things that normally need a mouse, trackpad, or other input device.
+
+To use a keyboard shortcut, press and hold one or more modifier keys and then press the last key of the shortcut. For example, to use Command-C (copy), press and hold the Command key, then the C key, then release both keys. 
+
+Mac Keyboard Shortcuts
+https://support.apple.com/HT201236
+
+Video
+
+Save time with Mac keyboard shortcuts:
+https://youtu.be/r2xVvFVp3a4 
+(Runtime 2:45)
+
+
+
+-----
+Maps
+
+Maps will help you find your way. Whether it’s home, work, the gym, or your kid’s school, the places you visit most often are displayed for quick navigation when you open Maps on your devices. Or ask Siri, “Give me directions to my Dad’s house.”
+
+Maps User Guide:
+https://support.apple.com/guide/maps/welcome/mac
+
+
+
+-----
+Menu Bar Size
+
+Set the font size in the menu bar to Large or back to Default. You must log out and log in again to see the change in menu bar font size.
+
+Change Display preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac089/mac
+
+
+
+-----
+Messages
+
+Use the Messages app to send unlimited messages to any Mac, iPhone, iPad or iPod touch using iMessage, Apple's secure-messaging service.
+
+During a conversation in Messages, you can share your screen with the person you’re texting or they can share theirs with you. Check out Share Screen for more details. 
+
+Use Messages on your Mac:
+https://support.apple.com/HT202549
+
+Set up Messages on Mac:
+https://support.apple.com/guide/messages/ichte16154fb/mac
+
+Video
+Get to know Messages on your Mac:
+https://www.youtube.com/watch?v=ptB0AMHWCWs
+(Runtime 2:42)
+
+
+
+-----
+Mono audio
+
+Stereo recordings usually have distinct left- and right-channel audio tracks. Mono Audio can help streamline the differences by playing both audio channels in both ears. You can adjust the balance for greater volume in either ear, so you won’t miss a single note of a concerto or word of an audiobook.
+
+On your Mac, use the Audio pane of Accessibility preferences to play stereo sound as mono, and turn Spatial Audio on or off.
+
+Change Audio preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac611/mac
+
+
+
+-----
+Mouse Keys
+
+When you turn on Mouse Keys on your Mac, you can move the mouse pointer and press the mouse button using the keyboard or a numeric keypad.
+
+Note: When Mouse Keys is on, you can’t use the keyboard or a numeric keypad to enter text.
+
+Control the pointer using Mouse Keys on Mac:
+https://support.apple.com/guide/mac-help/mh27469/12.0/mac/
+
+
+
+-----
+Music
+
+Music can soothe, energize and help us calm down. Learn how to make a playlist in the Apple Music app. 
+
+Play songs from your library in Music on Mac:
+https://support.apple.com/guide/music/mus36265ad9/mac 
+
+Create, edit and delete playlists in Music on Mac:
+https://support.apple.com/guide/music/musd5d051981/mac
+
+
+
+-----
+Music Lyrics
+
+View lyrics in Apple Music. Discover the words to your favorite songs. Or follow along as you listen with perfectly timed lyrics — all with Apple Music.
+
+View and enter lyrics in Music on Mac:
+https://support.apple.com/guide/music/musf438ffc97/mac
+
+
+
+-----
+Night Shift
+
+Night Shift automatically shifts the colours of your display to the warmer end of the colour spectrum after dark.
+
+Studies have shown that exposure to bright blue light in the evening can affect your circadian rhythms and make it harder to fall asleep. Night Shift uses your computer's clock and geolocation to determine when it's sunset in your location. It then automatically shifts the colours in your display to the warmer end of the spectrum. It returns the display to its regular settings in the morning.
+
+Use Night Shift on your Mac:
+https://support.apple.com/HT207513
+
+
+
+-----
+Notes
+
+Use the Notes app to jot down quick thoughts or organise detailed information with checklists, images, web links, scanned documents, handwritten notes, and sketches.
+
+Notes User Guide:
+https://support.apple.com/guide/notes/welcome/mac
+
+Add lists in Notes on Mac:
+https://support.apple.com/guide/notes/apd93c815aa0/4.9/mac/
+
+Start a Quick Note on Mac:
+https://support.apple.com/guide/notes/apdf028f7034/4.9/mac/
+
+Share notes and folders on Mac:
+https://support.apple.com/guide/notes/apda5307056b/4.9/mac/
+
+
+
+-----
+Notifications
+
+Notifications help you keep track of what’s new—they let you know if you missed a call, if the date of an event moved, and more. You can customize your notification settings so you see only what’s important to you..
+
+In Notification Centre on your Mac, you can catch up on notifications you missed and use widgets to view appointments, birthdays, the weather, top headlines and more, straight from the desktop. Notifications are a great way for apps to keep you informed.
+
+Use Notification Centre on Mac:
+https://support.apple.com/guide/mac-help/mchl2fb1258f/mac
+
+Use Notifications on your Mac:
+https://support.apple.com/HT204079
+
+
+
+-----
+Photos
+
+In the Photos app, the For You tab contains all your Memories, Shared Album activity and the best moments from your library. Memories intelligently searches and curates your photos and videos to find trips, holidays, people, pets and more, then presents them in beautiful collections. Memories also finds your best photos and videos and stitches them together into a Memory Movie — complete with theme music, titles and cinematic transitions — that you can edit and share.
+
+Use the Photos app to organise your photos into albums. Create an album of “happy”, filling with people, places and memories that make you happy or calm.
+
+Photos User Guide:
+https://support.apple.com/guide/photos/welcome/mac
+
+Create albums in Photos on Mac:
+https://support.apple.com/guide/photos/pht6d60a1f1/7.0/mac/
+
+
+
+-----
+Pointer Preferences
+
+If you have difficulty seeing or following the pointer, you can change its size and colour so it’s easier to locate on the screen.
+
+Make the pointer easier to see on Mac:
+https://support.apple.com/guide/mac-help/mchlp2920/12.0/mac/
+
+
+
+-----
+Privacy
+
+Privacy is an important concern when using apps that exchange information across the internet. macOS includes security features to enhance your privacy and control the amount of information that’s exposed about you and your Mac over the internet.
+
+Guard your privacy on Mac:
+https://support.apple.com/guide/mac-help/mh35847/12.0/mac/
+
+Personal Safety User Guide:
+https://support.apple.com/guide/personal-safety/welcome
+
+
+
+-----
+Reduce Motion
+
+You can stop or reduce the movement of some elements on the screen — for example, when you open apps, switch between desktops, or open and close Notification Centre. This feature is especially useful for people who experience motion sickness or vertigo.
+
+Reduce screen motion on Mac
+https://support.apple.com/guide/mac-help/mchlc03f57a1/mac
+
+
+
+-----
+Reduce Transparency
+
+Improves contrast by replacing the transparent effect used on some backgrounds in macOS with a darker background, to improve contrast and readability.
+
+Change Display preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac089/mac
+
+
+
+-----
+Reminders
+
+In the Reminders app, you can easily create and organize reminders to keep track of all of life’s to-dos. Use it for shopping lists, projects at work, tasks around the house, and anything else you want to track. Create subtasks, set flags, add attachments, and choose when and where to receive reminders. You can also use smart lists to automatically organize your reminders.
+
+You can create location based reminders (alert to remind you to do something when arriving or leaving locations), time based reminders, and even assign reminders to others.
+
+Reminders User Guide:
+https://support.apple.com/guide/reminders/welcome/mac
+
+Get started with Reminders on Mac:
+https://support.apple.com/guide/reminders/remne4b02adc/mac
+
+Add subtasks to reminders on Mac:
+https://support.apple.com/guide/reminders/remn32a9622b/7.0/mac/
+
+Add dates or locations to reminders on Mac:
+https://support.apple.com/guide/reminders/remnd4b206fb/7.0/mac/
+
+
+
+-----
+RTT
+
+Use your iPhone, iPad, Mac, or Apple Watch to make and receive RTT calls. RTT combines voice and typed text during phone calls without needing special devices; this is especially useful if you have difficulties hearing or speaking. Standard texting involves composing an entire message and tapping Send, but RTT provides instant transmission of a message as it is being composed (as well as support for braille displays). Transcripts for RTT calls are saved in your call history.
+
+You can make and receive RTT calls on your iPhone and other Apple devices (this feature is not available in all countries or regions or supported by all carriers).
+
+Make and receive RTT calls on your Mac:
+https://support.apple.com/HT209352
+
+
+
+-----
+Safari Reader
+
+Sometimes navigating the web can be sensory overload. You can use Safari Reader to view a web page article in one page, formatted for easy reading, and presented without ads, navigation or other distracting items. You can adjust font, font size and background colour for Reader.
+
+Hide ads when reading articles in Safari on Mac
+https://support.apple.com/guide/safari/sfri32632/mac
+
+
+
+-----
+Screen Flash
+
+Your device lets you know when something’s up, in a way you’ll notice. On your Mac, use the Audio pane of Accessibility preferences to make the screen flash when an alert occurs.
+
+Change Audio preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac611/mac
+
+
+
+-----
+Screen Time
+
+Screen Time gives you information about how you spend time in apps and on websites. It also provides tools you can use to control the amount of time spent on any activity. 
+
+With Screen Time, it’s even easier for people to manage device usage for themselves and their families. Family Sharing makes it even easier to set up Screen Time for children. Parents can use any device — Mac, iPhone or iPad — to set up Screen Time for a child on all their devices.
+
+Activity Reports give a detailed breakdown of where time is spent, and App Limits let you set a specific time to spend in any app. This helps you identify patterns in usage and track improvement over time. You can also use Screen Time to schedule a block of downtime in which the device can’t be used. Or choose specific apps, like Apple Books, that will always be available.
+
+Screen Time settings apply to all devices signed in with the same Apple ID, and includes combined usage information in the reports.
+
+What is Screen Time on Mac?
+https://support.apple.com/guide/mac-help/mchlfb0b5864/mac
+
+Use Screen Time on your Mac:
+https://support.apple.com/HT210387 
+
+Set up Screen Time for yourself on Mac:
+https://support.apple.com/guide/mac-help/mchle4e2edfe/12.0/mac/
+
+Set up Screen Time for a child on Mac:
+https://support.apple.com/guide/mac-help/mchlc5595037/12.0/mac/ 
+
+Choose always allowed apps in Screen Time on Mac:
+https://support.apple.com/guide/mac-help/mchl4949e9f4/12.0/mac/
+
+
+
+-----
+Shake Mouse Pointer to Locate
+
+Quickly move your finger on the trackpad or quickly move the mouse to temporarily enlarge the pointer so you can find it.
+
+Change Pointer preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/mchl5bb12e1e/mac
+
+
+
+-----
+Share Screen
+
+During a conversation in Messages, you can share your screen with the person you’re texting or they can share theirs with you. You can also allow someone to control your screen, or you can control theirs. It’s a great way to work together on a project or help a friend do something on their computer.
+
+Note: Another way to share your screen is to use SharePlay, which lets you share your screen in a FaceTime call. You can look at photos together, plan your next vacation and more. See Use SharePlay to share screens in FaceTime.
+
+Share your screen using Messages on Mac:
+https://support.apple.com/guide/messages/icht11883/mac
+
+Video
+
+How to share your screen with others in Messages on your Mac:
+https://youtu.be/0hRKhddJHxo 
+(Runtime 1:05)
+
+
+
+-----
+SharePlay
+
+With SharePlay in FaceTime on macOS Monterey, you can bring TV shows, movies and music into your FaceTime calls. With simultaneous playback and shared controls, you can enjoy a real-time connection with everyone on the call — you all see and hear the same moments at the same time. With smart volume, audio is adjusted automatically, so you can continue to chat while watching or listening.
+
+With SharePlay can also share your screen to show apps, web pages and more during FaceTime video calls. You can look through a photo album together, plan your next holiday together or get feedback on something you’re working on, all while seeing and hearing everyone’s reactions.
+
+Use SharePlay to watch and listen together in FaceTime on Mac:
+https://support.apple.com/guide/facetime/fctm725416ba/5.0/mac/ 
+
+Use SharePlay to share screens in FaceTime on Mac:
+https://support.apple.com/guide/facetime/fctmdcf2007a/mac
+
+
+
+-----
+Shortcuts
+
+A shortcut provides a quick way to get things done with your apps, with just a click or by asking Siri.
+
+Shortcuts can automate a wide variety of things — for example, getting directions to the next event on your Calendar, moving text from one app to another, generating expense reports and more. 
+
+You can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Mac, Apple Watch or HomePod. Just say "Hey Siri," then the name of the shortcut.
+
+Shortcuts: 
+https://support.apple.com/guide/shortcuts-mac/welcome/mac
+
+Discover shortcuts in the Gallery on Mac:
+https://support.apple.com/guide/shortcuts-mac/apdd018638ca/5.0/mac/
+
+Run shortcuts with Siri, the Shortcuts app, or Siri Suggestions:
+https://support.apple.com/HT209055
+
+Video
+How to use Shortcuts on Mac
+https://youtu.be/SNNuD-C3aX0
+(Runtime 2:01)
+
+
+
+-----
+Shortcuts - Help Message
+
+A shortcut provides a quick way to get things done with your apps, with just a click or by asking Siri.
+
+Shortcuts can automate a wide variety of things — for example, getting directions to the next event on your Calendar, moving text from one app to another, generating expense reports and more. 
+
+You can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Mac, Apple Watch or HomePod. Just say "Hey Siri," then the name of the shortcut.
+
+It can also be used in messaging contacts requesting assistance and giving location. This message can be customized.
+
+Shortcuts: 
+https://support.apple.com/guide/shortcuts-mac/welcome/mac
+
+Discover shortcuts in the Gallery on Mac:
+https://support.apple.com/guide/shortcuts-mac/apdd018638ca/5.0/mac/
+
+Help Message shortcut:
+https://www.icloud.com/shortcuts/3e05c96959914f689b5af0ddcdfed528
+
+Video
+How to use Shortcuts on Mac
+https://youtu.be/SNNuD-C3aX0
+(Runtime 2:01)
+
+
+
+-----
+Shortcuts - Mood Journal and Check In Message
+
+A shortcut provides a quick way to get things done with your apps, with just a click or by asking Siri.
+
+Shortcuts can automate a wide variety of things — for example, getting directions to the next event on your Calendar, moving text from one app to another, generating expense reports and more. 
+
+You can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Mac, Apple Watch or HomePod. Just say "Hey Siri," then the name of the shortcut.
+
+It can also be used to send a template message to check in on stress and energy levels. And support journalling and capturing information across a period of time.
+
+Shortcuts: 
+https://support.apple.com/guide/shortcuts-mac/welcome/mac
+
+Discover shortcuts in the Gallery on Mac:
+https://support.apple.com/guide/shortcuts-mac/apdd018638ca/5.0/mac/
+
+Run shortcuts with Siri, the Shortcuts app, or Siri Suggestions:
+https://support.apple.com/HT209055
+
+Check In Message Shortcut:
+https://www.icloud.com/shortcuts/d37952b95ae94ffb814fed611e4b2c52
+
+Mood Journal shortcut: 
+https://www.icloud.com/shortcuts/ad52fe730a0c4ff88502b7206e3d66cf
+
+Video
+How to use Shortcuts on Mac
+https://youtu.be/SNNuD-C3aX0
+(Runtime 2:01)
+
+
+
+-----
+Shortcuts - Pain Report
+
+A shortcut provides a quick way to get things done with your apps, with just a click. 
+
+Shortcuts can automate a wide variety of things — for example, getting directions to the next event on your Calendar, moving text from one app to another, generating expense reports and more. 
+
+You can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Mac, Apple Watch or HomePod. Just say "Hey Siri," then the name of the shortcut.
+
+It can also let others know the location and intensity of pain. The information can be spoken out loud and recorded in Notes to share.
+
+Shortcuts: 
+https://support.apple.com/guide/shortcuts-mac/welcome/mac
+
+Discover shortcuts in the Gallery on Mac:
+https://support.apple.com/guide/shortcuts-mac/apdd018638ca/5.0/mac/
+
+Run shortcuts with Siri, the Shortcuts app, or Siri Suggestions:
+https://support.apple.com/HT209055
+
+Pain Report shortcut: 
+https://www.icloud.com/shortcuts/dbcbbe65f82c4c7fb12c2aa7235f349c
+
+Video
+How to use Shortcuts on Mac
+https://youtu.be/SNNuD-C3aX0
+(Runtime 2:01)
+
+
+
+-----
+Show Window title icons
+
+Show a window’s icon (if available) in the window’s title bar. The icon can make it easier to distinguish among windows or tabs when you have several open — for example, Finder windows showing Recent, Downloads and iCloud Drive.
+
+Change Display preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac089/mac
+
+
+
+-----
+Sidecar
+
+With Sidecar, you can use your iPad in landscape orientation as a second display for your Mac. Like any second display, you can extend your desktop by showing different apps or windows on your iPad, or instead make it show the same ones you see on your Mac.
+
+Use your iPad as a second display for your Mac:
+https://support.apple.com/guide/mac-help/mchlf3c6f7ae/12.0/mac/
+
+Support Article - Use iPad as a second display for your Mac:
+https://support.apple.com/HT210380
+
+
+
+-----
+Siri
+
+Siri can help you complete the tasks you do every day. Or just answer questions you’re curious about. You can ask it to find files on your Mac, open apps, find definitions, set reminders, turn accessibility features on or off, and so much more. And if you need to streamline a series of actions or tasks, you can create Siri Shortcuts. No matter the Apple product, your favorite assistant is always ready to assist.
+
+To get more ideas on how to use Siri, first activate Siri, then say “What can you do?”Apple Siri page:
+https://www.apple.com/siri/
+
+What can I ask Siri?
+https://support.apple.com/siri 
+
+Use Siri on all your Apple devices:
+https://support.apple.com/HT204389
+
+How to use Siri on your Mac:
+https://support.apple.com/HT206993 
+
+Use Siri on Mac:
+https://support.apple.com/guide/mac-help/mchl6b029310/12.0/mac/
+
+How to use Siri on your Mac:
+https://support.apple.com/guide/mac-help/mchlb66b4ad6/12.0/mac/
+
+Change Siri preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/mchl5715a9f2/12.0/mac/
+
+
+
+-----
+Slow Keys
+
+Slow Keys lets you adjust the amount of time between when a key is pressed and when it is activated, so your device processes only the keystrokes you mean to make. Helpful for users with tremors, only the first key stroke within the acceptance period is recognized.
+
+To quickly turn Slow Keys on or off using the Accessibility Shortcuts panel, press Option-Command-F5 (or if your Mac or Magic Keyboard has Touch ID, quickly press Touch ID three times).
+
+Change Keyboard Hardware preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/mh40580/mac
+
+
+
+-----
+Spatial Audio
+
+When you watch or listen to content that supports Spatial Audio (immersive three-dimensional audio) on your Mac, the audio automatically adjusts as you move your head. A sound that seemed to be behind you may seem like it’s beside you when you turn your head. This option is selected by default.
+
+If you have difficulty controlling head movements or it’s uncomfortable to have sounds seem to change location as you move your head, unselect the tick box. You’re still listening to spatial audio, but the apparent location of sounds doesn’t change.
+
+This option is available only on a Mac with Apple silicon. Spatial Audio is available with AirPods (3rd generation), AirPods Pro and AirPods Max.
+
+Change Audio preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac611/mac
+
+
+
+-----
+Speak Announcements
+
+You can have your Mac speak the text in dialogues and other announcements and notify you when an app needs you to perform an action.
+
+Have your Mac speak announcements:
+https://support.apple.com/guide/mac-help/mchlp2374/12.0/mac/
+
+
+
+-----
+Speak Items Under Pointer
+
+Have your Mac identify items under the pointer.
+To customize, click Options, then choose when your Mac speaks the item (all the time or only when you use zoom), the level of detail (called verbosity) (High, Medium or Low), and how long to have your Mac wait before speaking.
+
+Change Spoken Content preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/spch638/mac
+
+
+
+-----
+Speak Screen
+
+If you have a hard time reading the text on your Mac, use Speak Screen to read your email, messages, web pages, and books. You can have your Mac speak text whenever you press a keyboard shortcut. 
+
+You can customise the keyboard shortcut and set other options—for example, you can choose to show an on-screen controller that lets you easily change the speaking rate, stop speaking and more.
+
+You can adjust the voice’s dialect and speaking rate, and have words, sentences, or words within sentences highlighted as they’re being read.
+
+Have your Mac speak text that’s on the screen:
+https://support.apple.com/guide/mac-help/mh27448/mac
+
+Change the voice your Mac uses to speak text:
+https://support.apple.com/guide/mac-help/mchlp2290/12.0/mac/
+
+
+
+-----
+Speak Selection
+
+Choose a specific range of text and have your Mac read the selection in over 40 languages and dialects.
+
+Highlight content: Click the pop-up menu, then choose to have words, sentences or both highlighted as your Mac speaks.
+
+Have your Mac speak text that’s on the screen:
+https://support.apple.com/guide/mac-help/mh27448/mac
+
+Change the voice your Mac uses to speak text:
+https://support.apple.com/guide/mac-help/mchlp2290/12.0/mac/ 
+
+Video
+
+How to set up Speak Selection on Mac:
+https://youtu.be/yiZzm24uSsE 
+(Runtime 1:24)
+
+
+
+-----
+Speak Typing Feedback
+
+Typing Feedback speaks aloud each letter and/or word that you type. Helpful for sound/ letter reinforcement, and potential basic text to speech system for users that may be non verbal.
+
+Change Spoken Content preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/spch638/mac
+
+
+
+-----
+Split Screen
+
+With Split View, you can fill your Mac screen with two apps, without having to manually move and resize windows. You can use both apps side by side, without the distraction of other apps.
+
+Use two Mac apps side by side in Split View:
+https://support.apple.com/HT204948
+
+Video
+How to use Split View on Mac
+https://www.youtube.com/watch?v=JYpTFA1MBtY 
+(Runtime 2:53)
+
+
+
+-----
+Sticky Keys
+
+Sticky Keys enable you to press a set of modifier keys one at a time in sequence, instead of all at once. For example, you would enter the key combination Option-Command-F5 by pressing each key in sequence instead of pressing three keys at once.
+
+To quickly turn Sticky Keys on or off using the Accessibility Shortcuts panel, press Option-Command-F5 (or if your Mac or Magic Keyboard has Touch ID, quickly press Touch ID three times).
+
+Change Keyboard Hardware preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/mh40580/mac
+
+
+
+-----
+Subtitles/CC/SDH
+
+Closed captions are a text transcription of a video’s dialogue, as well as nonverbal communication. Supported in apps like the Apple TV app, closed captions are available in over 40 languages for movies, TV shows, videos, and podcasts — just look for the CC icon. You can even customize captions with different styles and fonts, including styles that are larger and outlined for better legibility.
+
+Use subtitles and closed captions on Mac:
+https://support.apple.com/guide/mac-help/mchlc1cb8d54/mac
+
+Change Captions preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/mh43180/12.0/mac/
+
+Change the closed captions or language for movies and TV shows in the Apple TV app:
+https://support.apple.com/HT202641
+
+
+
+-----
+Switch Control
+
+Switch Control makes it easy and efficient to control your device with a variety of adaptive switch hardware, wireless game controllers, or even simple sounds. If you have extensive motor limitations, you can use item, point, and manual scanning to navigate sequentially through onscreen keyboards, menus, and the Dock. Create your own custom panels and keyboards, systemwide or app by app. 
+
+If you use Switch Control or the Accessibility Keyboard on your Mac, you can use the Panel Editor to add custom panels to the Switch Control or Accessibility Keyboard panel collection, to streamline common tasks and actions for different apps on your Mac. You can also use the panels on another Mac, or share them with other Switch Control or Accessibility Keyboard users.
+
+Platform Switching allows you to use a single device to navigate any other devices you have synced with your iCloud account. That way, you can control your Mac directly from your iPhone or iPad without having to set up your switches on each new device.
+
+Use Switch Control on Mac:
+https://support.apple.com/guide/mac-help/mh43607/mac
+
+Use the Panel Editor for Switch Control or the Accessibility Keyboard on Mac:
+https://support.apple.com/guide/mac-help/mh43606/12.0/mac/ 
+
+Set Panel Editor options for Switch Control or the Accessibility Keyboard on Mac:
+https://support.apple.com/guide/mac-help/mchlf55dbb46/12.0/mac/
+
+Use Switch Control on your device to control another Apple device:
+https://support.apple.com/HT205644
+
+
+
+-----
+Text Replacement
+
+In many apps, you can automatically replace text and punctuation. For example, you can replace a double-space with a period and a space, teh with the, fwiw with for what it’s worth.
+
+To type your favourite Memoji combination faster, you can save it as a text replacement.
+
+When you type the shortcut in your document, the phrase will automatically replace it.
+
+Replace text and punctuation in documents on Mac:
+https://support.apple.com/guide/mac-help/mh35735/mac
+
+
+
+-----
+Toolbar button shapes
+
+Show a subtle border around toolbar buttons to indicate the area to click when selecting a toolbar button. Higher contrast helps with low vision interaction. 
+
+Change Display preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/unac089/mac
+
+
+
+-----
+Touch ID
+
+If your Mac or Magic Keyboard has Touch ID, you can use it to unlock your Mac, authorize purchases from the iTunes Store, the App Store and Apple Books, and make purchases on the web using Apple Pay. You can also use Touch ID to sign into some third-party apps.
+
+Use Touch ID on Mac:
+https://support.apple.com/guide/mac-help/mchl16fbf90a/mac
+
+
+
+-----
+Translate
+
+You can easily translate text in different apps on Mac, including some third-party apps. You can also translate text in photos using Live Text to select the text in an image you want to translate.
+
+Translate on Mac: 
+https://support.apple.com/guide/mac-help/mchldd8b3c15/12.0/mac/
+
+
+
+-----
+Type to Siri
+
+Your digital assistant will help you with the things you do every day — all through your keyboard. Type to Siri mode makes it easy to get the help you need right away. Use your onscreen keyboard to ask questions, set up reminders, issue commands, and more.
+
+This feature can be useful if speech is difficult or you don’t want others to hear your Siri requests.
+
+If you prefer to read responses from Siri in the Siri window instead of having Siri speak them, turn off voice feedback in Siri preferences.
+
+Change Siri preferences for accessibility on Mac
+https://support.apple.com/guide/mac-help/mchl5715a9f2/12.0/mac/
+
+
+
+-----
+Universal Control
+
+Use the keyboard, mouse or trackpad of your Mac to control up to two other nearby Mac or iPad devices, and work seamlessly between them. Great for physical access to multiple devices without having to move inputs and helpful for vision access in ease of use. 
+
+Universal Control: Use a single keyboard and mouse between Mac and iPad:
+https://support.apple.com/HT212757
+
+
+
+-----
+Unlock Mac with Apple Watch
+
+When you’re wearing your Apple Watch and are near your Mac, you can use your Apple Watch to unlock your Mac or approve app requests, without having to enter a password. 
+
+Unlock your Mac and approve requests with Apple Watch:
+https://support.apple.com/guide/mac-help/mchl4f800a42/12.0/mac/
+
+Unlock your Mac with your Apple Watch:
+https://support.apple.com/HT206995
+
+
+
+-----
+Voice Control
+
+Navigate your device using just your voice. Commands like click, swipe, and tap help you easily interact with your favorite apps. You can precisely select, drag, and zoom by showing numbers alongside clickable items or by superimposing a grid on the screen. 
+
+Voice Control also offers a more efficient way to write and edit. It’s a seamless process to make corrections, format changes, and transition between text dictation and commands.
+
+Use Voice Control on your Mac:
+https://support.apple.com/HT210539 
+
+Create, import and export custom commands for Voice Control on Mac:
+https://support.apple.com/guide/mac-help/mchl0b5965e5/12.0/mac/
+
+Use item number and grid overlays with Voice Control on Mac:
+https://support.apple.com/guide/mac-help/mchl26854b08/12.0/mac/
+
+Control your Mac and apps using Voice Control:
+https://support.apple.com/guide/mac-help/mh40719/12.0/mac/
+
+Voice Control White Paper:  https://www.apple.com/accessibility/docs/Voice_Control_Tech_Brief_Sept_2019.pdf
+
+
+
+-----
+VoiceOver
+
+VoiceOver is an industry‑leading screen reader that tells you exactly what’s happening on your device. VoiceOver can now describe people, objects, text, and graphs in greater detail than ever. Auditory descriptions of elements help you easily navigate your screen through a Bluetooth keyboard or simple gestures on a trackpad. And with unique rotor gestures that function like a dial on trackpads, you can make content such as websites a breeze to browse.
+
+Use the VoiceOver Recognition pane in VoiceOver Utility to enable VoiceOver to describe images in apps and on websites using on-device intelligence to improve accessibility. You can download languages to hear image descriptions in other languages.
+
+Make your VoiceOver preferences “portable” by storing them on an external drive. You can then easily use your settings on other Mac computers and keep an up-to-date copy of your current settings always available.
+
+VoiceOver User Guide for macOS:
+https://support.apple.com/guide/voiceover/welcome/mac 
+
+Customize VoiceOver with VoiceOver Utility on Mac:
+https://support.apple.com/guide/voiceover/vo28017/10/mac 
+
+Use VoiceOver gestures on Mac:
+https://support.apple.com/guide/voiceover/vo28030/10/mac
+
+Use the VoiceOver Help menu on Mac:
+https://support.apple.com/guide/voiceover/mchlp2687/mac
+
+Use VoiceOver to browse webpages on Mac:
+https://support.apple.com/guide/voiceover/vo27974/10/mac/
+
+VoiceOver Command Charts:
+https://help.apple.com/voiceover/command-charts/ 
+
+Use Screen Curtain with VoiceOver for your Mac, iPhone, iPad, iPod touch and Apple Watch:
+https://support.apple.com/HT201443
+
+Languages supported by VoiceOver:
+https://support.apple.com/HT206175
+
+Use VoiceOver with Voice Control on Mac:
+https://support.apple.com/guide/voiceover/vo4bd3e361be/mac
+
+Use VoiceOver portable preferences on Mac:
+https://support.apple.com/guide/voiceover/vo14101/mac
+
+VoiceOver Recognition category, VoiceOver Utility on Mac:
+https://support.apple.com/guide/voiceover/vocbaf20181f/mac
+
+
+
+-----
+VoiceOver + Braille
+
+For many users, a braille display may be easier and more efficient than a standard keyboard — and for deaf-blind users, it is a requirement. VoiceOver can give descriptions of exactly what’s on your screen, in braille. You can use a refreshable braille display connected via Bluetooth to your Apple device. Braille is automatically converted to text in a caption panel on Mac so sighted people can follow along with VoiceOver descriptions. 
+
+With over 100 refreshable braille displays compatible with macOS, you can find the right braille experience for you.
+
+Use braille displays with VoiceOver on Mac:
+https://support.apple.com/guide/voiceover/vo15607/mac
+
+USB and Bluetooth braille displays supported by macOS:
+https://support.apple.com/guide/voiceover/cpvobrailledisplays
+
+Common braille commands for VoiceOver on your Mac:
+https://support.apple.com/HT209138
+
+Connect a Bluetooth braille display using VoiceOver Utility on Mac:
+https://support.apple.com/guide/voiceover/vo27981/mac
+
+Download an electronic braille (.BRF) user guide for Mac:
+https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/voiceover_user_guide_macos_12.zip
+
+
+
+-----
+VoiceOver Accessible Signature and Images
+
+Add a VoiceOver description of a signature when you create one in Preview. This is especially useful if you create multiple signatures and need to distinguish between them to ensure you use the intended signature. Before you click or tap Done, click the Description pop-up menu, then choose a description, such as Initials, or choose Custom to create your own description. When you're ready to sign a PDF document, navigate the list of signatures using VoiceOver. When you hear the description of the signature you want to use, press VO-Space bar to select it.
+
+Use this feature in any photos or items In Preview. Once this text has been added in Descriptions, VoiceOver will announce this text, giving valuable context to blind on low vision users. 
+
+Annotate a PDF in Preview on Mac:
+https://support.apple.com/guide/preview/prvw11580/mac
+
+
+
+-----
+Widgets
+
+In Notification Centre on your Mac, add and customize widgets so you can keep tabs on your schedule, favorite devices, the weather, top headlines and more, straight from the desktop.
+
+Add and customize widgets in Notification Centre on Mac:
+https://support.apple.com/guide/mac-help/mchl52be5da5/mac
+
+
+
+-----
+Word Completion
+
+Let your Mac finish the sentence for you. If you find it cumbersome to type, Word Completion will give a drop down list of words to select from. And in TextEdit, Predictive Text offers the perfect next word.Choose Edit > Complete (or press Option-Esc) to create a drop down list of predictive words in native apps like TextEdit and Mail. To select one of the words from the list, use the arrow keys to go up and down to the correct word then press space, or double click the word. 
+Word Completion does not work in Pages.
+
+In TextEdit this function can also be used for predicting the next word. After typing a word and pressing space, use Option-Escape again to bring up the prediction list. As before, double click the word, or highlight it with the arrow keys and press space. 
+
+See word completions in TextEdit on Mac: https://support.apple.com/guide/textedit/txtef5d9dd70/1.17/mac/12.0
+
+
+
+-----
+Zoom
+
+Zoom is a screen magnifier that lets you enlarge the content you see on your device. Choose from full‑screen magnification or picture‑in‑picture view, which shows the magnified area in a separate window while the rest of your screen stays the same. Zoom also works with VoiceOver, so you can better see and hear what’s happening on your screen.
+
+Zoom Display on Mac lets you see content up close and at a distance simultaneously. With two displays, you can keep one zoomed in while the other stays at a standard resolution for a customizable, multizoom setup.
+
+Make it easier to see what’s on the screen of your Mac:
+https://support.apple.com/guide/mac-help/mchld786f2cd/mac
+
+How to zoom in or out on Mac: 
+ttps://support.apple.com/HT210978
+
+Change Zoom preferences for accessibility on Mac:
+https://support.apple.com/guide/mac-help/mh40579/12.0/mac/ 
+
+Use your trackpad or mouse to zoom on Mac:
+https://support.apple.com/guide/mac-help/mchlp2975/mac
+
+Zoom in on the Touch Bar on Mac:
+https://support.apple.com/guide/mac-help/mchl090bb3ee/12.0/mac/
+
+
+
+-----
+Accessibility Keyboard
+
+The Accessibility Keyboard is an onscreen keyboard that lets you use your Mac without a physical keyboard. It provides advanced typing (such as typing suggestions) and navigation features that you can customize to make it easier to use your favorite apps.
+
+Use the Accessibility Keyboard on Mac:
+https://support.apple.com/guide/mac-help/mchlc74c1c9f/12.0/mac/
+
+Use the Keyboard Viewer on Mac:
+https://support.apple.com/guide/mac-help/mchlp1015/12.0/mac/
+
+
+</div></div>
+<button class="button gDocuments inside" id="m128">
+128 Split Text <span class="box"><span class="var"><b>[127 Accessibility Features List]</b></span></span> by <span class="box">Custom</span>&#12288;&#187; <span class="magic" onclick="magictap(130)">130</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">TextCustomSeparator</div>
+			<div class="col2">-----</div></div></div>
+<button class="button gLoop nonbottom inside" id="m129">
+129 Repeat with Each in <span class="box"><span class="var"><b>[De-duped List]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="button  inside" id="m130">
+130 Filter Files <span class="box"><span class="magic" onclick="magictap(128)"><b>[128 Accessibility Feature Details]</b></span></span>&#12288;&#187; <i>131</i> <span class="magic" onclick="magictap(132)">132</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ContentItemLimitEnabled</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ContentItemLimitNumber</div>
+			<div class="col2">1</div></div>
+		<div class="row"><div class="col1">ContentItemFilter</div>
+			<div class="col2">Name begins with <span class="var"><b>[Repeat Item]</b></span></div></div></div>
+<button class="button gLoop nonbottom inside" id="m131">
+131 If <span class="box"><span class="var"><b>[130 Feature Description]</b></span></span> <span class="box">has any value</span></button>
+	<div class="content contentloop inside">
+<button class="gVariable inside" id="m132">
+132 Add <span class="box"><span class="magic" onclick="magictap(130)"><b>[130 Feature Descriptions]</b></span></span> to Variable <span class="box">Final List</span></button></div>
+<button class="gLoop nontop inside" id="m133">
+133 End If</button>
+<button class="gScripting inside" id="m134">
+134 Nothing</button></div>
+<button class="gLoop nontop inside" id="m135">
+135 End Repeat with Each</button>
+<button class="button gDocuments inside" id="m136">
+136 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2"><span class="var"><b>[Header]</b></span>
+<span class="var"><b>[Final List]</b></span>
+<span class="var"><b>[Footer]</b></span></div></div>
+<button class="button  inside" id="m137">
+137 Create Note with <span class="box"><span class="var"><b>[136 Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">NoteGroup</div>
+			<div class="col2">{  "Identifier": "x-coredata://1CAE21B9-FE99-4871-A4BC-7BC018DD5FE8/ICFolder/p716?accountIdentifier=34178B9D-E1B2-43F5-B04B-BF6135E33979",
+   "DisplayString": "Notes [iCloud]"
+}</div></div>
+		<div class="row"><div class="col1">OpenWhenRun</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class=" inside" id="m138">
+138 Show Note <span class="box"><span class="var"><b>[137 Note]</b></span></span></button></div>
+<button class="gLoop nontop" id="m139">
+139 End Menu&#12288;▵<span class="magic" onclick="magictap(113)">113</span>&#12288;&#187;</button>
+<button class="gScripting" id="m140">
+140 Stop and Output <span class="box"><span class="var"><b>[139 Menu Result]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

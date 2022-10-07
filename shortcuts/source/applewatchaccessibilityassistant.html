@@ -1,0 +1,1883 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>AppleWatchAccessibilityAssistant</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">AppleWatchAccessibilityAssistant</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1206.4",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 946986751,
+   "WFWorkflowIconGlyphNumber": 59437
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFFileStorageService",
+      "ActionIndex": <span class="magic" onclick="magictap(1)"><b>1</b></span>,
+      "Text": "Please tap on done to choose the default of iCloud Drive. This shortcut needs to use iCloud Drive to store a temporary file containing the list of accessibility features. The shortcut will clean up by deleting this file after use.",
+      "DefaultValue": "iCloud Drive"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [
+   "WFImageContentItem",
+   "WFRichTextContentItem",
+   "WFGenericFileContentItem",
+   "WFNoteContentItem",
+   "WFLocationContentItem",
+   "WFURLContentItem",
+   "WFStringContentItem",
+   "WFPhoneNumberContentItem",
+   "WFAppStoreAppContentItem",
+   "WFContentItem",
+   "WFEmailAddressContentItem",
+   "WFAVAssetContentItem",
+   "WFArticleContentItem",
+   "WFDateContentItem",
+   "WFiTunesProductContentItem",
+   "WFContactContentItem",
+   "WFFolderContentItem",
+   "WFPhotoMediaContentItem",
+   "WFSafariWebPageContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFMKMapItemContentItem",
+   "WFPDFContentItem"
+],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gDocuments" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Select the needs of the user, choose as many as needed. Creates a note, populated with Apple Support page links and resources, on suggested built-in accessibility features. 
+
+Resources are based on watchOS 8.5</div></div>
+<button class="gVariable" id="m1">
+1 Add <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> to Variable <span class="box">Accessibility Features</span></button>
+<button class="button gLoop nonbottom" id="m2">
+2 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a category of symptoms. You can add more later, if necessary.</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Vision,
+Hearing,
+Mobility,
+Cognitive]</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m3">
+3 Menu Item <span class="box">Vision</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m4">
+4 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a condition:</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Wears reading glasses,
+Sensitivity to light,
+Cannot distinguish certain colors,
+Depth perception issues,
+Blurry vision / dizziness / visual distortion,
+Blind,
+Blind + braille,
+Deafblind,
+All of these,
+None of these]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m5">
+5 Menu Item <span class="box">Wears reading glasses</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m6">
+6 Text</button>
+	<div class="content inside">
+		<div class="col2">Text Size Bold Text Reduce Transparency Zoom Dictation Announce Calls Announce Messages Smart Reply Reduce Motion Maps Predictive text Siri Zoom X-Large Watch Face Scribble Ping your iPhone with Apple Watch Haptic Feedback Taptic Time Walkie Talkie Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m7">
+7 Menu Item <span class="box">Sensitivity to light</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m8">
+8 Text</button>
+	<div class="content inside">
+		<div class="col2">Announce Calls Announce Messages Siri X-Large Watch Face Taptic Time Reduce Transparency Unlock with Apple Watch Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m9">
+9 Menu Item <span class="box">Cannot distinguish certain colors</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m10">
+10 Text</button>
+	<div class="content inside">
+		<div class="col2">Grayscale Labels Reduce Transparency Siri Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m11">
+11 Menu Item <span class="box">Depth perception issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m12">
+12 Text</button>
+	<div class="content inside">
+		<div class="col2">Dictation Text Size Reduce Motion Reduce Transparency Announce Calls Announce Messages X-Large Watch Face Zoom Haptic Feedback Maps Walkie Talkie Siri Find My Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m13">
+13 Menu Item <span class="box">Blurry vision / dizziness / visual distortion</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m14">
+14 Text</button>
+	<div class="content inside">
+		<div class="col2">Text Size Bold Text Dictation Smart Reply Announce Calls Announce Messages Reduce Motion Reduce Transparency Maps Predictive text Siri Zoom X-Large Watch Face Scribble Unlock with Apple Watch Ping your iPhone with Apple Watch Find My Haptic Feedback VoiceOver Taptic Time Walkie Talkie Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m15">
+15 Menu Item <span class="box">Blind</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m16">
+16 Text</button>
+	<div class="content inside">
+		<div class="col2">VoiceOver ECG Sonification Taptic Time Ping your iPhone with Apple Watch Unlock with Apple Watch Announce Calls Announce Messages Dictation Timer app Haptic Feedback Maps Siri Stream audio to hearing devices Emergency SOS Share Location Fall Detection Walkie Talkie Dictation Find My Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m17">
+17 Menu Item <span class="box">Blind + braille</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m18">
+18 Text</button>
+	<div class="content inside">
+		<div class="col2">VoiceOver VoiceOver + Braille ECG Sonification Taptic Time Unlock with Apple Watch Announce Calls Announce Messages Ping your iPhone with Apple Watch Dictation Haptic Feedback Maps Siri Stream audio to hearing devices Emergency SOS Share Location Fall Detection Walkie Talkie Dictation Find My Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m19">
+19 Menu Item <span class="box">Deafblind</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m20">
+20 Text</button>
+	<div class="content inside">
+		<div class="col2">VoiceOver VoiceOver + Braille ECG Sonification Taptic Time Unlock with Apple Watch RTT/TTY Sound Recognition Sleep app Announce Calls Announce Messages Dictation Haptic Feedback Maps Emergency SOS Share Location Fall Detection Walkie Talkie Dictation Find My Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m21">
+21 Menu Item <span class="box">All of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m22">
+22 Text</button>
+	<div class="content inside">
+		<div class="col2">Text Size
+Bold Text
+Reduce Transparency
+Zoom
+Dictation
+Announce Calls
+Announce Messages
+Smart Reply
+Reduce Motion
+Maps
+Predictive text
+Siri
+X-Large Watch Face
+Scribble
+Ping your iPhone with Apple Watch
+Haptic Feedback
+Taptic Time
+Walkie Talkie
+Emergency SOS
+Fall Detection
+Privacy
+Unlock with Apple Watch
+Grayscale
+Labels
+Find My
+VoiceOver
+ECG Sonification
+Timer app
+Stream audio to hearing devices
+Share Location
+VoiceOver + Braille
+RTT/TTY
+Sound Recognition
+Sleep app</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m23">
+23 Menu Item <span class="box">None of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m24">
+24 Nothing</button></div>
+<button class="gLoop nontop inside" id="m25">
+25 End Menu</button></div>
+<button class="button gLoop nonbottom nontop" id="m26">
+26 Menu Item <span class="box">Hearing</span>&#12288;▵<span class="magic" onclick="magictap(3)">3</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m27">
+27 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a condition:</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Issues hearing in loud places, mishears conversations,
+Issues hearing phone call dialog,
+Missing alarms/alerts,
+Missing TV dialog, trouble hearing specific frequencies,
+Ringing in ears,
+Hard of hearing, one ear only,
+Hard of hearing / deaf,
+Deaf + Sign Language,
+All of these,
+None of these]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m28">
+28 Menu Item <span class="box">Issues hearing in loud places, mishears conversations</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m29">
+29 Text</button>
+	<div class="content inside">
+		<div class="col2">Haptic Feedback Notifications Messages Headphone Notifications Maps Alarms Stream audio to hearing devices Sound Recognition notification Noise app Sleep app Show audio transcriptions Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m30">
+30 Menu Item <span class="box">Issues hearing phone call dialog</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m31">
+31 Text</button>
+	<div class="content inside">
+		<div class="col2">Stream audio to hearing devices Haptic Feedback Notifications Messages Headphone Notifications Maps Alarms Noise app Sleep app Show audio transcriptions RTT/TTY Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m32">
+32 Menu Item <span class="box">Missing alarms/alerts</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m33">
+33 Text</button>
+	<div class="content inside">
+		<div class="col2">Haptic Feedback Alarms Reminders Sleep App Notifications Sound Recognition Messages Headphone Notifications Timers app Maps Noise app Show audio transcriptions Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m34">
+34 Menu Item <span class="box">Missing TV dialog, trouble hearing specific frequencies</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m35">
+35 Text</button>
+	<div class="content inside">
+		<div class="col2">Haptic Feedback Notifications Sound Recognition Stream audio to hearing devices Messages Headphone Notifications Maps Alarms Noise app Sleep app Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m36">
+36 Menu Item <span class="box">Ringing in ears</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m37">
+37 Text</button>
+	<div class="content inside">
+		<div class="col2">Haptic Feedback Notifications Messages Headphone Notifications Music Stream audio to hearing devices Maps Alarms Noise app Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m38">
+38 Menu Item <span class="box">Hard of hearing, one ear only</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m39">
+39 Text</button>
+	<div class="content inside">
+		<div class="col2">Mono Audio Haptic Feedback Notifications Messages Headphone Notifications Noise app Stream audio to hearing devices Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m40">
+40 Menu Item <span class="box">Hard of hearing / deaf</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m41">
+41 Text</button>
+	<div class="content inside">
+		<div class="col2">Haptic Feedback Notifications Sound Recognition Messages Maps Alarms Share Location RTT/TTY Shortcuts - Help Message Noise app Sleep app Timers app Ping your iPhone with Apple Watch Orientation on Wrist Unlock with Apple Watch Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m42">
+42 Menu Item <span class="box">Deaf + Sign Language</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m43">
+43 Text</button>
+	<div class="content inside">
+		<div class="col2">Haptic Feedback Notifications Sound Recognition Messages Maps Alarms Share Location Noise app Sleep app RTT/TTY Orientation on Wrist Ping your iPhone with Apple Watch Shortcuts - Help Message Timers app Unlock with Apple Watch Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m44">
+44 Menu Item <span class="box">All of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m45">
+45 Text</button>
+	<div class="content inside">
+		<div class="col2">Haptic Feedback
+Notifications
+Messages
+Headphone Notifications
+Maps
+Alarms
+Stream audio to hearing devices
+Sound Recognition notification
+Noise app
+Sleep app
+Show audio transcriptions
+Emergency SOS
+Privacy
+RTT/TTY
+Reminders
+Sound Recognition
+Timers app
+Music
+Mono Audio
+Share Location
+Shortcuts - Help Message
+Ping your iPhone with Apple Watch
+Orientation on Wrist
+Unlock with Apple Watch</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m46">
+46 Menu Item <span class="box">None of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m47">
+47 Nothing</button></div>
+<button class="gLoop nontop inside" id="m48">
+48 End Menu</button></div>
+<button class="button gLoop nonbottom nontop" id="m49">
+49 Menu Item <span class="box">Mobility</span>&#12288;▵<span class="magic" onclick="magictap(26)">26</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m50">
+50 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a condition:</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Difficulty typing,
+Lack of fine motor skills,
+Reduced limb function / low range of motion / single touch point,
+Involuntary movements / tremors,
+Low mobility + speech issues,
+Manual wheelchair user,
+Motorized wheelchair users,
+Head movement only,
+All of these,
+None of these]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m51">
+51 Menu Item <span class="box">Difficulty typing</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m52">
+52 Text</button>
+	<div class="content inside">
+		<div class="col2">AssistiveTouch Touch Accommodations Side button click speed Smart Reply Taptic Time Announce Calls Announce Messages Dictation Predictive Text Quickpath Share Location Shortcuts - Help Message Siri Walkie Talkie Answer Phone Calls Unlock with Apple Watch Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m53">
+53 Menu Item <span class="box">Lack of fine motor skills</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m54">
+54 Text</button>
+	<div class="content inside">
+		<div class="col2">AssistiveTouch Touch Accommodations Side button click speed Messages Smart Reply Announce Calls Announce Messages Answer Phone Calls Dictation Predictive Text Quickpath Share Location Shortcuts - Help Message Siri Walkie Talkie Unlock with Apple Watch Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m55">
+55 Menu Item <span class="box">Reduced limb function / low range of motion / single touch point</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m56">
+56 Text</button>
+	<div class="content inside">
+		<div class="col2">AssistiveTouch Touch Accommodations Activity App for wheelchair users Orientation on Wrist Wheelchair Workouts Messages Side button click speed Announce Calls Announce Messages Answer Phone Calls Dictation Predictive Text Scribble Quickpath Share Location Shortcuts - Help Message Siri Unlock with Apple Watch Walkie Talkie Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m57">
+57 Menu Item <span class="box">Involuntary movements / tremors</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m58">
+58 Text</button>
+	<div class="content inside">
+		<div class="col2">AssistiveTouch Touch Accommodations Messages Side button click speed Announce Calls Announce Messages Answer Phone Calls Dictation Predictive Text Scribble Quickpath Share Location Shortcuts - Help Message Siri Activity App for wheelchair users Orientation on Wrist Wheelchair Workouts Unlock with Apple Watch Walkie Talkie Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m59">
+59 Menu Item <span class="box">Low mobility + speech issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m60">
+60 Text</button>
+	<div class="content inside">
+		<div class="col2">AssistiveTouch Touch Accommodations Orientation on Wrist Messages Side button click speed Announce Calls Announce Messages Predictive Text Scribble Quickpath Share Location Shortcuts - Help Message Unlock with Apple Watch Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m61">
+61 Menu Item <span class="box">Manual wheelchair user</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m62">
+62 Text</button>
+	<div class="content inside">
+		<div class="col2">Activity App for wheelchair users Orientation on Wrist Wheelchair Workouts Messages Announce Calls Announce Messages Answer Phone Calls AssistiveTouch Siri Shortcuts - Help Message Unlock with Apple Watch Walkie Talkie Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m63">
+63 Menu Item <span class="box">Motorized wheelchair users</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m64">
+64 Text</button>
+	<div class="content inside">
+		<div class="col2">AssistiveTouch Touch Accommodations Orientation on Wrist Side button click speed Messages Announce Calls Announce Messages Dictation Share Location Shortcuts - Help Message Siri Unlock with Apple Watch Walkie Talkie Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m65">
+65 Menu Item <span class="box">Head movement only</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m66">
+66 Text</button>
+	<div class="content inside">
+		<div class="col2">Siri Orientation on Wrist Announce Calls Announce Messages Messages Dictation Share Location Shortcuts - Help Message Unlock with Apple Watch Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m67">
+67 Menu Item <span class="box">All of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m68">
+68 Text</button>
+	<div class="content inside">
+		<div class="col2">AssistiveTouch
+Touch Accommodations
+Side button click speed
+Smart Reply
+Taptic Time
+Announce Calls
+Announce Messages
+Dictation
+Predictive Text
+Quickpath
+Share Location
+Shortcuts - Help Message
+Siri
+Walkie Talkie
+Answer Phone Calls
+Unlock with Apple Watch
+Emergency SOS
+Fall Detection
+Privacy
+Messages
+Activity App for wheelchair users
+Orientation on Wrist
+Wheelchair Workouts
+Scribble</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m69">
+69 Menu Item <span class="box">None of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m70">
+70 Nothing</button></div>
+<button class="gLoop nontop inside" id="m71">
+71 End Menu</button></div>
+<button class="button gLoop nonbottom nontop" id="m72">
+72 Menu Item <span class="box">Cognitive</span>&#12288;▵<span class="magic" onclick="magictap(49)">49</span></button>
+	<div class="content contentloop">
+<button class="button gLoop nonbottom inside" id="m73">
+73 Choose from Menu</button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Choose a condition:</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Tired when reading,
+Concentration issues,
+Forgetfulness / disorientation,
+Misplaces devices,
+Reading difficulties,
+Spelling issues,
+Words running together,
+Motion sickness,
+List writing,
+Difficulty following instructions,
+Mood changes,
+Safety issues,
+Language issues,
+Non-verbal / difficultly speaking,
+All of these,
+None of these]</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m74">
+74 Menu Item <span class="box">Tired when reading</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m75">
+75 Text</button>
+	<div class="content inside">
+		<div class="col2">Text Size Zoom Siri Announce Calls Announce Messages Dictation X-Large Watch Face Siri Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m76">
+76 Menu Item <span class="box">Concentration issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m77">
+77 Text</button>
+	<div class="content inside">
+		<div class="col2">Focus and Do Not Disturb Practice Mindfulness Alarms Find My Timers app Handwashing Haptic Feedback Taptic Time Reminder Messages Music Screen Time Share Location Shortcuts - Help Message Siri Sleep app Display Preferences Text Size Zoom Siri Announce Calls Announce Messages Ping your iPhone with Apple Watch Dictation Larger Text X-Large Watch Face Unlock with Apple Watch Siri Fall Detection Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m78">
+78 Menu Item <span class="box">Forgetfulness / disorientation</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m79">
+79 Text</button>
+	<div class="content inside">
+		<div class="col2">Alarms Find My Haptic Feedback Maps Reminder Messages Screen Time Share Location Timers app Shortcuts - Help Message Siri Sleep app Siri Focus and Do Not Disturb Announce Calls Announce Messages Handwashing Ping your iPhone with Apple Watch Unlock with Apple Watch Walkie Talkie Fall Detection Emergency SOS Focus and Do Not Disturb Practice Mindfulness Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m80">
+80 Menu Item <span class="box">Misplaces devices</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m81">
+81 Text</button>
+	<div class="content inside">
+		<div class="col2">Ping your iPhone with Apple Watch Find My Siri Privacy Share Location Maps Emergency SOS</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m82">
+82 Menu Item <span class="box">Reading difficulties</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m83">
+83 Text</button>
+	<div class="content inside">
+		<div class="col2">Siri Announce Calls Announce Messages Dictation Text Size Taptic Time Zoom X-Large Watch Face Shortcuts Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m84">
+84 Menu Item <span class="box">Spelling issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m85">
+85 Text</button>
+	<div class="content inside">
+		<div class="col2">Siri Announce Calls Announce Messages Dictation Smart Reply Text Size Unlock with Apple Watch Shortcuts Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m86">
+86 Menu Item <span class="box">Words running together</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m87">
+87 Text</button>
+	<div class="content inside">
+		<div class="col2">Text Size Zoom Dictation Announce Calls Announce Messages Reduce Motion Maps Predictive text Siri Zoom X-Large Watch Face Scribble Walkie Talkie Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m88">
+88 Menu Item <span class="box">Motion sickness</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m89">
+89 Text</button>
+	<div class="content inside">
+		<div class="col2">Reduce Motion Reduce Transparency Siri Unlock with Apple Watch Mono Audio Walkie Talkie Fall Detection Emergency SOS Shortcuts - Help Message Focus and Do Not Disturb Practice Mindfulness Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m90">
+90 Menu Item <span class="box">List writing</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m91">
+91 Text</button>
+	<div class="content inside">
+		<div class="col2">Reminders Siri Dictation Shortcuts Notifications Alarms Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m92">
+92 Menu Item <span class="box">Difficulty following instructions</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m93">
+93 Text</button>
+	<div class="content inside">
+		<div class="col2">Focus and Do Not Disturb Screen Time Timers app Reminders Messages Notifications Shortcuts Share Location Maps Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m94">
+94 Menu Item <span class="box">Mood changes</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m95">
+95 Text</button>
+	<div class="content inside">
+		<div class="col2">Focus and Do Not Disturb Screen Time Shortcuts - Help Music Photos Messages Siri Reminders Practice Mindfulness Sleep App Share Location Fall Detection Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m96">
+96 Menu Item <span class="box">Safety issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m97">
+97 Text</button>
+	<div class="content inside">
+		<div class="col2">Language Text Size Zoom Siri Announce Calls Smart Reply Announce Messages Dictation Share Location Siri Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m98">
+98 Menu Item <span class="box">Language issues</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m99">
+99 Text</button>
+	<div class="content inside">
+		<div class="col2">Language Text Size Zoom Siri Announce Calls Smart Reply Announce Messages Dictation Share Location Siri Emergency SOS Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m100">
+100 Menu Item <span class="box">Non-verbal / difficultly speaking</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m101">
+101 Text</button>
+	<div class="content inside">
+		<div class="col2">Messages Predictive Text Scribble Quickpath Share Location Shortcuts - Help Message Smart Reply Unlock with Apple Watch Emergency SOS Fall Detection Privacy</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m102">
+102 Menu Item <span class="box">All of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gDocuments inside" id="m103">
+103 Text</button>
+	<div class="content inside">
+		<div class="col2">Text Size
+Zoom
+Siri
+Announce Calls
+Announce Messages
+Dictation
+X-Large Watch Face
+Emergency SOS
+Privacy
+Focus and Do Not Disturb
+Practice Mindfulness
+Alarms
+Find My
+Timers app
+Handwashing
+Haptic Feedback
+Taptic Time
+Reminder
+Messages
+Music
+Screen Time
+Share Location
+Shortcuts - Help Message
+Sleep app
+Display Preferences
+Ping your iPhone with Apple Watch
+Larger Text
+Unlock with Apple Watch
+Fall Detection
+Maps
+Walkie Talkie
+Shortcuts
+Smart Reply
+Reduce Motion
+Predictive text
+Scribble
+Reduce Transparency
+Mono Audio
+Reminders
+Notifications
+Privacy 
+Shortcuts - Help
+Photos
+Language
+Quickpath</div></div></div>
+<button class="button gLoop nonbottom nontop inside" id="m104">
+104 Menu Item <span class="box">None of these</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gScripting inside" id="m105">
+105 Nothing</button></div>
+<button class="gLoop nontop inside" id="m106">
+106 End Menu</button></div>
+<button class="gLoop nontop" id="m107">
+107 End Menu&#12288;▵<span class="magic" onclick="magictap(72)">72</span>&#12288;&#187; <span class="magic" onclick="magictap(110)">110</span> <span class="magic" onclick="magictap(114)">114</span></button>
+<button class="button gLoop nonbottom" id="m108">
+108 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2">Would you like to specify more conditions?</div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[Add more,
+Finished ✅]</div></div></div>
+<button class="button gLoop nonbottom nontop" id="m109">
+109 Menu Item <span class="box">Add more</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m110">
+110 Split Text <span class="box"><span class="magic" onclick="magictap(107)"><b>[107 Menu Result]</b></span></span> by New Lines&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="gVariable inside" id="m111">
+111 Add <span class="box"><span class="var"><b>[110 Split Text]</b></span></span> to Variable <span class="box">Accessibility Features</span></button>
+<button class="button  inside" id="m112">
+112 Run Shortcut <span class="box">Accessibility Matrix Test - ALT BUILD</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Input</div>
+			<div class="col2"><span class="var"><b>[Accessibility Features]</b></span></div></div>
+		<div class="row"><div class="col1">Workflow</div>
+			<div class="col2">{  "workflowIdentifier": "264A4D8E-D8DD-4173-90AB-81AED809E2C9",
+   "workflowName": "Accessibility Matrix Test - ALT BUILD",
+   "isSelf": true
+}</div></div></div></div>
+<button class="button gLoop nonbottom nontop" id="m113">
+113 Menu Item <span class="box">Finished ✅</span></button>
+	<div class="content contentloop">
+<button class="button gDocuments inside" id="m114">
+114 Split Text <span class="box"><span class="magic" onclick="magictap(107)"><b>[107 Menu Result]</b></span></span> by New Lines&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div></div>
+<button class="gVariable inside" id="m115">
+115 Add <span class="box"><span class="var"><b>[114 Split Text]</b></span></span> to Variable <span class="box">Accessibility Features</span></button>
+<button class="button gDocuments inside" id="m116">
+116 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2"></div></div>
+<button class="gVariable inside" id="m117">
+117 Set Variable <span class="box">De-duped List</span> to <span class="box"><span class="var"><b>[116 Text]</b></span></span></button>
+<button class="button gLoop nonbottom inside" id="m118">
+118 Repeat with Each in <span class="box"><span class="var"><b>[Accessibility Features</b> as Text<b>]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gLoop nonbottom inside" id="m119">
+119 If <span class="box"><span class="var"><b>[De-duped List]</b></span></span> <span class="box">does not contain</span> <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button>
+	<div class="content contentloop inside">
+<button class="gVariable inside" id="m120">
+120 Add <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Variable <span class="box">De-duped List</span></button></div>
+<button class="gLoop nontop inside" id="m121">
+121 End If</button></div>
+<button class="gLoop nontop inside" id="m122">
+122 End Repeat with Each</button>
+<button class="button gDocuments inside" id="m123">
+123 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Accessibility Features on Apple Watch
+
+- Created on <span class="var"><b>[CurrentDate]</b></span> -
+
+Based on your specified selections, below is a list of accessibility features that might be helpful, along with links to support documentation and video tutorials, to find out how to turn them on and get started.
+
+Accessibility Shortcut
+You can set the Digital Crown to turn VoiceOver, Zoom, or Touch Accommodations on or off with a triple-click.
+
+About the Accessibility Shortcut for Apple Watch:
+https://support.apple.com/guide/watch/apda74993b58/watchos      
+
+Use Accessibility features on your Apple Watch:
+https://support.apple.com/HT204576
+
+
+—————————————————————————————————
+
+</div></div>
+<button class="gVariable inside" id="m124">
+124 Set Variable <span class="box">Header</span> to <span class="box"><span class="var"><b>[123 Text]</b></span></span></button>
+<button class="button gDocuments inside" id="m125">
+125 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">
+
+—————————————————————————————————
+
+
+
+💻 Apple Support
+Apple Support Pages homepage
+https://support.apple.com/
+
+Apple Support App
+Need help? Apple Support app is your personalized guide to the best options from Apple. Find answers with articles tailored to your products and questions. Call, chat or email with an expert right away, or schedule a callback when it’s convenient. Get a repair at an Apple Store or a nearby Apple Authorised Service Provider. Apple Support is here to help. **Supports hard of hearing or non verbal assistance for individuals through chat functionality.
+https://itunes.apple.com/app/apple-support/id1130498044
+
+AppleCare
+Chat with experts online or have us call you right away. You can also schedule a time for us to call you when you’re ready. Answer a few questions and we’ll give you the best options.
+https://support.apple.com/contact
+
+List of AppleCare Support numbers (worldwide) - https://support.apple.com/HT201232
+How to contact Apple for accessibility support - https://support.apple.com/HT209585
+Accessibility Support Helpdesk:
+United States: 1-877-204-3930
+United Kingdom.: 0800 107 6285
+China mainland: 400-619-8141 (Mandarin only)
+Australia: (61) 1-300-365-083
+
+Apple Retail Support
+Join us for free workshops that cover everything from learning the basics of your new product to editing photos and more. Take the kids to free youth programs like Apple Camp. Or inspire the whole class with a Field Trip to the Apple Store. Forgot your Apple ID or have a question about an app or service? Want to make a Genius Bar reservation? We have several convenient Apple Support options for you to choose from.
+https://www.apple.com/retail/
+
+Apple Support Communities
+Find answers, ask questions, and connect with our community of Apple users from around the world.
+https://discussions.apple.com/welcome
+
+Social 
+YouTube https://www.youtube.com/applesupport/
+Accessibility playlist: https://www.youtube.com/watch?v=LyzkIhNIhgE&amp;list=PLIl2EzNYri0cLtSlZowttih25VnSvWITu
+Twitter @AppleSupport
+
+📖 Manuals and Guides
+Apple Watch https://www.apple.com/watch/ Apple WatchOS https://www.apple.com/watchos/watchos-8/  Apple Watch User Guide https://support.apple.com/guide/watch/welcome/watchos
+Apple Watch Support https://support.apple.com/watch 
+
+
+</div></div>
+<button class="gVariable inside" id="m126">
+126 Set Variable <span class="box">Footer</span> to <span class="box"><span class="var"><b>[125 Text]</b></span></span></button>
+<button class="button gDocuments inside closed" id="m127">
+127 Text&#12288;&#187;</button>
+	<div class="content inside" style="display:none">
+		<div class="col2">-----
+Activity App for wheelchair users
+
+Reach your fitness goals with the Activity app on Apple Watch, designed with wheelchair users in mind. Instead of a Stand goal, the Roll goal encourages you to move every hour. And sensors in Apple Watch even take into account different pushing techniques — giving you the most accurate credit for your daily activity.
+
+The Workout app on Apple Watch helps you workout your way. Accurately measure your workout session and set time, distance, or calorie goals based on the type of exercise you do. For wheelchair users, there are two unique workouts types: Outdoor Wheelchair Walk Pace and Outdoor Wheelchair Run Pace. Just choose the workout type that best matches your activity and Apple Watch turns on the appropriate sensors to track your workout.
+
+To enable health and fitness features designed for wheelchair activity, edit the wheelchair preference in the Health section of My Watch or in the Health app under Health Details.
+
+Use the Health app on your iPhone or iPod touch:
+https://support.apple.com/HT203037
+
+Workout types on Apple Watch:
+https://support.apple.com/HT207934
+
+Explore wheelchair workouts:
+https://support.apple.com/HT207934#wheelchair
+
+Video
+Start a wheelchair workout on Apple Watch:
+https://www.youtube.com/shorts/qE18JFFTBmM 
+(Run time: 00:42)
+
+How to track your activity with your Apple Watch:
+https://youtu.be/uIyZdXWou1E 
+(Run time: 3:22)
+
+
+
+-----
+Alarms
+
+Use the Alarms app to play a sound or vibrate your Apple Watch at a set time. Label alarms to help remind you of activities. Ask Siri to set alarms for you and track your bedtime.
+
+How to set and manage alarms on your Apple Watch:
+https://support.apple.com/guide/watch/apd27ce65478/watchos
+
+
+
+-----
+Announce Calls
+
+With Announce Calls, Siri identifies incoming phone calls and FaceTime calls, which you can accept or decline using your voice. Announce Calls also works with supported third-party apps.
+
+Announce calls with Siri on Apple Watch:
+https://support.apple.com/guide/watch/apd4d7958159/watchos
+
+
+-----
+Announce Messages
+
+When you're wearing your AirPods or compatible Beats headphones, Siri can announce incoming notifications from apps such as Messages and Reminders, and from supported third-party apps. Then you can reply instantly, hands-free.
+
+Announce Messages with Siri on AirPods:
+https://support.apple.com/HT210406
+
+Listen and respond to notifications with AirPods and Beats headphones on Apple Watch:
+https://support.apple.com/guide/watch/apd97b20fe28/watchos 
+
+Pair AirPods and Bluetooth Devices to Apple Watch:
+https://support.apple.com/guide/watch/apd67b3ac484/8.0/watchos
+
+
+
+-----
+Answer Phone Calls
+
+Answer phone calls on Apple Watch to never miss a call again. When you hear or feel the call notification, raise your wrist to see who’s calling. 
+
+Answer phone calls on Apple Watch:
+https://support.apple.com/guide/watch/apd32b6c5658/watchos
+
+
+
+-----
+AssistiveTouch
+
+To support users with limited mobility, with AssistiveTouch you can use hand gestures to navigate and use your Apple Watch.
+
+AssistiveTouch on Apple Watch enables customers who have limb differences to more easily answer incoming calls, control an onscreen motion pointer, and access Notification Center, Control Center, and more.
+
+
+Use AssistiveTouch on your Apple Watch:
+https://support.apple.com/HT212760
+
+Videos
+
+How to use AssistiveTouch on your Apple Watch:
+https://youtu.be/EJawhH-m_TE
+(Runtime 2:24)
+
+
+
+-----
+Bold Text
+
+Turn on Bold Text to give words weight on your screen.
+
+Note: Restart your Apple Watch for changes in bold text to take effect.
+
+Adjust text size and other visual settings on Apple Watch:
+https://support.apple.com/guide/watch/apd766b7bd85/watchos
+
+Adjust brightness, text size, sounds, and haptics on Apple Watch:
+https://support.apple.com/guide/watch/apd62807a9f3/watchos
+
+
+
+-----
+Dictation
+
+In the Messages app on your Apple Watch, you can compose and send messages that contain not only text, but also images, emoji, Memoji stickers, and audio clips. You can also let people know where you are by including your location in a message.
+
+Send messages using Dictation on your Apple Watch:
+https://support.apple.com/guide/watch/apd81334ff71/watchos
+
+
+
+-----
+ECG Sonification
+
+An electrocardiogram (also called an ECG or EKG) is a test that records the timing and strength of the electrical signals that make the heart beat. By looking at an ECG, a doctor can gain insights about your heart rhythm and look for irregularities.
+
+With VoiceOver on, you can turn on Live audio to have your ECG become an audio output through sonified data. 
+
+To toggle Live audio on or off, bring VO focus to the tips field in ECG app on Apple Watch, and then two finger double tap on screen to turn sound of ECG on and off.
+
+Take an ECG with the ECG app on Apple Watch:
+https://support.apple.com/HT208955
+
+
+
+-----
+Emergency SOS
+
+With Emergency SOS, you can quickly and easily call for help and alert your emergency contacts from your Apple Watch.
+
+Use Emergency SOS on your Apple Watch:
+https://support.apple.com/HT206983 
+
+Video
+
+How to use your Apple Watch
+https://youtu.be/Fo5veRwBbu4
+(Run time 3:15)
+
+
+
+-----
+Fall Detection
+
+If Apple Watch SE or Apple Watch Series 4 or later detects a hard fall while you're wearing your watch, it will tap you on the wrist, sound an alarm and display an alert. You can choose to contact emergency services or dismiss the alert by pressing the Digital Crown, tapping Close in the top left-hand corner or tapping "I'm OK".
+
+Use Fall Detection with Apple Watch:
+https://support.apple.com/HT208944
+
+Use Emergency SOS on Apple Watch:
+https://support.apple.com/HT206983
+
+Manage fall detection on Apple Watch:
+https://support.apple.com/guide/watch/apd34c409704/watchos
+
+Video
+How to turn on fall detection:
+https://youtu.be/7ln9cJZLvKs
+
+How to use Emergency SOS on Apple Watch:
+https://youtu.be/rcqxl4s_dow
+
+
+
+-----
+Find My
+
+Find My can help you locate and protect your missing Apple Watch. If you've already set up Find My iPhone on your paired iPhone, it will be enabled automatically on your Apple Watch and any Apple Watch paired using Family Setup. 
+
+So if your watch is lost or stolen, you can use Find My to help you find it again. And thanks to Activation Lock, your Apple ID and password are required before anyone can delete your Apple Watch and use it with their iPhone.
+
+With Find My you can easily locate friends and family members. Share your location with others, and let them share back.
+
+Find My can help you locate and protect your missing Apple Watch:
+https://support.apple.com/HT207024
+
+Use the Find My app:
+https://support.apple.com/find-my
+
+
+Video
+
+How to use Find My on Apple Watch:
+https://youtu.be/EEw8F_qASBE
+(Runtime :49)
+
+
+
+-----
+Focus and Do Not Disturb
+
+Focus helps you stay in the moment when you want to concentrate on an activity. Focus can reduce distractions—allowing only notifications you want to receive (ones that match your focus)—and lets other people and apps know you’re busy.
+
+You can choose from provided Focus options—for example, Driving, Personal, Sleep, and Work. Or you can create a custom Focus on your iPhone, choosing who is allowed to contact you, which apps can send you notifications, and whether or not you receive time-sensitive notifications.
+
+Use Focus on Apple Watch:
+https://support.apple.com/guide/watch/apd6640937c4/watchos
+
+Use Control Center on Apple Watch:
+https://support.apple.com/guide/watch/apd06bc15da1/watchos 
+
+
+
+-----
+Grayscale
+
+To assist users for whom color might impair visibility, Apple Watch lets you enable grayscale onscreen. After you set the filter, the settings apply system-wide.
+
+Note: Restart your Apple Watch for changes in grayscale to take effect.
+
+Adjust the display and text size on Apple Watch:
+https://support.apple.com/guide/watch/apd766b7bd85/watchos
+
+
+
+-----
+Handwashing
+
+Your Apple Watch can detect when you start washing and encourage you to keep going for 20 seconds, the time recommended by global health organizations. Your Apple Watch can also notify you if you haven’t washed your hands within a few minutes of returning home.
+
+Wash your hands with Apple Watch Series 4 or later:
+https://support.apple.com/HT211206
+
+Set up Handwashing on Apple Watch:
+https://support.apple.com/guide/watch/apdc9b9f04a8/watchos
+
+
+
+-----
+Haptic Feedback
+
+Your device lets you know when something’s up, in a way you’ll notice. Choose vibrating alerts for incoming phone and FaceTime calls, new text messages, new and sent mail, and calendar events. Or if you’re on the go, turn on the Taptic Engine on your Apple Watch to give you a gentle tap every time a notification comes in. Vibrating alerts available on iPhone or Apple Watch.
+
+You can adjust the strength of the haptics—or wrist taps—Apple Watch uses for notifications and alerts.
+
+Change the audio and notification settings on your Apple Watch:
+https://support.apple.com/HT204793
+
+Adjust brightness, text size, sounds, and haptics on Apple Watch:
+https://support.apple.com/guide/watch/apd62807a9f3/watchos
+
+Notifications on your Apple Watch:
+https://support.apple.com/HT204791
+
+Tell time with haptic feedback on Apple Watch:
+https://support.apple.com/guide/watch/apd2c755c294/watchos
+
+
+
+-----
+Headphone Notifications
+
+Receive notifications that your volume should be turned down when you've reached the recommended 7-day audio exposure limit.
+
+Headphone notifications on your Apple Watch: 
+https://support.apple.com/HT211903
+
+
+
+-----
+Labels
+
+Turn on button labels to see an additional position indicator. With labels on, you see a one (1) on any option that is on, and a zero (0) on options that are turned off.
+
+Adjust the display and text size on Apple Watch:
+https://support.apple.com/guide/watch/apd766b7bd85/watchos
+
+
+
+-----
+Language
+
+Change language on Apple Watch if required. 
+
+Change language and orientation on Apple Watch:
+https://support.apple.com/guide/watch/apd0bf18f46b/watchos
+
+
+
+-----
+Maps
+
+Maps will help you find your way. Whether it’s home, work, the gym, or your kid’s school, the places you visit most often are displayed for quick, one‑tap navigation when you open Maps on your devices. Or ask Siri, “Give me directions home.”
+
+Your Apple Watch uses sounds and taps to let you know when to turn. A low tone followed by a high tone (tock tick, tock tick) means turn right at the intersection you’re approaching; a high tone followed by a low tone (tick tock, tick tock) means turn left. Not sure what your destination looks like? You’ll feel a vibration when you’re on the last leg, and again when you arrive.
+
+Get directions on Apple Watch:
+https://support.apple.com/guide/watch/apdea7480950/watchos
+
+Use Find People to quickly get directions to a friend:
+https://support.apple.com/guide/watch/apd21475d656/8.0/watchos/
+
+Use Siri on your Apple Watch:
+https://support.apple.com/HT205184
+
+
+
+-----
+Messages
+
+In the Messages app  on your Apple Watch, you can compose and send messages that contain not only text, but also images, emoji, Memoji stickers, and audio clips.
+
+You can compose a message in a variety of ways—most of them on a single screen. After creating a message, tap the Create Message field, then do one or a combination of the following:
+- Use the QWERTY and QuickPath keyboard
+- Use Scribble
+- Dictate text
+- Include emoji
+- Enter text with your iPhone.
+
+You can use Digital Touch to send taps, a kiss, or your heartbeat to friends who have an Apple Watch or iPhone with iOS 10 or later.
+To see (or feel) a tap or heartbeat someone has sent you, tap the notification.
+
+To send someone a map showing your current location, scroll down, then tap Send Location.
+
+Send messages from Apple Watch:
+https://support.apple.com/guide/watch/apd81334ff71/watchos
+
+
+
+-----
+Mono audio
+
+Stereo recordings usually have distinct left- and right-channel audio tracks. Mono Audio can help streamline the differences by playing both audio channels in both ears. You can adjust the balance for greater volume in either ear, so you won’t miss a single note of a concerto or word of an audiobook.
+
+You can also turn on noise cancellation even when you’re using only one of your AirPods.
+
+Accessibility audio settings on Apple Watch:
+https://support.apple.com/guide/watch/apdd4624131a/watchos
+
+Pair Bluetooth headphones or speakers:
+https://support.apple.com/guide/watch/apd67b3ac484/8.0/watchos/
+
+
+
+-----
+Music
+
+Music can soothe, energize and help us calm down. Learn how to make a playlist in the Apple Music app. 
+
+Play music on Apple Watch:
+https://support.apple.com/guide/watch/apd70768b20b/watchos
+
+Add music to Apple Watch:
+https://support.apple.com/guide/watch/apd483798d11/8.0/watchos/
+
+How to make a playlist in the Apple Music app:
+https://support.apple.com/HT207542
+
+Video
+How to create a playlist: 
+https://www.youtube.com/watch?v=cA6wWLG337Y
+(Runtime 1:11)
+
+
+
+-----
+Noise app 
+
+With the Noise app, you can enable Noise notifications to alert you when your Apple Watch identifies sound levels in your environment that could affect your hearing.
+
+Use the Noise app on your Apple Watch:
+https://support.apple.com/HT209593
+
+
+
+-----
+Notifications
+
+Notifications help you keep track of what’s new—they let you know if you missed a call, if the date of an event moved, and more. You can customize your notification settings so you see only what’s important to you.
+
+Notifications on Apple Watch:
+https://support.apple.com/HT204791
+
+Change the audio and notification settings on your Apple Watch:
+https://support.apple.com/HT204793
+
+Videos
+
+How to use your Apple Watch:
+https://youtu.be/Fo5veRwBbu4
+(Run time 3:15)
+
+
+
+-----
+Orientation on Wrist
+
+If you want to move your Apple Watch to your other wrist or prefer the Digital Crown on the other side, adjust your orientation settings so that raising your wrist wakes your Apple Watch, and turning the Digital Crown moves things in the direction you expect.
+
+Change language and orientation on Apple Watch:
+https://support.apple.com/guide/watch/apd0bf18f46b/watchos
+
+
+
+-----
+Photos
+
+On Apple Watch, browse your photos in the Photos app  and show a photo on your watch face.
+
+Use the Photos app on iPhone to organise your photos into albums. Create an album of “happy”, filling with people, places and memories that make you happy or calm, set these at watch face.
+
+View photos and Memories on Apple Watch:
+https://support.apple.com/guide/watch/view-photos-apd5c3c53180/watchos
+
+Choose a photo album and manage storage on Apple Watch:
+https://support.apple.com/guide/watch/apde3d82be52/8.0/watchos/
+
+Customize the watch face:
+https://support.apple.com/guide/watch/apda6559ad78/8.0/watchos/
+
+
+
+-----
+Ping your iPhone with Apple Watch
+
+Your Apple Watch can help you find your iPhone if it’s nearby. Use the Control Center to Ping iPhone, your iPhone makes a tone so you can track it down.
+Tip: In the dark? Touch and hold the Ping iPhone button and iPhone flashes as well.
+
+Locate your iPhone:
+https://support.apple.com/guide/watch/apd06bc15da1/8.0/watchos/8.0#apda30525ced 
+
+Video
+
+Ping your iPhone with your Apple Watch:
+https://youtu.be/IuAFuVA5gJc 
+(Run time: 00:29)
+
+
+
+-----
+Practice Mindfulness
+
+The Mindfulness app on your Apple Watch encourages you to set aside a few minutes a day to focus, center, and connect as you breathe. 
+
+With an Apple Fitness+ subscription, you can listen to guided Meditations on Apple Watch.
+
+Use Apple Watch to practice mindfulness:
+https://support.apple.com/guide/watch/apd371dfe3d7/watchos 
+
+Videos
+
+Add the Breathe complication to Apple Watch:
+https://youtu.be/rPA9qSS7DT0 
+(Run time 0:46)
+
+
+
+-----
+Predictive Text
+
+In Messages, to use predictive text, tap a finished or unfinished word to highlight it, then turn the Digital Crown to see suggested words. Stop turning the Digital Crown to enter the highlighted suggestion.
+
+Send messages from Apple Watch:
+https://support.apple.com/guide/watch/apd81334ff71/watchos
+
+
+
+-----
+Privacy
+
+Privacy is an important concern when using apps that exchange information across the internet. 
+
+The Health app automatically counts your steps, walking, and running distances. And, if you have an Apple Watch, it automatically tracks all of your Activity data. Learn more on how all this data can remain private and secure.
+
+You have control over what you share:
+https://www.apple.com/privacy/control/ 
+
+Manage Health data on your iPhone, iPod touch, or Apple Watch:
+https://support.apple.com/HT204351 
+
+Personal Safety User Guide:
+https://support.apple.com/guide/personal-safety/welcome
+
+
+
+-----
+Wheelchair Workouts
+
+Apple Watch is equipped with fitness algorithms and sensors specifically designed to help wheelchair users more accurately track their activity. So, when the Wheelchair setting is turned on, your iPhone tracks pushes instead of steps, and will register different types of pushes, speeds, and terrains. You'll also see a Roll goal in the Activity app, instead of a Stand goal.
+
+Wheelchair-specific workouts:
+https://support.apple.com/HT204576
+
+
+
+-----
+Quickpath
+
+In the Messages app  on your Apple Watch, you can compose and send messages that contain not only text, but also images, emoji, Memoji stickers, and audio clips.
+
+Use the QWERTY and QuickPath keyboard (Apple Watch Series 7 only), tap characters to enter them or use the QuickPath keyboard to slide from one letter to the next without lifting your finger (not available for all languages). To end a word, lift your finger.
+
+Send messages from Apple Watch:
+https://support.apple.com/guide/watch/apd81334ff71/watchos
+
+
+
+-----
+Reduce Motion
+
+You can reduce screen motion in Apple Watch. When you turn on Reduce Motion, some screen elements — such as the movement of icons on the Home screen — will be simpler and more directly associated with your navigation gestures.
+
+Adjust the display and text size on Apple Watch:
+https://support.apple.com/guide/watch/apd766b7bd85/watchos
+
+Use Accessibility features on your Apple Watch:
+https://support.apple.com/HT204576
+
+
+
+-----
+Reduce Transparency
+
+You can increase contrast on the screen by reducing the transparency of the background behind elements such as alerts, Siri, and Glances.
+
+Adjust the display and text size on Apple Watch:
+https://support.apple.com/guide/watch/apd766b7bd85/watchos 
+
+Change the watch face on your Apple Watch:
+https://support.apple.com/HT205536 
+
+Apple Watch faces and their features:
+https://support.apple.com/guide/watch/apde9218b440/watchos 
+
+Videos
+
+How to create and share customized Apple Watch faces:
+https://www.youtube.com/watch?v=BlxlDirg4h4 
+(Run Time: 2:16) 
+
+
+
+-----
+Reminders
+
+In the Reminders app, you can easily create and organize reminders to keep track of all of life’s to-dos. Use it for shopping lists, projects at work, tasks around the house, and anything else you want to track. Create subtasks, set flags, add attachments, and choose when and where to receive reminders. You can also use smart lists to automatically organize your reminders.
+
+You can create location based reminders (alert to remind you to do something when arriving or leaving locations), time based reminders, and even assign reminders to others.
+
+Your Apple Watch notifies you of reminders you create in the Reminders app on your Apple Watch or iPhone—and on any other iOS device, iPad, or Mac where you’re signed in with your Apple ID.
+
+Set and respond to reminders on Apple Watch:
+https://support.apple.com/guide/watch/apdf10efb1bf/watchos
+
+
+
+-----
+RTT/TTY
+
+Use your iPhone, iPad, Mac, or Apple Watch to make and receive RTT calls. Standard texting involves composing an entire message and tapping Send, but RTT provides instant transmission of a message as it is being composed (as well as support for braille displays). Transcripts for RTT calls are saved in your call history.
+
+Set up and use RTT on Apple Watch (cellular models only):
+https://support.apple.com/guide/watch/apde82d406d1/watchos
+
+
+
+-----
+Screen Time
+
+Use Screen Time to configure controls for a family member’s Apple Watch. With Screen Time you can schedule time away from the screen, and limit both contacts and the apps your family member can use to communicate with those contacts. You can also impose limits on iTunes Store and app purchases, explicit content, and location information.
+
+Schooltime limits Apple Watch features during school hours, allowing a family member to focus.
+
+Set up a family member’s Apple Watch:
+https://support.apple.com/guide/watch/apd54d0a51fb/watchos
+
+Get started with Schooltime on Apple Watch:
+https://support.apple.com/guide/watch/apd160a958b7/8.0/watchos/
+
+
+
+-----
+Scribble
+
+In the Messages app  on your Apple Watch, you can compose and send messages that contain not only text, but also images, emoji, Memoji stickers, and audio clips.
+
+With Scribble, use your finger to write your message. To edit your message, turn the Digital Crown to move the cursor into position, then make your edit.
+To use predictive text, tap a finished or unfinished word to highlight it, then turn the Digital Crown to see suggested words. Stop turning the Digital Crown to enter the highlighted suggestion.
+
+If you’ve set up your Apple Watch to use more than one language, you can choose a different language when using Scribble. Just swipe up from the bottom of the screen, then choose a language. Scribble is not available in all languages.
+
+Send messages from Apple Watch:
+https://support.apple.com/guide/watch/apd81334ff71/watchos 
+
+
+
+-----
+Share Location
+
+Use the Messages app to send and receive texts, photos, videos, and audio messages. In a message, you can tap the contact name to share your location with them. 
+
+View a friend’s location with Apple Watch:
+https://support.apple.com/guide/watch/apd1132106dc/watchos
+
+Video
+How to share your location from messages:
+https://youtu.be/vl2cMa8wCU4
+(Runtime 2:08)
+
+
+
+-----
+Shortcuts - Help Message
+
+A shortcut provides a quick way to get things done with your apps, with just a tap or by asking Siri.
+
+Shortcuts can automate a wide variety of things — for example, getting directions to the next event on your Calendar, moving text from one app to another, generating expense reports and more. 
+
+It can also be used in messaging contacts requesting assistance and giving location. 
+
+Use shortcuts on Apple Watch:
+https://support.apple.com/guide/watch/apd99050d435/watchos
+
+Run shortcuts from Apple Watch:
+https://support.apple.com/guide/shortcuts/apd5888b0858/ios
+
+Shortcuts: 
+https://support.apple.com/guide/shortcuts/apdf22b0444c/
+
+Discover shortcuts in the Gallery:
+https://support.apple.com/guide/shortcuts/apdd018638ca/
+
+Help Message shortcut:
+https://www.icloud.com/shortcuts/3e05c96959914f689b5af0ddcdfed528
+
+Video
+
+How to use the In Case of Emergency shortcut on iPhone, iPad, and iPod touch:
+https://youtu.be/JaeVKgy5vKA (Runtime 2:08)
+
+
+
+-----
+Shortcuts
+
+A shortcut provides a quick way to get things done with your apps, with just a tap or by asking Siri.
+
+Shortcuts can automate a wide variety of things — for example, getting directions to the next event on your Calendar, moving text from one app to another, generating expense reports and more. 
+
+Use shortcuts on Apple Watch:
+https://support.apple.com/guide/watch/apd99050d435/watchos
+
+Run shortcuts from Apple Watch:
+https://support.apple.com/guide/shortcuts/apd5888b0858/ios
+
+Shortcuts: 
+https://support.apple.com/guide/shortcuts/apdf22b0444c/
+
+Discover shortcuts in the Gallery:
+https://support.apple.com/guide/shortcuts/apdd018638ca/
+
+Video
+
+Discover Starter Shortcuts:
+https://youtu.be/aNULa0S5hIU 
+(Runtime 0:49)
+
+
+
+-----
+Show audio transcriptions 
+
+Apple Watch, iPhone and iPad can display transcriptions of announcements made through HomePod.
+
+Display subtitles and captions for videos and HomePod announcements on iPhone: https://support.apple.com/guide/iphone/iph3e2e23d1/
+
+
+
+-----
+Side Button Click Speed
+
+Adjust motor skills settings on Apple Watch to make it easier to use the Side Button on Apple Watch. 
+
+Set the side button speed:
+https://support.apple.com/guide/watch/adjust-motor-skills-settings-apdfbb1b0550/watchos
+
+
+
+-----
+Siri
+
+Learn how to use Siri, the intelligent personal assistant that helps you get things done. Siri can send your messages, place calls, get directions and more. 
+
+You can ask Siri to start a specific workout, open an app, send a message and much more. There are several ways to talk to Siri. On Apple Watch Series 3 or later, Siri speaks responses to you, and you can activate and use Siri from a paired Bluetooth headset. On earlier models, Siri responds visually on your watch face.
+
+With watchOS 6, you can ask Siri to identify a song and get an instant Shazam result. You can also ask Siri a general question and Apple Watch displays the first few search results along with a brief excerpt from each page. Just tap Open Page to view the page on Apple Watch.
+
+Use Siri on your Apple Watch:
+https://support.apple.com/HT205184
+
+Apple Siri page:
+https://www.apple.com/siri/
+
+What can I ask Siri?
+https://support.apple.com/siri 
+
+Use Siri on all your Apple devices:
+https://support.apple.com/HT204389
+
+Run shortcuts with Siri, the Shortcuts app or Siri Suggestions:
+https://support.apple.com/HT209055
+
+
+
+-----
+Sleep app
+
+Create personalized sleep schedules to help meet your sleep goals and improve your overall health.Track your sleep on Apple Watch and use Sleep on iPhone:
+https://support.apple.com/HT211685
+
+Track your sleep with Apple Watch:
+https://support.apple.com/guide/watch/apd830528336/watchos 
+
+Videos
+How to track your sleep with your Apple Watch:
+https://youtu.be/9lkcR5pJSfQ
+(Run time: 3:43)
+
+
+
+-----
+Smart Reply
+
+Send a smart reply: Scroll to see a list of handy phrases that you can use—just tap one to send it.
+
+To add your own phrase, open the Apple Watch app on your iPhone, tap My Watch, go to Messages > Default Replies, then tap Add Reply. To customize the default replies, tap Edit, then drag to reorder them or tap  to delete one.
+
+Write and reply to mail on Apple Watch:
+https://support.apple.com/guide/watch/apd7df390dc3/watchos
+
+
+
+-----
+Sound Recognition
+
+Sound Recognition listens for certain sounds and uses on‑device intelligence to notify you when a specific sound is detected. When using your iPhone, you’ll receive a notification when a particular type of sound or alert, such as a fire alarm or doorbell, is detected and this notification can also pass on to your Apple Watch.  
+Recognize sounds using iPhone:
+https://support.apple.com/guide/iphone/iphf2dc33312/
+
+Notifications on Apple Watch:
+https://support.apple.com/HT204791 
+
+Change the audio and notification settings on your Apple Watch:
+https://support.apple.com/HT204793 
+
+
+
+-----
+Stream audio to hearing devices
+
+Learn how to pair Bluetooth headphones, heart rate monitors and more with your Apple Watch.
+
+When you set up AirPods with your iPhone, they're simultaneously connected to both your Apple Watch and iPhone, and they play sound automatically from either device. 
+
+Stream Apple Music or Apple Podcasts. Or sync content to your watch. You need bluetooth headphones or speakers to listen to music or other audio on your Apple Watch.
+
+Use AirPods and other Bluetooth accessories with Apple Watch:
+https://support.apple.com/HT204218
+
+Listen to music and podcasts on your Apple Watch:
+https://support.apple.com/HT204691
+
+
+
+-----
+Taptic Time
+
+When Apple Watch is in silent mode, it can tap out the time on your wrist with a series of distinct taps.
+
+Select the way you want Taptic Time to vibrate:
+Digits: Apple Watch long taps for every 10 hours, short taps for each following hour, long taps for every 10 minutes, then short taps for each following minute.
+
+Terse: Apple Watch long taps for every five hours, short taps for the remaining hours, then long taps for each quarter hour.
+
+Morse Code: Apple Watch taps each digit of the time in Morse code.
+
+Tell time with haptic feedback on Apple Watch:
+https://support.apple.com/guide/watch/apd2c755c294/watchos
+
+Adjust brightness, text size, sounds, and haptics on Apple Watch:
+https://support.apple.com/guide/watch/apd62807a9f3/watchos
+
+
+
+-----
+Text Size
+
+You can adjust the size of the text that appears in any area that supports Dynamic Type, such as the Settings app.
+
+Adjust text size and other visual settings on Apple Watch:
+https://support.apple.com/guide/watch/apd766b7bd85/watchos 
+
+Adjust brightness and text on Apple Watch:
+https://support.apple.com/guide/watch/apd62807a9f3/watchos
+
+Use Accessibility features on your Apple Watch:
+https://support.apple.com/HT204576
+
+
+
+-----
+Timers app
+
+The Timers app on Apple Watch can help you keep track of time. With watchOS 8, you can set multiple timers that track time for up to 24 hours.
+
+Set timers on Apple Watch:
+https://support.apple.com/guide/watch/apdf448955b2/watchos
+
+
+
+-----
+Touch Accommodations
+
+Adjust how the screen responds to your touch with Touch Accommodations. Control how long you touch before it’s recognized or whether repeat touches are ignored. That way, you can put your ﬁnger down anywhere on the screen and move to the item you want without mistakenly performing an action.
+
+
+Adjust motor skills settings on Apple Watch:
+https://support.apple.com/guide/watch/apdfbb1b0550/watchos
+
+
+
+-----
+Unlock with Apple Watch
+
+When you're wearing a face mask or sunglasses and your Apple Watch, you can simply raise and glance at your iPhone to unlock it.
+
+Unlock with Apple Watch works when your watch is on your wrist and unlocked and your iPhone is nearby.
+
+While you’re wearing Apple Watch, your Mac can sense when you’re nearby and automatically log you in. You can also use Apple Watch to approve other requests for your administrator password. 
+
+Unlock your iPhone with Apple Watch:
+https://support.apple.com/HT212208
+
+Unlock your Mac with your Apple Watch:
+https://support.apple.com/HT206995 
+
+
+
+-----
+VoiceOver
+
+VoiceOver helps you use your Apple Watch even if you can’t see the display. Use simple gestures to move around the screen and listen as VoiceOver speaks each item you select.
+
+Use VoiceOver on Apple Watch:
+https://support.apple.com/guide/watch/apdaabc79d3b/watchos
+
+Apple Watch basics with VoiceOver:
+https://support.apple.com/guide/watch/apde8185443e/watchos
+
+Set up Apple Watch using VoiceOver:
+https://support.apple.com/guide/watch/apd2442c5704/watchos
+
+Videos
+
+How to navigate with VoiceOver: 
+https://www.youtube.com/watch?v=qDm7GiKra28
+(Runtime 3:57)
+
+How to pick a new VoiceOver voice: 
+https://www.youtube.com/watch?v=T6ols9d9urQ
+(Runtime 1:25)
+
+
+
+-----
+VoiceOver + Braille
+
+You can use VoiceOver on your Apple Watch and a Bluetooth-enabled braille display to read and navigate.
+
+Using a braille display with your Apple Watch requires watchOS 7.2 or later.
+
+Use a braille display with VoiceOver on Apple Watch:
+https://support.apple.com/guide/watch/apd1ffb55927/watchos
+
+Braille displays supported by Apple Watch:
+https://support.apple.com/HT211966
+
+Use a braille display with VoiceOver on Apple Watch:
+https://support.apple.com/guide/watch/apd1ffb55927/watchos
+
+Download an electronic braille (.BRF) user guide for Apple Watch:
+https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/applewatch_user_guide_watchos_8.zip
+
+
+
+-----
+Walkie Talkie
+
+Whether you’re out shopping or trying to find someone in a crowd, use the Walkie-Talkie app to get in touch with a single tap. Add friends and then manage when you want to talk. 
+
+If you have difficulty keeping your finger pressed on the Talk button, you can use a single tap to talk.
+- Open the Settings app  on your Apple Watch.
+- Tap Accessibility, then, below Walkie-Talkie, turn on Tap to Talk.
+When this is on, tap once to talk, then tap again when you’re finished talking.
+
+Use Walkie-Talkie on your Apple Watch:
+https://support.apple.com/HT208917
+
+Use Walkie-Talkie on Apple Watch (User Guide):
+https://support.apple.com/guide/watch/apd246d6eefd/watchos
+
+
+
+-----
+X-Large Watch Face  Your Apple Watch comes with a variety of watch faces, most of which you can customize. 
+X-Large Watch Face is for when you need the largest available display. When you add a complication, it fills the screen.
+
+Apple Watch faces and their features:
+https://support.apple.com/guide/watch/apde9218b440/watchos
+
+
+
+-----
+Zoom
+
+Use Zoom to magnify what’s on the Apple Watch display. Once you’ve turned on Zoom, you can Zoom in or out; Move around (pan); Use the Digital Crown normally instead of panning and Adjust magnification. 
+
+Use Zoom on Apple Watch:
+https://support.apple.com/guide/watch/apd95f904443/watchos
+
+</div></div>
+<button class="button gDocuments inside" id="m128">
+128 Split Text <span class="box"><span class="var"><b>[127 Accessibility Features List]</b></span></span> by <span class="box">Custom</span>&#12288;&#187; <span class="magic" onclick="magictap(130)">130</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">TextCustomSeparator</div>
+			<div class="col2">-----</div></div></div>
+<button class="button gLoop nonbottom inside" id="m129">
+129 Repeat with Each in <span class="box"><span class="var"><b>[De-duped List]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="button  inside" id="m130">
+130 Filter Files <span class="box"><span class="magic" onclick="magictap(128)"><b>[128 Accessibility Feature Details]</b></span></span>&#12288;&#187; <i>131</i> <span class="magic" onclick="magictap(132)">132</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ContentItemLimitEnabled</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ContentItemLimitNumber</div>
+			<div class="col2">1</div></div>
+		<div class="row"><div class="col1">ContentItemFilter</div>
+			<div class="col2">Name begins with <span class="var"><b>[Repeat Item]</b></span></div></div></div>
+<button class="button gLoop nonbottom inside" id="m131">
+131 If <span class="box"><span class="var"><b>[130 Feature Description]</b></span></span> <span class="box">has any value</span></button>
+	<div class="content contentloop inside">
+<button class="gVariable inside" id="m132">
+132 Add <span class="box"><span class="magic" onclick="magictap(130)"><b>[130 Feature Descriptions]</b></span></span> to Variable <span class="box">Final List</span></button></div>
+<button class="gLoop nontop inside" id="m133">
+133 End If</button>
+<button class="gScripting inside" id="m134">
+134 Nothing</button></div>
+<button class="gLoop nontop inside" id="m135">
+135 End Repeat with Each</button>
+<button class="button gDocuments inside" id="m136">
+136 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2"><span class="var"><b>[Header]</b></span>
+<span class="var"><b>[Final List]</b></span>
+<span class="var"><b>[Footer]</b></span></div></div>
+<button class="button  inside" id="m137">
+137 Create Note with <span class="box"><span class="var"><b>[136 Text]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">NoteGroup</div>
+			<div class="col2">{  "Identifier": "x-coredata://1CAE21B9-FE99-4871-A4BC-7BC018DD5FE8/ICFolder/p716?accountIdentifier=34178B9D-E1B2-43F5-B04B-BF6135E33979",
+   "DisplayString": "Notes [iCloud]"
+}</div></div>
+		<div class="row"><div class="col1">OpenWhenRun</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class=" inside" id="m138">
+138 Show Note <span class="box"><span class="var"><b>[137 Note]</b></span></span></button></div>
+<button class="gLoop nontop" id="m139">
+139 End Menu&#12288;▵<span class="magic" onclick="magictap(113)">113</span>&#12288;&#187;</button>
+<button class="gScripting" id="m140">
+140 Stop and Output <span class="box"><span class="var"><b>[139 Menu Result]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

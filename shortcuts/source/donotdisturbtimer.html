@@ -1,0 +1,238 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>DoNotDisturbTimer</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">DoNotDisturbTimer</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1206.4",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 946986751,
+   "WFWorkflowIconGlyphNumber": 59471
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 411,
+"WFWorkflowMinimumClientVersionString": "411",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "NCWidget"
+]
+</div></div>
+
+<button class="button gScripting" id="m0">
+0 Ask for <span class="box">Number</span> Input&#12288;&#187; <span class="magic" onclick="magictap(2)">2</span> <span class="magic" onclick="magictap(4)">4</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">AskActionDefaultAnswerNumber</div>
+			<div class="col2"></div></div>
+		<div class="row"><div class="col1">AskActionPrompt</div>
+			<div class="col2">How many minutes do you want to focus for?</div></div></div>
+<button class="" id="m1">
+1 Date Current Date&#12288;&#187;</button>
+<button class="button " id="m2">
+2 Adjust <span class="box">Add</span> Date <span class="box"><span class="var"><b>[1 Date]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">Duration</div>
+			<div class="col2"><span class="magic" onclick="magictap(0)"><b>[0 Ask for Input]</b></span> min</div></div>
+		<div class="row"><div class="col1">AdjustOffsetPicker</div>
+			<div class="col2">{  "Value": {
+      "Unit": "Minute",
+      "Value": {
+         "OutputUUID": "C6A7DAAD-4E08-424F-8C7F-19ED683CAFC8",
+         "Type": "ActionOutput",
+         "OutputName": "Ask for Input"
+      },
+      "Operation": "Add"
+   },
+   "WFSerializationType": "WFTimeOffsetValue"
+}</div></div></div>
+<button class="button " id="m3">
+3 Turn Focus <span class="box">On</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Time</div>
+			<div class="col2"><span class="var"><b>[2 Adjusted Date</b>{"Date Style":"None","WFISO8601IncludeTime":false,"Time Style":"Short"}<b>]</b></span></div></div>
+		<div class="row"><div class="col1">AssertionType</div>
+			<div class="col2">Time</div></div></div>
+<button class="" id="m4">
+4 Start Timer for <span class="box"><span class="magic" onclick="magictap(0)"><b>[0 Ask for Input]</b></span> min</span></button>
+<button class="" id="m5">
+5 Set Brightness to <span class="box">0</span></button>
+<button class="" id="m6">
+6 Set Volume to <span class="box">0</span></button>
+<button class="" id="m7">
+7 Wait to Return</button>
+<button class="" id="m8">
+8 Set Brightness to 0.5</button>
+<button class="" id="m9">
+9 Set Volume to 0.5</button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

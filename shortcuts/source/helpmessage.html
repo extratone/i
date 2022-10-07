@@ -1,0 +1,248 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>HelpMessage</title>
+<style>
+body {
+	font-family: system-ui;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	padding: 3px 10px;
+	margin: 5px 0;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gLoop { background-color: #e0e0e0; }
+.gScripting { background-color: #ddffdd; }
+.gDocuments { background-color: #ffeebb; }
+.gVariable { background-color: #ffddcc; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+	margin-bottom: 5px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	padding-top: 5px;
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #fff8dd; }
+
+.row { display: flex; }
+
+.col1 {
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #404060; color: #eee; }
+	.gLoop { background-color: #404040; }
+	.gScripting { background-color: #305030; }
+	.gDocuments { background-color: #505020; }
+	.gVariable { background-color: #503030; }
+	.gUnknown { background-color: #205050; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #505020; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams">HelpMessage</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1206.4",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4282601983,
+   "WFWorkflowIconGlyphNumber": 59751
+},
+"WFWorkflowImportQuestions": [
+   {
+      "ParameterKey": "WFContact",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(0)"><b>0</b></span>,
+      "Text": "Choose the contacts you’d like to send the help message to:"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "NCWidget"
+]
+</div></div>
+
+<button class="button " id="m0">
+0 Contacts&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">Contact</div>
+			<div class="col2">[{"WFContactData":"BEGIN:VCARD
+   VERSION:3.0
+   PRODID:-//Apple Inc.//iPhone OS 16.0//EN
+   N:Extratone;;;;
+   item1.EMAIL;type=INTERNET;type=pref:horn@extratone.com
+   item1.X-ABLabel:Support
+   TEL;type=CELL;type=VOICE;type=pref:+1 (573) 826-4160
+   item2.ADR;type=HOME;type=pref:;;1714 Oak Cliff Pl;Columbia;MO;65203;United States
+   item2.X-ABADR:us
+   X-SOCIALPROFILE;type=twitter:http://twitter.com/extratone
+   X-SOCIALPROFILE;type=facebook:http://www.facebook.com/extratonemagazine
+   X-SOCIALPROFILE;type=YouTube:x-apple:extratone
+   X-SOCIALPROFILE;type=GitHub:x-apple:extratone
+   item3.URL;type=pref:https://extratone.com
+   item3.X-ABLabel:_$!<HomePage>!$_
+   BDAY:2016-05-18
+   X-ABShowAs:COMPANY
+   END:VCARD
+   "},"WFContactMultivalue":-1,"WFContactProperty":-1}]</div></div></div>
+<button class="" id="m1">
+1 Get Details <span class="box">Phone Numbers</span> of Contacts <span class="box"><span class="var"><b>[0 Contacts]</b></span></span>&#12288;&#187;</button>
+<button class="gVariable" id="m2">
+2 Set Variable <span class="box">Contacts</span> to <span class="box"><span class="var"><b>[1 Group]</b></span></span></button>
+<button class="" id="m3">
+3 Get Current Location&#12288;&#187; <i>4</i> <span class="magic" onclick="magictap(6)">6</span></button>
+<button class="" id="m4">
+4 Get Maps URL from <span class="box"><span class="var"><b>[3 Current Location]</b></span></span>&#12288;&#187; <span class="magic" onclick="magictap(6)">6</span></button>
+<button class="gScripting" id="m5">
+5 Nothing</button>
+<button class="button " id="m6">
+6 Send Message <span class="box">I've just hit my help button! Please contact me.
+I'm located at <span class="magic" onclick="magictap(3)"><b>[3 Current Location]</b></span>
+<span class="magic" onclick="magictap(4)"><b>[4 Maps URL]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">SendMessageActionRecipients</div>
+			<div class="col2"><span class="var"><b>[Contacts]</b></span></div></div>
+		<div class="row"><div class="col1">IntentAppIdentifier</div>
+			<div class="col2">com.apple.MobileSMS</div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">true</div></div></div>
+<button class="button gDocuments" id="m7">
+7 Show Result</button>
+	<div class="content">
+		<div class="col2">Message sent to your contact.</div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
