@@ -1,0 +1,606 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4274264319,
+      "WFWorkflowIconGlyphNumber": 61497
+   },
+   "WFWorkflowClientVersion": "1206.4.3",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Parse a specified Drafts workspace into indexed Ulysses sheets.\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nMastodon: https://mastodon.social/@DavidBlue\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.ulyssesapp.ios.ULNewGroupIntent",
+         "WFWorkflowActionParameters": {
+            "title": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "Ask"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "parent": {
+               "Value": {
+                  "Type": "Ask"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "6DDA12D6-7CD3-4A0D-BF8B-BC1CF27EA24E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts5.QueryWorkspaceIntent",
+         "WFWorkflowActionParameters": {
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "GTFQ98J4YG",
+               "BundleIdentifier": "com.agiletortoise.Drafts5",
+               "Name": "Drafts",
+               "AppIntentIdentifier": "QueryWorkspaceIntent"
+            },
+            "UUID": "5FB8D479-295E-4E5E-86FA-FB3E22560447",
+            "folder": {
+               "Value": {
+                  "Type": "Ask"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "workspace": {
+               "Value": {
+                  "Type": "Ask"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "5FB8D479-295E-4E5E-86FA-FB3E22560447",
+                  "Type": "ActionOutput",
+                  "OutputName": "Drafts from Workspace"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "GroupingIdentifier": "C8427D59-46CB-4CE1-A9B3-87E21AE50157",
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.detect.text",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item",
+                  "Type": "Variable",
+                  "Aggrandizements": [
+                     {
+                        "PropertyUserInfo": "content",
+                        "Type": "WFPropertyVariableAggrandizement",
+                        "PropertyName": "content"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "1EBB4430-35AB-4DFA-A8BD-46722DDBC04E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.ulyssesapp.ios.ULNewSheetIntent",
+         "WFWorkflowActionParameters": {
+            "group": {
+               "Value": {
+                  "OutputUUID": "6DDA12D6-7CD3-4A0D-BF8B-BC1CF27EA24E",
+                  "Type": "ActionOutput",
+                  "OutputName": "Group"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "material": false,
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "1EBB4430-35AB-4DFA-A8BD-46722DDBC04E",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "1BD4ED7F-ED2E-4B18-81E4-365BD4D4FFD9",
+            "format": "markdown"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+         "WFWorkflowActionParameters": {
+            "WFTextCustomSeparator": ", ",
+            "WFTextSeparator": "Custom",
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "tags",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "tags"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.ulyssesapp.ios.ULAttachIntent",
+         "WFWorkflowActionParameters": {
+            "sheet": {
+               "Value": {
+                  "OutputUUID": "1BD4ED7F-ED2E-4B18-81E4-365BD4D4FFD9",
+                  "Type": "ActionOutput",
+                  "OutputName": "Created Sheet"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "keywords": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "tags",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "tags"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "3B1725E1-055E-492F-91B6-762640E16AFB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.detect.link",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "content",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "content"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "919960C4-DC29-4A1F-BF3D-AD96E5C03FEC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+         "WFWorkflowActionParameters": {
+            "WFMatchTextPattern": "(http(s?):)([/|.|\\w|\\s|-])*\\.(?:jpg|gif|png)",
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "919960C4-DC29-4A1F-BF3D-AD96E5C03FEC",
+                        "Type": "ActionOutput",
+                        "OutputName": "URLs"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "34A482B3-3F36-4F8E-B0A4-1F9615E66C01"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "34A482B3-3F36-4F8E-B0A4-1F9615E66C01",
+                  "Type": "ActionOutput",
+                  "OutputName": "Matches"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "GroupingIdentifier": "78E2D3D1-69BB-4946-8DDF-0D07A097974F",
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Repeat Item 2",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "155A596D-CF15-4E98-BCDA-79D724D51EDB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.ulyssesapp.ios.ULAttachIntent",
+         "WFWorkflowActionParameters": {
+            "sheet": {
+               "Value": {
+                  "OutputUUID": "1BD4ED7F-ED2E-4B18-81E4-365BD4D4FFD9",
+                  "Type": "ActionOutput",
+                  "OutputName": "Created Sheet"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "image": {
+               "Value": {
+                  "OutputUUID": "155A596D-CF15-4E98-BCDA-79D724D51EDB",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "6EB0D29C-0AA7-4681-8244-50DC1F947306",
+            "type": "image"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "78E2D3D1-69BB-4946-8DDF-0D07A097974F",
+            "UUID": "914371AD-34D4-41DB-97BA-6D3B91A190E9"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+         "WFWorkflowActionParameters": {
+            "text": {
+               "Value": {
+                  "OutputUUID": "919960C4-DC29-4A1F-BF3D-AD96E5C03FEC",
+                  "Type": "ActionOutput",
+                  "OutputName": "URLs"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "DDFFAAE6-5ABE-491F-A33E-DCC609E94574"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.ulyssesapp.ios.ULAttachIntent",
+         "WFWorkflowActionParameters": {
+            "text": {
+               "Value": {
+                  "string": "# URLS\n\uFFFC",
+                  "attachmentsByRange": {
+                     "{7, 1}": {
+                        "OutputUUID": "DDFFAAE6-5ABE-491F-A33E-DCC609E94574",
+                        "Type": "ActionOutput",
+                        "OutputName": "Combined Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "sheet": {
+               "Value": {
+                  "OutputUUID": "1BD4ED7F-ED2E-4B18-81E4-365BD4D4FFD9",
+                  "Type": "ActionOutput",
+                  "OutputName": "Created Sheet"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "64D71DC3-E94F-43D4-924D-F7808F0A8EB8",
+            "type": "note",
+            "format": "markdown"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.ulyssesapp.ios.ULGetIdentifierIntent",
+         "WFWorkflowActionParameters": {
+            "sheet": {
+               "Value": {
+                  "OutputUUID": "1BD4ED7F-ED2E-4B18-81E4-365BD4D4FFD9",
+                  "Type": "ActionOutput",
+                  "OutputName": "Created Sheet"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "type": "sheet",
+            "UUID": "58EC2E92-42FD-4417-A85F-0C5CB35B7C24"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.ulyssesapp.ios.ULAttachIntent",
+         "WFWorkflowActionParameters": {
+            "text": {
+               "Value": {
+                  "string": "- [\uFFFC](ulysses://x-callback-url/open?id=\uFFFC)\n- [\uFFFC](\uFFFC)",
+                  "attachmentsByRange": {
+                     "{48, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "link",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "link"
+                           }
+                        ]
+                     },
+                     "{45, 1}": {
+                        "VariableName": "Repeat Item",
+                        "Type": "Variable",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "title",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "title"
+                           }
+                        ]
+                     },
+                     "{39, 1}": {
+                        "OutputUUID": "58EC2E92-42FD-4417-A85F-0C5CB35B7C24",
+                        "Type": "ActionOutput",
+                        "OutputName": "Callback Identifier"
+                     },
+                     "{3, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Created Sheet",
+                        "OutputUUID": "1BD4ED7F-ED2E-4B18-81E4-365BD4D4FFD9",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "WFItemName",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Name"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "sheet": {
+               "Value": {
+                  "OutputUUID": "1BD4ED7F-ED2E-4B18-81E4-365BD4D4FFD9",
+                  "Type": "ActionOutput",
+                  "OutputName": "Created Sheet"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "06C53540-FEEE-4165-9437-5099A32A4803",
+            "type": "note",
+            "format": "markdown"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "- [\uFFFC](ulysses://x-callback-url/open?id=\uFFFC)",
+                  "attachmentsByRange": {
+                     "{39, 1}": {
+                        "OutputUUID": "58EC2E92-42FD-4417-A85F-0C5CB35B7C24",
+                        "Type": "ActionOutput",
+                        "OutputName": "Callback Identifier"
+                     },
+                     "{3, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Created Sheet",
+                        "OutputUUID": "1BD4ED7F-ED2E-4B18-81E4-365BD4D4FFD9",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "WFItemName",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Name"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "6B8B42F6-F7AD-45B7-8F58-F7A4CB9610A6"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "6B8B42F6-F7AD-45B7-8F58-F7A4CB9610A6",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "index"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "C8427D59-46CB-4CE1-A9B3-87E21AE50157",
+            "UUID": "44301E73-392A-4B16-82C1-A1BE2DDC476C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.combine",
+         "WFWorkflowActionParameters": {
+            "text": {
+               "Value": {
+                  "VariableName": "index",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "3348EFE1-E709-490E-B1C2-4FFB60CA7FF2"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "3348EFE1-E709-490E-B1C2-4FFB60CA7FF2",
+                  "Type": "ActionOutput",
+                  "OutputName": "Combined Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "970E01EA-6F41-413D-9499-A962142E5DB2"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "# Ulysses Sheet Index\nUpdated `\uFFFC`\n\n---\n\n\uFFFC",
+                  "attachmentsByRange": {
+                     "{31, 1}": {
+                        "Type": "CurrentDate",
+                        "Aggrandizements": [
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{40, 1}": {
+                        "OutputUUID": "3348EFE1-E709-490E-B1C2-4FFB60CA7FF2",
+                        "Type": "ActionOutput",
+                        "OutputName": "Combined Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "855DB4B1-C439-4BAB-B095-841571A1CA55"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.agiletortoise.Drafts5.CaptureIntent",
+         "WFWorkflowActionParameters": {
+            "tags": [
+               "ulysses",
+               "index"
+            ],
+            "content": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "855DB4B1-C439-4BAB-B095-841571A1CA55",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "86F5069A-B578-44BC-84E2-93A60892E3B0",
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "GTFQ98J4YG",
+               "BundleIdentifier": "com.agiletortoise.Drafts5",
+               "Name": "Drafts",
+               "AppIntentIdentifier": "CaptureIntent"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "material",
+         "ActionIndex": 5,
+         "Text": "Specify whether or not you'd like output sheets to be created as Material Sheets.",
+         "DefaultValue": false
+      },
+      {
+         "ParameterKey": "keywords",
+         "Category": "Parameter",
+         "ActionIndex": 7,
+         "Text": "Specify any keywords in addition to the input drafts' tags you'd like to attach to output sheets."
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "tags",
+         "ActionIndex": 24,
+         "Text": "Specify tags you'd like attached to the output Ulysses sheet index draft.",
+         "DefaultValue": [
+            "ulysses",
+            "index"
+         ]
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
