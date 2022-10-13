@@ -1,0 +1,293 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Raw Discourse Thread ⇨ Drafts</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 3px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 3px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 3px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 3px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding: 0 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 4px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	margin: 0 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams"><b>Raw Discourse Thread ⇨ Drafts</b> (21 actions, 19 KB)</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1206.4.3",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 946986751,
+   "WFWorkflowIconGlyphNumber": 59445
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "tags",
+      "ActionIndex": <span class="magic" onclick="magictap(17)"><b>17</b></span>,
+      "Text": "Specify tags (if any) you'd like attached to the result draft.",
+      "DefaultValue": [
+         "discourse",
+         "forums"
+      ]
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1113,
+"WFWorkflowMinimumClientVersionString": "1113",
+"WFWorkflowNoInputBehavior": {
+   "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+   "Parameters": {}
+},
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "ActionExtension"
+]
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Retrieve the raw contents of a Discourse forum thread in markdown, send to Drafts.
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+Mastodon: https://mastodon.social/@DavidBlue
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="button gBlue" id="m1">
+1 URL <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>&#12288;&#187; <i>2</i> <span class="magic" onclick="magictap(5)">5</span> <span class="magic" onclick="magictap(6)">6</span> <span class="magic" onclick="magictap(9)">9</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-WFURLActionURL</div>
+			<div class="col2">true</div></div></div>
+<button class="gOrange" id="m2">
+2 Set Variable <span class="box">url</span> to <span class="box"><span class="var"><b>[1 URL]</b></span></span></button>
+<button class="" id="m3">
+3 Get Name of <span class="box"><span class="var"><b>[url]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m4">
+4 Set Variable <span class="box">title</span> to <span class="box"><span class="var"><b>[3 Name]</b></span></span></button>
+<button class="gBlue" id="m5">
+5 Get <span class="box">Host</span> of URL <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 URL]</b></span></span> <b>&#12288;➔ host</b>&#12288;&#187; <span class="magic" onclick="magictap(7)">7</span></button>
+<button class="gBlue" id="m6">
+6 Get <span class="box">Scheme</span> of URL <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 URL]</b></span></span> <b>&#12288;➔ scheme</b>&#12288;&#187; <span class="magic" onclick="magictap(8)">8</span></button>
+<button class="gOrange" id="m7">
+7 Set Variable <span class="box">host</span> to <span class="box"><span class="magic" onclick="magictap(5)"><b>[5 host]</b></span></span></button>
+<button class="gOrange" id="m8">
+8 Set Variable <span class="box">scheme</span> to <span class="box"><span class="magic" onclick="magictap(6)"><b>[6 scheme]</b></span></span></button>
+<button class="button gYellow" id="m9">
+9 Split Text <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 URL]</b></span></span> by <span class="box">Custom</span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">TextCustomSeparator</div>
+			<div class="col2">/</div></div></div>
+<button class="gOrange" id="m10">
+10 Get List <span class="box">Last Item</span> from <span class="box"><span class="var"><b>[9 Split Text]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m11">
+11 Set Variable <span class="box">id</span> to <span class="box"><span class="var"><b>[10 Item from List]</b></span></span></button>
+<button class="button gBlue" id="m12">
+12 URL <span class="box"><span class="var"><b>[scheme]</b></span>://<span class="var"><b>[host]</b></span>/raw/<span class="var"><b>[id]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-WFURLActionURL</div>
+			<div class="col2">true</div></div></div>
+<button class="gGreen" id="m13">
+13 Get Contents of URL <span class="box"><span class="var"><b>[12 URL]</b></span></span>&#12288;&#187;</button>
+<button class="gYellow" id="m14">
+14 Get Text from <span class="box"><span class="var"><b>[13 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m15">
+15 Set Variable <span class="box">raw</span> to <span class="box"><span class="var"><b>[14 Text]</b></span></span></button>
+<button class="button gYellow" id="m16">
+16 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2"># "<span class="var"><b>[title]</b></span>" - <span class="var"><b>[host]</b></span>
+Updated `<span class="var"><b>[CurrentDate</b>{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span>`
+
+- [**Discourse**](<span class="var"><b>[url]</b></span>)
+
+---
+
+<span class="var"><b>[raw]</b></span></div></div>
+<button class="button gUnknown" id="m17">
+17 com.agiletortoise.Drafts5.CaptureIntent&#12288;&#187; <i>18</i> <span class="magic" onclick="magictap(20)">20</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">tags</div>
+			<div class="col2">[forums,
+discourse]</div></div>
+		<div class="row"><div class="col1">content</div>
+			<div class="col2"><span class="var"><b>[16 Text]</b></span></div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class="button gYellow" id="m18">
+18 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">[<span class="var"><b>[title]</b></span>](<span class="var"><b>[17 Draft</b>’s link<b>]</b></span>)</div></div>
+<button class="gBlue" id="m19">
+19 Copy <span class="box"><span class="var"><b>[18 Text]</b></span></span> to Clipboard</button>
+<button class="button gUnknown" id="m20">
+20 com.agiletortoise.Drafts5.OpenDraftIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">draft</div>
+			<div class="col2"><span class="magic" onclick="magictap(17)"><b>[17 Draft]</b></span></div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
