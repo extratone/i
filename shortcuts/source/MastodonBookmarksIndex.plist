@@ -1690,7 +1690,7 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>1204.2</string>
+	<string>1206.4.3</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>
@@ -1706,15 +1706,39 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 	<array>
 		<dict>
 			<key>ActionIndex</key>
-			<integer>7</integer>
+			<integer>1</integer>
 			<key>Category</key>
 			<string>Parameter</string>
 			<key>DefaultValue</key>
-			<string>00000000-0000-0000-0000-000000000000</string>
+			<string>mastodon.online</string>
 			<key>ParameterKey</key>
 			<string>WFTextActionText</string>
 			<key>Text</key>
-			<string>Set your Mastodon API Client Access Token. (Required) See: `https://your.instance/settings/applications`</string>
+			<string>Set the URL of your target Mastodon instance.</string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>3</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>DefaultValue</key>
+			<string>999</string>
+			<key>ParameterKey</key>
+			<string>WFNumberActionNumber</string>
+			<key>Text</key>
+			<string>(Optionally) set a limit of bookmarked posts to retrieve.</string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>5</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>DefaultValue</key>
+			<string>0000000000000000000000000000</string>
+			<key>ParameterKey</key>
+			<string>WFTextActionText</string>
+			<key>Text</key>
+			<string>Provide a Mastodon application API key. (See the documentation for more details)</string>
 		</dict>
 	</array>
 	<key>WFWorkflowInputContentItemClasses</key>
@@ -1726,6 +1750,8 @@ EVERYWHERE: https://davidblue.wtf/socialdrop</string>
 	<key>WFWorkflowOutputContentItemClasses</key>
 	<array/>
 	<key>WFWorkflowTypes</key>
-	<array/>
+	<array>
+		<string>Watch</string>
+	</array>
 </dict>
 </plist>

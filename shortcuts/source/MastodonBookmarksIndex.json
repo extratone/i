@@ -5,7 +5,7 @@
       "WFWorkflowIconStartColor": 2071128575,
       "WFWorkflowIconGlyphNumber": 61458
    },
-   "WFWorkflowClientVersion": "1204.2",
+   "WFWorkflowClientVersion": "1206.4.3",
    "WFWorkflowOutputContentItemClasses": [],
    "WFWorkflowHasOutputFallback": false,
    "WFWorkflowActions": [
@@ -1036,12 +1036,28 @@
       {
          "Category": "Parameter",
          "ParameterKey": "WFTextActionText",
-         "ActionIndex": 7,
-         "Text": "Set your Mastodon API Client Access Token. (Required) See: `https://your.instance/settings/applications`",
-         "DefaultValue": "00000000-0000-0000-0000-000000000000"
+         "ActionIndex": 1,
+         "Text": "Set the URL of your target Mastodon instance.",
+         "DefaultValue": "mastodon.online"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFNumberActionNumber",
+         "ActionIndex": 3,
+         "Text": "(Optionally) set a limit of bookmarked posts to retrieve.",
+         "DefaultValue": "999"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 5,
+         "Text": "Provide a Mastodon application API key. (See the documentation for more details)",
+         "DefaultValue": "0000000000000000000000000000"
       }
    ],
-   "WFWorkflowTypes": [],
+   "WFWorkflowTypes": [
+      "Watch"
+   ],
    "WFQuickActionSurfaces": [],
    "WFWorkflowHasShortcutInputVariables": false
 }
