@@ -1,0 +1,380 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Spring Tweet Capture</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 3px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 3px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 3px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 3px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding: 0 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 4px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	margin: 0 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams"><b>Spring Tweet Capture</b> (18 actions, 56 KB)</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1303.1.1",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4282601983,
+   "WFWorkflowIconGlyphNumber": 59669
+},
+"WFWorkflowImportQuestions": [
+   {
+      "ParameterKey": "account",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(1)"><b>1</b></span>,
+      "Text": "Specify an authenticated account from which to gather data. (Required.)"
+   },
+   {
+      "ParameterKey": "keyPath",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(10)"><b>10</b></span>,
+      "Text": "Specify a keypath (Jar) into which the custom Twitter data dictionary should be saved."
+   },
+   {
+      "ParameterKey": "folder",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(11)"><b>11</b></span>,
+      "Text": "Choose a folder in Apple Notes into which Tweet notes will be saved. (Optional)"
+   },
+   {
+      "ParameterKey": "tags",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(12)"><b>12</b></span>,
+      "Text": "Set Apple Notes tags to append to each Tweet note. (Optional)"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1113,
+"WFWorkflowMinimumClientVersionString": "1113",
+"WFWorkflowNoInputBehavior": {
+   "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+   "Parameters": {}
+},
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "ActionExtension"
+]
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Detailed/customizable Tweet data retrieval/archiving with Spring for Twitter's actions.
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+Mastodon: https://mastodon.social/@DavidBlue
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="button gUnknown closed" id="m1">
+1 com.jonny.spring.KJYGetTweetIntent&#12288;&#187; <i>2</i> <span class="magic" onclick="magictap(7)">7</span> <span class="magic" onclick="magictap(9)">9</span> <span class="magic" onclick="magictap(11)">11</span></button>
+	<div class="content" style="display:none">
+		<div class="row"><div class="col1">urlString</div>
+			<div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div>
+		<div class="row"><div class="col1">account</div>
+			<div class="col2">{  "isProtected": false,
+   "displayImage": {
+      "imageData": "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",
+      "renderingMode": 1,
+      "imageSize": {
+         "width": 31,
+         "height": 31
+      },
+      "type": "Data"
+   },
+   "isVerified": false,
+   "headerPhotoURL": "https://pbs.twimg.com/profile_banners/48932450/1628016138/1500x500",
+   "subtitleString": "@NeoYokel",
+   "profileURL": "https://twitter.com/NeoYokel",
+   "identifier": "48932450",
+   "profilePhotoURL": "https://pbs.twimg.com/profile_images/1523662356508774400/xKb_gcmr.jpg",
+   "formattedScreenName": "@NeoYokel",
+   "userIDString": "48932450",
+   "displayString": "𝗗 𝗔 𝗩 𝗢 𝗗"
+}</div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class="button gYellow" id="m2">
+2 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2"><span class="var"><b>[1 Tweet</b>’s kjy_formattedText<b>]</b></span>
+- [<span class="var"><b>[1 Tweet</b>’s authorScreenName<b>]</b></span>, <span class="var"><b>[1 Tweet</b>’s creationDate{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span>](<span class="var"><b>[1 Tweet</b>’s tweetURL<b>]</b></span>)</div></div>
+<button class="gBlue" id="m3">
+3 Copy <span class="box"><span class="var"><b>[2 Text]</b></span></span> to Clipboard</button>
+<button class="button gYellow" id="m4">
+4 Split Text <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> by <span class="box">Custom</span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">TextCustomSeparator</div>
+			<div class="col2">status/</div></div></div>
+<button class="gOrange" id="m5">
+5 Get List <span class="box">Last Item</span> from <span class="box"><span class="var"><b>[4 Split Text]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m6">
+6 Set Variable <span class="box">id</span> to <span class="box"><span class="var"><b>[5 Item from List]</b></span></span></button>
+<button class="button gYellow" id="m7">
+7 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2"><span class="magic" onclick="magictap(1)"><b>[1 Tweet]</b></span>
+
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s rawText<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s kjy_formattedText<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s authorName<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s authorScreenName<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s creationDate{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s sourceLabel<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s languageCode<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s tweetURL<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s replyTweetURL<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s quoteTweetURL<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s webpageURLs<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s mentions<b>]</b></span>
+<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s kjy_formattedText<b>]</b></span></div></div>
+<button class="button gBlue" id="m8">
+8 Append <span class="box"><span class="var"><b>[7 Text]</b></span></span> to Text File</button>
+	<div class="content">
+		<div class="row"><div class="col1">File</div>
+			<div class="col2">{  "fileLocation": {
+      "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+      "relativeSubpath": "com~apple~CloudDocs",
+      "WFFileLocationType": "iCloud"
+   },
+   "filename": "com~apple~CloudDocs",
+   "displayName": "iCloud Drive"
+}</div></div>
+		<div class="row"><div class="col1">FilePath</div>
+			<div class="col2">tweets.txt</div></div></div>
+<button class="button gOrange" id="m9">
+9 Dictionary&#12288;&#187; <i>10</i> <span class="magic" onclick="magictap(13)">13</span></button>
+	<div class="content">
+		<div class="col2">{  "tweet": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet]</b></span>",
+   "raw": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s rawText<b>]</b></span>",
+   "formatted": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s kjy_formattedText<b>]</b></span>",
+   "name": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s authorName<b>]</b></span>",
+   "@": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s authorScreenName<b>]</b></span>",
+   "created": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s creationDate{\"Date Style\":\"Custom\",\"WFDateFormat\":\"MMddYYYY-HHmmss\",\"WFISO8601IncludeTime\":false}<b>]</b></span>",
+   "source": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s sourceLabel<b>]</b></span>",
+   "lang": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s languageCode<b>]</b></span>",
+   "url": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s tweetURL<b>]</b></span>",
+   "reply": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s replyTweetURL<b>]</b></span>",
+   "quote": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s quoteTweetURL<b>]</b></span>",
+   "links": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s webpageURLs<b>]</b></span>",
+   "mentioned": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s mentions<b>]</b></span>",
+   "hashtags": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s hashtags<b>]</b></span>",
+   "media": "<span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s mediaURLs<b>]</b></span>"
+}</div></div>
+<button class="button gUnknown" id="m10">
+10 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">springtweets.<span class="var"><b>[id]</b></span></div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[9 Dictionary]</b></span></div></div></div>
+<button class="button gYellow" id="m11">
+11 Create Note with <span class="box"><span class="magic" onclick="magictap(1)"><b>[1 Tweet</b>’s kjy_formattedText<b>]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">folder</div>
+			<div class="col2">{  "title": {
+      "key": "Tweets"
+   },
+   "identifier": "notes:folder/533CDC12-DB5C-4309-B481-13D052F505F9"
+}</div></div>
+		<div class="row"><div class="col1">OpenWhenRun</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">NoteGroup</div>
+			<div class="col2">{  "Identifier": "notes:folder/533CDC12-DB5C-4309-B481-13D052F505F9",
+   "DisplayString": "Tweets"
+}</div></div></div>
+<button class="button gYellow" id="m12">
+12 Add Tags to Notes&#12288;&#187; <span class="magic" onclick="magictap(14)">14</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">tags</div>
+			<div class="col2">[{  "title": {
+      "key": "#capture"
+   },
+   "identifier": "notes:tag/capture"
+},
+{  "title": {
+      "key": "#socialweb"
+   },
+   "identifier": "notes:tag/socialweb"
+}]</div></div>
+		<div class="row"><div class="col1">notes</div>
+			<div class="col2"><span class="var"><b>[11 Note]</b></span></div></div></div>
+<button class="button gUnknown" id="m13">
+13 dk.simonbs.Jayson.PrettifyJSONIntent&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">json</div>
+			<div class="col2"><span class="magic" onclick="magictap(9)"><b>[9 Dictionary]</b></span></div></div></div>
+<button class="gYellow" id="m14">
+14 Append <span class="box"><span class="var"><b>[13 Prettified JSON]</b></span></span> to Note <span class="box"><span class="magic" onclick="magictap(12)"><b>[12 Tags to Notes]</b></span></span></button>
+<button class="gBlue" id="m15">
+15 URL <span class="box">https://raw.githubusercontent.com/extratone/iOSSystemSounds/main/m4a/ct-keytone2.m4a</span>&#12288;&#187;</button>
+<button class="gGreen" id="m16">
+16 Get Contents of URL <span class="box"><span class="var"><b>[15 URL]</b></span></span>&#12288;&#187;</button>
+<button class="gRed" id="m17">
+17 Play Sound <span class="box"><span class="var"><b>[16 Contents of URL]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

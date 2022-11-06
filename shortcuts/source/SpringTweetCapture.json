@@ -1,0 +1,1036 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4282601983,
+      "WFWorkflowIconGlyphNumber": 59669
+   },
+   "WFWorkflowClientVersion": "1303.1.1",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+      "Parameters": {}
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Detailed/customizable Tweet data retrieval/archiving with Spring for Twitter's actions.\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nMastodon: https://mastodon.social/@DavidBlue\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.jonny.spring.KJYGetTweetIntent",
+         "WFWorkflowActionParameters": {
+            "urlString": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ExtensionInput"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "account": {
+               "isProtected": false,
+               "displayImage": {
+                  "imageData": "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",
+                  "renderingMode": 1,
+                  "imageSize": {
+                     "width": 31,
+                     "height": 31
+                  },
+                  "type": "Data"
+               },
+               "isVerified": false,
+               "headerPhotoURL": "https://pbs.twimg.com/profile_banners/48932450/1628016138/1500x500",
+               "subtitleString": "@NeoYokel",
+               "profileURL": "https://twitter.com/NeoYokel",
+               "identifier": "48932450",
+               "profilePhotoURL": "https://pbs.twimg.com/profile_images/1523662356508774400/xKb_gcmr.jpg",
+               "formattedScreenName": "@NeoYokel",
+               "userIDString": "48932450",
+               "displayString": "𝗗 𝗔 𝗩 𝗢 𝗗"
+            },
+            "UUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+            "ShowWhenRun": false
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "\uFFFC\n- [\uFFFC, \uFFFC](\uFFFC)",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "tweetURL"
+                           }
+                        ]
+                     },
+                     "{8, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "creationDate"
+                           },
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{5, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "authorScreenName"
+                           }
+                        ]
+                     },
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "kjy_formattedText"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "03DDD53A-D67B-45C8-B4D3-D67C92633AA0"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "03DDD53A-D67B-45C8-B4D3-D67C92633AA0",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "70A4F8C4-8F57-4528-9EE1-586016EB3E35"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+         "WFWorkflowActionParameters": {
+            "WFTextCustomSeparator": "status/",
+            "UUID": "49380E91-9C0A-4054-A3E6-3465A640EB14",
+            "WFTextSeparator": "Custom",
+            "text": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "49380E91-9C0A-4054-A3E6-3465A640EB14",
+                  "Type": "ActionOutput",
+                  "OutputName": "Split Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFItemSpecifier": "Last Item",
+            "UUID": "3F49F64E-8246-4C4E-96D2-C4575A6EF739"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "3F49F64E-8246-4C4E-96D2-C4575A6EF739",
+                  "Type": "ActionOutput",
+                  "OutputName": "Item from List"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "id"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "\uFFFC\n\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC\n\uFFFC",
+                  "attachmentsByRange": {
+                     "{11, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "creationDate"
+                           },
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     },
+                     "{17, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "tweetURL"
+                           }
+                        ]
+                     },
+                     "{9, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "authorScreenName"
+                           }
+                        ]
+                     },
+                     "{27, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "kjy_formattedText"
+                           }
+                        ]
+                     },
+                     "{21, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "quoteTweetURL"
+                           }
+                        ]
+                     },
+                     "{3, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "rawText"
+                           }
+                        ]
+                     },
+                     "{5, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "kjy_formattedText"
+                           }
+                        ]
+                     },
+                     "{15, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "languageCode"
+                           }
+                        ]
+                     },
+                     "{7, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "authorName"
+                           }
+                        ]
+                     },
+                     "{19, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "replyTweetURL"
+                           }
+                        ]
+                     },
+                     "{13, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "sourceLabel"
+                           }
+                        ]
+                     },
+                     "{25, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "mentions"
+                           }
+                        ]
+                     },
+                     "{0, 1}": {
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet"
+                     },
+                     "{23, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "webpageURLs"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "8CC1FCDA-56BA-421E-8C52-0B4C8A54F254"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.file.append",
+         "WFWorkflowActionParameters": {
+            "WFFile": {
+               "fileLocation": {
+                  "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+                  "relativeSubpath": "com~apple~CloudDocs",
+                  "WFFileLocationType": "iCloud"
+               },
+               "filename": "com~apple~CloudDocs",
+               "displayName": "iCloud Drive"
+            },
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "8CC1FCDA-56BA-421E-8C52-0B4C8A54F254",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "68274E93-2279-401A-896E-CBEBCBFBDFE7",
+            "WFFilePath": "tweets.txt"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFItems": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "tweet"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "raw"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "rawText"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "formatted"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "kjy_formattedText"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "name"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "authorName"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "@"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "authorScreenName"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "created"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "creationDate"
+                                       },
+                                       {
+                                          "WFDateFormatStyle": "Custom",
+                                          "Type": "WFDateFormatVariableAggrandizement",
+                                          "WFDateFormat": "MMddYYYY-HHmmss",
+                                          "WFISO8601IncludeTime": false
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "source"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "sourceLabel"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "lang"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "languageCode"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "url"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "tweetURL"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "reply"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "replyTweetURL"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "quote"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "quoteTweetURL"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "links"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "webpageURLs"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "mentioned"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "mentions"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "hashtags"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "hashtags"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "media"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "\uFFFC",
+                              "attachmentsByRange": {
+                                 "{0, 1}": {
+                                    "Type": "ActionOutput",
+                                    "OutputName": "Tweet",
+                                    "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                                    "Aggrandizements": [
+                                       {
+                                          "Type": "WFPropertyVariableAggrandizement",
+                                          "PropertyName": "mediaURLs"
+                                       }
+                                    ]
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "UUID": "1F30E5A6-708F-4912-B6D3-FC86A65D4884"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+         "WFWorkflowActionParameters": {
+            "overwriteStrategy": "alwaysAllow",
+            "UUID": "63165059-8AE7-47A4-BD9B-8640919B28D9",
+            "keyPath": {
+               "Value": {
+                  "string": "springtweets.\uFFFC",
+                  "attachmentsByRange": {
+                     "{13, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "values": {
+               "Value": {
+                  "OutputUUID": "1F30E5A6-708F-4912-B6D3-FC86A65D4884",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.apple.mobilenotes.SharingExtension",
+         "WFWorkflowActionParameters": {
+            "WFCreateNoteInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Tweet",
+                        "OutputUUID": "FCAFE105-2791-463C-A295-29ADC662360D",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "kjy_formattedText"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "0000000000",
+               "BundleIdentifier": "com.apple.mobilenotes",
+               "Name": "Notes",
+               "AppIntentIdentifier": "CreateNoteLinkAction"
+            },
+            "UUID": "19535DAC-56F2-41BC-A6AB-0D8BFA43C159",
+            "folder": {
+               "title": {
+                  "key": "Tweets"
+               },
+               "identifier": "notes:folder/533CDC12-DB5C-4309-B481-13D052F505F9"
+            },
+            "OpenWhenRun": false,
+            "WFNoteGroup": {
+               "Identifier": "notes:folder/533CDC12-DB5C-4309-B481-13D052F505F9",
+               "DisplayString": "Tweets"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.apple.mobilenotes.AddTagsToNotesLinkAction",
+         "WFWorkflowActionParameters": {
+            "tags": [
+               {
+                  "title": {
+                     "key": "#capture"
+                  },
+                  "identifier": "notes:tag/capture"
+               },
+               {
+                  "title": {
+                     "key": "#socialweb"
+                  },
+                  "identifier": "notes:tag/socialweb"
+               }
+            ],
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "0000000000",
+               "BundleIdentifier": "com.apple.mobilenotes",
+               "Name": "Notes",
+               "AppIntentIdentifier": "AddTagsToNotesLinkAction"
+            },
+            "UUID": "22B401DE-F3F6-455F-A3FB-A76B486A0B86",
+            "notes": {
+               "Value": {
+                  "OutputUUID": "19535DAC-56F2-41BC-A6AB-0D8BFA43C159",
+                  "Type": "ActionOutput",
+                  "OutputName": "Note"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.Jayson.PrettifyJSONIntent",
+         "WFWorkflowActionParameters": {
+            "json": {
+               "Value": {
+                  "OutputUUID": "1F30E5A6-708F-4912-B6D3-FC86A65D4884",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "294F6C10-E601-4696-B06F-8335EED576A8"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendnote",
+         "WFWorkflowActionParameters": {
+            "WFNote": {
+               "Value": {
+                  "OutputUUID": "22B401DE-F3F6-455F-A3FB-A76B486A0B86",
+                  "Type": "ActionOutput",
+                  "OutputName": "Tags to Notes"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "294F6C10-E601-4696-B06F-8335EED576A8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Prettified JSON"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "0000000000",
+               "BundleIdentifier": "com.apple.mobilenotes",
+               "Name": "Notes",
+               "AppIntentIdentifier": "AppendToNoteLinkAction"
+            },
+            "UUID": "9E0D9E57-D70F-4F5C-972B-7ACCB8881C0C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": "https://raw.githubusercontent.com/extratone/iOSSystemSounds/main/m4a/ct-keytone2.m4a",
+            "UUID": "B8B0C5BC-51DE-4312-814A-6091DF8B6577"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "B8B0C5BC-51DE-4312-814A-6091DF8B6577",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "0B2E6C0B-4C40-43EE-9EFB-B26893CBEEA5"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "0B2E6C0B-4C40-43EE-9EFB-B26893CBEEA5",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "ParameterKey": "account",
+         "Category": "Parameter",
+         "ActionIndex": 1,
+         "Text": "Specify an authenticated account from which to gather data. (Required.)"
+      },
+      {
+         "ParameterKey": "keyPath",
+         "Category": "Parameter",
+         "ActionIndex": 10,
+         "Text": "Specify a keypath (Jar) into which the custom Twitter data dictionary should be saved."
+      },
+      {
+         "ParameterKey": "folder",
+         "Category": "Parameter",
+         "ActionIndex": 11,
+         "Text": "Choose a folder in Apple Notes into which Tweet notes will be saved. (Optional)"
+      },
+      {
+         "ParameterKey": "tags",
+         "Category": "Parameter",
+         "ActionIndex": 12,
+         "Text": "Set Apple Notes tags to append to each Tweet note. (Optional)"
+      }
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [
+      "ActionExtension"
+   ],
+   "WFWorkflowHasShortcutInputVariables": true
+}
