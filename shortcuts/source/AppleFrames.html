@@ -1,0 +1,1925 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Apple Frames</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 3px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 3px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 3px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 3px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding: 0 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 4px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	margin: 0 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams"><b>Apple Frames</b> (<span class="magic" onclick="magictap(504)">505</span> actions, 289 KB)</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1305.1.2",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 463140863,
+   "WFWorkflowIconGlyphNumber": 61488
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFFolder",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Select the folder you want to use for the new Quick Save feature of Apple Frames. This is a folder where framed images will be saved without having to rename them or picking a destination folder manually.",
+      "DefaultValue": {
+         "fileLocation": {
+            "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+            "relativeSubpath": "com~apple~CloudDocs",
+            "WFFileLocationType": "iCloud"
+         },
+         "filename": "com~apple~CloudDocs",
+         "displayName": "iCloud Drive"
+      }
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFImageContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1106,
+"WFWorkflowMinimumClientVersionString": "1106",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "ActionExtension",
+   "QuickActions",
+   "MenuBar"
+]
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Add device frames to screenshots for iPhones (11, 8/SE, and 12-13-14 generations in mini/standard/Plus/Pro Max sizes), iPad Pro (11" and 12.9", 2018-2022 models), iPad Air (10.9", 2020-2022 models), iPad mini (2021 model), Apple Watch S4/5/6/7/8/Ultra, iMac (24" model, 2021), MacBook Air (2020-2022 models), and MacBook Pro (2021 models). The shortcut supports portrait and landscape orientations, but does not support Display Zoom; on iPadOS and macOS, the shortcut supports Default and More Space resolutions. If multiple screenshots are passed as input, they will be combined in a single image. The shortcut can be run in the Shortcuts app, as a Home Screen widget, as a Finder Quick Action, or via the share sheet.</div></div>
+<button class="button gYellow" id="m1">
+1 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Select the folder you want to use for the new Quick Save feature of Apple Frames. </div></div>
+<button class="button gBlue closed" id="m2">
+2 Folder&#12288;&#187;</button>
+	<div class="content" style="display:none">
+		<div class="row"><div class="col1">Folder</div>
+			<div class="col2">{  "bookmarkData": {
+      "__type__": "data",
+      "__value__": "Ym9va+wFAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3AQAAAcAAAABAQAAcHJpdmF0ZQADAAAAAQEAAHZhcgAGAAAAAQEAAG1vYmlsZQAABwAAAAEBAABMaWJyYXJ5ABAAAAABAQAATW9iaWxlIERvY3VtZW50cxMAAAABAQAAY29tfmFwcGxlfkNsb3VkRG9jcwAGAAAAAQEAAEZyYW1lcwAAHAAAAAEGAAAEAAAAFAAAACAAAAAwAAAAQAAAAFgAAAB0AAAACAAAAAQDAADjYgQA////DwgAAAAEAwAAAgAAAAAAAAAIAAAABAMAABIAAAAAAAAACAAAAAQDAAAvAAAAAAAAAAgAAAAEAwAAfmTiAQAAAAAIAAAABAMAABRn4gEAAAAACAAAAAQDAACMr+IBAAAAABwAAAABBgAAqAAAALgAAADIAAAA2AAAAOgAAAD4AAAACAEAAAgAAAAABAAAQcOYsqeAAAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAABAAAAAAAAAAEAAAAAwMAAPUBAAAUAAAAAQkAAGZpbGU6Ly8vcHJpdmF0ZS92YXIvBAAAAAEBAABEYXRhCAAAAAQDAAAA4EHy6AAAAAgAAAAABAAAQcQ3qWDld2okAAAAAQEAADYxNzA2NjczLTc1NzUtNjk2NC0wMDQwLTc2NkY2Qzc1NkQwMRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAADAAAAAEBAAAvcHJpdmF0ZS92YXIIAAAAAQkAAGZpbGU6Ly8vBgAAAAEBAABTeXN0ZW0AAAgAAAAABAAAQcSKlBeAAAAkAAAAAQEAADgxMkUzM0NDLURGNUQtNEJGMi1CQTM5LTRDMTU3QkZFOTY3ORgAAAABAgAAiQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAYAAAAP7///8A8AAAAAAAAAcAAAACIAAArAIAAAAAAAAFIAAAMAIAAAAAAAAQIAAAQAIAAAAAAAARIAAAYAIAAAAAAAASIAAAsAEAAAAAAAATIAAAUAIAAAAAAAAgIAAAjAIAAAAAAAAEAAAAAwMAAADwAAAEAAAAAwMAAAAAAAAEAAAAAwMAAAEAAAAgAAAAAQYAACADAAAsAwAAOAMAACwDAAAsAwAALAMAACwDAAAsAwAAagAAAAEBAABmcDovQkdCaF9Vam1Gb1ZlQkkwNDYrTHZNOE44WWljclpCRmV6RkNJcnQ1b1N4bz0vY29tLmFwcGxlLkNsb3VkRG9jcy5Nb2JpbGVEb2N1bWVudHNGaWxlUHJvdmlkZXIvL2kxZTJhZjhjAADzAAAAAQIAAGQyNGFjYmVhZWI3OTRkNGNmYmQ5MGVlZTcyNmRkYzI4YmMxMjlhNDJiZGU3NWVmMGE4NDhiMzZkYmFlYTcwNTE7MDA7MDAwMDAwMDA7MDAwMDAwMDA7MDAwMDAwMDA7MDAwMDAwMDAwMDAwMDAxYTtjb20uYXBwbGUuYXBwLXNhbmRib3gucmVhZDswMTswMTAwMDAwNDswMDAwMDAwMDAxZTJhZjhjOzFhOy9wcml2YXRlL3Zhci9tb2JpbGUvTGlicmFyeS9Nb2JpbGUgRG9jdW1lbnRzL2NvbX5hcHBsZX5DbG91ZERvY3MvRnJhbWVzAADYAAAA/v///wEAAAC4AgAAEQAAAAQQAACEAAAAAAAAAAUQAAAYAQAAAAAAABAQAABMAQAAAAAAAEAQAAA8AQAAAAAAAAAgAABEAwAAAAAAAAIgAAAcAgAAAAAAAAUgAACIAQAAAAAAABAgAACkAQAAAAAAABEgAADQAQAAAAAAABIgAACwAQAAAAAAABMgAADAAQAAAAAAACAgAAD8AQAAAAAAAHAgAABsAwAAAAAAAAHAAABsAQAAAAAAABHAAAAgAAAAAAAAABLAAAB8AQAAAAAAAIHwAADgAwAAAAAAAA=="
+   },
+   "filename": "Frames",
+   "displayName": "Frames"
+}</div></div></div>
+<button class="gOrange" id="m3">
+3 Set Variable <span class="box">Quick Save Folder</span> to <span class="box"><span class="var"><b>[2 Folder]</b></span></span></button>
+<button class="button gYellow" id="m4">
+4 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">3.0</div></div>
+<button class="gOrange" id="m5">
+5 Set Variable <span class="box">Latest Version of Frames</span> to <span class="box"><span class="var"><b>[4 Text]</b></span></span></button>
+<button class="gBlue" id="m6">
+6 URL <span class="box">https://cdn.macstories.net/frames-1667524963466.zip</span>&#12288;&#187;</button>
+<button class="gOrange" id="m7">
+7 Set Variable <span class="box">Frames CDN URL</span> to <span class="box"><span class="var"><b>[6 URL]</b></span></span></button>
+<button class="button gYellow" id="m8">
+8 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Type contents of alerts below</div></div>
+<button class="button gYellow" id="m9">
+9 Text <b>&#12288;➔ English Setup File Message</b>&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">It looks like the Frames folder for Apple Frames 3.0 is not installed on your device.
+
+You'll have to download this zipped folder ONCE for Apple Frames to work.
+
+Click OK and Shortcuts will download the zipped folder from MacStories.net and take care of installing it for you.
+
+(The download will take a few seconds.)</div></div>
+<button class="gOrange" id="m10">
+10 Set Variable <span class="box">Setup File Message</span> to <span class="box"><span class="var"><b>[9 English Setup File Message]</b></span></span></button>
+<button class="button gYellow" id="m11">
+11 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">The Frames folder has been successfully saved in iCloud Drive/Shortcuts.
+
+There's nothing else you have to do now. Do NOT modify the contents of iCloud Drive/Shortcuts/Frames.
+
+In the future, to install new versions of Apple Frames, you may have to delete the Frames folder and download it again.
+
+But for now: welcome to Apple Frames, and enjoy. ☺ 
+
+- Federico</div></div>
+<button class="gOrange" id="m12">
+12 Set Variable <span class="box">Thank You Message</span> to <span class="box"><span class="var"><b>[11 Text]</b></span></span></button>
+<button class="button gYellow" id="m13">
+13 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Start routine to check for JSON file</div></div>
+<button class="button gBlue" id="m14">
+14 Get File <span class="box">/Frames/Frames.json</span> from Folder&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">FileErrorIfNotFound</div>
+			<div class="col2">false</div></div></div>
+<button class="gOrange" id="m15">
+15 Set Variable <span class="box">Frames Dictionary</span> to <span class="box"><span class="var"><b>[14 File]</b></span></span></button>
+<button class="" id="m16">
+16 Count Items in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="button gGray nonbottom" id="m17">
+17 If <span class="box"><span class="var"><b>[16 Count]</b></span></span> <span class="box">is</span> <span class="box">0</span></button>
+	<div class="content contentloop">
+<button class="button gYellow inside" id="m18">
+18 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Frames.json file is not installed. It needs to be downloaded alomg with the entire folder.</div></div>
+<button class="button gYellow inside" id="m19">
+19 Show Alert</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AlertActionCancelButtonShown</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">AlertActionMessage</div>
+			<div class="col2"><span class="var"><b>[Setup File Message]</b></span></div></div>
+		<div class="row"><div class="col1">AlertActionTitle</div>
+			<div class="col2">⚠️</div></div></div>
+<button class="gGreen inside" id="m20">
+20 Get Contents of URL <span class="box"><span class="var"><b>[Frames CDN URL]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m21">
+21 Set Variable <span class="box">Downloaded File</span> to <span class="box"><span class="var"><b>[20 Contents of URL]</b></span></span></button>
+<button class="gBlue inside" id="m22">
+22 Extract Archive <span class="box"><span class="var"><b>[Downloaded File]</b></span></span>&#12288;&#187;</button>
+<button class="button gBlue inside" id="m23">
+23 Save File <span class="box"><span class="var"><b>[22 Files]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Folder</div>
+			<div class="col2">{  "fileLocation": {
+      "WFFileLocationType": "Shortcuts",
+      "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+      "relativeSubpath": "",
+      "appContainerBundleIdentifier": "com.apple.shortcuts",
+      "crossDeviceItemID": "docs.icloud.com:iCloud.is.workflow.my.workflows/documents/1606a76f1c059bd4a79eae2e94fd0d390f0be810"
+   },
+   "filename": "Documents",
+   "displayName": "Shortcuts"
+}</div></div>
+		<div class="row"><div class="col1">AskWhereToSave</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">SaveFileOverwrite</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">FileDestinationPath</div>
+			<div class="col2">/Frames/</div></div></div>
+<button class="gGray inside" id="m24">
+24 Wait <span class="box">2</span> seconds</button>
+<button class="button gYellow inside" id="m25">
+25 Show Alert</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AlertActionCancelButtonShown</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">AlertActionMessage</div>
+			<div class="col2"><span class="var"><b>[Thank You Message]</b></span></div></div>
+		<div class="row"><div class="col1">AlertActionTitle</div>
+			<div class="col2">✅ </div></div></div>
+<button class="button gBlue inside" id="m26">
+26 Get File <span class="box">/Frames/Frames.json</span> from Folder&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">FileErrorIfNotFound</div>
+			<div class="col2">false</div></div></div>
+<button class="gOrange inside" id="m27">
+27 Set Variable <span class="box">Frames Dictionary</span> to <span class="box"><span class="var"><b>[26 File]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop" id="m28">
+28 Otherwise&#12288;▵<span class="magic" onclick="magictap(17)">17</span></button>
+	<div class="content contentloop">
+<button class="button gYellow inside" id="m29">
+29 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">There is already a Frames.json file. Now we need to check for the version.</div></div>
+<button class="button gBlue inside" id="m30">
+30 Get File <span class="box">/Frames/version.txt</span> from Folder&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">File</div>
+			<div class="col2">{  "fileLocation": {
+      "WFFileLocationType": "Shortcuts",
+      "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+      "relativeSubpath": "",
+      "appContainerBundleIdentifier": "com.apple.shortcuts",
+      "crossDeviceItemID": "docs.icloud.com:iCloud.is.workflow.my.workflows/documents/1606a76f1c059bd4a79eae2e94fd0d390f0be810"
+   },
+   "filename": "Documents",
+   "displayName": "Shortcuts"
+}</div></div></div>
+<button class="button gYellow inside" id="m31">
+31 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2"><span class="var"><b>[30 File]</b></span></div></div>
+<button class="button gGray nonbottom inside" id="m32">
+32 If <span class="box"><span class="var"><b>[31 Text]</b></span></span> <span class="box">is not</span> <span class="box"><span class="var"><b>[Latest Version of Frames]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gRed inside" id="m33">
+33 Show Notification</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">NotificationActionSound</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">NotificationActionBody</div>
+			<div class="col2">A newer version of Apple Frames assets has to be downloaded. This will only occur once.</div></div></div>
+<button class="gGreen inside" id="m34">
+34 Get Contents of URL <span class="box"><span class="var"><b>[Frames CDN URL]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m35">
+35 Set Variable <span class="box">Downloaded File</span> to <span class="box"><span class="var"><b>[34 Contents of URL]</b></span></span></button>
+<button class="gBlue inside" id="m36">
+36 Extract Archive <span class="box"><span class="var"><b>[Downloaded File]</b></span></span>&#12288;&#187;</button>
+<button class="button gBlue inside" id="m37">
+37 Save File <span class="box"><span class="var"><b>[36 Files]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AskWhereToSave</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">SaveFileOverwrite</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">FileDestinationPath</div>
+			<div class="col2">/Frames/</div></div></div>
+<button class="gGray inside" id="m38">
+38 Wait <span class="box">2</span> seconds</button>
+<button class="button gYellow inside" id="m39">
+39 Show Alert</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AlertActionCancelButtonShown</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">AlertActionMessage</div>
+			<div class="col2"><span class="var"><b>[Thank You Message]</b></span></div></div>
+		<div class="row"><div class="col1">AlertActionTitle</div>
+			<div class="col2">✅ </div></div></div>
+<button class="button gBlue inside" id="m40">
+40 Get File <span class="box">/Frames/Frames.json</span> from Folder&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">FileErrorIfNotFound</div>
+			<div class="col2">false</div></div></div>
+<button class="gOrange inside" id="m41">
+41 Set Variable <span class="box">Frames Dictionary</span> to <span class="box"><span class="var"><b>[40 File]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m42">
+42 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m43">
+43 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">The user has the latest version of Frames installed. The shortcut can continue.
+
+The Frames Dictionary variable has already been set.</div></div></div>
+<button class="gGray nontop inside" id="m44">
+44 End If</button></div>
+<button class="gGray nontop" id="m45">
+45 End If&#12288;▵<span class="magic" onclick="magictap(28)">28</span></button>
+<button class="button gYellow" id="m46">
+46 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Check if the input has any value or not.</div></div>
+<button class="gBlue" id="m47">
+47 Get Images from <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> <b>&#12288;➔ Images Input</b>&#12288;&#187; <i>48</i> <span class="magic" onclick="magictap(53)">53</span></button>
+<button class="button gGray nonbottom" id="m48">
+48 If <span class="box"><span class="var"><b>[47 Images Input]</b></span></span> <span class="box">does not have any value</span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="button  inside" id="m49">
+49 Find Photos <span class="box">Library</span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ContentItemFilter</div>
+			<div class="col2">Is a Screenshot</div></div>
+		<div class="row"><div class="col1">ContentItemSortOrder</div>
+			<div class="col2">Latest First</div></div>
+		<div class="row"><div class="col1">ContentItemLimitNumber</div>
+			<div class="col2">100</div></div>
+		<div class="row"><div class="col1">ContentItemLimitEnabled</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ContentItemSortProperty</div>
+			<div class="col2">Creation Date</div></div></div>
+<button class="button gOrange inside" id="m50">
+50 Choose from List <span class="box"><span class="var"><b>[49 Photos]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Select Screenshots</div></div>
+		<div class="row"><div class="col1">ChooseFromListActionSelectMultiple</div>
+			<div class="col2">true</div></div></div>
+<button class="gOrange inside" id="m51">
+51 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[50 Chosen Item]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop" id="m52">
+52 Otherwise</button>
+	<div class="content contentloop">
+<button class="gBlue inside" id="m53">
+53 Get Images from <span class="box"><span class="magic" onclick="magictap(47)"><b>[47 Images Input]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m54">
+54 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[53 Images]</b></span></span></button></div>
+<button class="gGray nontop" id="m55">
+55 End If&#12288;&#187;</button>
+<button class="button gGray nonbottom" id="m56">
+56 Repeat with Each in <span class="box"><span class="var"><b>[55 If Result]</b></span></span></button>
+	<div class="content contentloop">
+<button class="button gYellow inside" id="m57">
+57 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Set a screenshot variable for each pass of repeat loop and reset it every time</div></div>
+<button class="gOrange inside" id="m58">
+58 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[Repeat Item]</b></span></span></button>
+<button class="gBlue inside" id="m59">
+59 Get <span class="box">Width</span> of Images <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m60">
+60 Set Variable <span class="box">Width of Repeat Item</span> to <span class="box"><span class="var"><b>[59 Details of Images]</b></span></span></button>
+<button class="gBlue inside" id="m61">
+61 Get <span class="box">Height</span> of Images <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m62">
+62 Set Variable <span class="box">Height of Repeat Item</span> to <span class="box"><span class="var"><b>[61 Height]</b></span></span></button>
+<button class="button gGray nonbottom inside" id="m63">
+63 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">1242</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">1242</div></div>
+<button class="button gYellow inside" id="m64">
+64 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">11 Pro Max frame</div></div>
+<button class="gBlue inside" id="m65">
+65 Get <span class="box">Height</span> of Images <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187; <span class="magic" onclick="magictap(67)">67</span></button>
+<button class="button gYellow inside" id="m66">
+66 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Check for Pro Max screenshot height.</div></div>
+<button class="button gGray nonbottom inside" id="m67">
+67 If <span class="box"><span class="magic" onclick="magictap(65)"><b>[65 Details of Images]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">2688</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">2688</div></div>
+<button class="gOrange inside" id="m68">
+68 Get Dictionary Value for <span class="box">iPhone.11.Pro Max.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m69">
+69 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[68 Dictionary Value]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m70">
+70 End If</button></div>
+<button class="button gGray nonbottom nontop inside" id="m71">
+71 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m72">
+72 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">1125</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">1125</div></div>
+<button class="button gYellow inside" id="m73">
+73 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Pro portrait</div></div>
+<button class="button gYellow inside" id="m74">
+74 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Additional check to see we're not dealing with an iPhone 12 mini</div></div>
+<button class="button gGray nonbottom inside" id="m75">
+75 If <span class="box"><span class="var"><b>[Height of Repeat Item]</b></span></span> <span class="box">is not</span> <span class="box">2436</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m76">
+76 Get Dictionary Value for <span class="box">iPhone.11.Pro.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m77">
+77 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[76 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m78">
+78 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m79">
+79 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">It is an iPhone 12 mini in portrait</div></div>
+<button class="gOrange inside" id="m80">
+80 Get Dictionary Value for <span class="box">iPhone.12-13.mini.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m81">
+81 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[80 Dictionary Value]</b></span></span></button>
+<button class="button gBlue inside" id="m82">
+82 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to <span class="box">Size</span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">2340</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">1080</div></div></div>
+<button class="gOrange inside" id="m83">
+83 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[82 Resized Image]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m84">
+84 End If</button></div>
+<button class="button gGray nonbottom nontop inside" id="m85">
+85 Otherwise&#12288;▵<span class="magic" onclick="magictap(72)">72</span></button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m86">
+86 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">2688</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">2688</div></div>
+<button class="button gYellow inside" id="m87">
+87 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Pro Max landscape</div></div>
+<button class="gOrange inside" id="m88">
+88 Get Dictionary Value for <span class="box">iPhone.11.Pro Max.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m89">
+89 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[88 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m90">
+90 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m91">
+91 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">2436</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">2436</div></div>
+<button class="button gYellow inside" id="m92">
+92 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 12-13 mini landscape</div></div>
+<button class="gOrange inside" id="m93">
+93 Get Dictionary Value for <span class="box">iPhone.12-13.mini.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m94">
+94 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[93 Dictionary Value]</b></span></span></button>
+<button class="button gBlue inside" id="m95">
+95 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">1080</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2340</div></div></div>
+<button class="gOrange inside" id="m96">
+96 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[95 Resized Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m97">
+97 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m98">
+98 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">368</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">368</div></div>
+<button class="button gYellow inside" id="m99">
+99 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Apple Watch S4 44mm</div></div>
+<button class="button gBlue inside" id="m100">
+100 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">368</div></div></div>
+<button class="gOrange inside" id="m101">
+101 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[100 Resized Image]</b></span></span></button>
+<button class="gOrange inside" id="m102">
+102 Get Dictionary Value for <span class="box">Watch.Series 4.44</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m103">
+103 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[102 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m104">
+104 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m105">
+105 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">750</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">750</div></div>
+<button class="button gYellow inside" id="m106">
+106 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 8 and SE 2020</div></div>
+<button class="gOrange inside" id="m107">
+107 Get Dictionary Value for <span class="box">iPhone.iPhone 8 and 2020 SE.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m108">
+108 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[107 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m109">
+109 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m110">
+110 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad Pro 12.9-inch (2018/2021 model landscape)</div></div>
+<button class="button gGray nonbottom inside" id="m111">
+111 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">2732</div></div>
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">2732</div></div>
+<button class="gOrange inside" id="m112">
+112 Get Dictionary Value for <span class="box">iPad.2018-2021 iPad Pro.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m113">
+113 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[112 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m114">
+114 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m115">
+115 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad Pro 12.9-inch (2018/2020 model) portrait mode</div></div>
+<button class="button gGray nonbottom inside" id="m116">
+116 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">2048</div></div>
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">2048</div></div>
+<button class="gBlue inside" id="m117">
+117 Get <span class="box">Height</span> of Images <span class="box"><span class="var"><b>[Repeat Item]</b></span></span>&#12288;&#187; <span class="magic" onclick="magictap(119)">119</span></button>
+<button class="button gYellow inside" id="m118">
+118 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Additional check to make sure 6th gen iPad does not get matched here </div></div>
+<button class="button gGray nonbottom inside" id="m119">
+119 If <span class="box"><span class="magic" onclick="magictap(117)"><b>[117 Height]</b></span></span> <span class="box">is not</span> <span class="box">1536</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m120">
+120 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">It is not the base model iPad, so it's a 12.9" Pro in portrait</div></div>
+<button class="gOrange inside" id="m121">
+121 Get Dictionary Value for <span class="box">iPad.2018-2021 iPad Pro.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m122">
+122 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[121 Dictionary Value]</b></span></span></button></div>
+<button class="gGray nonbottom nontop inside" id="m123">
+123 Otherwise</button>
+	
+<button class="gGray nontop inside" id="m124">
+124 End If</button>
+<button class="button gYellow inside" id="m125">
+125 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">End of check for 6th gen iPad height</div></div></div>
+<button class="button gGray nonbottom nontop inside" id="m126">
+126 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m127">
+127 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">2021 iPad mini in portrait</div></div>
+<button class="button gGray nonbottom inside" id="m128">
+128 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">1488</div></div>
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">2208</div></div>
+<button class="gOrange inside" id="m129">
+129 Get Dictionary Value for <span class="box">iPad.2021 iPad mini.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m130">
+130 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[129 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m131">
+131 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m132">
+132 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">2021 iPad mini landscape</div></div>
+<button class="button gGray nonbottom inside" id="m133">
+133 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">2266</div></div>
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">1334</div></div>
+<button class="gOrange inside" id="m134">
+134 Get Dictionary Value for <span class="box">iPad.2021 iPad mini.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m135">
+135 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[134 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m136">
+136 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m137">
+137 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Landscape iPad Pro 11" 2018</div></div>
+<button class="button gGray nonbottom inside" id="m138">
+138 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">2388</div></div>
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">2388</div></div>
+<button class="gOrange inside" id="m139">
+139 Get Dictionary Value for <span class="box">iPad.2018-2021 iPad Pro 11.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m140">
+140 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[139 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m141">
+141 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m142">
+142 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad Pro 11" 2018 Portrait </div></div>
+<button class="button gGray nonbottom inside" id="m143">
+143 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span></button>
+	<div class="content contentloop inside">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">1668</div></div>
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">1668</div></div>
+<button class="gOrange inside" id="m144">
+144 Get Dictionary Value for <span class="box">iPad.2018-2021 iPad Pro 11.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m145">
+145 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[144 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m146">
+146 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m147">
+147 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Apple Watch S4 40mm</div></div>
+<button class="button gGray nonbottom inside" id="m148">
+148 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">contains</span></button>
+	<div class="content contentloop dashed inside">
+		<div class="row"><div class="col1">ConditionalActionString</div>
+			<div class="col2">324</div></div>
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">NumberValue</div>
+			<div class="col2">324</div></div>
+<button class="gOrange inside" id="m149">
+149 Get Dictionary Value for <span class="box">Watch.Series 4.40</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m150">
+150 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[149 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m151">
+151 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m152">
+152 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 11</div></div>
+<button class="button gGray nonbottom inside" id="m153">
+153 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">828</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m154">
+154 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 11 frame</div></div>
+<button class="gOrange inside" id="m155">
+155 Get Dictionary Value for <span class="box">iPhone.11.11.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m156">
+156 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[155 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m157">
+157 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m158">
+158 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 11 landscape</div></div>
+<button class="button gGray nonbottom inside" id="m159">
+159 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1792</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m160">
+160 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 11 landscape frame</div></div>
+<button class="gOrange inside" id="m161">
+161 Get Dictionary Value for <span class="box">iPhone.11.11.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m162">
+162 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[161 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m163">
+163 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m164">
+164 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 12-13 and 12-13 Pro</div></div>
+<button class="button gGray nonbottom inside" id="m165">
+165 If <span class="box"><span class="var"><b>[Height of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2532</span></button>
+	<div class="content contentloop inside">
+<button class="gOrange inside" id="m166">
+166 Get Dictionary Value for <span class="box">iPhone.12-13.Pro.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m167">
+167 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[166 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m168">
+168 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m169">
+169 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 12-13 and 12-13 Pro in landscape</div></div>
+<button class="button gGray nonbottom inside" id="m170">
+170 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2532</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m171">
+171 Get Dictionary Value for <span class="box">iPhone.12-13.Pro.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m172">
+172 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[171 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m173">
+173 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m174">
+174 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 12-13 Pro Max in portrait</div></div>
+<button class="button gGray nonbottom inside" id="m175">
+175 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1284</span></button>
+	<div class="content contentloop inside">
+<button class="gOrange inside" id="m176">
+176 Get Dictionary Value for <span class="box">iPhone.12-13.Pro Max.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m177">
+177 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[176 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m178">
+178 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Matched Device Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gBlue inside" id="m179">
+179 Get File <span class="box">/Frames/<span class="var"><b>[178 Dictionary Value]</b></span>_mask.png</span> from Folder&#12288;&#187;</button>
+<button class="gBlue inside" id="m180">
+180 Get Images from <span class="box"><span class="var"><b>[179 File]</b></span></span> <b>&#12288;➔ 13 Pro Max Portrait Mask</b>&#12288;&#187;</button>
+<button class="button gBlue inside" id="m181">
+181 Mask Image <span class="box"><span class="var"><b>[Screenshot]</b></span></span> with <span class="box">Custom Image</span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">CustomMaskImage</div>
+			<div class="col2"><span class="var"><b>[180 13 Pro Max Portrait Mask]</b></span></div></div></div>
+<button class="gOrange inside" id="m182">
+182 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[181 Masked Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m183">
+183 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m184">
+184 If <span class="box"><span class="var"><b>[Height of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1284</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m185">
+185 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 12-13 Pro Max landscape</div></div>
+<button class="gOrange inside" id="m186">
+186 Get Dictionary Value for <span class="box">iPhone.12-13.Pro Max.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m187">
+187 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[186 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m188">
+188 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Matched Device Dictionary</b> as Dictionary<b>]</b></span></span>&#12288;&#187;</button>
+<button class="gBlue inside" id="m189">
+189 Get File <span class="box">/Frames/<span class="var"><b>[188 Dictionary Value]</b></span>_mask.png</span> from Folder&#12288;&#187;</button>
+<button class="button gBlue inside" id="m190">
+190 Mask Image <span class="box"><span class="var"><b>[Screenshot]</b></span></span> with <span class="box">Custom Image</span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">CustomMaskImage</div>
+			<div class="col2"><span class="var"><b>[189 File]</b></span></div></div></div>
+<button class="gOrange inside" id="m191">
+191 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[190 Masked Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m192">
+192 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m193">
+193 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2360</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m194">
+194 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad Air 2020 in landscape</div></div>
+<button class="gOrange inside" id="m195">
+195 Get Dictionary Value for <span class="box">iPad.2020 iPad Air.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m196">
+196 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[195 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m197">
+197 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m198">
+198 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad Air 2020 portrait</div></div>
+<button class="button gGray nonbottom inside" id="m199">
+199 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1640</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m200">
+200 Get Dictionary Value for <span class="box">iPad.2020 iPad Air.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m201">
+201 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[200 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m202">
+202 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m203">
+203 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">4480</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m204">
+204 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iMac 24" at default resolution</div></div>
+<button class="gOrange inside" id="m205">
+205 Get Dictionary Value for <span class="box">Mac.2021 iMac</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m206">
+206 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[205 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m207">
+207 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m208">
+208 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad base model 9th gen</div></div>
+<button class="button gGray nonbottom inside" id="m209">
+209 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2160</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m210">
+210 Get Dictionary Value for <span class="box">iPad.2021 iPad.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m211">
+211 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[210 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m212">
+212 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m213">
+213 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1620</span></button>
+	<div class="content contentloop inside">
+<button class="gOrange inside" id="m214">
+214 Get Dictionary Value for <span class="box">iPad.2021 iPad.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m215">
+215 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[214 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m216">
+216 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m217">
+217 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">2020 MacBook Air @ 2880px resolution</div></div>
+<button class="button gGray nonbottom inside" id="m218">
+218 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2880</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m219">
+219 Get Dictionary Value for <span class="box">Mac.2020 MacBook Air</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m220">
+220 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[219 Dictionary Value]</b></span></span></button>
+<button class="button gYellow inside" id="m221">
+221 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Resize screenshot to match frame</div></div>
+<button class="button gBlue inside" id="m222">
+222 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2560</div></div></div>
+<button class="gOrange inside" id="m223">
+223 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[222 Resized Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m224">
+224 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m225">
+225 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Apple Watch S7 45mm</div></div>
+<button class="button gGray nonbottom inside" id="m226">
+226 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">396</span></button>
+	<div class="content contentloop inside">
+<button class="button gOrange inside" id="m227">
+227 List&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">[⚫️,
+⚪️]</div></div>
+<button class="button gOrange inside" id="m228">
+228 Choose from List <span class="box"><span class="var"><b>[227 List]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ChooseFromListActionPrompt</div>
+			<div class="col2">Apple Watch</div></div></div>
+<button class="button gGray nonbottom inside" id="m229">
+229 If <span class="box"><span class="var"><b>[228 Chosen Item]</b></span></span> <span class="box">is</span> <span class="box">⚫️</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m230">
+230 Get Dictionary Value for <span class="box">Watch.Series 7.45.Midnight</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m231">
+231 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[230 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m232">
+232 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m233">
+233 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Midnight color</div></div>
+<button class="gOrange inside" id="m234">
+234 Get Dictionary Value for <span class="box">Watch.Series 7.45.Starlight</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m235">
+235 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[234 Dictionary Value]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m236">
+236 End If</button></div>
+<button class="button gGray nonbottom nontop inside" id="m237">
+237 Otherwise&#12288;▵<span class="magic" onclick="magictap(226)">226</span></button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m238">
+238 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">3024</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m239">
+239 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">MBP 2021 14"</div></div>
+<button class="gOrange inside" id="m240">
+240 Get Dictionary Value for <span class="box">Mac.2021 MacBook Pro.14</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m241">
+241 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[240 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m242">
+242 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m243">
+243 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">3456</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m244">
+244 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">MBP 2021 16" at default resolution</div></div>
+<button class="gOrange inside" id="m245">
+245 Get Dictionary Value for <span class="box">Mac.2021 MacBook Pro.16</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m246">
+246 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[245 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m247">
+247 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m248">
+248 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad Pro 12.9" with More Space display scaling</div></div>
+<button class="button gGray nonbottom inside" id="m249">
+249 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">3180</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gBlue inside" id="m250">
+250 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">2048</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2732</div></div></div>
+<button class="gOrange inside" id="m251">
+251 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[250 Resized Image]</b></span></span></button>
+<button class="gOrange inside" id="m252">
+252 Get Dictionary Value for <span class="box">iPad.2018-2021 iPad Pro.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m253">
+253 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[252 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m254">
+254 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m255">
+255 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1290</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m256">
+256 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 14 Pro Max, portrait mode.
+
+We need to mask the image, then overlay the first frame without Dynamic Island shown.</div></div>
+<button class="gOrange inside" id="m257">
+257 Get Dictionary Value for <span class="box">iPhone.14 Pro.Pro Max.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m258">
+258 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[257 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m259">
+259 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Matched Device Dictionary]</b></span></span>&#12288;&#187; <i>260</i> <span class="magic" onclick="magictap(262)">262</span></button>
+<button class="gBlue inside" id="m260">
+260 Get File <span class="box">/Frames/<span class="var"><b>[259 Dictionary Value]</b></span>_mask.png</span> from Folder&#12288;&#187;</button>
+<button class="button gBlue inside" id="m261">
+261 Mask Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> with <span class="box">Custom Image</span> <b>&#12288;➔ Masked Screenshot</b>&#12288;&#187; <span class="magic" onclick="magictap(264)">264</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">CustomMaskImage</div>
+			<div class="col2"><span class="var"><b>[260 File]</b></span></div></div></div>
+<button class="gBlue inside" id="m262">
+262 Get File <span class="box">/Frames/<span class="magic" onclick="magictap(259)"><b>[259 Dictionary Value]</b></span>_frame_no_island.png</span> from Folder&#12288;&#187;</button>
+<button class="gOrange inside" id="m263">
+263 Set Variable <span class="box">Frame No Island</span> to <span class="box"><span class="var"><b>[262 File]</b></span></span></button>
+<button class="button gBlue inside" id="m264">
+264 Overlay Image <span class="box"><span class="magic" onclick="magictap(261)"><b>[261 Masked Screenshot]</b></span></span> with <span class="box"><span class="var"><b>[Frame No Island]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ShouldShowImageEditor</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ImageX</div>
+			<div class="col2">80</div></div>
+		<div class="row"><div class="col1">OverlayImageOpacity</div>
+			<div class="col2">100</div></div>
+		<div class="row"><div class="col1">Rotation</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ImageY</div>
+			<div class="col2">70</div></div>
+		<div class="row"><div class="col1">ImagePosition</div>
+			<div class="col2">Custom</div></div></div>
+<button class="gOrange inside" id="m265">
+265 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[264 Overlaid Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m266">
+266 Otherwise&#12288;▵<span class="magic" onclick="magictap(255)">255</span></button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m267">
+267 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2796</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m268">
+268 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 14 Pro Max, landscape</div></div>
+<button class="gOrange inside" id="m269">
+269 Get Dictionary Value for <span class="box">iPhone.14 Pro.Pro Max.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m270">
+270 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[269 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m271">
+271 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Matched Device Dictionary]</b></span></span>&#12288;&#187; <i>272</i> <span class="magic" onclick="magictap(274)">274</span></button>
+<button class="gBlue inside" id="m272">
+272 Get File <span class="box">/Frames/<span class="var"><b>[271 Dictionary Value]</b></span>_mask.png</span> from Folder&#12288;&#187;</button>
+<button class="button gBlue inside" id="m273">
+273 Mask Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> with <span class="box">Custom Image</span>&#12288;&#187; <span class="magic" onclick="magictap(276)">276</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">CustomMaskImage</div>
+			<div class="col2"><span class="var"><b>[272 File]</b></span></div></div></div>
+<button class="gBlue inside" id="m274">
+274 Get File <span class="box">/Frames/<span class="magic" onclick="magictap(271)"><b>[271 Dictionary Value]</b></span>_frame_no_island.png</span> from Folder&#12288;&#187;</button>
+<button class="gOrange inside" id="m275">
+275 Set Variable <span class="box">Frame No Island</span> to <span class="box"><span class="var"><b>[274 File]</b></span></span></button>
+<button class="button gBlue inside" id="m276">
+276 Overlay Image <span class="box"><span class="magic" onclick="magictap(273)"><b>[273 Masked Image]</b></span></span> with <span class="box"><span class="var"><b>[Frame No Island]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ShouldShowImageEditor</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ImageX</div>
+			<div class="col2">70</div></div>
+		<div class="row"><div class="col1">OverlayImageOpacity</div>
+			<div class="col2">100</div></div>
+		<div class="row"><div class="col1">Rotation</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ImageY</div>
+			<div class="col2">80</div></div>
+		<div class="row"><div class="col1">ImagePosition</div>
+			<div class="col2">Custom</div></div></div>
+<button class="gOrange inside" id="m277">
+277 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[276 Overlaid Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m278">
+278 Otherwise&#12288;▵<span class="magic" onclick="magictap(267)">267</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m279">
+279 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">410</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m280">
+280 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Apple Watch Ultra, 2022</div></div>
+<button class="gOrange inside" id="m281">
+281 Get Dictionary Value for <span class="box">Watch.Ultra</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m282">
+282 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[281 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m283">
+283 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m284">
+284 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1179</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m285">
+285 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 14 Pro in portrait</div></div>
+<button class="gOrange inside" id="m286">
+286 Get Dictionary Value for <span class="box">iPhone.14 Pro.Pro.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m287">
+287 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[286 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m288">
+288 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Matched Device Dictionary]</b></span></span>&#12288;&#187; <i>289</i> <span class="magic" onclick="magictap(291)">291</span></button>
+<button class="gBlue inside" id="m289">
+289 Get File <span class="box">/Frames/<span class="var"><b>[288 Dictionary Value]</b></span>_mask.png</span> from Folder&#12288;&#187;</button>
+<button class="button gBlue inside" id="m290">
+290 Mask Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> with <span class="box">Custom Image</span>&#12288;&#187; <span class="magic" onclick="magictap(293)">293</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">CustomMaskImage</div>
+			<div class="col2"><span class="var"><b>[289 File]</b></span></div></div></div>
+<button class="gBlue inside" id="m291">
+291 Get File <span class="box">/Frames/<span class="magic" onclick="magictap(288)"><b>[288 Dictionary Value]</b></span>_frame_no_island.png</span> from Folder&#12288;&#187;</button>
+<button class="gOrange inside" id="m292">
+292 Set Variable <span class="box">Frame No Island</span> to <span class="box"><span class="var"><b>[291 File]</b></span></span></button>
+<button class="button gBlue inside" id="m293">
+293 Overlay Image <span class="box"><span class="magic" onclick="magictap(290)"><b>[290 Masked Image]</b></span></span> with <span class="box"><span class="var"><b>[Frame No Island]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ShouldShowImageEditor</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ImageX</div>
+			<div class="col2">80</div></div>
+		<div class="row"><div class="col1">OverlayImageOpacity</div>
+			<div class="col2">100</div></div>
+		<div class="row"><div class="col1">Rotation</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ImageY</div>
+			<div class="col2">80</div></div>
+		<div class="row"><div class="col1">ImagePosition</div>
+			<div class="col2">Custom</div></div></div>
+<button class="gOrange inside" id="m294">
+294 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[293 Overlaid Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m295">
+295 Otherwise&#12288;▵<span class="magic" onclick="magictap(284)">284</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m296">
+296 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2256</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m297">
+297 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPhone 14 Pro in landscape</div></div>
+<button class="gOrange inside" id="m298">
+298 Get Dictionary Value for <span class="box">iPhone.14 Pro.Pro.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m299">
+299 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[298 Dictionary Value]</b></span></span></button>
+<button class="gOrange inside" id="m300">
+300 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Matched Device Dictionary]</b></span></span>&#12288;&#187; <i>301</i> <span class="magic" onclick="magictap(303)">303</span></button>
+<button class="gBlue inside" id="m301">
+301 Get File <span class="box">/Frames/<span class="var"><b>[300 Dictionary Value]</b></span>_mask.png</span> from Folder&#12288;&#187;</button>
+<button class="button gBlue inside" id="m302">
+302 Mask Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> with <span class="box">Custom Image</span>&#12288;&#187; <span class="magic" onclick="magictap(305)">305</span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">CustomMaskImage</div>
+			<div class="col2"><span class="var"><b>[301 File]</b></span></div></div></div>
+<button class="gBlue inside" id="m303">
+303 Get File <span class="box">/Frames/<span class="magic" onclick="magictap(300)"><b>[300 Dictionary Value]</b></span>_frame_no_island.png</span> from Folder&#12288;&#187;</button>
+<button class="gOrange inside" id="m304">
+304 Set Variable <span class="box">Frame No Island</span> to <span class="box"><span class="var"><b>[303 File]</b></span></span></button>
+<button class="button gBlue inside" id="m305">
+305 Overlay Image <span class="box"><span class="magic" onclick="magictap(302)"><b>[302 Masked Image]</b></span></span> with <span class="box"><span class="var"><b>[Frame No Island]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ShouldShowImageEditor</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ImageX</div>
+			<div class="col2">80</div></div>
+		<div class="row"><div class="col1">OverlayImageOpacity</div>
+			<div class="col2">100</div></div>
+		<div class="row"><div class="col1">Rotation</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ImageY</div>
+			<div class="col2">80</div></div>
+		<div class="row"><div class="col1">ImagePosition</div>
+			<div class="col2">Custom</div></div></div>
+<button class="gOrange inside" id="m306">
+306 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[305 Overlaid Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m307">
+307 Otherwise&#12288;▵<span class="magic" onclick="magictap(296)">296</span></button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m308">
+308 If <span class="box"><span class="var"><b>[Height of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">3180</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m309">
+309 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">12.9” iPad Pro with more space, portrait mode</div></div>
+<button class="button gBlue inside" id="m310">
+310 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">2732</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2048</div></div></div>
+<button class="gOrange inside" id="m311">
+311 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[310 Resized Image]</b></span></span></button>
+<button class="gOrange inside" id="m312">
+312 Get Dictionary Value for <span class="box">iPad.2018-2021 iPad Pro.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m313">
+313 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[312 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m314">
+314 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m315">
+315 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2746</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m316">
+316 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad Air M1 with More Space display setting in landscape</div></div>
+<button class="button gBlue inside" id="m317">
+317 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">1640</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2360</div></div></div>
+<button class="gOrange inside" id="m318">
+318 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[317 Resized Image]</b></span></span></button>
+<button class="gOrange inside" id="m319">
+319 Get Dictionary Value for <span class="box">iPad.2020 iPad Air.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m320">
+320 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[319 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m321">
+321 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m322">
+322 If <span class="box"><span class="var"><b>[Height of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2746</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m323">
+323 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iPad Air M1 with More Space display setting in portrait</div></div>
+<button class="button gBlue inside" id="m324">
+324 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">2360</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">1640</div></div></div>
+<button class="gOrange inside" id="m325">
+325 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[324 Resized Image]</b></span></span></button>
+<button class="gOrange inside" id="m326">
+326 Get Dictionary Value for <span class="box">iPad.2020 iPad Air.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m327">
+327 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[326 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m328">
+328 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m329">
+329 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2778</span></button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m330">
+330 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">11” iPad Pro with display scaling enabled in landscape</div></div>
+<button class="button gBlue inside" id="m331">
+331 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">1668</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2388</div></div></div>
+<button class="gOrange inside" id="m332">
+332 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[331 Resized Image]</b></span></span></button>
+<button class="gOrange inside" id="m333">
+333 Get Dictionary Value for <span class="box">iPad.2018-2021 iPad Pro 11.Landscape</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m334">
+334 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[333 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m335">
+335 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m336">
+336 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1940</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m337">
+337 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">11” iPad Pro with display scaling enabled in portrait</div></div>
+<button class="button gBlue inside" id="m338">
+338 Resize Image <span class="box"><span class="var"><b>[Height of Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">2388</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">1668</div></div></div>
+<button class="gOrange inside" id="m339">
+339 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[338 Resized Image]</b></span></span></button>
+<button class="gOrange inside" id="m340">
+340 Get Dictionary Value for <span class="box">iPad.2018-2021 iPad Pro 11.Portrait</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m341">
+341 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[340 Dictionary Value]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m342">
+342 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m343">
+343 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">M1 MacBook Air with More Space resolution</div></div>
+<button class="button gGray nonbottom inside" id="m344">
+344 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">3360</span></button>
+	<div class="content contentloop inside">
+<button class="gOrange inside" id="m345">
+345 Get Dictionary Value for <span class="box">Mac.2020 MacBook Air</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m346">
+346 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[345 Dictionary Value]</b></span></span></button>
+<button class="button gYellow inside" id="m347">
+347 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Resize screenshot</div></div>
+<button class="button gBlue inside" id="m348">
+348 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2560</div></div></div>
+<button class="gOrange inside" id="m349">
+349 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[348 Resized Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m350">
+350 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m351">
+351 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">M2 MacBook Air with default resolution</div></div>
+<button class="button gGray nonbottom inside" id="m352">
+352 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2940</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gGray nonbottom inside" id="m353">
+353 If <span class="box"><span class="var"><b>[Height of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">1912</span></button>
+	<div class="content contentloop inside">
+<button class="gOrange inside" id="m354">
+354 Get Dictionary Value for <span class="box">Mac.2022 MacBook Air</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m355">
+355 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[354 Dictionary Value]</b></span></span></button>
+<button class="button gBlue inside" id="m356">
+356 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">1664</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2560</div></div></div>
+<button class="gOrange inside" id="m357">
+357 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[356 Resized Image]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m358">
+358 End If</button></div>
+<button class="button gGray nonbottom nontop inside" id="m359">
+359 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m360">
+360 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">M2 MacBook Air with More Space resolution</div></div>
+<button class="button gGray nonbottom inside" id="m361">
+361 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">3420</span></button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m362">
+362 If <span class="box"><span class="var"><b>[Height of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">2224</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m363">
+363 Get Dictionary Value for <span class="box">Mac.2022 MacBook Air</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m364">
+364 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[363 Dictionary Value]</b></span></span></button>
+<button class="button gBlue inside" id="m365">
+365 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeHeight</div>
+			<div class="col2">1664</div></div>
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">2560</div></div></div>
+<button class="gOrange inside" id="m366">
+366 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[365 Resized Image]</b></span></span></button></div>
+<button class="gGray nontop inside" id="m367">
+367 End If</button></div>
+<button class="button gGray nonbottom nontop inside" id="m368">
+368 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gGray nonbottom inside" id="m369">
+369 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">4112</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m370">
+370 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">MBP 16" with More Space resolution</div></div>
+<button class="gOrange inside" id="m371">
+371 Get Dictionary Value for <span class="box">Mac.2021 MacBook Pro.16</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m372">
+372 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[371 Dictionary Value]</b></span></span></button>
+<button class="button gBlue inside" id="m373">
+373 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">3456</div></div></div>
+<button class="gOrange inside" id="m374">
+374 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[373 Resized Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m375">
+375 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m376">
+376 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">iMac 24" at More Space resolution</div></div>
+<button class="button gGray nonbottom inside" id="m377">
+377 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">5120</span></button>
+	<div class="content contentloop inside">
+<button class="gOrange inside" id="m378">
+378 Get Dictionary Value for <span class="box">Mac.2021 iMac</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m379">
+379 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[378 Dictionary Value]</b></span></span></button>
+<button class="button gBlue inside" id="m380">
+380 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">4480</div></div></div>
+<button class="gOrange inside" id="m381">
+381 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[380 Resized Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m382">
+382 Otherwise</button>
+	<div class="content contentloop inside">
+<button class="button gYellow inside" id="m383">
+383 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">MBP 14" with More Space resolution</div></div>
+<button class="button gGray nonbottom inside" id="m384">
+384 If <span class="box"><span class="var"><b>[Width of Repeat Item]</b></span></span> <span class="box">is</span> <span class="box">3600</span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m385">
+385 Get Dictionary Value for <span class="box">Mac.2021 MacBook Pro.14</span> in <span class="box"><span class="var"><b>[Frames Dictionary]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange inside" id="m386">
+386 Set Variable <span class="box">Matched Device Dictionary</span> to <span class="box"><span class="var"><b>[385 Dictionary Value]</b></span></span></button>
+<button class="button gBlue inside" id="m387">
+387 Resize Image <span class="box"><span class="var"><b>[Repeat Item]</b></span></span> to Size&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageResizeWidth</div>
+			<div class="col2">3024</div></div></div>
+<button class="gOrange inside" id="m388">
+388 Set Variable <span class="box">Screenshot</span> to <span class="box"><span class="var"><b>[387 Resized Image]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m389">
+389 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gYellow inside" id="m390">
+390 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">More devices here</div></div></div>
+<button class="gGray nontop inside" id="m391">
+391 End If</button></div>
+<button class="gGray nontop inside" id="m392">
+392 End If</button></div>
+<button class="gGray nontop inside" id="m393">
+393 End If&#12288;▵<span class="magic" onclick="magictap(375)">375</span></button></div>
+<button class="gGray nontop inside" id="m394">
+394 End If&#12288;▵<span class="magic" onclick="magictap(368)">368</span></button></div>
+<button class="gGray nontop inside" id="m395">
+395 End If&#12288;▵<span class="magic" onclick="magictap(359)">359</span></button></div>
+<button class="gGray nontop inside" id="m396">
+396 End If&#12288;▵<span class="magic" onclick="magictap(350)">350</span></button></div>
+<button class="gGray nontop inside" id="m397">
+397 End If&#12288;▵<span class="magic" onclick="magictap(342)">342</span></button></div>
+<button class="gGray nontop inside" id="m398">
+398 End If&#12288;▵<span class="magic" onclick="magictap(335)">335</span></button></div>
+<button class="gGray nontop inside" id="m399">
+399 End If&#12288;▵<span class="magic" onclick="magictap(328)">328</span></button></div>
+<button class="gGray nontop inside" id="m400">
+400 End If&#12288;▵<span class="magic" onclick="magictap(321)">321</span></button></div>
+<button class="gGray nontop inside" id="m401">
+401 End If&#12288;▵<span class="magic" onclick="magictap(314)">314</span></button></div>
+<button class="gGray nontop inside" id="m402">
+402 End If&#12288;▵<span class="magic" onclick="magictap(307)">307</span></button></div>
+<button class="gGray nontop inside" id="m403">
+403 End If&#12288;▵<span class="magic" onclick="magictap(295)">295</span></button></div>
+<button class="gGray nontop inside" id="m404">
+404 End If&#12288;▵<span class="magic" onclick="magictap(283)">283</span></button></div>
+<button class="gGray nontop inside" id="m405">
+405 End If&#12288;▵<span class="magic" onclick="magictap(278)">278</span></button></div>
+<button class="gGray nontop inside" id="m406">
+406 End If&#12288;▵<span class="magic" onclick="magictap(266)">266</span></button></div>
+<button class="gGray nontop inside" id="m407">
+407 End If&#12288;▵<span class="magic" onclick="magictap(254)">254</span></button></div>
+<button class="gGray nontop inside" id="m408">
+408 End If&#12288;▵<span class="magic" onclick="magictap(247)">247</span></button></div>
+<button class="gGray nontop inside" id="m409">
+409 End If&#12288;▵<span class="magic" onclick="magictap(242)">242</span></button></div>
+<button class="gGray nontop inside" id="m410">
+410 End If&#12288;▵<span class="magic" onclick="magictap(237)">237</span></button></div>
+<button class="gGray nontop inside" id="m411">
+411 End If&#12288;▵<span class="magic" onclick="magictap(224)">224</span></button></div>
+<button class="gGray nontop inside" id="m412">
+412 End If&#12288;▵<span class="magic" onclick="magictap(216)">216</span></button></div>
+<button class="gGray nontop inside" id="m413">
+413 End If&#12288;▵<span class="magic" onclick="magictap(212)">212</span></button></div>
+<button class="gGray nontop inside" id="m414">
+414 End If&#12288;▵<span class="magic" onclick="magictap(207)">207</span></button></div>
+<button class="gGray nontop inside" id="m415">
+415 End If&#12288;▵<span class="magic" onclick="magictap(202)">202</span></button></div>
+<button class="gGray nontop inside" id="m416">
+416 End If&#12288;▵<span class="magic" onclick="magictap(197)">197</span></button></div>
+<button class="gGray nontop inside" id="m417">
+417 End If&#12288;▵<span class="magic" onclick="magictap(192)">192</span></button></div>
+<button class="gGray nontop inside" id="m418">
+418 End If&#12288;▵<span class="magic" onclick="magictap(183)">183</span></button></div>
+<button class="gGray nontop inside" id="m419">
+419 End If&#12288;▵<span class="magic" onclick="magictap(173)">173</span></button></div>
+<button class="gGray nontop inside" id="m420">
+420 End If&#12288;▵<span class="magic" onclick="magictap(168)">168</span></button></div>
+<button class="gGray nontop inside" id="m421">
+421 End If&#12288;▵<span class="magic" onclick="magictap(163)">163</span></button></div>
+<button class="gGray nontop inside" id="m422">
+422 End If&#12288;▵<span class="magic" onclick="magictap(157)">157</span></button></div>
+<button class="gGray nontop inside" id="m423">
+423 End If&#12288;▵<span class="magic" onclick="magictap(151)">151</span></button></div>
+<button class="gGray nontop inside" id="m424">
+424 End If&#12288;▵<span class="magic" onclick="magictap(146)">146</span></button></div>
+<button class="gGray nontop inside" id="m425">
+425 End If&#12288;▵<span class="magic" onclick="magictap(141)">141</span></button></div>
+<button class="gGray nontop inside" id="m426">
+426 End If&#12288;▵<span class="magic" onclick="magictap(136)">136</span></button></div>
+<button class="gGray nontop inside" id="m427">
+427 End If&#12288;▵<span class="magic" onclick="magictap(131)">131</span></button></div>
+<button class="gGray nontop inside" id="m428">
+428 End If&#12288;▵<span class="magic" onclick="magictap(126)">126</span></button></div>
+<button class="gGray nontop inside" id="m429">
+429 End If&#12288;▵<span class="magic" onclick="magictap(114)">114</span></button></div>
+<button class="gGray nontop inside" id="m430">
+430 End If&#12288;▵<span class="magic" onclick="magictap(109)">109</span></button></div>
+<button class="gGray nontop inside" id="m431">
+431 End If&#12288;▵<span class="magic" onclick="magictap(104)">104</span></button></div>
+<button class="gGray nontop inside" id="m432">
+432 End If&#12288;▵<span class="magic" onclick="magictap(97)">97</span></button></div>
+<button class="gGray nontop inside" id="m433">
+433 End If&#12288;▵<span class="magic" onclick="magictap(90)">90</span></button></div>
+<button class="gGray nontop inside" id="m434">
+434 End If&#12288;▵<span class="magic" onclick="magictap(85)">85</span></button></div>
+<button class="gGray nontop inside" id="m435">
+435 End If&#12288;▵<span class="magic" onclick="magictap(71)">71</span></button>
+<button class="button gYellow inside" id="m436">
+436 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Screenshots from older devices and those with Dynamic Island use a different logic. Thus we need to have a condition here to check if there is a variable for frame without island.</div></div>
+<button class="gOrange inside" id="m437">
+437 Get Dictionary Value for <span class="box">name</span> in <span class="box"><span class="var"><b>[Matched Device Dictionary]</b></span></span> <b>&#12288;➔ Name</b>&#12288;&#187;</button>
+<button class="gBlue inside" id="m438">
+438 Get File <span class="box">/Frames/<span class="var"><b>[437 Name]</b></span>.png</span> from Folder <b>&#12288;➔ Frame File</b>&#12288;&#187;</button>
+<button class="gOrange inside" id="m439">
+439 Set Variable <span class="box">Frame Asset</span> to <span class="box"><span class="var"><b>[438 Frame File]</b></span></span></button>
+<button class="button gGray nonbottom inside" id="m440">
+440 If <span class="box"><span class="var"><b>[Frame No Island]</b></span></span> <span class="box">has any value</span></button>
+	<div class="content contentloop dashed inside">
+<button class="button gBlue inside" id="m441">
+441 Overlay Image <span class="box"><span class="var"><b>[Frame Asset]</b></span></span> with <span class="box"><span class="var"><b>[Screenshot]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">OverlayImageOpacity</div>
+			<div class="col2">100</div></div>
+		<div class="row"><div class="col1">Rotation</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ShouldShowImageEditor</div>
+			<div class="col2">false</div></div></div>
+<button class="gOrange inside" id="m442">
+442 Add <span class="box"><span class="var"><b>[441 Overlaid Image]</b></span></span> to Variable <span class="box">Framed Screenshots</span></button>
+<button class="button gYellow inside" id="m443">
+443 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Reset value of Frame No Island variable</div></div>
+<button class="gOrange inside" id="m444">
+444 Dictionary&#12288;&#187;</button>
+<button class="gOrange inside" id="m445">
+445 Set Variable <span class="box">Frame No Island</span> to <span class="box"><span class="var"><b>[444 Dictionary]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop inside" id="m446">
+446 Otherwise</button>
+	<div class="content contentloop dashed inside">
+<button class="button gBlue inside" id="m447">
+447 Overlay Image <span class="box"><span class="var"><b>[Screenshot]</b></span></span> with <span class="box"><span class="var"><b>[Frame Asset]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ShouldShowImageEditor</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">ImageX</div>
+			<div class="col2"><span class="var"><b>[Matched Device Dictionary</b> as Dictionary.x<b>]</b></span></div></div>
+		<div class="row"><div class="col1">OverlayImageOpacity</div>
+			<div class="col2">100</div></div>
+		<div class="row"><div class="col1">Rotation</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ImageY</div>
+			<div class="col2"><span class="var"><b>[Matched Device Dictionary</b> as Dictionary.y<b>]</b></span></div></div>
+		<div class="row"><div class="col1">ImagePosition</div>
+			<div class="col2">Custom</div></div></div>
+<button class="button gBlue inside" id="m448">
+448 Overlay Image <span class="box"><span class="var"><b>[Frame Asset]</b></span></span> with <span class="box"><span class="var"><b>[447 Overlaid Image]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">OverlayImageOpacity</div>
+			<div class="col2">100</div></div>
+		<div class="row"><div class="col1">Rotation</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ShouldShowImageEditor</div>
+			<div class="col2">false</div></div></div>
+<button class="gOrange inside" id="m449">
+449 Add <span class="box"><span class="var"><b>[448 Overlaid Image]</b></span></span> to Variable <span class="box">Framed Screenshots</span></button></div>
+<button class="gGray nontop inside" id="m450">
+450 End If</button></div>
+<button class="gGray nontop" id="m451">
+451 End Repeat with Each&#12288;▵<span class="magic" onclick="magictap(56)">56</span></button>
+<button class="button gYellow" id="m452">
+452 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">If dealing with more than one device, combine them into a single image.</div></div>
+<button class="" id="m453">
+453 Count Items in <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span>&#12288;&#187; <i>454</i> <span class="magic" onclick="magictap(455)">455</span></button>
+<button class="gOrange" id="m454">
+454 Set Variable <span class="box">Framed Screenshots Count</span> to <span class="box"><span class="var"><b>[453 Count]</b></span></span></button>
+<button class="button gGray nonbottom" id="m455">
+455 If <span class="box"><span class="magic" onclick="magictap(453)"><b>[453 Count]</b></span></span> <span class="box">&gt;</span> <span class="box">1</span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">ConditionalLegacyComparisonBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gBlue inside" id="m456">
+456 Get Images from <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span>&#12288;&#187;</button>
+<button class="button gBlue inside" id="m457">
+457 Combine Images <span class="box"><span class="var"><b>[456 Images]</b></span></span> Horizontally&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageCombineSpacing</div>
+			<div class="col2">60</div></div></div>
+<button class="gOrange inside" id="m458">
+458 Set Variable <span class="box">Framed Screenshots</span> to <span class="box"><span class="var"><b>[457 Combined Image]</b></span></span></button>
+<button class="button gYellow inside" id="m459">
+459 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">screenshots</div></div>
+<button class="gOrange inside" id="m460">
+460 Set Variable <span class="box">Noun</span> to <span class="box"><span class="var"><b>[459 Text]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop" id="m461">
+461 Otherwise</button>
+	<div class="content contentloop">
+<button class="button gYellow inside" id="m462">
+462 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">A single device was passed, no need to combine images.</div></div>
+<button class="button gYellow inside" id="m463">
+463 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">screenshot</div></div>
+<button class="gOrange inside" id="m464">
+464 Set Variable <span class="box">Noun</span> to <span class="box"><span class="var"><b>[463 Text]</b></span></span></button></div>
+<button class="gGray nontop" id="m465">
+465 End If</button>
+<button class="button gYellow" id="m466">
+466 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Strip metadata and rename</div></div>
+<button class="button gBlue" id="m467">
+467 Convert Image <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span> to <span class="box">PNG</span>&#12288;&#187; <span class="magic" onclick="magictap(470)">470</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">ImagePreserveMetadata</div>
+			<div class="col2">false</div></div></div>
+<button class="gRed" id="m468">
+468 Date <span class="box">Current Date</span>&#12288;&#187;</button>
+<button class="button gRed" id="m469">
+469 Format Date <span class="box"><span class="var"><b>[468 Date]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">DateFormatStyle</div>
+			<div class="col2">Custom</div></div>
+		<div class="row"><div class="col1">DateFormat</div>
+			<div class="col2">EEEE, dd MMM yyyy HH:mm:ss</div></div></div>
+<button class="" id="m470">
+470 Set Name of <span class="box"><span class="magic" onclick="magictap(467)"><b>[467 Converted Image]</b></span></span> to <span class="box"><span class="var"><b>[469 Formatted Date]</b></span></span>&#12288;&#187;</button>
+<button class="gOrange" id="m471">
+471 Set Variable <span class="box">Framed Screenshots</span> to <span class="box"><span class="var"><b>[470 Renamed Item]</b></span></span></button>
+<button class="button gYellow" id="m472">
+472 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Final menu of actions for the framed images.</div></div>
+<button class="gOrange" id="m473">
+473 Dictionary&#12288;&#187;</button>
+<button class="gOrange" id="m474">
+474 Set Variable <span class="box">Frames Dictionary</span> to <span class="box"><span class="var"><b>[473 Dictionary]</b></span></span></button>
+<button class="button gYellow" id="m475">
+475 Text <b>&#12288;➔ Menu Title</b>&#12288;&#187; <span class="magic" onclick="magictap(484)">484</span></button>
+	<div class="content">
+		<div class="col2">Framed <span class="var"><b>[Framed Screenshots Count]</b></span> <span class="var"><b>[Noun]</b></span>.
+
+Pick an action below.</div></div>
+<button class="button gYellow" id="m476">
+476 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Use the proper name for the filesystem based on user device</div></div>
+<button class="button gGray nonbottom" id="m477">
+477 If <span class="box"><span class="var"><b>[DeviceDetails</b>’s Device Model<b>]</b></span></span> <span class="box">is</span> <span class="box">Mac</span></button>
+	<div class="content contentloop">
+<button class="button gYellow inside" id="m478">
+478 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Finder</div></div>
+<button class="gOrange inside" id="m479">
+479 Set Variable <span class="box">Filesystem App</span> to <span class="box"><span class="var"><b>[478 Text]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop" id="m480">
+480 Otherwise</button>
+	<div class="content contentloop">
+<button class="button gYellow inside" id="m481">
+481 Text&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="col2">Files</div></div>
+<button class="gOrange inside" id="m482">
+482 Set Variable <span class="box">Filesystem App</span> to <span class="box"><span class="var"><b>[481 Text]</b></span></span></button></div>
+<button class="gGray nontop" id="m483">
+483 End If</button>
+<button class="button gGray nonbottom" id="m484">
+484 Choose from Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuPrompt</div>
+			<div class="col2"><span class="magic" onclick="magictap(475)"><b>[475 Menu Title]</b></span></div></div>
+		<div class="row"><div class="col1">MenuItems</div>
+			<div class="col2">[🌄 Save to Photos,
+"🔠 Rename and Save to <span class="var"><b>[Filesystem App]</b></span>",
+"📁 Quick Save to <span class="var"><b>[Filesystem App]</b></span>",
+📋 Copy,
+🔀 Copy as JPEG,
+⬆️ Share,
+👁 Preview with Quick Look]</div></div>
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div></div>
+<button class="button gGray nonbottom nontop" id="m485">
+485 Menu Item <span class="box">🌄 Save to Photos</span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div>
+<button class=" inside" id="m486">
+486 Save Photos <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span> to Recents</button></div>
+<button class="button gGray nonbottom nontop" id="m487">
+487 Menu Item <span class="box">🔠 Rename and Save to Filesystem App</span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuItemAttributedTitle</div>
+			<div class="col2">🔠 Rename and Save to <span class="var"><b>[Filesystem App]</b></span></div></div>
+<button class="button  inside" id="m488">
+488 Ask for Text Input&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">AskActionPrompt</div>
+			<div class="col2">Rename Your File</div></div></div>
+<button class=" inside" id="m489">
+489 Set Name of <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span> to <span class="box"><span class="var"><b>[488 Provided Input]</b></span></span>&#12288;&#187;</button>
+<button class="gBlue inside" id="m490">
+490 Save File <span class="box"><span class="var"><b>[489 Renamed Item]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop" id="m491">
+491 Menu Item <span class="box">📁 Quick Save to Filesystem App</span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuItemAttributedTitle</div>
+			<div class="col2">📁 Quick Save to <span class="var"><b>[Filesystem App]</b></span></div></div>
+<button class="button gBlue inside" id="m492">
+492 Save File <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span></button>
+	<div class="content inside">
+		<div class="row"><div class="col1">Folder</div>
+			<div class="col2"><span class="var"><b>[Quick Save Folder]</b></span></div></div>
+		<div class="row"><div class="col1">AskWhereToSave</div>
+			<div class="col2">false</div></div></div></div>
+<button class="button gGray nonbottom nontop" id="m493">
+493 Menu Item <span class="box">📋 Copy</span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gBlue inside" id="m494">
+494 Copy <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span> to Clipboard</button>
+<button class="gBlue inside" id="m495">
+495 Get Clipboard</button></div>
+<button class="button gGray nonbottom nontop" id="m496">
+496 Menu Item <span class="box">🔀 Copy as JPEG</span></button>
+	<div class="content contentloop">
+<button class="button gBlue inside" id="m497">
+497 Convert Image <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span> to JPEG&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">ImageCompressionQuality</div>
+			<div class="col2">1</div></div>
+		<div class="row"><div class="col1">ImagePreserveMetadata</div>
+			<div class="col2">false</div></div></div>
+<button class="button gBlue inside" id="m498">
+498 Copy <span class="box"><span class="var"><b>[497 Converted Image]</b></span></span> to Clipboard</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">LocalOnly</div>
+			<div class="col2">false</div></div></div>
+<button class="gBlue inside" id="m499">
+499 Get Clipboard</button></div>
+<button class="button gGray nonbottom nontop" id="m500">
+500 Menu Item <span class="box">⬆️ Share</span></button>
+	<div class="content contentloop">
+<button class="gBlue inside" id="m501">
+501 Share <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop" id="m502">
+502 Menu Item <span class="box">👁 Preview with Quick Look</span></button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div>
+<button class="gYellow inside" id="m503">
+503 Quick Look <span class="box"><span class="var"><b>[Framed Screenshots]</b></span></span></button></div>
+<button class="button gGray nonbottom nontop" id="m504">
+504 End Menu</button>
+	<div class="content contentloop">
+		<div class="row"><div class="col1">MenuLegacyCancelBehavior</div>
+			<div class="col2">true</div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
