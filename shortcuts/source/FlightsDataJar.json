@@ -1,0 +1,1138 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4292093695,
+      "WFWorkflowIconGlyphNumber": 59648
+   },
+   "WFWorkflowClientVersion": "1307.2",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Store and (optionally) git track the full suite of available flight data for your Infinite Flight account.\n\nSee my blog post if you'd like: https://bilge.world/infinite-flight-api\n\n...and/or this Shortcut's Issue on my iOS-specific GitHub Repository: https://github.com/extratone/i/issues/293\n\nContact me anytime! Infinite flight users can find my community profile here: http://community.infiniteflight.com/u/extratone\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nMastodon: https://mastodon.social/@DavidBlue\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.CheckForUpdatesIntent",
+         "WFWorkflowActionParameters": {
+            "currentVersion": "1.0",
+            "UUID": "3AE9723D-2810-4883-AB0B-453EFC127DB7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "00",
+            "UUID": "10F7E4DF-9A90-410D-9F0B-FAE1ECE31971"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "10F7E4DF-9A90-410D-9F0B-FAE1ECE31971",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "auth"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "0000",
+            "UUID": "CEDF968D-FBE8-4B88-AD79-ECDB3EC6E215"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "CEDF968D-FBE8-4B88-AD79-ECDB3EC6E215",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "userID"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": "https://api.infiniteflight.com/public/v2/sessions",
+            "UUID": "B5DA8EB7-EBFA-4293-8A8C-89A0FF374E91"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFHTTPHeaders": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Authorization"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "Bearer \uFFFC",
+                              "attachmentsByRange": {
+                                 "{7, 1}": {
+                                    "VariableName": "auth",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "ShowHeaders": true,
+            "UUID": "5DB64C46-D7F4-4D75-9F15-5DA44B55A449",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "B5DA8EB7-EBFA-4293-8A8C-89A0FF374E91",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "5DB64C46-D7F4-4D75-9F15-5DA44B55A449",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "result",
+            "UUID": "34FDB876-9CE7-4007-A650-729322478F93"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "34FDB876-9CE7-4007-A650-729322478F93",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "7F237ED9-6BCD-44C2-A789-3411D30812DE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "7F237ED9-6BCD-44C2-A789-3411D30812DE",
+                  "Type": "ActionOutput",
+                  "OutputName": "Item from List"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "expert"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+         "WFWorkflowActionParameters": {
+            "overwriteStrategy": "alwaysAllow",
+            "UUID": "C2934370-6DAC-438C-868A-64C422B2FBA5",
+            "keyPath": "infinite.expert",
+            "values": {
+               "Value": {
+                  "VariableName": "expert",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "34FDB876-9CE7-4007-A650-729322478F93",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFItemIndex": "2",
+            "UUID": "095ED66A-B9C3-4869-9592-C9036C6DCE05",
+            "WFItemSpecifier": "Item At Index"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "095ED66A-B9C3-4869-9592-C9036C6DCE05",
+                  "Type": "ActionOutput",
+                  "OutputName": "Item from List"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "training"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+         "WFWorkflowActionParameters": {
+            "overwriteStrategy": "alwaysAllow",
+            "UUID": "584DD97B-788E-4BF6-9C92-068B8FA6DB74",
+            "keyPath": "infinite.training",
+            "values": {
+               "Value": {
+                  "VariableName": "training",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "34FDB876-9CE7-4007-A650-729322478F93",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFItemIndex": "3",
+            "UUID": "99003377-2283-408D-A3C9-B3AB0004A305",
+            "WFItemSpecifier": "Item At Index"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "99003377-2283-408D-A3C9-B3AB0004A305",
+                  "Type": "ActionOutput",
+                  "OutputName": "Item from List"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "casual"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+         "WFWorkflowActionParameters": {
+            "overwriteStrategy": "alwaysAllow",
+            "UUID": "8C8F3A5E-16FD-4D9F-B1DA-930FF2AB2086",
+            "keyPath": "infinite.casual",
+            "values": {
+               "Value": {
+                  "VariableName": "casual",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Server IDs are now up to date."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://api.infiniteflight.com/public/v2/users/\uFFFC/flights",
+                  "attachmentsByRange": {
+                     "{47, 1}": {
+                        "VariableName": "userID",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "05FA593F-054A-46E3-8B55-D33EAB094CB4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFHTTPHeaders": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Authorization"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "Bearer \uFFFC",
+                              "attachmentsByRange": {
+                                 "{7, 1}": {
+                                    "VariableName": "auth",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "ShowHeaders": true,
+            "UUID": "9CFFC6C1-2403-488F-9C70-E98D095AB2D5",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "05FA593F-054A-46E3-8B55-D33EAB094CB4",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "9CFFC6C1-2403-488F-9C70-E98D095AB2D5",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "8D3CD9BC-AE6A-4FA3-B444-4CB69CC627A9"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8D3CD9BC-AE6A-4FA3-B444-4CB69CC627A9",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "result.totalPages",
+            "UUID": "753B8D4E-8AA2-4B4D-A1B4-41870CC290D1"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "753B8D4E-8AA2-4B4D-A1B4-41870CC290D1",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "pages"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Because the initial index of user flights is paginated, we need to repeat the main (following) loop for each page of your flight results."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "986E9072-3995-4928-B4D4-51FF4EC603FD",
+            "WFRepeatCount": {
+               "Value": {
+                  "VariableName": "pages",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://api.infiniteflight.com/public/v2/users/\uFFFC/flights?page=\uFFFC",
+                  "attachmentsByRange": {
+                     "{47, 1}": {
+                        "VariableName": "userID",
+                        "Type": "Variable"
+                     },
+                     "{62, 1}": {
+                        "VariableName": "Repeat Index",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "25C503FE-ED96-46AB-82CA-A539BBC98B47"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFHTTPHeaders": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Authorization"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "Bearer \uFFFC",
+                              "attachmentsByRange": {
+                                 "{7, 1}": {
+                                    "VariableName": "auth",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "ShowHeaders": true,
+            "UUID": "8190CDF5-CFA8-4E82-8170-B4C674273398",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "25C503FE-ED96-46AB-82CA-A539BBC98B47",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8190CDF5-CFA8-4E82-8170-B4C674273398",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "result.data",
+            "UUID": "EEDC0B7E-1C93-47EF-A32B-3B63C2507CA7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "EEDC0B7E-1C93-47EF-A32B-3B63C2507CA7",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "GroupingIdentifier": "78BD47D1-EBD9-47B5-BF57-54AEFC62CBAF",
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item 2",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "id",
+            "UUID": "17186D06-62CD-4ABC-BE08-2C98B2D40E2B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "17186D06-62CD-4ABC-BE08-2C98B2D40E2B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "id"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+         "WFWorkflowActionParameters": {
+            "overwriteStrategy": "alwaysAllow",
+            "UUID": "1074309E-4534-4BD9-9777-8F7AE988AE41",
+            "keyPath": {
+               "Value": {
+                  "string": "flights.\uFFFC",
+                  "attachmentsByRange": {
+                     "{8, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "values": {
+               "Value": {
+                  "VariableName": "Repeat Item 2",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Repeat Item 2",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "63689256-2E98-41CB-A3F1-0ABAB588CB4A",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": "server"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "63689256-2E98-41CB-A3F1-0ABAB588CB4A",
+                        "Type": "ActionOutput",
+                        "OutputName": "Dictionary Value"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFReplaceTextFind": " Server",
+            "UUID": "4E447549-75EE-4EF5-80C8-CB3051834A53"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
+         "WFWorkflowActionParameters": {
+            "WFCaseType": "lowercase",
+            "text": {
+               "Value": {
+                  "OutputUUID": "4E447549-75EE-4EF5-80C8-CB3051834A53",
+                  "Type": "ActionOutput",
+                  "OutputName": "Updated Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "0C46E85E-7053-4E17-86E2-48177A316370"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "0C46E85E-7053-4E17-86E2-48177A316370",
+                  "Type": "ActionOutput",
+                  "OutputName": "Updated Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "servername"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+         "WFWorkflowActionParameters": {
+            "keyPath": {
+               "Value": {
+                  "string": "infinite.\uFFFC",
+                  "attachmentsByRange": {
+                     "{9, 1}": {
+                        "VariableName": "servername",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "50B50EFE-53D8-4781-B8CC-178FC2FD4EFD"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "50B50EFE-53D8-4781-B8CC-178FC2FD4EFD",
+                  "Type": "ActionOutput",
+                  "OutputName": "Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "serverID"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://api.infiniteflight.com/public/v2/sessions/\uFFFC/flights/\uFFFC/flightplan",
+                  "attachmentsByRange": {
+                     "{50, 1}": {
+                        "VariableName": "serverID",
+                        "Type": "Variable"
+                     },
+                     "{60, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "8753CB59-E0B7-4E2E-9BDC-9AAB35962528"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFHTTPHeaders": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Authorization"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "Bearer \uFFFC",
+                              "attachmentsByRange": {
+                                 "{7, 1}": {
+                                    "VariableName": "auth",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "ShowHeaders": true,
+            "UUID": "FC6CE05A-D55A-44CB-A4D4-55324D1EDC1D",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "8753CB59-E0B7-4E2E-9BDC-9AAB35962528",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "FC6CE05A-D55A-44CB-A4D4-55324D1EDC1D",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "result",
+            "UUID": "0346CC73-E380-4432-B361-E92CE2895336"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "0346CC73-E380-4432-B361-E92CE2895336",
+                     "Type": "ActionOutput",
+                     "OutputName": "Dictionary Value"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "1518EF7F-01EC-4C6D-8D9C-0309D793C824",
+            "WFCondition": 100
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+         "WFWorkflowActionParameters": {
+            "overwriteStrategy": "alwaysAllow",
+            "UUID": "072ECAC4-4523-444A-A208-D14649D42755",
+            "keyPath": {
+               "Value": {
+                  "string": "flights.\uFFFC.plan",
+                  "attachmentsByRange": {
+                     "{8, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "values": {
+               "Value": {
+                  "OutputUUID": "0346CC73-E380-4432-B361-E92CE2895336",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "1518EF7F-01EC-4C6D-8D9C-0309D793C824",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "1518EF7F-01EC-4C6D-8D9C-0309D793C824",
+            "WFControlFlowMode": 2
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://api.infiniteflight.com/public/v2/sessions/\uFFFC/flights/\uFFFC/route",
+                  "attachmentsByRange": {
+                     "{50, 1}": {
+                        "VariableName": "serverID",
+                        "Type": "Variable"
+                     },
+                     "{60, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "85CA41D7-6797-4DB4-9858-E52BF6B5B96C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFHTTPHeaders": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Authorization"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "Bearer \uFFFC",
+                              "attachmentsByRange": {
+                                 "{7, 1}": {
+                                    "VariableName": "auth",
+                                    "Type": "Variable"
+                                 }
+                              }
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "ShowHeaders": true,
+            "UUID": "016059F5-56DA-492D-96BC-82D21907FB12",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "85CA41D7-6797-4DB4-9858-E52BF6B5B96C",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "016059F5-56DA-492D-96BC-82D21907FB12",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFDictionaryKey": "result",
+            "UUID": "C41FC4F4-26BA-476C-A544-B4AC25A7C9C1"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "C41FC4F4-26BA-476C-A544-B4AC25A7C9C1",
+                     "Type": "ActionOutput",
+                     "OutputName": "Dictionary Value"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "7D1B0345-8261-47EF-890B-63353E658141",
+            "WFCondition": 100
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.SetValueIntent",
+         "WFWorkflowActionParameters": {
+            "overwriteStrategy": "alwaysAllow",
+            "UUID": "A693E500-4212-472D-84DC-2BAF1F5A7E0F",
+            "keyPath": {
+               "Value": {
+                  "string": "flights.\uFFFC.route",
+                  "attachmentsByRange": {
+                     "{8, 1}": {
+                        "VariableName": "id",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "valueConversionMode": "text",
+            "values": {
+               "Value": {
+                  "OutputUUID": "C41FC4F4-26BA-476C-A544-B4AC25A7C9C1",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "7D1B0345-8261-47EF-890B-63353E658141",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "7D1B0345-8261-47EF-890B-63353E658141",
+            "UUID": "0AB1E9B8-A2D8-47D3-87CD-FBEB7A603BD4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "78BD47D1-EBD9-47B5-BF57-54AEFC62CBAF",
+            "UUID": "D232A0F0-0E67-4E71-B699-249A88F4514F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+         "WFWorkflowActionParameters": {
+            "WFDelayTime": 15
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Waiting 15 seconds between pags of user flight data to avoid hitting the rate limit. :)"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.count",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "986E9072-3995-4928-B4D4-51FF4EC603FD",
+            "UUID": "5086FE10-54AE-4488-A658-F9ADDC521E96"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Note: unless you intend to git enable your flight data with Working Copy, the following actions are unnecessary. "
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+         "WFWorkflowActionParameters": {
+            "keyPath": "flights",
+            "UUID": "10BE5FCF-DE1D-455F-BB56-6EB1D0185E1B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.PrettyPrintDictionariesIntent",
+         "WFWorkflowActionParameters": {
+            "dictionaries": {
+               "Value": {
+                  "OutputUUID": "10BE5FCF-DE1D-455F-BB56-6EB1D0185E1B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "2F9728F4-0B8B-4A06-96FC-9468B9F717B3",
+            "AppIntentDescriptor": {
+               "TeamIdentifier": "YG56YK5RN5",
+               "BundleIdentifier": "com.sindresorhus.Actions",
+               "Name": "Actions",
+               "AppIntentIdentifier": "PrettyPrintDictionariesIntent"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.WriteFileIntent",
+         "WFWorkflowActionParameters": {
+            "createMissing": true,
+            "path": "flights.json",
+            "content": {
+               "Value": {
+                  "OutputUUID": "2F9728F4-0B8B-4A06-96FC-9468B9F717B3",
+                  "Type": "ActionOutput",
+                  "OutputName": "Pretty Print Dictionaries"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "4A492939-C7B3-474D-940C-7E11713CB3EA",
+            "repo": "Gist/Flights Gist",
+            "mode": "overwrite"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.CommitRepositoryIntent",
+         "WFWorkflowActionParameters": {
+            "message": {
+               "Value": {
+                  "string": "\uFFFC Pages",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "pages",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "repo": "Gist/Flights Gist",
+            "UUID": "8320018C-DD00-4552-B42F-C880E03D98E7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.appliedphasor.working-copy.PushRepositoryIntent",
+         "WFWorkflowActionParameters": {
+            "remote": " Default ",
+            "repo": "Gist/Flights Gist",
+            "UUID": "4C663853-60D5-4CAD-A7C8-B8341DFD495A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "These last three download a short and small (<70kb) audio file from my own server to notify those with extensive logs when the process has completed."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": "https://davidblue.wtf/aviation/concordeoverspeed.m4a",
+            "UUID": "4F8199B7-A97E-48DE-B67D-66C3EEEA31DC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "4F8199B7-A97E-48DE-B67D-66C3EEEA31DC",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "9ABB868A-9BCE-49FF-B1DA-365DBF26BDAD"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "9ABB868A-9BCE-49FF-B1DA-365DBF26BDAD",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 0,
+         "Text": "Set your Infinite Flight Live API Access Token. (Required)",
+         "DefaultValue": "0000"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 2,
+         "Text": "Set your Infinite Flight account's UUID (ID.) (Required - the quickest means I've found to determine this so far is to use liveflight.com to find yourself on the map, hit the button to share your flight, and inspect the URL.)",
+         "DefaultValue": ""
+      }
+   ],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}

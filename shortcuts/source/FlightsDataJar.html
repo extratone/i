@@ -1,0 +1,501 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Flights Data Jar</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 4px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 4px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding-right: 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 3px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	margin: 0 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+hr {
+	width: 0px;
+	height: 2px;
+	border: 1px solid #aaa;
+	margin: -4px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams"><b>Flights Data Jar</b> (<span class="magic" onclick="magictap(66)">67</span> actions, 52 KB)</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1307.2",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4292093695,
+   "WFWorkflowIconGlyphNumber": 59648
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFTextActionText",
+      "ActionIndex": <span class="magic" onclick="magictap(0)"><b>0</b></span>,
+      "Text": "Set your Infinite Flight Live API Access Token. (Required)",
+      "DefaultValue": "0000"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFTextActionText",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Set your Infinite Flight account's UUID (ID.) (Required - the quickest means I've found to determine this so far is to use liveflight.com to find yourself on the map, hit the button to share your flight, and inspect the URL.)",
+      "DefaultValue": ""
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFFolderContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Store and (optionally) git track the full suite of available flight data for your Infinite Flight account.
+
+See my blog post if you'd like: https://bilge.world/infinite-flight-api
+
+...and/or this Shortcut's Issue on my iOS-specific GitHub Repository: https://github.com/extratone/i/issues/293
+
+Contact me anytime! Infinite flight users can find my community profile here: http://community.infiniteflight.com/u/extratone
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+Mastodon: https://mastodon.social/@DavidBlue
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="button gUnknown" id="m1">
+1 com.alexhay.ToolboxProForShortcuts.CheckForUpdatesIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">currentVersion</div>
+			<div class="col2">1.0</div></div></div>
+<button class="button gYellow" id="m2">
+2 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">00</div></div>
+<hr><button class="gOrange" id="m3">
+3 Set Variable <span class="box">auth</span> to <span class="box"><span class="var"><b>[2 Text]</b></span></span></button>
+<button class="button gYellow" id="m4">
+4 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">0000</div></div>
+<hr><button class="gOrange" id="m5">
+5 Set Variable <span class="box">userID</span> to <span class="box"><span class="var"><b>[4 Text]</b></span></span></button>
+<button class="gBlue" id="m6">
+6 URL <span class="box">https://api.infiniteflight.com/public/v2/sessions</span>&#12288;&#187;</button>
+<hr><button class="button gGreen" id="m7">
+7 Get Contents of URL <span class="box"><span class="var"><b>[6 URL]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">HTTPHeaders</div>
+			<div class="col2">{  "Authorization": "Bearer <span class="var"><b>[auth]</b></span>" }</div></div>
+		<div class="row"><div class="col1">ShowHeaders</div>
+			<div class="col2">true</div></div></div>
+<hr><button class="gOrange" id="m8">
+8 Get Dictionary Value for <span class="box">result</span> in <span class="box"><span class="var"><b>[7 Contents of URL]</b></span></span>&#12288;&#187; <i>9</i> <span class="magic" onclick="magictap(12)">12</span> <span class="magic" onclick="magictap(15)">15</span></button>
+<hr><button class="gOrange" id="m9">
+9 Get List First Item from <span class="box"><span class="var"><b>[8 Dictionary Value]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gOrange" id="m10">
+10 Set Variable <span class="box">expert</span> to <span class="box"><span class="var"><b>[9 Item from List]</b></span></span></button>
+<button class="button gUnknown" id="m11">
+11 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">infinite.expert</div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[expert]</b></span></div></div></div>
+<button class="gOrange" id="m12">
+12 Get List <span class="box">Item At Index</span> <span class="box">2</span> from <span class="box"><span class="magic" onclick="magictap(8)"><b>[8 Dictionary Value]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gOrange" id="m13">
+13 Set Variable <span class="box">training</span> to <span class="box"><span class="var"><b>[12 Item from List]</b></span></span></button>
+<button class="button gUnknown" id="m14">
+14 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">infinite.training</div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[training]</b></span></div></div></div>
+<button class="gOrange" id="m15">
+15 Get List <span class="box">Item At Index</span> <span class="box">3</span> from <span class="box"><span class="magic" onclick="magictap(8)"><b>[8 Dictionary Value]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gOrange" id="m16">
+16 Set Variable <span class="box">casual</span> to <span class="box"><span class="var"><b>[15 Item from List]</b></span></span></button>
+<button class="button gUnknown" id="m17">
+17 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">infinite.casual</div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[casual]</b></span></div></div></div>
+<button class="button gYellow" id="m18">
+18 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Server IDs are now up to date.</div></div>
+<button class="gBlue" id="m19">
+19 URL <span class="box">https://api.infiniteflight.com/public/v2/users/<span class="var"><b>[userID]</b></span>/flights</span>&#12288;&#187;</button>
+<hr><button class="button gGreen" id="m20">
+20 Get Contents of URL <span class="box"><span class="var"><b>[19 URL]</b></span></span>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">HTTPHeaders</div>
+			<div class="col2">{  "Authorization": "Bearer <span class="var"><b>[auth]</b></span>" }</div></div>
+		<div class="row"><div class="col1">ShowHeaders</div>
+			<div class="col2">true</div></div></div>
+<hr><button class="gOrange" id="m21">
+21 Get Dictionary from <span class="box"><span class="var"><b>[20 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gOrange" id="m22">
+22 Get Dictionary Value for <span class="box">result.totalPages</span> in <span class="box"><span class="var"><b>[21 Dictionary]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gOrange" id="m23">
+23 Set Variable <span class="box">pages</span> to <span class="box"><span class="var"><b>[22 Dictionary Value]</b></span></span></button>
+<button class="button gYellow" id="m24">
+24 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Because the initial index of user flights is paginated, we need to repeat the main (following) loop for each page of your flight results.</div></div>
+<button class="button gGray nonbottom" id="m25">
+25 Repeat <span class="box"><span class="var"><b>[pages]</b></span></span> Times</button>
+	<div class="content contentloop">
+<button class="gBlue inside" id="m26">
+26 URL <span class="box">https://api.infiniteflight.com/public/v2/users/<span class="var"><b>[userID]</b></span>/flights?page=<span class="var"><b>[Repeat Index]</b></span></span>&#12288;&#187;</button>
+<hr><button class="button gGreen inside" id="m27">
+27 Get Contents of URL <span class="box"><span class="var"><b>[26 URL]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">HTTPHeaders</div>
+			<div class="col2">{  "Authorization": "Bearer <span class="var"><b>[auth]</b></span>" }</div></div>
+		<div class="row"><div class="col1">ShowHeaders</div>
+			<div class="col2">true</div></div></div>
+<hr><button class="gOrange inside" id="m28">
+28 Get Dictionary Value for <span class="box">result.data</span> in <span class="box"><span class="var"><b>[27 Contents of URL]</b></span></span>&#12288;&#187;</button>
+<hr><button class="button gGray nonbottom inside" id="m29">
+29 Repeat[2] with Each in <span class="box"><span class="var"><b>[28 Dictionary Value]</b></span></span></button>
+	<div class="content contentloop dashed inside">
+<button class="gOrange inside" id="m30">
+30 Get Dictionary Value for <span class="box">id</span> in <span class="box"><span class="var"><b>[Repeat Item 2]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gOrange inside" id="m31">
+31 Set Variable <span class="box">id</span> to <span class="box"><span class="var"><b>[30 Dictionary Value]</b></span></span></button>
+<button class="button gUnknown inside" id="m32">
+32 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">flights.<span class="var"><b>[id]</b></span></div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="var"><b>[Repeat Item 2]</b></span></div></div></div>
+<button class="gOrange inside" id="m33">
+33 Get Dictionary Value for <span class="box">server</span> in <span class="box"><span class="var"><b>[Repeat Item 2]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gYellow inside" id="m34">
+34 Replace Text <span class="box"> Server</span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[33 Dictionary Value]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gYellow inside" id="m35">
+35 Change <span class="box"><span class="var"><b>[34 Updated Text]</b></span></span> to <span class="box">lowercase</span>&#12288;&#187;</button>
+<hr><button class="gOrange inside" id="m36">
+36 Set Variable <span class="box">servername</span> to <span class="box"><span class="var"><b>[35 Updated Text]</b></span></span></button>
+<button class="button gUnknown inside" id="m37">
+37 dk.simonbs.DataJar.GetValueIntent&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">infinite.<span class="var"><b>[servername]</b></span></div></div></div>
+<hr><button class="gOrange inside" id="m38">
+38 Set Variable <span class="box">serverID</span> to <span class="box"><span class="var"><b>[37 Value]</b></span></span></button>
+<button class="gBlue inside" id="m39">
+39 URL <span class="box">https://api.infiniteflight.com/public/v2/sessions/<span class="var"><b>[serverID]</b></span>/flights/<span class="var"><b>[id]</b></span>/flightplan</span>&#12288;&#187;</button>
+<hr><button class="button gGreen inside" id="m40">
+40 Get Contents of URL <span class="box"><span class="var"><b>[39 URL]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">HTTPHeaders</div>
+			<div class="col2">{  "Authorization": "Bearer <span class="var"><b>[auth]</b></span>" }</div></div>
+		<div class="row"><div class="col1">ShowHeaders</div>
+			<div class="col2">true</div></div></div>
+<hr><button class="gOrange inside" id="m41">
+41 Get Dictionary Value for <span class="box">result</span> in <span class="box"><span class="var"><b>[40 Contents of URL]</b></span></span>&#12288;&#187; <i>42</i> <span class="magic" onclick="magictap(43)">43</span></button>
+<hr><button class="button gGray nonbottom inside" id="m42">
+42 If <span class="box"><span class="var"><b>[41 Dictionary Value]</b></span></span> <span class="box">has any value</span></button>
+	<div class="content contentloop inside">
+<button class="button gUnknown inside" id="m43">
+43 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">flights.<span class="var"><b>[id]</b></span>.plan</div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="magic" onclick="magictap(41)"><b>[41 Dictionary Value]</b></span></div></div></div></div>
+<button class="gGray nonbottom nontop inside" id="m44">
+44 Otherwise</button>
+	
+<button class="gGray nontop inside" id="m45">
+45 End If</button>
+<button class="gBlue inside" id="m46">
+46 URL <span class="box">https://api.infiniteflight.com/public/v2/sessions/<span class="var"><b>[serverID]</b></span>/flights/<span class="var"><b>[id]</b></span>/route</span>&#12288;&#187;</button>
+<hr><button class="button gGreen inside" id="m47">
+47 Get Contents of URL <span class="box"><span class="var"><b>[46 URL]</b></span></span>&#12288;&#187;</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">HTTPHeaders</div>
+			<div class="col2">{  "Authorization": "Bearer <span class="var"><b>[auth]</b></span>" }</div></div>
+		<div class="row"><div class="col1">ShowHeaders</div>
+			<div class="col2">true</div></div></div>
+<hr><button class="gOrange inside" id="m48">
+48 Get Dictionary Value for <span class="box">result</span> in <span class="box"><span class="var"><b>[47 Contents of URL]</b></span></span>&#12288;&#187; <i>49</i> <span class="magic" onclick="magictap(50)">50</span></button>
+<hr><button class="button gGray nonbottom inside" id="m49">
+49 If <span class="box"><span class="var"><b>[48 Dictionary Value]</b></span></span> <span class="box">has any value</span></button>
+	<div class="content contentloop inside">
+<button class="button gUnknown inside" id="m50">
+50 dk.simonbs.DataJar.SetValueIntent</button>
+	<div class="content inside">
+		<div class="row"><div class="col1">overwriteStrategy</div>
+			<div class="col2">alwaysAllow</div></div>
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">flights.<span class="var"><b>[id]</b></span>.route</div></div>
+		<div class="row"><div class="col1">valueConversionMode</div>
+			<div class="col2">text</div></div>
+		<div class="row"><div class="col1">values</div>
+			<div class="col2"><span class="magic" onclick="magictap(48)"><b>[48 Dictionary Value]</b></span></div></div></div></div>
+<button class="gGray nonbottom nontop inside" id="m51">
+51 Otherwise</button>
+	
+<button class="gGray nontop inside" id="m52">
+52 End If</button></div>
+<button class="gGray nontop inside" id="m53">
+53 End Repeat[2] with Each&#12288;▵<span class="magic" onclick="magictap(29)">29</span></button>
+<button class="gGray inside" id="m54">
+54 Wait <span class="box">15</span> seconds</button>
+<button class="button gYellow inside" id="m55">
+55 Comment</button>
+	<div class="content inside commentcontent">
+		<div class="col2">Waiting 15 seconds between pags of user flight data to avoid hitting the rate limit. :)</div></div></div>
+<button class="gGray nontop" id="m56">
+56 End Repeat Times&#12288;▵<span class="magic" onclick="magictap(25)">25</span></button>
+<button class="button gYellow" id="m57">
+57 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Note: unless you intend to git enable your flight data with Working Copy, the following actions are unnecessary. </div></div>
+<button class="button gUnknown" id="m58">
+58 dk.simonbs.DataJar.GetValueIntent&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">keyPath</div>
+			<div class="col2">flights</div></div></div>
+<hr><button class="button gUnknown" id="m59">
+59 com.sindresorhus.Actions.PrettyPrintDictionariesIntent&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">dictionaries</div>
+			<div class="col2"><span class="var"><b>[58 Value]</b></span></div></div></div>
+<hr><button class="button gUnknown" id="m60">
+60 com.appliedphasor.working-copy.WriteFileIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">createMissing</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">path</div>
+			<div class="col2">flights.json</div></div>
+		<div class="row"><div class="col1">content</div>
+			<div class="col2"><span class="var"><b>[59 Pretty Print Dictionaries]</b></span></div></div>
+		<div class="row"><div class="col1">repo</div>
+			<div class="col2">Gist/Flights Gist</div></div>
+		<div class="row"><div class="col1">mode</div>
+			<div class="col2">overwrite</div></div></div>
+<button class="button gUnknown" id="m61">
+61 com.appliedphasor.working-copy.CommitRepositoryIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">message</div>
+			<div class="col2"><span class="var"><b>[pages]</b></span> Pages</div></div>
+		<div class="row"><div class="col1">repo</div>
+			<div class="col2">Gist/Flights Gist</div></div></div>
+<button class="button gUnknown" id="m62">
+62 com.appliedphasor.working-copy.PushRepositoryIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">remote</div>
+			<div class="col2"> Default </div></div>
+		<div class="row"><div class="col1">repo</div>
+			<div class="col2">Gist/Flights Gist</div></div></div>
+<button class="button gYellow" id="m63">
+63 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">These last three download a short and small (&lt;70kb) audio file from my own server to notify those with extensive logs when the process has completed.</div></div>
+<button class="gBlue" id="m64">
+64 URL <span class="box">https://davidblue.wtf/aviation/concordeoverspeed.m4a</span>&#12288;&#187;</button>
+<hr><button class="gGreen" id="m65">
+65 Get Contents of URL <span class="box"><span class="var"><b>[64 URL]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gRed" id="m66">
+66 Play Sound <span class="box"><span class="var"><b>[65 Contents of URL]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
