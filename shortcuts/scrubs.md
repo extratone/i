@@ -178,6 +178,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [RIP0NYXHEART](https://www.icloud.com/shortcuts/c7c8f3865b3f455787c6e2017dd16699)
 - [Meme Factory](https://www.icloud.com/shortcuts/8bc0a89af1994128a5a8b57de7b2abc4)
 - [anchorday1](https://www.icloud.com/shortcuts/0e80127daf494cfb94721d7ce5477229)
+- [pin](https://www.icloud.com/shortcuts/2c177ad4f63849c6bf5a3c4b2d023563)
 
 ## Okay
 
