@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `04272023-102602`
+Updated `08102023-130615`
 
 [**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
@@ -49,6 +49,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [Text Replacement](https://www.icloud.com/shortcuts/e6d56b3fe8bc40639a60f166315f255b)
 - [gps](https://www.icloud.com/shortcuts/c22c676ab4ee4b98b5a49b6112957b3c)
 - [sl](https://www.icloud.com/shortcuts/7c3946b289a846cb9e63f0bdade93fa5) (The best Odesli quick share automation in history.)
+- [sl 2023](https://www.icloud.com/shortcuts/f366aeaf55df4fb6bafdfa0a9c8aafb5)
 - [Unpaywall](https://www.icloud.com/shortcuts/5ba5aa17593e4524843d69866800adb2)
 - [Unpaywall 2](https://www.icloud.com/shortcuts/facc41cd490647fbb554a8babcfc0adf)
 - [TrippleTap Reminders](https://www.icloud.com/shortcuts/d17211cfac484c7f87ebd16b164ebce3)
