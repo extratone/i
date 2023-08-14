@@ -1,0 +1,236 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4274264319,
+      "WFWorkflowIconGlyphNumber": 61554
+   },
+   "WFWorkflowClientVersion": "1505.3",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+      "Parameters": {}
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Create an Apple Reminder with description from a Mastodon URL.\n\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nMastodon: https://mastodon.social/@DavidBlue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "dk.simonbs.Retoot.CreateQuoteIntent",
+         "WFWorkflowActionParameters": {
+            "url": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ExtensionInput"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "CustomOutputName": "image",
+            "UUID": "2C01FDCF-0785-461B-8720-21AC79E78C88"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+         "WFWorkflowActionParameters": {
+            "WFCalendarItemTitle": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "image",
+                        "OutputUUID": "2C01FDCF-0785-461B-8720-21AC79E78C88",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "content"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFAlertEnabled": "No Alert",
+            "WFCalendarItemNotes": {
+               "Value": {
+                  "string": "Post ID: `\uFFFC`\nAuthor URL: \uFFFC\nPost Date: '\uFFFC'",
+                  "attachmentsByRange": {
+                     "{10, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "image",
+                        "OutputUUID": "2C01FDCF-0785-461B-8720-21AC79E78C88",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "postID"
+                           }
+                        ]
+                     },
+                     "{25, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "image",
+                        "OutputUUID": "2C01FDCF-0785-461B-8720-21AC79E78C88",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "authorURL"
+                           }
+                        ]
+                     },
+                     "{39, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "image",
+                        "OutputUUID": "2C01FDCF-0785-461B-8720-21AC79E78C88",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "postCreatedAt"
+                           },
+                           {
+                              "WFDateFormatStyle": "Custom",
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFDateFormat": "MMddYYYY-HHmmss",
+                              "WFISO8601IncludeTime": false
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFCalendarDescriptor": {
+               "Identifier": "<x-apple-reminderkit://REMCDList/48C5A6F7-C138-4967-A922-B8CF012435FF>",
+               "Title": "Leonard",
+               "IsAllCalendar": false
+            },
+            "UUID": "53F09416-25AB-4C33-ABC4-C1094ABB1719",
+            "WFCalendarItemCalendar": "Leonard",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "image",
+                        "OutputUUID": "2C01FDCF-0785-461B-8720-21AC79E78C88",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "postURL"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFImages": {
+               "Value": {
+                  "Type": "ActionOutput",
+                  "OutputName": "image",
+                  "OutputUUID": "2C01FDCF-0785-461B-8720-21AC79E78C88",
+                  "Aggrandizements": [
+                     {
+                        "Type": "WFPropertyVariableAggrandizement",
+                        "PropertyName": "image"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFPriority": "None"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "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\r\nxAAAAAAAMWhkbHIAAAAAAAAAAHNvdW4AAAAAAAAAAAAAAABDb3JlIE1lZGlhIEF1ZGlvAAAAAbNt\r\naW5mAAAAEHNtaGQAAAAAAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAA\r\nAXdzdGJsAAAAZ3N0c2QAAAAAAAAAAQAAAFdtcDRhAAAAAAAAAAEAAAAAAAAAAAACABAAAAAArEQA\r\nAAAAADNlc2RzAAAAAAOAgIAiAAAABICAgBRAFAAYAAAD6AAAA+gABYCAgAISEAaAgIABAgAAABhz\r\ndHRzAAAAAAAAAAEAAAArAAAEAAAAABxzdHNjAAAAAAAAAAEAAAABAAAAKwAAAAEAAADAc3RzegAA\r\nAAAAAAAAAAAAKwAAAAYAAADRAAABawAAAMkAAAC4AAAApAAAALoAAAC5AAAAtwAAALQAAAC/AAAA\r\nxwAAAOYAAADNAAAA2wAAAL0AAADuAAAA7wAAAPEAAADyAAABegAAAYUAAAF9AAABdQAAAXMAAAF1\r\nAAABdQAAAXUAAAF3AAABfQAAAZAAAAGIAAABgwAAAXgAAAGAAAABhwAAAXwAAAF8AAABdgAAAXMA\r\nAAFvAAABWAAAAGgAAAAUc3RjbwAAAAAAAAABAAAALAAAAPp1ZHRhAAAA8m1ldGEAAAAAAAAAImhk\r\nbHIAAAAAAAAAAG1kaXIAAAAAAAAAAAAAAAAAAAAAAMRpbHN0AAAAvC0tLS0AAAAcbWVhbgAAAABj\r\nb20uYXBwbGUuaVR1bmVzAAAAFG5hbWUAAAAAaVR1blNNUEIAAACEZGF0YQAAAAEAAAAAIDAwMDAw\r\nMDAwIDAwMDAwODQwIDAwMDAwMzQwIDAwMDAwMDAwMDAwMEEwODAgMDAwMDAwMDAgMDAwMDAwMDAg\r\nMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDA=",
+            "UUID": "54563C47-2BC8-4DC1-810B-8A3A14E2146B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.base64encode",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "54563C47-2BC8-4DC1-810B-8A3A14E2146B",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFEncodeMode": "Decode",
+            "UUID": "0A5B755B-068C-4574-A0CF-3D1EC7588E1A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "0A5B755B-068C-4574-A0CF-3D1EC7588E1A",
+                  "Type": "ActionOutput",
+                  "OutputName": "Base64 Encoded"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFCalendarDescriptor",
+         "ActionIndex": 2,
+         "Text": "Choose a list in Apple Reminders in which to add new Mastodon post reminders. (Optional)",
+         "DefaultValue": {
+            "Identifier": "<x-apple-reminderkit://REMCDList/48C5A6F7-C138-4967-A922-B8CF012435FF>",
+            "Title": "Leonard",
+            "IsAllCalendar": false
+         }
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFAlertEnabled",
+         "ActionIndex": 2,
+         "Text": "Choose whether or not new Post Reminders include an alert. (Optional)",
+         "DefaultValue": "No Alert"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFPriority",
+         "ActionIndex": 2,
+         "Text": "Choose the priority of new Post Reminders. (Optional)",
+         "DefaultValue": "None"
+      },
+      {
+         "ParameterKey": "WFFlag",
+         "Category": "Parameter",
+         "ActionIndex": 2,
+         "Text": "Choose whether or not new Post Reminders are flagged. (Optional)"
+      },
+      {
+         "ParameterKey": "WFTags",
+         "Category": "Parameter",
+         "ActionIndex": 2,
+         "Text": "Choose tags in Apple Reminders to attach to new Post Reminders. (Optional)"
+      }
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [
+      "ActionExtension"
+   ],
+   "WFWorkflowHasShortcutInputVariables": true
+}
