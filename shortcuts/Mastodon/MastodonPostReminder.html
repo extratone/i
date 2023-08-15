@@ -1,0 +1,522 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Mastodon Post Reminder</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 4px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 4px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding-right: 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 3px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	white-space: pre-wrap;
+	margin: 0 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+hr {
+	width: 0px;
+	height: 2px;
+	border: 1px solid #aaa;
+	margin: -4px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams"><b>Mastodon Post Reminder</b> (6 actions, 30 KB)</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1505.3",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4274264319,
+   "WFWorkflowIconGlyphNumber": 61554
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFCalendarDescriptor",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Choose a list in Apple Reminders in which to add new Mastodon post reminders. (Optional)",
+      "DefaultValue": {
+         "Identifier": "<x-apple-reminderkit://REMCDList/48C5A6F7-C138-4967-A922-B8CF012435FF>",
+         "Title": "Leonard",
+         "IsAllCalendar": false
+      }
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFAlertEnabled",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Choose whether or not new Post Reminders include an alert. (Optional)",
+      "DefaultValue": "No Alert"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFPriority",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Choose the priority of new Post Reminders. (Optional)",
+      "DefaultValue": "None"
+   },
+   {
+      "ParameterKey": "WFFlag",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Choose whether or not new Post Reminders are flagged. (Optional)"
+   },
+   {
+      "ParameterKey": "WFTags",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Choose tags in Apple Reminders to attach to new Post Reminders. (Optional)"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1113,
+"WFWorkflowMinimumClientVersionString": "1113",
+"WFWorkflowNoInputBehavior": {
+   "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+   "Parameters": {}
+},
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "ActionExtension"
+]
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Create an Apple Reminder with description from a Mastodon URL.
+
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+Mastodon: https://mastodon.social/@DavidBlue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="button gUnknown" data-uuid="2C01FDCF-0785-461B-8720-21AC79E78C88" id="m1">
+1 dk.simonbs.Retoot.CreateQuoteIntent <b>&#12288;➔ image</b>&#12288;&#187;</button>
+	<div class="content">
+		<div class="row"><div class="col1">url</div>
+			<div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div></div>
+<hr><button class="button " data-uuid="53F09416-25AB-4C33-ABC4-C1094ABB1719" id="m2">
+2 Add New Reminder <span class="box"><span class="var"><b>[1 image</b>’s content<b>]</b></span></span> to <span class="box">Mastodon</span> with No Alert</button>
+	<div class="content">
+		<div class="row"><div class="col1">Tags</div>
+			<div class="col2">Mastodon, Social, Automation</div></div>
+		<div class="row"><div class="col1">CalendarItemNotes</div>
+			<div class="col2">Post ID: `<span class="var"><b>[1 image</b>’s postID<b>]</b></span>`
+Author URL: <span class="var"><b>[1 image</b>’s authorURL<b>]</b></span>
+Post Date: '<span class="var"><b>[1 image</b>’s postCreatedAt{"Date Style":"Custom","WFDateFormat":"MMddYYYY-HHmmss","WFISO8601IncludeTime":false}<b>]</b></span>'</div></div>
+		<div class="row"><div class="col1">CalendarDescriptor</div>
+			<div class="col2">{  "Identifier": "&lt;x-apple-reminderkit://REMCDList/E63E46EF-6967-4CE2-A988-937E1E1322CE>",
+   "Title": "Mastodon",
+   "IsAllCalendar": false
+}</div></div>
+		<div class="row"><div class="col1">Images</div>
+			<div class="col2"><span class="var"><b>[1 image</b>’s image<b>]</b></span></div></div>
+		<div class="row"><div class="col1">URL</div>
+			<div class="col2"><span class="var"><b>[1 image</b>’s postURL<b>]</b></span></div></div></div>
+<button class="button gYellow" data-uuid="54563C47-2BC8-4DC1-810B-8A3A14E2146B" id="m3">
+3 Text&#12288;&#187;</button>
+	<div class="content">
+		<div class="col2">AAAAHGZ0eXBNNEEgAAAAAE00QSBpc29tbXA0MgAAAAFtZGF0AAAAAAAAMMchAANAaBwhDFO9wo0F<b>\u{D}</b>
+Cyppk4D1KDIVGLlXYmJ/kHgIhjLNAPyejA055JvikjxiFJJNlMnaqVmu6BkIDCZbxPa4AiNZPWcI<b>\u{D}</b>
+JZiEQy+WIZHQkNrtCGarkJNshh4ZPE8CJ7/BkId8hSkPCSB4n9f/X5zWInbbi0hmDmD1yqHuPvsQ<b>\u{D}</b>
++AAJ872vsfq/7e1ushYJCMaKADDCyYiwEvfY9vbt5+PkyqGRuA06XsEZGJMINTy/7/fgYYNT28/B<b>\u{D}</b>
+iMEKyLxaAS2ES6c+BghabYgAc6UD8lyrsTE/yDwFwCEMU9XsQgURg1z0PfXa3ThNba3IPm1Ah0jI<b>\u{D}</b>
+kLlehXEkus28QvNI4lRPzN8OCfozl5Ohx0g/xUR5r4NJ8ex5CMwhM5eQ6ZxUjXISc6UwEHZEhnp9<b>\u{D}</b>
+cwyZnE7d0nAuErT5lRb88nSnkRzCBo+PFkIUslIWSEIiM/GpC/hydTLVlIJCvErDSaDVGi7xkK+B<b>\u{D}</b>
+oirbuWJ43IE5hiO6hkx2rQr4/xZOdbrYdbvmSFa6idOqSzgSDKeqSdDIksKInFnk9cImvek9rriG<b>\u{D}</b>
+hpkdJgyez1pNE+7rVDSqImEToJxGEZNAnjsTd8u7rRK/RJRoZC9KINxk+6QmOGSh1SFTKETai7s+<b>\u{D}</b>
+RvBIYvGTrRJ0uKks/gSEWDYsao2koEciwxFrCc3Jk94glImkD6shk2kMPOI1XETxyGJypLFTZ/jZ<b>\u{D}</b>
+mJtuZPz5KZeI24FnSya0Y/nSpTyFhyGQtyjLJNERM6V4XbHFaSmEATdZTn420BUrKB+Q4CEMU8XW<b>\u{D}</b>
+hwMDCIHP681KwZNCBmXR/sBDy+XBOMeXklRcFHvbO5bRik+GZUnaqkxpJp3BOdXJ1ZZAcedKZGbL<b>\u{D}</b>
+oOCQj3yGDzZCSP95dCSEdxBEHADaBXJPuVMdTk0DttiUM8Q+HXPsOMr01+6dF6NWukbWDVtgZfkR<b>\u{D}</b>
+1OgSPXdC5G1I2FiJVcgYB+AQ0r8fK9bl4uBXsVE1WjKfIxgZdCA8ZNvsnxCR9hsU0CC/wOMohKdy<b>\u{D}</b>
+xHdX3690BTc6wheM+5znCNGsqOsEuH5DgCEMVFXWiqELPenc8XR8OIJXHrQCZIs8TBXu7PXKO2fb<b>\u{D}</b>
+7vp1jAnwWmCDJNYEkbL35blL1Umc5Nyfatw/fNCfveOsoQmtNau3By4GT6vTXFL6jx26zJhZZ4XF<b>\u{D}</b>
+sXEPqlL5DHj8n9dlCPEJAwAFU4exXDsnBwkxG+TSMVOdgWTz3kMX/mJSPyTlBlyuHN/t/M8fLDOQ<b>\u{D}</b>
+R4/nYPJCp2y1OO7GhGs/HCrZVBLKEUirBlChtfo3j0b6ICjD8hwhDFRVrpcFCzvXh+SXlxA4DSwR<b>\u{D}</b>
+YHdN+mDSVjDpbmvKoiKl0WnIA7Fbnc0yHh9PYX5vmG6B/+czESYzSW21ZlqUf8R8HLjDZZg1BrfM<b>\u{D}</b>
+eimvKKovHd1mntUJgZ3uidUwTa74n/LbLMxZ7XWwqrMy7Y+u5Spn4/R0u1zbOCUUzv2djo5Q2ZLk<b>\u{D}</b>
+bSFqNUjmvyZM6MeGXkW7wg00sGGg2yzLjjG51OH5DiEMVD3Gk2ECiIHj8z1nboElJrHWtfHsFY3c<b>\u{D}</b>
+oZc8y7IlJdOw79STWnBYxOo2zUybV/Q3Yt3k4Yv+Fmc9iZQgIRMhZXHVsg0o4FbNuSL69we2SARP<b>\u{D}</b>
+CHqMpt+5f1I0R6O+fxiDHOK77JIYleXfcfWOXjjHq3xEx8LNtTEGn5lWeMWTQMYegZcszfwm/tN8<b>\u{D}</b>
+eByYNXGnVxXQ2ZYyHBZbrAOb9wSQ8GcM5856e3J9QSzFFbbq6yigqACAow/IcCEMVF3sDCMGm2/X<b>\u{D}</b>
+jHEpllypWuOL1+4KBN8tc3tIwz41xLYvEMgvIZ+y6e/ZcZHkHWHmFu+tAkm7yxJHp/8Lo1FB3liX<b>\u{D}</b>
+nv/lImTg01mayQyFE7HSZjByhFQSj9dN3zOY2qyjpjAVA6MmtxeOvK0aaps0eITfRmmOjEFIojym<b>\u{D}</b>
+zdmdwsHnNUNhviPTtTI/hpYDW4tYwdR3YOlbSdjzanjS/RlPKgLTTfxDL1M02dZOmNhCgC5YACop<b>\u{D}</b>
+g/IcIQxUVewsZfrnu6ek9kVVE86voWI3ZuyarcXveBkzyqcwdJANwjmdZtD/EnGpb/yK2M+ebiYe<b>\u{D}</b>
+Tblfzrgi1IGr22Ogo66H8QU4BC1dMjWIXFcHiEno0NJU3ugeClJYLtlSDpycOlTV0xxZUqrJhbSK<b>\u{D}</b>
+50iLkRatEJukwMgLLpSPYy0fHm/kfhYO9bAUHwrJnTiQ3S12rzM2oI/lte2bYRGtcUONuk5rOXvT<b>\u{D}</b>
+MSh2KOsx3R5MSqAUofkOIQxUPeaEFmX9seG8yr6lZeqkcTXAIUwcQz951gRc7wT/SPDMkEnyyfZJ<b>\u{D}</b>
+3tfzpBUTnWmOK1sYdeQm4kxDcbCpxBqLPNz9VyY8wB1GPIprCdlFPQCA5ezqdasJFE/RGAlhkcx4<b>\u{D}</b>
+XEI2YnK7bhIR1Hk6oI/5o52FbafWvHYemZJESxCXtzVuyXmQCGudlGqnI/X1KnrHito4fEnBjbf4<b>\u{D}</b>
+k2kvkg1NXh8dbBaZBJhbVJkpCT4p8PyHIQxUJeaECBEDE+Z48Vh21cZKi2r6n+wUTj/nPvc/RWxS<b>\u{D}</b>
+Ump+5dj2ge36xJWAUfBSZYf33MWfeJxdB/OTwGUo9vatdSqM/38vS+36pektlzUUduirVahsxbZW<b>\u{D}</b>
+nU7JDbiwwO/a0zDPlPIq8ZgQLc8UETyE+qM4GehlHO1xcRtRLaisbxMZQnk7SexSBSw1Wg0HVwcK<b>\u{D}</b>
+3BnAQCpcDGwrKbhMNWxOIhAalry+wS5NlI4atqzDMcCKLiftqsoVDdQh+Q4hDFP15gQFEoMfLv35<b>\u{D}</b>
+3l1trQLpHlf/I2MedOltWYfUeprKn0Xn7v2/3pQO96sbdoujZAt4qyY38Qyt/y5ZsOq3G59WKC97<b>\u{D}</b>
+n18PRPfhHEWdLMW1iVar9c6nJSvJbQDbgeADEHWZw+1OvZhcjnqGfbYMbvxjA5Z7PGTdLh3XE6oV<b>\u{D}</b>
+mNzt8Y9wSZYmECQViGMUHKkp4nDajTu2qTyDaaUg/CzTFsJtYceQqR+M6rEJbnV53r/Pe0q6vch5<b>\u{D}</b>
+7tVBilVpUwUrQqE6H5DgIQxUPewGRREDG49e9VlFxI1SNOuvxLGxgGA8v9UzoD9VwXtogiX9WulN<b>\u{D}</b>
+bRidvE/ahLfPQ7ynO2qPqv0jAtdLLrzwn6g7GvmarECOUVS2tgHpUsFJbRY2THEYIowgc8zG4kMS<b>\u{D}</b>
+Sw/7B3jxB56G6AVmur9NvlTIIXazIImmKCo4vuBHA90ULFSO1sPpWWNAZGzsgm9k9wCl5CXKcWjR<b>\u{D}</b>
+2XHRIJbAwDzelNbsbvaxkm8GzI8LNdaOIZigf5J/4y/UZox6AF7mAzYo52LbCzONfRtqjnFDZxew<b>\u{D}</b>
+ZlrdSs3P56/WdOoAWoA/IcAhDFQ9xodloQFEYOD9mV3kp02l2vv4mr/yoELBNrSJOoyZoH3nJjST<b>\u{D}</b>
+8o+u6LfokuWYyX43VpBTScJ01UmkXXXEyOc2hNgKc3dqG4XvN7ycWMmCmaShiLmXCFoyniuCWfGv<b>\u{D}</b>
+7wE3q73BmKLtXTOQvFHccClprkuR1BM3kkdOkd+tvZ9x42lbeio4Y4Bleajox4y9bISGwBgr/CHK<b>\u{D}</b>
+sjw1W0uQJG7ejx8xaCpgHpwazrsixSygRls4cZnHi8L40FwdES/kdlXDxs8iYMdEH5DgIQxUNeaE<b>\u{D}</b>
+BCIDm8e/ibOTpLXCr4nH+gFSYOXjxp+X+2ehdV1iql7OFnURDMq5at8vh9RDoIeUeMW9B66DdWyu<b>\u{D}</b>
+4kTjjKETqpwKhTFWh6GjMj5TNIKqpHZndhKVL2m43W5kFlRVKp7/+515eV8ZcjO8o3Y4O7LorVin<b>\u{D}</b>
+Cl1VyM/Y3PCWTFaCoVW3ZCiU8eLO5QVeGk2r1RB30kep6dboueR5Oj1KJr0goHu1lOeLdHuGW2mU<b>\u{D}</b>
+5hlD1lsSjE47YcGtZBFxczNnMrL8giadHN6mygj0nqhqQdo81Rn6MPyHIQxUFcYHZYEBhGDT85Ps<b>\u{D}</b>
+W8LuGOAdT/agI64np/4ciJkzD2rZWVx+NT++UI5FtDdX3eoazqxCkfbJUK1SaMnhNjLpDxnXrgjz<b>\u{D}</b>
+tiEsNfVpHmaCpqMTaUMZxBFCJ1XRFqkCuY2JDJym4v/n4B4YNNZ/c8hiPLPJQh3FEdTU2+3HS8Rm<b>\u{D}</b>
+vTdjQk0Fc1MNDQ0JHJjf+B0yearYwVxl+N77bCRQcAxoWnyPyWlSG2YPhq3oGXjhJEpzpzBIAawJ<b>\u{D}</b>
+0PyHIQxT1ewsz9uO/scPWavWLc6t1ONAj323gTCSKBCvpalbYoiYoxO1nSc1diQc7LJ8eXzPbpZ9<b>\u{D}</b>
+rElts1tam+4VI7om62kOLcSlc0Y1TJUb0zyGPotXCagwdTLRdUScbsHXcx5+xzHN2mI1l586Y5dz<b>\u{D}</b>
+N1to7p3CcgEIJqERpcV2Cs2C/4Kw5E1rAv7hGZP5spQ5uFih//azQfR9Nz8yxncHusfzFVuts9J9<b>\u{D}</b>
+YZDWTLcI1YPSOTxSuXWkTjI/BuIyekkB1Zj7/ncGXmqQ/yn6mGfqMu8kXFqX7z3DE4D5xQYbmyCL<b>\u{D}</b>
+8BinWmSYs+FwSofkOCEMU+3sDCEHn5nqtsTEcd2kpxOL/AI8+dRMHBbpPZ6wldQQiQyFqUTkXCci<b>\u{D}</b>
+ba9KUd9g2uJzEXGQr76ibF2BIBf//kJLscEMViSfR+RT7JJsiksFCIMDENo2rDsceQ0EltoaKQjD<b>\u{D}</b>
++qc86YdLd8m5J//MqEsZ9CLnj46w54Ufftr8hkBvSXMup9pdi/L+vvu7x2DB/jsfHesRznmZdyL/<b>\u{D}</b>
+S/IbcIhH9eVvK6lG4ohZBMQIlmDuAkNn9ThBbg00/M8ZbfUEzR38puiSPaoCq4fm2LLHODqnu2ph<b>\u{D}</b>
+hkeO3NdtrOi7zccPsFwJk4gWJQEwH5DgIQxUFewKIQEIgYe7nedyrjm+jKu6nE6+rAjgJZIU8g9h<b>\u{D}</b>
+KESUAEXRPQyN+XYlMlibRPhGfI0qRBtbK2KI1lxt+oJqRxPJhiE2cS3N/JoiciDlSkRGSxV246fT<b>\u{D}</b>
+51h1yshnT7LUP0tVOJwv1bt8mVRy1LtFt3B+1xbmnzbj+UTUGDXPrGL8x8setbJ6gzk9Vs63zbcS<b>\u{D}</b>
+vrpHOMlx1I8MhvrX+tHsa9tM8kf3tRd/dN/SMPjnqmqvErxdsX2ImxGG2Bffiu6NNaRvbkntLEco<b>\u{D}</b>
+yVFlWOYJOZK2xZTU5ErzvaJ78vu+GtnBD4IAJY2dgAwE6H5DgCEMVDXsCiQGlbemZMu2WWtWuE/V<b>\u{D}</b>
+gVjTraH3LZ0Hy8lcTnWdUyCQMETn8AnzG/q7prkmXCGCIRAP8rnZtCnJz2EpWEtQxIZKnk8NzoIm<b>\u{D}</b>
+QWOpOYTdPyBW9qwYRM66xC55HR1EPYpBKpB/tUz/j5078U6S8Quw8tvatkVkj6jiNK4fbxuMJeHg<b>\u{D}</b>
+zZOgyC/5UBzP09oXmfPP1CI+X/et05xfGx7GH7p2v9vsYPcUOgfzPxuPwTIPN2+9lwB9XB3jZMCl<b>\u{D}</b>
+E9VfBb+hXGXplEk8JmOO+HTdtnv41UR27fEQvl3W3FX+uRN1eWIXe6sQp+FQBAChD8hwIQxTvewG<b>\u{D}</b>
+IQGIwYv1syY9aibviN3NXL7mAQ82a8joGkrXcSeX64S2vCSWw7DQ2nI0IBPa3ie8/IcR+bvkQl3j<b>\u{D}</b>
+YE+P8ZI9meR5540Id+5YQ0WlonMkuqZEj0X+KMTPwYhLaSvXiCNWRynLZMxZI0IjP1xDkHgIh9kv<b>\u{D}</b>
+FBPimBISNBWUAlgJRHk23Jruk4kQgK0QwWTI+DsvdvDCQD6iJJjkokEiMvPOdgkNB4zs7jJLW4mz<b>\u{D}</b>
+8IRn6KtuFE+M1ie6wMzRiGKgEM34hJeBOSWZiLpIQqaUluOKEdpOu3HfurOgkr2VI041FRvR7pwZ<b>\u{D}</b>
+O9SIOrk2prgOdCkdpK86JwYkoULqxUqSieVFUtjOyCTykebbkhIkVm6VIxJMS38tWUvH5sFCShOI<b>\u{D}</b>
+2z1NDrM5MV4jTx5HHJJxaMtwyUCCSx+RJ2pv5Cz6JGnOqUkpwidJJJBsryCU9pJbcHESRGyZFIum<b>\u{D}</b>
+Es9iJ2AQBgJ3bdDCEFnx/3xKSBusWJJgCYSgfkOAIQxTxexIAhGDV9vFTGCGpJaMvWGRQIeM9uR2<b>\u{D}</b>
+u1IysyR01kh1rgZPimmI7vZEsHgiFPtpD313sjpOwkO52iWO4+S9BeQSXEtSQsSSTopHmPGCKfNZ<b>\u{D}</b>
+L4d+3CHHq+PTEuP68nH4KS2WWrbbEOO44jrYRLr3sIl7U1RPrXDiV2MRxMkmq+Sn68np7/+Uk3KE<b>\u{D}</b>
+tvriMzmRHkOFx+TBl/t72Iw7d1DID1JLYa8n1nk1mcDIohk4TSViwTyUkmUxJ94ld4iS2mnojhBK<b>\u{D}</b>
+XGwVOQ1Et5j8BzxOWOfbRHS7ohzfnZHV08m3CCz8cnT/BlzSEEhJHWSfwEjlotRQCWYwt3RSWBMS<b>\u{D}</b>
+n0iFmTgT8rziOVypGtdJU6hCfAIsYSnWycS1j3AkGEk2ETZQJ4Y5EsFtXeYkvGEokOW8yTIoixhM<b>\u{D}</b>
+UQlTkVLSusdYvs2cSxcWXx5NeSZK+uk2wycaIQBWJAskX53J0T5XHk8hOqWoSVIRBhpdCLKlsKOG<b>\u{D}</b>
+HTKZeCILLWEmLARVsABokSgfkOAhDFPN7A4iBq6fJuqFrNEu4nYEfCqiPN8WQ4IEhwvx2S8deXiS<b>\u{D}</b>
+ueEdDzsjp/aRLvvoEhxDRkeS87I8Z5qTze/IbDWkt7wklzjGENH5LI+MXke04Mj5KvEfERyEfB5N<b>\u{D}</b>
+4oS4ttyWt5yQ8Q+4iHAdcR5HxQj07tpHtvJCGEyRPaViBKVE8RIW+JkJ+NIWlE8frCfGdVLu/I76<b>\u{D}</b>
+ORbRJaSHd1klTqEoFggvBy2MhH2hKljSKIRNOEJxMwTlTyeVkkO1dQJ8A4MTlvJS3kKWVIU9CQzD<b>\u{D}</b>
+SauNkpHXyHRcDas2hszbgyB7hAccmiKQwF+hI13YAgkVdgyfOld9BAI4C4SzFAhmMFdUok9/HMQS<b>\u{D}</b>
+hUSECYRrouxRPFUCGLpEMZYJLcSp0iLgkqdgjqKBKzOIpz2VbtoIJwopLPpJTl49o1pjbopEGCIz<b>\u{D}</b>
+aFiViLbRLG6Ujkq5Oc2XpBGIepUkaTyCtUTBJIQcjabyViWSrmJU5/oBGUG0YH7fum1QpgKg0iUD<b>\u{D}</b>
+8hwhDFO17CzHLMOwvzkqXJVygQ8uEJ8+6cS4F2ojn8+Q1ySe/4wQ4D4zIeW/E5H6w/ZQj645SR2U<b>\u{D}</b>
+gjwTsRDte5Ib7dENHDJ8Uz5LP+ryeP+JhEPUSfJqZKBEJyoxLgVQhwrDk+ZdJJeUuokvGfjIld4i<b>\u{D}</b>
+S57x0lw7hZDDQyGPykz7+dKhLYcQJwlWvXJYzdk7gSNF5HQZslcj5AOT3maJUa5CjpZPu2NBJP0l<b>\u{D}</b>
+F78hmcUQzuIJamwT1tAkmOQx0/H3AyWNSQqAI0oREUUjjcaTx90ljcYQ6yyp4JPEcFI8+xhNccm5<b>\u{D}</b>
+xCSchGz5LHy62ikgvJ46FQd0ikEn5y3jkF40nl9gTnoJ4W6TxeDIz7snPumTd+MJRMWTqYwnBkEp<b>\u{D}</b>
+eHJjpkUHJsiEagMFXdFLKlfK5ScrMkMeazSkIpCJUEERyY4mPMHlS5lXBWJPJGukTzScVpEaCOKn<b>\u{D}</b>
+TLjiVyBL2AJMoY+ERZUrOPgsigIfZnFGThcUxUSUD8hwIQxTzewOIQcN4d7jWTSocLm+noEe8bIl<b>\u{D}</b>
+PwhEPCCXCFEsqMhxvyuQ6J7YI+9PERDH7UnxLcEONclJ6jMEfSGpI+MeLEu1bMjx3fErupJze8Ec<b>\u{D}</b>
+H1wljNoT4FXIZ0RKzliG12BDk/vsn6v5AR7HIJca4uQoziGQ46RyvMSXeOsEuVXCNfNy5dJ4TAZ1<b>\u{D}</b>
+3/C3CMXHEdnmyESpnWNkyxQEgmGKQOUlYiYLGzthCNIpCywllM4TvT7Ppk6uFJK2hHJyLeCRgYkh<b>\u{D}</b>
+at1KsgGcRsVCOExxHJ2LudQ0knl8USJuCengEb+MI4stBYu7Uk8HAI1xEow6JxuP8T9Vl6CRfdI5<b>\u{D}</b>
+qgRyVQg4ZKjdu083klyiUrU0HHJ24pNuYs6ASZFI4rTkdDdqbF3cHAKJKMjIckhgo5CfeoqURaWi<b>\u{D}</b>
+lWOchQxRGzaJztlUIbSgkpsskK6SpyCWaxpK3MJYiaTiXPJiRswRRRIUjY+ZLlsmkeAViRnWqIs0<b>\u{D}</b>
+sCUD8hwhDFO97AwiBzjuO6ZhVeWcBITvQIdI4OT6bykhzjygRHQJaPPENd4JJdR9DE6/zOIyd8Q4<b>\u{D}</b>
+v49J6q+Rx3GifO4xLT+EyXiXqxG9xsjx/zcQ2/FSGtYTtcGJcToZ0skJfKSWHtEeGcgIxeNkL2MI<b>\u{D}</b>
+cg3RLOwyXMeekdJoCGlskTln1NnRcCaQjxCNXQELmTuvaEpVW19wQbjqhuUTYJAKTBmSCWEszpyW<b>\u{D}</b>
+A2RLFvJRGEZ+hIZGhMuGI5HVkO9dGI1KuTtRj27aMMjUiasJ5LhZI6pkgEgxiVgpO8IkikTbFINS<b>\u{D}</b>
+RksoZhMU8g3AVDVqLB5MxROHWIS8+R4AkmazL8ojdMSDlsFvEZAyeTpEoEG0LJG7hs7WSVQk7RyG<b>\u{D}</b>
+DQSyU4nVcSxrZlgEihJR8RQ+SITapG0QgqERiQMnYQnlhEUzs7WuFR3GTs4IjLaRfdJToBBZCMOX<b>\u{D}</b>
+Jx7Vx5O/dI2sOSoEreZne3XMEgQNYH5lWhyANqcJ+iKUD8hwIQxTrewOIgavHKqbTJrQF4lcgR82<b>\u{D}</b>
+74iDXEeh7Mn2/SEeN8zI1vERLiHMSXtj2uTrysmaQlzDo5HhlwnV4wQ7LhSfVtoS014juuMEfSnP<b>\u{D}</b>
+rt15Li3GCW5j+7kc/xkhZ1RLYc7J89qEOJxycugQytEjvOvkLK7RzxCc4mU5PAlytFIWsEQ2Eola<b>\u{D}</b>
+hEYuyJ8pz5LVZYjmcgQjTbEzRKVkSOvl49sEZ2JJ5QRGMolOyxLPVCeMyhPZZshpuOk9py8hgsER<b>\u{D}</b>
+30YhocyQksJYmYSp1CPD8Zg9WosmQuSqmGRwiCeqwJBGGJpCQpxSTrJPFQSeAgW8MlKGSzayajEs<b>\u{D}</b>
+/mSZDEJkUnhdOQjSCeVzeQIZKPVIxFEdeMmc+A5StMCRWcmqASkNzo8hTzhFOOJRjkZB/aiSm4Pk<b>\u{D}</b>
+8GBlVRGkMngAkIlogsZHD1Sc6dd9AlPs1pCIyjEIdQhkMxYx85k8UOdqZMMCsHZAPnd5OAfIbNb+<b>\u{D}</b>
+1QQ2IwgVCUD8hyEMU93sRBR8KbyN1w2WXkxo8AR49OrbSEuBTCXJ+mkNfsCEXk5DCdDI8DiEup+C<b>\u{D}</b>
+iPM/ABPx35ZJeLuWEuZzSGJ7nY3nkky+Q6r7bI+R8iQvYci3j9idiJ6bOk7+VJ8I1pHL5O1+tXdz<b>\u{D}</b>
+YjnLxOrlyWm7CT6n6UJ+W7RPGwicrYESa4jNeSJwMhyg2To9bvwLDEI0G3yE8BrCeQpk5moI39UT<b>\u{D}</b>
+yBydLJEDTybsGTwOtJMzdv50hyfaEFyyMHckgwiI8RL90nn+JE87lie05MQ0eiJ4qcRYuVahFQiR<b>\u{D}</b>
+N6QvtISbxC/lyd6XPxyV6VWSp2jk6xSNqSTiZHs0hPeTq5SxKZLDqIz81kBxK/IIR6JOdCyczj8n<b>\u{D}</b>
+FCTpslmZYmQ0ySbCIY6eQRGx5FIRsOTKUlhMbglcjCtksxjMeDtNpJVu32EaUIhRlEcPSJWqRLKJ<b>\u{D}</b>
+IYjaE77LMlEojZmikcJn8q3yVegTsy6ymEazCQk+cYEzyAwACqUD8hwhDFPd7AwhQIOfV98x24d6<b>\u{D}</b>
+lCpJV5c3AQ3r7NWT3nlwh0TSE+q+MyNzixDM+PCXGvFeQt4TwWTI+KgEsXgiXBOkE893QkvdkuPa<b>\u{D}</b>
+old4AQu5Inz/MEdB1kjzLUEeYbQlgyk+cVyPTuIErdwlrsZb1AhbjkrO0Jcr6mQg5Kp9qTxlWfdu<b>\u{D}</b>
+SzcolF0RLhHMp95ATzesJ6lROry+Xc4QUUiqBQgq2hkBaElftE6NEmA9pcLJxpxOMokmGRyOFInv<b>\u{D}</b>
+EbFwjFgkYc6zK8zBJWcWSwtInloxOthSUPJZNBkChJ8ojJTP1QlkdOROQjSukd3sSEOtzBWKCdZB<b>\u{D}</b>
+JcglhzkspAlSGRnS865bK2BIUFEkXCFXUEyTKLlEmaAldy5OqokGRaGWyFHloUujJS7E6qwOwSbI<b>\u{D}</b>
+qdc7GIyscQa6xshsAnHrkp1KpQ2+UkmPglLOku74mTG50v5CQRt4AldnYIe7cXgUwnTiEhOsSpkM<b>\u{D}</b>
+2Li8pfJdNIGeRM6rwZKB+Q4hDFPN7AwiBzpa2dpWtsWmFXHOAjyA5C/tye+yZDrHBSG95AQE0lw7<b>\u{D}</b>
+ZkvF3wsIelM6R+GSCNVRG3wAl3PKEOwcpJz/UpL2F9niXgzx2SwNrAsmTVlSF7JEJjyfSeEkPXfs<b>\u{D}</b>
+4j4gkE+ZdgJNeRnwiWj05Df4knyjREembf/gSp5yp+CE8Y0hs8oRsaUjwXl5HnvDSWT5cSzbyWoQ<b>\u{D}</b>
+TEmzEk5kkhgrhPC4olTyBHS4EjclkakMgi0RZBJD1JLN40lY4mRrWCDHZUYQuqJJrk73bSIuKEM1<b>\u{D}</b>
+zUhwXAkYF6i7eyCMoRPHxiCsaR2M/1sm7Bk51G6YJGTDJ5AGEkc2+dHUASpW8tki5QjUhk504jVm<b>\u{D}</b>
+kcrliakZPQQiSCTxk5cYlekWtBJ4TR5PxJN1omKMSpJn6oRjxSV6ESxEwg9GCROK8fzSdalkNpLF<b>\u{D}</b>
+wyeYxBMuW/qEI1chUqVoUjFx5MkklF0JFRCdEREwyaIhKHi5Qg0RgiDhaOVbK86ZYfqzgSgfkOAh<b>\u{D}</b>
+DFPF7A4hBz2M4+2slthkkyabnYwDtZPRSSfJlkPIPHCXPcsS3eWJce4mS8x9pJ++dGQ8ge4iXzl5<b>\u{D}</b>
+eQ+qnDeF1pLmWjIfKj5WE/YG3I9H74Q4B61IYLbkdV3ol479WkepdDIcV5mTyHUCPT9wS8v/HAn3<b>\u{D}</b>
+zw8R61zEl0rqhHs1MlyDhRHWDJarshLU1icrRksnuyOV0BAnYiHDMoS4ftCWL5aSzVMizNE+VSSG<b>\u{D}</b>
+YxZOzkyWr0xDnoiVKUSn8BJwtYQsYcnNMTbJrbZkeaaYhUkEstkSNLDEg3Seo3pODFI5i2ToYghg<b>\u{D}</b>
+cKT0NQhuUE9gYnNkXfdJXsSSr2SeSlkaQ7ssZWwcutI21khWiEWASymhItxRB4iFjGfuCOBiErtU<b>\u{D}</b>
+ktlE4Qln8MQ1Lq2mE50chcoXfAIs0ZIrshOJa7AkE2COVrkGYIlgmE8scjotwQxEEnlLZPbYwjOT<b>\u{D}</b>
+4dUEgkdpKWgnqMyTwNWTbJPFgIxrxOJYIaiPwjJ+OQmIJFARv4knbukXyLpF1LiVFhTZzgEoH5Dg<b>\u{D}</b>
+IQxTtexCAxMDEMdxV3IFAU3S26BHuM8jgs8R0mGztWIdNgkM1qSWm4MTyXSyMPqhHB9FIYHwOR8y<b>\u{D}</b>
+cJJYmgTwgyHLuQEsRjCGNoEeE+VSFxFnDI5G4Q8gc7IUd6SsZUnx6kQ7bsCXb6hPmmxIcdMS4pwo<b>\u{D}</b>
+lmr5DCczI86rELdojT2BDM5khwzkhHt2EIdf4yT1vfCOHi1hNI1LxLO0yMa4RkbKihEcuQjnLUua<b>\u{D}</b>
+4hr8pj/UEcToiGImEsJAIanFkLOtojXkGqsxlv4ElyTHz/ZIm0BB88jh8iTQgg+AT2ehyroCbqZO<b>\u{D}</b>
+3TITMMSkmIwjkOG0Sec4OTx58h5shoKhJjCEMeqCVjGkMxI4TQkUbQjS1hAAJark67sgVSKBE59e<b>\u{D}</b>
+T5ZHAvzETNqSMeETdRIghEhZQlNRJ1IjcQRwcUgaDdl/IBsGikLjSB3kMJYISK5KAkgWvxvQU8hQ<b>\u{D}</b>
+uk6OCJS1ElstwH7vahKNQJgk/lSQg2ernIvEAAoAMtf74elXabl4Y9fG9AUKgSgfkOAhDFO97Aoj<b>\u{D}</b>
+Bzg5rmnkZS6FaxfHvMBDve+JYbaEeP99J4nhJLhfACPaswT4nysn1bjpDq+BJ4/ppPR+zSHEnkJm<b>\u{D}</b>
+QI8i6bWcQlI72S0uWJzsSQ4VKyr18nz3spPc8uI6OiT414vI5vjZDVcpI9MIS40YlhOYEe+aIhax<b>\u{D}</b>
+JOtQIbOqQlbUjyjjpA8whb4IQy+AuuMS03ECGISQnDJ0WEc4YnE2hPpe7IcUyxHjV0nwCmQjwiGL<b>\u{D}</b>
+wJO7JJgypDiFt0E8JnLuEQZQJ7qkTo1yc2qTzmlIXaJHD6ohmQ9bEIejJ5NJEdQntm1Eghg55Ftu<b>\u{D}</b>
+6GzLeIzZJORpCFzDXVA7WJYvXEJmFJTcoS00ElT0ZO9PJYnGkVRiGFjE4Ba6xWQqBOVDt6rYzSJ3<b>\u{D}</b>
+T4ciWGRq1iEicQuzSQQV27H4SVQZGBMJTMEQrsIYi4RnUCSUyquprloysqGIGlU5+nIyoEn1iI5x<b>\u{D}</b>
+DFQM6EJzctUKSOiyxKrNwI+Ci5GlpbDn5ArTR4X71SpELpQPyHAhDFPV7AoiB7zrN4O5YlmapB4C<b>\u{D}</b>
+sOUk7uHIc17MRrZgnd8dEuW92J67FkNbmSWv48S12kJc/9gktdkSXBvIpLz1vSeRmk+abMkqqQZk<b>\u{D}</b>
+CGD4cS2EMkuqQn7ok2ISJgSXX45LEcfJeCeCE78QjI3RAW7IGzRPsOwrDGkKOcJ9p5MTiLIwOKSm<b>\u{D}</b>
+q34xPE72WdjgNQm7FEJciuMET0uzrGgQ0vZiGAaQxWjISbpNcUhkZ5DlZyNCYTs4IjOy5GnliOOw<b>\u{D}</b>
+pFlMhvsQSppICikcnhHwTnVyWJaQpOIbzTEb9a0dhYnfPniEzfE4qMqTSRbBHPwSWgqE6edI2r5G<b>\u{D}</b>
+3hqneREwnJzVj4cm3SkjKschPK7EjgI8oQaFxZIEjK+vIyrxO2EiO/ZkbK2WJysORluIZXUEqRiE<b>\u{D}</b>
+iQRLvbsRa2GJ0I8rJINaQmsIuMQuUSFmeQh0ceS7ppkq2aIqpbnJ1YtCXSIpJKwAnZgEBiJoJKbv<b>\u{D}</b>
+j+chSaSLfXrjxrpQPyHAIQxT1ewKIwc9t6iqbrQ8aRuWSelgjtXEsfhCW/4YQJAI7bJkOq8rIbac<b>\u{D}</b>
+T5t0sjc35Dk2BIt8RkOydAJ6msQ4n3Qnz3AkeLdAIdXxhDT1SOr1ROwUnlFkddyQho+IEM5pcfeD<b>\u{D}</b>
+yU7KkOi8gI38gQH04nsOzEM1dI7pVY6Mhe1BLwT55J4bgMp9qJVsAR0kUhg9SRr2idchOPXIBlEN<b>\u{D}</b>
+XeJI1hEuSJ5LgxDOOJWOFEx6ohnKxLBTCd7BkJGoIXcDKCCBcwToZuVJZLCYAisdT0CGOYTxOYJ0<b>\u{D}</b>
+dMSoV7qy5GXk5VPwoJXqkIc0mLCz9kZ1kyk8guR0sSvJJEMSuSiUUpHM4UhL1BPO2SOXj2ZZl1hG<b>\u{D}</b>
+ieoZROHdJYuhlWmRqYWhapHMybRicykIuXJNjkb1az6RI1AgmySwWiJsaQFItNXZxOXJISYEs4Mg<b>\u{D}</b>
+K6TZCJIhkJmEIVmkSxiNueTLqCErCkbyCJyEqJcEDnbBkq83HriDRyIcQgF0at16qePG98iUD8hw<b>\u{D}</b>
+IQxTtexCBBGDl6bmVc3vQ0ZSKl/bQCHerZLS58jawZDVrIcm7EQ5TgiGC2sm+eCHb+vkOZZ26O5k<b>\u{D}</b>
+OPYAgWiR7JqieQ2lQdCI8v2ZLF9JJI5wQ6D1cjqL5HgOFnTkhChzIhIaThakjxjK2iKx4FF9pIbL<b>\u{D}</b>
+dkdr0rH+cI8Pz5OtkCG62hPLachmLZFuJJ4nghPEWSdicRhQ7vnEdnzEhsOXYOMl13ckMxfJ7buF<b>\u{D}</b>
+FaIjmt+SyzicfUkc3xIjxKORGrBItzk79khhcyQxZiYd4RzUshpQkM7jCdW0StXCTSE6mGI57Yk7<b>\u{D}</b>
+FklgNITgXSQ4hJLidLBzqYkHaVpXwXeYNLlmMRyVgjj75K1LJRrlE5AlOtEYlMmxRB1cjICTbYI4<b>\u{D}</b>
+NpKFRJHyJBsgnEwRDAhIRyksVjCDLxGbUJVrxCrPIT4RNDSda9YpCNSITugIgtUDhCVQl00SDR3R<b>\u{D}</b>
+PuqJneQTHInSUTHSIxBkJUsmCmRqEt+QTOYgQim1XAn27vE8a57+P61nbqTEoH5DgCEMU63sDCIH<b>\u{D}</b>
+POKyU3ls0Zx3YVx7gR8bb0jicbWfnYj2PZEtrywlxyMQ9gcaI5rkhPrnRiXIfXJDvHSSPOIZLPSp<b>\u{D}</b>
+e56Q1fayXxLyxCZWI5NxKJvSfV4pHp+jIaPQcdvk8iwlvuiEfJHUyfXoJBUghZxRPiXJSXIIJDF5<b>\u{D}</b>
+0jEZUeGJbDSk+KRCPFseSl2pWyJHsPNiF26TyCrulEMOQhtuVELmwIX8vUk/H8ghf4CTjbi7qJK8<b>\u{D}</b>
+UjiFEDaIh1eSQ4FxMjwy8Ty2UJ4LEkyZUnEk1HJraSRgbEjNrkIeSIzUkaOnISo11ViEUEm2CdWU<b>\u{D}</b>
+RyoiG4xM/koCEr5DyNT4GtM0Qq35NZUEGgt2TyFwjEpEh5YlVlEYGqyCG6jkHZYi/IEps6Wj2PVI<b>\u{D}</b>
+KlEquAJS0kolsiqwTuwCVuxnXD1JBIssErYyY5doUSVYZEQPGZYZK82Xm1MLp0msOTrGP82SwUQj<b>\u{D}</b>
+SgE6RyIsCRuJoCkSjNJGNsM/fdKPghdUtESgfkOAIQxTrewMIgcN3bXqUN+UzNFQ9AR8fTyGpyZH<b>\u{D}</b>
+g+tJZ+6S398lcyZDbZ4hxmrat0jzLgpLZacnoOMEOi9IIb+ySwPq4l65+kVFcLIcw0JHjGYIbHQE<b>\u{D}</b>
+ZuRJaiCQ0jseb0httJlbuBLlHfiNDdEzWCOQypGnz4ljNKQ4LpyOeURwOII4LOY/zW+6kcQvxiF0<b>\u{D}</b>
+ZC5LJZrRENFuyMWCRxkohhqJDZvJWKBLC5S0K2TMiSkchJ4HUEIcAjVtEkts3NkOFPJbe0S29W66<b>\u{D}</b>
+WPpxLAWiWxyhGm4jBUQ4VUtTJE9jiSeOESxziN2VU+jIRlk9ZvyUWwTr1iRsD9lJ4bNEXHwOmSRA<b>\u{D}</b>
+ISN7nTdkcMvH+EIOpksBHJV7+P6hI0YiJePY9uTJ8uE5Fm6cuSGYng8kS4BkSDAkZcmf6RGNMuu6<b>\u{D}</b>
+SLNIW7xNEkhk8FUy8GxpAU2tGEU1SdG1Jl8hKrkwEIppEqeOoPAkdlFIuwBEcQmNpKBcIYx/9NqG<b>\u{D}</b>
+Rb1UI3N0EpQPyHAhDFO97AwiBy/ObxvpU7uEUFW8YCPfdBkPPkoN+gFE+54Ijo/PBDpHiQj6A80k<b>\u{D}</b>
+cWjOnhqW/DpEU8jteDEZXgYhiEEodYlk+3E+bc9I82oEeR90JdN2JLpE8lS1pDewSPct0RcElhs+<b>\u{D}</b>
+S6t3AnoWE2ZqsOckcxi5Ukks5ysjbw1D2ybNMRygSTaxKjeIZwZGtYI4y0TPlCeU5SSbSIXMaRs8<b>\u{D}</b>
+CIZ28SnsJwmE9dwH9MSnSyPAL+VmYPgiG91eT9Bk4FRxCEbGEsaiuI0qbEhjHks5RJYHHE9pHIU4<b>\u{D}</b>
+BHKUyNauQszCYVZN15GNiCNRnUpGhgCWDyWPnEctsMmxSJ7RBNkmHF50w2CGIT4tj05miEJtCV8q<b>\u{D}</b>
+QjktXDEr4seGoIRN2FIYFZMDSNGtnWOQawiBJK3HJLMRNCI0MuQBuCU+ETjDI4NZKW4m6MQykwlH<b>\u{D}</b>
+ukZFAgwpGdjfByNDBShgiIsBpEjhYOd6OQRzJFu99FiM8o/4lABWUD8hwCEMU+XsDCIHPi6qX4aY<b>\u{D}</b>
+1zps1UMr1AQ2TCDIZFD+OQyW80GdoBHkHAyPIOaENF4ZIb3Wko+XJaDhJDtOyI+JOtkLoCGr2BPh<b>\u{D}</b>
+OkJXsCQrbYjxrKkK+lIca7SQ5PHJ73NEMfmydaYRxbCUTwOQzejI0NqQw9uibpPF4okrhRLjXYSO<b>\u{D}</b>
+orENvmSHEqpGVuSVamS2lWZbBGRlSGXoEz4Uhvs0Q3G6Jo4HduMISVEJuBJZSMQv0SIbeARyGDjk<b>\u{D}</b>
+CwiVrTEGaHAbZNc8hauTsslXmkojSA4pPCYohXx5C5IJ2q2TkkZl4iuGQmYwhIxBNmXt+wRrTSNu<b>\u{D}</b>
+WRsS7QzJNhiGXwJC/hSOYxhKBBJChyvH0HJ2hIHKQrYgljsGRkwM6SpmWTyVOXs0SgWiGKvSrdmU<b>\u{D}</b>
+lnQcAkfD1rpZlWRjRyF6XgUMhi4xC5BIWotmtmUJIsWT5BFSSVsRCDgyErBEIN+fbf5cnSJnZpI6<b>\u{D}</b>
+LeBLAL0kQywAosWlA/IcIQxT1ewKIQg+llPFVdWKy5ExngELl7K1cnI5QQ6/xMlK5WT4T24jb6CS<b>\u{D}</b>
+6LiCeLwBHxZx2pvMBLNdhJ8A9xkOi6AlkOfk/hp89CVPj5LhfPyfCugE+FacnatE8fmiOf1hEcUl<b>\u{D}</b>
+3vjxHJzqK15LtGwIw+NkW4Mnk7dp3SGDqEoudJb7Ukef40hCtEuS5ghRoEpFInrHk8LYI2hEpzyG<b>\u{D}</b>
+Ljko2jIV5BLjW/JSnEX5CpuPZ1aS1EIheqY+rE8XHx7dJU6BPG4EhVzJJmFJ4bUkCPISg26wntdY<b>\u{D}</b>
+QhXyUrbTrqCBsraUezJ8zlJZCASy+ZrgZLHsJzrRJtmUnEo3CiG+j6TtzI5XxpK/NIjMTpHIZmqQ<b>\u{D}</b>
+v2aGBMybNyZPT4cjPr51OTzjCNilu7HhCesUTiSsqXSc2XL6aiBY8KtYVBKIDxWdZRBsXyQmMJGx<b>\u{D}</b>
+N5tzpVIYbPkcPUJz6+PK5E0+3H3bJx1Oxp+RlUfU/rsXEAvWUD8hwCEMU73sLOtHrjmytL3ms141<b>\u{D}</b>
+iKXKzJSSSIHEcFlCUfPk8hliN66R7F1slxDyeT5D0wgTuhHjfmolyT2WSzryWkpkdvmCEGkTZxAj<b>\u{D}</b>
+07CE8BuiE/iJHN9vIWebStwWpKROVjCGahEeA+HiPTAkdNsiWcpkaexIxMMQxOvJ7SeQdPoiLQeX<b>\u{D}</b>
+I7TckNi0lua0u2CMvOkoWgu+sSZWJxjEDvlaTnaRKcAkzDE4dIjlMsQtBl+wRxtKU5BAOHJw7+DY<b>\u{D}</b>
+cizEZ1OR2+4I5jEka9cg6MRq7UgHO1Gn0WdFe1ZBwBHFAyvYzpIIy8BJ0Uk9fTtbkIEHWr7NJZo8<b>\u{D}</b>
+mkwYMsgoJfxmCnzKQIiXolvOrln3TF+NLTJPkO0ZnjGPYZKQCXU8dHk51awLtORGTQtmgJFXbqLe<b>\u{D}</b>
+JnUBJjedaydUrCRg5CISOJWoIZFpeSreZQ5lH9zMRUoH5LlZkpJJEDuAIQxUFbGIAiIG31fQy190<b>\u{D}</b>
+xgXKqJhTR8Q8ACnoLYVch/uUOUigRITKjYQSC7oJEx7eUTCqZGkmiIhTgiJmWRU2oon9uZTkjkya<b>\u{D}</b>
+qXR29fLOiRgdiFHee5fJQRPRzxcwlA/JcqomFNHxD3AAAAPebW9vdgAAAGxtdmhkAAAAAOD2r4/g<b>\u{D}</b>
+9q+QAACsRAAAoIAAAQAAAQAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA<b>\u{D}</b>
+AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAnB0cmFrAAAAXHRraGQAAAAB4Pav<b>\u{D}</b>
+kOD2r5AAAAABAAAAAAAAoIAAAAAAAAAAAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAA<b>\u{D}</b>
+AAAAAAAAAABAAAAAAAAAAAAAAAAAAAIMbWRpYQAAACBtZGhkAAAAAOD2r5Dg9q+QAACsRAAArABV<b>\u{D}</b>
+xAAAAAAAMWhkbHIAAAAAAAAAAHNvdW4AAAAAAAAAAAAAAABDb3JlIE1lZGlhIEF1ZGlvAAAAAbNt<b>\u{D}</b>
+aW5mAAAAEHNtaGQAAAAAAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAA<b>\u{D}</b>
+AXdzdGJsAAAAZ3N0c2QAAAAAAAAAAQAAAFdtcDRhAAAAAAAAAAEAAAAAAAAAAAACABAAAAAArEQA<b>\u{D}</b>
+AAAAADNlc2RzAAAAAAOAgIAiAAAABICAgBRAFAAYAAAD6AAAA+gABYCAgAISEAaAgIABAgAAABhz<b>\u{D}</b>
+dHRzAAAAAAAAAAEAAAArAAAEAAAAABxzdHNjAAAAAAAAAAEAAAABAAAAKwAAAAEAAADAc3RzegAA<b>\u{D}</b>
+AAAAAAAAAAAAKwAAAAYAAADRAAABawAAAMkAAAC4AAAApAAAALoAAAC5AAAAtwAAALQAAAC/AAAA<b>\u{D}</b>
+xwAAAOYAAADNAAAA2wAAAL0AAADuAAAA7wAAAPEAAADyAAABegAAAYUAAAF9AAABdQAAAXMAAAF1<b>\u{D}</b>
+AAABdQAAAXUAAAF3AAABfQAAAZAAAAGIAAABgwAAAXgAAAGAAAABhwAAAXwAAAF8AAABdgAAAXMA<b>\u{D}</b>
+AAFvAAABWAAAAGgAAAAUc3RjbwAAAAAAAAABAAAALAAAAPp1ZHRhAAAA8m1ldGEAAAAAAAAAImhk<b>\u{D}</b>
+bHIAAAAAAAAAAG1kaXIAAAAAAAAAAAAAAAAAAAAAAMRpbHN0AAAAvC0tLS0AAAAcbWVhbgAAAABj<b>\u{D}</b>
+b20uYXBwbGUuaVR1bmVzAAAAFG5hbWUAAAAAaVR1blNNUEIAAACEZGF0YQAAAAEAAAAAIDAwMDAw<b>\u{D}</b>
+MDAwIDAwMDAwODQwIDAwMDAwMzQwIDAwMDAwMDAwMDAwMEEwODAgMDAwMDAwMDAgMDAwMDAwMDAg<b>\u{D}</b>
+MDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDA=</div></div>
+<hr><button class="" data-uuid="0A5B755B-068C-4574-A0CF-3D1EC7588E1A" id="m4">
+4 Base64 <span class="box">Decode</span> <span class="box"><span class="var"><b>[3 Text]</b></span></span>&#12288;&#187;</button>
+<hr><button class="gRed" id="m5">
+5 Play Sound <span class="box"><span class="var"><b>[4 Base64 Encoded]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

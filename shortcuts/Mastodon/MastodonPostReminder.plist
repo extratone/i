@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFQuickActionSurfaces</key>
+	<array/>
+	<key>WFWorkflowActions</key>
+	<array>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.comment</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFCommentActionText</key>
+				<string>Create an Apple Reminder with description from a Mastodon URL.
+
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+Mastodon: https://mastodon.social/@DavidBlue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+EVERYWHERE: https://davidblue.wtf/socialdrop</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>dk.simonbs.Retoot.CreateQuoteIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>CustomOutputName</key>
+				<string>image</string>
+				<key>UUID</key>
+				<string>2C01FDCF-0785-461B-8720-21AC79E78C88</string>
+				<key>url</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>ExtensionInput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.addnewreminder</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>53F09416-25AB-4C33-ABC4-C1094ABB1719</string>
+				<key>WFCalendarDescriptor</key>
+				<dict>
+					<key>Identifier</key>
+					<string>&lt;x-apple-reminderkit://REMCDList/E63E46EF-6967-4CE2-A988-937E1E1322CE&gt;</string>
+					<key>IsAllCalendar</key>
+					<false/>
+					<key>Title</key>
+					<string>Mastodon</string>
+				</dict>
+				<key>WFCalendarItemCalendar</key>
+				<string>Mastodon</string>
+				<key>WFCalendarItemNotes</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{10, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>postID</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>image</string>
+								<key>OutputUUID</key>
+								<string>2C01FDCF-0785-461B-8720-21AC79E78C88</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{25, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>authorURL</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>image</string>
+								<key>OutputUUID</key>
+								<string>2C01FDCF-0785-461B-8720-21AC79E78C88</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+							<key>{39, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>postCreatedAt</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+									<dict>
+										<key>Type</key>
+										<string>WFDateFormatVariableAggrandizement</string>
+										<key>WFDateFormat</key>
+										<string>MMddYYYY-HHmmss</string>
+										<key>WFDateFormatStyle</key>
+										<string>Custom</string>
+										<key>WFISO8601IncludeTime</key>
+										<false/>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>image</string>
+								<key>OutputUUID</key>
+								<string>2C01FDCF-0785-461B-8720-21AC79E78C88</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>Post ID: `&#xFFFC;`
+Author URL: &#xFFFC;
+Post Date: '&#xFFFC;'</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFCalendarItemTitle</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>content</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>image</string>
+								<key>OutputUUID</key>
+								<string>2C01FDCF-0785-461B-8720-21AC79E78C88</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFImages</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>PropertyName</key>
+								<string>image</string>
+								<key>Type</key>
+								<string>WFPropertyVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>image</string>
+						<key>OutputUUID</key>
+						<string>2C01FDCF-0785-461B-8720-21AC79E78C88</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFTags</key>
+				<string>Mastodon, Social, Automation</string>
+				<key>WFURL</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>PropertyName</key>
+										<string>postURL</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>image</string>
+								<key>OutputUUID</key>
+								<string>2C01FDCF-0785-461B-8720-21AC79E78C88</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>&#xFFFC;</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>54563C47-2BC8-4DC1-810B-8A3A14E2146B</string>
+				<key>WFTextActionText</key>
+				<string>AAAAHGZ0eXBNNEEgAAAAAE00QSBpc29tbXA0MgAAAAFtZGF0AAAAAAAAMMchAANAaBwhDFO9wo0F&#xD;
+Cyppk4D1KDIVGLlXYmJ/kHgIhjLNAPyejA055JvikjxiFJJNlMnaqVmu6BkIDCZbxPa4AiNZPWcI&#xD;
+JZiEQy+WIZHQkNrtCGarkJNshh4ZPE8CJ7/BkId8hSkPCSB4n9f/X5zWInbbi0hmDmD1yqHuPvsQ&#xD;
++AAJ872vsfq/7e1ushYJCMaKADDCyYiwEvfY9vbt5+PkyqGRuA06XsEZGJMINTy/7/fgYYNT28/B&#xD;
+iMEKyLxaAS2ES6c+BghabYgAc6UD8lyrsTE/yDwFwCEMU9XsQgURg1z0PfXa3ThNba3IPm1Ah0jI&#xD;
+kLlehXEkus28QvNI4lRPzN8OCfozl5Ohx0g/xUR5r4NJ8ex5CMwhM5eQ6ZxUjXISc6UwEHZEhnp9&#xD;
+cwyZnE7d0nAuErT5lRb88nSnkRzCBo+PFkIUslIWSEIiM/GpC/hydTLVlIJCvErDSaDVGi7xkK+B&#xD;
+oirbuWJ43IE5hiO6hkx2rQr4/xZOdbrYdbvmSFa6idOqSzgSDKeqSdDIksKInFnk9cImvek9rriG&#xD;
+hpkdJgyez1pNE+7rVDSqImEToJxGEZNAnjsTd8u7rRK/RJRoZC9KINxk+6QmOGSh1SFTKETai7s+&#xD;
+RvBIYvGTrRJ0uKks/gSEWDYsao2koEciwxFrCc3Jk94glImkD6shk2kMPOI1XETxyGJypLFTZ/jZ&#xD;
+mJtuZPz5KZeI24FnSya0Y/nSpTyFhyGQtyjLJNERM6V4XbHFaSmEATdZTn420BUrKB+Q4CEMU8XW&#xD;
+hwMDCIHP681KwZNCBmXR/sBDy+XBOMeXklRcFHvbO5bRik+GZUnaqkxpJp3BOdXJ1ZZAcedKZGbL&#xD;
+oOCQj3yGDzZCSP95dCSEdxBEHADaBXJPuVMdTk0DttiUM8Q+HXPsOMr01+6dF6NWukbWDVtgZfkR&#xD;
+1OgSPXdC5G1I2FiJVcgYB+AQ0r8fK9bl4uBXsVE1WjKfIxgZdCA8ZNvsnxCR9hsU0CC/wOMohKdy&#xD;
+xHdX3690BTc6wheM+5znCNGsqOsEuH5DgCEMVFXWiqELPenc8XR8OIJXHrQCZIs8TBXu7PXKO2fb&#xD;
+7vp1jAnwWmCDJNYEkbL35blL1Umc5Nyfatw/fNCfveOsoQmtNau3By4GT6vTXFL6jx26zJhZZ4XF&#xD;
+sXEPqlL5DHj8n9dlCPEJAwAFU4exXDsnBwkxG+TSMVOdgWTz3kMX/mJSPyTlBlyuHN/t/M8fLDOQ&#xD;
+R4/nYPJCp2y1OO7GhGs/HCrZVBLKEUirBlChtfo3j0b6ICjD8hwhDFRVrpcFCzvXh+SXlxA4DSwR&#xD;
+YHdN+mDSVjDpbmvKoiKl0WnIA7Fbnc0yHh9PYX5vmG6B/+czESYzSW21ZlqUf8R8HLjDZZg1BrfM&#xD;
+eimvKKovHd1mntUJgZ3uidUwTa74n/LbLMxZ7XWwqrMy7Y+u5Spn4/R0u1zbOCUUzv2djo5Q2ZLk&#xD;
+bSFqNUjmvyZM6MeGXkW7wg00sGGg2yzLjjG51OH5DiEMVD3Gk2ECiIHj8z1nboElJrHWtfHsFY3c&#xD;
+oZc8y7IlJdOw79STWnBYxOo2zUybV/Q3Yt3k4Yv+Fmc9iZQgIRMhZXHVsg0o4FbNuSL69we2SARP&#xD;
+CHqMpt+5f1I0R6O+fxiDHOK77JIYleXfcfWOXjjHq3xEx8LNtTEGn5lWeMWTQMYegZcszfwm/tN8&#xD;
+eByYNXGnVxXQ2ZYyHBZbrAOb9wSQ8GcM5856e3J9QSzFFbbq6yigqACAow/IcCEMVF3sDCMGm2/X&#xD;
+jHEpllypWuOL1+4KBN8tc3tIwz41xLYvEMgvIZ+y6e/ZcZHkHWHmFu+tAkm7yxJHp/8Lo1FB3liX&#xD;
+nv/lImTg01mayQyFE7HSZjByhFQSj9dN3zOY2qyjpjAVA6MmtxeOvK0aaps0eITfRmmOjEFIojym&#xD;
+zdmdwsHnNUNhviPTtTI/hpYDW4tYwdR3YOlbSdjzanjS/RlPKgLTTfxDL1M02dZOmNhCgC5YACop&#xD;
+g/IcIQxUVewsZfrnu6ek9kVVE86voWI3ZuyarcXveBkzyqcwdJANwjmdZtD/EnGpb/yK2M+ebiYe&#xD;
+Tblfzrgi1IGr22Ogo66H8QU4BC1dMjWIXFcHiEno0NJU3ugeClJYLtlSDpycOlTV0xxZUqrJhbSK&#xD;
+50iLkRatEJukwMgLLpSPYy0fHm/kfhYO9bAUHwrJnTiQ3S12rzM2oI/lte2bYRGtcUONuk5rOXvT&#xD;
+MSh2KOsx3R5MSqAUofkOIQxUPeaEFmX9seG8yr6lZeqkcTXAIUwcQz951gRc7wT/SPDMkEnyyfZJ&#xD;
+3tfzpBUTnWmOK1sYdeQm4kxDcbCpxBqLPNz9VyY8wB1GPIprCdlFPQCA5ezqdasJFE/RGAlhkcx4&#xD;
+XEI2YnK7bhIR1Hk6oI/5o52FbafWvHYemZJESxCXtzVuyXmQCGudlGqnI/X1KnrHito4fEnBjbf4&#xD;
+k2kvkg1NXh8dbBaZBJhbVJkpCT4p8PyHIQxUJeaECBEDE+Z48Vh21cZKi2r6n+wUTj/nPvc/RWxS&#xD;
+Ump+5dj2ge36xJWAUfBSZYf33MWfeJxdB/OTwGUo9vatdSqM/38vS+36pektlzUUduirVahsxbZW&#xD;
+nU7JDbiwwO/a0zDPlPIq8ZgQLc8UETyE+qM4GehlHO1xcRtRLaisbxMZQnk7SexSBSw1Wg0HVwcK&#xD;
+3BnAQCpcDGwrKbhMNWxOIhAalry+wS5NlI4atqzDMcCKLiftqsoVDdQh+Q4hDFP15gQFEoMfLv35&#xD;
+3l1trQLpHlf/I2MedOltWYfUeprKn0Xn7v2/3pQO96sbdoujZAt4qyY38Qyt/y5ZsOq3G59WKC97&#xD;
+n18PRPfhHEWdLMW1iVar9c6nJSvJbQDbgeADEHWZw+1OvZhcjnqGfbYMbvxjA5Z7PGTdLh3XE6oV&#xD;
+mNzt8Y9wSZYmECQViGMUHKkp4nDajTu2qTyDaaUg/CzTFsJtYceQqR+M6rEJbnV53r/Pe0q6vch5&#xD;
+7tVBilVpUwUrQqE6H5DgIQxUPewGRREDG49e9VlFxI1SNOuvxLGxgGA8v9UzoD9VwXtogiX9WulN&#xD;
+bRidvE/ahLfPQ7ynO2qPqv0jAtdLLrzwn6g7GvmarECOUVS2tgHpUsFJbRY2THEYIowgc8zG4kMS&#xD;
+Sw/7B3jxB56G6AVmur9NvlTIIXazIImmKCo4vuBHA90ULFSO1sPpWWNAZGzsgm9k9wCl5CXKcWjR&#xD;
+2XHRIJbAwDzelNbsbvaxkm8GzI8LNdaOIZigf5J/4y/UZox6AF7mAzYo52LbCzONfRtqjnFDZxew&#xD;
+ZlrdSs3P56/WdOoAWoA/IcAhDFQ9xodloQFEYOD9mV3kp02l2vv4mr/yoELBNrSJOoyZoH3nJjST&#xD;
+8o+u6LfokuWYyX43VpBTScJ01UmkXXXEyOc2hNgKc3dqG4XvN7ycWMmCmaShiLmXCFoyniuCWfGv&#xD;
+7wE3q73BmKLtXTOQvFHccClprkuR1BM3kkdOkd+tvZ9x42lbeio4Y4Bleajox4y9bISGwBgr/CHK&#xD;
+sjw1W0uQJG7ejx8xaCpgHpwazrsixSygRls4cZnHi8L40FwdES/kdlXDxs8iYMdEH5DgIQxUNeaE&#xD;
+BCIDm8e/ibOTpLXCr4nH+gFSYOXjxp+X+2ehdV1iql7OFnURDMq5at8vh9RDoIeUeMW9B66DdWyu&#xD;
+4kTjjKETqpwKhTFWh6GjMj5TNIKqpHZndhKVL2m43W5kFlRVKp7/+515eV8ZcjO8o3Y4O7LorVin&#xD;
+Cl1VyM/Y3PCWTFaCoVW3ZCiU8eLO5QVeGk2r1RB30kep6dboueR5Oj1KJr0goHu1lOeLdHuGW2mU&#xD;
+5hlD1lsSjE47YcGtZBFxczNnMrL8giadHN6mygj0nqhqQdo81Rn6MPyHIQxUFcYHZYEBhGDT85Ps&#xD;
+W8LuGOAdT/agI64np/4ciJkzD2rZWVx+NT++UI5FtDdX3eoazqxCkfbJUK1SaMnhNjLpDxnXrgjz&#xD;
+tiEsNfVpHmaCpqMTaUMZxBFCJ1XRFqkCuY2JDJym4v/n4B4YNNZ/c8hiPLPJQh3FEdTU2+3HS8Rm&#xD;
+vTdjQk0Fc1MNDQ0JHJjf+B0yearYwVxl+N77bCRQcAxoWnyPyWlSG2YPhq3oGXjhJEpzpzBIAawJ&#xD;
+0PyHIQxT1ewsz9uO/scPWavWLc6t1ONAj323gTCSKBCvpalbYoiYoxO1nSc1diQc7LJ8eXzPbpZ9&#xD;
+rElts1tam+4VI7om62kOLcSlc0Y1TJUb0zyGPotXCagwdTLRdUScbsHXcx5+xzHN2mI1l586Y5dz&#xD;
+N1to7p3CcgEIJqERpcV2Cs2C/4Kw5E1rAv7hGZP5spQ5uFih//azQfR9Nz8yxncHusfzFVuts9J9&#xD;
+YZDWTLcI1YPSOTxSuXWkTjI/BuIyekkB1Zj7/ncGXmqQ/yn6mGfqMu8kXFqX7z3DE4D5xQYbmyCL&#xD;
+8BinWmSYs+FwSofkOCEMU+3sDCEHn5nqtsTEcd2kpxOL/AI8+dRMHBbpPZ6wldQQiQyFqUTkXCci&#xD;
+ba9KUd9g2uJzEXGQr76ibF2BIBf//kJLscEMViSfR+RT7JJsiksFCIMDENo2rDsceQ0EltoaKQjD&#xD;
++qc86YdLd8m5J//MqEsZ9CLnj46w54Ufftr8hkBvSXMup9pdi/L+vvu7x2DB/jsfHesRznmZdyL/&#xD;
+S/IbcIhH9eVvK6lG4ohZBMQIlmDuAkNn9ThBbg00/M8ZbfUEzR38puiSPaoCq4fm2LLHODqnu2ph&#xD;
+hkeO3NdtrOi7zccPsFwJk4gWJQEwH5DgIQxUFewKIQEIgYe7nedyrjm+jKu6nE6+rAjgJZIU8g9h&#xD;
+KESUAEXRPQyN+XYlMlibRPhGfI0qRBtbK2KI1lxt+oJqRxPJhiE2cS3N/JoiciDlSkRGSxV246fT&#xD;
+51h1yshnT7LUP0tVOJwv1bt8mVRy1LtFt3B+1xbmnzbj+UTUGDXPrGL8x8setbJ6gzk9Vs63zbcS&#xD;
+vrpHOMlx1I8MhvrX+tHsa9tM8kf3tRd/dN/SMPjnqmqvErxdsX2ImxGG2Bffiu6NNaRvbkntLEco&#xD;
+yVFlWOYJOZK2xZTU5ErzvaJ78vu+GtnBD4IAJY2dgAwE6H5DgCEMVDXsCiQGlbemZMu2WWtWuE/V&#xD;
+gVjTraH3LZ0Hy8lcTnWdUyCQMETn8AnzG/q7prkmXCGCIRAP8rnZtCnJz2EpWEtQxIZKnk8NzoIm&#xD;
+QWOpOYTdPyBW9qwYRM66xC55HR1EPYpBKpB/tUz/j5078U6S8Quw8tvatkVkj6jiNK4fbxuMJeHg&#xD;
+zZOgyC/5UBzP09oXmfPP1CI+X/et05xfGx7GH7p2v9vsYPcUOgfzPxuPwTIPN2+9lwB9XB3jZMCl&#xD;
+E9VfBb+hXGXplEk8JmOO+HTdtnv41UR27fEQvl3W3FX+uRN1eWIXe6sQp+FQBAChD8hwIQxTvewG&#xD;
+IQGIwYv1syY9aibviN3NXL7mAQ82a8joGkrXcSeX64S2vCSWw7DQ2nI0IBPa3ie8/IcR+bvkQl3j&#xD;
+YE+P8ZI9meR5540Id+5YQ0WlonMkuqZEj0X+KMTPwYhLaSvXiCNWRynLZMxZI0IjP1xDkHgIh9kv&#xD;
+FBPimBISNBWUAlgJRHk23Jruk4kQgK0QwWTI+DsvdvDCQD6iJJjkokEiMvPOdgkNB4zs7jJLW4mz&#xD;
+8IRn6KtuFE+M1ie6wMzRiGKgEM34hJeBOSWZiLpIQqaUluOKEdpOu3HfurOgkr2VI041FRvR7pwZ&#xD;
+O9SIOrk2prgOdCkdpK86JwYkoULqxUqSieVFUtjOyCTykebbkhIkVm6VIxJMS38tWUvH5sFCShOI&#xD;
+2z1NDrM5MV4jTx5HHJJxaMtwyUCCSx+RJ2pv5Cz6JGnOqUkpwidJJJBsryCU9pJbcHESRGyZFIum&#xD;
+Es9iJ2AQBgJ3bdDCEFnx/3xKSBusWJJgCYSgfkOAIQxTxexIAhGDV9vFTGCGpJaMvWGRQIeM9uR2&#xD;
+u1IysyR01kh1rgZPimmI7vZEsHgiFPtpD313sjpOwkO52iWO4+S9BeQSXEtSQsSSTopHmPGCKfNZ&#xD;
+L4d+3CHHq+PTEuP68nH4KS2WWrbbEOO44jrYRLr3sIl7U1RPrXDiV2MRxMkmq+Sn68np7/+Uk3KE&#xD;
+tvriMzmRHkOFx+TBl/t72Iw7d1DID1JLYa8n1nk1mcDIohk4TSViwTyUkmUxJ94ld4iS2mnojhBK&#xD;
+XGwVOQ1Et5j8BzxOWOfbRHS7ohzfnZHV08m3CCz8cnT/BlzSEEhJHWSfwEjlotRQCWYwt3RSWBMS&#xD;
+n0iFmTgT8rziOVypGtdJU6hCfAIsYSnWycS1j3AkGEk2ETZQJ4Y5EsFtXeYkvGEokOW8yTIoixhM&#xD;
+UQlTkVLSusdYvs2cSxcWXx5NeSZK+uk2wycaIQBWJAskX53J0T5XHk8hOqWoSVIRBhpdCLKlsKOG&#xD;
+HTKZeCILLWEmLARVsABokSgfkOAhDFPN7A4iBq6fJuqFrNEu4nYEfCqiPN8WQ4IEhwvx2S8deXiS&#xD;
+ueEdDzsjp/aRLvvoEhxDRkeS87I8Z5qTze/IbDWkt7wklzjGENH5LI+MXke04Mj5KvEfERyEfB5N&#xD;
+4oS4ttyWt5yQ8Q+4iHAdcR5HxQj07tpHtvJCGEyRPaViBKVE8RIW+JkJ+NIWlE8frCfGdVLu/I76&#xD;
+ORbRJaSHd1klTqEoFggvBy2MhH2hKljSKIRNOEJxMwTlTyeVkkO1dQJ8A4MTlvJS3kKWVIU9CQzD&#xD;
+SauNkpHXyHRcDas2hszbgyB7hAccmiKQwF+hI13YAgkVdgyfOld9BAI4C4SzFAhmMFdUok9/HMQS&#xD;
+hUSECYRrouxRPFUCGLpEMZYJLcSp0iLgkqdgjqKBKzOIpz2VbtoIJwopLPpJTl49o1pjbopEGCIz&#xD;
+aFiViLbRLG6Ujkq5Oc2XpBGIepUkaTyCtUTBJIQcjabyViWSrmJU5/oBGUG0YH7fum1QpgKg0iUD&#xD;
+8hwhDFO17CzHLMOwvzkqXJVygQ8uEJ8+6cS4F2ojn8+Q1ySe/4wQ4D4zIeW/E5H6w/ZQj645SR2U&#xD;
+gjwTsRDte5Ib7dENHDJ8Uz5LP+ryeP+JhEPUSfJqZKBEJyoxLgVQhwrDk+ZdJJeUuokvGfjIld4i&#xD;
+S57x0lw7hZDDQyGPykz7+dKhLYcQJwlWvXJYzdk7gSNF5HQZslcj5AOT3maJUa5CjpZPu2NBJP0l&#xD;
+F78hmcUQzuIJamwT1tAkmOQx0/H3AyWNSQqAI0oREUUjjcaTx90ljcYQ6yyp4JPEcFI8+xhNccm5&#xD;
+xCSchGz5LHy62ikgvJ46FQd0ikEn5y3jkF40nl9gTnoJ4W6TxeDIz7snPumTd+MJRMWTqYwnBkEp&#xD;
+eHJjpkUHJsiEagMFXdFLKlfK5ScrMkMeazSkIpCJUEERyY4mPMHlS5lXBWJPJGukTzScVpEaCOKn&#xD;
+TLjiVyBL2AJMoY+ERZUrOPgsigIfZnFGThcUxUSUD8hwIQxTzewOIQcN4d7jWTSocLm+noEe8bIl&#xD;
+PwhEPCCXCFEsqMhxvyuQ6J7YI+9PERDH7UnxLcEONclJ6jMEfSGpI+MeLEu1bMjx3fErupJze8Ec&#xD;
+H1wljNoT4FXIZ0RKzliG12BDk/vsn6v5AR7HIJca4uQoziGQ46RyvMSXeOsEuVXCNfNy5dJ4TAZ1&#xD;
+3/C3CMXHEdnmyESpnWNkyxQEgmGKQOUlYiYLGzthCNIpCywllM4TvT7Ppk6uFJK2hHJyLeCRgYkh&#xD;
+at1KsgGcRsVCOExxHJ2LudQ0knl8USJuCengEb+MI4stBYu7Uk8HAI1xEow6JxuP8T9Vl6CRfdI5&#xD;
+qgRyVQg4ZKjdu083klyiUrU0HHJ24pNuYs6ASZFI4rTkdDdqbF3cHAKJKMjIckhgo5CfeoqURaWi&#xD;
+lWOchQxRGzaJztlUIbSgkpsskK6SpyCWaxpK3MJYiaTiXPJiRswRRRIUjY+ZLlsmkeAViRnWqIs0&#xD;
+sCUD8hwhDFO97AwiBzjuO6ZhVeWcBITvQIdI4OT6bykhzjygRHQJaPPENd4JJdR9DE6/zOIyd8Q4&#xD;
+v49J6q+Rx3GifO4xLT+EyXiXqxG9xsjx/zcQ2/FSGtYTtcGJcToZ0skJfKSWHtEeGcgIxeNkL2MI&#xD;
+cg3RLOwyXMeekdJoCGlskTln1NnRcCaQjxCNXQELmTuvaEpVW19wQbjqhuUTYJAKTBmSCWEszpyW&#xD;
+A2RLFvJRGEZ+hIZGhMuGI5HVkO9dGI1KuTtRj27aMMjUiasJ5LhZI6pkgEgxiVgpO8IkikTbFINS&#xD;
+RksoZhMU8g3AVDVqLB5MxROHWIS8+R4AkmazL8ojdMSDlsFvEZAyeTpEoEG0LJG7hs7WSVQk7RyG&#xD;
+DQSyU4nVcSxrZlgEihJR8RQ+SITapG0QgqERiQMnYQnlhEUzs7WuFR3GTs4IjLaRfdJToBBZCMOX&#xD;
+Jx7Vx5O/dI2sOSoEreZne3XMEgQNYH5lWhyANqcJ+iKUD8hwIQxTrewOIgavHKqbTJrQF4lcgR82&#xD;
+74iDXEeh7Mn2/SEeN8zI1vERLiHMSXtj2uTrysmaQlzDo5HhlwnV4wQ7LhSfVtoS014juuMEfSnP&#xD;
+rt15Li3GCW5j+7kc/xkhZ1RLYc7J89qEOJxycugQytEjvOvkLK7RzxCc4mU5PAlytFIWsEQ2Eola&#xD;
+hEYuyJ8pz5LVZYjmcgQjTbEzRKVkSOvl49sEZ2JJ5QRGMolOyxLPVCeMyhPZZshpuOk9py8hgsER&#xD;
+30YhocyQksJYmYSp1CPD8Zg9WosmQuSqmGRwiCeqwJBGGJpCQpxSTrJPFQSeAgW8MlKGSzayajEs&#xD;
+/mSZDEJkUnhdOQjSCeVzeQIZKPVIxFEdeMmc+A5StMCRWcmqASkNzo8hTzhFOOJRjkZB/aiSm4Pk&#xD;
+8GBlVRGkMngAkIlogsZHD1Sc6dd9AlPs1pCIyjEIdQhkMxYx85k8UOdqZMMCsHZAPnd5OAfIbNb+&#xD;
+1QQ2IwgVCUD8hyEMU93sRBR8KbyN1w2WXkxo8AR49OrbSEuBTCXJ+mkNfsCEXk5DCdDI8DiEup+C&#xD;
+iPM/ABPx35ZJeLuWEuZzSGJ7nY3nkky+Q6r7bI+R8iQvYci3j9idiJ6bOk7+VJ8I1pHL5O1+tXdz&#xD;
+YjnLxOrlyWm7CT6n6UJ+W7RPGwicrYESa4jNeSJwMhyg2To9bvwLDEI0G3yE8BrCeQpk5moI39UT&#xD;
+yBydLJEDTybsGTwOtJMzdv50hyfaEFyyMHckgwiI8RL90nn+JE87lie05MQ0eiJ4qcRYuVahFQiR&#xD;
+N6QvtISbxC/lyd6XPxyV6VWSp2jk6xSNqSTiZHs0hPeTq5SxKZLDqIz81kBxK/IIR6JOdCyczj8n&#xD;
+FCTpslmZYmQ0ySbCIY6eQRGx5FIRsOTKUlhMbglcjCtksxjMeDtNpJVu32EaUIhRlEcPSJWqRLKJ&#xD;
+IYjaE77LMlEojZmikcJn8q3yVegTsy6ymEazCQk+cYEzyAwACqUD8hwhDFPd7AwhQIOfV98x24d6&#xD;
+lCpJV5c3AQ3r7NWT3nlwh0TSE+q+MyNzixDM+PCXGvFeQt4TwWTI+KgEsXgiXBOkE893QkvdkuPa&#xD;
+old4AQu5Inz/MEdB1kjzLUEeYbQlgyk+cVyPTuIErdwlrsZb1AhbjkrO0Jcr6mQg5Kp9qTxlWfdu&#xD;
+SzcolF0RLhHMp95ATzesJ6lROry+Xc4QUUiqBQgq2hkBaElftE6NEmA9pcLJxpxOMokmGRyOFInv&#xD;
+EbFwjFgkYc6zK8zBJWcWSwtInloxOthSUPJZNBkChJ8ojJTP1QlkdOROQjSukd3sSEOtzBWKCdZB&#xD;
+JcglhzkspAlSGRnS865bK2BIUFEkXCFXUEyTKLlEmaAldy5OqokGRaGWyFHloUujJS7E6qwOwSbI&#xD;
+qdc7GIyscQa6xshsAnHrkp1KpQ2+UkmPglLOku74mTG50v5CQRt4AldnYIe7cXgUwnTiEhOsSpkM&#xD;
+2Li8pfJdNIGeRM6rwZKB+Q4hDFPN7AwiBzpa2dpWtsWmFXHOAjyA5C/tye+yZDrHBSG95AQE0lw7&#xD;
+ZkvF3wsIelM6R+GSCNVRG3wAl3PKEOwcpJz/UpL2F9niXgzx2SwNrAsmTVlSF7JEJjyfSeEkPXfs&#xD;
+4j4gkE+ZdgJNeRnwiWj05Df4knyjREembf/gSp5yp+CE8Y0hs8oRsaUjwXl5HnvDSWT5cSzbyWoQ&#xD;
+TEmzEk5kkhgrhPC4olTyBHS4EjclkakMgi0RZBJD1JLN40lY4mRrWCDHZUYQuqJJrk73bSIuKEM1&#xD;
+zUhwXAkYF6i7eyCMoRPHxiCsaR2M/1sm7Bk51G6YJGTDJ5AGEkc2+dHUASpW8tki5QjUhk504jVm&#xD;
+kcrliakZPQQiSCTxk5cYlekWtBJ4TR5PxJN1omKMSpJn6oRjxSV6ESxEwg9GCROK8fzSdalkNpLF&#xD;
+wyeYxBMuW/qEI1chUqVoUjFx5MkklF0JFRCdEREwyaIhKHi5Qg0RgiDhaOVbK86ZYfqzgSgfkOAh&#xD;
+DFPF7A4hBz2M4+2slthkkyabnYwDtZPRSSfJlkPIPHCXPcsS3eWJce4mS8x9pJ++dGQ8ge4iXzl5&#xD;
+eQ+qnDeF1pLmWjIfKj5WE/YG3I9H74Q4B61IYLbkdV3ol479WkepdDIcV5mTyHUCPT9wS8v/HAn3&#xD;
+zw8R61zEl0rqhHs1MlyDhRHWDJarshLU1icrRksnuyOV0BAnYiHDMoS4ftCWL5aSzVMizNE+VSSG&#xD;
+YxZOzkyWr0xDnoiVKUSn8BJwtYQsYcnNMTbJrbZkeaaYhUkEstkSNLDEg3Seo3pODFI5i2ToYghg&#xD;
+cKT0NQhuUE9gYnNkXfdJXsSSr2SeSlkaQ7ssZWwcutI21khWiEWASymhItxRB4iFjGfuCOBiErtU&#xD;
+ktlE4Qln8MQ1Lq2mE50chcoXfAIs0ZIrshOJa7AkE2COVrkGYIlgmE8scjotwQxEEnlLZPbYwjOT&#xD;
+4dUEgkdpKWgnqMyTwNWTbJPFgIxrxOJYIaiPwjJ+OQmIJFARv4knbukXyLpF1LiVFhTZzgEoH5Dg&#xD;
+IQxTtexCAxMDEMdxV3IFAU3S26BHuM8jgs8R0mGztWIdNgkM1qSWm4MTyXSyMPqhHB9FIYHwOR8y&#xD;
+cJJYmgTwgyHLuQEsRjCGNoEeE+VSFxFnDI5G4Q8gc7IUd6SsZUnx6kQ7bsCXb6hPmmxIcdMS4pwo&#xD;
+lmr5DCczI86rELdojT2BDM5khwzkhHt2EIdf4yT1vfCOHi1hNI1LxLO0yMa4RkbKihEcuQjnLUua&#xD;
+4hr8pj/UEcToiGImEsJAIanFkLOtojXkGqsxlv4ElyTHz/ZIm0BB88jh8iTQgg+AT2ehyroCbqZO&#xD;
+3TITMMSkmIwjkOG0Sec4OTx58h5shoKhJjCEMeqCVjGkMxI4TQkUbQjS1hAAJark67sgVSKBE59e&#xD;
+T5ZHAvzETNqSMeETdRIghEhZQlNRJ1IjcQRwcUgaDdl/IBsGikLjSB3kMJYISK5KAkgWvxvQU8hQ&#xD;
+uk6OCJS1ElstwH7vahKNQJgk/lSQg2ernIvEAAoAMtf74elXabl4Y9fG9AUKgSgfkOAhDFO97Aoj&#xD;
+Bzg5rmnkZS6FaxfHvMBDve+JYbaEeP99J4nhJLhfACPaswT4nysn1bjpDq+BJ4/ppPR+zSHEnkJm&#xD;
+QI8i6bWcQlI72S0uWJzsSQ4VKyr18nz3spPc8uI6OiT414vI5vjZDVcpI9MIS40YlhOYEe+aIhax&#xD;
+JOtQIbOqQlbUjyjjpA8whb4IQy+AuuMS03ECGISQnDJ0WEc4YnE2hPpe7IcUyxHjV0nwCmQjwiGL&#xD;
+wJO7JJgypDiFt0E8JnLuEQZQJ7qkTo1yc2qTzmlIXaJHD6ohmQ9bEIejJ5NJEdQntm1Eghg55Ftu&#xD;
+6GzLeIzZJORpCFzDXVA7WJYvXEJmFJTcoS00ElT0ZO9PJYnGkVRiGFjE4Ba6xWQqBOVDt6rYzSJ3&#xD;
+T4ciWGRq1iEicQuzSQQV27H4SVQZGBMJTMEQrsIYi4RnUCSUyquprloysqGIGlU5+nIyoEn1iI5x&#xD;
+DFQM6EJzctUKSOiyxKrNwI+Ci5GlpbDn5ArTR4X71SpELpQPyHAhDFPV7AoiB7zrN4O5YlmapB4C&#xD;
+sOUk7uHIc17MRrZgnd8dEuW92J67FkNbmSWv48S12kJc/9gktdkSXBvIpLz1vSeRmk+abMkqqQZk&#xD;
+CGD4cS2EMkuqQn7ok2ISJgSXX45LEcfJeCeCE78QjI3RAW7IGzRPsOwrDGkKOcJ9p5MTiLIwOKSm&#xD;
+q34xPE72WdjgNQm7FEJciuMET0uzrGgQ0vZiGAaQxWjISbpNcUhkZ5DlZyNCYTs4IjOy5GnliOOw&#xD;
+pFlMhvsQSppICikcnhHwTnVyWJaQpOIbzTEb9a0dhYnfPniEzfE4qMqTSRbBHPwSWgqE6edI2r5G&#xD;
+3hqneREwnJzVj4cm3SkjKschPK7EjgI8oQaFxZIEjK+vIyrxO2EiO/ZkbK2WJysORluIZXUEqRiE&#xD;
+iQRLvbsRa2GJ0I8rJINaQmsIuMQuUSFmeQh0ceS7ppkq2aIqpbnJ1YtCXSIpJKwAnZgEBiJoJKbv&#xD;
+j+chSaSLfXrjxrpQPyHAIQxT1ewKIwc9t6iqbrQ8aRuWSelgjtXEsfhCW/4YQJAI7bJkOq8rIbac&#xD;
+T5t0sjc35Dk2BIt8RkOydAJ6msQ4n3Qnz3AkeLdAIdXxhDT1SOr1ROwUnlFkddyQho+IEM5pcfeD&#xD;
+yU7KkOi8gI38gQH04nsOzEM1dI7pVY6Mhe1BLwT55J4bgMp9qJVsAR0kUhg9SRr2idchOPXIBlEN&#xD;
+XeJI1hEuSJ5LgxDOOJWOFEx6ohnKxLBTCd7BkJGoIXcDKCCBcwToZuVJZLCYAisdT0CGOYTxOYJ0&#xD;
+dMSoV7qy5GXk5VPwoJXqkIc0mLCz9kZ1kyk8guR0sSvJJEMSuSiUUpHM4UhL1BPO2SOXj2ZZl1hG&#xD;
+ieoZROHdJYuhlWmRqYWhapHMybRicykIuXJNjkb1az6RI1AgmySwWiJsaQFItNXZxOXJISYEs4Mg&#xD;
+K6TZCJIhkJmEIVmkSxiNueTLqCErCkbyCJyEqJcEDnbBkq83HriDRyIcQgF0at16qePG98iUD8hw&#xD;
+IQxTtexCBBGDl6bmVc3vQ0ZSKl/bQCHerZLS58jawZDVrIcm7EQ5TgiGC2sm+eCHb+vkOZZ26O5k&#xD;
+OPYAgWiR7JqieQ2lQdCI8v2ZLF9JJI5wQ6D1cjqL5HgOFnTkhChzIhIaThakjxjK2iKx4FF9pIbL&#xD;
+dkdr0rH+cI8Pz5OtkCG62hPLachmLZFuJJ4nghPEWSdicRhQ7vnEdnzEhsOXYOMl13ckMxfJ7buF&#xD;
+FaIjmt+SyzicfUkc3xIjxKORGrBItzk79khhcyQxZiYd4RzUshpQkM7jCdW0StXCTSE6mGI57Yk7&#xD;
+FklgNITgXSQ4hJLidLBzqYkHaVpXwXeYNLlmMRyVgjj75K1LJRrlE5AlOtEYlMmxRB1cjICTbYI4&#xD;
+NpKFRJHyJBsgnEwRDAhIRyksVjCDLxGbUJVrxCrPIT4RNDSda9YpCNSITugIgtUDhCVQl00SDR3R&#xD;
+PuqJneQTHInSUTHSIxBkJUsmCmRqEt+QTOYgQim1XAn27vE8a57+P61nbqTEoH5DgCEMU63sDCIH&#xD;
+POKyU3ls0Zx3YVx7gR8bb0jicbWfnYj2PZEtrywlxyMQ9gcaI5rkhPrnRiXIfXJDvHSSPOIZLPSp&#xD;
+e56Q1fayXxLyxCZWI5NxKJvSfV4pHp+jIaPQcdvk8iwlvuiEfJHUyfXoJBUghZxRPiXJSXIIJDF5&#xD;
+0jEZUeGJbDSk+KRCPFseSl2pWyJHsPNiF26TyCrulEMOQhtuVELmwIX8vUk/H8ghf4CTjbi7qJK8&#xD;
+UjiFEDaIh1eSQ4FxMjwy8Ty2UJ4LEkyZUnEk1HJraSRgbEjNrkIeSIzUkaOnISo11ViEUEm2CdWU&#xD;
+RyoiG4xM/koCEr5DyNT4GtM0Qq35NZUEGgt2TyFwjEpEh5YlVlEYGqyCG6jkHZYi/IEps6Wj2PVI&#xD;
+KlEquAJS0kolsiqwTuwCVuxnXD1JBIssErYyY5doUSVYZEQPGZYZK82Xm1MLp0msOTrGP82SwUQj&#xD;
+SgE6RyIsCRuJoCkSjNJGNsM/fdKPghdUtESgfkOAIQxTrewMIgcN3bXqUN+UzNFQ9AR8fTyGpyZH&#xD;
+g+tJZ+6S398lcyZDbZ4hxmrat0jzLgpLZacnoOMEOi9IIb+ySwPq4l65+kVFcLIcw0JHjGYIbHQE&#xD;
+ZuRJaiCQ0jseb0httJlbuBLlHfiNDdEzWCOQypGnz4ljNKQ4LpyOeURwOII4LOY/zW+6kcQvxiF0&#xD;
+ZC5LJZrRENFuyMWCRxkohhqJDZvJWKBLC5S0K2TMiSkchJ4HUEIcAjVtEkts3NkOFPJbe0S29W66&#xD;
+WPpxLAWiWxyhGm4jBUQ4VUtTJE9jiSeOESxziN2VU+jIRlk9ZvyUWwTr1iRsD9lJ4bNEXHwOmSRA&#xD;
+ISN7nTdkcMvH+EIOpksBHJV7+P6hI0YiJePY9uTJ8uE5Fm6cuSGYng8kS4BkSDAkZcmf6RGNMuu6&#xD;
+SLNIW7xNEkhk8FUy8GxpAU2tGEU1SdG1Jl8hKrkwEIppEqeOoPAkdlFIuwBEcQmNpKBcIYx/9NqG&#xD;
+Rb1UI3N0EpQPyHAhDFO97AwiBy/ObxvpU7uEUFW8YCPfdBkPPkoN+gFE+54Ijo/PBDpHiQj6A80k&#xD;
+cWjOnhqW/DpEU8jteDEZXgYhiEEodYlk+3E+bc9I82oEeR90JdN2JLpE8lS1pDewSPct0RcElhs+&#xD;
+S6t3AnoWE2ZqsOckcxi5Ukks5ysjbw1D2ybNMRygSTaxKjeIZwZGtYI4y0TPlCeU5SSbSIXMaRs8&#xD;
+CIZ28SnsJwmE9dwH9MSnSyPAL+VmYPgiG91eT9Bk4FRxCEbGEsaiuI0qbEhjHks5RJYHHE9pHIU4&#xD;
+BHKUyNauQszCYVZN15GNiCNRnUpGhgCWDyWPnEctsMmxSJ7RBNkmHF50w2CGIT4tj05miEJtCV8q&#xD;
+QjktXDEr4seGoIRN2FIYFZMDSNGtnWOQawiBJK3HJLMRNCI0MuQBuCU+ETjDI4NZKW4m6MQykwlH&#xD;
+ukZFAgwpGdjfByNDBShgiIsBpEjhYOd6OQRzJFu99FiM8o/4lABWUD8hwCEMU+XsDCIHPi6qX4aY&#xD;
+1zps1UMr1AQ2TCDIZFD+OQyW80GdoBHkHAyPIOaENF4ZIb3Wko+XJaDhJDtOyI+JOtkLoCGr2BPh&#xD;
+OkJXsCQrbYjxrKkK+lIca7SQ5PHJ73NEMfmydaYRxbCUTwOQzejI0NqQw9uibpPF4okrhRLjXYSO&#xD;
+orENvmSHEqpGVuSVamS2lWZbBGRlSGXoEz4Uhvs0Q3G6Jo4HduMISVEJuBJZSMQv0SIbeARyGDjk&#xD;
+CwiVrTEGaHAbZNc8hauTsslXmkojSA4pPCYohXx5C5IJ2q2TkkZl4iuGQmYwhIxBNmXt+wRrTSNu&#xD;
+WRsS7QzJNhiGXwJC/hSOYxhKBBJChyvH0HJ2hIHKQrYgljsGRkwM6SpmWTyVOXs0SgWiGKvSrdmU&#xD;
+lnQcAkfD1rpZlWRjRyF6XgUMhi4xC5BIWotmtmUJIsWT5BFSSVsRCDgyErBEIN+fbf5cnSJnZpI6&#xD;
+LeBLAL0kQywAosWlA/IcIQxT1ewKIQg+llPFVdWKy5ExngELl7K1cnI5QQ6/xMlK5WT4T24jb6CS&#xD;
+6LiCeLwBHxZx2pvMBLNdhJ8A9xkOi6AlkOfk/hp89CVPj5LhfPyfCugE+FacnatE8fmiOf1hEcUl&#xD;
+3vjxHJzqK15LtGwIw+NkW4Mnk7dp3SGDqEoudJb7Ukef40hCtEuS5ghRoEpFInrHk8LYI2hEpzyG&#xD;
+Ljko2jIV5BLjW/JSnEX5CpuPZ1aS1EIheqY+rE8XHx7dJU6BPG4EhVzJJmFJ4bUkCPISg26wntdY&#xD;
+QhXyUrbTrqCBsraUezJ8zlJZCASy+ZrgZLHsJzrRJtmUnEo3CiG+j6TtzI5XxpK/NIjMTpHIZmqQ&#xD;
+v2aGBMybNyZPT4cjPr51OTzjCNilu7HhCesUTiSsqXSc2XL6aiBY8KtYVBKIDxWdZRBsXyQmMJGx&#xD;
+N5tzpVIYbPkcPUJz6+PK5E0+3H3bJx1Oxp+RlUfU/rsXEAvWUD8hwCEMU73sLOtHrjmytL3ms141&#xD;
+iKXKzJSSSIHEcFlCUfPk8hliN66R7F1slxDyeT5D0wgTuhHjfmolyT2WSzryWkpkdvmCEGkTZxAj&#xD;
+07CE8BuiE/iJHN9vIWebStwWpKROVjCGahEeA+HiPTAkdNsiWcpkaexIxMMQxOvJ7SeQdPoiLQeX&#xD;
+I7TckNi0lua0u2CMvOkoWgu+sSZWJxjEDvlaTnaRKcAkzDE4dIjlMsQtBl+wRxtKU5BAOHJw7+DY&#xD;
+cizEZ1OR2+4I5jEka9cg6MRq7UgHO1Gn0WdFe1ZBwBHFAyvYzpIIy8BJ0Uk9fTtbkIEHWr7NJZo8&#xD;
+mkwYMsgoJfxmCnzKQIiXolvOrln3TF+NLTJPkO0ZnjGPYZKQCXU8dHk51awLtORGTQtmgJFXbqLe&#xD;
+JnUBJjedaydUrCRg5CISOJWoIZFpeSreZQ5lH9zMRUoH5LlZkpJJEDuAIQxUFbGIAiIG31fQy190&#xD;
+xgXKqJhTR8Q8ACnoLYVch/uUOUigRITKjYQSC7oJEx7eUTCqZGkmiIhTgiJmWRU2oon9uZTkjkya&#xD;
+qXR29fLOiRgdiFHee5fJQRPRzxcwlA/JcqomFNHxD3AAAAPebW9vdgAAAGxtdmhkAAAAAOD2r4/g&#xD;
+9q+QAACsRAAAoIAAAQAAAQAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA&#xD;
+AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAnB0cmFrAAAAXHRraGQAAAAB4Pav&#xD;
+kOD2r5AAAAABAAAAAAAAoIAAAAAAAAAAAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAA&#xD;
+AAAAAAAAAABAAAAAAAAAAAAAAAAAAAIMbWRpYQAAACBtZGhkAAAAAOD2r5Dg9q+QAACsRAAArABV&#xD;
+xAAAAAAAMWhkbHIAAAAAAAAAAHNvdW4AAAAAAAAAAAAAAABDb3JlIE1lZGlhIEF1ZGlvAAAAAbNt&#xD;
+aW5mAAAAEHNtaGQAAAAAAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAA&#xD;
+AXdzdGJsAAAAZ3N0c2QAAAAAAAAAAQAAAFdtcDRhAAAAAAAAAAEAAAAAAAAAAAACABAAAAAArEQA&#xD;
+AAAAADNlc2RzAAAAAAOAgIAiAAAABICAgBRAFAAYAAAD6AAAA+gABYCAgAISEAaAgIABAgAAABhz&#xD;
+dHRzAAAAAAAAAAEAAAArAAAEAAAAABxzdHNjAAAAAAAAAAEAAAABAAAAKwAAAAEAAADAc3RzegAA&#xD;
+AAAAAAAAAAAAKwAAAAYAAADRAAABawAAAMkAAAC4AAAApAAAALoAAAC5AAAAtwAAALQAAAC/AAAA&#xD;
+xwAAAOYAAADNAAAA2wAAAL0AAADuAAAA7wAAAPEAAADyAAABegAAAYUAAAF9AAABdQAAAXMAAAF1&#xD;
+AAABdQAAAXUAAAF3AAABfQAAAZAAAAGIAAABgwAAAXgAAAGAAAABhwAAAXwAAAF8AAABdgAAAXMA&#xD;
+AAFvAAABWAAAAGgAAAAUc3RjbwAAAAAAAAABAAAALAAAAPp1ZHRhAAAA8m1ldGEAAAAAAAAAImhk&#xD;
+bHIAAAAAAAAAAG1kaXIAAAAAAAAAAAAAAAAAAAAAAMRpbHN0AAAAvC0tLS0AAAAcbWVhbgAAAABj&#xD;
+b20uYXBwbGUuaVR1bmVzAAAAFG5hbWUAAAAAaVR1blNNUEIAAACEZGF0YQAAAAEAAAAAIDAwMDAw&#xD;
+MDAwIDAwMDAwODQwIDAwMDAwMzQwIDAwMDAwMDAwMDAwMEEwODAgMDAwMDAwMDAgMDAwMDAwMDAg&#xD;
+MDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDA=</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.base64encode</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>0A5B755B-068C-4574-A0CF-3D1EC7588E1A</string>
+				<key>WFEncodeMode</key>
+				<string>Decode</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>54563C47-2BC8-4DC1-810B-8A3A14E2146B</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.playsound</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Base64 Encoded</string>
+						<key>OutputUUID</key>
+						<string>0A5B755B-068C-4574-A0CF-3D1EC7588E1A</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>WFWorkflowClientVersion</key>
+	<string>1505.3</string>
+	<key>WFWorkflowHasOutputFallback</key>
+	<false/>
+	<key>WFWorkflowHasShortcutInputVariables</key>
+	<true/>
+	<key>WFWorkflowIcon</key>
+	<dict>
+		<key>WFWorkflowIconGlyphNumber</key>
+		<integer>61554</integer>
+		<key>WFWorkflowIconStartColor</key>
+		<integer>4274264319</integer>
+	</dict>
+	<key>WFWorkflowImportQuestions</key>
+	<array>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>2</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>DefaultValue</key>
+			<dict>
+				<key>Identifier</key>
+				<string>&lt;x-apple-reminderkit://REMCDList/48C5A6F7-C138-4967-A922-B8CF012435FF&gt;</string>
+				<key>IsAllCalendar</key>
+				<false/>
+				<key>Title</key>
+				<string>Leonard</string>
+			</dict>
+			<key>ParameterKey</key>
+			<string>WFCalendarDescriptor</string>
+			<key>Text</key>
+			<string>Choose a list in Apple Reminders in which to add new Mastodon post reminders. (Optional)</string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>2</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>DefaultValue</key>
+			<string>No Alert</string>
+			<key>ParameterKey</key>
+			<string>WFAlertEnabled</string>
+			<key>Text</key>
+			<string>Choose whether or not new Post Reminders include an alert. (Optional)</string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>2</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>DefaultValue</key>
+			<string>None</string>
+			<key>ParameterKey</key>
+			<string>WFPriority</string>
+			<key>Text</key>
+			<string>Choose the priority of new Post Reminders. (Optional)</string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>2</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>WFFlag</string>
+			<key>Text</key>
+			<string>Choose whether or not new Post Reminders are flagged. (Optional)</string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>2</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>WFTags</string>
+			<key>Text</key>
+			<string>Choose tags in Apple Reminders to attach to new Post Reminders. (Optional)</string>
+		</dict>
+	</array>
+	<key>WFWorkflowInputContentItemClasses</key>
+	<array>
+		<string>WFURLContentItem</string>
+	</array>
+	<key>WFWorkflowMinimumClientVersion</key>
+	<integer>1113</integer>
+	<key>WFWorkflowMinimumClientVersionString</key>
+	<string>1113</string>
+	<key>WFWorkflowNoInputBehavior</key>
+	<dict>
+		<key>Name</key>
+		<string>WFWorkflowNoInputBehaviorGetClipboard</string>
+		<key>Parameters</key>
+		<dict/>
+	</dict>
+	<key>WFWorkflowOutputContentItemClasses</key>
+	<array/>
+	<key>WFWorkflowTypes</key>
+	<array>
+		<string>ActionExtension</string>
+	</array>
+</dict>
+</plist>
