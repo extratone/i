@@ -1,0 +1,440 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Send Coordinates with Map View</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 4px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 4px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding-right: 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 3px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	white-space: pre-wrap;
+	margin: 0 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+hr {
+	width: 0px;
+	height: 2px;
+	border: 1px solid #aaa;
+	margin: -4px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams"><b>Send Coordinates with Map View</b> (19 actions, 24 KB)</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "1505.3",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": false,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4292093695,
+   "WFWorkflowIconGlyphNumber": 61455
+},
+"WFWorkflowImportQuestions": [
+   {
+      "ParameterKey": "WFContact",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(1)"><b>1</b></span>,
+      "Text": "Choose a contact to which to send location information. (Required)"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "Accuracy",
+      "ActionIndex": <span class="magic" onclick="magictap(2)"><b>2</b></span>,
+      "Text": "Choose a preferred precision level of location information (the more accurate, the longer the action will take to run.) (Optional)",
+      "DefaultValue": "HundredMeters"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFAppStoreAppContentItem",
+   "WFArticleContentItem",
+   "WFContactContentItem",
+   "WFDateContentItem",
+   "WFEmailAddressContentItem",
+   "WFFolderContentItem",
+   "WFGenericFileContentItem",
+   "WFImageContentItem",
+   "WFiTunesProductContentItem",
+   "WFLocationContentItem",
+   "WFDCMapsLinkContentItem",
+   "WFAVAssetContentItem",
+   "WFPDFContentItem",
+   "WFPhoneNumberContentItem",
+   "WFRichTextContentItem",
+   "WFSafariWebPageContentItem",
+   "WFStringContentItem",
+   "WFURLContentItem"
+],
+"WFWorkflowMinimumClientVersion": 900,
+"WFWorkflowMinimumClientVersionString": "900",
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": []
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Send Toolbox Pro’s full location suite details and a map view of your current location via Messages.
+
+GitHub Issue: https://github.com/extratone/i/issues/130
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+Mastodon: https://mastodon.social/@DavidBlue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="button " data-uuid="BB8DA98B-7E65-4D3D-AF14-925C373EC8FE" id="m1">
+1 Contacts　» <span class="magic" onclick="magictap(17)">17</span> <span class="magic" onclick="magictap(18)">18</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Contact</div>
+			<div class="col2">[{"WFContactData":"BEGIN:VCARD
+   VERSION:3.0
+   PRODID:-//Apple Inc.//iPhone OS 16.6//EN
+   N:Blue;David;;;
+   FN:David Blue
+   ORG:Extratone;
+   TITLE:Editor-in-Chief
+   item1.EMAIL;type=INTERNET;type=pref:asphaltapostle@icloud.com
+   item1.X-ABLabel:iCloud
+   EMAIL;type=INTERNET;type=WORK:davidblue@extratone.com
+   TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:+1 (573) 823-4380
+   item2.ADR;type=HOME;type=pref:;;1714 Oak Cliff Pl.;Columbia;MO;65203;United States
+   item2.X-ABADR:us
+   X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/cyberyokel
+   X-SOCIALPROFILE;type=facebook:http://www.facebook.com/asphaltapostle
+   X-SOCIALPROFILE;type=twitter:http://twitter.com/asphaltapostle
+   X-SOCIALPROFILE;type=twitter:http://twitter.com/extratone
+   X-SOCIALPROFILE;type=flickr:http://www.flickr.com/photos/DavidBlue
+   X-SOCIALPROFILE;type=snapchat:x-apple:mommilitia
+   X-SOCIALPROFILE;type=GitHub:x-apple:extratone
+   X-SOCIALPROFILE;type=sinaweibo:http://weibo.com/n/DavidBlue
+   X-SOCIALPROFILE;type=myspace:http://www.myspace.com/extratone
+   X-SOCIALPROFILE;type=Instagram:x-apple:asphaltapostle
+   item3.URL;type=pref:https://bilge.world
+   item3.X-ABLabel:_$!<HomePage>!$_
+   URL;type=WORK:https://extratone.com
+   item4.URL:https://davidblue.wtf
+   item4.X-ABLabel:NeoCities
+   item5.URL:https://davidblue.wtf/db.vcf
+   item5.X-ABLabel:Contact Card
+   BDAY:1994-01-27
+   item6.X-JABBER;type=pref:David Blue#1917
+   item6.X-ABLabel:_$!<Other>!$_
+   item7.IMPP;X-SERVICE-TYPE=Jabber;type=pref:xmpp:David%20Blue%231917
+   item7.X-ABLabel:_$!<Other>!$_
+   item8.IMPP;X-SERVICE-TYPE=Telegram:x-apple:DavidBlue
+   item8.X-ABLabel:Telegram
+   IMPP;type=WORK:x-apple:DavidBlue
+   IMPP;type=HOME:x-apple:mommilitia
+   END:VCARD
+   "},"WFContactMultivalue":0,"WFContactProperty":3}]</div></div></div>
+<button class="button gBlue" data-uuid="58465420-F7CF-4C00-8751-4F5724A46718" id="m2">
+2 Get Current Location　» <i>3</i> <span class="magic" onclick="magictap(4)">4</span> <span class="magic" onclick="magictap(5)">5</span> <span class="magic" onclick="magictap(6)">6</span> <span class="magic" onclick="magictap(7)">7</span> <span class="magic" onclick="magictap(8)">8</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">Accuracy</div>
+			<div class="col2">Best</div></div></div>
+<hr><button class="gGreen" data-uuid="0CAC2A97-FF0E-494B-850D-400B06B1A526" id="m3">
+3 Get Maps URL from <span class="box"><span class="var"><b>[2 Current Location]</b></span></span>　» <span class="magic" onclick="magictap(13)">13</span></button>
+<button class="button gUnknown" data-uuid="09EFE5F7-0954-4E8D-BD1C-EFC9B82C7B9E" id="m4">
+4 com.alexhay.ToolboxProForShortcuts.GetW3WIntent　» <span class="magic" onclick="magictap(13)">13</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">location</div>
+			<div class="col2"><span class="magic" onclick="magictap(2)"><b>[2 Current Location]</b></span></div></div></div>
+<button class="gGreen" data-uuid="28A729DC-BF4E-4607-A234-9A7609FF1C7B" id="m5">
+5 Get <span class="box">Latitude</span> of Locations <span class="box"><span class="magic" onclick="magictap(2)"><b>[2 Current Location]</b></span></span>　» <span class="magic" onclick="magictap(13)">13</span></button>
+<button class="gGreen" data-uuid="6910733A-A953-4ACD-9B6F-3D6E59DC3E18" id="m6">
+6 Get <span class="box">Longitude</span> of Locations <span class="box"><span class="magic" onclick="magictap(2)"><b>[2 Current Location]</b></span></span>　» <span class="magic" onclick="magictap(8)">8</span> <span class="magic" onclick="magictap(13)">13</span></button>
+<button class="gGreen" data-uuid="006C8E72-3864-4EAD-AC02-B65C08037C2B" id="m7">
+7 Get <span class="box">Altitude</span> of Locations <span class="box"><span class="magic" onclick="magictap(2)"><b>[2 Current Location]</b></span></span>　» <i>8</i> <span class="magic" onclick="magictap(13)">13</span></button>
+<hr><button class="button gUnknown" data-uuid="C2489A91-F076-48EE-9116-4F73E7F37D45" id="m8">
+8 com.alexhay.ToolboxProForShortcuts.ViewMapIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">showScale</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">showCompass</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">mapZoom</div>
+			<div class="col2">0.4</div></div>
+		<div class="row"><div class="col1">showTraffic</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">showZoomControls</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">isScrollable</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">mapTitle</div>
+			<div class="col2"><span class="var" style="color:red"><b>[? Latitude]</b></span> x <span class="magic" onclick="magictap(6)"><b>[6 Longitude]</b></span> <span class="var"><b>[7 Altitude]</b></span></div></div>
+		<div class="row"><div class="col1">location</div>
+			<div class="col2"><span class="magic" onclick="magictap(2)"><b>[2 Current Location]</b></span></div></div>
+		<div class="row"><div class="col1">showPin</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">isInteractive</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">pinLabel</div>
+			<div class="col2">Me</div></div>
+		<div class="row"><div class="col1">isZoomable</div>
+			<div class="col2">false</div></div></div>
+<button class="gGray" id="m9">
+9 Wait <span class="box">2</span> seconds</button>
+<button class="" data-uuid="AFB23829-512A-4E5C-A21E-4FB177D460C8" id="m10">
+10 Take Screenshot　»</button>
+<hr><button class="gBlue" data-uuid="C1AA44E2-F2A7-40B9-BDD5-E89BAF32D830" id="m11">
+11 Get Images from <span class="box"><span class="var"><b>[10 Screenshot]</b></span></span>　»</button>
+<hr><button class="button gBlue" data-uuid="EC8C3E26-7D15-4537-A8E4-0E0EE7C32EA4" id="m12">
+12 Crop Image <span class="box"><span class="var"><b>[11 Images]</b></span></span>　» <span class="magic" onclick="magictap(16)">16</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">ImageCropHeight</div>
+			<div class="col2">2200</div></div>
+		<div class="row"><div class="col1">ImageCropPosition</div>
+			<div class="col2">Bottom Left</div></div>
+		<div class="row"><div class="col1">ImageCropX</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ImageCropWidth</div>
+			<div class="col2">1284</div></div>
+		<div class="row"><div class="col1">ImageCropY</div>
+			<div class="col2">0</div></div></div>
+<button class="button gYellow" data-uuid="B24D522D-08B0-4CD8-B57F-CDF45ED45783" id="m13">
+13 Text　» <i>14</i> <span class="magic" onclick="magictap(15)">15</span></button>
+	<div class="content">
+		<div class="col2">Longitutde: <span class="magic" onclick="magictap(6)"><b>[6 Longitude</b> as Number<b>]</b></span><b>\u{space}</b>
+Latitude: <span class="magic" onclick="magictap(5)"><b>[5 Latitude]</b></span>
+Altitude: <span class="magic" onclick="magictap(7)"><b>[7 Altitude]</b></span>
+<span class="magic" onclick="magictap(4)"><b>[4 what3words Result]</b></span>
+<span class="magic" onclick="magictap(3)"><b>[3 Maps URL]</b></span></div></div>
+<hr><button class="gBlue" data-uuid="2E343113-85F5-4247-BAF9-AAAC00685B3C" id="m14">
+14 Copy <span class="box"><span class="var"><b>[13 Text]</b></span></span> to Clipboard</button>
+<button class="button gUnknown" data-uuid="801983E4-1899-42AC-BF4E-5866774B2104" id="m15">
+15 com.alexhay.ToolboxProForShortcuts.CreateTextImageIntent　»</button>
+	<div class="content">
+		<div class="row"><div class="col1">paddingRight</div>
+			<div class="col2">5</div></div>
+		<div class="row"><div class="col1">textColour</div>
+			<div class="col2">f43f32</div></div>
+		<div class="row"><div class="col1">xOffset</div>
+			<div class="col2">1</div></div>
+		<div class="row"><div class="col1">transparentBG</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">shadowColour</div>
+			<div class="col2">ff0000</div></div>
+		<div class="row"><div class="col1">scaleToFit</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">lineCount</div>
+			<div class="col2">5</div></div>
+		<div class="row"><div class="col1">lineLimit</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">paddingLeft</div>
+			<div class="col2">5</div></div>
+		<div class="row"><div class="col1">paddingTop</div>
+			<div class="col2">5</div></div>
+		<div class="row"><div class="col1">font</div>
+			<div class="col2">System</div></div>
+		<div class="row"><div class="col1">paddingBottom</div>
+			<div class="col2">5</div></div>
+		<div class="row"><div class="col1">addShadow</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">fontSize</div>
+			<div class="col2">12</div></div>
+		<div class="row"><div class="col1">height</div>
+			<div class="col2">300</div></div>
+		<div class="row"><div class="col1">Show-text</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">width</div>
+			<div class="col2">485</div></div>
+		<div class="row"><div class="col1">text</div>
+			<div class="col2"><span class="magic" onclick="magictap(13)"><b>[13 Text]</b></span></div></div>
+		<div class="row"><div class="col1">alignment</div>
+			<div class="col2">right</div></div>
+		<div class="row"><div class="col1">autoSize</div>
+			<div class="col2">false</div></div>
+		<div class="row"><div class="col1">lineBreak</div>
+			<div class="col2">WrapWord</div></div></div>
+<hr><button class="button gBlue" data-uuid="E13C9CB8-44E0-4947-878C-6D64BCE4FAC9" id="m16">
+16 Overlay Image <span class="box"><span class="var"><b>[15 Text Image]</b></span></span> with <span class="box"><span class="magic" onclick="magictap(12)"><b>[12 Cropped Image]</b></span></span>　»</button>
+	<div class="content">
+		<div class="row"><div class="col1">ImageHeight</div>
+			<div class="col2">400</div></div>
+		<div class="row"><div class="col1">OverlayImageOpacity</div>
+			<div class="col2">85</div></div>
+		<div class="row"><div class="col1">Rotation</div>
+			<div class="col2">0</div></div>
+		<div class="row"><div class="col1">ImagePosition</div>
+			<div class="col2">Bottom Right</div></div>
+		<div class="row"><div class="col1">ShouldShowImageEditor</div>
+			<div class="col2">false</div></div></div>
+<hr><button class="button gGreen" data-uuid="D9798C9E-1B78-4F53-840C-D7DC2B86DBBE" id="m17">
+17 Send Message <span class="box"><span class="var"><b>[16 Overlaid Image]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">IntentAppDefinition</div>
+			<div class="col2">{  "TeamIdentifier": "0000000000",
+   "BundleIdentifier": "com.apple.MobileSMS",
+   "Name": "Messages",
+   "IntentClassName": "INSendMessageIntent"
+}</div></div>
+		<div class="row"><div class="col1">SendMessageActionRecipients</div>
+			<div class="col2"><span class="magic" onclick="magictap(1)"><b>[1 Contacts]</b></span></div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<button class="button gGreen" data-uuid="CB40E421-C581-4761-9134-B074689A77CC" id="m18">
+18 Send Message <span class="box"><span class="var"><b>[Clipboard]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">SendMessageActionRecipients</div>
+			<div class="col2"><span class="magic" onclick="magictap(1)"><b>[1 Contacts]</b></span></div></div>
+		<div class="row"><div class="col1">ShowWhenRun</div>
+			<div class="col2">false</div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
