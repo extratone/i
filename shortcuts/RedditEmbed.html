@@ -1,0 +1,495 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>Reddit Embed</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 4px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 4px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding-right: 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 3px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	white-space: pre-wrap;
+	margin: 0 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+hr {
+	width: 0px;
+	height: 2px;
+	border: 1px solid #aaa;
+	margin: -4px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams"><b>Reddit Embed</b> (9 actions, 27 KB)</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "2038.0.1.10",
+"WFWorkflowHasOutputFallback": true,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 4282601983,
+   "WFWorkflowIconGlyphNumber": 59779
+},
+"WFWorkflowImportQuestions": [],
+"WFWorkflowInputContentItemClasses": [
+   "WFURLContentItem",
+   "WFStringContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1113,
+"WFWorkflowMinimumClientVersionString": "1113",
+"WFWorkflowNoInputBehavior": {
+   "Name": "WFWorkflowNoInputBehaviorGetClipboard",
+   "Parameters": {}
+},
+"WFWorkflowOutputContentItemClasses": [
+   "WFDateContentItem",
+   "WFStringContentItem",
+   "WFDictionaryContentItem",
+   "WFBooleanContentItem",
+   "WFNumberContentItem"
+],
+"WFWorkflowTypes": [
+   "ActionExtension"
+]
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Query automated embed code generation from Reddit URLs.
+
+GitHub Issue: https://github.com/extratone/i/issues/310
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+Mastodon: https://mastodon.social/@DavidBlue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="button gBlue" data-uuid="F7BB183B-2FB5-4786-962B-70EF3143E242" id="m1">
+1 URL <span class="box">https://www.reddit.com/oembed?url=<span class="var"><b>[Shortcut Input]</b></span></span>　»</button>
+	<div class="content">
+		<div class="row"><div class="col1">Show-WFURLActionURL</div>
+			<div class="col2">true</div></div></div>
+<hr><button class="button gGreen" data-uuid="C44CCB9A-2242-4022-9C8A-A32F5DDDCC83" id="m2">
+2 Get Contents of URL <span class="box"><span class="var"><b>[1 URL]</b></span></span>　»</button>
+	<div class="content">
+		<div class="row"><div class="col1">HTTPMethod</div>
+			<div class="col2">GET</div></div></div>
+<hr><button class="gOrange" data-uuid="B7E6BB02-B273-4F7B-BB28-449092DC02D7" id="m3">
+3 Get Dictionary Value for <span class="box">html</span> in <span class="box"><span class="var"><b>[2 Contents of URL]</b></span></span> <b>　➔ html</b>　» <i>4</i> <span class="magic" onclick="magictap(8)">8</span></button>
+<hr><button class="gBlue" data-uuid="7EAC98AA-2F8C-49AB-B14A-897B94B03A1E" id="m4">
+4 Copy <span class="box"><span class="var"><b>[3 html]</b></span></span> to Clipboard</button>
+<button class="button gYellow closed" data-uuid="621C9E96-141A-4EA6-BB3E-B030404A7003" id="m5">
+5 Text　»</button>
+	<div class="content" style="display:none">
+		<div class="col2">AAAAHGZ0eXBNNEEgAAAAAE00QSBpc29tbXA0MgAAAAFtZGF0AAAAAAAAMkchIANAaBwhTvj//yCs<b>\u{D}</b>
+AS6WnQd30yF38BOc/2/4fSqbZvt/6//2n01cee3hDq3KBD1eqH9WsvAer00IAAAAAABBqyDoYAAA<b>\u{D}</b>
+AAAWI79eAHcckAN2JD84H8Q0h/T6/sVEPDFEnmZ8uBJxpFZzND2gCtx1Akg0PGlWEAE8dhWYX1zz<b>\u{D}</b>
+1WMcnLiaGhHMM4DGefS294tqIAl/rRP9a6Q/0h3+CfI9C4QT5fiya7xKC4japEr2sIYGiSXgCMlW<b>\u{D}</b>
+QqxC5LJx0kcBMuuERnIJ0cLWMrd1vIys8hSYSQ7lSO5diE5aSKFEyw5WdWUYhCpEj145bkymJjB6<b>\u{D}</b>
+rIWFcKPuTuz9P0zv3P3xdIZw87QzwKD1LDy42FAr8Yglvx/b2c6WzM/6//0/86da7mTaHXvYBH/d<b>\u{D}</b>
+asuER6/lCiQAf6z/wAA/cPo4Ac7RIe5fo2Q/Dz+MUhmlEzALJlNLZKUmrx02VHUpTPkQOaykxQow<b>\u{D}</b>
+zItgl/hcf8W8Q/wi/8+Iio0rkunDEq6yMw5JVUhATJzCDyyk2XU0MYiheT5pFqyaj6hX2gHzz1jf<b>\u{D}</b>
+1k0bsXx+Rcz0pEolR0JkThBYGDkWlj61l3oAcCFOZj1fVQjaqRWQm5HRG1WhsQT/+4+7h9Yddvx/<b>\u{D}</b>
+9dOpdrqcV+v/bUi86xPv3+P/HnoxSwIfEr/HHkf5s/6Z9U/pKqcUxW8G57bmm2+c8HaIKqRtZy/N<b>\u{D}</b>
+Oc5aBXvmGYZF2DwzCXv13am9RsGRoaxlyrj/pWd9Bynl1C2or9YIuhAANUxEQJ/fdJ/jj+mJLx1/<b>\u{D}</b>
+W8J/0b/jUS9B/xZCf+C38r8WVK39jP+YuKlHH63uRr5XkvAv1mHTQU/UuMzFUD3uoLscelVx1RjI<b>\u{D}</b>
+XHx7S283NKBXTqUqoYobqz6uIBWT1od1vIpJCsuRdyi69KkMl59PmWJ7upusmLa60uskU3suZhPh<b>\u{D}</b>
+opvVtTFi4U0CbACEKFiHGppt2T7SzAvXchFapeqe/j4Vk+NtJyMRVBAgBj4938PFsaqAS9GfbIl/<b>\u{D}</b>
+jqPGsvFxqxp3X805o6oo9EnctWY+OSCvta04ManMno0b0PECPVJUFuBBJvOCyyCqKGzD8Ogn8Ev4<b>\u{D}</b>
+DZL/SMfHMn4A/s3Ev8Qx9bCOv/wLxL+Hp8/6zJJH2u2LhbHG4Po+CxtSrrj+ngM9n4KBznsWJC2v<b>\u{D}</b>
+EYrUV7ypdvcYJqzeBjiKiZaiPcGYmN8LGSapnDQthonxm3UQ8KPWsAZZWhnypDBkJ1Ui1r0ZDVnV<b>\u{D}</b>
+sTIaTi6TXUnXT8K40eXgKYZ/B63um/vVjdJY4K5Z5sAXLPSg1A43K4YgrNWMJA2q6YgrNKzXDEE/<b>\u{D}</b>
+/peen4HEfr//c/xWmS5b3/3/+PifD1fDufz/9P16KMuPO1iuQAh+Er/QnEf7Hv72tAaqai1NU1dh<b>\u{D}</b>
+1mm6C+2+yurNx/DWuHbrXwfE2aNAtViU1tZXyd4f5P4Y7r8KgMh5p/1thP+MH+FIl62/zGpP/Ip/<b>\u{D}</b>
+Pol8Lv7QBP/SEecccZuSmmJ/jZnRTu3QkYxbaKSa17I25g9UvFEvTFtKQgbdC7EP5ydzFlDjJifw<b>\u{D}</b>
+QM6XTKvJzL10zvJ+kW0LKlcfYR94NvggAp4VVrJm9x3ydLi1uhixRUb2PWS2029nq+Zc5tr48N1M<b>\u{D}</b>
+8ibsLOUVfTblz27GSzEToSUvPwqsxNqlAEAS9T/cgl/jDfCve5r923XroPfaHvrLvsxq2e3a/M32<b>\u{D}</b>
+npYxNWZ7J2SXmdxyxLomS9ky5tDjXq4E/XP68iX+Ui+GRPqn9CEl/dD+Y5HF/1zSX7ovj929JlbR<b>\u{D}</b>
+5I4c30fBY30EYtn7PYF4rcFQ5HoXHTXB5xjuWp4EYaTYSFSw9TpjGavLVCzwd8gxyNUe7Mvf7RGo<b>\u{D}</b>
+aJnH2Brx696y0EWMVrTL02CeDbR6VJTVXhWEcCWQ+UIwTd0qwB70vgxw629qkGDjPKzV6gr9wtv0<b>\u{D}</b>
+3u22qS/Uah3VUDF3AOAhbEQtyo0SUIGf8eqnFr15b8rcG6tVQpVkgmtgnGSRyO3/SkQC5h+25NCR<b>\u{D}</b>
+KwjjUEnCJFD967Cwpew69sm2aZ+o4qsRLpL6c7Kaamo8a7fRf6vFvFtsw1xDYdrZqf1NOpLhuOTM<b>\u{D}</b>
+o/beqWlHb7Z36CzLJdW1LSTYtl47vNKU7VUyrJY7DX0jCmXdZGxUFelXYsVcjc7UeO5zWt+C1Jyf<b>\u{D}</b>
+G93TfckHCHflIW5OlguEtlCKXEiw4UZ9Qz4t1oinO2zTXzFQrYlh36qxZPiwUdzMyYskspoR7Yv2<b>\u{D}</b>
+k8lBFC31WjIfVVxmCsqvIrffuEWMYrOTE7qxdcB6qBSm8WDGpaftdlHZ2yMrurv8LH9tRuo3C2KE<b>\u{D}</b>
+mKvFUo1GQLVRwio2pRNW1suc/YVV+yzrMYlkvEka6onxTGBlTYS0waWGy3UNlEj3VvQV4pcXFqSS<b>\u{D}</b>
+lcPat2snydCUEnClmyo9zIu6mxDHextrRJEITSjhZANGKQJRiloTsJDQkAlMwBzpoWZGVl3KWn9v<b>\u{D}</b>
+1/HGJAB9tHmpUJoUEULBUQGf+iHl8hX+CVlxSSpkBrZdYCcEhHCaSndI+c/pSJEEXRyOfcSjHu4H<b>\u{D}</b>
+YX4rWysw/+PWbDlUl7d5kfd4qeY4W4o8D6rwpCWDSVoRMybL7oMzZc512lcztNyeK4LXqKQeYUyl<b>\u{D}</b>
+sJ09Mh4Lap6mHawNlstqnrWpNzZvbYvcwFBDqULSrR5KWoa61OlV8WK+2zn5FzqN1ojmR2xTXCnS<b>\u{D}</b>
+Q0LtnU1X6s21GRU62hcxYRiaErGb+83kqCuXgy6i+rLrqE7hV8TQ+nkYZltDopfCB/0j0oj2NYZV<b>\u{D}</b>
+rxQTpXLxbifcpIVWVH6Nt3mFGXpsKoeVpSlsM4TtD6K7CTL4VsErNT0M2w06HVfjJDxugpJKtrJu<b>\u{D}</b>
+RLDQb3LL7cCdtVfNsfFMnzI8olB+to1Nq2hVo3cWTU3n0alkNTBOoxEyefXFdn+3txIB3c2YzZqc<b>\u{D}</b>
+cpfAYT356+AH1z7u3n23gAHAIQxEFZaNYadCqDBTCBm/t+al8fE6tcQIzJgXVky7MGChk4X1mtl1<b>\u{D}</b>
+/yJp8oEJYW5UwXlMKgKNutKpTNak8trBwUH71itsAxSb7lqbKnEfZq32lpX/PM+zOQjpM7ntdDx3<b>\u{D}</b>
+nrA624bA79mXq23QO212u3F6zqoY7lXr7N0HGdimbTpNcrr5O7yKmBolMFuuCWdVrhLaSTyXHqkm<b>\u{D}</b>
+XQd5JlGnCVU2fo/YcSSg/DUxQVVOZLbvFC0YGpT7V1SEXOw0Y11UxSb2F5oVTFE1dTazAqUQ3ZS2<b>\u{D}</b>
+5MSOywefU5UCO1vNX7jti8G33NlT5dRVfV/aX0Qp2oMilk3nno+mrsIUEqCSL6Ob3KGhrEjUbmbk<b>\u{D}</b>
++O1PAVy7nvUmaK2ZRcW1vpRu2wdXokWwos0mihNN4Vq12O8mNqs2tFvEOYpScSxbFsyWDiMsRWGI<b>\u{D}</b>
+0dGpCiS1fkhjIHpPil1UvogjVTVlur5kkk4ohHUyiyzazaRGFqHY7WI2oqlCUgqO1ZQuJlxD/en1<b>\u{D}</b>
+OAH20ealw0QgpW/t7vh8lR/ziEm7rnRMixXgb93N4DPw/+tcI/ZkyWStU/llFEookKJbW86sfA30<b>\u{D}</b>
+n3yrUZDIeLnspKpugkDZrfUPBWblWKZxuBstZoj6rr1FUbFccR37HRt00UpHm4xImK8pEyNE+9Zr<b>\u{D}</b>
+i1tioGzfuvKp5dU60xAyEWsrG79jFTqGh5OtBGx9xd5cWdHz0pUi+1ytQanOp2MfqcUxzF2xOR36<b>\u{D}</b>
+1QsrF2l0jZWqd1j09yRnzahxc3KQZ2LxVfcc6XMq8Wyp6fEK2XzS80LtbKwZWliPXs/TVQ2VQWCR<b>\u{D}</b>
+L/j9nuSeY8ejqbnQ+DyZogUqutrZwaNTJ7ous7zcd/wplHNQ+aq4r165SCV6USp1fMmd183pLuLe<b>\u{D}</b>
+4zYmtipJk2bAo9bAVBhcI8nawAjwISxEHZ6NYaXDlGB2Z4/b44jj8ICDIrdpvSZcjMDqrhu8uzLo<b>\u{D}</b>
+PYiMEWRXCIwYuje58Px3idre15b1dQG2cc4X1zex/Q5GB7P1tw+IdEP29+y4W4prTyBtX9tgt16J<b>\u{D}</b>
+7remmPXZwDaj+a0uTufn/hMdS5heiqC6nZmv07OCgt27S+tmYxrCQ3A1W2Q1JpXLZ1o1h3jZ2jlM<b>\u{D}</b>
+8stvkwYWaiz0ANaxltF5pm7GiVb4vEhwLo+RiXBeFF0UnU4/CiQFTK2xx4aqnQ1eTn3MRBu5VZkz<b>\u{D}</b>
+8W5rI7G/qaFeYUlkhGiQynJuaMOFro59ZXiow6XFav09LR2e1jnnXBV1wbi2hthVuZdyWpqFXdWW<b>\u{D}</b>
+VFL3KT/tfL4KOSNzejrrZCJH4Vy1fCMPCpVWkoPVNqdyVzX3BWoy65FLIZIiTUqayJ11nRKdKuNq<b>\u{D}</b>
+uMWm0VEoug9S02ll3MX6KHSjDWqdv6TlT7P4xAggCxWQZgYxeM2Lk/2jzUaEsgwgtx778X0+Qf5N<b>\u{D}</b>
+yUqpGTEq1ORFojx9KgOmOSLQIRIojdwn/j1nYeO8Tf7nrfstRjXrScY9ZPWZma8lbZYj+VOGX41V<b>\u{D}</b>
+WtTj9fjC+T1BTqDAUNfx29KlqvpipHlC0hWxZsGonHoUWHi4NOlCJU7XtyWaJGHvOtZmETebalya<b>\u{D}</b>
+Nfb7XQkdhsimGEC001mgwz8YAU2ENXVrpSbR65jSTzZcohNkltUNbvpoObfXVJ28Bn3ejldyp7er<b>\u{D}</b>
+8TBhG9ThcBye4Yso2uCEDjwyr8jgHmzB6Ztcf9//hhF13l/by9VHj5dfbz4/wsB16LNPf3dz3XWn<b>\u{D}</b>
+7GpDW1XjEikNG4KfN8ZjEHAhTjY2W6kQiCvVmIG9SiMTN2qzAv6TB4fR/P9Pr1thrjPHx//SffiJ<b>\u{D}</b>
+GtH8//2Pv59XxJN8fdOvwgAcAl5i+f5L9eHiv19rpzUkHDRm/2f4N6rhk1l1SGmU8nVtvucJC9L6<b>\u{D}</b>
+8ZO+mMs/E9wIe5PhkS/V98DiFERCkAhV5SR2k/1KuIMygxn/OFy+DdEDln3HRfNp41/HyPI8oBMg<b>\u{D}</b>
+AMJgre5/TMGLI2HbMxEX9hA1s7PGqEACPuP6uE/1dfnXI477qkP86V/oHyPgvyUT/0XP2ai2YPxS<b>\u{D}</b>
+15A46YcHZebZNAzblsLWXXAtQxyeS3aDxSn4G+kKf+zgZdIidi/1nLCjcOUH6Rw1NcOIoSv1S4dG<b>\u{D}</b>
+Vkhuhay+XKdpamgdgwtdMkeb6uvJ1Xu3Um1UdYzm39pk10c7HgeBHvTnGUZY6jLNqWLrbIM0+BKC<b>\u{D}</b>
+GEYgTRdh0PLtul9ysi5FKXt+Ye1WEl3kMABt3CjomEx4o7ggBk53856/gmE/S3wWI/4qj/GCkvAf<b>\u{D}</b>
+1AJfxLv9YmR8nfQgn+0j/Ss6bRQQ2yRvjbWNPx/clSynwmnPS8d5F3wV0aIsouf0FOFR0yI7yZJN<b>\u{D}</b>
+fl5Gbrr+rEf767YA3kzmzeEWKIdqqu0bC/z5SSzNYRORKu3BZ5qUC3emF+PO0gY17FMu4FnLAS3p<b>\u{D}</b>
+o5hPKV2F8wEhgklFXK3NAdoQeEobkmUgcKxxZK5ASAVQiDZ2cydrtVYSoHfLMHdrQQVmlHQJ9og7<b>\u{D}</b>
+j653G73mnt//U/V9ZqVrWfv//d/m6miaAls/ApL4uaXTdUJLRBqpzf6/+3bUAsvx6gX9dtoWc+e+<b>\u{D}</b>
+Bxh7vhHACGl3BL09pbscQsIrSPUq76lInoOluY3Lzvcg+pe+NMwp3KWe+74+IVB49KiaJrHRQI/R<b>\u{D}</b>
+P5nk/1JfnZJ+MfyIEP9Qd/qDSMDHk/9Nh8kHdTHXSPdq/7xzRzT2S+VaeIpGOIthPeh4iUn/6tP+<b>\u{D}</b>
+fj9ryv9r57zSBWqTKTq/V9vrcld9CwGcPahUqblVjsXKNCwAiepUUZcBpxQDt860a6vZV8ilvoeN<b>\u{D}</b>
+Vuk9bCMcAt6rl9qXxnnnHCZ6aIgsRZwVcqv++3veZbZnr1el/bRpjUZznDZv2zcBDv6ZACpbEVxP<b>\u{D}</b>
+0/8HyP+JD/xNBLwP9MSX8Rb/QQEfIHyzJ/ng/y1XsZFQF3kaGfN2svEx0e063w5PS1x6+prpwEeq<b>\u{D}</b>
+/GyR5cO2ia5L67fJeLrIkRPwM2K3K6cfQSqNT77RfN3Wl9r7U6KO/tINcAur3rgGXprPa9XyeZUl<b>\u{D}</b>
+55FG/b5ejek5lON1qVXtJWf5uyZ8GM3YHp1rM2jYxBu2q3wBiFO1LZRCZLncIU6+Pt2uAVmDapxR<b>\u{D}</b>
+IF//c/8+s7Kvivr/+5/5/HvVbuNAS7B4nIfwm/4nJDoJyX8Un0dex3JC8kRnpNClloVnEwEnsMni<b>\u{D}</b>
+7C3ziOwtfQn+S0SRuRXs4LBgr6xPzeQj69iSnaZ7urHZFbB/MpzzTa9JH99NJ9tbYlmsgnAsrx5p<b>\u{D}</b>
+O17hrlvf8CoHUgNyHMTaDZkiJz4idrycR/ixfyviWY9dkvwTf1DyPP/NZP7v/zSSXK+qkP2CfpsI<b>\u{D}</b>
+cHwRL9nfxEJj7CR/KZ+vztwYF60XnB6B54PLvvmQk9kkQI4dLY/wPtH+9JWBz+4cqNrUngPe2dkZ<b>\u{D}</b>
+1BQBOzvF+BRw3+LYY3mHtXF9Ap1oMBwXbozeuOyUJXaCdCc8ZhEo7bNsVm9LCSZucqs/gYxSbcc9<b>\u{D}</b>
+c/Q2aMetExHSlT8KXB0mypzqjxGV37BY5ceajPmoFphW1iV2ykSTVMrQZMjaB0WInrJE6rtEpjdM<b>\u{D}</b>
+spJM8YbBS97DOdqJ6WLNal5Uuqzkm80VRQaJ242aJT89Ead4zcS2+4xqa3GzzZ3ZNU5HE9TTAKVK<b>\u{D}</b>
+KgKcksDK1zyoGS2h1D/617s6SlfoWDTrMYH0VkucN0sTx3SCiFkkOcZUMK3kxAAAGYP9ypDQgrNW<b>\u{D}</b>
+IyBP+P3+AFa/1/eJC80CVDDEPevwjoieS+EOW6OVegF8xQXbI+4227isJ69rMnarOx5XoOJgoNpZ<b>\u{D}</b>
+uOT0OaoMcqq0ZdjZyuWtpqtHrN3YXcnfRsNd0mI+LO3/Be4Ld4DxBrcyv1gvYX5eWxflV/S/eIvl<b>\u{D}</b>
+fLkfjX8ziSdkS8HfWgjQzxPwR88SUW8Q9resv3hL3VxUjNzZHyv7b9bMYIX0k18Mt84X49C1YjlQ<b>\u{D}</b>
+vaa9peNfIdUUiNAAxR1FWLJmHF9fbLp5KoxFFX7Qw5V5+tjo4xZqFJdKYJiuLUvCWBvSh++N43Mu<b>\u{D}</b>
+qeRNn5NBGXW/pj2eBiVWdDLJfJ1mlZlQzi6VRqnhedYEF2Meat+1VnI5dfXpW0+BEHesomLImM4x<b>\u{D}</b>
+LdpKKLIgInxxiShxCAIHXspM5PkE5Wtmyk1J3Vs0/NKsECgY7mZIiy1qbYDP7NHSz0e31TZn95u4<b>\u{D}</b>
+F4W1sFlMxoYIVoF3ockyF4z3bA9b0TL1sF01TVi4C9RUCAGAgIgAXJvnAk4hTnia1wAAAACBv16s<b>\u{D}</b>
+KswbNKOBIG3XLEFbrlyCf/H/33WZqJm3n/6/zq4i3Hz/j/6f7JStXcf/t/ylalOAJUuZEvG35f4k<b>\u{D}</b>
+hnyvRKlHz36KYdAdWmmLVs1s0RqFfpd2z4eGxExJqHj/uLPrzjl9FbF8BQsA5ayBAU3AEg85J8p/<b>\u{D}</b>
+A+Q59/M0IfzdGEPCv8xMh++ng5Dpn8qgj/Gz+l5CN/K3IfwCfmr7Mb3muge3U0uraU62YnhWTlN5<b>\u{D}</b>
+h8gwqfHWBsECCHka30HQaUY5RNS+XnTqpHB/KVScssFJBV5lPFqMH4eFX9ztayDBKwnmEUXk4QKn<b>\u{D}</b>
+2lxtPmn36NNCGTW6tOQm5Nli5msyMsjfzIyQdHawFz6EezKffhww0WR+D1OKryafHdSX9qEuttY5<b>\u{D}</b>
+78gyYST0grGCAqcLK0c9vKoDTLgj69Hapl1pJpFKRRvo3+JrjsgMCCEEohLNDLHfjvLmQkVCcWJO<b>\u{D}</b>
+nPNhqxQPJIZV8AiAAhpfw5kdr+ofOJ7UGFW+Sd2bOVLQaU1lTQLtqDJP0DXp/KLC2yMBZmSnbLK9<b>\u{D}</b>
+2Mal9uTvIxLWfYMh+Lv4Z1cLxK2a0Tjp252eChdgpQ1VNEYHZ4lYOfZHpcboTFy1+bYbDhzHgRrc<b>\u{D}</b>
+gG25XDEVarlk5E3I5IgbVdGQT/9v9N/M1decen3//ia1L0mcdd/r/bvjTgJ8Z83rPrveBdesTAR8<b>\u{D}</b>
+AS9D+aSX3V/t59KZ9JHJJqvgvvDzXlwLCXlVXtYlTuglRSaQIoCe+WE1xx5s9kfoCuKxsLJVige2<b>\u{D}</b>
+4AjwT0IT+gP4mCfRv5yxL+G39+SfZf56JL+dt8NCfav56RP+FX8tCeE/nQkv4mX26wcfUc7sJRRS<b>\u{D}</b>
+m7tquzbK81b9ksmVJq/iupvXOVnGMZun+X89B5lTp4J9X+2mNBxNBmeObHqwguJ3bYtLzeuZU5sr<b>\u{D}</b>
+6fkAI9LLcCEB5VQ9VywzD1lbZojo9KCQ4imhDZz9P6qeTJM6g+JQNETmJNLnETgMpVOPvaZFW21V<b>\u{D}</b>
+klfKCfqCd/DU1xc2DfEqDkMA+JH7Ta21G/rDp1X1JKQpK+t1UlfBt5siVCKxhr+ClbLt8Mtzyz9s<b>\u{D}</b>
+jtj2c+PedQGZqAnjon2en8IVPmouwlGCz4eebqezCi9ZPSiZ5WDLd7RnmTleJlOzS18MuByJ4V7d<b>\u{D}</b>
+XFiATGX8ac5zhQhlf69hH+Mx6+/K/bc+4TkfVOdW/2n+UfrSeew97zHR22xqcuVWOpaWb1BSsXia<b>\u{D}</b>
+6ZwkYL8MVTi0Z3SWj/dmR/ItcsY33voWH2+53pfePWNbh0lfa27UtIYMmcDOCv9sTJw7Spfm7sR2<b>\u{D}</b>
+I6/N7yjgIWxELaKdYYVRYCwjCB359SmJ1x5ak4VThtW+Ky5BBfIJDOSU/1rJwONvtxIZyT75EqOt<b>\u{D}</b>
+aWyEQk2hZpeLaZUnDNsVirE2+KVSNhymw4naXx0as09lWdYbKlTNi+3DynE8lculFVJ82JrGQuc9<b>\u{D}</b>
+J13EhnGISzNpUkyY+ZbOSMyhXE8dsLW3YXb0b3l6VF4wPFSetVZbWZea7ix03d8HEt+SXwY1Sn36<b>\u{D}</b>
+WJ71VnVxQ1BgpI4IaCWjrsy2lVVzWYsIUx4jSKGXQ2XjxacySiyzfaLQgefPLZhvOKJBJ0OovsPl<b>\u{D}</b>
+zqwe/DhufB1OJSpVW60XiwvsvGwbY/Cp6d0NqA7ceqSQ2Pa+IrDygksKsUJplTeZGGfMFwyDqRC5<b>\u{D}</b>
+N5ROQN2C+t0EquRiDJ7kyPwUPKvsVd5I9YXKABFsydZnNMLCqBYGBsknG2bPmNCZAcjolGmR5Y2j<b>\u{D}</b>
+9FbLMVW2fDSkQmy06OAtTg7gAAAAAMeNvbZ3TD9pHAe9iI62UuE0eBMEDv7Zjn8NacSrtbRRUUZp<b>\u{D}</b>
+dWVeAlFlEp1fSX177dnYZIRyTr5FkHHpcViu0fYaZjGbp62NsbFp6WheUm7bOK7TOzvKcFPSWKx2<b>\u{D}</b>
+OnnVOZmgzsbnNdyjjWdVqxMZoqkHE5HPcbO2nilnFPTFklfblQwhs1KVYqXjqtZuCLetuZQs9bPu<b>\u{D}</b>
+ejc+VGQxePEzj0eDNq9K+iTuXmtN1p2OLwhSq9qn39B4S7K60Z7CzYnBvbnQ2OX4MTO0uhxseoFE<b>\u{D}</b>
+k4tTKrb/pQSyx2txV2NSA0U02btZlpFYwvxKGp2srV7HQ7UklI5SEY0aojHIjPiFxzvTO68g5zNS<b>\u{D}</b>
+1rLVcdEUajjVSZgNqKr37VVGtgkABI1e+tFVdyOg5CeSVNSSgPAO1WSHWMp7FqFBB0grjZ7QicLv<b>\u{D}</b>
+OxJqy4pprLaufNSV2loV+dM5GqJKdQ3RqCanylqpUmSQnaWFJZD2RZnOXAROEiTSfTIPEOFzE/Av<b>\u{D}</b>
+UxaTNHi450Oizr0YERO4AHAhDEgH+oAAAf4Cz0qw0eGsExAg/LuY9nlacSUUpkzSFqtWws9daIIP<b>\u{D}</b>
+FKZbnubwUkbf0M7o7pDwXB4tAzvW2+8XCBrc5oEZ9XULjvL/c7ZhKj7rQVhXHWK6yXN/vOxWLa57<b>\u{D}</b>
+dGOOae0D3Lyqghw3Zaa5a/cP9qftPWNu16nzivbzi03LEM50rEXF9V7sxkY+U7albUO+mxGVyPtr<b>\u{D}</b>
+zjKbYVPaq+t25IDLUwnmwJG/TpjISnS2murukTq8eqbWZEy8ll6dHs2Ds1aWoq0bSml2MR9Y4aOK<b>\u{D}</b>
+5HrFFLZrS9KsrQug5EnS2UQ/C8quIHOuggXQv+rRSuhV1o1stFSKrqna7WthfmFCPRCKmIdE1G1B<b>\u{D}</b>
+O1eww5NSiS0nUTPKxk6ONtm0MNqDUa5tCcFOw0VaFSkSGtdtpd7Zdt3Oyqp3ZambsuFcwbUjKbo1<b>\u{D}</b>
+Ji+jTo8U8pObc9zJ3dqsAswGTnixPCAbrd/okVZaXY6LCqDBGGBzv8p5nw10tqmzYYqriISA3Lor<b>\u{D}</b>
+mn713T//bhJF09ZS/MrzDfG91Bb9iqi5PlU4zM7fsklbYaMrJv3IewSq/f4TKXv5ek7bpq5lPqVm<b>\u{D}</b>
+3RtMSP0i39Wu3VW1843wbpK4ccLunn2++QgKnz/IMvvKKJqPpZGNl1J4TLW1WaKLRWjVB9Po91Rt<b>\u{D}</b>
+1wgNi7H+MVHT/x+7MNpuCixf4w67dV/B3KE2wrmcZJJwJd+t3tHcpbpUVpmpegw1BQ51XSpwnEQl<b>\u{D}</b>
+OnHlw6XFvQ0pGm2VtGwYqWNMbeyn61yREz5suUUTtdgWnIlaIb3B6NW9LIbAzKhdHZgqsZWlmNHV<b>\u{D}</b>
+SL2rOUMZE80okE9VhkUWIKbFcqpj2dISXDZMv7rwrupogSUKuaLw6Xck2rqW61OgaKrkSUHHrJTW<b>\u{D}</b>
+SRfdtmyBcKueUmpYjLDA00nYzSUcpFo1IBjd3eTg0ZUSDOg9suvXX9rSw8kmKjSgAABwISxIF8AA<b>\u{D}</b>
+AAH+AtFTg6EBbM5FOOOEtZLNqpLDYHyMyg6c/VZs8M+8EhZ+18DncUwWcSTRtP3q4bTBYAry1JIY<b>\u{D}</b>
+f+7nWV73O6qNv2F668caT8p2Dy5510Ftl9Va4WlIEc1LKjN+JYk8o0RfM7KJXq7If9XZ/gf7rxu3<b>\u{D}</b>
+o/XWlNcM145vUdyT+8Z1aoERcZgXCRPtqbBR0G08Ft1RNZJ/sooJgEqixVNRynAd85NQPgddEDkZ<b>\u{D}</b>
+29CZTOVOfap7mna4uai9SbZC0qFGDGnN1EoWpZQwmokqSk+zm25EooKFwpopwIWD7ItmApxZM67m<b>\u{D}</b>
+kiVSpb0aciC2lThgO4dF7Pj1jyEZbpbcxoufESGTrqbHN8f3XH8zqWjm6Vl5XrFWaeWLgtXiXTO8<b>\u{D}</b>
+TZaRY6ZBaKw3CB2+eT4fUu4HM0wYlqSjSowZs35zR5J3haALEASDraGxdjoyevtd4KlxqXp2DoyN<b>\u{D}</b>
+eeguF70Q1uD1g+KRb037shyiaT9t3q4d38rwUnnNpEyT9KkqlarE2qZonqvCLipnroB12KtWKa+X<b>\u{D}</b>
+Wps6CSUMNFqrC4WHRN+ha3CjmV0UaYSZVWAUp5gSss7bDoXtq+Oi2xCE/ALZ3rrZeHA1kg0A7eYK<b>\u{D}</b>
+zRtUek8dPX7GHWUvAgotlAuTV6q7WxvmvbB/FRaKPcXexoI2Q0X6Cz63NuNN+6UG41sRoXXS7YaP<b>\u{D}</b>
+B3Ple3i0iXhX4g2NrBGY6xcWNs2/J1HP7vPHMyHQONlEORl85ppjLHSFOTEQVCGwxU7CSVKrPCDi<b>\u{D}</b>
+tWrhFYa0ZLmtKU6Wu4llA2EGRtUc4mSD2kXUd1e5CtpFhpk/0z8RVExpO72+DI7u4AAMDju8mohM<b>\u{D}</b>
+DQDmYHfdnR1zsPmObu4TYcnU2q8J1XXWByFO9DhZoomSEkFvU1YK9TtKQTneaMff1kvu03PX8/+L<b>\u{D}</b>
+5+tFffPQyd4Glfi+Qu2UVw7IXUrW4RkLnktcEJE5US2kFcTl5FMlVQOez6UtB1v76lTZwrggmqsH<b>\u{D}</b>
+YrWm5oxIbgJIPykZ8Gs4IvH4p9QCQ0gFtmXR1d0c6SaBjgOg31IhX7kT3Vol3PsZDtXMHN/iTuac<b>\u{D}</b>
+lhcV/+RrMtknXksGxyB5dAui03k4DcrIcUgDq/7TjPKVWVgaMwf/3j/mN1JQyd9y/n7V6c6uxnYY<b>\u{D}</b>
+fNPl8dVIEoDj37x1tgjf29Pn/UADQI/Ez9IxP+pJ/L+waPRbCKQeJUlTvQnoWCh/addb9qnyW75x<b>\u{D}</b>
+1B5nfJ3Uq3PMgR/ftjqvcGUNed0HI7quAOEPKBxt0rNKDRYg76hmQN/MX288559+qj8f+CR3+K4r<b>\u{D}</b>
+19//rc8/Hrh9XO+0Dr9J4BCWM/IST+eqyVH8RhL5gSiWC/AkS+TgCV77VSt8fCWr+qpL4ncemJs+<b>\u{D}</b>
+XuDfVev7S8uGp+8tcxd2rWjPFZDx+Xip/zDUqOutIG8ZO5jGoV4wCSiWe2LMM6HUHnPltZyUo2my<b>\u{D}</b>
+QD8RuWN2zlRPVmauezzBQZyETANNfii4Romp2LyZMM6Qd4pHDHRmgUhta/1/P+MWDNfz0claqU2Q<b>\u{D}</b>
+ETAMaKVZEkvijYAB8O8lMRmGJE24fxg1RlyCLpxngcI9KeeO7BtkFuCdm72XZYAGgarwDwyxcQnS<b>\u{D}</b>
+0gC6mqcQIebf0Ek/rH6vJfop/NwQ/SZ+D+LabJ2MuSq3CAwuGWbZO1KYNJkCR6lVDpHqcHpVlbIL<b>\u{D}</b>
+VrQLz7+K40hjaaPC/T+f+desWY0TRSG7Yyi18XmxLad5/8LPH5nxCEw5pjKrJkQqj+6iBWLHwpzD<b>\u{D}</b>
+fzmSkfcxGGgIMIEGt3mSZY+HCHS+i+DEj+Iv+XUT/1JX+YHtyESerHtisjbe9NIIRdziGmr2pdl+<b>\u{D}</b>
+sTbf6Ix3zXeE/EqE1Zg5Kxv7Tqb8Ro3oMmWBlRH8PCOq8HB2PL7JVVa68mBIEKQcImZNgeJY8U5f<b>\u{D}</b>
+tlvk+LqvvziEHdbsStnKBrdPwCFO1j3djGQVquiIK3Th0kIJ9vLWZITj38uvVaad9ep8OytVgJ5a<b>\u{D}</b>
+kQ/B/8BiVagT+8/q4nFnEPsz5W/JtzRiti7Kn9+5gkXSbOQ8Lv08QEZ81ZEcbB21yMbe4eLf1vNq<b>\u{D}</b>
+52tYuxRILtGNEozH280myjYNITPfkd0LOj+nlG0M6frLfIS09zSsKD+/i8dwCh6PPZtnrxDAmiJd<b>\u{D}</b>
+muCuQOG+GrzT0UYEHzmyKNv7+sJImE/wheX67rkPvn4b+Iq7C3NxCv2/AbL9A16PwPQsfbYOSssz<b>\u{D}</b>
+IYqiKcVmGcqaEgGwavRt+uXO57WxTWoqOtNfMrK9eUmWPOUyqzFI9CgZ1ZIl1l5HgBVdWv1TV6Yz<b>\u{D}</b>
+MLe3wGdKxP8A/fLdlkPtVyO0IxP6tZ/yxb7PYPhHLRhUhpKcDljDt31eG8bYk0djvSBYXC5bOsuH<b>\u{D}</b>
+DMtlkO86D27WRWlEbHir2KRAbnUo3SFvd5aGPD4vmuGGa/ABrAim41KTFZ+MpOEcWWCszqr1FoaL<b>\u{D}</b>
+rOyo1EhiE5PGNzj6I5hnhdDhn3E1NwAa093hdgd+uUozljejCQN6jDZAn/T151vVxL1rX9T67rV5<b>\u{D}</b>
+064/v98E3Fig+VkP6iv6oiW+vE/6e/5+CetukP6YP5KuYo635I9VTdj453ARC/Zjyy+Bui0flFJe<b>\u{D}</b>
+IZq5dfswQ2OEKWXho6Bs1217NLbm/+KXNuGbf+1MlLyIsY0igb5Lq/baHNvvQaPcW1virxKhCpZk<b>\u{D}</b>
+I2RX3W5NcwyusW/eRTsy2Mo96eCrhHckSCjDv3NzQWBuoFjADJFA+mpo6AFn4V9Wx+djVR2hycV4<b>\u{D}</b>
+cqmWL9mfQIaS5q8g0UQDjijm5KJYJ/tL+Qtd5kh+uj3R1Rc+X24RGPbFp6X7pZLfCE9adsD8jiEj<b>\u{D}</b>
+x0gPuYTiZIixNSw/8Giwv4lf38eqrunIt9pnv3obW6iZcyVeM9rlp3mbu89fsqyno5aGLqHNPRir<b>\u{D}</b>
+7TmiXlIIPOX5eECEbmBP+ez8uiIt8Q/lieryB9iT/js9h6oV7zGygo2MCMCYxWxgAYXFP6UP+7q3<b>\u{D}</b>
+Eacf+2Pp8oXi4evXzEN9scJbiWapaXPrjkrCYfMLSt3w0Zijkp5Vlotnt8HDL6n9sjeue/YREGgo<b>\u{D}</b>
+vGnBiS2bWi9NybClgr9KwIeLyYffnwsm42cvrqWbR8qNkFf2LE5OFQk82Ahfc/2zBA4hbEgAAAAA<b>\u{D}</b>
+AP4W302C0GCGQDs8OW3HHxPYgMUiZJUioxhcotlPNO4j5ziPMP23JofwOdRETtIxtCQEn91mqLQ4<b>\u{D}</b>
+8zdv6X9r2rZMNWWU9encG7Si2JTEtbU+7zboV8iGoPJY7P+3+la3R8zzvC1Tf+dbY4kKfFa/AXvn<b>\u{D}</b>
+qSy9H2HKdf4PNdFVxC1cFR5JRilgTi5Ro7Cgic3Uk1Y02if2zW1nGU0LHzkHZ7wwwtfeH2ccPpm5<b>\u{D}</b>
+ZgqRKn5aRaOao94qj8BPqE4lEorymD1eHX6KWN/EYo824wKx2G7yN3jS3CQpcDV2j9Vu59XK3VBi<b>\u{D}</b>
+pp73WIsW42Iy3icibo22RF4NEoSJlr5fzxrieFKIwXkw9nGQB9SXpayJrFR2CEJ5XkllnFm/XSm+<b>\u{D}</b>
+O59/QeLzkCc7c5Rhv9R8vMmR40p14dlbb24hoBrZWO1N8kuq1l2lddYqg2wqZcZwmosaox9Gj6Z4<b>\u{D}</b>
+0QPOt74PJGXooy6QEZa6XFAO59+fCvK/wvNEIKJl5rIkXKsfUftv13Oo+NftvcP23SPnOTRET3M6<b>\u{D}</b>
+E9i+9a2hy9K0/5fzv5GqX0l1ivRvBejWbFPw0l8bsOuyjQQWdZVHVrXtGlkcHiVLyfIAVJtip+if<b>\u{D}</b>
+3K1Zk/RdFo8x7C0lsDap6R136ecA/U0eKlcZUGHEru5tNvaX48y3ZJfmU5CPV4i9zvoWqFG1wa76<b>\u{D}</b>
+oxmm76T0D/w+BiZU6WBGlVWGNNsbkE6uZOmwbg6G6pJU4MMUk+ci4UoqR+WIKqbGO611J6a7Kxnm<b>\u{D}</b>
+YE6D0uouqGiTiia/N94qGbQbZyZJ5SZhzILO1XpUKQsrDsbWjoNjYRUJeM9kmNcvk7V7LmeV31IT<b>\u{D}</b>
+9DjAEl5RVnWUJ1tVI3hcK2KoMwXN7KLf2u5O/MWVlfMLBCgEjsuc1HIjyLyOqnGOGdVNZUZqiXhg<b>\u{D}</b>
+iFiEspCljS6ijwbzk3hzRmNkyWGRkMorpk7lmJZ32cEYmqAUWLghDEgAAAAAAf320MOyU+CsGBAt<b>\u{D}</b>
+pv39Sk9vv0OYlIm4qFm5gYnDf7JzltlJbdjb8i6iKM+RypeUNBVaFgfMhaodNHmCptDbqubYTY7e<b>\u{D}</b>
+sCxg5hy9nEW+pdyuTm/rNtZMz6c+NnWKaiUi1Ku1TtVqt1mk2UjPOGsk7vOVmjFC2e8EzEhKL9s+<b>\u{D}</b>
+LOtX9RzKf0ZdqZkMpQ0vYeeypjPPQ6thfnGUlyUmjbXEyUCMvqMZDSnIZtrEbUT07jQCeCQarMVP<b>\u{D}</b>
+tl7Gu1k0mg2oZtqQPAyn5srMPWKsUM1wpJLqzvnSXTnkUYhW2p8y2nU3N1L753S9a+BjEHg+zWs5<b>\u{D}</b>
+WI+jpZooWZPk6Wdrfq1yAPqyo0PWbp9pyM+1xpEnFBJqUigvrATmsSFIYY7PlD69sVKp1suKoo0B<b>\u{D}</b>
+pppX9ozQpJEJKhmTmhUM0DaINYaRYYXQ2IB1Of2eC/w1eohW64wUXMvVKgN/eC/j+GzMLrD/egR3<b>\u{D}</b>
+/13WxGx1cjjic6R+2XzFB8o6ebOJfZFGypXOJ+bxfLWDZVIvKjRZprxvA7z6iq05VrkeM7TsurK9<b>\u{D}</b>
+cd9y08Z0q14K3ZW42nOh1Nmc1mfep5O2LSJZiZzsaCODY0Y6f6Nl91TFbSwNBJv+TYV1zwrqnh1m<b>\u{D}</b>
+xqYpHhMpT5v3aq5Yr6cTbNP7VaELTNLJ/aCt2UbFY20a2bXpda1K1eKdubFHY3raunsXXdbqvo9j<b>\u{D}</b>
+eJhqK9YEUxsVM1/Kv2mdlUyKdbXwlql+C0xMoFSImLc7asv63g4tXc2vj2s9JUHCmA5Uk0fUZcm0<b>\u{D}</b>
+uCFPMZLBF3oYLdO+EEPZVWUxtRjX9rGcFn2QbWKe2o6pO422qbc/VkvkmJmA4a5W7KqnnqmyrKOs<b>\u{D}</b>
+xuJTQEbJa5vjZSKYSIBsj7h244WT4b0fCQns2vuccnmxZ8Zq/47Mow7vI3/fCKRJxQn4IQxEFZ4S<b>\u{D}</b>
+xYKyVGC371P6vdf158iclo5awhhWWDTFnKMb3pu+8FeIZzIu2lSyX4WAZiyEyMJPhpS2baUS4MWG<b>\u{D}</b>
+kfIrS49zpHuVpZ0JVmdqlS/clrOvbJHK2VXoEJ6TTT9aJlvF2kfNchFISitEVDJEBT7TmjRRwtRt<b>\u{D}</b>
+QpsmIk+TYs6EkmidZkqr7guMLllQq/PXhublwnLCTKyxOFkyYd2e664cIy1U137dBh18ZHDHXusr<b>\u{D}</b>
+y77gry4VyemqZ+7O0APuDA4EC2CA4tuU6Zmpwt1EzU1oFdeHRkiYCCEWswCDXz4bL18+2QBFxmyp<b>\u{D}</b>
+sxpBXxs79vloQdEsVIg9GYZhA6eH59ble2vri5GJmTCNySItkYO+ddbByCHYfQHi/skfa8vcijOY<b>\u{D}</b>
+9v44cZw8Gb5WtbJmTVmSi6WTmDkpPrHytHf+Ze0Kf3TS5ukO3Ktp742seEKnDPmqGYqljwRaVeFq<b>\u{D}</b>
+eMQayCh3bMEvul1dq+w5pY8aAypawNvOKaYyo2iZeqevFlNao/weKn/RRBxZij0f1Dm4u62WVbxc<b>\u{D}</b>
+YozPq4LsbOGITOhs/y+T7NO6o3kTEs05CJ6mk0upm3FGXTIcm+jBk2GC+y6642U2MGC58rfTkxyN<b>\u{D}</b>
++n3rGp5oa/DsZkOAJTImJmSLogGmrCZJjm8imhk1MdL0Ghrosq+eq63NdVkeq5xWoLWq9JPymxRY<b>\u{D}</b>
+PEqbhWhW0Tqvg6Y2oJLYkVJepJYJjap0YVNSwHk0PqxF/iVwjdJHY7Kn/EG0hmRJKuT+JTpxxYAA<b>\u{D}</b>
+GTno++jCvusJ9vl0vR2h3WBXL5v8jtQQA0/+Lj/UsI4hDEQFno8EZSEEwLdaeMOJqtN3QJkxahQw<b>\u{D}</b>
+Op+dV9IVGGogfxZaFrTxvz4jEypHMT9xahj98wu3Z72fqnV8FXX6MsecYOvXnLsYbopZRI5ksCZa<b>\u{D}</b>
+r6oQ6F8I2e8aJJmrvXvs3pf1Z3Mcw2qWA16isxBACGGhrtPkGSYaGZhO8lK8FZ9ZCVdiARELAJW3<b>\u{D}</b>
+xFR2eErRTtizf4oqjRBW59LboVI04i14BWRpcOhRk2Qo9D/Hw08JSdyFvJF2jkZf3CHi1wA80Hki<b>\u{D}</b>
+GIfrPRrLSoRQWCC05z80T2rrXBZVd9ZKgli2AlBPZkUnOeQdRut11MIjDQSpg0XuYi3CEcPF0lpM<b>\u{D}</b>
+e8MeG5bl+Is8FxOO1zh/yOp8q6LLw/XNx8fdj620LmPcEZsELpuOLzkSw3DLJPFnLCcBsOKuqfUK<b>\u{D}</b>
+8qym3c92PAc7S1ze+ETxCmlN+YdPPP5j32dtmXvJJTJm2Ux7LA+FxmFwtMpvbh0yv3WCDTApA7y2<b>\u{D}</b>
+rvuzhVA9pwkt2xdxQ+OvwB9PbJ5U1bat7lfZUykqouEw4dqRdWaEcAJytrbaCNBbzJNknKFVFTdk<b>\u{D}</b>
+1jTToVXZRhUi5lsClX5O2hLkJWPadsyTKrnkGzXV9hva1sb5dNOJfMC5qeDaip/ttTYP7W7N0NSS<b>\u{D}</b>
+d0XR4r5Qpo8nvPis+5taRwX7n7MSTa40Q6CUFCe32+GsxtSqZHvMkqn7RUqn65/5kXzRnRwhDEgA<b>\u{D}</b>
+P/////4C1MIQsIRh8D7uCjkXjC5VSoZB4CHhTHO6H2/cvaN9OzPy12X1jJebaqpmnnKoT8+MjPTC<b>\u{D}</b>
+1O6y5UVvMJwPdtQQfGoZmkryFyskQzD/EPAXbvqXGfFnO/Zvi333Bg/9fNvO96xfo3iXNO4tW3BI<b>\u{D}</b>
+8YR+/cKp3DrDYVk1p1sWPQ8AAAN+bW9vdgAAAGxtdmhkAAAAAN6vUxLer1MSAACsRAAAQpUAAQAA<b>\u{D}</b>
+AQAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA<b>\u{D}</b>
+AAAAAAAAAAAAAAAAAAAAAAAAAgAAAhB0cmFrAAAAXHRraGQAAAAB3q9TEt6vUxIAAAABAAAAAAAA<b>\u{D}</b>
+QpUAAAAAAAAAAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAABAAAAAAAAA<b>\u{D}</b>
+AAAAAAAAAAGsbWRpYQAAACBtZGhkAAAAAN6vUxLer1MSAACsRAAATABVxAAAAAAAMWhkbHIAAAAA<b>\u{D}</b>
+AAAAAHNvdW4AAAAAAAAAAAAAAABDb3JlIE1lZGlhIEF1ZGlvAAAAAVNtaW5mAAAAEHNtaGQAAAAA<b>\u{D}</b>
+AAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAARdzdGJsAAAAZ3N0c2QA<b>\u{D}</b>
+AAAAAAAAAQAAAFdtcDRhAAAAAAAAAAEAAAAAAAAAAAACABAAAAAArEQAAAAAADNlc2RzAAAAAAOA<b>\u{D}</b>
+gIAiAAAABICAgBRAFAAYAAAD6AAAA+gABYCAgAISEAaAgIABAgAAABhzdHRzAAAAAAAAAAEAAAAT<b>\u{D}</b>
+AAAEAAAAABxzdHNjAAAAAAAAAAEAAAABAAAAEwAAAAEAAABgc3RzegAAAAAAAAAAAAAAEwAAAAYA<b>\u{D}</b>
+AAGyAAAD9AAAAukAAAKvAAACbwAAA+UAAANWAAAD3AAAAvAAAALOAAACkgAAAxgAAAN2AAAC2QAA<b>\u{D}</b>
+ArkAAAJgAAACFgAAAIcAAAAUc3RjbwAAAAAAAAABAAAALAAAAPp1ZHRhAAAA8m1ldGEAAAAAAAAA<b>\u{D}</b>
+ImhkbHIAAAAAAAAAAG1kaXIAAAAAAAAAAAAAAAAAAAAAAMRpbHN0AAAAvC0tLS0AAAAcbWVhbgAA<b>\u{D}</b>
+AABjb20uYXBwbGUuaVR1bmVzAAAAFG5hbWUAAAAAaVR1blNNUEIAAACEZGF0YQAAAAEAAAAAIDAw<b>\u{D}</b>
+MDAwMDAwIDAwMDAwODQwIDAwMDAwMTJCIDAwMDAwMDAwMDAwMDQyOTUgMDAwMDAwMDAgMDAwMDAw<b>\u{D}</b>
+MDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDAgMDAwMDAwMDA=</div></div>
+<hr><button class="" data-uuid="965C3F57-5D30-49C7-8B32-772B550ECA0C" id="m6">
+6 Base64 <span class="box">Decode</span> <span class="box"><span class="var"><b>[5 Text]</b></span></span>　»</button>
+<hr><button class="gRed" id="m7">
+7 Play Sound <span class="box"><span class="var"><b>[6 Base64 Encoded]</b></span></span></button>
+<button class="button gGray" data-uuid="08D9AC24-CD06-42E3-89ED-7D0EDB604AB8" id="m8">
+8 Stop and Output <span class="box"><span class="magic" onclick="magictap(3)"><b>[3 html]</b></span></span></button>
+	<div class="content">
+		<div class="row"><div class="col1">NoOutputSurfaceBehavior</div>
+			<div class="col2">Copy to Clipboard</div></div>
+		<div class="row"><div class="col1">Response</div>
+			<div class="col2"><span class="magic" onclick="magictap(3)"><b>[3 html]</b></span></div></div></div>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>
