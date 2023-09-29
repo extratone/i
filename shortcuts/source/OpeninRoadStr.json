@@ -1,0 +1,127 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 255,
+      "WFWorkflowIconGlyphNumber": 61444
+   },
+   "WFWorkflowClientVersion": "2038.0.1.10",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Open an Apple Maps location in RoadStr from the share sheet.\n\nGitHub Issue: https://github.com/extratone/i/issues/311\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nMastodon: https://mastodon.social/@DavidBlue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.locations",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "Latitude",
+            "UUID": "CAF42636-AAF4-49B1-8FFB-4AD6F530B664"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.locations",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "Longitude",
+            "UUID": "44874F5E-D218-4A42-ABAA-6B14049B1ABB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "\uFFFC,\uFFFC",
+                  "attachmentsByRange": {
+                     "{2, 1}": {
+                        "OutputUUID": "CAF42636-AAF4-49B1-8FFB-4AD6F530B664",
+                        "Type": "ActionOutput",
+                        "OutputName": "Latitude"
+                     },
+                     "{0, 1}": {
+                        "OutputUUID": "44874F5E-D218-4A42-ABAA-6B14049B1ABB",
+                        "Type": "ActionOutput",
+                        "OutputName": "Longitude"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "20D5FE65-5ADC-412A-916F-7539DDAB22EF"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "CustomOutputName": "roadstrurl",
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "https://app.roadstr.io/custom?screen=map&location=\uFFFC",
+                  "attachmentsByRange": {
+                     "{50, 1}": {
+                        "OutputUUID": "20D5FE65-5ADC-412A-916F-7539DDAB22EF",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "CC980954-FC42-4F6B-B34A-02EBFA5A5991"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "CC980954-FC42-4F6B-B34A-02EBFA5A5991",
+                  "Type": "ActionOutput",
+                  "OutputName": "roadstrurl"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "B167ABF9-0E8C-419F-85BC-4AAA0BBED5DE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "CC980954-FC42-4F6B-B34A-02EBFA5A5991",
+                  "Type": "ActionOutput",
+                  "OutputName": "roadstrurl"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "CA0D7F06-B5FC-4334-93A3-9FD4AE1BF82A"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFLocationContentItem"
+   ],
+   "WFWorkflowImportQuestions": [],
+   "WFWorkflowTypes": [
+      "ActionExtension",
+      "Watch"
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": true
+}
