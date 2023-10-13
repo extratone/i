@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `08102023-130615`
+Updated `10122023-224150`
 
 [**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
@@ -123,6 +123,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [Seinfeld Laugh Intercom](https://www.icloud.com/shortcuts/bfee47cc716a4c5d8f534aeeac936fe1)
 - [Twitter Jail 2.0](https://www.icloud.com/shortcuts/d510a5b8caf64242ba799d0f67362167)
 - [WorkingCopyRepositoryTotIndex](https://www.icloud.com/shortcuts/a22e2d74ecb34230a6036230a836e9dd)
+- [symbol](https://www.icloud.com/shortcuts/22777930280a494788fd7c089d43cb02)
 
 ### iOS/iPadOS/macOS 16
 
