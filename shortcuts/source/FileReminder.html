@@ -1,0 +1,386 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,date=no">
+<title>File Reminder</title>
+<style>
+body {
+	font-family: system-ui;
+	font-size: 0.95em;
+	margin-top: 1rem;
+	margin-bottom: calc(1rem + env(safe-area-inset-bottom));
+	word-break: break-word;
+}
+
+button {
+	color: #000;
+	background-color: #e4e4ff;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: left;
+	margin: 4px 0;
+	padding: 1px 8px;
+	border: 1px #aaa;
+	border-style: solid;
+	border-radius: 8px;
+	cursor: initial;
+	touch-action: manipulation;
+}
+
+.button {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	cursor: auto;
+}
+.button::after {
+	content: '\25A1';
+	float: right;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.closed {
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.closed::after { content: '\2212'; }
+
+.nonbottom {
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+}
+.nontop {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.gGray { background-color: #e0e0e0; }
+.gGreen { background-color: #ddffdd; }
+.gYellow { background-color: #ffeebb; }
+.gOrange { background-color: #ffddcc; }
+.gRed { background-color: #ffccdd; }
+.gBlue { background-color: #aaccff; }
+.gUnknown { background-color: #bbffff; }
+.gParams {
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.content {
+	overflow: hidden;
+	margin-bottom: 4px;
+	padding: 3px 0 3px 8px;
+	border: 1px #aaa;
+	border-style: none solid solid solid;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.contentloop {
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.dashed { border-left-style: dashed; }
+
+.inside {
+	border-right-style: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.commentcontent { background-color: #ffeebb; }
+
+.row {
+	display: flex;
+	padding-right: 2px;
+}
+
+.col1 {
+	margin-right: 3px;
+	padding-right: 3px;
+	border-right-style: double;
+}
+.col2 { white-space: pre-wrap; }
+
+span.box {
+	display: inline;
+	white-space: pre-wrap;
+	margin: 0 2px;
+	padding: 2px 4px;
+	border-radius: 6px;
+	background-color: #fff;
+}
+span.var { font-style: italic; }
+span.magic {
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+hr {
+	width: 0px;
+	height: 2px;
+	border: 1px solid #aaa;
+	margin: -4px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #eee; }
+	button { background: #514c72; color: #eee; }
+	.gGray { background-color: #555555; }
+	.gGreen { background-color: #3a6441; }
+	.gYellow { background-color: #716d33; }
+	.gOrange { background-color: #76523f; }
+	.gRed { background-color: #674044; }
+	.gBlue { background-color: #384c67; }
+	.gUnknown { background-color: #377172; }
+	.gParams { background-color: #181818; }
+	.commentcontent { background-color: #716d33; }
+	span.box { background-color: #000; }
+}
+</style></head><body>
+<button class="button gParams"><b>File Reminder</b> (26 actions, 26 KB)</button>
+<div class="content"><div class="col2">"WFQuickActionSurfaces": [],
+"WFWorkflowClientVersion": "2205",
+"WFWorkflowHasOutputFallback": false,
+"WFWorkflowHasShortcutInputVariables": true,
+"WFWorkflowIcon": {
+   "WFWorkflowIconStartColor": 3031607807,
+   "WFWorkflowIconGlyphNumber": 61571
+},
+"WFWorkflowImportQuestions": [
+   {
+      "Category": "Parameter",
+      "ParameterKey": "addTags",
+      "ActionIndex": <span class="magic" onclick="magictap(1)"><b>1</b></span>,
+      "Text": "Choose native Apple Files tag(s) to attach to the input file. (Optional)",
+      "DefaultValue": "Reminders"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFCaseType",
+      "ActionIndex": <span class="magic" onclick="magictap(4)"><b>4</b></span>,
+      "Text": "Customize behavior of the Change Case Action. (Optional)",
+      "DefaultValue": "Capitalize Every Word"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFFileSizeFormat",
+      "ActionIndex": <span class="magic" onclick="magictap(14)"><b>14</b></span>,
+      "Text": "Customize the output format of the File Size detail. (Optional)",
+      "DefaultValue": "Automatic"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFCalendarDescriptor",
+      "ActionIndex": <span class="magic" onclick="magictap(18)"><b>18</b></span>,
+      "Text": "Choose a List in Apple Reminders in which to add the Reminder result. (Optional)",
+      "DefaultValue": {
+         "Identifier": "<x-apple-reminderkit://REMCDList/9C05D9A6-6F8B-48BF-A67C-57255F82E85D>",
+         "Title": "i",
+         "IsAllCalendar": false
+      }
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFAlertEnabled",
+      "ActionIndex": <span class="magic" onclick="magictap(18)"><b>18</b></span>,
+      "Text": "Choose whether or not the Reminder result will include an Alert. (Required)",
+      "DefaultValue": "No Alert"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFPriority",
+      "ActionIndex": <span class="magic" onclick="magictap(18)"><b>18</b></span>,
+      "Text": "Choose the priority of the Reminder result. (Optional)",
+      "DefaultValue": "Low"
+   },
+   {
+      "ParameterKey": "WFFlag",
+      "Category": "Parameter",
+      "ActionIndex": <span class="magic" onclick="magictap(18)"><b>18</b></span>,
+      "Text": "Choose whether or not the Reminder result will be flagged. (Required)"
+   },
+   {
+      "Category": "Parameter",
+      "ParameterKey": "WFTags",
+      "ActionIndex": <span class="magic" onclick="magictap(18)"><b>18</b></span>,
+      "Text": "Choose tags (in Apple Reminders) to attach to the Reminder result. (Optional)",
+      "DefaultValue": "Files"
+   }
+],
+"WFWorkflowInputContentItemClasses": [
+   "WFGenericFileContentItem"
+],
+"WFWorkflowMinimumClientVersion": 1113,
+"WFWorkflowMinimumClientVersionString": "1113",
+"WFWorkflowNoInputBehavior": {
+   "Name": "WFWorkflowNoInputBehaviorAskForInput",
+   "Parameters": {
+      "ItemClass": "WFGenericFileContentItem"
+   }
+},
+"WFWorkflowOutputContentItemClasses": [],
+"WFWorkflowTypes": [
+   "ActionExtension"
+]
+</div></div>
+
+<button class="button gYellow" id="m0">
+0 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Create an Apple Reminder for a single file.
+
+𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
+Email: davidblue@extratone.com
+Contact card: https://davidblue.wtf/db.vcf
+Mastodon: https://mastodon.social/@DavidBlue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone
+iOS-specific Repository: https://github.com/extratone/i
+Telegram: https://t.me/DavidBlue
+Telegram Channel: https://t.me/extratone
+Discord: https://davidblue.wtf/discord
+Twitter: https://twitter.com/NeoYokel
+Reddit: https://reddit.com/u/asphaltapostle
+EVERYWHERE: https://davidblue.wtf/socialdrop</div></div>
+<button class="button gUnknown" data-uuid="DD9118BF-06F4-4510-B4FB-2B44C1B4210B" id="m1">
+1 com.alexhay.ToolboxProForShortcuts.TagFilesIntent</button>
+	<div class="content">
+		<div class="row"><div class="col1">addTags</div>
+			<div class="col2">Reminders</div></div>
+		<div class="row"><div class="col1">appendTags</div>
+			<div class="col2">Reminders</div></div>
+		<div class="row"><div class="col1">files</div>
+			<div class="col2"><span class="var"><b>[Shortcut Input</b> as GenericFile<b>]</b></span></div></div>
+		<div class="row"><div class="col1">mode</div>
+			<div class="col2">set</div></div></div>
+<button class="button gYellow" id="m2">
+2 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Tag(s) of your choice are added to the subject file using Apple's native tagging system.</div></div>
+<button class="gBlue" data-uuid="5DA380FB-B6BE-4F3B-A2F7-773C22F1E47A" id="m3">
+3 Get <span class="box">Name</span> of Files <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span>　»</button>
+<hr><button class="gYellow" data-uuid="27D9DF95-AAC8-41F8-8EAC-830912424BFC" id="m4">
+4 Change <span class="box"><span class="var"><b>[3 Name]</b></span></span> to <span class="box">Capitalize Every Word</span>　»</button>
+<hr><button class="gYellow" data-uuid="3ADC849D-B5CE-42EC-BDAB-725D76A466E0" id="m5">
+5 Replace Text <span class="box"><b>\u{space}</b></span> with <span class="box"></span>&nbsp; in <span class="box"><span class="var"><b>[4 Updated Text]</b></span></span>　»</button>
+<hr><button class="gOrange" id="m6">
+6 Set Variable <span class="box">formattedName</span> to <span class="box"><span class="var"><b>[5 Updated Text]</b></span></span></button>
+<button class="button gYellow" id="m7">
+7 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">The original filename is modified (hopefully) to make it more recognizable/readable.</div></div>
+<button class="button gUnknown" data-uuid="7B1154DE-B945-4F5E-B0FC-80AF4BED597A" id="m8">
+8 com.alexhay.ToolboxProForShortcuts.GenerateThumbnailsIntent　» <span class="magic" onclick="magictap(18)">18</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">withPreviews</div>
+			<div class="col2">true</div></div>
+		<div class="row"><div class="col1">backgroundColour</div>
+			<div class="col2">customHex</div></div>
+		<div class="row"><div class="col1">files</div>
+			<div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div>
+		<div class="row"><div class="col1">hexCode</div>
+			<div class="col2">#ffba58</div></div></div>
+<button class="button gYellow" id="m9">
+9 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Toolbox Pro's [thumbnail generation tool](https://toolboxpro.app/images#:~:text=filter%20to%20images-,generate%20thumbnails,-Generate%20small%20preview) creates an image to be attached to the Reminder result.</div></div>
+<button class="button gUnknown" data-uuid="8817489C-F55E-4DCD-AD15-782E206988FB" id="m10">
+10 com.alexhay.ToolboxProForShortcuts.GetFileURLIntent <b>　➔ fileurl</b>　» <i>11</i> <span class="magic" onclick="magictap(18)">18</span></button>
+	<div class="content">
+		<div class="row"><div class="col1">file</div>
+			<div class="col2"><span class="var"><b>[Shortcut Input]</b></span></div></div></div>
+<hr><button class="gBlue" data-uuid="755B6362-CD7F-4A0C-B943-3D683AADFCDD" id="m11">
+11 Copy <span class="box"><span class="var"><b>[10 fileurl]</b></span></span> to Clipboard</button>
+<button class="button gYellow" id="m12">
+12 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Toolbox Pro generates a schemed/openable URL to the input file, which is copied to the system clipboard and will be appended as the `URL` variable of the Reminder result.</div></div>
+<button class="gBlue" data-uuid="FFF83E7D-E918-42B2-8C35-1A943C51C774" id="m13">
+13 Get <span class="box">File Extension</span> of Files <span class="box"><span class="var"><b>[Shortcut Input]</b></span></span> <b>　➔ created</b>　» <i>14</i> <span class="magic" onclick="magictap(15)">15</span></button>
+<hr><button class="gBlue" data-uuid="D28C907F-89FB-4DD2-AAEB-E4D0939D6FE8" id="m14">
+14 Format File Size <span class="box"><span class="var"><b>[13 created</b>’s File Size<b>]</b></span></span> into Closest Unit　»</button>
+<hr><button class="button gYellow" data-uuid="BCBE24F0-9E23-4C84-858B-62FD83B0C31F" id="m15">
+15 Text　»</button>
+	<div class="content">
+		<div class="col2">- Extension: <span class="magic" onclick="magictap(13)"><b>[13 created</b>’s File Extension<b>]</b></span>
+- Path: <span class="magic" onclick="magictap(13)"><b>[13 created</b>’s File Path<b>]</b></span>
+- Size: <span class="var"><b>[14 Formatted File Size]</b></span>
+- Created: <span class="magic" onclick="magictap(13)"><b>[13 created</b>’s Creation Date{"WFISO8601IncludeTime":false,"Date Style":"ISO 8601"}<b>]</b></span>
+- Modified: <span class="magic" onclick="magictap(13)"><b>[13 created</b>’s Last Modified Date{"WFISO8601IncludeTime":true,"Date Style":"ISO 8601"}<b>]</b></span></div></div>
+<hr><button class="gOrange" id="m16">
+16 Set Variable <span class="box">details</span> to <span class="box"><span class="var"><b>[15 Text]</b></span></span></button>
+<button class="button gYellow" id="m17">
+17 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Details about the input file are gathered to attach to the `Notes` variable of the Reminder result.</div></div>
+<button class="button " data-uuid="B133EC65-8216-43AC-8E50-1D2EEBCC5694" id="m18">
+18 Add New Reminder <span class="box"><span class="var"><b>[formattedName]</b></span></span> to <span class="box">i</span> with No Alert　»</button>
+	<div class="content">
+		<div class="row"><div class="col1">Tags</div>
+			<div class="col2">Files, Jorts, Automation</div></div>
+		<div class="row"><div class="col1">CalendarItemNotes</div>
+			<div class="col2"><span class="var"><b>[details]</b></span></div></div>
+		<div class="row"><div class="col1">CalendarDescriptor</div>
+			<div class="col2">{  "Identifier": "&lt;x-apple-reminderkit://REMCDList/9C05D9A6-6F8B-48BF-A67C-57255F82E85D>",
+   "Title": "i",
+   "IsAllCalendar": false
+}</div></div>
+		<div class="row"><div class="col1">Images</div>
+			<div class="col2"><span class="magic" onclick="magictap(8)"><b>[8 Thumbnails]</b></span></div></div>
+		<div class="row"><div class="col1">URL</div>
+			<div class="col2"><span class="magic" onclick="magictap(10)"><b>[10 fileurl]</b></span></div></div></div>
+<hr><button class="button gUnknown" data-uuid="807DAF01-C2C8-4C69-B651-2A0F43E74E35" id="m19">
+19 com.alexhay.ToolboxProForShortcuts.GetReminderIDIntent　»</button>
+	<div class="content">
+		<div class="row"><div class="col1">list</div>
+			<div class="col2"><span class="var"><b>[18 New Reminder</b>’s List<b>]</b></span></div></div>
+		<div class="row"><div class="col1">reminder</div>
+			<div class="col2"><span class="var"><b>[18 New Reminder]</b></span></div></div></div>
+<hr><button class="gBlue" data-uuid="97212229-9205-42F8-B468-BBC7531AA8C0" id="m20">
+20 URL <span class="box">x-apple-reminderkit://REMCDReminder/<span class="var"><b>[19 Reminder UUID]</b></span></span>　»</button>
+<hr><button class="gBlue" data-uuid="AE265358-6A2E-4446-BCC3-440B0C2752E7" id="m21">
+21 Open URL <span class="box"><span class="var"><b>[20 URL]</b></span></span></button>
+<button class="button gYellow" id="m22">
+22 Comment</button>
+	<div class="content commentcontent">
+		<div class="col2">Toolbox Pro retrieves the UUID of the Reminder result, which is reformatted into a schemed Reminders URL and opened.</div></div>
+<button class="gBlue" data-uuid="3D11DF15-0BBF-4365-B17A-0830762C8F90" id="m23">
+23 URL <span class="box">https://github.com/extratone/iOSSystemSounds/raw/main/caf/end_record.caf</span>　»</button>
+<hr><button class="gGreen" data-uuid="1AB6A907-A55E-4452-958F-FDD0FC08EE28" id="m24">
+24 Get Contents of URL <span class="box"><span class="var"><b>[23 URL]</b></span></span>　»</button>
+<hr><button class="gRed" id="m25">
+25 Play Sound <span class="box"><span class="var"><b>[24 Contents of URL]</b></span></span></button>
+<script>
+for (b of document.getElementsByClassName('button')) {
+	b.addEventListener('click', function() {
+		this.classList.toggle('closed');
+		let s = this.nextElementSibling;
+		s.style.display = getComputedStyle(s).display==='none' ? 'block' : 'none';
+})}
+
+function magictap(id) {
+	event.stopPropagation();
+	let e = document.getElementById('m'+id);
+	let p = e;
+	while ((p = p.parentNode).tagName.toLowerCase() === 'div') {
+		p.style.display = 'block';
+		p.previousElementSibling.classList.remove('closed');
+	}
+	setTimeout(function(){ e.scrollIntoView({block:'nearest',behavior:'smooth'}); }, 10);
+}
+</script></body></html>

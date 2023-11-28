@@ -1,0 +1,539 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1113",
+   "WFWorkflowMinimumClientVersion": 1113,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 3031607807,
+      "WFWorkflowIconGlyphNumber": 61571
+   },
+   "WFWorkflowClientVersion": "2205",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowNoInputBehavior": {
+      "Name": "WFWorkflowNoInputBehaviorAskForInput",
+      "Parameters": {
+         "ItemClass": "WFGenericFileContentItem"
+      }
+   },
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Create an Apple Reminder for a single file.\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nMastodon: https://mastodon.social/@DavidBlue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.TagFilesIntent",
+         "WFWorkflowActionParameters": {
+            "addTags": "Reminders",
+            "appendTags": "Reminders",
+            "UUID": "DD9118BF-06F4-4510-B4FB-2B44C1B4210B",
+            "files": {
+               "Value": {
+                  "Type": "ExtensionInput",
+                  "Aggrandizements": [
+                     {
+                        "Type": "WFCoercionVariableAggrandizement",
+                        "CoercionItemClass": "WFGenericFileContentItem"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "mode": "set"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Tag(s) of your choice are added to the subject file using Apple's native tagging system."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.files",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "Name",
+            "UUID": "5DA380FB-B6BE-4F3B-A2F7-773C22F1E47A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.changecase",
+         "WFWorkflowActionParameters": {
+            "WFCaseType": "Capitalize Every Word",
+            "text": {
+               "Value": {
+                  "OutputUUID": "5DA380FB-B6BE-4F3B-A2F7-773C22F1E47A",
+                  "Type": "ActionOutput",
+                  "OutputName": "Name"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "27D9DF95-AAC8-41F8-8EAC-830912424BFC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.replace",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "27D9DF95-AAC8-41F8-8EAC-830912424BFC",
+                        "Type": "ActionOutput",
+                        "OutputName": "Updated Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFReplaceTextFind": " ",
+            "UUID": "3ADC849D-B5CE-42EC-BDAB-725D76A466E0"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "3ADC849D-B5CE-42EC-BDAB-725D76A466E0",
+                  "Type": "ActionOutput",
+                  "OutputName": "Updated Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "formattedName"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "The original filename is modified (hopefully) to make it more recognizable/readable."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GenerateThumbnailsIntent",
+         "WFWorkflowActionParameters": {
+            "withPreviews": true,
+            "backgroundColour": "customHex",
+            "files": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "7B1154DE-B945-4F5E-B0FC-80AF4BED597A",
+            "hexCode": "#ffba58"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Toolbox Pro's [thumbnail generation tool](https://toolboxpro.app/images#:~:text=filter%20to%20images-,generate%20thumbnails,-Generate%20small%20preview) creates an image to be attached to the Reminder result."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetFileURLIntent",
+         "WFWorkflowActionParameters": {
+            "CustomOutputName": "fileurl",
+            "file": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "8817489C-F55E-4DCD-AD15-782E206988FB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8817489C-F55E-4DCD-AD15-782E206988FB",
+                  "Type": "ActionOutput",
+                  "OutputName": "fileurl"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "755B6362-CD7F-4A0C-B943-3D683AADFCDD"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Toolbox Pro generates a schemed/openable URL to the input file, which is copied to the system clipboard and will be appended as the `URL` variable of the Reminder result."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.properties.files",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "Type": "ExtensionInput"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFContentItemPropertyName": "File Extension",
+            "CustomOutputName": "created",
+            "UUID": "FFF83E7D-E918-42B2-8C35-1A943C51C774"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.format.filesize",
+         "WFWorkflowActionParameters": {
+            "WFFileSize": {
+               "Value": {
+                  "Type": "ActionOutput",
+                  "OutputName": "created",
+                  "OutputUUID": "FFF83E7D-E918-42B2-8C35-1A943C51C774",
+                  "Aggrandizements": [
+                     {
+                        "PropertyUserInfo": "WFFileSizeProperty",
+                        "Type": "WFPropertyVariableAggrandizement",
+                        "PropertyName": "File Size"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "D28C907F-89FB-4DD2-AAEB-E4D0939D6FE8"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "- Extension: \uFFFC\n- Path: \uFFFC\n- Size: \uFFFC\n- Created: \uFFFC\n- Modified: \uFFFC",
+                  "attachmentsByRange": {
+                     "{13, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "created",
+                        "OutputUUID": "FFF83E7D-E918-42B2-8C35-1A943C51C774",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "WFFileExtensionProperty",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "File Extension"
+                           }
+                        ]
+                     },
+                     "{23, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "created",
+                        "OutputUUID": "FFF83E7D-E918-42B2-8C35-1A943C51C774",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": {},
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "File Path"
+                           }
+                        ]
+                     },
+                     "{46, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "created",
+                        "OutputUUID": "FFF83E7D-E918-42B2-8C35-1A943C51C774",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "WFFileCreationDate",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Creation Date"
+                           },
+                           {
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFISO8601IncludeTime": false,
+                              "WFDateFormatStyle": "ISO 8601"
+                           }
+                        ]
+                     },
+                     "{33, 1}": {
+                        "OutputUUID": "D28C907F-89FB-4DD2-AAEB-E4D0939D6FE8",
+                        "Type": "ActionOutput",
+                        "OutputName": "Formatted File Size"
+                     },
+                     "{60, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "created",
+                        "OutputUUID": "FFF83E7D-E918-42B2-8C35-1A943C51C774",
+                        "Aggrandizements": [
+                           {
+                              "PropertyUserInfo": "WFFileModificationDate",
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Last Modified Date"
+                           },
+                           {
+                              "Type": "WFDateFormatVariableAggrandizement",
+                              "WFISO8601IncludeTime": true,
+                              "WFDateFormatStyle": "ISO 8601"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "BCBE24F0-9E23-4C84-858B-62FD83B0C31F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "BCBE24F0-9E23-4C84-858B-62FD83B0C31F",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "details"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Details about the input file are gathered to attach to the `Notes` variable of the Reminder result."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.addnewreminder",
+         "WFWorkflowActionParameters": {
+            "WFTags": "Files, Jorts, Automation",
+            "WFCalendarItemTitle": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "formattedName",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFCalendarItemNotes": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "details",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFCalendarDescriptor": {
+               "Identifier": "<x-apple-reminderkit://REMCDList/9C05D9A6-6F8B-48BF-A67C-57255F82E85D>",
+               "Title": "i",
+               "IsAllCalendar": false
+            },
+            "UUID": "B133EC65-8216-43AC-8E50-1D2EEBCC5694",
+            "WFImages": {
+               "Value": {
+                  "OutputUUID": "7B1154DE-B945-4F5E-B0FC-80AF4BED597A",
+                  "Type": "ActionOutput",
+                  "OutputName": "Thumbnails"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFCalendarItemCalendar": "i",
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "8817489C-F55E-4DCD-AD15-782E206988FB",
+                        "Type": "ActionOutput",
+                        "OutputName": "fileurl"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.GetReminderIDIntent",
+         "WFWorkflowActionParameters": {
+            "list": {
+               "Value": {
+                  "Type": "ActionOutput",
+                  "OutputName": "New Reminder",
+                  "OutputUUID": "B133EC65-8216-43AC-8E50-1D2EEBCC5694",
+                  "Aggrandizements": [
+                     {
+                        "Type": "WFPropertyVariableAggrandizement",
+                        "PropertyName": "List"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "reminder": {
+               "Value": {
+                  "OutputUUID": "B133EC65-8216-43AC-8E50-1D2EEBCC5694",
+                  "Type": "ActionOutput",
+                  "OutputName": "New Reminder"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "807DAF01-C2C8-4C69-B651-2A0F43E74E35"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "x-apple-reminderkit://REMCDReminder/\uFFFC",
+                  "attachmentsByRange": {
+                     "{36, 1}": {
+                        "OutputUUID": "807DAF01-C2C8-4C69-B651-2A0F43E74E35",
+                        "Type": "ActionOutput",
+                        "OutputName": "Reminder UUID"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "97212229-9205-42F8-B468-BBC7531AA8C0"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "97212229-9205-42F8-B468-BBC7531AA8C0",
+                  "Type": "ActionOutput",
+                  "OutputName": "URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "AE265358-6A2E-4446-BCC3-440B0C2752E7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Toolbox Pro retrieves the UUID of the Reminder result, which is reformatted into a schemed Reminders URL and opened."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": "https://github.com/extratone/iOSSystemSounds/raw/main/caf/end_record.caf",
+            "UUID": "3D11DF15-0BBF-4365-B17A-0830762C8F90"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+         "WFWorkflowActionParameters": {
+            "WFURL": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "3D11DF15-0BBF-4365-B17A-0830762C8F90",
+                        "Type": "ActionOutput",
+                        "OutputName": "URL"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "1AB6A907-A55E-4452-958F-FDD0FC08EE28"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "1AB6A907-A55E-4452-958F-FDD0FC08EE28",
+                  "Type": "ActionOutput",
+                  "OutputName": "Contents of URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFGenericFileContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "addTags",
+         "ActionIndex": 1,
+         "Text": "Choose native Apple Files tag(s) to attach to the input file. (Optional)",
+         "DefaultValue": "Reminders"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFCaseType",
+         "ActionIndex": 4,
+         "Text": "Customize behavior of the Change Case Action. (Optional)",
+         "DefaultValue": "Capitalize Every Word"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFFileSizeFormat",
+         "ActionIndex": 14,
+         "Text": "Customize the output format of the File Size detail. (Optional)",
+         "DefaultValue": "Automatic"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFCalendarDescriptor",
+         "ActionIndex": 18,
+         "Text": "Choose a List in Apple Reminders in which to add the Reminder result. (Optional)",
+         "DefaultValue": {
+            "Identifier": "<x-apple-reminderkit://REMCDList/9C05D9A6-6F8B-48BF-A67C-57255F82E85D>",
+            "Title": "i",
+            "IsAllCalendar": false
+         }
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFAlertEnabled",
+         "ActionIndex": 18,
+         "Text": "Choose whether or not the Reminder result will include an Alert. (Required)",
+         "DefaultValue": "No Alert"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFPriority",
+         "ActionIndex": 18,
+         "Text": "Choose the priority of the Reminder result. (Optional)",
+         "DefaultValue": "Low"
+      },
+      {
+         "ParameterKey": "WFFlag",
+         "Category": "Parameter",
+         "ActionIndex": 18,
+         "Text": "Choose whether or not the Reminder result will be flagged. (Required)"
+      },
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTags",
+         "ActionIndex": 18,
+         "Text": "Choose tags (in Apple Reminders) to attach to the Reminder result. (Optional)",
+         "DefaultValue": "Files"
+      }
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowTypes": [
+      "ActionExtension"
+   ],
+   "WFWorkflowHasShortcutInputVariables": true
+}
