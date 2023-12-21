@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `10122023-224150`
+Updated `12212023-064456`
 
 [**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
@@ -16,6 +16,11 @@ Updated `10122023-224150`
 - [Gist](https://gist.github.com/3f3748f2ee1cd0820ba099cb05809054)
 - [Telegram](https://t.me/extratone/10927)
 - [JSON format](https://tilde.town/~extratone/scrubs/scrubs.json)
+- [Obsidian](obsidian://open?vault=davod&file=indicies%2FDavid%20Blue%E2%80%99s%20WORLD%20FAMOUS%20Fast%20n%E2%80%99%20Loose%E2%84%A2%20Siri%20Shortcuts%20for%20%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
+- [Obsidian Publish](https://publish.obsidian.md/extratone/indicies/David+Blue%E2%80%99s+WORLD+FAMOUS+Fast+n%E2%80%99+Loose%E2%84%A2+Siri+Shortcuts+for+%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82)
+- [Simplenote Local](simplenote://note/c678136680184353bc5a70fca8d1b545)
+- [Simplenote Publish](http://simp.ly/publish/6Rj2MD)
+- [Drafts](drafts://open?uuid=68F049EC-59AF-4A49-885F-698BB9653400)
 
 ![OMNIMEMOJI](https://i.snap.as/p8U6kW1g.png)
 
@@ -124,6 +129,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [Twitter Jail 2.0](https://www.icloud.com/shortcuts/d510a5b8caf64242ba799d0f67362167)
 - [WorkingCopyRepositoryTotIndex](https://www.icloud.com/shortcuts/a22e2d74ecb34230a6036230a836e9dd)
 - [symbol](https://www.icloud.com/shortcuts/22777930280a494788fd7c089d43cb02)
+- [GoodLinked for Bear](https://www.icloud.com/shortcuts/8e5887c3a97b4909990285ecf9d9611e)
 
 ### iOS/iPadOS/macOS 16
 
@@ -166,6 +172,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 
 - [The Psalms Ebook](https://www.icloud.com/shortcuts/eff33d5e122449deb190c70992022c97)
 - [DavodTime](https://www.icloud.com/shortcuts/5a4ebd4ed057415b8915c535951c1059)
+- [DavodTime2](https://www.icloud.com/shortcuts/d587de79b943432591d4388dd69f0126)
 - [gurgle](https://www.icloud.com/shortcuts/21ffd45ece1d4443823a583ab722f4a9)
 
 ## Legacy/Drywall Media
