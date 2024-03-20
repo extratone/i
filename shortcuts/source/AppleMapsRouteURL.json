@@ -1,0 +1,361 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 3679049983,
+      "WFWorkflowIconGlyphNumber": 61497
+   },
+   "WFWorkflowClientVersion": "2510.5.1",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "## Create a URL to open Apple Maps to directions between two points.\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nMastodon: https://mastodon.social/@DavidBlue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.location",
+         "WFWorkflowActionParameters": {
+            "WFLocation": {
+               "Value": {
+                  "Type": "Ask"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "92945F34-E9D5-4FE4-A1BF-A98D544A6484"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "\uFFFC,\uFFFC",
+                  "attachmentsByRange": {
+                     "{2, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Location",
+                        "OutputUUID": "92945F34-E9D5-4FE4-A1BF-A98D544A6484",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Longitude"
+                           }
+                        ]
+                     },
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Location",
+                        "OutputUUID": "92945F34-E9D5-4FE4-A1BF-A98D544A6484",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Latitude"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "A10AA5A0-9DF6-41EC-BBCC-F4D580D55F8F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "A10AA5A0-9DF6-41EC-BBCC-F4D580D55F8F",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "34A0B5B9-CB3A-4515-B65B-81B33F4297C8"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "34A0B5B9-CB3A-4515-B65B-81B33F4297C8",
+                  "Type": "ActionOutput",
+                  "OutputName": "URL Encoded Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "start"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.location",
+         "WFWorkflowActionParameters": {
+            "WFLocation": {
+               "Value": {
+                  "Type": "Ask"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "4FC55B76-E550-4674-803E-31C3E076FFCE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "\uFFFC,\uFFFC",
+                  "attachmentsByRange": {
+                     "{2, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Location",
+                        "OutputUUID": "4FC55B76-E550-4674-803E-31C3E076FFCE",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Longitude"
+                           }
+                        ]
+                     },
+                     "{0, 1}": {
+                        "Type": "ActionOutput",
+                        "OutputName": "Location",
+                        "OutputUUID": "4FC55B76-E550-4674-803E-31C3E076FFCE",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "Latitude"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "0D473E9A-D4A2-4C68-9BE5-DFC030DB4DC4"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "0D473E9A-D4A2-4C68-9BE5-DFC030DB4DC4",
+                        "Type": "ActionOutput",
+                        "OutputName": "Text"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "B5008142-3D37-4B36-B1CD-7F95B3CDD8E1"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B5008142-3D37-4B36-B1CD-7F95B3CDD8E1",
+                  "Type": "ActionOutput",
+                  "OutputName": "URL Encoded Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "end"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuPrompt": "Choose the mode of travel in which you'd like the route URL to open.",
+            "WFControlFlowMode": 0,
+            "WFMenuItems": [
+               "Driving directions.",
+               "Walking directions.",
+               "Public Transit directions."
+            ],
+            "GroupingIdentifier": "40C37889-FB29-44C2-9A31-DC67EF03537D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Driving directions.",
+            "GroupingIdentifier": "40C37889-FB29-44C2-9A31-DC67EF03537D",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "d",
+            "UUID": "E4ECBC3D-58D6-4568-91CB-0A3C0398CB75"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "E4ECBC3D-58D6-4568-91CB-0A3C0398CB75",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "method"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Walking directions.",
+            "GroupingIdentifier": "40C37889-FB29-44C2-9A31-DC67EF03537D",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "w",
+            "UUID": "6214A1DC-A1BC-44E5-99F8-E2E6763BC2FD"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "Type": "ActionOutput",
+                  "OutputName": "Text",
+                  "OutputUUID": "6214A1DC-A1BC-44E5-99F8-E2E6763BC2FD",
+                  "Aggrandizements": [
+                     {
+                        "PropertyUserInfo": "WFFileSizeProperty",
+                        "Type": "WFPropertyVariableAggrandizement",
+                        "PropertyName": "File Size"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "method"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Public Transit directions.",
+            "GroupingIdentifier": "40C37889-FB29-44C2-9A31-DC67EF03537D",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "r",
+            "UUID": "3F18AF66-E1F0-4582-8557-F934BB717930"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "3F18AF66-E1F0-4582-8557-F934BB717930",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "method"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "40C37889-FB29-44C2-9A31-DC67EF03537D",
+            "UUID": "B44798B7-3D0B-48F0-A2FB-281FF0BB6C8E"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "WFURLActionURL": {
+               "Value": {
+                  "string": "http://itty.bitty.site/#/http://maps.apple.com/?saddr=\uFFFC&daddr=\uFFFC&dirflg=\uFFFC&t=m",
+                  "attachmentsByRange": {
+                     "{54, 1}": {
+                        "VariableName": "start",
+                        "Type": "Variable"
+                     },
+                     "{62, 1}": {
+                        "VariableName": "end",
+                        "Type": "Variable"
+                     },
+                     "{71, 1}": {
+                        "VariableName": "method",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "0C2859CD-ED65-496A-ADF7-B42BAEA02368"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "0C2859CD-ED65-496A-ADF7-B42BAEA02368",
+                  "Type": "ActionOutput",
+                  "OutputName": "URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "8AA80A0C-075B-41C2-ACB1-4E970B29A2B8"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppContentItem",
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [],
+   "WFWorkflowTypes": [],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
