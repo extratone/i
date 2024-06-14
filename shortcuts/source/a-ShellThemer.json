@@ -1,0 +1,469 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 4271458815,
+      "WFWorkflowIconGlyphNumber": 59818
+   },
+   "WFWorkflowClientVersion": "2605.0.5",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "A guided experience for creating comprehensive a-Shell style configurations\n\n𝗠𝘆 𝗰𝗼𝗻𝘁𝗮𝗰𝘁 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:\nEmail: davidblue@extratone.com\nContact card: https://davidblue.wtf/db.vcf\nMastodon: https://mastodon.social/@DavidBlue\nRoutineHub Profile: https://routinehub.co/user/blue\nGitHub: https://github.com/extratone\niOS-specific Repository: https://github.com/extratone/i\nTelegram: https://t.me/DavidBlue\nTelegram Channel: https://t.me/extratone\nDiscord: https://davidblue.wtf/discord\nTwitter: https://twitter.com/NeoYokel\nReddit: https://reddit.com/u/asphaltapostle\nEVERYWHERE: https://davidblue.wtf/socialdrop"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.speaktext",
+         "WFWorkflowActionParameters": {
+            "WFSpeakTextVoice": "com.apple.ttsbundle.gryphon-neural_simone_en-US_premium",
+            "WFSpeakTextWait": false,
+            "WFText": "Choose a font."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "config -n\nopen shortcuts://",
+            "UUID": "8DA01323-9AA8-41DC-B691-90DA2F674F61"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "AsheKube.app.a-Shell.ExecuteCommandIntent",
+         "WFWorkflowActionParameters": {
+            "command": {
+               "Value": {
+                  "OutputUUID": "8DA01323-9AA8-41DC-B691-90DA2F674F61",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "B9D4DA60-AED4-45AA-B279-71B49CA67BC3",
+            "runInApp": "open",
+            "ShowWhenRun": false
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.waittoreturn",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+         "WFWorkflowActionParameters": {
+            "WFAskActionDefaultAnswerNumber": "18",
+            "WFAskActionAllowsNegativeNumbers": false,
+            "UUID": "1E81CEDB-4565-4F47-8F2D-54FD3C87279F",
+            "WFInputType": "Number",
+            "WFAskActionPrompt": "Set font size."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "1E81CEDB-4565-4F47-8F2D-54FD3C87279F",
+                  "Type": "ActionOutput",
+                  "OutputName": "Provided Input"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "tsize"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.speaktext",
+         "WFWorkflowActionParameters": {
+            "WFSpeakTextVoice": "com.apple.ttsbundle.gryphon-neural_simone_en-US_premium",
+            "WFSpeakTextWait": false,
+            "WFText": "Set a background color."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PickColourIntent",
+         "WFWorkflowActionParameters": {
+            "startingHex": "000000",
+            "UUID": "F5CA6A2E-FF17-4274-A449-F8D8D8C0E6C3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.waittoreturn",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getclipboard",
+         "WFWorkflowActionParameters": {
+            "UUID": "2DBA0306-0864-47F8-8F35-DC6ED0E02531"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "2DBA0306-0864-47F8-8F35-DC6ED0E02531",
+                  "Type": "ActionOutput",
+                  "OutputName": "Clipboard"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "bg"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.speaktext",
+         "WFWorkflowActionParameters": {
+            "WFSpeakTextVoice": "com.apple.ttsbundle.gryphon-neural_simone_en-US_premium",
+            "WFSpeakTextWait": false,
+            "WFText": "Now set a foreground color."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PickColourIntent",
+         "WFWorkflowActionParameters": {
+            "startingHex": "00FF00",
+            "UUID": "646C0206-6D23-4D48-B887-B6D8417C85AC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.waittoreturn",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getclipboard",
+         "WFWorkflowActionParameters": {
+            "UUID": "32F1DB3B-8AF8-4694-8873-D2A6A27F89D8"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "32F1DB3B-8AF8-4694-8873-D2A6A27F89D8",
+                  "Type": "ActionOutput",
+                  "OutputName": "Clipboard"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "fg"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.speaktext",
+         "WFWorkflowActionParameters": {
+            "WFSpeakTextVoice": "com.apple.ttsbundle.gryphon-neural_simone_en-US_premium",
+            "WFSpeakTextWait": false,
+            "WFText": "And finally, a color for the cursor and highlights."
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.PickColourIntent",
+         "WFWorkflowActionParameters": {
+            "startingHex": "F29718",
+            "UUID": "DFE9710B-5BF7-403E-A3DA-2084D07309C9"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.waittoreturn",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getclipboard",
+         "WFWorkflowActionParameters": {
+            "UUID": "4656B4B1-8AE3-49FF-9F0C-339A280CAE43"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "4656B4B1-8AE3-49FF-9F0C-339A280CAE43",
+                  "Type": "ActionOutput",
+                  "OutputName": "Clipboard"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "cc"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuPrompt": "Choose a cursor style.",
+            "WFControlFlowMode": 0,
+            "WFMenuItems": [
+               "Beam ⌶",
+               "Block ▍",
+               "Underline ⎁"
+            ],
+            "GroupingIdentifier": "F0F68BB9-AD73-4F22-B12A-ACA4D914CF71"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Beam ⌶",
+            "GroupingIdentifier": "F0F68BB9-AD73-4F22-B12A-ACA4D914CF71",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "beam",
+            "UUID": "2A0116DD-CA7F-40DD-A98E-B7FE7BB6C2CF"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "2A0116DD-CA7F-40DD-A98E-B7FE7BB6C2CF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "cursor"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Block ▍",
+            "GroupingIdentifier": "F0F68BB9-AD73-4F22-B12A-ACA4D914CF71",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "block",
+            "UUID": "4074011B-404D-418F-929A-3A76C11F39A7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "4074011B-404D-418F-929A-3A76C11F39A7",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "cursor"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFMenuItemTitle": "Underline ⎁",
+            "GroupingIdentifier": "F0F68BB9-AD73-4F22-B12A-ACA4D914CF71",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "underline",
+            "UUID": "1CC35A43-32AC-44A0-A5D5-B659196BE618"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "1CC35A43-32AC-44A0-A5D5-B659196BE618",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "cursor"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "F0F68BB9-AD73-4F22-B12A-ACA4D914CF71",
+            "UUID": "09737A2D-087A-49AF-A32B-1B755DE60113"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+         "WFWorkflowActionParameters": {
+            "WFItems": [
+               "normal",
+               "contextual",
+               "none"
+            ],
+            "UUID": "24046C17-CD53-49F9-9590-7FE7BEEC160F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+         "WFWorkflowActionParameters": {
+            "WFChooseFromListActionPrompt": "Choose a ligature configuration.",
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "24046C17-CD53-49F9-9590-7FE7BEEC160F",
+                  "Type": "ActionOutput",
+                  "OutputName": "List"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "394FA64F-3565-4567-B2C1-2C85232C34F5"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "394FA64F-3565-4567-B2C1-2C85232C34F5",
+                  "Type": "ActionOutput",
+                  "OutputName": "Chosen Item"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "ligatures"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "config -s \uFFFC -b #\uFFFC -f #\uFFFC -c #\uFFFC -k \uFFFC -l \uFFFC -p -g",
+                  "attachmentsByRange": {
+                     "{33, 1}": {
+                        "VariableName": "cursor",
+                        "Type": "Variable"
+                     },
+                     "{38, 1}": {
+                        "VariableName": "ligatures",
+                        "Type": "Variable"
+                     },
+                     "{22, 1}": {
+                        "VariableName": "fg",
+                        "Type": "Variable"
+                     },
+                     "{16, 1}": {
+                        "VariableName": "bg",
+                        "Type": "Variable"
+                     },
+                     "{10, 1}": {
+                        "VariableName": "tsize",
+                        "Type": "Variable"
+                     },
+                     "{28, 1}": {
+                        "VariableName": "cc",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "461F97D8-7751-45FE-AFFD-816B6676BAEB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "461F97D8-7751-45FE-AFFD-816B6676BAEB",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "command"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "command",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "DD489186-B14B-4669-BDC2-344B7E1444F9"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": {
+               "Value": {
+                  "string": "pbpaste > a-shelltheme.txt\n\uFFFC\nconfig --show\nview a-shelltheme.txt",
+                  "attachmentsByRange": {
+                     "{27, 1}": {
+                        "VariableName": "command",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "31C9149C-5145-4953-8709-6566BC7741B9"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "AsheKube.app.a-Shell.ExecuteCommandIntent",
+         "WFWorkflowActionParameters": {
+            "command": {
+               "Value": {
+                  "OutputUUID": "31C9149C-5145-4953-8709-6566BC7741B9",
+                  "Type": "ActionOutput",
+                  "OutputName": "Text"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "B532DA43-1CA0-4984-A6C3-477A61F6BD08",
+            "runInApp": "open",
+            "ShowWhenRun": false
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppContentItem",
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [],
+   "WFWorkflowTypes": [
+      "Watch"
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
