@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `12212023-064456`
+Updated `07162024-071158`
 
 [**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
