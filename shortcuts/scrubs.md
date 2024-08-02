@@ -1,5 +1,5 @@
 # David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂
-Updated `07162024-071158`
+Updated `08022024-134103`
 
 [**Update Scrubs**](shortcuts://run-shortcut?name=Update%20Scrubs)
 
@@ -45,6 +45,10 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [Page URL](https://raindrop.io/davidblue/scrubs-21568457)
 - [RSS](https://raindrop.io/collection/21568457/feed)
 - [WTF Documentation Page](https://davidblue.wtf/drafts/4F33B1AB-DACC-4020-8736-028F54BC58FE.html)
+
+## Beta
+
+- [Add All Folder Shortcuts to Home Screen](https://www.icloud.com/shortcuts/d1507df1b8c9488d82ed329b708ae470)
 
 ## Most Utilitarian (In Theory…)
 
