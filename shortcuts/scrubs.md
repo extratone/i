@@ -203,6 +203,7 @@ If you'd like, you can use [this one](https://www.icloud.com/shortcuts/f325120a9
 - [TimCook](https://www.icloud.com/shortcuts/690bd3ba2d1b4330bab29fe43bc6fcde)'
 - [MACPAINTBALLOON](https://www.icloud.com/shortcuts/1735fffe6d884ec2b779dd7cbf5363b7)
 - [drek](https://www.icloud.com/shortcuts/ccb446ba03f242d5aa21edaba63ed945)
+- [DINO](https://www.icloud.com/shortcuts/d7c71d5d761f4b25a850a404db5385e7)
 
 ## Motion Pictures
 
